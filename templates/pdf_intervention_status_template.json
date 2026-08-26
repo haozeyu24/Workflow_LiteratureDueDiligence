@@ -1,0 +1,12 @@
+{
+  "status": "not_needed",
+  "interaction_mode": "human_facing",
+  "pdf_policy": "pause_for_user",
+  "pmc_ready_count": 0,
+  "pdf_queue_count": 0,
+  "recommended_action": "",
+  "allowed_actions": [],
+  "manual_pdf_queue_path": "",
+  "resume_target": "artifacts/fulltext_review/fulltext_review.csv",
+  "notes": ""
+}
