@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-39044030",
+  "pmid": "39044030",
+  "doi": "10.1007/s00421-024-05565-5",
+  "title": "A single, maximal dose of celecoxib, ibuprofen, or flurbiprofen does not reduce the muscle signalling response to plyometric exercise in young healthy adults.",
+  "abstract": "BACKGROUND: Non-steroidal anti-inflammatory drugs (NSAIDs) possess analgesic and anti-inflammatory properties by inhibiting cyclooxygenase (COX) enzymes. Conflicting evidence exists on whether NSAIDs influence signaling related to muscle adaptations and exercise with some research finding a reduction in muscle protein synthesis signaling via the AKT-mTOR pathway, changes in satellite cell signaling, reductions in muscle protein degradation, and reductions in cell proliferation. In this study, we determined if a single maximal dose of flurbiprofen (FLU), celecoxib (CEL), ibuprofen (IBU), or a placebo (PLA) affects the short-term muscle signaling responses to plyometric exercise.\n\nMETHODS: This was a block randomized, double-masked, crossover design, where 12 participants performed four plyometric exercise bouts consisting of 10 sets of 10 plyometric jumps at 40% 1RM. Two hours before exercise, participants consumed a single dose of celecoxib (CEL 200\u00a0mg), IBU (800\u00a0mg), FLU (100\u00a0mg) or PLA with food. Muscle biopsy samples were collected before and 3-h after exercise from the vastus lateralis. Data were analyzed using a repeated measures (RM) ANOVA, ANOVA, or a Friedman test. Significance was considered at p\u2009<\u20090.05.\n\nRESULTS: We found no treatment effects on the mRNA expression of PTSG1, PTSG2, MYC, TBP, RPLOP, MYOD1, Pax7, MYOG, Atrogin-1, or MURF1 (all, p\u2009>\u20090.05). We also found no treatment effects on AKT-mTOR signaling or MAPK signaling measured through the phosphorylation status of mTORS2441, mTORS2448, RPS6 235/236, RPS 240/244, 4EBP1, ERK1/2, p38 T180/182 normalized to their respective total abundance (all, p\u2009>\u20090.05). However, we did find a significant difference between MNK1 T197/202 in PLA compared to FLU (p\u2009<\u2009.05).\n\nCONCLUSION: A single, maximal dose of IBU, CEL, or FLU taken prior to exercise did not affect the signaling of muscle protein synthesis, protein degradation, or ribosome biogenesis three hours after a plyometric training bout.",
+  "year": "2024",
+  "journal": "European journal of applied physiology",
+  "authors": [
+    "Roberts BM",
+    "Geddis AV",
+    "Sczuroski CE",
+    "Reynoso M",
+    "Hughes JM",
+    "Gwin JA",
+    "Staab JS"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/39044030/",
+    "publisher": "https://doi.org/10.1007/s00421-024-05565-5"
+  }
+}

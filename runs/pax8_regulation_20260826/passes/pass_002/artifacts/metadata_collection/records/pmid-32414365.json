@@ -1,0 +1,28 @@
+{
+  "paper_id": "pmid-32414365",
+  "pmid": "32414365",
+  "doi": "10.1186/s12951-020-00636-z",
+  "title": "Graphene oxide nanofilm and the addition of L-glutamine can promote development of embryonic muscle cells.",
+  "abstract": "BACKGROUND: Formation of muscular pseudo-tissue depends on muscle precursor cells, the extracellular matrix (ECM)-mimicking structure and factors stimulating cell differentiation. These three things cooperate and can create a tissue-like structure, however, their interrelationships are relatively unknown. The objective was to study the interaction between surface properties, culture medium composition and heterogeneous cell culture. We would like to demonstrate that changing the surface properties by coating with graphene oxide nanofilm (nGO) can affect cell behaviour and especially their need for the key amino acid L-glutamine (L-Glu).\n\nRESULTS: Chicken embryo muscle cells and their precursors, cultured in vitro, were used as the experimental model. The mesenchymal stem cell, collected from the hind limb of the chicken embryo at day 8 were divided into 4 groups; the control group and groups treated with nGO, L-Glu and nGO supplied with L-Glu (nGOxL-Glu). The roughness of the surface of the plastic plate covered with nGO was much lower than a standard plate. The test of nGO biocompatibility demonstrated that the cells were willing to settle on the nGO without any toxic effects. Moreover, nGO by increasing hydrophilicity and reducing roughness and\u00a0presumably through chemical bonds available on the GO surface stimulated the colonisation of primary stromal cells that promote embryonic satellite cells. The viability significantly increased in cells cultured on nGOxL-Glu. Observations of cell morphology showed that the most mature state of myogenesis was characteristic for the group nGOxL-Glu. This result was confirmed by increasing the expression of MYF5 genes at mRNA and protein levels. nGO also increased the expression of MYF5 and also very strongly the expression of PAX7 at mRNA and protein levels. However, when analysing the expression of PAX7, a positive link was observed between the nGO surface and the addition of L-Glu.\n\nCONCLUSIONS: The use of nGO and L-Glu supplement may improve myogenesis and also the myogenic potential of myocytes and their precursors by promoting the formation of satellite cells. Studies have, for the first time, demonstrated positive cooperation between surface properties nGO and L-Glu supplementation to the culture medium regarding the myogenic potential of cells involved in muscle formation.",
+  "year": "2020",
+  "journal": "Journal of nanobiotechnology",
+  "authors": [
+    "Zieli\u0144ska-G\u00f3rska M",
+    "Hotowy A",
+    "Wierzbicki M",
+    "Ba\u0142aban J",
+    "Sosnowska M",
+    "Jaworski S",
+    "Strojny B",
+    "Chwalibog A",
+    "Sawosz E"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/32414365/",
+    "publisher": "https://doi.org/10.1186/s12951-020-00636-z"
+  }
+}

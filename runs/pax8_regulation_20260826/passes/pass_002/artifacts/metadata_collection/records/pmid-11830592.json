@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-11830592",
+  "pmid": "11830592",
+  "doi": "10.1074/jbc.M200004200",
+  "title": "Pax3 down-regulation and shut-off of melanogenesis in melanoma B16/F10.9 by interleukin-6 receptor signaling.",
+  "abstract": "The microphthalmia-associated transcription factor (Mitf) is essential for melanocytic lineage development and for expression of melanogenic enzymes, such as tyrosinase. Interleukin-6 receptor/interleukin-6 chimera (IL6RIL6) induces in B16/F10.9 melanoma cells a loss of melanogenesis preceded by a sharp decrease in Mitf mRNA and gene promoter activity. In the Mitf promoter, the main cis-acting element mediating the IL6RIL6 effect is shown to be the binding site of Pax3, a paired homeodomain factor regulating among other things the development of melanocytes. Pax3 protein and mRNA levels decline steadily after IL6RIL6 treatment, and overexpression of an ectopic Pax3 cDNA suppresses the Mitf promoter inhibition. Loss of the synergism between Pax3 and Sox10, a high mobility group domain costimulatory factor, seems to be critical in the rapid decrease in Mitf gene expression. The Pax3 down-regulation in IL6RIL6-induced F10.9 cell is linked to growth arrest and transdifferentiation to a glial cell phenotype. IL6RIL6 stimulates the interleukin-6 family cytokine receptor gp130, leading to the rapid phosphorylation of Stat3 on tyrosine 705. This phosphorylation is required for Pax3 down-regulation and Mitf promoter silencing since these are inhibited in F10.9 cells overexpressing the Stat3 DN-mutant Y705F.",
+  "year": "2002",
+  "journal": "The Journal of biological chemistry",
+  "authors": [
+    "Kamaraju AK",
+    "Bertolotto C",
+    "Chebath J",
+    "Revel M"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/11830592/",
+    "publisher": "https://doi.org/10.1074/jbc.M200004200"
+  }
+}

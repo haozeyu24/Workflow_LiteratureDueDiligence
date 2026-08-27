@@ -12,6 +12,8 @@ import urllib.parse
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
+from pass_archive import active_artifacts_dir, learned_revision_path, load_all_pass_csv, run_input_path, snapshot_current_pass
+
 
 WORKFLOW_ROOT = Path(__file__).resolve().parents[1]
 RUNS_DIR = WORKFLOW_ROOT / "runs"
@@ -76,33 +78,182 @@ def extract_queries(search_strategy_path: Path) -> list[str]:
     return queries
 
 
-def parse_constraints(constraints_path: Path) -> dict[str, int]:
-    constraints: dict[str, int] = {}
+FORBIDDEN_CAP_KEYS = {
+    "max_results_per_query",
+    "max_total_results",
+    "retmax",
+    "record_cap",
+    "retrieval_cap",
+    "collection_cap",
+}
+
+
+def find_forbidden_cap_constraints(constraints_path: Path) -> list[str]:
+    forbidden: list[str] = []
     if not constraints_path.exists():
-        return constraints
-    for raw_line in constraints_path.read_text(encoding="utf-8").splitlines():
-        line = raw_line.strip()
+        return forbidden
+    for line_number, raw_line in enumerate(constraints_path.read_text(encoding="utf-8").splitlines(), start=1):
+        line = raw_line.strip().replace("`", "")
         if not line or line.startswith("#"):
             continue
-        match = re.match(r"^-?\s*([A-Za-z0-9_]+)\s*:\s*([0-9]+)\s*$", line)
+        match = re.match(r"^-?\s*([A-Za-z0-9_]+)\s*:", line)
         if not match:
             continue
-        key, value = match.groups()
-        constraints[key] = int(value)
-    return constraints
+        key = match.group(1)
+        if key in FORBIDDEN_CAP_KEYS:
+            forbidden.append(f"{constraints_path}:{line_number}: {key}")
+    return forbidden
 
 
-def pubmed_search(query: str) -> list[str]:
-    params = {
+def pubmed_search(query: str) -> tuple[list[str], int]:
+    page_size = 10000
+    first_params = {
         "db": "pubmed",
         "term": query,
-        "retmax": "10000",
+        "retmax": "0",
         "retmode": "json",
         "sort": "date",
     }
-    url = f"{PUBMED_SEARCH_URL}?{urllib.parse.urlencode(params)}"
-    payload = json.loads(fetch_url(url).decode("utf-8"))
-    return payload["esearchresult"]["idlist"]
+    first_url = f"{PUBMED_SEARCH_URL}?{urllib.parse.urlencode(first_params)}"
+    first_payload = json.loads(fetch_url(first_url).decode("utf-8"))
+    raw_count = int(first_payload["esearchresult"].get("count", "0"))
+
+    pmids: list[str] = []
+    for retstart in range(0, raw_count, page_size):
+        retmax = min(page_size, raw_count - retstart)
+        params = {
+            "db": "pubmed",
+            "term": query,
+            "retstart": str(retstart),
+            "retmax": str(retmax),
+            "retmode": "json",
+            "sort": "date",
+        }
+        url = f"{PUBMED_SEARCH_URL}?{urllib.parse.urlencode(params)}"
+        payload = json.loads(fetch_url(url).decode("utf-8"))
+        page_pmids = payload["esearchresult"].get("idlist", [])
+        pmids.extend(str(pmid) for pmid in page_pmids)
+        time.sleep(NCBI_RATE_LIMIT_SECONDS)
+        if len(page_pmids) < retmax:
+            break
+
+    return pmids, raw_count
+
+
+def write_query_diagnostics(path: Path, rows: list[dict[str, str]]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    fieldnames = [
+        "round_id",
+        "query_id",
+        "query",
+        "raw_hit_count",
+        "collected_count",
+        "truncated_by_constraint",
+        "sample_size",
+        "sample_strategy",
+        "sampled_on_topic_count",
+        "sampled_noise_count",
+        "estimated_precision",
+        "dominant_noise_classes",
+        "missing_concepts",
+        "recall_signals",
+        "decision",
+        "revision_rationale",
+    ]
+    with path.open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fieldnames, extrasaction="ignore")
+        writer.writeheader()
+        writer.writerows(rows)
+
+
+def read_existing_query_diagnostics(path: Path) -> list[dict[str, str]]:
+    if not path.exists():
+        return []
+    with path.open(encoding="utf-8") as handle:
+        reader = csv.DictReader(handle)
+        return [
+            row
+            for row in reader
+            if any((value or "").strip() for value in row.values())
+            and (row.get("round_id", "").strip() != "collection")
+        ]
+
+
+def load_csv(path: Path) -> list[dict[str, str]]:
+    if not path.exists():
+        return []
+    with path.open(encoding="utf-8") as handle:
+        return list(csv.DictReader(handle))
+
+
+def require_guidance_revision_for_learned_rerun(run_dir: Path) -> list[str]:
+    feedback_rows = load_all_pass_csv(run_dir, "artifacts/fulltext_review/pmc_mechanism_feedback.csv")
+    if not feedback_rows:
+        return []
+
+    latest_feedback = feedback_rows[-1]
+    latest_loop_id = latest_feedback.get("loop_id", "").strip()
+    latest_pdf_decision = latest_feedback.get("pdf_deferral_decision", "").strip()
+    if latest_pdf_decision != "defer_pdfs":
+        return []
+
+    revision_rows = load_all_pass_csv(run_dir, "artifacts/workflow_control/run_guidance_revision_log.csv")
+    matching_rows = [
+        row for row in revision_rows
+        if row.get("feedback_loop_id", "").strip() == latest_loop_id
+    ]
+    if not matching_rows:
+        return [
+            "Learned rerun is blocked because the latest PMC feedback "
+            f"({latest_loop_id}) has not been incorporated into run guidance. "
+            "Revise instruction.md/topic.md, generate search_strategy.md from the revised guidance plus pmc_mechanism_feedback.csv, "
+            "and record the revision in artifacts/workflow_control/run_guidance_revision_log.csv."
+        ]
+
+    latest_revision = matching_rows[-1]
+    missing_paths = []
+    for field in ("revised_instruction_path", "revised_topic_path", "search_strategy_path"):
+        value = latest_revision.get(field, "").strip()
+        if not value:
+            missing_paths.append(field)
+            continue
+        candidate = Path(value)
+        if not candidate.is_absolute():
+            candidate = run_dir / candidate
+        if not candidate.exists():
+            missing_paths.append(field)
+    if missing_paths:
+        return [
+            "Learned guidance revision log row is incomplete for "
+            f"{latest_loop_id}; missing or non-existent paths: {', '.join(missing_paths)}."
+        ]
+    return []
+
+
+def learned_search_strategy_path(run_dir: Path, default_path: Path) -> Path:
+    feedback_rows = load_all_pass_csv(run_dir, "artifacts/fulltext_review/pmc_mechanism_feedback.csv")
+    if not feedback_rows:
+        return default_path
+
+    latest_feedback = feedback_rows[-1]
+    latest_loop_id = latest_feedback.get("loop_id", "").strip()
+    if latest_feedback.get("pdf_deferral_decision", "").strip() != "defer_pdfs":
+        return default_path
+
+    revision_rows = [
+        row for row in load_all_pass_csv(run_dir, "artifacts/workflow_control/run_guidance_revision_log.csv")
+        if row.get("feedback_loop_id", "").strip() == latest_loop_id
+    ]
+    if not revision_rows:
+        return default_path
+
+    value = revision_rows[-1].get("search_strategy_path", "").strip()
+    if not value:
+        return default_path
+    candidate = Path(value)
+    if not candidate.is_absolute():
+        candidate = run_dir / candidate
+    return candidate
 
 
 def reset_metadata_collection(records_dir: Path, manifest_path: Path) -> None:
@@ -205,43 +356,79 @@ def main() -> int:
         print(f"Run does not exist: {run_dir}")
         return 1
 
-    search_strategy_path = run_dir / "artifacts" / "search_strategy" / "search_strategy.md"
-    constraints_path = run_dir / "constraints.md"
-    manifest_path = run_dir / "artifacts" / "metadata_collection" / "paper_manifest.csv"
-    records_dir = run_dir / "artifacts" / "metadata_collection" / "records"
-    reset_metadata_collection(records_dir, manifest_path)
+    artifacts_dir = active_artifacts_dir(run_dir)
+    search_strategy_path = artifacts_dir / "search_strategy" / "search_strategy.md"
+    constraints_path = learned_revision_path(run_dir, "revised_constraints_path") or run_input_path(run_dir, "constraints.md")
+    query_diagnostics_path = artifacts_dir / "search_strategy" / "query_diagnostics.csv"
+    manifest_path = artifacts_dir / "metadata_collection" / "paper_manifest.csv"
+    records_dir = artifacts_dir / "metadata_collection" / "records"
 
+    guidance_errors = require_guidance_revision_for_learned_rerun(run_dir)
+    if guidance_errors:
+        print("Run guidance revision is required before learned PubMed collection.")
+        for error in guidance_errors:
+            print(f"- {error}")
+        return 1
+
+    search_strategy_path = learned_search_strategy_path(run_dir, search_strategy_path)
     queries = extract_queries(search_strategy_path)
     if not queries:
         print(f"No queries found in {search_strategy_path}")
         return 1
 
-    constraints = parse_constraints(constraints_path)
-    max_results_per_query = constraints.get("max_results_per_query", 10000)
-    max_total_results = constraints.get("max_total_results")
+    forbidden_caps = find_forbidden_cap_constraints(constraints_path)
+    if forbidden_caps:
+        print("PubMed collection caps are forbidden by workflow policy.")
+        print("Remove these constraints and use query refinement instead:")
+        for cap in forbidden_caps:
+            print(f"- {cap}")
+        return 1
+
+    snapshot_dir = snapshot_current_pass(run_dir, "before_pubmed_collection_overwrite")
+    if snapshot_dir:
+        print(f"Archived current pass before collection overwrite at {snapshot_dir}")
+
+    reset_metadata_collection(records_dir, manifest_path)
 
     pmid_to_queries: dict[str, list[str]] = {}
-    for query in queries:
-        pmids = pubmed_search(query)[:max_results_per_query]
+    diagnostics_rows = read_existing_query_diagnostics(query_diagnostics_path)
+    collection_diagnostics_rows: list[dict[str, str]] = []
+    for query_index, query in enumerate(queries, start=1):
+        pmids, raw_count = pubmed_search(query)
+        collection_diagnostics_rows.append(
+            {
+                "round_id": "collection",
+                "query_id": f"q{query_index}",
+                "query": query,
+                "raw_hit_count": str(raw_count),
+                "collected_count": str(len(pmids)),
+                "truncated_by_constraint": "no",
+                "sample_size": "",
+                "sample_strategy": "",
+                "sampled_on_topic_count": "",
+                "sampled_noise_count": "",
+                "estimated_precision": "",
+                "dominant_noise_classes": "",
+                "missing_concepts": "",
+                "recall_signals": "",
+                "decision": "accepted_for_collection",
+                "revision_rationale": "",
+            }
+        )
         for pmid in pmids:
             pmid_to_queries.setdefault(pmid, [])
             if query not in pmid_to_queries[pmid]:
                 pmid_to_queries[pmid].append(query)
-            if max_total_results is not None and len(pmid_to_queries) >= max_total_results:
-                break
-        time.sleep(NCBI_RATE_LIMIT_SECONDS)
-        if max_total_results is not None and len(pmid_to_queries) >= max_total_results:
-            break
 
     if not pmid_to_queries:
+        diagnostics_rows.extend(collection_diagnostics_rows)
+        write_query_diagnostics(query_diagnostics_path, diagnostics_rows)
         print("No PubMed records found for supplied queries.")
         return 1
 
     rows: list[dict[str, str]] = []
     retrieval_batch = time.strftime("%Y%m%d")
     all_pmids = list(pmid_to_queries.keys())
-    if max_total_results is not None:
-        all_pmids = all_pmids[:max_total_results]
     for batch in batched(all_pmids, 200):
         summaries = fetch_summaries(batch)
         time.sleep(NCBI_RATE_LIMIT_SECONDS)
@@ -316,10 +503,13 @@ def main() -> int:
         writer.writeheader()
         writer.writerows(rows)
 
+    diagnostics_rows.extend(collection_diagnostics_rows)
+    write_query_diagnostics(query_diagnostics_path, diagnostics_rows)
     print(
         f"Wrote {len(rows)} PubMed records to {manifest_path} "
-        f"(max_results_per_query={max_results_per_query}, max_total_results={max_total_results if max_total_results is not None else 'unbounded'})"
+        "(no PubMed collection caps allowed)"
     )
+    print(f"Wrote query hit-count diagnostics to {query_diagnostics_path}")
     print(f"Wrote per-paper metadata records to {records_dir}")
     return 0
 

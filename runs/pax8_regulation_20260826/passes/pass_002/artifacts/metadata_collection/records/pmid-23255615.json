@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-23255615",
+  "pmid": "23255615",
+  "doi": "10.1152/ajprenal.00553.2012",
+  "title": "EGFR activity is required for renal tubular cell dedifferentiation and proliferation in a murine model of folic acid-induced acute kidney injury.",
+  "abstract": "Proliferation of dedifferentiated intrinsic renal tubular cells has been recognized to be the major cellular event that contributes to renal repair after acute kidney injury (AKI). However, the underlying mechanism that initiates renal tubular dedifferentiation in vivo remains unexplored. Here we investigated whether epidermal growth factor receptor (EGFR) mediates this process in a murine model of folic acid (FA)-induced AKI using waved-2 mice that have reduced tyrosine kinase activity of EGFR and gefitinib, a specific EGFR inhibitor. Administration of FA for 48 h induced EGFR phosphorylation in the kidney of wild-type mice, but this was inhibited in waved-2 mice and wild-type mice given gefitinib. Compared with wild-type mice, waved-2 mice and wild-type mice treated with gefitinib had increased renal dysfunction, histologic damage, and tubular cell apoptosis after FA administration. PAX2, a dedifferentiation marker, and proliferating cell nuclear antigen, a proliferating marker, were highly expressed in renal tubular cells in wild-type mice; however, their expression was largely inhibited in the kidney of waved-2 mice. Inhibition of EGFR with gefitinib also blocked FA-induced expression of these two proteins in wild-type mice. Moreover, FA exposure resulted in phosphorylation of AKT, a downstream signaling molecule of the phosphatidylinositol 3-kinases pathway associated with renal epithelial proliferation in wild-type mice, and its phosphorylation was totally suppressed in waved-2 mice and wild-type mice given gefitinib. Taken together, these results suggest that EGFR activation is essential for initiation of renal tubular cell dedifferentiation and proliferation after AKI.",
+  "year": "2013",
+  "journal": "American journal of physiology. Renal physiology",
+  "authors": [
+    "He S",
+    "Liu N",
+    "Bayliss G",
+    "Zhuang S"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/23255615/",
+    "publisher": "https://doi.org/10.1152/ajprenal.00553.2012"
+  }
+}

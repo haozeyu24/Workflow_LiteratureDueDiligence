@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-30666838",
+  "pmid": "30666838",
+  "doi": "10.3349/ymj.2019.60.2.163",
+  "title": "MicroRNA-206 Reduces Osteosarcoma Cell Malignancy In Vitro by Targeting the PAX3-MET Axis.",
+  "abstract": "PURPOSE: This study was undertaken to explore how miR-206 represses osteosarcoma (OS) development.\n\nMATERIALS AND METHODS: Expression levels of miR-206, PAX3, and MET mRNA were explored in paired OS and adjacent tissue specimens. A patient-derived OS cell line was established. miR-206 overexpression and knockdown were achieved by lentiviral transduction. PAX3 and MET overexpression were achieved by plasmid transfection. Treatment with hepatocyte growth factor (HGF) was utilized to activate c-Met receptor. Associations between miR-206 and PAX3 or MET mRNA in OS cells were verified by AGO2-RNA immunoprecipitation assay and miRNA pulldown assay. OS cell malignancy was evaluated in vitro by cell proliferation, metastasis, and apoptosis assays. PAX3 and MET gene expression in OS cells was assayed by RT-qPCR and Western blot. Activation of PI3K-AKT and MAPK-ERK in OS cells were assayed by evaluating Akt1 Ser473 phosphorylation and total threonine phosphorylation of Erk1/2, respectively.\n\nRESULTS: Expression levels of miR-206 were significantly decreased in OS tissue specimens, compared to adjacent counterparts, and were inversely correlated with expression of PAX3 and MET mRNA. miR-206 directly interacted with PAX3 and MET mRNA in OS cells. miR-206 overexpression significantly reduced PAX3 and MET gene expression in OS cells in vitro, resulting in significant decreases in Akt1 and Erk1/2 activation, cell proliferation, and metastasis, as well as increases in cell apoptosis, while miR-206 knockdown showed the opposite effects. The effects of miR-206 overexpression on OS cells were reversed by PAX3 or MET overexpression, but only partially attenuated by HGF treatment.\n\nCONCLUSION: miR-206 reduces OS cell malignancy in vitro by targeting PAX3 and MET gene expression.",
+  "year": "2019",
+  "journal": "Yonsei medical journal",
+  "authors": [
+    "Zhan FB",
+    "Zhang XW",
+    "Feng SL",
+    "Cheng J",
+    "Zhang Y",
+    "Li B",
+    "Xie LZ",
+    "Deng QR"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/30666838/",
+    "publisher": "https://doi.org/10.3349/ymj.2019.60.2.163"
+  }
+}

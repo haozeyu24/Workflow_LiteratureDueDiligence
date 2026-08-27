@@ -1,0 +1,31 @@
+{
+  "paper_id": "pmid-25400915",
+  "pmid": "25400915",
+  "doi": "10.1002/iid3.4",
+  "title": "Human pre-B cell receptor signal transduction: evidence for distinct roles of PI3kinase and MAP-kinase signalling pathways.",
+  "abstract": "Pre-BCR acts as a critical checkpoint in B cell development. However, its signalling cascade still remains indistinctly characterised in human. We investigated pre-BCR signalling pathway to examine its regulation in normal primary pre-B lymphocytes and pre-B cell lines. In cell lines, early signalling events occurring after pre-BCR stimulation include phosphorylation of Lyn, Blk and Syk together with ZAP70, Btk, Vav, PLC-\u03b32 and various adaptor proteins, such as BLNK, LAB, LAT and SLP-76. Further downstream, these molecules induced activation of the PI3K/AKT and MAP-kinase resulting in an augmentation of canonical NF-\u03baB pathways and cFos/AP1 activation. PI3K and MAPK exerted opposing effects on the pre-BCR-induced activation of the canonical NF-\u03baB and c-Fos/AP1 pathways. Immediate nuclear export of FoxO3A and delayed import of IRF4 were additional events observed after pre-BCR crosslinking in primary cells. Pre-BCR-induced down-regulation of Rag1, Rag2, E2A and Pax5 transcripts occurred in a PI3K-dependent manner. Finally we bring evidence that pre-BCR stimulation or co stimulation with CD19 enhances cell cycle signal.",
+  "year": "2013",
+  "journal": "Immunity, inflammation and disease",
+  "authors": [
+    "Anbazhagan K",
+    "Rabbind Singh A",
+    "Isabelle P",
+    "Stella I",
+    "C\u00e9line AD",
+    "Bissac E",
+    "Bertrand B",
+    "R\u00e9my N",
+    "Naomi T",
+    "Vincent F",
+    "Rochette J",
+    "Lassoued K"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/25400915/",
+    "publisher": "https://doi.org/10.1002/iid3.4"
+  }
+}

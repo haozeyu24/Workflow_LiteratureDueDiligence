@@ -1,0 +1,28 @@
+{
+  "paper_id": "pmid-26335666",
+  "pmid": "26335666",
+  "doi": "10.1002/dvdy.24344",
+  "title": "Hspa9 is required for pronephros specification and formation in Xenopus laevis.",
+  "abstract": "BACKGROUND: Development of the pronephros in Xenopus laevis is largely dependent on retinoic acid signaling at the time of kidney field specification with the simultaneous occurrence of a necessary calcium signaling. At the crossroads of these two signaling pathways, we studied the role of Hspa9 (heat shock 70 kDa protein 9) encoding a mitochondrial chaperone in pronephros development.\n\nRESULTS: We first showed that Hspa9 is highly expressed in the pronephros territory and elongating nephric duct. We then observed that upon reduced retinoic acid signaling hspa9 expression was reduced as pax8 and pax2. Overexpression of hspa9 enlarged the pax8 positive pronephros territory, leading to a larger pronephric tubule. Loss of function of hspa9 in the kidney field using morpholino approach severely reduced pax8 expression and pronephros formation. Phenotypic rescue was achieved by co-injection of the full-length murine Hspa9 mRNA. However, no rescue was observed when Hspa9 mRNA lacking the mitochondrial-targeting sequence was injected, as this truncated form is able to interfere with pronephros formation when injected solely.\n\nCONCLUSIONS: Hspa9 is an important mediator for pronephros development through modulation of pax8. Mitochondrial functions of hspa9 are likely to be involved in specification of pronephric cell fate.",
+  "year": "2015",
+  "journal": "Developmental dynamics : an official publication of the American Association of Anatomists",
+  "authors": [
+    "Gassi\u00e9 L",
+    "Lombard A",
+    "Moraldi T",
+    "Bibonne A",
+    "Leclerc C",
+    "Moreau M",
+    "Marlier A",
+    "Gilbert T"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (stability[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR lysosome[Title/Abstract] OR autophagy[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract])",
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/26335666/",
+    "publisher": "https://doi.org/10.1002/dvdy.24344"
+  }
+}

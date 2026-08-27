@@ -1,0 +1,32 @@
+{
+  "paper_id": "pmid-41417852",
+  "pmid": "41417852",
+  "doi": "10.1371/journal.pone.0338446",
+  "title": "Deciphering the pathogenicity of three NKX2-1 variants in ultra-severe forms of childhood interstitial lung disease.",
+  "abstract": "INTRODUCTION: The transcription factor NK2 homeobox1 (NKX2-1), associated with brain lung thyroid syndrome, regulates the transcription of surfactant proteins, thyroglobulin (TG) and thyroid peroxidase (TPO). This study explored the pathogenicity of three NKX2-1 variants (p.(Tyr214Cys), p.(Arg165Trp) and p.(Gly147Ala)) that were identified in three infants with lethal forms of childhood interstitial lung disease.\n\nMETHODS: HEK293T cells were co-transfected with expression plasmids of NKX2-1 (wild-type (WT) and variants) and PAX8, along with reporter plasmids containing the promoters of SFTPB, SFTPC, TG and TPO). Protein expression was analyzed by western blotting and immunofluorescence. Luciferase assays were performed to evaluate the activation of different promoters. Surfactant protein and NKX2-1 expression were also assessed on patient lung biopsies using immunohistochemistry.\n\nRESULTS: All three mutant proteins exhibited nuclear localization. Protein expression was altered in the p.(Tyr214Cys) and p.(Arg165Trp) variants located in NKX2.1 homeodomain. The p.(Tyr214Cys) variant failed to transactivate the tested promoters and was associated with a lack of pro-SP-C and SP-C expression in lung biopsy whereas the p.(Arg165Trp) variant induced both gain- or loss-of-function effects on the tested promoters. Finally, the p.(Gly147Ala) variant transactivated all the promoters tested, as for the WT. Conclusion: Our results demonstrated the pathogenicity of two variants, p.(Tyr214Cys) and p.(Arg165Trp), located within the homeodomain of NKX2-1. Conversely, the p.(Gly147Ala) variant showed no pathogenic effects. To date, the p.(Tyr214Cys) variant is associated with the most severe respiratory phenotype reported for NKX2-1-related disorders. Further studies are needed to understand the specific mechanisms underlying the pathogenicity of NKX2.1 variants located in the homeodomain.",
+  "year": "2025",
+  "journal": "PloS one",
+  "authors": [
+    "Soreze YD",
+    "Desroziers-Louedec T",
+    "Carr\u00e9 A",
+    "Diab F",
+    "Daskalopoulou A",
+    "Starck J",
+    "Nau V",
+    "Legendre M",
+    "Karabina SA",
+    "Houdouin V",
+    "Coulomb-L'hermin\u00e9 A",
+    "Louvrier C",
+    "Nathan N"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (\"nuclear localization\"[Title/Abstract] OR \"nuclear localisation\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR \"subcellular localization\"[Title/Abstract] OR \"subcellular localisation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract] OR \"nuclear import\"[Title/Abstract] OR \"nuclear export\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/41417852/",
+    "publisher": "https://doi.org/10.1371/journal.pone.0338446"
+  }
+}

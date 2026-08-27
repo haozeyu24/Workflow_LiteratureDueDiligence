@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-42446761",
+  "pmid": "42446761",
+  "doi": "10.1007/s12105-026-01951-x",
+  "title": "Biphenotypic Sinonasal Sarcomas with Recurrent PAX3::FOXO6 Gene Fusion.",
+  "abstract": "BACKGROUND: Biphenotypic sinonasal sarcoma (BSNS) typically demonstrates expression of both neural and myogenic markers while harboring PAX3 gene fusions. Reported fusion partners include MAML3, NCOA1, NCOA2, FOXO1, FOXO6, WWTR1, and YAP1. Herein, we report two additional cases of BSNS harboring PAX3::FOXO6 gene fusions to aid in variant classification.\n\nCASE PRESENTATION: Patient 1 was a 37-year-old female and patient 2 was 56-year-old male with BSNS involving the right nasal cavity and left middle turbinate, respectively. Both sarcomas were unencapsulated infiltrative spindle cell neoplasms that demonstrated morphologic features of BSNS. Case 1 demonstrated variable aberrant nuclear accumulation of beta-catenin protein and lacked expression of SMA and S100 protein. Positive reactions were observed with SMA and S100 protein in case 2. RNA sequencing identified PAX3::FOXO6 (exon 7::exon 2) in both cases.\n\nCONCLUSION: The sinonasal location, morphology, and immunophenotype allow for discrimination against competing entities in most cases. In select cases genetic evaluation becomes necessary and to further aid in variant classification and to provide additional support for this rare finding we provide two examples of BSNS harboring PAX3::FOXO6.",
+  "year": "2026",
+  "journal": "Head and neck pathology",
+  "authors": [
+    "Whaley RD",
+    "Wojcik AA",
+    "Al-Kateb H",
+    "Halling KC",
+    "Pitel BA"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42446761/",
+    "publisher": "https://doi.org/10.1007/s12105-026-01951-x"
+  }
+}

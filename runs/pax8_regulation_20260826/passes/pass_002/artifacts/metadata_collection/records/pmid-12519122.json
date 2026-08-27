@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-12519122",
+  "pmid": "12519122",
+  "doi": "10.1034/j.1600-0749.2003.00008.x",
+  "title": "Stimulation of melanogenesis by tetradecanoylphorbol 13-acetate (TPA) in mouse melanocytes and neural crest cells.",
+  "abstract": "In vitro studies have shown that the phorbol ester, 12-tetradecanoylphorbol 13-acetate (TPA) induces neural crest cell differentiation into melanocytes, and stimulates proliferation and differentiation of normal melanocytes. As TPA is not a physiological agent, its action is clearly mimicking some in vivo pathway involved in these processes. An understanding of the effect of TPA on the expression of melanogenic genes will therefore provide valuable insight into the molecular mechanisms regulating melanocyte differentiation. In this study, we utilized primary cultures of neural crest cells and an immortalized melanocyte cell line (DMEL-2) which proliferates in the absence of TPA, to explore the effects of TPA on key melanogenic effectors. In neural crest cells, TPA was found to be necessary for both microphthalmia associated transcription factor (Mitf) up-regulation and for melanin synthesis. Using northern blots, we show that in DMEL-2 cells, TPA significantly increases the messenger ribonucleic acid (mRNA) levels of the tyrosinase gene family (tyrosinase, Tyrp1 and Dct) and the expression of Mitf. Western blots demonstrate that in these TPA-treated cells there is a concomitant increase in Tyr, Tyrp1 and glycosylated Dct protein levels. Pax3, a known Mitf regulator, is unaltered by TPA treatment. This study demonstrates the utility of a novel cell line for investigating the long-term effects of TPA on melanogenesis and provides an understanding of how TPA enhances mouse melanocyte differentiation.",
+  "year": "2003",
+  "journal": "Pigment cell research",
+  "authors": [
+    "Prince S",
+    "Wiggins T",
+    "Hulley PA",
+    "Kidson SH"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/12519122/",
+    "publisher": "https://doi.org/10.1034/j.1600-0749.2003.00008.x"
+  }
+}

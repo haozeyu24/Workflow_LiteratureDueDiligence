@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-36860866",
+  "pmid": "36860866",
+  "doi": "10.3389/fimmu.2023.1089243",
+  "title": "An arrayed CRISPR screen of primary B cells reveals the essential elements of the antibody secretion pathway.",
+  "abstract": "BACKGROUND: Humoral immunity depends on the differentiation of B cells into antibody secreting cells (ASCs). Excess or inappropriate ASC differentiation can lead to antibody-mediated autoimmune diseases, while impaired differentiation results in immunodeficiency.\n\nMETHODS: We have used CRISPR/Cas9 technology in primary B cells to screen for regulators of terminal differentiation and antibody production.\n\nRESULTS: We identified several new positive (Sec61a1, Hspa5) and negative (Arhgef18, Pold1, Pax5, Ets1) regulators that impacted on the differentiation process. Other genes limited the proliferative capacity of activated B cells (Sumo2, Vcp, Selk). The largest number of genes identified in this screen (35) were required for antibody secretion. These included genes involved in endoplasmic reticulum-associated degradation and the unfolded protein response, as well as post-translational protein modifications.\n\nDISCUSSION: The genes identified in this study represent weak links in the antibody-secretion pathway that are potential drug targets for antibody-mediated diseases, as well as candidates for genes whose mutation results in primary immune deficiency.",
+  "year": "2023",
+  "journal": "Frontiers in immunology",
+  "authors": [
+    "Trezise S",
+    "Kong IY",
+    "Hawkins ED",
+    "Herold MJ",
+    "Willis SN",
+    "Nutt SL"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/36860866/",
+    "publisher": "https://doi.org/10.3389/fimmu.2023.1089243"
+  }
+}

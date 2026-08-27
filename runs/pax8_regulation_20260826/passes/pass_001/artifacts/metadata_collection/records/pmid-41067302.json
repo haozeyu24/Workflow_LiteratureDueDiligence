@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-41067302",
+  "pmid": "41067302",
+  "doi": "10.1016/j.lfs.2025.124013",
+  "title": "Encapsulated mesenchymal stem cell-derived exosomes promote optic nerve regeneration and functional recovery in a mouse model of optic nerve crush injury.",
+  "abstract": "AIMS: Optic nerve injury (ONI) is a major cause of irreversible blindness, and current treatments have limited success. This study investigated the therapeutic potential of encapsulated exosomes derived from mesenchymal stem cells (MSC-exosomes) in a mouse model of optic nerve crush (ONC) injury, with the hypothesis that encapsulation would enhance exosome stability and efficacy, promoting optic nerve regeneration and functional recovery.\n\nMATERIALS AND METHODS: Exosomes derived from human umbilical cord MSCs were isolated and characterized, then encapsulated within a biocompatible hydrogel. Mice subjected to ONC injury received one of the following treatments: hydrogel alone (ONC\u00a0+\u00a0HG), exosomes alone (ONC\u00a0+\u00a0EXO), or encapsulated exosomes (ONC+\u00a0enEXO). Visual evoked potentials (VEPs) were assessed at 21\u00a0days post-injury (dpi). Gene expression of regeneration-associated markers (Sox2, Pax6, Brn3, NG2, NF200), retinal ganglion cell (RGC) survival, and axonal regeneration were evaluated using real-time PCR, immunofluorescence, retrograde tracing, and histological analysis.\n\nKEY FINDINGS: Encapsulated exosomes significantly improved VEP parameters, increased the expression of key regeneration-associated genes, and promoted RGC survival and axonal regeneration compared to ONC, ONC\u00a0+\u00a0HG, and ONC\u00a0+\u00a0EXO groups.\n\nSIGNIFICANCE: These findings provide strong evidence for the therapeutic potential of hydrogel-encapsulated MSC-derived exosomes as a promising treatment for ONC.\n\nCHEMICAL COMPOUNDS: Hydrogel, Exosome, NF200, Sox2, Pax6, Brn3, NG2, MSC secretome, RGC trophic factors.",
+  "year": "2025",
+  "journal": "Life sciences",
+  "authors": [
+    "Shoae-Hassani A",
+    "Niknam P",
+    "Ahmadirad N",
+    "Abri Aghdam K",
+    "Javan M",
+    "Mirshahi R",
+    "Naseripour M",
+    "Dehghan S"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/41067302/",
+    "publisher": "https://doi.org/10.1016/j.lfs.2025.124013"
+  }
+}

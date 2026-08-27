@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-37357193",
+  "pmid": "37357193",
+  "doi": "10.3760/cma.j.cn112137-20230116-00086",
+  "title": "[Clinicopathological and gene mutation characteristics of uterine carcinosarcoma].",
+  "abstract": "To explore the clinicopathological characteristics, immunophenotype, diagnosis and differential diagnosis of uterine carcinosarcoma (UCS), and to explore the gene mutation characteristics and tumor mutation burden (TMB) of UCS. The clinical imaging, pathomorphological data and immunohistochemical expression of 4 cases of UCS, which were archived in the Department of Pathology of the Second Affiliated Hospital of Soochow University from January 2021 to May 2022 were retrospectively analyzed. All exon groups of 4 cases of UCS were sequenced. All the 4 patients were female, aged 47-81 years. The maximum diameter of the tumor was 4.0-13.0 cm, and the boundary was unclear. Microscopically, the tumor was composed of malignant epithelium and sarcoma. Immunohistochemistry showed that the epithelial components of 4 patients expressed broad-spectrum cytokeratin (AE1/E3), the sarcoma components expressed Vimentin, PAX8, ER, PR were expressed to varying degrees, and Ki-67 positive index was high (60%-90%). There were 3 p53 missense mutations, 1 nonsense mutation, 4 MLH1, PMS2, MSH2, MSH6 were positive and PD-L1 was negative. The sequencing results of the whole exon group of 4 UCS patients showed that TP53, BCL9L, BRD4, CLTCLI, PSMD1I, PLEC genes showed a high mutation ratio, which was 3/4, 2/4, 2/4, 2/4, 2/4, 2/4, respectively. TMB analysis showed that the TMB of 4 cases of UCS was<5 mut/Mb. UCS is a rare and highly malignant endometrial tumor. The sequencing results of the whole exon group suggested that TP53, BCL9L, BRD4 and other genes had high mutation rates, suggesting that the occurrence and development of UCS may be closely related to Wnt signaling pathway. Molecular typing indicated that 3 cases of UCS were of high copy number type/p53 mutation type, and 1 case had POLD1 mutation. Microsatellite stability, low PD-L1 expression and TMB results suggested that UCS patients have no obvious advantage in immunotherapy.",
+  "year": "2023",
+  "journal": "Zhonghua yi xue za zhi",
+  "authors": [
+    "Tu J",
+    "Xu JZ",
+    "Zhang YS",
+    "Deng LF"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (stability[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR lysosome[Title/Abstract] OR autophagy[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/37357193/",
+    "publisher": "https://doi.org/10.3760/cma.j.cn112137-20230116-00086"
+  }
+}

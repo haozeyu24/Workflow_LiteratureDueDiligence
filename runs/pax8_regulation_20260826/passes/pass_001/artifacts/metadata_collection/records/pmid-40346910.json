@@ -1,0 +1,32 @@
+{
+  "paper_id": "pmid-40346910",
+  "pmid": "40346910",
+  "doi": "10.1111/cbdd.70116",
+  "title": "Artesunate Enhances Sensitivity of Renal Cancer Cells to Sunitnib by Mediating Tripartite Motif Containing 24-Induced Ubiquitination of Paired Box\u00a06.",
+  "abstract": "This research aims to elucidate the mechanistic role of artesunate (ART) in enhancing the sensitivity of renal cell carcinoma (RCC) to sunitinib. To establish sunitinib-resistant RCC cell lines (786-O R and Caki-1 R), cells were treated with different concentrations of sunitinib and ART. The viability of the cells was measured through the cell counting kit-8 (CCK-8) assay. Tripartite motif-containing 24 (TRIM24) and paired box\u00a06 (PAX6) expression were suppressed with lentiviral vectors, quantified by reverse transcription-quantitative polymerase chain reaction (RT-qPCR) and western blot (WB) analysis. TRIM24-PAX6 interaction was examined through co-immunoprecipitation (Co-IP) and deubiquitination assays. Additional assays included colony formation, terminal deoxynucleotidyl transferase dUTP nick end labeling (TUNEL) staining, WB detection of phosphorylated histone H2AX (\u03b3-H2AX) for DNA damage, epithelial-mesenchymal transition (EMT) marker analysis, sphere formation, and stemness marker assessments. In\u00a0vivo drug resistance was tested using a mouse subcutaneous xenograft model. ART enhanced sunitinib sensitivity in resistant RCC cells, reducing colony formation, inducing apoptosis, elevating \u03b3-H2AX, and upregulating TRIM24. ART enhances sunitinib sensitivity in RCC cells by upregulating TRIM24 expression, which facilitates the ubiquitination of PAX6. This process leads to the suppression of EMT and stem cell-like transitions in RCC cells.",
+  "year": "2025",
+  "journal": "Chemical biology & drug design",
+  "authors": [
+    "Cui Z",
+    "Wen J",
+    "Yang G",
+    "Wei L",
+    "Chen H",
+    "Zhao Q",
+    "Yang S",
+    "Yu J",
+    "Huang Y",
+    "Tan S",
+    "Mo Q",
+    "Qin M",
+    "Cheng J"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/40346910/",
+    "publisher": "https://doi.org/10.1111/cbdd.70116"
+  }
+}

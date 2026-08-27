@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-18395835",
+  "pmid": "18395835",
+  "doi": "10.1002/dvg.20384",
+  "title": "Cre reporter mouse expressing a nuclear localized fusion of GFP and beta-galactosidase reveals new derivatives of Pax3-expressing precursors.",
+  "abstract": "A new Cre-reporter strain of mouse has been developed that expresses a fusion protein derived from the lacZ gene fused to GFP with a nuclear localization signal. This construct is expressed from the ROSA26 locus upon Cre-mediated recombination that removes a loxP-flanked PGK-neo cassette, thus allowing for detection of Cre activity in all tissues. This reporter strain, which is similar to prior R26R and R26EGFP strains, has certain advantages related to the nuclear expression and the combined expression of both beta-galactosidase and GFP activities. We show that the use of this newly developed reporter line allows for enhanced resolution, detection and co-localization. Thus, we report a previously unrecognized subset of venous endothelial cells derived from Pax3 expressing precursors.",
+  "year": "2008",
+  "journal": "Genesis (New York, N.Y. : 2000)",
+  "authors": [
+    "Stoller JZ",
+    "Degenhardt KR",
+    "Huang L",
+    "Zhou DD",
+    "Lu MM",
+    "Epstein JA"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/18395835/",
+    "publisher": "https://doi.org/10.1002/dvg.20384"
+  }
+}

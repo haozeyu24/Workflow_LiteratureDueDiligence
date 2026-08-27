@@ -1,0 +1,29 @@
+{
+  "paper_id": "pmid-26858405",
+  "pmid": "26858405",
+  "doi": "10.1073/pnas.1522658112",
+  "title": "Adaptive methylation regulation of p53 pathway in sympatric speciation of blind mole rats, Spalax.",
+  "abstract": "Epigenetic modifications play significant roles in adaptive evolution. The tumor suppressor p53, well known for controlling cell fate and maintaining genomic stability, is much less known as a master gene in environmental adaptation involving methylation modifications. The blind subterranean mole rat Spalax eherenbergi superspecies in Israel consists of four species that speciated peripatrically. Remarkably, the northern Galilee species Spalax galili (2n = 52) underwent adaptive ecological sympatric speciation, caused by the sharply divergent chalk and basalt ecologies. This was demonstrated by mitochondrial and nuclear genomic evidence. Here we show that the expression patterns of the p53 regulatory pathway diversified between the abutting sympatric populations of S. galili in sharply divergent chalk-basalt ecologies. We identified higher methylation on several sites of the p53 promoter in the population living in chalk soil (chalk population). Site mutagenesis showed that methylation on these sites linked to the transcriptional repression of p53 involving Cut-Like Homeobox 1 (Cux1), paired box 4 (Pax 4), Pax 6, and activator protein 1 (AP-1). Diverse expression levels of p53 between the incipiently sympatrically speciating chalk-basalt abutting populations of S. galili selectively affected cell-cycle arrest but not apoptosis. We hypothesize that methylation modification of p53 has adaptively shifted in supervising its target genes during sympatric speciation of S. galili to cope with the contrasting environmental stresses of the abutting divergent chalk-basalt ecologies.",
+  "year": "2016",
+  "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+  "authors": [
+    "Zhao Y",
+    "Tang JW",
+    "Yang Z",
+    "Cao YB",
+    "Ren JL",
+    "Ben-Abu Y",
+    "Li K",
+    "Chen XQ",
+    "Du JZ",
+    "Nevo E"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/26858405/",
+    "publisher": "https://doi.org/10.1073/pnas.1522658112"
+  }
+}

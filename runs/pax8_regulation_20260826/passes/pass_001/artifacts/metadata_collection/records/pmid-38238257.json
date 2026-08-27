@@ -1,0 +1,29 @@
+{
+  "paper_id": "pmid-38238257",
+  "pmid": "38238257",
+  "doi": "10.1111/imb.12886",
+  "title": "Identification and function of the Pax gene Bmgsb in the silk gland of Bombyx mori.",
+  "abstract": "Paired box (Pax) genes are highly conserved throughout evolution, and the Pax protein is an important transcription factor of embryonic development. The Pax gene Bmgsb is expressed in the silk glands of silkworm, but its biological functions remain unclear. This study aimed to investigate the expression pattern of Bmgsb in the silk gland and explore its functions using RNA interference (RNAi). Here, we identified eight Pax genes in Bombyx mori. Phylogenetic analysis showed that the B. mori Pax genes were highly homologous to the Pax genes in other insects and highly evolutionarily conserved. The tissue expression profile showed that Bmgsb was expressed in the anterior silk gland and anterior part of the middle silk gland (AMSG). RNAi of Bmgsb resulted in defective development of the AMSG, and the larvae were mostly unable to cocoon in the wandering stage. RNA-seq analysis showed that the fibroin genes fib-l, fib-h and p25, cellular heat shock response-related genes and phenol oxidase genes were considerably upregulated upon Bmgsb knockdown. Furthermore, quantitative reverse transcription-PCR results showed that the fibroin genes and ubiquitin proteolytic enzyme-related genes were significantly upregulated in the AMSG after Bmgsb knockdown. This study provides a foundation for future research on the biological functions of B. mori Pax genes. In addition, it demonstrates the important roles of Bmgsb in the transcriptional regulation of fibroin genes and silk gland development.",
+  "year": "2024",
+  "journal": "Insect molecular biology",
+  "authors": [
+    "Yang H",
+    "Xu Y",
+    "Yuan Y",
+    "Liu X",
+    "Zhang J",
+    "Li J",
+    "Zhang R",
+    "Cao J",
+    "Cheng T",
+    "Liu C"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/38238257/",
+    "publisher": "https://doi.org/10.1111/imb.12886"
+  }
+}

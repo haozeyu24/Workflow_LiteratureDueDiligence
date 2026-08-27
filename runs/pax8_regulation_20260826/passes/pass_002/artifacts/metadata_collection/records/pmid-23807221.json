@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-23807221",
+  "pmid": "23807221",
+  "doi": "10.1038/cddis.2013.221",
+  "title": "Signal-dependent fra-2 regulation in skeletal muscle reserve and satellite cells.",
+  "abstract": "Activator protein-1 (AP-1) is a ubiquitous transcription factor that paradoxically also has some tissue-specific functions. In skeletal muscle cells, we document that the AP-1 subunit, Fra-2, is expressed in the resident stem cells (Pax7-positive satellite cells) and also in the analogous undifferentiated 'reserve' cell population in myogenic cultures, but not in differentiated myofiber nuclei. Silencing of Fra-2 expression enhances the expression of differentiation markers such as muscle creatine kinase and myosin heavy chain, indicating a possible role of Fra-2 in undifferentiated myogenic progenitor cells. We observed that Fra-2 is a target of cytokine-mediated extracellular signal-regulated kinase-1/2 signaling in cultured muscle cells, and extensive mass spectrometry and mutational analysis identified S320 and T322 as regulators of Fra-2 protein stability. Interestingly, Fra-2 S320 phosphorylation occurs transiently in activated satellite cells and is extinguished in myogenin-positive differentiating cells. Thus, cytokine-mediated Fra-2 expression and stabilization is linked to regulation of myogenic progenitor cells having implications for the molecular regulation of adult muscle stem cells and skeletal muscle regeneration.",
+  "year": "2013",
+  "journal": "Cell death & disease",
+  "authors": [
+    "Alli NS",
+    "Yang EC",
+    "Miyake T",
+    "Aziz A",
+    "Collins-Hooper H",
+    "Patel K",
+    "McDermott JC"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/23807221/",
+    "publisher": "https://doi.org/10.1038/cddis.2013.221"
+  }
+}

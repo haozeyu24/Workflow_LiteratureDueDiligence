@@ -1,0 +1,21 @@
+{
+  "paper_id": "pmid-9784592",
+  "pmid": "9784592",
+  "doi": "10.1016/s0925-4773(98)00131-2",
+  "title": "TCF-4 binds beta-catenin and is expressed in distinct regions of the embryonic brain and limbs.",
+  "abstract": "The Tcf family of transcription factors, in association with beta-catenin, mediate Wnt signaling by transactivating downstream target genes. Given the function of wnt genes in neural development and organogenesis, Tcf transcription factors must be integral to the development of many embryonic tissues. In fact, the role of Tcf genes in axis formation in Xenopus and in segment polarity in Drosophila is well established. In this report, we have identified two isoforms of the mouse Tcf-4 gene. Tcf-4 expressing cells showed nuclear localization of beta-catenin. Although Tcf-4 RNA was widely distributed throughout embryogenesis, high levels of Tcf-4 expression were particularly evident in the developing CNS and limb buds. In extended streak stage embryos (E7.5), Tcf4 expression was detected in anterior endoderm. E8.5 embryos had Tcf-4 expression in rostral neural plate and in alternating rhombomeres of the hindbrain. By E9.5 and thereafter, expression in the hindbrain disappeared and strong expression was detected in the diencephalon. Strikingly Tcf-4 expression in the forebrain was undetected in Small eye mutant embryos indicating that Pax-6 is required for Tcf-4 expression in the forebrain. In developing limbs, Tcf-4 is readily detected starting at E10.5 and is limited to mesenchymal cells surrounding the areas of chondrification. These data indicate a function for Tcf-4 in neural and limb development, two tissues where Wnt signaling plays an essential role.",
+  "year": "1998",
+  "journal": "Mechanisms of development",
+  "authors": [
+    "Cho EA",
+    "Dressler GR"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/9784592/",
+    "publisher": "https://doi.org/10.1016/s0925-4773(98)00131-2"
+  }
+}

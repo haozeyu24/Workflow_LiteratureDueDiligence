@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-28093090",
+  "pmid": "28093090",
+  "doi": "10.1017/S0007114516004591",
+  "title": "Potential involvement of dietary advanced glycation end products in impairment of skeletal muscle growth and muscle contractile function in mice.",
+  "abstract": "Diets enriched with advanced glycation end products (AGE) have recently been related to muscle dysfunction processes. However, it remains unclear whether long-term exposure to an AGE-enriched diet impacts physiological characteristics of skeletal muscles. Therefore, we explored the differences in skeletal muscle mass, contractile function and molecular responses between mice receiving a diet high in AGE (H-AGE) and low in AGE (L-AGE) for 16 weeks. There were no significant differences between L-AGE and H-AGE mice with regard to body weight, food intake or epididymal fat pad weight. However, extensor digitorum longus (EDL) and plantaris (PLA) muscle weights in H-AGE mice were lower compared with L-AGE mice. Higher levels of N \u03b5 -(carboxymethyl)-l-lysine, a marker for AGE, in EDL muscles of H-AGE mice were observed compared with L-AGE mice. H-AGE mice showed lower muscle strength and endurance in vivo and lower muscle force production of PLA muscle in vitro. mRNA expression levels of myogenic factors including myogenic factor 5 and myogenic differentiation in EDL muscle were lower in H-AGE mice compared with L-AGE mice. The phosphorylation status of 70-kDa ribosomal protein S6 kinase Thr389, an indicator of protein synthesis signalling, was lower in EDL muscle of H-AGE mice than that of L-AGE mice. These findings suggest that long-term exposure to an AGE-enriched diet impairs skeletal muscle growth and muscle contractile function, and that these muscle dysfunctions may be attributed to the inhibition of myogenic potential and protein synthesis.",
+  "year": "2017",
+  "journal": "The British journal of nutrition",
+  "authors": [
+    "Egawa T",
+    "Tsuda S",
+    "Goto A",
+    "Ohno Y",
+    "Yokoyama S",
+    "Goto K",
+    "Hayashi T"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/28093090/",
+    "publisher": "https://doi.org/10.1017/S0007114516004591"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-32241916",
+  "pmid": "32241916",
+  "doi": "10.1074/jbc.RA120.012656",
+  "title": "Thyrocyte cell survival and adaptation to chronic endoplasmic reticulum stress due to misfolded thyroglobulin.",
+  "abstract": "The large secretory glycoprotein thyroglobulin is the primary translation product of thyroid follicular cells. This difficult-to-fold protein is susceptible to structural alterations that disable export of the misfolded thyroglobulin from the endoplasmic reticulum (ER), which is a known cause of congenital hypothyroidism characterized by severe chronic thyrocyte ER stress. Nevertheless, individuals with this disease commonly grow a goiter, indicating thyroid cell survival and adaptation. To model these processes, here we continuously exposed rat PCCL3 thyrocytes to tunicamycin, which causes a significant degree of ER stress that is specifically attributable to thyroglobulin misfolding. We found that, in response, PCCL3 cells down-regulate expression of the \"tunicamycin transporter\" (major facilitator superfamily domain containing-2A, Mfsd2a). Following CRISPR/Cas9-mediated Mfsd2a deletion, PCCL3 cells could no longer escape the chronic effects of high-dose tunicamycin, as demonstrated by persistent accumulation of unglycosylated thyroglobulin; nevertheless, these thyrocytes survived and grew. A proteomic analysis of these cells adapted to chronic ER protein misfolding revealed many hundreds of up-regulated proteins, indicating stimulation of ER chaperones, oxidoreductases, stress responses, and lipid biosynthesis pathways. Further, we noted increased phospho-AMP-kinase, suggesting up-regulated AMP-kinase activity, and decreased phospho-S6-kinase and protein translation, suggesting decreased mTOR activity. These changes are consistent with conserved cell survival/adaptation pathways. We also observed a less-differentiated thyrocyte phenotype with decreased PAX8, FOXE1, and TPO protein levels, along with decreased thyroglobulin mRNA levels. In summary, we have developed a model of thyrocyte survival and growth during chronic continuous ER stress that recapitulates features of congenital hypothyroid goiter caused by mutant thyroglobulin.",
+  "year": "2020",
+  "journal": "The Journal of biological chemistry",
+  "authors": [
+    "Morishita Y",
+    "Kabil O",
+    "Young KZ",
+    "Kellogg AP",
+    "Chang A",
+    "Arvan P"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (\"protein stability\"[Title/Abstract] OR \"protein levels\"[Title/Abstract] OR stabilization[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract]) NOT \"PAX8-AS1\"[Title/Abstract]"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/32241916/",
+    "publisher": "https://doi.org/10.1074/jbc.RA120.012656"
+  }
+}

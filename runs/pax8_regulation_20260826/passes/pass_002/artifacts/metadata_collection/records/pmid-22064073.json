@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-22064073",
+  "pmid": "22064073",
+  "doi": "10.1016/j.febslet.2011.10.045",
+  "title": "Structural basis of \u03b3H2AX recognition by human PTIP BRCT5-BRCT6 domains in the DNA damage response pathway.",
+  "abstract": "Human Pax2 transactivation domain-interacting protein (hPTIP), containing six BRCT domains, is an essential protein required for the IR induced DDR process with an unclear role. Here we report that the tandem BRCT5-BRCT6 domain of hPTIP recognizes the \u03b3H2AX tail, and this interaction depends on the phosphorylation of H2AX Ser139 and binding with the carboxyl ending peptide to the aminoacyl ending peptide. The 2.15 \u00c5 crystal structure of hPTIP BRCT5/6-\u03b3H2AX complex and mutation analysis provide molecular evidence for direct interactions between PTIP and \u03b3H2AX. This interaction proffers a new clue to identify the role of PTIP in DDR pathways.",
+  "year": "2011",
+  "journal": "FEBS letters",
+  "authors": [
+    "Yan W",
+    "Shao Z",
+    "Li F",
+    "Niu L",
+    "Shi Y",
+    "Teng M",
+    "Li X"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/22064073/",
+    "publisher": "https://doi.org/10.1016/j.febslet.2011.10.045"
+  }
+}

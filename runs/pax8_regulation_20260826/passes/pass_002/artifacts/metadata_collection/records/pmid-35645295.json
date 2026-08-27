@@ -1,0 +1,21 @@
+{
+  "paper_id": "pmid-35645295",
+  "pmid": "35645295",
+  "doi": "10.3390/jdb10020019",
+  "title": "Pax3 Hypomorphs Reveal Hidden Pax7 Functional Genetic Compensation in Utero.",
+  "abstract": "Pax3 and Pax7 transcription factors are paralogs within the Pax gene family that that are expressed in early embryos in partially overlapping expression domains and have distinct functions. Significantly, mammalian development is largely unaffected by Pax7 systemic deletion but systemic Pax3 deletion results in defects in neural tube closure, neural crest emigration, cardiac outflow tract septation, muscle hypoplasia and in utero lethality by E14. However, we previously demonstrated that Pax3 hypomorphs expressing only 20% functional Pax3 protein levels exhibit normal neural tube and heart development, but myogenesis is selectively impaired. To determine why only some Pax3-expressing cell lineages are affected and to further titrate Pax3 threshold levels required for neural tube and heart development, we generated hypomorphs containing both a hypomorphic and a null Pax3 allele. This resulted in mutants only expressing 10% functional Pax3 protein with exacerbated neural tube, neural crest and muscle defects, but still a normal heart. To examine why the cardiac neural crest appears resistant to very low Pax3 levels, we examined its paralog Pax7. Significantly, Pax7 expression is both ectopically expressed in Pax3-expressing dorsal neural tube cells and is also upregulated in the Pax3-expressing lineages. To test whether this compensatory Pax7 expression is functional, we deleted Pax7 both systemically and lineage-specifically in hypomorphs expressing only 10% Pax3. Removal of one Pax7 allele resulted in partial outflow tract defects, and complete loss of Pax7 resulted in full penetrance outflow tract defects and in utero lethality. Moreover, combinatorial loss of Pax3 and Pax7 resulted in severe craniofacial defects and a total block of neural crest cell emigration from the neural tube. Pax7Cre lineage mapping revealed ectopic labeling of Pax3-derived neural crest tissues and within the outflow tract of the heart, experimentally confirming the observation of ectopic activation of Pax7 in 10% Pax3 hypomorphs. Finally, genetic cell ablation of Pax7Cre-marked cells is sufficient to cause outflow tract defects in hypomorphs expressing only 10% Pax3, confirming that ectopic and induced Pax7 can play an overlapping functional genetic compensational role in both cardiac neural crest lineage and during craniofacial development, which is normally masked by the dominant role of Pax3.",
+  "year": "2022",
+  "journal": "Journal of developmental biology",
+  "authors": [
+    "Zhou HM",
+    "Conway SJ"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/35645295/",
+    "publisher": "https://doi.org/10.3390/jdb10020019"
+  }
+}

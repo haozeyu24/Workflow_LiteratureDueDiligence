@@ -1,0 +1,1 @@
+round_id,query_id,query,raw_hit_count,collected_count,truncated_by_constraint,sample_size,sample_strategy,sampled_on_topic_count,sampled_noise_count,estimated_precision,dominant_noise_classes,missing_concepts,recall_signals,decision,revision_rationale

@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-42383016",
+  "pmid": "42383016",
+  "doi": "10.1002/atn2.70026",
+  "title": "Acromial Osteotomy for Dynamic Posterior Shoulder Instability.",
+  "abstract": "Posterior shoulder instability is less prevalent than anterior instability but shows a rising incidence, particularly among young and active individuals. Diagnosis is often challenging due to nonspecific symptoms, leading to delays and underestimation of prevalence. Its etiology is multifactorial, including traumatic events, iatrogenic causes, and developmental anomalies influenced by genetic factors such as Homeobox C6 and Paired Box 1, which regulate scapular and acromial development. Morphological variations of the acromion, including reduced posterior coverage and altered sagittal tilt, play a critical role in the pathophysiology of posterior instability. Dynamic posterior shoulder instability can be associated with altered acromial morphology, posterior subluxation, and glenoid retroversion. In such scenarios, acromial osteotomy with posterior repositioning may be performed to enhance posterior coverage and reduce sagittal tilt. This technique allows for improved containment of the humeral head, restoration of shoulder stability, and recovery of function. Radiographic consolidation, restoration of range of motion, pain resolution, and significant improvement in functional outcome scores can be expected following successful execution of the procedure. This Technical Note emphasizes the role of acromial morphology as a critical factor in the management of posterior instability. Acromial osteotomy offers a promising strategy to optimize osseous containment and glenohumeral stability, though additional cases and long-term follow-up are needed to confirm reproducibility and clinical efficacy.",
+  "year": "2026",
+  "journal": "Arthroscopy techniques",
+  "authors": [
+    "Mendes R",
+    "Garcia JC Jr",
+    "Barcelos M",
+    "Correia A",
+    "Fiori L",
+    "Raffaelli M",
+    "Mello M"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42383016/",
+    "publisher": "https://doi.org/10.1002/atn2.70026"
+  }
+}

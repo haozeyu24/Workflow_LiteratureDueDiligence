@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-35897718",
+  "pmid": "35897718",
+  "doi": "10.3390/ijms23158142",
+  "title": "Four Novel PAX9 Variants and the PAX9-Related Non-Syndromic Tooth Agenesis Patterns.",
+  "abstract": "The purpose of this research was to investigate and identify PAX9 gene variants in four Chinese families with non-syndromic tooth agenesis. We identified pathogenic gene variants by whole-exome sequencing (WES) and Sanger sequencing and then studied the effects of these variants on function by bioinformatics analysis and in vitro experiments. Four novel PAX9 heterozygous variants were identified: two missense variants (c.191G > T (p.G64V) and c.350T > G (p.V117G)) and two frameshift variants (c.352delC (p.S119Pfs*2) and c.648_649insC(p.Y217Lfs*100)). The bioinformatics analysis showed that these variants might be pathogenic. The tertiary structure analysis showed that these four variants could cause structural damage to PAX9 proteins. In vitro functional studies demonstrated that (1) the p.Y217Lfs*100 variant greatly affects mRNA stability, thereby affecting endogenous expression; (2) the p. S119Pfs* 2 variant impairs the subcellular localization of the nuclear expression of the wild-type PAX9 protein; and (3) the four variants (p.G64V, p.V117G, p.S119Pfs*2, and p.Y217Lfs*100) all significantly affect the downstream transcriptional activity of the BMP4 gene. In addition, we summarized and analyzed tooth missing positions caused by PAX9 variants and found that the maxillary second molar (84.11%) and mandibular second molar (84.11%) were the most affected tooth positions by summarizing and analyzing the PAX9-related non-syndromic tooth agenesis positions. Our results broaden the variant spectrum of the PAX9 gene related to non-syndromic tooth agenesis and provide useful information for future genetic counseling.",
+  "year": "2022",
+  "journal": "International journal of molecular sciences",
+  "authors": [
+    "Liu H",
+    "Liu H",
+    "Su L",
+    "Zheng J",
+    "Feng H",
+    "Liu Y",
+    "Yu M",
+    "Han D"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/35897718/",
+    "publisher": "https://doi.org/10.3390/ijms23158142"
+  }
+}

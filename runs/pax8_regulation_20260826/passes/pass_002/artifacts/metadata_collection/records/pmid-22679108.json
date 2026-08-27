@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-22679108",
+  "pmid": "22679108",
+  "doi": "10.1158/1541-7786.MCR-11-0387",
+  "title": "GSK-3 promotes cell survival, growth, and PAX3 levels in human melanoma cells.",
+  "abstract": "GSK-3 is a serine/threonine kinase involved in a diverse range of cellular processes. GSK-3 exists in two isoforms, GSK-3\u03b1 and GSK-3\u03b2, which possess some functional redundancy but also play distinct roles depending on developmental and cellular context. In this article, we found that GSK-3 actively promoted cell growth and survival in melanoma cells, and blocking this activity with small-molecule inhibitor SB216763 or gene-specific siRNA decreased proliferation, increased apoptosis, and altered cellular morphology. These alterations coincided with loss of PAX3, a transcription factor implicated in proliferation, survival, and migration of developing melanoblasts. We further found that PAX3 directly interacted with and was phosphorylated in vitro on a number of residues by GSK-3\u03b2. In melanoma cells, direct inhibition of PAX3 lead to cellular changes that paralleled the response to GSK-3 inhibition. Maintenance of PAX3 expression protected melanoma cells from the anti-tumor effects of SB216763. These data support a model wherein GSK-3 regulates proliferation and morphology of melanoma through phosphorylation and increased levels of PAX3.",
+  "year": "2012",
+  "journal": "Molecular cancer research : MCR",
+  "authors": [
+    "Kubic JD",
+    "Mascarenhas JB",
+    "Iizuka T",
+    "Wolfgeher D",
+    "Lang D"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/22679108/",
+    "publisher": "https://doi.org/10.1158/1541-7786.MCR-11-0387"
+  }
+}

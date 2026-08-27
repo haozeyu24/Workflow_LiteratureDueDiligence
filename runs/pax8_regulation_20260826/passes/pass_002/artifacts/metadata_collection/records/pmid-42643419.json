@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-42643419",
+  "pmid": "42643419",
+  "doi": "10.3389/fmed.2026.1859653",
+  "title": "Spontaneously ruptured breast metastasis from renal cell carcinoma 20\u202fyears post-nephrectomy: a case report and literature review.",
+  "abstract": "BACKGROUND: Breast metastases from extramammary malignancies are rare, and those originating from renal cell carcinoma (RCC) are exceptionally uncommon. These lesions often follow an indolent course, delaying recognition until acute, life-threatening complications such as hemorrhagic rupture occur. The lack of standardized management guidelines further impedes timely intervention.\n\nCASE PRESENTATION: An 88-year-old woman with a history of radical nephrectomy for clear cell RCC 20\u202fyears prior presented with active hemorrhage from a spontaneously ruptured right breast mass. Two years earlier, a 2.5\u202f\u00d7\u202f1.5\u202fcm nodule (BI-RADS 3) had been detected but managed conservatively without biopsy, gradually enlarging over the following two years. On admission, physical examination revealed a large, tender mass (\u223c6.5\u202f\u00d7\u202f6\u202f\u00d7\u202f7.5\u202fcm) with skin erythema, ulceration, and active bleeding. CT demonstrated the breast mass and revealed two additional imaging-suspected lesions: a right pulmonary nodule and a right adrenal mass. After hemodynamic stabilization, right simple mastectomy was performed, achieving definitive hemostasis. Histopathology and immunohistochemistry (CAIX+, PAX-8+, vimentin+; GATA-3-, GCDFP-15-, ER-, PR-) confirmed metastatic clear cell RCC. The patient declined systemic therapy. At 30-month telephone follow-up, she reported no symptomatic local recurrence or new symptoms; however, no postoperative imaging was performed to confirm this.\n\nCONCLUSION: This case illustrates a critical two-stage progression of breast metastasis from RCC-indolent growth followed by rapid enlargement and hemorrhagic rupture. It underscores that while a BI-RADS 3 lesion in an RCC survivor may be managed with standard short-interval imaging, any interval enlargement or morphological change should prompt a lower threshold for tissue confirmation. An IHC panel (PAX-8/CAIX positivity with negative breast-specific markers) is essential for confirming metastatic RCC. The absence of postoperative imaging in this case-with follow-up limited to symptom-based telephone assessment-highlights the critical importance of radiological surveillance to objectively evaluate disease status.",
+  "year": "2026",
+  "journal": "Frontiers in medicine",
+  "authors": [
+    "Huang C",
+    "Wang Y",
+    "Zhou Q",
+    "Jin Q"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (\"protein stability\"[Title/Abstract] OR \"protein levels\"[Title/Abstract] OR stabilization[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract]) NOT \"PAX8-AS1\"[Title/Abstract]"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42643419/",
+    "publisher": "https://doi.org/10.3389/fmed.2026.1859653"
+  }
+}

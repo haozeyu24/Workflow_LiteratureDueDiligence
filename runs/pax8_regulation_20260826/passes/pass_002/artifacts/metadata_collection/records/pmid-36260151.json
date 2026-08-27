@@ -1,0 +1,30 @@
+{
+  "paper_id": "pmid-36260151",
+  "pmid": "36260151",
+  "doi": "10.1007/s10735-022-10103-8",
+  "title": "Insm1 promotes differentiation of retinal progenitor cells toward photoreceptor cells in the developing retina through up-regulation of SHH.",
+  "abstract": "This article investigated the effect of Insm1 on RPC differentiation in mice and the underlying mechanism. The retinal tissues of mouse embryo at 12.5 days (E12.5) and postnatal 14 days (P14) were collected, following by the detection of Insm1 and corresponding markers by immunofluorescent staining. RPCs isolated from retinal tissues at P1 were cultured in culture medium for 7 days. The differentiation of photoreceptor and glial cells was assessed after RPCs transferred to the differentiation medium for 20 days. Next, the effect of Insm1 overexpression on the differentiation of RPCs toward rod photoreceptor and glial cells were assessed. Insm1 was highly expressed in RPCs of retinal tissues and decline in photoreceptor cells, while hardly expressed in glial cells. Based on the results of Pax-6 positive immunofluorescent staining and flow cytometry detection, RPCs were successfully isolated from retinal tissues. After the culture in differentiation medium, RPCs showed positive staining of Rhodopsin and glial fibrillary acidic protein (GFAP). Further results showed that overexpression of Insm1 significantly increased the percentage of Rhodopsin positive cells, and up-regulated Sonic Hedgehog (SHH), hairy and enhancer of split homolog-1(Hes1), S-opsin and Rhodopsin levels, while decreased the percentage of Glutamine synthetase positive cells, and reduced Glutamine synthetase and GFAP levels. Whereas, the effect of Insm1 overexpression on these protein levels were partly abolished by the knockdown of SHH or Hes1. We conclude that Insm1 promotes the differentiation of RPCs into photoreceptor cells in the developing retina through up-regulation of SHH.",
+  "year": "2022",
+  "journal": "Journal of molecular histology",
+  "authors": [
+    "Zhou P",
+    "Xu Y",
+    "Yang L",
+    "Meng P",
+    "Guo J",
+    "Liu Z",
+    "Jin B",
+    "Xie K",
+    "Zhu H",
+    "Du L",
+    "Jin X"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/36260151/",
+    "publisher": "https://doi.org/10.1007/s10735-022-10103-8"
+  }
+}

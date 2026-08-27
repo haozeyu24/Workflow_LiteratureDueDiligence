@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-21765475",
+  "pmid": "21765475",
+  "doi": "10.1038/onc.2011.291",
+  "title": "Dominant-negative mechanism of leukemogenic PAX5 fusions.",
+  "abstract": "PAX5 encodes a master regulator of B-cell development. It fuses to other genes associated with acute lymphoblastoid leukemia (ALL). These fusion products are potent dominant-negative (DN) inhibitors of wild-type PAX5, resulting in a blockade of B-cell differentiation. Here, we show that multimerization of PAX5 DNA-binding domain (DBD) is necessary and sufficient to cause extremely stable chromatin binding and DN activity. ALL-associated PAX5-C20S results from fusion of the N-terminal region of PAX5, including its paired DBD, to the C-terminus of C20orf112, a protein of unknown function. We report that PAX5-C20S is a tetramer, which interacts extraordinarily stably with chromatin as determined by Fluorescence Recovery After Photobleaching in living cells. Tetramerization, stable chromatin binding and DN activity all require a putative five-turn amphipathic \u03b1-helix at the C-terminus of C20orf112, and does not require potential corepressor binding peptides elsewhere in the sequence. In vitro, the monomeric PAX5 DBD and PAX5-C20S binds a PAX5-binding site with equal affinity when it is at the center of an oligonucleotide too short to bind to more than one PAX5 DBD. But, PAX5-C20S binds the same sequence with 10-fold higher affinity than the monomeric PAX5 DBD when it is in a long DNA molecule. We suggest that the increased affinity results from interactions of one or more of the additional DBDs with neighboring non-specific sites in a long DNA molecule, and that this can account for the increased stability of PAX5-C20S chromatin binding compared with wild-type PAX5, resulting in DN activity by competition for binding to PAX5-target sites. Consistent with this model, the ALL-associated PAX5 fused to ETV6 or the multimerization domain of ETV6 SAM results in stable chromatin binding and DN activity. In addition, PAX5 DBD fused to artificial dimerization, trimerization and tetramerization domains results in parallel increases in the stability of chromatin binding and DN activity. Our studies suggest that oncogenic fusion proteins that retain the DBD of the transcription factor (TF) and the multimerization sequence of the partner protein can act in a DN manner by multimerizing and binding avidly to gene targets, preventing the normal TF from binding and inducing expression of its target genes. Inhibition of this multimeriztion may provide a novel therapeutic approach for cancers with this or similar fusion proteins.",
+  "year": "2012",
+  "journal": "Oncogene",
+  "authors": [
+    "Kawamata N",
+    "Pennella MA",
+    "Woo JL",
+    "Berk AJ",
+    "Koeffler HP"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/21765475/",
+    "publisher": "https://doi.org/10.1038/onc.2011.291"
+  }
+}

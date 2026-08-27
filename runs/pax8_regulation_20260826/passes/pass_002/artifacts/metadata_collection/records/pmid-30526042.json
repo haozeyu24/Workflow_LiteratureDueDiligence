@@ -1,0 +1,29 @@
+{
+  "paper_id": "pmid-30526042",
+  "pmid": "30526042",
+  "doi": "10.1096/fj.201801977R",
+  "title": "Activating \u03b2-catenin/Pax6 axis negatively regulates osteoclastogenesis by selectively inhibiting phosphorylation of p38/MAPK.",
+  "abstract": "Balance of osteoclast formation is regulated by the receptor activator of NF-\u03baB ligand and extracellular negative regulators such as IFN-\u03b3 and IFN-\u03b2. However, very little is known about the intrinsic negative regulatory factors of osteoclast differentiation. Recently, the paired-box homeodomain transcription factor Pax6 was shown to negatively regulate receptor activator of NF-\u03baB ligand-mediated osteoclast differentiation. However, the mechanism underlying this regulation is still unclear. In this study, we show that a p38 inhibitor (VX-745) up-regulates the expression of Pax6 during osteoclast differentiation. Subsequently, we found that \u03b2-catenin could bind to the proximal region of Pax6 promoter to induce its expression, and this action could be impaired by p38-induced ubiquitin-mediated degradation of \u03b2-catenin. Our results suggest that Pax6 is regulated by a novel p38/\u03b2-catenin pathway. Pax6 can further regulate the nuclear translocation of NF of activated T cells, cytoplasmic 1. Our study indicates that this novel p38/\u03b2-catenin/Pax6 axis contributes to negative regulation of osteoclastogenesis. In addition, our study proposes a novel approach to treat osteoclast-related diseases through the use of VX-745 complemented with the \u03b2-catenin activator SKL2001.-Jie, Z., Shen, S., Zhao, X., Xu, W., Zhang, X., Huang, B., Tang, P., Qin, A., Fan, S., Xie, Z. Activating \u03b2-catenin/Pax6 axis negatively regulates osteoclastogenesis by selectively inhibiting phosphorylation of p38/MAPK.",
+  "year": "2019",
+  "journal": "FASEB journal : official publication of the Federation of American Societies for Experimental Biology",
+  "authors": [
+    "Jie Z",
+    "Shen S",
+    "Zhao X",
+    "Xu W",
+    "Zhang X",
+    "Huang B",
+    "Tang P",
+    "Qin A",
+    "Fan S",
+    "Xie Z"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/30526042/",
+    "publisher": "https://doi.org/10.1096/fj.201801977R"
+  }
+}

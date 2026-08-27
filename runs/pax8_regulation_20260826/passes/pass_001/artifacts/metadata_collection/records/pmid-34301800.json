@@ -1,0 +1,34 @@
+{
+  "paper_id": "pmid-34301800",
+  "pmid": "34301800",
+  "doi": "10.1126/sciimmunol.abg5003",
+  "title": "Pax5 regulates B cell immunity by promoting PI3K signaling via PTEN down-regulation.",
+  "abstract": "The transcription factor Pax5 controls B cell development, but its role in mature B cells is largely enigmatic. Here, we demonstrated that the loss of Pax5 by conditional mutagenesis in peripheral B lymphocytes led to the strong reduction of B-1a, marginal zone (MZ), and germinal center (GC) B cells as well as plasma cells. Follicular (FO) B cells tolerated the loss of Pax5 but had a shortened half-life. The Pax5-deficient FO B cells failed to proliferate upon B cell receptor or Toll-like receptor stimulation due to impaired PI3K-AKT signaling, which was caused by increased expression of PTEN, a negative regulator of the PI3K pathway. Pax5 restrained PTEN protein expression at the posttranscriptional level, likely involving Pten-targeting microRNAs. Additional PTEN loss in Pten,Pax5 double-mutant mice rescued FO B cell numbers and the development of MZ B cells but did not restore GC B cell formation. Hence, the posttranscriptional down-regulation of PTEN expression is an important function of Pax5 that facilitates the differentiation and survival of mature B cells, thereby promoting humoral immunity.",
+  "year": "2021",
+  "journal": "Science immunology",
+  "authors": [
+    "Calder\u00f3n L",
+    "Schindler K",
+    "Malin SG",
+    "Schebesta A",
+    "Sun Q",
+    "Schwickert T",
+    "Alberti C",
+    "Fischer M",
+    "Jaritz M",
+    "Tagoh H",
+    "Ebert A",
+    "Minnich M",
+    "Liston A",
+    "Cochella L",
+    "Busslinger M"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/34301800/",
+    "publisher": "https://doi.org/10.1126/sciimmunol.abg5003"
+  }
+}

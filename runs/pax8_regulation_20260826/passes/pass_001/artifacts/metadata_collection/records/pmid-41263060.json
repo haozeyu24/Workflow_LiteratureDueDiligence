@@ -1,0 +1,28 @@
+{
+  "paper_id": "pmid-41263060",
+  "pmid": "41263060",
+  "doi": "10.1158/1535-7163.MCT-24-0328",
+  "title": "Involvement of the FGF8/FGF Receptor Signaling Pathway in the Maintenance and Progression of Fusion-Positive Rhabdomyosarcoma.",
+  "abstract": "We previously used a myoblast model of fusion-positive rhabdomyosarcoma (FP-RMS) to show that FGF8, a PAX3-FOXO1 (P3F) transcriptional target, is required for P3F-driven tumorigenicity and, when aberrantly expressed, can maintain tumorigenicity in P3F-independent recurrent tumors. We report in this study that FGF8, FGFR1, and FGFR4 are often highly expressed in FP-RMS tumors. High FGF8 expression in FP-RMS cells is associated with high sensitivity to an FGFR4 inhibitor and a pan-FGFR inhibitor. Although downregulating FGF8 resulted in loss of sensitivity to these inhibitors, FGF8 upregulation in myoblasts decreased FGFR4 expression and sensitized the cells to an FGFR1 inhibitor and a pan-FGFR inhibitor. FGF8 downregulation of FGFR4 expression was reverted by inhibitors of FGFR1, MEK, or ERK, thus defining a signaling pathway by which FGF8 mediates this regulatory effect. Finally, high FGF8 expression in P3F-independent recurrent tumors was attributable to a rearrangement of viral long terminal repeat (LTR) sequences into the FGF8 3' untranslated region, resulting in increased FGF8 mRNA stability. These findings indicate that FGF8 exerts oncogenic effects in FP-RMS via FGFR4 and may exert oncogenic effects in P3F-independent relapses via FGFR1. Our study reveals the functional significance of FGF8 in FP-RMS and provides a rationale for preclinical studies of FGFR inhibitors in FP-RMS.",
+  "year": "2026",
+  "journal": "Molecular cancer therapeutics",
+  "authors": [
+    "Boudjadi S",
+    "Kim H",
+    "Chatterjee B",
+    "Raut PK",
+    "Nguyen TH",
+    "Pandey PR",
+    "Ur Rasool R",
+    "Sun W",
+    "Barr FG"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/41263060/",
+    "publisher": "https://doi.org/10.1158/1535-7163.MCT-24-0328"
+  }
+}

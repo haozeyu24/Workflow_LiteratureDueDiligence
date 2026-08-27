@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-38664733",
+  "pmid": "38664733",
+  "doi": "10.1186/s12964-024-01629-3",
+  "title": "PAX1 represses canonical Wnt signaling pathway and plays dual roles during endoderm differentiation.",
+  "abstract": "BACKGROUND: Paired box\u00a01 (PAX1) is a transcription factor and essential for the development of pharyngeal pouches-derived tissues, including thymus. PAX1 mutations are identified in Severe Combined Immunodeficiency (SCID) patients with Otofaciocervical Syndrome Type 2 (OTFCS2). However, despite the critical roles of PAX1 in embryonic development and diseases, detailed insights into its molecular mode of action are critically missing.\n\nMETHODS: The repressing roles of PAX1 and SCID associated mutants on Wnt signaling pathway were investigated by luciferase reporter assays, qRT-PCR and in situ hybridization in HEK293FT, HCT116 cells and zebrafish embryos, respectively. Co-immunoprecipitation (co-IP) and western blotting assays were carried out to identify the molecular mechanisms underlying PAX1's role on Wnt signaling pathway. hESC based endoderm differentiation, flow cytometry, high-throughput sequencing data analysis, and qRT-PCR assays were utilized to determine the roles of PAX1 during endoderm differentiation.\n\nRESULTS: Here, we show that PAX1 represses canonical Wnt signaling pathway in vertebrate cells. Mechanically, PAX1 competes with SUMO E3 ligase PIASy to bind to TCF7L2, thus perturbing TCF7L2 SUMOylation level, further reducing its transcriptional activity and protein stability. Moreover, we reveal that PAX1 plays dual roles in hESC-derived definitive and foregut/pharyngeal endoderm cells, which give rise to the thymus epithelium, by inhibiting Wnt signaling. Importantly, our data show PAX1 mutations found in SCID patients significantly compromise the suppressing ability of PAX1 on Wnt signaling.\n\nCONCLUSIONS: Our study presents a novel molecular mode of action of PAX1 in regulation of canonical Wnt signaling and endoderm differentiation, thus providing insights for the molecular basis of PAX1 associated SCID, offering better understanding of the behavior of PAX1 in embryogenesis.",
+  "year": "2024",
+  "journal": "Cell communication and signaling : CCS",
+  "authors": [
+    "Miao D",
+    "Ren J",
+    "Jia Y",
+    "Jia Y",
+    "Li Y",
+    "Huang H",
+    "Gao R"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/38664733/",
+    "publisher": "https://doi.org/10.1186/s12964-024-01629-3"
+  }
+}

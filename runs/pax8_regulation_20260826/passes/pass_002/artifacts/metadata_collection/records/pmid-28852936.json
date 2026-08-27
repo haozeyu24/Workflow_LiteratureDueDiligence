@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-28852936",
+  "pmid": "28852936",
+  "doi": "10.1007/s00441-017-2680-2",
+  "title": "Down-regulation of PAX2 promotes in vitro differentiation of podocytes from human CD34(+) cells.",
+  "abstract": "Podocytes are major kidney cells that help in glomerular filtration and any damage or loss is a major event in the progression of kidney diseases. Understanding podocytes development will help in designing therapeutic strategies against these renal diseases. Therefore, in vitro generation of podocytes from adult hematopoietic CD34+ stem cells is explored in the present study. Apheretically, isolated human HSCs from peripheral blood showed the presence of CD34 surface glycoprotein through immunocytochemistry (ICC) and flowcytometry. Initially, these HSCs were induced with activin-A (10\u00a0ng/ml), retinoic acid (RA) (10\u00a0ng/ml) and bone morphogenic protein (BMP-7) (2.5\u00a0ng/ml) for 5\u00a0days. Transdifferentiation of HSCs to podocytes through intermediate mesoderm was studied with positive selection of Osr1+ cells. Subsequently, thus-obtained Osr1+ cells were induced further with activin-A (10\u00a0ng/ml), RA (10\u00a0ng/ml), BMP-7 (2.5\u00a0ng/ml), EGF (30\u00a0ng/ml) and bFGF (30\u00a0ng/ml) for 9\u00a0days. Distinct cobblestone morphological changes were observed on staining with Leishman's stain. Consequently, differentiated cells were immunopositive for anti-podocin, anti-synaptopodin and anti-GLEPP1 monoclonal antibodies. These cells showed expression of early podocyte markers PAX2 and Wt1 at day 3 followed by day 6 and mature podocyte markers NPHS1, SULT1B1, NPHS2 and Synaptopodin at day 9. Interestingly, on day 9, diminished expression of PAX2 was noted. Differentiated cells showed high tyrosine kinase activity signifying that phosphorylation controls slit diaphragm proteins. Synaptopodin regulates the integrity of cytoskeleton and cell motility of podocytes and this phenomenon was confirmed through scratch assay using agarose molds that showed high cell mobility and migration. These findings establish HSCs as ideal candidates for regenerative therapies of damaged podocytes.",
+  "year": "2017",
+  "journal": "Cell and tissue research",
+  "authors": [
+    "Sunitha MM",
+    "Srikanth L",
+    "Kumar PS",
+    "Chandrasekhar C",
+    "Sarma PVGK"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/28852936/",
+    "publisher": "https://doi.org/10.1007/s00441-017-2680-2"
+  }
+}

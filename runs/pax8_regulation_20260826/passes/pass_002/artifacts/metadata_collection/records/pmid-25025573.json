@@ -1,0 +1,35 @@
+{
+  "paper_id": "pmid-25025573",
+  "pmid": "25025573",
+  "doi": "10.1016/j.cellsig.2014.07.006",
+  "title": "Ret finger protein mediates Pax7-induced ubiquitination of MyoD in skeletal muscle atrophy.",
+  "abstract": "Skeletal muscle atrophy results from the net loss of muscular proteins and organelles and is caused by pathologic conditions such as nerve injury, immobilization, cancer, and other metabolic diseases. Recently, ubiquitination-mediated degradation of skeletal-muscle-specific transcription factors was shown to be involved in muscle atrophy, although the mechanisms have yet to be defined. Here we report that ret finger protein (RFP), also known as TRIM27, works as an E3 ligase in Pax7-induced degradation of MyoD. Muscle injury induced by sciatic nerve transection up-regulated RFP and RFP physically interacted with both Pax7 and MyoD. RFP and Pax7 synergistically reduced the protein amounts of MyoD but not the mRNA. RFP-induced reduction of MyoD protein was blocked by proteasome inhibitors. The Pax7-induced reduction MyoD was attenuated by RFP siRNA and by MG132, a proteasome inhibitor. RFP\u0394R, an RFP construct that lacks the RING domain, failed to reduce MyoD amounts. RFP ubiquitinated MyoD, but RFP\u0394R failed to do so. Forced expression of RFP, but not RFP\u0394R, enhanced Pax7-induced ubiquitination of MyoD, whereas RFP siRNA blocked the ubiquitination. Sciatic nerve injury-induced muscle atrophy as well the reduction in MyoD was attenuated in RFP knockout mice. Taken together, our results show that RFP works as a novel E3 ligase in the Pax7-mediated degradation of MyoD in response to skeletal muscle atrophy.",
+  "year": "2014",
+  "journal": "Cellular signalling",
+  "authors": [
+    "Joung H",
+    "Eom GH",
+    "Choe N",
+    "Lee HM",
+    "Ko JH",
+    "Kwon DH",
+    "Nam YS",
+    "Min H",
+    "Shin S",
+    "Kook J",
+    "Cho YK",
+    "Kim JC",
+    "Seo SB",
+    "Baik YH",
+    "Nam KI",
+    "Kook H"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/25025573/",
+    "publisher": "https://doi.org/10.1016/j.cellsig.2014.07.006"
+  }
+}

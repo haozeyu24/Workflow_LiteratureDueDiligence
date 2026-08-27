@@ -1,0 +1,21 @@
+{
+  "paper_id": "pmid-17043310",
+  "pmid": "17043310",
+  "doi": "10.1101/gad.1462706",
+  "title": "Hedgehog-regulated localization of Vax2 controls eye development.",
+  "abstract": "Cell fates in the optic neuroepithelium are determined by the combinational action of homeotic transcription factors. One of these is Vax2, a homeodomain protein that ventralizes the vertebrate eye field by repressing transcription of the Pax6 gene. We find that Vax2 shuttles between the nucleus and cytoplasm as a function of time in eye development, and that this dynamic shuttling is an essential feature of retinal differentiation. We show that subcellular localization of Vax2 is controlled by phosphorylation of a single serine residue, S170, downstream from its homeodomain, and that this modification results in the exclusion of Vax2 from the nucleus. Phosphorylation of S170 is most probably mediated by protein kinase A and is antagonized by the ventralizing morphogen Sonic hedgehog. Expression of a nonphosphorylatable, constitutively nuclear Vax2 protein in the chick optic vesicle results in constitutive repression of Pax6, and leads to the formation of an eyeless embryo. These results indicate that regulated changes in Vax2 localization modify the developmental competence of the optic neuroepithelium over time and thereby provide a mechanism for the sequential staging of eye development.",
+  "year": "2006",
+  "journal": "Genes & development",
+  "authors": [
+    "Kim JW",
+    "Lemke G"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/17043310/",
+    "publisher": "https://doi.org/10.1101/gad.1462706"
+  }
+}

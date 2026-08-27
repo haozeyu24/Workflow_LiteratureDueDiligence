@@ -1,0 +1,31 @@
+{
+  "paper_id": "pmid-37696466",
+  "pmid": "37696466",
+  "doi": "10.1016/j.fct.2023.114027",
+  "title": "The effects and mechanisms of the new brominated flame retardant BTBPE on thyroid toxicity.",
+  "abstract": "As an alternative to octabromodiphenyl ether (octa-BDE), 1, 2-bis (2,4, 6-tribromophenoxy) ethane (BTBPE) has been widely used in a variety of combustible materials, such as plastics, textiles and furniture. Previous studies have demonstrated the thyroid toxicity of traditional brominated flame retardants for example octa-BDE clearly. Nevertheless, little is known about the thyroid toxicity of alternative novel brominated flame retardants BTBPE. In this study, it was demonstrated that BTBPE in vivo exposure induced FT4 reduction in 2.5, 25 and 250\u00a0mg/kg bw treated group and TT4 reduction in 25\u00a0mg/kg bw treated group. TG, TPO and NIS are key proteins of thyroid hormone synthesis. The results of Western blot and RT-PCR from thyroid tissue showed decreased protein levels and gene expression levels of TG, TPO and NIS as well as regulatory proteins PAX8 and TTF2. To investigate whether the effect also occurred in humans, anthropogenic Nthy-ori 3-1\u00a0cells were selected. Similar results were seen in vitro condition. 2.5\u00a0mg/L BTBPE reduced the protein levels of PAX8, TTF1 and TTF2, which in turn inhibited the protein levels of TG and NIS. The results in vitro experiment were consistent with that in vivo, suggesting possible thyrotoxic effects of BTBPE on humans. It was indicated that BTBPE had the potential interference of T4 generation and the study provided more evidence of the effects on endocrine disorders.",
+  "year": "2023",
+  "journal": "Food and chemical toxicology : an international journal published for the British Industrial Biological Research Association",
+  "authors": [
+    "Zhang Q",
+    "Wang Z",
+    "Xiao Q",
+    "Ge J",
+    "Wang X",
+    "Jiang W",
+    "Yuan Y",
+    "Zhuang Y",
+    "Meng Q",
+    "Jiang J",
+    "Hao W",
+    "Wei X"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (\"protein stability\"[Title/Abstract] OR \"protein levels\"[Title/Abstract] OR stabilization[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract]) NOT \"PAX8-AS1\"[Title/Abstract]"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/37696466/",
+    "publisher": "https://doi.org/10.1016/j.fct.2023.114027"
+  }
+}

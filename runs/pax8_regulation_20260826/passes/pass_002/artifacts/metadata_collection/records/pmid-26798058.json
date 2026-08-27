@@ -1,0 +1,22 @@
+{
+  "paper_id": "pmid-26798058",
+  "pmid": "26798058",
+  "doi": "10.5966/sctm.2015-0266",
+  "title": "Concise Review: Epigenetic Regulation of Myogenesis in Health and Disease.",
+  "abstract": "Skeletal muscle regeneration is initiated by satellite cells, a population of adult stem cells that reside in the muscle tissue. The ability of satellite cells to self-renew and to differentiate into the muscle lineage is under transcriptional and epigenetic control. Satellite cells are characterized by an open and permissive chromatin state. The transcription factor Pax7 is necessary for satellite cell function. Pax7 is a nodal factor regulating the expression of genes associated with satellite cell growth and proliferation, while preventing differentiation. Pax7 recruits chromatin modifiers to DNA to induce expression of specific target genes involved in myogenic commitment following asymmetric division of muscle stem cells. Emerging evidence suggests that replacement of canonical histones with histone variants is an important regulatory mechanism controlling the ability of satellite cells and myoblasts to differentiate. Differentiation into the muscle lineage is associated with a global gene repression characterized by a decrease in histone acetylation with an increase in repressive histone marks. However, genes important for differentiation are upregulated by the specific action of histone acetyltransferases and other chromatin modifiers, in combination with several transcription factors, including MyoD and Mef2. Treatment with histone deacetylase (HDAC) inhibitors enhances muscle regeneration and is considered as a therapeutic approach in the treatment of muscular dystrophy. This review describes the recent findings on epigenetic regulation in satellite stem cells and committed myoblasts. The potential of epigenetic drugs, such as HDAC inhibitors, as well as their molecular mechanism of action in muscle cells, will be addressed.",
+  "year": "2016",
+  "journal": "Stem cells translational medicine",
+  "authors": [
+    "Sincennes MC",
+    "Brun CE",
+    "Rudnicki MA"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/26798058/",
+    "publisher": "https://doi.org/10.5966/sctm.2015-0266"
+  }
+}

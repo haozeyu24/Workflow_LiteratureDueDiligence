@@ -1,0 +1,29 @@
+{
+  "paper_id": "pmid-36733766",
+  "pmid": "36733766",
+  "doi": "10.3389/fped.2022.978598",
+  "title": "Deciphering an isolated lung phenotype of NKX2-1 frameshift pathogenic variant.",
+  "abstract": "BACKGROUND: to perform a functional analysis of a new NK2 homeobox 1 (NKX2-1) variant (c.85_86del denominated NKX2-1DEL) identified in a family presenting with isolated respiratory disease, in comparison to another frameshift variant (c.254dup denominated NKX2-1DUP) identified in a subject with classical brain-lung-thyroid syndrome.\n\nMETHODS: pathogenic variants were introduced into the pcDNA3-1(+)-wt-TTF1 plasmid. The proteins obtained were analyzed by western blot assay. Subcellular localization was assessed by confocal microscopy in A549 and Nthy cells. Transactivation of SFTPA, SFTPB, SFTPC, and ABCA3 promoters was assessed in A549 cells. Thyroglobulin promoter activity was measured with the paired box gene 8 (PAX8) cofactor in Nthy cells.\n\nRESULTS: The two sequence variants were predicted to produce aberrant proteins identical from the 86th amino acid, with deletion of their functional homeodomain, including the nuclear localization signal. However, 3D conformation prediction of the conformation prediction of the mutant protein assumed the presence of a nuclear localization signal, a bipartite sequence, confirmed by confocal microscopy showing both mutant proteins localized in the nucleus and cytoplasm. Transcriptional activity with SFTPA, SFTPB, SFTPC, ABCA3 and thyroglobulin promoters was significantly decreased with both variants. However, with NKX2-1DEL, thyroglobulin transcriptional activity was maintained with the addition of PAX8.\n\nCONCLUSION: These results provide novel insights into understanding the molecular mechanism of phenotypes associated with NKX2-1 pathogenic variants.",
+  "year": "2022",
+  "journal": "Frontiers in pediatrics",
+  "authors": [
+    "Delestrain C",
+    "Aissat A",
+    "Nattes E",
+    "Gibertini I",
+    "Lacroze V",
+    "Simon S",
+    "Decrouy X",
+    "de Becdeli\u00e8vre A",
+    "Fanen P",
+    "Epaud R"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (\"nuclear localization\"[Title/Abstract] OR \"nuclear localisation\"[Title/Abstract] OR \"nuclear localization signal\"[Title/Abstract] OR \"functional domains\"[Title/Abstract] OR \"subcellular localization\"[Title/Abstract] OR \"nuclear import\"[Title/Abstract] OR \"nuclear export\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract]) NOT \"PAX8-AS1\"[Title/Abstract]"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/36733766/",
+    "publisher": "https://doi.org/10.3389/fped.2022.978598"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-27555585",
+  "pmid": "27555585",
+  "doi": "10.1073/pnas.1600770113",
+  "title": "Hedgehog-dependent E3-ligase Midline1 regulates ubiquitin-mediated proteasomal degradation of Pax6 during visual system development.",
+  "abstract": "Pax6 is a key transcription factor involved in eye, brain, and pancreas development. Although pax6 is expressed in the whole prospective retinal field, subsequently its expression becomes restricted to the optic cup by reciprocal transcriptional repression of pax6 and pax2 However, it remains unclear how Pax6 protein is removed from the eyestalk territory on time. Here, we report that Mid1, a member of the RBCC/TRIM E3 ligase family, which was first identified in patients with the X-chromosome-linked Opitz BBB/G (OS) syndrome, interacts with Pax6. We found that the forming eyestalk is a major domain of mid1 expression, controlled by the morphogen Sonic hedgehog (Shh). Here, Mid1 regulates the ubiquitination and proteasomal degradation of Pax6 protein. Accordantly, when Mid1 levels are knocked down, Pax6 expression is expanded and eyes are enlarged. Our findings indicate that remaining or misaddressed Pax6 protein is cleared from the eyestalk region to properly set the border between the eyestalk territory and the retina via Mid1. Thus, we identified a posttranslational mechanism, regulated by Sonic hedgehog, which is important to suppress Pax6 activity and thus breaks pax6 autoregulation at defined steps during the formation of the visual system.",
+  "year": "2016",
+  "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+  "authors": [
+    "Pfirrmann T",
+    "Jandt E",
+    "Ranft S",
+    "Lokapally A",
+    "Neuhaus H",
+    "Perron M",
+    "Hollemann T"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/27555585/",
+    "publisher": "https://doi.org/10.1073/pnas.1600770113"
+  }
+}

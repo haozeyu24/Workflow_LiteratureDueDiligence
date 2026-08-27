@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-32022930",
+  "pmid": "32022930",
+  "doi": "10.1002/eji.201948363",
+  "title": "CMTM7 plays key roles in TLR-induced plasma cell differentiation and p38 activation in murine B-1 B\u00a0cells.",
+  "abstract": "Terminal differentiation of B cells into antibody-secreting cells is the foundation of humoral immune response. B-1 cells, which are different from B-2 cells, preferentially differentiate into plasma cells. CMTM7 is a MARVEL-domain-containing membrane protein predominantly expressed in B cells that plays an important role in B-1a cell development. The present study assessed CMTM7 function in response to antigen stimulation. Following immunization with T cell-dependent and T cell-independent antigens, Cmtm7-deficient mice exhibited decreased IgM but normal IgG responses in vivo. In vitro stimulation with LPSs induced Cmtm7-/- B-1 cell activation, whereas proliferation was marginally reduced. Notably, Cmtm7 deficiency markedly suppressed plasma cell differentiation in response to TLR agonists, accompanied by a decrease in IgM and IL-10 production. At the molecular level, loss of Cmtm7 repressed the downregulation of Pax5 and the upregulation of Xbp1, Irf4, and Prdm1. Furthermore, p38 phosphorylation was inhibited in Cmtm7-/- B-1 cells. Experiments using a p38 inhibitor revealed that p38 activation was essential for the terminal differentiation of B-1 cells, suggesting that Cmtm7 contributes to B-1 cell differentiation by maintaining p38 activation. Overall, the data reveal the crucial functions of CMTM7 in TLR-induced terminal differentiation and p38 activation in B-1 cells.",
+  "year": "2020",
+  "journal": "European journal of immunology",
+  "authors": [
+    "Liu Z",
+    "Liu Y",
+    "Li T",
+    "Wang P",
+    "Mo X",
+    "Lv P",
+    "Ma D",
+    "Han W"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/32022930/",
+    "publisher": "https://doi.org/10.1002/eji.201948363"
+  }
+}

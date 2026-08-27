@@ -1,0 +1,29 @@
+{
+  "paper_id": "pmid-34091348",
+  "pmid": "34091348",
+  "doi": "10.1016/j.psj.2021.101167",
+  "title": "Hypoxia further exacerbates woody breast myopathy in broilers via alteration of satellite cell fate.",
+  "abstract": "Woody breast (WB) condition has created a variety of challenges for the global poultry industry. To date, there are no effective treatments or preventative measures due to its unknown (undefined) etiology. Several potential mechanisms including oxidative stress, fiber-type switching, cellular damage, and altered intracellular calcium levels have been proposed to play a key role in the progression of the WB myopathy. In a previous study, we have shown that WB is associated with hypoxia-like status and dysregulated oxygen homeostasis. As satellite cells (SC) play a pivotal role in muscle fiber repair and remodeling under stress conditions, we undertook the present study to determine satellite cell fate in WB-affected birds when reared in either normoxic or hypoxic conditions. Modern random bred broilers from 2015 (n\u00a0=\u00a0200) were wing banded and reared under standard brooding practices for the first 2 wk post-hatch. At 15 d, chicks were divided in 2 body weight-matched groups and reared to 6 wk in either control local altitude or hypobaric chambers with simulated altitude of 6,000 ft. Birds were provided ad libitum access to water and feed, according to the Cobb recommendations. At 6 wk of age, birds were processed and scored for WB, and breast samples were collected from WB-affected and unaffected birds for molecular analyses (n\u00a0=\u00a010/group). SCs were isolated from normal breast muscle, cultured in vitro, and exposed to normoxia or hypoxia for 2 h. The expression of target genes was determined by qPCR using 2-\u2206\u2206Ct method. Protein distribution and expression were determined by immunofluorescence staining and immunoblot, respectively. Data were analyzed by the Student's t test with significance set at P < 0.05. Multiple satellite cell markers, myogenic factor (Myf)-5 and paired box (PAX)-7 were significantly decreased at the mRNA and protein levels in the breast muscle from WB-affected birds compared to their unaffected counterparts. Lipogenic-and adipogenic-associated factors (acetyl-CoA carboxylase, ACC\u03b1; fatty acid synthase, FASN, malic enzyme, ME; and ATP citrate lyase, ACLY) were activated in WB-affected birds. These data were supported by an in vitro study where hypoxia decreased the expression of Myf5 and Pax7, and increased that of ACC\u03b1, FASN, ME, and ACLY. Together, these data indicate that under hypoxic condition, SC change fate by switching from a myogenic to an adipogenic program, which explains at least partly, the etiology of the WB myopathy.",
+  "year": "2021",
+  "journal": "Poultry science",
+  "authors": [
+    "Emami NK",
+    "Cauble RN",
+    "Dhamad AE",
+    "Greene ES",
+    "Coy CS",
+    "Velleman SG",
+    "Orlowski S",
+    "Anthony N",
+    "Bedford M",
+    "Dridi S"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/34091348/",
+    "publisher": "https://doi.org/10.1016/j.psj.2021.101167"
+  }
+}

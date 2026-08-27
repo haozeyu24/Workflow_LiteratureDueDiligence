@@ -1,0 +1,32 @@
+{
+  "paper_id": "pmid-39488562",
+  "pmid": "39488562",
+  "doi": "10.1038/s41598-024-76654-w",
+  "title": "Effects of miR-204-5p modulation on PAX6 regulation and corneal inflammation.",
+  "abstract": "Congenital aniridia is a rare eye disease characterized by loss of PAX6 protein leading to aniridia-associated keratopathy that significantly reduces vision. The miR-204-5p is a possible regulator of PAX6 function and here we evaluate its effect in multiple in vitro and in vivo models. In vitro, miR-204-5p overexpression suppressed vascular factor ANGPT1 in human limbal stem cells (T-LSC) and Pax6-knockdown LSC (mut-LSC), and in primary human limbal epithelial cells (LEC) at the gene and protein levels and following LPS stimulation. However, miR-204-5p inhibited VEGFA expression only in mut-LSCs and LPS-stimulated LEC. Also, miR-204-5p increased PAX6 expression in mut-LSC and differentiated corneal epithelial cells, but not in LEC. Topical miR-204-5p after LPS-induced keratitis in mice failed to suppress Vegfa, Angpt1, Il-1\u03b2, and Tnf-\u03b1 or rescue Pax6 levels in contrast to in vitro results, although it significantly reduced the inflammatory infiltrate in the cornea. In Pax6Sey/+ aniridia mice, miR-204-5p did not rescue PAX6 levels or suppress Vegfa, Angpt1, or inhibit the ERK1/2 pathway. While short-term miR-204-5p treatment effectively suppresses VEGFA and ANGPT1 and enhances PAX6 expression in multiple corneal epithelia, effects are variable across primary and immortalized cells. Effects of longer-term in vivo treatment, however, require further study.",
+  "year": "2024",
+  "journal": "Scientific reports",
+  "authors": [
+    "Abbasi M",
+    "Amini M",
+    "Moustardas P",
+    "Gutsmiedl Q",
+    "Javidjam D",
+    "Suiwal S",
+    "Seitz B",
+    "Fries FN",
+    "Dashti A",
+    "Rautavaara Y",
+    "Stachon T",
+    "Szentm\u00e1ry N",
+    "Lagali N"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/39488562/",
+    "publisher": "https://doi.org/10.1038/s41598-024-76654-w"
+  }
+}

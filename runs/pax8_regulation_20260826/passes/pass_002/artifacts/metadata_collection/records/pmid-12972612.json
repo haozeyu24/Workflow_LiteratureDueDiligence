@@ -1,0 +1,30 @@
+{
+  "paper_id": "pmid-12972612",
+  "pmid": "12972612",
+  "doi": "10.1128/MCB.23.19.6944-6957.2003",
+  "title": "A novel human Ada2 homologue functions with Gcn5 or Brg1 to coactivate transcription.",
+  "abstract": "In yeast, the transcriptional adaptor yeast Ada2 (yAda2) is a part of the multicomponent SAGA complex, which possesses histone acetyltransferase activity through action of the yGcn5 catalytic enzyme. yAda2, among several SAGA proteins, serves to recruit SAGA to genes via interactions with promoter-bound transcription factors. Here we report identification of a new human Ada2 homologue, hAda2beta. Ada2beta differs both biochemically and functionally from the previously characterized hAda2alpha, which is a stable component of the human PCAF (human Gcn5 homologue) acetylase complex. Ada2beta, relative to Ada2alpha, interacted selectively, although not stably, with the Gcn5-containing histone acetylation complex TFTC/STAGA. In addition, Ada2beta interacted with Baf57 (a component of the human Swi/Snf complex) in a yeast two-hybrid screen and associated with human Swi/Snf in vitro. In functional assays, hAda2beta (but not Ada2alpha), working in concert with Gcn5 (but not PCAF) or Brg1 (the catalytic component of hSwi/Snf complex), increased transcription via the B-cell-specific transcription factor Pax5/BSAP. These findings support the view that Gcn5 and PCAF have distinct roles in vivo and suggest a new mechanism of coactivator function, in which a single adaptor protein (Ada2beta) can coordinate targeting of both histone acetylation and chromatin remodeling activities.",
+  "year": "2003",
+  "journal": "Molecular and cellular biology",
+  "authors": [
+    "Barlev NA",
+    "Emelyanov AV",
+    "Castagnino P",
+    "Zegerman P",
+    "Bannister AJ",
+    "Sepulveda MA",
+    "Robert F",
+    "Tora L",
+    "Kouzarides T",
+    "Birshtein BK",
+    "Berger SL"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/12972612/",
+    "publisher": "https://doi.org/10.1128/MCB.23.19.6944-6957.2003"
+  }
+}

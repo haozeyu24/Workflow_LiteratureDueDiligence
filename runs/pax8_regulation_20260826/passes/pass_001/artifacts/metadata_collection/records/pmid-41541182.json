@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-41541182",
+  "pmid": "41541182",
+  "doi": "10.1016/j.ijscr.2025.112106",
+  "title": "Ovarian mesonephric-like adenocarcinoma mimicking serous carcinoma: A case report integrating cytologic, frozen, histological, immunohistochemistry, and molecular analyses.",
+  "abstract": "INTRODUCTION: Mesonephric-like adenocarcinoma (MLA) is a recently recognized, rare subtype of endometrial carcinoma that can also arise in the ovary. Ovarian MLA is uncommon and often misdiagnosed due to its varied growth patterns and overlap with more common ovarian carcinomas.\n\nPRESENTATION OF CASE: We report a case of ovarian MLA that closely mimicked serous carcinoma clinically and histologically. The patient presented with a pelvic mass. Cytological analysis of peritoneal washing fluid initially raised a strong suspicion for serous carcinoma, underscoring the potential for MLA to masquerade on cytology. Intraoperative frozen section proved especially challenging: low-grade cytology and papillary-glandular architecture led to a provisional diagnosis of low-grade serous carcinoma, delaying recognition of MLA until permanent sections and ancillary stains could be performed. Formalin-fixed, paraffin-embedded sections demonstrated complex branching papillae and retiform glandular pattern with low to moderate nuclear atypia and scattered psammoma bodies, a pattern that can mimic both low-grade and high-grade serous carcinoma. Foci of endometriosis were identified in the fallopian tube, indicating the possibility of endometriosis derivation. However, immunohistochemistry showed a mesonephric profile: the tumor was diffusely positive for PAX8, GATA3, and TTF-1, while negative for estrogen receptor (ER) and progesterone receptor (PR), with wild-type p53 expression. Next-generation sequencing revealed a KRAS p.G12V mutation, low tumor mutational burden, and microsatellite stability, confirming the diagnosis of MLA.\n\nDISCUSSION: This case underscores the diagnostic challenges of MLA, particularly its ability to masquerade as low-grade or high-grade serous carcinoma on morphology, including cytology, frozen, and permanent sections.\n\nCONCLUSION: We compare the cytologic, histologic, immunophenotypic, and molecular features of MLA and serous carcinoma, highlighting the importance of thorough evaluation to avoid the pitfall of morphology-only diagnosis.",
+  "year": "2025",
+  "journal": "International journal of surgery case reports",
+  "authors": [
+    "Lin W",
+    "Huang S",
+    "Zhou X",
+    "Qin L",
+    "Zheng W",
+    "Zhou F"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (stability[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR lysosome[Title/Abstract] OR autophagy[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/41541182/",
+    "publisher": "https://doi.org/10.1016/j.ijscr.2025.112106"
+  }
+}

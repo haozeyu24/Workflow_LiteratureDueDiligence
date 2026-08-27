@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-30720061",
+  "pmid": "30720061",
+  "doi": "10.3892/ijmm.2019.4086",
+  "title": "Bioinformatic analysis of next\u2011generation sequencing data to identify dysregulated genes in fibroblasts of idiopathic pulmonary fibrosis.",
+  "abstract": "Idiopathic pulmonary fibrosis (IPF) is a lethal fibrotic lung disease with an increasing global burden. It is hypothesized that fibroblasts have a number of functions that may affect the development and progression of IPF. However, the present understanding of cellular and molecular mechanisms associated with fibroblasts in IPF remains limited. The present study aimed to identify the dysregulated genes in IPF fibroblasts, elucidate their functions and explore potential microRNA (miRNA)\u2011mRNA interactions. mRNA and miRNA expression profiles were obtained from IPF fibroblasts and normal lung fibroblasts using a next\u2011generation sequencing platform, and bioinformatic analyses were performed in a step\u2011wise manner. A total of 42 dysregulated genes (>2 fold\u2011change of expression) were identified, of which 5 were verified in the Gene Expression Omnibus (GEO) database analysis, including the upregulation of neurotrimin (NTM), paired box 8 (PAX8) and mesoderm development LRP chaperone, and the downregulation of ITPR interacting domain containing 2 and Inka box actin regulator 2 (INKA2). Previous data indicated that PAX8 and INKA2 serve roles in cell growth, proliferation and survival. Gene Ontology analysis indicated that the most significant function of these 42 dysregulated genes was associated with the composition and function of the extracellular matrix (ECM). A total of 60 dysregulated miRNAs were also identified, and 1,908 targets were predicted by the miRmap database. The integrated analysis of mRNA and miRNA expression data, combined with GEO verification, finally identified Homo sapiens (hsa)\u2011miR\u20111254\u2011INKA2 and hsa\u2011miR\u2011766\u20113p\u2011INKA2 as the potential miRNA\u2011mRNA interactions in IPF fibroblasts. In summary, the results of the present study suggest that dysregulation of PAX8, hsa\u2011miR\u20111254\u2011INKA2 and hsa\u2011miR\u2011766\u20113p\u2011INKA2 may promote the proliferation and survival of IPF fibroblasts. In the functional analysis of the dysregulated genes, a marked association between fibroblasts and the ECM was identified. These data improve the current understanding of fibroblasts as key cells in the pathogenesis of IPF. As a screening study using bioinformatics approaches, the results of the present study require additional validation.",
+  "year": "2019",
+  "journal": "International journal of molecular medicine",
+  "authors": [
+    "Sheu CC",
+    "Chang WA",
+    "Tsai MJ",
+    "Liao SH",
+    "Chong IW",
+    "Kuo PL"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (stability[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR lysosome[Title/Abstract] OR autophagy[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract])",
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/30720061/",
+    "publisher": "https://doi.org/10.3892/ijmm.2019.4086"
+  }
+}

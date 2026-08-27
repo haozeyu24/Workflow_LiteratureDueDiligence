@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-21421876",
+  "pmid": "21421876",
+  "doi": "10.1167/iovs.10-5859",
+  "title": "A functional polymorphism at 3'UTR of the PAX6 gene may confer risk for extreme myopia in the Chinese.",
+  "abstract": "PURPOSE: The paired box 6 (PAX6) is involved in eye development and associated with several ocular diseases. Conflicting results have been reported regarding the association between PAX6 polymorphism and myopia. This case-control study and functional assay were conducted to identified a functional risk polymorphism for myopia.\n\nMETHODS: The study cohort included 1083 cases (\u2264 -6.0 D) and 1096 controls (\u2265 -1.5 D) from a Chinese population residing in Taiwan. Four common tag single-nucleotide polymorphisms (SNPs) and an SNP at the 3' untranslated region (UTR) were selected. Secondary analyses were conducted in which cases and controls were redefined based on different spherical refractions. Permutation was used to adjust for multiple testing. The luciferase reporter assay was conducted for the 3'UTR SNP to assess the allelic effect on gene expression.\n\nRESULTS: SNPs rs644242 and rs662702 had marginal significance (P = 0.063), and further analyses showed that these SNPs were associated with extreme myopia (\u2264 -11 D). The OR for extreme myopia was 2.1 (empiric P = 0.007) for the CC genotype at SNP rs662702 at the 3'UTR. The functional assay for SNP rs662702 demonstrated that the C allele had a significantly lower expression level than did the T allele (P = 0.0001). SNP rs662702 was predicted to be located in the microRNA-328 binding site, which may explain the differential allelic effect on gene expression. CONCLUSIONS; In this study, a functional SNP was identified at the 3'UTR that influences the risk for extreme myopia. The functional assay suggested that the risk allele can reduce PAX6 protein levels which significantly increases the risk for myopia.",
+  "year": "2011",
+  "journal": "Investigative ophthalmology & visual science",
+  "authors": [
+    "Liang CL",
+    "Hsi E",
+    "Chen KC",
+    "Pan YR",
+    "Wang YS",
+    "Juo SH"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/21421876/",
+    "publisher": "https://doi.org/10.1167/iovs.10-5859"
+  }
+}

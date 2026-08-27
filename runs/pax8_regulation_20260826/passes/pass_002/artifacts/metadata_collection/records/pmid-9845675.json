@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-9845675",
+  "pmid": "9845675",
+  "doi": "10.1677/jme.0.0210347",
+  "title": "Pax-8 protein levels regulate thyroglobulin gene expression.",
+  "abstract": "Pax proteins are transcription factors that control differentiation of several cell types. In adult organisms Pax-8 is expressed in the follicular thyroid cell where it interacts with sequences of thyroglobulin and thyroperoxidase promoters. In this study, we provide evidence indicating that Pax-8 protein levels regulate thyroglobulin gene transcription. The most critical approach consisted in increasing Pax-8 protein levels by transfecting thyroid cells with a Pax-8 expression vector. In this situation the thyroglobulin promoter transcriptional activity was significantly increased with respect to untransfected cells. In contrast, the transfection of thyroid transcription factor-1 (TTF-1) expression vector causes a modest decrease of thyroglobulin promoter activity, rather than an increase. Northern blots of human papillary cancers reveal a significant correlation between Pax-8 and thyroglobulin mRNAs. Gel-retardation assays suggest that the mechanism by which the Pax-8 protein levels modulate thyroglobulin promoter activity may occur through competition with TTF-1 for a common binding site. Since we also demonstrate that Pax-8 expression is subjected to TSH control, our data strongly suggest that Pax-8 protein levels could represent an important determinant for the regulation of thyroid cells.",
+  "year": "1998",
+  "journal": "Journal of molecular endocrinology",
+  "authors": [
+    "Fabbro D",
+    "Pellizzari L",
+    "Mercuri F",
+    "Tell G",
+    "Damante G"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (\"protein stability\"[Title/Abstract] OR \"protein levels\"[Title/Abstract] OR stabilization[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract]) NOT \"PAX8-AS1\"[Title/Abstract]"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/9845675/",
+    "publisher": "https://doi.org/10.1677/jme.0.0210347"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-33338475",
+  "pmid": "33338475",
+  "doi": "10.1016/j.bcp.2020.114371",
+  "title": "Nucleic acids therapeutics using PolyPurine Reverse Hoogsteen hairpins.",
+  "abstract": "PolyPurine Reverse Hoogsteen hairpins (PPRHs) are DNA hairpins formed by intramolecular reverse Hoogsteen bonds which can bind to polypyrimidine stretches in dsDNA by Watson:Crick bonds, thus forming a triplex and displacing the fourth strand of the DNA complex. PPRHs were first described as a gene silencing tool in vitro for DHFR, telomerase and survivin genes. Then, the effect of PPRHs directed against the survivin gene was also determined in vivo using a xenograft model of prostate cancer cells (PC3). Since then, the ability of PPRHs to inhibit gene expression has been explored in other genes involved in cancer (BCL-2, mTOR, topoisomerase, C-MYC and MDM2), in immunotherapy (SIRP\u03b1/CD47 and PD-1/PD-L1 tandem) or in replication stress (WEE1 and CHK1). Furthermore, PPRHs have the ability to target the complementary strand of a G-quadruplex motif as a regulatory element of the TYMS gene. PPRHs have also the potential to correct point mutations in the DNA as shown in two collections of CHO cell lines bearing mutations in either the dhfr or aprt loci. Finally, based on the capability of PPRHs to form triplexes, they have been incorporated as probes in biosensors for the determination of the DNA methylation status of PAX-5 in cancer and the detection of mtLSU rRNA for the diagnosis of Pneumocystis jirovecii. Of note, PPRHs have high stability and do not present immunogenicity, hepatotoxicity or nephrotoxicity in vitro. Overall, PPRHs constitute a new economical biotechnological tool with multiple biomedical applications.",
+  "year": "2021",
+  "journal": "Biochemical pharmacology",
+  "authors": [
+    "No\u00e9 V",
+    "Aubets E",
+    "F\u00e9lix AJ",
+    "Ciudad CJ"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/33338475/",
+    "publisher": "https://doi.org/10.1016/j.bcp.2020.114371"
+  }
+}

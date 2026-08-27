@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-25127661",
+  "pmid": "25127661",
+  "doi": "10.1016/j.biochi.2014.07.025",
+  "title": "Critical roles of DNase1l3l in lens nuclear degeneration in zebrafish.",
+  "abstract": "The vertebrate lens undergoes organelle and nuclear degradation during lens development, allowing the lens to become transparent. DNase2b is an enzyme responsible for nuclear degradation in the mouse lens; however, dnase2b expression in zebrafish showed a distribution pattern that differed from that in mice. No zebrafish dnase2b was detected by reverse-transcription polymerase chain reaction until around 120 h postfertilization (hpf), suggesting that dnase2b is not expressed in the critical period for lens nuclear degradation, which corresponds to 56-74 hpf. However, public database searches have indicated that dnase1l3l is strongly and specifically expressed in embryonic zebrafish lens. Whole mount in situ hybridization showed that dnase1l3l expression began around 36 hpf and was found exclusively in the lens until the adult stage. Morpholino (MO)-dependent downregulation of dnase1l3l expression during early development in zebrafish led to the failure of nuclear degradation in the lens. Immunostaining of lens sections showed that expression of Pax6, Prox1 and \u03b2-catenin was comparable to the control in the early stage of development in dnase1l3l-MO injected embryos. However, downregulation of expression of these genes in lens was not observed in dnase1l3l-MO-treated zebrafish at 72 hpf, suggesting that the lens development was halted. Taken together, we showed that dnase1l3l plays major roles in nuclear degradation in zebrafish lens development. No homologous gene was found in other species in public databases, suggesting that dnase1l3l developed and acquired its function specifically in zebrafish.",
+  "year": "2014",
+  "journal": "Biochimie",
+  "authors": [
+    "Iida A",
+    "Tabata Y",
+    "Baba Y",
+    "Fujii T",
+    "Watanabe S"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/25127661/",
+    "publisher": "https://doi.org/10.1016/j.biochi.2014.07.025"
+  }
+}

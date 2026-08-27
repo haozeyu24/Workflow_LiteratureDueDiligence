@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-40055736",
+  "pmid": "40055736",
+  "doi": "10.1186/s13045-025-01680-8",
+  "title": "Disruption of the sorcin\u2012PAX5 protein\u2012protein interaction induces ferroptosis by promoting the FBXL12-mediated ubiquitination of ALDH1A1 in pancreatic cancer.",
+  "abstract": "BACKGROUND: Pancreatic cancer is one of the most malignant cancers, and limited therapeutic options are available. The induction of ferroptosis is considered to be a novel, promising strategy that has potential in cancer treatment, and ferroptosis inducers may be new options for eradicating malignant cancers that are resistant to traditional drugs. The exact mechanism underlying the function of sorcin in the initiation and progression of pancreatic cancer remains unclear.\n\nMETHODS: The expression of sorcin in cancer tissues was assessed by analyzing TCGA, GEO and immunohistochemical staining data, and the function of sorcin in the induction of ferroptosis in pancreatic cancer cells was investigated. The mechanism underlying the function of sorcin was revealed through proteomics, co-IP, Ch-IP, and luciferase assays. Natural product screening was subsequently performed to screen for products that interact with sorcin to identify new ferroptosis inducers.\n\nRESULTS: We first showed that sorcin expression was positively correlated with the survival and tumor stages of patients with pancreatic cancer, and we revealed that sorcin inhibited ferroptosis through its noncalcium binding function. Furthermore, we discovered that sorcin interacted with PAX5 in the cytoplasm and inhibited PAX5 nuclear translocation, which in turn decreased FBXL12 protein expression and then reduced ALDH1A1 ubiquitination, thus inhibiting ferroptosis. Moreover, an in-house natural product screen revealed that celastrol inhibited the interaction of sorcin and PAX5 by directly binding to the Cys194 residue of the sorcin protein; disruption of the sorcin-PAX5 interaction promoted the nuclear translocation of PAX5, induced the expression of FBXL12, increased the ubiquitylation of ALDH1A1, and eventually induced ferroptosis in pancreatic cancer cells.\n\nCONCLUSION: In this study, we revealed the mechanism of action of sorcin, which is a druggable target for inducing ferroptosis, we identified celastrol as a novel agent that induces ferroptosis, and we showed that disrupting the sorcin-PAX5 interaction is a promising therapeutic strategy for treating pancreatic cancer.",
+  "year": "2025",
+  "journal": "Journal of hematology & oncology",
+  "authors": [
+    "Ding Y",
+    "Bai Y",
+    "Chen T",
+    "Chen S",
+    "Feng W",
+    "Ma S",
+    "Zhang Q"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/40055736/",
+    "publisher": "https://doi.org/10.1186/s13045-025-01680-8"
+  }
+}

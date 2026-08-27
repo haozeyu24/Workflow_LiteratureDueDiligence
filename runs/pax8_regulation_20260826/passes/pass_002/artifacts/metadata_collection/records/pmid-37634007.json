@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-37634007",
+  "pmid": "37634007",
+  "doi": "10.1038/s41388-023-02815-2",
+  "title": "Thyroid hormone receptor \u03b11: a novel regulator of thyroid cancer cell differentiation.",
+  "abstract": "Thyroid hormone receptor \u03b11 (TR\u03b11) mediates the genomic actions of thyroid hormone (T3). The biology of TR\u03b11 in growth and development has been well studied, but the functional role of TR\u03b11 in cancers remains to be elucidated. Analysis of the human thyroid cancer database of The Cancer Genome Atlas (TCGA) showed that THRA gene expression is lost in highly dedifferentiated anaplastic thyroid cancer (ATC). We, therefore, explored the effects of TR\u03b11 on the progression of ATC. We stably expressed TR\u03b11 in two human ATC cell lines, THJ-11T (11T-TR\u03b11 #2, #7, and #8) and THJ-16T (16T-TR\u03b11 #3, #4, and #8) cells. We found that the expressed TR\u03b11 inhibited ATC cell proliferation and induced apoptosis. TCGA data showed that THRA gene expression was best correlated with the paired box gene 8 (PAX8). Consistently, we found that the PAX8 expression was barely detectable in parental 11T and 16T cells. However, PAX8 gene expression was elevated in 11T- and 16T-TR\u03b11-expressing cells at the mRNA and protein levels. Using various molecular analyses, we found that TR\u03b11 directly regulated the expression of the PAX8 gene. Single-cell transcriptomic analyses (scRNA-seq) demonstrated that TR\u03b11 functions as a transcription factor through multiple signaling pathways to suppress tumor growth. Importantly, scRNA-seq analysis showed that TR\u03b11-induced PAX8, via its transcription program, shifts the cell landscape of ATC toward a differentiated state. The present studies suggest that TR\u03b11 is a newly identified regulator of thyroid differentiation and could be considered as a potential therapeutic target to improve the outcome of ATC patients.",
+  "year": "2023",
+  "journal": "Oncogene",
+  "authors": [
+    "Hwang E",
+    "Doolittle WKL",
+    "Zhu YJ",
+    "Zhu X",
+    "Zhao L",
+    "Yu Y",
+    "Cheng SY"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (\"protein stability\"[Title/Abstract] OR \"protein levels\"[Title/Abstract] OR stabilization[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract]) NOT \"PAX8-AS1\"[Title/Abstract]"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/37634007/",
+    "publisher": "https://doi.org/10.1038/s41388-023-02815-2"
+  }
+}

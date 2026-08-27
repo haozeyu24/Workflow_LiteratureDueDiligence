@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-32010341",
+  "pmid": "32010341",
+  "doi": "10.3892/etm.2019.8392",
+  "title": "Regulation of immune response by S-1-propenylcysteine through autophagy-mediated protein degradation.",
+  "abstract": "Autophagy is a key event in cellular recycling processes due to its involvement in the intracellular degradation of proteins. It has been demonstrated that S-1-propenylcysteine (S1PC), a characteristic sulfur compound in aged garlic extract, induces the activation of autophagy. S1PC degrades the adaptor protein myeloid differentiation response protein 88 (MyD88) of downstream of Toll-like receptor (TLR) by activating autophagy in vitro and in vivo. The degradation of MyD88 inhibits the TLR signaling pathway, including the phosphorylation of interleukin 1 receptor associated kinase 4 (IRAK4) and nuclear factor (NF)-\u03baB p65 in vitro, and eventually leads to the inhibition of interleukin (IL)-6 production in vitro and C-C motif chemokine ligand 2 (Ccl2) mRNA expression in vivo. S1PC also increases the level of intestinal immunoglobulin A (IgA) and the number of IgA-producing cells in Peyer's patches in vivo. In addition, S1PC triggers the mRNA expression of X-box binding protein 1 (Xbp1), an inducer of IgA-producing cell differentiation via the phosphorylation of extracellular signal-regulated kinase (ERK)1/2 and the degradation of paired box protein 5 (Pax5), a suppressor of Xbp1 mRNA expression. The present review summarizes the mechanisms through which the activation of autophagy by S1PC modulates the immune response.",
+  "year": "2020",
+  "journal": "Experimental and therapeutic medicine",
+  "authors": [
+    "Suzuki JI",
+    "Miki S",
+    "Ushijima M",
+    "Kodera Y"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/32010341/",
+    "publisher": "https://doi.org/10.3892/etm.2019.8392"
+  }
+}

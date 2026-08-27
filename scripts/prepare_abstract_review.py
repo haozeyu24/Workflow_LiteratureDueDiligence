@@ -6,6 +6,8 @@ import csv
 import sys
 from pathlib import Path
 
+from pass_archive import active_artifacts_dir
+
 
 WORKFLOW_ROOT = Path(__file__).resolve().parents[1]
 RUNS_DIR = WORKFLOW_ROOT / "runs"
@@ -36,8 +38,9 @@ def main() -> int:
 
     run_id = sys.argv[1].strip()
     run_dir = RUNS_DIR / run_id
-    manifest_path = run_dir / "artifacts" / "metadata_collection" / "paper_manifest.csv"
-    review_path = run_dir / "artifacts" / "abstract_review" / "abstract_review.csv"
+    artifacts_dir = active_artifacts_dir(run_dir)
+    manifest_path = artifacts_dir / "metadata_collection" / "paper_manifest.csv"
+    review_path = artifacts_dir / "abstract_review" / "abstract_review.csv"
 
     if not manifest_path.exists():
         print(f"Manifest not found: {manifest_path}")

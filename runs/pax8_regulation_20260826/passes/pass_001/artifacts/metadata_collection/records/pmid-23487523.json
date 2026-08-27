@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-23487523",
+  "pmid": "23487523",
+  "doi": "10.3390/cancers4041050",
+  "title": "Mouse Lymphoblastic Leukemias Induced by Aberrant Prdm14 Expression Demonstrate Widespread Copy Number Alterations Also Found in Human ALL.",
+  "abstract": "Aberrant expression and activation of oncogenes in somatic cells has been associated with cancer initiation. Required for reacquisition of pluripotency in the developing germ cell, PRDM14 initiates lymphoblastic leukemia when misexpressed in murine bone marrow. Activation of pluripotency in somatic cells can lead to aneuploidy and copy number alterations during iPS cell generation, and we hypothesized that PRDM14-induced lymphoblastic leukemias would demonstrate significant chromosomal damage. High-resolution oligo array comparative genomic hybridization demonstrated infrequent aneuploidy but frequent amplification and deletion, with amplifications occurring in a 5:1 ratio with deletions. Many deletions (i.e., Cdkn2a, Ebf1, Pax5, Ikzf1) involved B-cell development genes and tumor suppressor genes, recapitulating deletions occurring in human leukemia. Pathways opposing senescence were frequently deactivated via Cdkn2a deletion or Tbx2 amplification, with corollary gene expression. Additionally, gene expression studies of abnormal pre-leukemic B-precursors showed downregulation of genes involved in chromosomal stability (i.e., Xrcc6) and failure to upregulate DNA repair pathways. We propose a model of leukemogenesis, triggered by pluripotency genes like Prdm14, which involves ongoing DNA damage and failure to activate non-homologous end-joining secondary to aberrant gene expression.",
+  "year": "2012",
+  "journal": "Cancers",
+  "authors": [
+    "Simko SJ",
+    "Voicu H",
+    "Carofino BL",
+    "Justice MJ"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/23487523/",
+    "publisher": "https://doi.org/10.3390/cancers4041050"
+  }
+}

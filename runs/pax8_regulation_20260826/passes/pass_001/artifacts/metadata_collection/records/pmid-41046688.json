@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-41046688",
+  "pmid": "41046688",
+  "doi": "10.1016/j.scr.2025.103844",
+  "title": "Generation and validation of a iPSC line from a healthy female donor using integration-free Sendai virus reprogramming.",
+  "abstract": "We generated a characterized integration-free iPSC line derived via Sendai virus reprogramming from healthy female donor PBMCs. This method preserves genomic integrity and pluripotent potential. Validated markers include nuclear/membrane-bound OCT4, SOX2, NANOG/SSEA4, TRA-1-60 (qPCR/immunocytochemistry) and tri-lineage differentiation capacity confirmed via immunofluorescence (endodermal FOXA2/SOX17, mesodermal BRACHYURY/NKX2.5, ectodermal PAX6/NESTIN). Normal karyotype (46,XX) confirmed genetic stability. Sendai clearance by P10 and mycoplasma-negative status ensured biosafety. This non-integrative iPSC line provides a robust control resource for disease modeling and regenerative medicine.",
+  "year": "2025",
+  "journal": "Stem cell research",
+  "authors": [
+    "Chen Y",
+    "Shi X",
+    "Long W",
+    "Shao Q",
+    "Yu H"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/41046688/",
+    "publisher": "https://doi.org/10.1016/j.scr.2025.103844"
+  }
+}

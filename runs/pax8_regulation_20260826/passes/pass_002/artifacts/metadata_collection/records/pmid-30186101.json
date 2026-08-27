@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-30186101",
+  "pmid": "30186101",
+  "doi": "10.3389/fnins.2018.00571",
+  "title": "The Epigenetic Factor Landscape of Developing Neocortex Is Regulated by Transcription Factors Pax6\u2192 Tbr2\u2192 Tbr1.",
+  "abstract": "Epigenetic factors (EFs) regulate multiple aspects of cerebral cortex development, including proliferation, differentiation, laminar fate, and regional identity. The same neurodevelopmental processes are also regulated by transcription factors (TFs), notably the Pax6\u2192 Tbr2\u2192 Tbr1 cascade expressed sequentially in radial glial progenitors (RGPs), intermediate progenitors, and postmitotic projection neurons, respectively. Here, we studied the EF landscape and its regulation in embryonic mouse neocortex. Microarray and in situ hybridization assays revealed that many EF genes are expressed in specific cortical cell types, such as intermediate progenitors, or in rostrocaudal gradients. Furthermore, many EF genes are directly bound and transcriptionally regulated by Pax6, Tbr2, or Tbr1, as determined by chromatin immunoprecipitation-sequencing and gene expression analysis of TF mutant cortices. Our analysis demonstrated that Pax6, Tbr2, and Tbr1 form a direct feedforward genetic cascade, with direct feedback repression. Results also revealed that each TF regulates multiple EF genes that control DNA methylation, histone marks, chromatin remodeling, and non-coding RNA. For example, Tbr1 activates Rybp and Auts2 to promote the formation of non-canonical Polycomb repressive complex 1 (PRC1). Also, Pax6, Tbr2, and Tbr1 collectively drive massive changes in the subunit isoform composition of BAF chromatin remodeling complexes during differentiation: for example, a novel switch from Bcl7c (Baf40c) to Bcl7a (Baf40a), the latter directly activated by Tbr2. Of 11 subunits predominantly in neuronal BAF, 7 were transcriptionally activated by Pax6, Tbr2, or Tbr1. Using EFs, Pax6\u2192 Tbr2\u2192 Tbr1 effect persistent changes of gene expression in cell lineages, to propagate features such as regional and laminar identity from progenitors to neurons.",
+  "year": "2018",
+  "journal": "Frontiers in neuroscience",
+  "authors": [
+    "Elsen GE",
+    "Bedogni F",
+    "Hodge RD",
+    "Bammler TK",
+    "MacDonald JW",
+    "Lindtner S",
+    "Rubenstein JLR",
+    "Hevner RF"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/30186101/",
+    "publisher": "https://doi.org/10.3389/fnins.2018.00571"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-26148883",
+  "pmid": "26148883",
+  "doi": "10.1007/s11626-015-9921-z",
+  "title": "Induction of human umbilical Wharton's jelly-derived mesenchymal stem cells toward motor neuron-like cells.",
+  "abstract": "The most important property of stem cells from different sources is the capacity to differentiate into various cells and tissue types. However, problems including contamination, normal karyotype, and ethical issues cause many limitations in obtaining and using these cells from different sources. The cells in Wharton's jelly region of umbilical cord represent a pool source of primitive cells with properties of mesenchymal stem cells (MSCs). The aim of this study was to determine the potential of human Wharton's jelly-derived mesenchymal stem cells (WJMSCs) for differentiation to motor neuron cells. WJMSCs were induced to differentiate into motor neuron-like cells by using different signaling molecules and neurotrophic factors in vitro. Differentiated neurons were then characterized for expression of motor neuron markers including nestin, PAX6, NF-H, Islet 1, HB9, and choline acetyl transferase (ChAT) by quantitative reverse transcription PCR and immunocytochemistry. Our results showed that differentiated WJMSCs could significantly express motor neuron biomarkers in RNA and protein levels 15 d post induction. These results suggested that WJMSCs can differentiate to motor neuron-like cells and might provide a potential source in cell therapy for neurodegenerative disease.",
+  "year": "2015",
+  "journal": "In vitro cellular & developmental biology. Animal",
+  "authors": [
+    "Bagher Z",
+    "Ebrahimi-Barough S",
+    "Azami M",
+    "Mirzadeh H",
+    "Soleimani M",
+    "Ai J",
+    "Nourani MR",
+    "Joghataei MT"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/26148883/",
+    "publisher": "https://doi.org/10.1007/s11626-015-9921-z"
+  }
+}

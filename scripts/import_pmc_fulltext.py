@@ -11,12 +11,15 @@ import urllib.parse
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
+from pass_archive import active_artifacts_dir
+
 
 WORKFLOW_ROOT = Path(__file__).resolve().parents[1]
 RUNS_DIR = WORKFLOW_ROOT / "runs"
 NCBI_EFETCH_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi"
 REQUEST_PAUSE_SECONDS = 0.34
 MIN_BODY_CHARS = 1000
+STATUS_WRITE_INTERVAL = 25
 
 MANUAL_PDF_FIELDS = [
     "paper_id",
@@ -144,6 +147,14 @@ def write_manual_pdf_queue(path: Path, rows: list[dict[str, str]]) -> None:
         writer.writerows(rows)
 
 
+def write_import_status(path: Path, rows: list[dict[str, str]]) -> None:
+    with path.open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.DictWriter(handle, fieldnames=rows[0].keys() if rows else [])
+        if rows:
+            writer.writeheader()
+            writer.writerows(rows)
+
+
 def delete_if_exists(path: Path) -> None:
     if path.exists():
         path.unlink()
@@ -156,7 +167,7 @@ def main() -> int:
 
     run_id = sys.argv[1].strip()
     run_dir = RUNS_DIR / run_id
-    import_dir = run_dir / "artifacts" / "fulltext_import"
+    import_dir = active_artifacts_dir(run_dir) / "fulltext_import"
     import_path = import_dir / "import_status.csv"
     manual_pdf_path = import_dir / "manual_pdf_queue.csv"
     pmc_xml_dir = import_dir / "PMC_XML"
@@ -173,7 +184,7 @@ def main() -> int:
     usable = 0
     unusable = 0
 
-    for row in rows:
+    for index, row in enumerate(rows, start=1):
         pmcid = row.get("pmcid", "") or ""
         if row.get("pmc_access_status", "") != "available" or not pmcid:
             row["pmc_access_status"] = "missing"
@@ -192,7 +203,7 @@ def main() -> int:
                     "preferred_source": "publisher_pdf_or_user_download",
                     "notes": row.get("notes", ""),
                 }
-            )
+                )
             continue
 
         xml_path = pmc_xml_dir / f"{pmcid}.xml"
@@ -262,12 +273,17 @@ def main() -> int:
                 }
             )
 
-    with import_path.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=rows[0].keys() if rows else [])
-        if rows:
-            writer.writeheader()
-            writer.writerows(rows)
+        if index % STATUS_WRITE_INTERVAL == 0:
+            write_import_status(import_path, rows)
+            write_manual_pdf_queue(manual_pdf_path, manual_pdf_rows)
+            print(
+                f"PMC import progress: processed={index}/{len(rows)} "
+                f"downloaded={downloaded} normalized={normalized} "
+                f"usable={usable} unusable={unusable} pdf_queue={len(manual_pdf_rows)}",
+                flush=True,
+            )
 
+    write_import_status(import_path, rows)
     write_manual_pdf_queue(manual_pdf_path, manual_pdf_rows)
 
     print(

@@ -1,0 +1,29 @@
+{
+  "paper_id": "pmid-42533389",
+  "pmid": "42533389",
+  "doi": "10.1111/acel.70651",
+  "title": "Diosgenin Alleviates Age-Related Sarcopenia by Promoting Satellite Cell Proliferation and Myogenic Differentiation via Activation of the SIRT1/PGC-1\u03b1 Signaling Pathway.",
+  "abstract": "Age-related sarcopenia is characterized by a progressive decline in skeletal muscle mass and function, with satellite cell dysfunction representing a central pathogenic mechanism. Diosgenin, a steroidal saponin derived from plants of the Dioscorea genus, has demonstrated potential anti-aging properties; however, its role in sarcopenia remains unclear. In this study, naturally aged C57BL/6J mice and a D-galactose (D-gal)-induced senescent C2C12 cell model were employed to systematically investigate the effects of diosgenin on muscle function, satellite cell dynamics, and the sirtuin 1 (SIRT1)/peroxisome proliferator-activated receptor gamma coactivator-1 alpha (PGC-1\u03b1) signaling pathway. Diosgenin treatment significantly improved forelimb grip strength and exercise endurance, increased the gastrocnemius muscle index, and enlarged muscle fiber cross-sectional area in aged mice. Mechanistically, diosgenin upregulated the expression of myokines meteorin-like protein (METRNL) and insulin-like growth factor 1 (IGF-1) at both mRNA and protein levels, increased the number of proliferative satellite cells positive for paired box\u00a07 (Pax7) and Ki67, and enhanced the expression of myogenic markers, including myogenic factor 5 (Myf5), Pax7, and myosin heavy chain II (MyHC II). These effects were mediated by direct activation of SIRT1, leading to deacetylation of PGC-1\u03b1. Notably, pharmacological inhibition of SIRT1 with EX527 markedly abrogated the diosgenin-induced effects. Molecular docking and cellular thermal shift assays further confirmed the direct interaction between diosgenin and SIRT1. Collectively, these findings demonstrate that diosgenin alleviates age-related sarcopenia by activating the SIRT1/PGC-1\u03b1 signaling pathway to promote satellite cell proliferation and myogenic differentiation, highlighting its potential as a promising therapeutic candidate for sarcopenia.",
+  "year": "2026",
+  "journal": "Aging cell",
+  "authors": [
+    "Zeng X",
+    "Ding H",
+    "Li Z",
+    "Wang Q",
+    "Guan P",
+    "Wang T",
+    "Wang J",
+    "Fu Y",
+    "Chen L",
+    "Qin H"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42533389/",
+    "publisher": "https://doi.org/10.1111/acel.70651"
+  }
+}

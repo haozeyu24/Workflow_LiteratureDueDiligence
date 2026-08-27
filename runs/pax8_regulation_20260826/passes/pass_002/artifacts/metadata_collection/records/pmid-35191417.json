@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-35191417",
+  "pmid": "35191417",
+  "doi": "10.1097/CM9.0000000000002018",
+  "title": "Paired box 5 increases the chemosensitivity of esophageal squamous cell cancer cells by promoting p53 signaling activity.",
+  "abstract": "BACKGROUND: Gene promoter methylation is a major epigenetic change in cancers, which plays critical roles in carcinogenesis. As a crucial regulator in the early stages of B-cell differentiation and embryonic neurodevelopment, the paired box 5 (PAX5) gene is downregulated by methylation in several kinds of tumors and the role of this downregulation in esophageal squamous cell carcinoma (ESCC) pathogenesis remains unclear.\n\nMETHODS: To elucidate the role of PAX5 in ESCC, eight ESCC cell lines, 51 primary ESCC tissue samples, and eight normal esophageal mucosa samples were studied and The Cancer Genome Atlas (TCGA) was queried. PAX5 expression was examined by reverse transcription-polymerase chain reaction and western blotting. Cell apoptosis, proliferation, and chemosensitivity were detected by flow cytometry, colony formation assays, and 3-(4,5-dimethyl-2-thiazolyl)-2,5-diphenyl-2-H-tetrazolium bromide assays in ESCC cell lines with PAX5 overexpression or silencing. Tumor xenograft models were established for in vivo verification.\n\nRESULTS: PAX5 methylation was found in 37.3% (19/51) of primary ESCC samples, which was significantly associated with age (P\u200a=\u200a0.007) and tumor-node-metastasis stage (P\u200a=\u200a0.014). TCGA data analysis indicated that PAX5 expression was inversely correlated with promoter region methylation (r\u200a=\u200a-0.189, P\u200a=\u200a0.011 for cg00464519 and r\u200a=\u200a-0.228, P\u200a=\u200a0.002 for cg02538199). Restoration of PAX5 expression suppressed cell proliferation, promoted apoptosis, and inhibited tumor growth of ESCC cell lines, which was verified in xenografted mice. Ectopic PAX5 expression significantly increased p53 reporter luciferase activity and increased p53 messenger RNA and protein levels. A direct interaction of PAX5 with the p53 promoter region was confirmed by chromatin immunoprecipitation assays. Re-expression of PAX5 sensitized ESCC cell lines KYSE150 and KYSE30 to fluorouracil and docetaxel. Silencing of PAX5 induced resistance of KYSE450 cells to these drugs.\n\nCONCLUSIONS: As a tumor suppressor gene regulated by promoter region methylation in human ESCC, PAX5 inhibits proliferation, promotes apoptosis, and induces activation of p53 signaling. PAX5 may serve as a chemosensitive marker of ESCC.",
+  "year": "2022",
+  "journal": "Chinese medical journal",
+  "authors": [
+    "Zhang W",
+    "Yan W",
+    "Qian N",
+    "Han Q",
+    "Zhang W",
+    "Dai G"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/35191417/",
+    "publisher": "https://doi.org/10.1097/CM9.0000000000002018"
+  }
+}

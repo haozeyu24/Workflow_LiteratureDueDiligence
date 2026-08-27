@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-10807057",
+  "pmid": "10807057",
+  "doi": "10.1089/thy.2000.10.295",
+  "title": "Role of insulin and serum on thyrotropin regulation of thyroid transcription factor-1 and pax-8 genes expression in FRTL-5 thyroid cells.",
+  "abstract": "Thyrotropin (TSH), via its cyclic adenosine monophosphate (cAMP) signal, decreases thyrotropin receptor (TSHR) gene expression in FRTL-5 thyroid cells, whereas it increases expression of the thyroglobulin (Tg) gene. Despite the opposite effects of TSH on TSHR and Tg expression, both genes are positively controlled by thyroid transcription factor-1 (TTF-1) and evidence has accumulated that TSH can decrease TTF-1 mRNA levels. In this report, we further characterize the action of TSH on TTF-1 in order to understand its different activities on the TSHR and Tg genes better. The effect of TSH on the TSHR requires the presence of insulin and serum and we show here that also both factors are necessary for the TSH effect to decrease TTF-1 mRNA levels. The decrease is paralleled by a downregulation of TTF-1 protein levels as well as by a decrease in TTF-1/DNA complex when the TTF-1 site of the TSHR promoter was used as probe. Again, the decrease requires insulin and serum. The TSH downregulation of TTF-1 mRNA levels is due to a decrease in its transcription rate. Using a luciferase-linked chimera construct spanning 5.18 kb of the TTF-1 5'-flanking region, we show that TSH decreases TTF-1 promoter activity and that this effect depends on insulin and serum. These data contrast with the action of TSH on Tg and Pax-8 gene expression. TSH increases Pax-8 mRNA levels and the increase is evident whether insulin and serum are present or not. Moreover, this increase is paralleled by an increase in Pax-8 protein binding to an oligonucleotide derived from the C site of the Tg promoter, which can bind both TTF-1 and Pax-8. The present data thus show that TTF-1 gene expression is interdependently regulated by TSH and serum growth factors including insulin. They also show this interdependent-regulation is not duplicated in the case of Pax-8. We suggest that these differences may contribute to the distinct ability of TSH to regulate TSHR versus Tg gene expression in FRLT-5 thyroid cells.",
+  "year": "2000",
+  "journal": "Thyroid : official journal of the American Thyroid Association",
+  "authors": [
+    "Medina DL",
+    "Suzuki K",
+    "Pietrarelli M",
+    "Okajima F",
+    "Kohn LD",
+    "Santisteban P"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (\"protein stability\"[Title/Abstract] OR \"protein levels\"[Title/Abstract] OR stabilization[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract]) NOT \"PAX8-AS1\"[Title/Abstract]"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/10807057/",
+    "publisher": "https://doi.org/10.1089/thy.2000.10.295"
+  }
+}

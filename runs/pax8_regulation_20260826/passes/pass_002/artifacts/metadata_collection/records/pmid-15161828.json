@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-15161828",
+  "pmid": "15161828",
+  "doi": "10.1167/iovs.03-0908",
+  "title": "Expression of the alpha4 integrin subunit gene promoter is modulated by the transcription factor Pax-6 in corneal epithelial cells.",
+  "abstract": "PURPOSE: Expression of several membrane-bound integrins is thought to be altered during corneal wound healing as a consequence of the massive secretion of fibronectin occurring during this process. Examination of the alpha4 integrin subunit gene promoter revealed the presence of three putative binding sites for the transcription factor Pax-6 expressed in the basal cells of the corneal epithelium during corneal wound healing. This study was undertaken to investigate whether the alpha4 integrin subunit is expressed in primary cultures of rabbit corneal epithelial cells (RCECs) and to test whether Pax-6 binds the alpha4 gene promoter and regulates its transcriptional activity.\n\nMETHODS: Both flow cytometry and immunocytochemical analyses, along with an antibody-directed receptor interference assay, were used to examine expression of the alpha4 subunit in RCECs. Expression of Pax6 was investigated by immunoblot analysis. Binding of PAX6 to the alpha4 gene promoter was tested in electrophoretic mobility shift assays (EMSAs). The regulatory influence exerted by Pax6 on the alpha4 promoter was studied by transfections in RCECs.\n\nRESULTS: Expression of alpha4 was detected at both the mRNA and protein levels. Pax-6 was expressed in a cell-density-dependent manner in RCECs and altered the activity of the alpha4 promoter by interacting with multiple sites in both the promoter and 5'-flanking sequences. Pax-6 was also identified as the major protein component from the Bp5 complex, one of five protein complexes reported to bind the alpha4.1 element from the alpha4 basal promoter in vitro.\n\nCONCLUSIONS: These results provide evidence that the integrin subunit alpha4 and Pax-6 are coexpressed in RCECs and raise the possibility that Pax-6 directly regulates the expression of the alpha4 gene during corneal wound healing.",
+  "year": "2004",
+  "journal": "Investigative ophthalmology & visual science",
+  "authors": [
+    "Zaniolo K",
+    "Leclerc S",
+    "Cvekl A",
+    "Valli\u00e8res L",
+    "Bazin R",
+    "Larouche K",
+    "Gu\u00e9rin SL"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/15161828/",
+    "publisher": "https://doi.org/10.1167/iovs.03-0908"
+  }
+}

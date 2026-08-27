@@ -1,0 +1,20 @@
+{
+  "paper_id": "pmid-17595868",
+  "pmid": "17595868",
+  "doi": "",
+  "title": "[Morphogenesis and differentiation of the female genital tract. Genetic determinism and epithelium-stromal interactions].",
+  "abstract": "The epithelium-stromal interaction is important in the process of morphogenesis, differentiation, and hormone response, in female genital tract. This review is organized in four sections: i) female genital tract morphogenesis, based on genetic determinism; ii) hormonal control of endometrial proliferation; iii) TGF-beta key-role in epithelium-stromal communication; iv) endometrial apoptosis. Female genital tract derives from the M\u00fcllerian ducts, a number of genes being involved in its regulation, like Lim1, Lhx9, Emx, Pax-2, Hox-A9, Hox-A10, Hox-A11, Hox-A13, Wnt-4, Wnt-7, WT1, SF-1, and GATA-4. TGF-beta, whose expression is modulated by ovarian steroids, regulates cell growth, differentiation, apoptosis, inflammatory and immune responses, extracellular matrix deposition, adhesion molecules, proteases, and protease inhibitor expression. In the endometrium, TGF-beta regulates its own expression, and that of extracellular matrix, adhesion molecules and proteases implicated in trophoblast invasion, angiogenesis, and tumor metastasis during embryo implantation, endometriosis, irregular bleeding, and endometrial cancer. Cellular response elicited by TGF-beta, mediated through a serine/threonine kinase receptor, induces the recruitment of multiple intracellular signals, specifically Smads, whose activation and subsequent translocation into the nucleus results in gene expression. Ubiquitin is involved in the degradation of short lived, regulatory or misfolded proteins, by tagging them to be taken to the proteasome. In the endometrium, ubiquitin may allow cells of stromal origin to grow, survive and evade T-cell mediated disposal, showing a functional duality. A complete understanding of the complex regulatory endometrial epithelium-stromal mechanism, concertating genes, hormones, and cytokines, may provide new therapeutic targets in female reproductive tract pathology.",
+  "year": "2007",
+  "journal": "Revista medico-chirurgicala a Societatii de Medici si Naturalisti din Iasi",
+  "authors": [
+    "Am\u0103linei C"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/17595868/",
+    "publisher": ""
+  }
+}

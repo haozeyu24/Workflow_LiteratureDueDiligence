@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-35182440",
+  "pmid": "35182440",
+  "doi": "10.1111/eos.12855",
+  "title": "Patterns of molar agenesis associated with p.P20L and p.R77Q variants in PAX9.",
+  "abstract": "Nonsyndromic tooth agenesis is associated with variants in several genes. There are numerous genotype-phenotype publications involving many patients and kindreds. Here, we identified six Thai individuals in two families with nonsyndromic tooth agenesis, performed exome sequencing, and conducted functional experiments. Family 1 had four affected members carrying the heterozygous PAX9 variant, c.59C>T (p.Pro20Leu). The p.Pro20Leu was previously reported in two families having four and three affected members. These seven cases and Proband-1 had agenesis of at least three third molars. Family 2 comprised two affected members with agenesis of all 12 molars. Both individuals were heterozygous for c.230G>A (p.Arg77Gln) in PAX9, which has not been reported previously. This variant is predicted to be damaging, evolutionarily conserved, and resides in the PAX9 linking peptide. The BMP4 RNA levels in Proband-1's leukocytes were not significantly different from those in the controls, whereas BMP4 levels observed in Proband-2 were significantly increased. Moreover, the p.Arg77Gln variant demonstrated nuclear localization similar to the wild-type but resulted in significantly impaired transactivation of BMP4, a PAX9 downstream gene. In conclusion, we demonstrate that the PAX9 p.Pro20Leu is highly associated with absent third molars, while the novel PAX9 p.Arg77Gln impairs BMP4 transactivation and is associated with total molar agenesis.",
+  "year": "2022",
+  "journal": "European journal of oral sciences",
+  "authors": [
+    "Intarak N",
+    "Theerapanon T",
+    "Porntaveetus T",
+    "Shotelersuk V"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/35182440/",
+    "publisher": "https://doi.org/10.1111/eos.12855"
+  }
+}

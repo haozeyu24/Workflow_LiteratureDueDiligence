@@ -1,0 +1,28 @@
+{
+  "paper_id": "pmid-25799508",
+  "pmid": "25799508",
+  "doi": "10.1371/journal.pone.0119142",
+  "title": "Selective dicer suppression in the kidney alters GSK3\u03b2/\u03b2-catenin pathways promoting a glomerulocystic disease.",
+  "abstract": "Dicer is a crucial enzyme for the maturation of miRNAs. Mutations in the Dicer gene are highly associated with Pleuro Pulmonary Blastoma-Family Dysplasia Syndrome (PPB-FDS, OMIM 601200), recently proposed to be renamed Dicer syndrome. Aside from the pulmonary phenotype (blastoma), renal nephroma and thyroid goiter are frequently part of Dicer syndrome. To investigate the renal phenotype, conditional knockout (cKO) mice for Dicer in Pax8 expressing cells were generated. Dicer cKO mice progressively develop a glomerulocystic phenotype coupled with urinary concentration impairment, proteinuria and severe renal failure. Higher cellular turnover of the parietal cells of Bowman's capsule precedes the development of the cysts and the primary cilium progressively disappears with cyst-enlargement. Upregulation of GSK3\u03b2 precedes the development of the glomerulocystic phenotype. Downregulation of \u03b2-catenin in the renal cortex and its cytosolic removal in the cells lining the cysts may be associated with observed accumulation of GSK3\u03b2. Alterations of \u03b2-catenin regulating pathways could promote cystic degeneration as in other models. Thus, miRNAs are fundamental in preserving renal morphology and function. Alteration of the GSK3\u03b2/\u03b2-catenin pathway could be a crucial mechanism linking miRNA dysregulation and the development of a glomerulocystic disease.",
+  "year": "2015",
+  "journal": "PloS one",
+  "authors": [
+    "Iervolino A",
+    "Trepiccione F",
+    "Petrillo F",
+    "Spagnuolo M",
+    "Scarf\u00f2 M",
+    "Frezzetti D",
+    "De Vita G",
+    "De Felice M",
+    "Capasso G"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (stability[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR lysosome[Title/Abstract] OR autophagy[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/25799508/",
+    "publisher": "https://doi.org/10.1371/journal.pone.0119142"
+  }
+}

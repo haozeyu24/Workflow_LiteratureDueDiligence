@@ -1,0 +1,30 @@
+{
+  "paper_id": "pmid-35093813",
+  "pmid": "35093813",
+  "doi": "10.1016/j.ecoenv.2022.113248",
+  "title": "GLIS3 mediated by the Rap1/PI3K/AKT signal pathway facilitates real-ambient PM(2.5) exposure disturbed thyroid hormone homeostasis regulation.",
+  "abstract": "Exposure to fine particulate matter (PM2.5) could damage multiple organs and systems. Recent epidemiological studies have shown that PM2.5 can disrupt dynamic balance of thyroid hormone (TH). However, the underlying mechanism by which PM2.5 interferes with TH remains unclear. This study evaluated the role of Gli-similar3 (GLIS3) in the effect of PM2.5 on TH synthesis in mice using a real-ambient exposure system, in Shijiazhuang City, Hebei Province. The PM2.5exposure group (PM) and filtered air group (FA) were placed in the exposure device for four and eight weeks. The results showed that the PM2.5 exposure altered the structure of the thyroid gland. Moreover, after PM2.5 exposure for eight weeks, the exposure level of free thyroxine (FT4) increased and the expression level of thyroid stimulating hormone (TSH) decreased in serum of mice. In addition, PM2.5 exposure significantly increased the expression of proteins related to thyroid hormone synthesis, such as sodium iodide transporter (NIS), thyroid peroxidase (TPO) and thyroglobulin (TG). Next, we found that GLIS3 and thyroid transcription factor Paired box 8 (PAX8) also increased after PM2.5 exposure. In order to further explore the potential molecular mechanism, we carried out transcriptome sequencing. KEGG analysis of the top 10 pathways revealed that the Ras-associated protein 1 (Rap1) signaling pathway could activate transcription factors and is related to thyroid cell survival. Additionally, PM2.5 exposure significantly increased the protein levels of Rap1 and its active form (Rap1\u00a0+GTP). We speculate that the active state of Rap1 is believed to be involved in activating the expression of transcription factor GLIS3. In conclusion, PM2.5 exposure induces histological changes in the thyroid gland and thyroid dysfunction in mice. The exposure activates GLIS3 through the Rap1/PI3K/AKT pathway to promote the expression of proteins related to thyroid hormone synthesis, leading to increased dysregulating TH homeostasis.",
+  "year": "2022",
+  "journal": "Ecotoxicology and environmental safety",
+  "authors": [
+    "Tang S",
+    "Li D",
+    "Ding H",
+    "Jiang M",
+    "Zhao Y",
+    "Yu D",
+    "Zhang R",
+    "Chen W",
+    "Chen R",
+    "Zheng Y",
+    "Piao J"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (\"protein stability\"[Title/Abstract] OR \"protein levels\"[Title/Abstract] OR stabilization[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract]) NOT \"PAX8-AS1\"[Title/Abstract]"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/35093813/",
+    "publisher": "https://doi.org/10.1016/j.ecoenv.2022.113248"
+  }
+}

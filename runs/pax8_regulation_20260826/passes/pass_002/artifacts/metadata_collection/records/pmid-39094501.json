@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-39094501",
+  "pmid": "39094501",
+  "doi": "10.1016/j.psj.2024.104075",
+  "title": "In ovo betaine injection improves breast muscle growth in newly hatched goslings through FXR/IGF-2 pathway.",
+  "abstract": "Betaine has been shown to enhance growth performance and increase breast muscle yield in ducks and broilers through various mechanisms, including the modification of DNA methylation. However, the impact of in ovo betaine injection on muscle growth in newly hatched goslings remains unclear. In this study, fifty eggs were injected with saline or betaine at 7.5 mg/egg prior to incubation, and the subsequent effects on breast muscle growth in the newly hatched goslings were investigated. Betaine significantly increased (P < 0.05) the hatch weight, breast muscle weight, and breast muscle index, accompanied by an augmentation in muscle bundle cross-sectional area. Concurrently, betaine significantly upregulated (P < 0.05) the expression levels of myogenic regulatory factors, including myogenin (MyoG) and paired box 7 (Pax7) both mRNA and protein, while downregulating (P < 0.05) the mRNA and protein levels of myostatin (MSTN). Histological analysis revealed a higher abundance of proliferating cell nuclear antigen (PCNA) and Pax7 immune-positive cells in the breast muscle of the betaine group, consistent with elevated PCNA and Pax7 mRNA and protein levels. Additionally, significantly increased (P < 0.05) contents of insulin-like growth factor 1 (IGF-1) and insulin-like growth factor 2 (IGF-2) were observed in the breast muscle of the betaine group, so was mRNA expression of IGF-1, IGF-2, and insulin-like growth factor 1 receptor (IGF-1R). Betaine also significantly in8creased (P < 0.05) global DNA methylation of the breast muscle, accompanied by enhanced mRNA and protein levels of methionine cycle and DNA methylation-related enzymes, Interestingly, the promoter regions of IGF-1, IGF-2, and IGF-1R genes were significantly hypomethylated (P < 0.05). Moreover, in ovo betaine injection significantly upregulated (P < 0.05) the protein level of farnesoid X receptor (FXR) in breast muscle and FXR binding to the promoter of IGF-2 gene. These findings suggest that in ovo betaine injection promotes breast muscle growth during embryonic development in goslings through the FXR-mediated IGF-2 pathway, ultimately improving hatch weight and breast muscle weight.",
+  "year": "2024",
+  "journal": "Poultry science",
+  "authors": [
+    "Ma S",
+    "Liu J",
+    "Zhao Y",
+    "Wang Y",
+    "Zhao R"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/39094501/",
+    "publisher": "https://doi.org/10.1016/j.psj.2024.104075"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-37377453",
+  "pmid": "37377453",
+  "doi": "10.3389/fragi.2023.1175510",
+  "title": "Genetic deletion of Kv\u03b22 (AKR6) causes loss of muscle function and increased inflammation in mice.",
+  "abstract": "The voltage-gated potassium channels (Kv) are complex ion channels with distinct roles in neurotransmission, electrical conductivity of the heart, and smooth and striated muscle functions. Previously, we demonstrated that deletion of Kv\u03b22 in mice results in decreased Pax7 protein levels, hindlimb muscles and body weights, and fiber type switching. In the present study, we tested the hypothesis that Kv\u03b22 regulates skeletal muscle function in mice. The young and old Kv\u03b22 knockout (KO) and wildtype (WT) mice were utilized to test the aging phenotype and skeletal muscle function. Consistent with our previous finding, we found a significant reduction in hindlimb skeletal muscles mass and body weight in young Kv\u03b22 KO mice, which was also significantly reduced in old Kv\u03b22 KO mice compared with age-matched WT mice. Forelimb grip strength, and the hindleg extensor digitorum longus (EDL) muscles force-frequency relations were significantly decreased in young and old Kv\u03b22 KO mice compared to age-matched WT mice. Analysis of transmission electron microscopy images of EDL muscles in young mice revealed a significant reduction in the sarcomere length for Kv\u03b22 KO vs. WT. Hematoxylin and eosin-stained tibialis anterior muscles cryosections displayed a significant decrease in the number of medium (2,000-4,000\u00a0\u00b5m2) and largest (>4,000\u00a0\u00b5m2) myofibers area in young Kv\u03b22 KO vs. WT mice. We also found a significant increase in fibrotic tissue area in young Kv\u03b22 KO mice compared with age-matched WT mice. Analysis of RNA Seq data of the gastrocnemius muscles (GAS) identified significant increase in genes involved in skeletal muscle development, proliferation and cell fate determination, atrophy, energy metabolism, muscle plasticity, inflammation, and a decrease in circadian core clock genes in young Kv\u03b22 KO vs. WT mice. Several genes were significantly upregulated (384 genes) and downregulated (40 genes) in young Kv\u03b22 KO mice compared to age-matched WT mice. Further, RT-qPCR analysis of the GAS muscles displayed a significant increase in pro-inflammatory marker Il6 expression in young Kv\u03b22 KO mice compared to age-matched WT mice. Overall, the present study shows that deletion of Kv\u03b22 leads to decreased muscles strength and increased inflammation.",
+  "year": "2023",
+  "journal": "Frontiers in aging",
+  "authors": [
+    "Manickam R",
+    "Virzi J",
+    "Potti A",
+    "Cheng F",
+    "Russ DW",
+    "Tipparaju SM"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/37377453/",
+    "publisher": "https://doi.org/10.3389/fragi.2023.1175510"
+  }
+}

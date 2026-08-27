@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-26252164",
+  "pmid": "26252164",
+  "doi": "10.1002/jcb.25306",
+  "title": "FOXD3 Promotes PAX3 Expression in Melanoma Cells.",
+  "abstract": "Several key transcription factors regulate cell growth, survival, and differentiation during neural crest and melanoblast development in the embryo, and these same pathways may be reactivated in tumors arising from the progenitors of these cells. The transcription factors PAX3 and FOXD3 have essential roles in melanoblasts and melanoma. In this study, we define a regulatory pathway where FOXD3 promotes the expression of PAX3. Both factors are expressed in melanoma cells and there is a positive correlation between the transcript levels of PAX3 and FOXD3. The PAX3 gene contains two FOX binding motifs within highly conserved enhancer regulatory elements that are essential for neural crest development. FOXD3 binds to both of these motifs in vitro but only one of these sites is preferentially utilized in melanoma cells. Overexpression of FOXD3 upregulates PAX3 levels while inhibition of FOXD3 function does not alter PAX3 protein levels, supporting that FOXD3 is sufficient but not necessary to drive PAX3 expression in melanoma cells. Here, we identify a molecular pathway where FOXD3 upregulates PAX3 expression and therefore contributes to melanoma progression.",
+  "year": "2016",
+  "journal": "Journal of cellular biochemistry",
+  "authors": [
+    "Kubic JD",
+    "Little EC",
+    "Kaiser RS",
+    "Young KP",
+    "Lang D"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/26252164/",
+    "publisher": "https://doi.org/10.1002/jcb.25306"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "paper_id": "pmid-25399671",
+  "pmid": "25399671",
+  "doi": "10.1002/dvg.22841",
+  "title": "Xhe2 is a member of the astacin family of metalloproteases that promotes Xenopus hatching.",
+  "abstract": "Transcription factors Pax3 and Zic1 are among the earliest genes activated at the neural plate border. In Xenopus, they are necessary and sufficient to promote the formation of multiple neural plate border cell types, including the neural crest, cranial placodes, and hatching gland. Pax3 is especially critical for the formation of the hatching gland, a group of cells that produce proteolytic enzymes essential to digest the egg vitelline envelope and jelly coat in order to release the tadpole into the environment. In a screen designed to identify downstream targets of Pax3, we isolated a member of the astacin family of metalloproteases, related to Xenopus hatching enzyme (Xhe), that we named Xhe2. Xhe2 is exclusively expressed in hatching gland cells as they first emerge at the lateral edge of the anterior neural plate, and persists in this tissue up to the tadpole stage. Knockdown experiments show that Xhe2 expression depends entirely on Pax3 function. Gain-of-function studies demonstrate that Pax3 can induce premature hatching through the upregulation of several proteolytic enzymes including Xhe2. Interestingly, Xhe2 overexpression is sufficient to induce early hatching, indicating that Xhe2 is one of the key components of the degradation mechanism responsible for breaking down the vitelline membrane.",
+  "year": "2014",
+  "journal": "Genesis (New York, N.Y. : 2000)",
+  "authors": [
+    "Hong CS",
+    "Saint-Jeannet JP"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/25399671/",
+    "publisher": "https://doi.org/10.1002/dvg.22841"
+  }
+}

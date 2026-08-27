@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-36044855",
+  "pmid": "36044855",
+  "doi": "10.1016/j.celrep.2022.111267",
+  "title": "The RNA helicase DDX5 cooperates with EHMT2 to sustain alveolar rhabdomyosarcoma growth.",
+  "abstract": "Rhabdomyosarcoma (RMS) is the most common soft-tissue sarcoma of childhood characterized by the inability to exit the proliferative myoblast-like stage. The alveolar fusion positive subtype (FP-RMS) is the most aggressive and is mainly caused by the expression of PAX3/7-FOXO1 oncoproteins, which are challenging pharmacological targets. Here, we show that the DEAD box RNA helicase 5 (DDX5) is overexpressed in alveolar RMS cells and that its depletion and pharmacological inhibition decrease FP-RMS viability and slow tumor growth in xenograft models. Mechanistically, we provide evidence that DDX5 functions upstream of the EHMT2/AKT survival signaling pathway, by directly interacting with EHMT2 mRNA, modulating its stability and consequent protein expression. We show that EHMT2 in turns regulates PAX3-FOXO1 activity in a methylation-dependent manner, thus sustaining FP-RMS myoblastic state. Together, our findings identify another survival-promoting loop in FP-RMS and highlight DDX5 as a potential therapeutic target to arrest RMS growth.",
+  "year": "2022",
+  "journal": "Cell reports",
+  "authors": [
+    "Gualtieri A",
+    "Bianconi V",
+    "Renzini A",
+    "Pieroni L",
+    "Licursi V",
+    "Mozzetta C"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/36044855/",
+    "publisher": "https://doi.org/10.1016/j.celrep.2022.111267"
+  }
+}

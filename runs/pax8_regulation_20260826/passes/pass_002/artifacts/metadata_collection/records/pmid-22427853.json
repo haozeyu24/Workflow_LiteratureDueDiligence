@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-22427853",
+  "pmid": "22427853",
+  "doi": "10.1371/journal.pone.0032537",
+  "title": "The differential proliferative ability of satellite cells in Lantang and Landrace pigs.",
+  "abstract": "Here, for the first time, we evaluate the hypothesis that the proliferative abilities of satellite cells (SCs) isolated from Lantang (indigenous Chinese pigs) and Landrace pigs, which differ in muscle characteristics, are different. SCs were isolated from the longissimus dorsi muscle of neonatal Lantang and Landrace pigs. Proliferative ability was estimated by the count and proliferative activity of viable cells using a hemocytometer and MTT assay at different time points after seeding, respectively. Cell cycle information was detected by flow cytometry. Results showed that there was a greater (P<0.05) number of SCs in Lantang pigs compared with Landrace pigs after 72 h of culture. The percentage of cell population in S phase and G(2)/M phases in Lantang pigs were higher (P<0.05), while in G(0)/G(1) phase was lower (P<0.05) in comparison with the Landrace pigs. The mRNA abundances of MyoD, Myf5, myogenin and Pax7 in SCs from Lantang pigs were higher (P<0.05), while those of myostatin, Smad3 and genes in the mammalian target of rapamycin (mTOR) pathway (with the exception of 4EBP1) were lower (P<0.05) than the Landrace pigs. Protein levels of MyoD, myogenin, myostatin, S6K, phosphorylated mTOR and phosphorylated eIF4E were consistent with the corresponding mRNA abundance. Collectively, these findings suggested that SCs in the two breeds present different proliferative abilities, and the proliferative potential of SCs in Lantang pigs is higher than in Landrace pigs.",
+  "year": "2012",
+  "journal": "PloS one",
+  "authors": [
+    "Wang XQ",
+    "Yang WJ",
+    "Yang Z",
+    "Shu G",
+    "Wang SB",
+    "Jiang QY",
+    "Yuan L",
+    "Wu TS"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/22427853/",
+    "publisher": "https://doi.org/10.1371/journal.pone.0032537"
+  }
+}

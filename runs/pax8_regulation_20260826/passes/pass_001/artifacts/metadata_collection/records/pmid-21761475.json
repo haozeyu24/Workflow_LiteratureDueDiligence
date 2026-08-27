@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-21761475",
+  "pmid": "21761475",
+  "doi": "10.1002/dvdy.22685",
+  "title": "V-ATPase-dependent ectodermal voltage and pH regionalization are required for craniofacial morphogenesis.",
+  "abstract": "Using voltage and pH reporter dyes, we have discovered a never-before-seen regionalization of the Xenopus ectoderm, with cell subpopulations delimited by different membrane voltage and pH. We distinguished three courses of bioelectrical activity. Course I is a wave of hyperpolarization that travels across the gastrula. Course II comprises the appearance of patterns that match shape changes and gene expression domains of the developing face; hyperpolarization marks folding epithelium and both hyperpolarized and depolarized regions overlap domains of head patterning genes. In Course III, localized regions of hyperpolarization form at various positions, expand, and disappear. Inhibiting H(+) -transport by the H(+) -V-ATPase causes abnormalities in: (1) the morphology of craniofacial structures; (2) Course II voltage patterns; and (3) patterns of sox9, pax8, slug, mitf, xfz3, otx2, and pax6. We conclude that this bioelectric signal has a role in development of the face. Thus, it exemplifies an important, under-studied mechanism of developmental regulation.",
+  "year": "2011",
+  "journal": "Developmental dynamics : an official publication of the American Association of Anatomists",
+  "authors": [
+    "Vandenberg LN",
+    "Morrie RD",
+    "Adams DS"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (stability[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR lysosome[Title/Abstract] OR autophagy[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract])",
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/21761475/",
+    "publisher": "https://doi.org/10.1002/dvdy.22685"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "paper_id": "pmid-23583561",
+  "pmid": "23583561",
+  "doi": "10.1016/j.semcdb.2013.03.014",
+  "title": "Pleiotropic effects of coat colour-associated mutations in humans, mice and other mammals.",
+  "abstract": "The characterisation of the pleiotropic effects of coat colour-associated mutations in mammals illustrates that sensory organs and nerves are particularly affected by disorders because of the shared origin of melanocytes and neurocytes in the neural crest; e.g. the eye-colour is a valuable indicator of disorders in pigment production and eye dysfunctions. Disorders related to coat colour-associated alleles also occur in the skin (melanoma), reproductive tract and immune system. Additionally, the coat colour phenotype of an individual influences its general behaviour and fitness. Mutations in the same genes often produce similar coat colours and pleiotropic effects in different species (e.g., KIT [reproductive disorders, lethality], EDNRB [megacolon] and LYST [CHS]). Whereas similar disorders and similar-looking coat colour phenotypes sometimes have a different genetic background (e.g., deafness [EDN3/EDNRB, MITF, PAX and SNAI2] and visual diseases [OCA2, RAB38, SLC24A5, SLC45A2, TRPM1 and TYR]). The human predilection for fancy phenotypes that ignore disorders and genetic defects is a major driving force for the increase of pleiotropic effects in domestic species and laboratory subjects since domestication has commenced approximately 18,000 years ago.",
+  "year": "2013",
+  "journal": "Seminars in cell & developmental biology",
+  "authors": [
+    "Reissmann M",
+    "Ludwig A"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/23583561/",
+    "publisher": "https://doi.org/10.1016/j.semcdb.2013.03.014"
+  }
+}

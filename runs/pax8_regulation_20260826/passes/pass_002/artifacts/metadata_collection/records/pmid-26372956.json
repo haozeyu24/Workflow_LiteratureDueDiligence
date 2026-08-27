@@ -1,0 +1,28 @@
+{
+  "paper_id": "pmid-26372956",
+  "pmid": "26372956",
+  "doi": "10.1073/pnas.1512869112",
+  "title": "Caspase 3 cleavage of Pax7 inhibits self-renewal of satellite cells.",
+  "abstract": "Compensatory growth and regeneration of skeletal muscle is dependent on the resident stem cell population, satellite cells (SCs). Self-renewal and maintenance of the SC niche is coordinated by the paired-box transcription factor Pax7, and yet continued expression of this protein inhibits the myoblast differentiation program. As such, the reduction or removal of Pax7 may denote a key prerequisite for SCs to abandon self-renewal and acquire differentiation competence. Here, we identify caspase 3 cleavage inactivation of Pax7 as a crucial step for terminating the self-renewal process. Inhibition of caspase 3 results in elevated Pax7 protein and SC self-renewal, whereas caspase activation leads to Pax7 cleavage and initiation of the myogenic differentiation program. Moreover, in vivo inhibition of caspase 3 activity leads to a profound disruption in skeletal muscle regeneration with an accumulation of SCs within the niche. We have also noted that casein kinase 2 (CK2)-directed phosphorylation of Pax7 attenuates caspase-directed cleavage. Together, these results demonstrate that SC fate is dependent on opposing posttranslational modifications of the Pax7 protein.",
+  "year": "2015",
+  "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+  "authors": [
+    "Dick SA",
+    "Chang NC",
+    "Dumont NA",
+    "Bell RA",
+    "Putinski C",
+    "Kawabe Y",
+    "Litchfield DW",
+    "Rudnicki MA",
+    "Megeney LA"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/26372956/",
+    "publisher": "https://doi.org/10.1073/pnas.1512869112"
+  }
+}

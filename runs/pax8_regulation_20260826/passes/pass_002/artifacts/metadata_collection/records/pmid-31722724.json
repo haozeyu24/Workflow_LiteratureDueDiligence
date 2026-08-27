@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-31722724",
+  "pmid": "31722724",
+  "doi": "10.1186/s13072-019-0312-7",
+  "title": "Folate deficiency induced H2A ubiquitination to\u00a0lead to downregulated expression of genes involved in neural tube defects.",
+  "abstract": "BACKGROUND: Neural tube defects (NTDs) are common congenital malformations resulting in failure of the neural tube closure during early embryonic development. Although it is known that maternal folate deficiency increases the risk of NTDs, the mechanism remains elusive.\n\nRESULTS: Herein, we report that histone H2A monoubiquitination (H2AK119ub1) plays a role in neural tube closure. We found that the folate antagonist methotrexate induced H2AK119ub1 in mouse embryonic stem cells. We demonstrated that an increase in H2AK119ub1 downregulated expression of the neural tube closure-related genes Cdx2, Nes, Pax6, and Gata4 in mouse embryonic stem cells under folate deficiency conditions. We also determined that the E3 ligase Mdm2 was responsible for the methotrexate-induced increase in H2AK119ub1 and downregulation of neural tube closure-related genes. Surprisingly, we found that Mdm2 is required for MTX-induced H2A ubiquitination and is recruited to the sites of DSB, which is dependent on DNA damage signaling kinase ATM. Furthermore, folic acid supplementation restored H2AK119ub1 binding to neural tube closure-related genes. Downregulation of these genes was also observed in both brain tissue of mouse and human NTD cases, and high levels of H2AK119ub1 were found in the corresponding NTDs samples\u00a0with their maternal serum folate under low levels. Pearson correlation analysis showed a significant negative correlation between expression of the neural precursor genes and H2AK119ub1.\n\nCONCLUSION: Our results indicate that folate deficiency contributes to the onset of NTDs by altering H2AK119ub1 and subsequently affecting expression of neural tube closure-related genes. This may be a potential risk factor for NTDs in response to folate deficiency.",
+  "year": "2019",
+  "journal": "Epigenetics & chromatin",
+  "authors": [
+    "Pei P",
+    "Cheng X",
+    "Yu J",
+    "Shen J",
+    "Li X",
+    "Wu J",
+    "Wang S",
+    "Zhang T"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/31722724/",
+    "publisher": "https://doi.org/10.1186/s13072-019-0312-7"
+  }
+}

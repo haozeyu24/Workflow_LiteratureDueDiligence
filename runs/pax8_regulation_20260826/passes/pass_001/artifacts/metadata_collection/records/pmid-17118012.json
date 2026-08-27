@@ -1,0 +1,22 @@
+{
+  "paper_id": "pmid-17118012",
+  "pmid": "17118012",
+  "doi": "10.1111/j.1440-169X.2006.00891.x",
+  "title": "Involvement of a Xenopus nuclear GTP-binding protein in optic primordia formation.",
+  "abstract": "Using a subtracted Xenopus cDNA library based on the differential sensitivity of anterior and posterior genes to retinoic acid, we isolated a novel Xenopus nuclear GTP-binding protein (XGB). XGB is expressed prominently in the optic primordia at the tailbud stage. The N-terminal region of XGB contains a set of GTP-binding protein motifs, and the C-terminal region contains two putative nuclear localization signals and two coiled regions. A GFP-XGB fusion protein was expressed in the nucleus of NIH3T3 cells where it bound to subnuclear structures. Truncated C-terminal constructs of XGB containing both nuclear localization signal(s) and coiled region(s) suppressed eye formation, whereas neither the N-terminal construct nor constructs with a mutated GTP-binding protein motif affected eye formation. Expression of Pax6 and Rx1 genes, which are crucial for eye development, was reduced in embryos overexpressing the C-terminal constructs of XGB. Suppression of Pax6 and Rx1 at earlier developmental stages as well as perturbation of eye formation at later stages was counteracted by co-expression of wild-type XGB. We conclude that XGB plays a role in the formation of optic primordia through activation of at least two eye field transcription factors.",
+  "year": "2006",
+  "journal": "Development, growth & differentiation",
+  "authors": [
+    "Tamanoue Y",
+    "Hongo I",
+    "Okamoto H"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/17118012/",
+    "publisher": "https://doi.org/10.1111/j.1440-169X.2006.00891.x"
+  }
+}

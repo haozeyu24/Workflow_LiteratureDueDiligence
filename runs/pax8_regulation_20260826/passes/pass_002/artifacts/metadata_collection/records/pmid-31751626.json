@@ -1,0 +1,22 @@
+{
+  "paper_id": "pmid-31751626",
+  "pmid": "31751626",
+  "doi": "10.1016/j.mce.2019.110638",
+  "title": "Defects in protein folding in congenital hypothyroidism.",
+  "abstract": "Primary congenital hypothyroidism (CH) is the most common endocrine disease in children and one of the most common preventable causes of both cognitive and motor deficits. CH is a heterogeneous group of thyroid disorders in which inadequate production of thyroid hormone occurs due to defects in proteins involved in the gland organogenesis (dysembryogenesis) or in multiple steps of thyroid hormone biosynthesis (dyshormonogenesis). Dysembryogenesis is associated with genes responsible for the development or growth of thyroid cells: such as NKX2-1, FOXE1, PAX8, NKX2-5, TSHR, TBX1, CDCA8, HOXD3 and HOXB3 resulting in agenesis, hypoplasia or ectopia of thyroid gland. Nevertheless, the etiology of the dysembryogenesis remains unknown for most cases. In contrast, the majority of patients with dyshormonogenesis has been linked to mutations in the SLC5A5, SLC26A4, SLC26A7, TPO, DUOX1, DUOX2, DUOXA1, DUOXA2, IYD or TG genes, which usually originate goiter. About 800 genetic mutations have been reported to cause CH in patients so far, including missense, nonsense, in-frame deletion and splice-site variations. Many of these mutations are implicated in specific domains, cysteine residues or glycosylation sites, affecting the maturation of nascent proteins that go through the secretory pathway. Consequently, misfolded proteins are permanently entrapped in the endoplasmic reticulum (ER) and are translocated to the cytosol for proteasomal degradation by the ER-associated degradation (ERAD) machinery. Despite of all these remarkable advances in the field of the CH pathogenesis, several points on the development of this disease remain to be elucidated. The continuous study of thyroid gene mutations with the application of new technologies will be useful for the understanding of the intrinsic mechanisms related to CH. In this review we summarize the present status of knowledge on the disorders in the protein folding caused by thyroid genes mutations.",
+  "year": "2020",
+  "journal": "Molecular and cellular endocrinology",
+  "authors": [
+    "Targovnik HM",
+    "Scheps KG",
+    "Rivolta CM"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (\"protein stability\"[Title/Abstract] OR \"protein levels\"[Title/Abstract] OR stabilization[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract]) NOT \"PAX8-AS1\"[Title/Abstract]"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/31751626/",
+    "publisher": "https://doi.org/10.1016/j.mce.2019.110638"
+  }
+}

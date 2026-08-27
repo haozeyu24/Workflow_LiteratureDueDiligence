@@ -1,0 +1,29 @@
+{
+  "paper_id": "pmid-24613379",
+  "pmid": "24613379",
+  "doi": "10.1016/j.freeradbiomed.2014.02.023",
+  "title": "Nrf2 deficiency promotes apoptosis and impairs PAX7/MyoD expression in aging skeletal muscle cells.",
+  "abstract": "Skeletal muscle redox homeostasis is transcriptionally regulated by nuclear erythroid-2-p45-related factor-2 (Nrf2). We recently demonstrated that age-associated stress impairs Nrf2-ARE (antioxidant-response element) transcriptional signaling. Here, we hypothesize that age-dependent decline or genetic ablation of Nrf2 leads to accelerated apoptosis and skeletal muscle degeneration. Under basal-physiological conditions, disruption of Nrf2 significantly downregulates antioxidants and causes oxidative stress. Surprisingly, Nrf2-null mice had enhanced antioxidant capacity identical to wild-type (WT) upon acute endurance exercise stress (AEES), suggesting activation of Nrf2-independent mechanisms (i.e., PGC1\u03b1) against oxidative stress. Analysis of prosurvival pathways in the basal state reveals decreased AKT levels, whereas p-p53, a repressor of AKT, was increased in Nrf2-null vs WT mice. Upon AEES, AKT and p-AKT levels were significantly (p < 0.001) increased (>10-fold) along with profound downregulation of p-p53 (p < 0.01) in Nrf2-null vs WT skeletal muscle, indicating the onset of prosurvival mechanisms to compensate for the loss of Nrf2 signaling. However, we found a decreased stem cell population (PAX7) and MyoD expression (differentiation) along with profound activation of ubiquitin and apoptotic pathways in Nrf2-null vs WT mice upon AEES, suggesting that compensatory prosurvival mechanisms failed to overcome the programmed cell death and degeneration in skeletal muscle. Further, the impaired regeneration was sustained in Nrf2-null vs WT mice after 1 week of post-AEES recovery. In an age-associated oxidative stress condition, ablation of Nrf2 results in induction of apoptosis and impaired muscle regeneration.",
+  "year": "2014",
+  "journal": "Free radical biology & medicine",
+  "authors": [
+    "Narasimhan M",
+    "Hong J",
+    "Atieno N",
+    "Muthusamy VR",
+    "Davidson CJ",
+    "Abu-Rmaileh N",
+    "Richardson RS",
+    "Gomes AV",
+    "Hoidal JR",
+    "Rajasekaran NS"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/24613379/",
+    "publisher": "https://doi.org/10.1016/j.freeradbiomed.2014.02.023"
+  }
+}

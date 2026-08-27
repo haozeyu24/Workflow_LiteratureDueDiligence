@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-18397993",
+  "pmid": "18397993",
+  "doi": "10.1242/jcs.024885",
+  "title": "beta-Catenin promotes self-renewal of skeletal-muscle satellite cells.",
+  "abstract": "Satellite cells are the resident stem cells of adult skeletal muscle. As with all stem cells, how the choice between self-renewal or differentiation is controlled is central to understanding their function. Here, we have explored the role of beta-catenin in determining the fate of myogenic satellite cells. Satellite cells express beta-catenin, and expression is maintained as they activate and undergo proliferation. Constitutive retroviral-driven expression of wild-type or stabilised beta-catenin results in more satellite cells expressing Pax7 without any MyoD -- therefore, adopting the self-renewal pathway, with fewer cells undergoing myogenic differentiation. Similarly, preventing the degradation of endogenous beta-catenin by inhibiting GSK3beta activity also results in more Pax7-positive-MyoD-negative (Pax7(+)MyoD(-)) satellite-cell progeny. Consistent with these observations, downregulation of beta-catenin using small interfering RNA (siRNA) reduced the proportion of satellite cells that express Pax7 and augmented myogenic differentiation after mitogen withdrawal. Since a dominant-negative version of beta-catenin had the same effect as silencing beta-catenin using specific siRNA, beta-catenin promotes self-renewal via transcriptional control of target genes. Thus, beta-catenin signalling in proliferating satellite cells directs these cells towards the self-renewal pathway and, so, contributes to the maintenance of this stem-cell pool in adult skeletal muscle.",
+  "year": "2008",
+  "journal": "Journal of cell science",
+  "authors": [
+    "Perez-Ruiz A",
+    "Ono Y",
+    "Gnocchi VF",
+    "Zammit PS"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/18397993/",
+    "publisher": "https://doi.org/10.1242/jcs.024885"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-19124460",
+  "pmid": "19124460",
+  "doi": "10.1074/jbc.M809158200",
+  "title": "Accumulation of Pax2 transactivation domain interaction protein (PTIP) at sites of DNA breaks via RNF8-dependent pathway is required for cell survival after DNA damage.",
+  "abstract": "Genomic stability in eukaryotic cells is maintained by the coordination of multiple cellular events including cell cycle checkpoint, DNA repair, transcription, and apoptosis after DNA damage. Pax2 transactivation domain interaction protein (PTIP), a protein that contains six BRCT domains, has been implicated in DNA damage response. In this study we showed that recruitment of PTIP to damaged chromatin depends on DNA damage signaling proteins gammaH2AX.MDC1.RNF8, which in turn facilitates sustained localization of PA1 (PTIP-associated protein 1) to sites of DNA break. Similar to PTIP, depletion of PA1 increases cellular sensitivity to ionizing radiation. Furthermore, we demonstrated that the N-terminal PA1 binding domain and the C-terminal focus-localization domain of PTIP are critical for PTIP function in DNA damage repair. Interestingly, although PTIP and PA1 associate with MLL (mixed lineage leukemia) complexes and participate in transcriptional regulation, this function of PTIP.PA1 in DNA damage response is likely to be independent of the MLL complexes. Taken together, we propose that a subset of PTIP.PA1 complex is recruited to DNA damage sites via the RNF8-dependent pathway and is required for cell survival in response to DNA damage.",
+  "year": "2009",
+  "journal": "The Journal of biological chemistry",
+  "authors": [
+    "Gong Z",
+    "Cho YW",
+    "Kim JE",
+    "Ge K",
+    "Chen J"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/19124460/",
+    "publisher": "https://doi.org/10.1074/jbc.M809158200"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-32008086",
+  "pmid": "32008086",
+  "doi": "10.1007/s00018-020-03465-3",
+  "title": "Thalidomide targets EGFL6 to inhibit EGFL6/PAX6 axis-driven angiogenesis in small bowel vascular malformation.",
+  "abstract": "BACKGROUND: Small bowel vascular malformation disease (SBVM) is the most common cause of obscure gastrointestinal bleeding (OGIB). Several studies suggested that EGFL6 was able to promote the growth of tumor endothelial cells by forming tumor vessels. To date, it remains unclear how EGFL6 promotes pathological angiogenesis in SBVM and whether EGFL6 is a target of thalidomide.\n\nMETHODS: We took advantage of SBVM plasma and tissue samples and compared the expression of EGFL6 between SBVM patients and healthy people via ELISA and Immunohistochemistry. We elucidated the underlying function of EGFL6 in SBVM in vitro and by generating a zebrafish model that overexpresses EGFL6, The cycloheximide (CHX)-chase experiment and CoIP assays were conducted to demonstrate that thalidomide can promote the degradation of EGFL6 by targeting CRBN.\n\nRESULTS: The analysis of SBVM plasma and tissue samples revealed that EGFL6 was overexpressed in the patients compared to healthy people. Using in vitro and in vivo assays, we demonstrated that an EMT pathway triggered by the EGFL6/PAX6 axis is involved in the pathogenesis of SBVM. Furthermore, through in vitro and in vivo assays, we elucidated that thalidomide can function as anti-angiogenesis medicine through the regulation of EGFL6 in a proteasome-dependent manner. Finally, we found that CRBN can mediate the effect of thalidomide on EGFL6 expression and that the CRBN protein interacts with EGFL6 via a Lon N-terminal peptide.\n\nCONCLUSION: Our findings revealed a key role for EGFL6 in SBVM pathogenesis and provided a mechanism explaining why thalidomide can cure small bowel bleeding resulting from SBVM.",
+  "year": "2020",
+  "journal": "Cellular and molecular life sciences : CMLS",
+  "authors": [
+    "Tang CT",
+    "Zhang QW",
+    "Wu S",
+    "Tang MY",
+    "Liang Q",
+    "Lin XL",
+    "Gao YJ",
+    "Ge ZZ"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/32008086/",
+    "publisher": "https://doi.org/10.1007/s00018-020-03465-3"
+  }
+}

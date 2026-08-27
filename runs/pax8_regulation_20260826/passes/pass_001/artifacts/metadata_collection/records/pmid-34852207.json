@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-34852207",
+  "pmid": "34852207",
+  "doi": "10.1152/ajpcell.00344.2021",
+  "title": "Aerobic exercise and resistance exercise alleviate skeletal muscle atrophy through IGF-1/IGF-1R-PI3K/Akt pathway in mice with myocardial infarction.",
+  "abstract": "Myocardial infarction (MI)-induced heart failure (HF) is commonly accompanied with profound effects on skeletal muscle. With the process of MI-induced HF, perturbations in skeletal muscle contribute to muscle atrophy. Exercise is viewed as a feasible strategy to prevent muscle atrophy. The aims of this study were to investigate whether exercise could alleviate MI-induced skeletal muscle atrophy via insulin-like growth factor 1 (IGF-1) pathway in mice. Male C57/BL6 mice were used to establish the MI model and were divided into three groups: sedentary MI group (MI), MI with aerobic exercise group, and MI with resistance exercise group; sham-operated group was used as control. Exercise-trained animals were subjected to 4 wk of aerobic exercise (AE) or resistance exercise (RE). Cardiac function, muscle weight, myofiber size, levels of IGF-1 signaling and proteins related to myogenesis, protein synthesis, and degradation and apoptosis in gastrocnemius muscle were detected. H2O2-treated C2C12 cells were intervened with recombinant human IGF-1, IGF-1 receptor (IGF-1R) inhibitor NVP-AEW541, and PI3K inhibitor LY294002 to explore the mechanism. Exercises upregulated the IGF-1/IGF-1R-phosphatidylinositol 3-kinase (PI3K)/protein kinase B (Akt) signaling; increased the expressions of Pax7, myogenic regulatory factors (MRFs), and protein synthesis; and reduced protein degradation and cell apoptosis in MI mice. In vitro, IGF-1 upregulated the levels of Pax7, MRFs, mTOR, and P70S6K; reduced MuRF1 and MAFbx; and inhibited cell apoptosis via IGF-1R-PI3K/Akt pathway. AE and RE, safely and effectively, alleviate skeletal muscle atrophy by regulating the levels of myogenesis, protein degradation, and cell apoptosis in mice with MI via activating IGF-1/IGF-1R-PI3K/Akt signaling pathway.",
+  "year": "2022",
+  "journal": "American journal of physiology. Cell physiology",
+  "authors": [
+    "Feng L",
+    "Li B",
+    "Xi Y",
+    "Cai M",
+    "Tian Z"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/34852207/",
+    "publisher": "https://doi.org/10.1152/ajpcell.00344.2021"
+  }
+}

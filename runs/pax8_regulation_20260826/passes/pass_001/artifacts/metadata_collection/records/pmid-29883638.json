@@ -1,0 +1,22 @@
+{
+  "paper_id": "pmid-29883638",
+  "pmid": "29883638",
+  "doi": "10.1016/j.exer.2018.06.004",
+  "title": "A comprehensive spatial-temporal transcriptomic analysis of differentiating nascent mouse lens epithelial and fiber cells.",
+  "abstract": "Elucidation of both the molecular composition and organization of the ocular lens is a prerequisite to understand its development, function, pathology, regenerative capacity, as well as to model lens development and disease using in vitro differentiation of pluripotent stem cells. Lens is comprised of the anterior lens epithelium and posterior lens fibers, which form the bulk of the lens. Lens fibers differentiate from lens epithelial cells through cell cycle exit-coupled differentiation that includes cellular elongation, accumulation of crystallins, cytoskeleton and membrane remodeling, and degradation of organelles within the central region of the lens. Here, we profiled spatiotemporal expression dynamics of both mRNAs and non-coding RNAs from microdissected mouse nascent lens epithelium and lens fibers at four developmental time points (embryonic [E] day 14.5, E16.5, E18.5, and P0.5) by RNA-seq. During this critical time window, multiple complex biosynthetic and catabolic processes generate the molecular and structural foundation for lens transparency. Throughout this developmental window, 3544 and 3518 genes show consistently and significantly greater expression in the nascent lens epithelium and fibers, respectively. Comprehensive data analysis confirmed major roles of FGF-MAPK, Wnt/\u03b2-catenin, PI3K/AKT, TGF-\u03b2, and BMP signaling pathways and revealed significant novel contributions of mTOR, EIF2, EIF4, and p70S6K signaling in lens formation. Unbiased motif analysis within promoter regions of these genes with consistent expression changes between epithelium and fiber cells revealed an enrichment for both established (e.g. E2Fs, Etv5, Hsf4, c-Maf, MafG, MafK, N-Myc, and Pax6) transcription factors and a number of novel regulators of lens formation, such as Arntl2, Dmrta2, Stat5a, Stat5b, and Tulp3. In conclusion, the present RNA-seq data serves as a comprehensive reference resource for deciphering molecular principles of normal mammalian lens differentiation, mapping a full spectrum of signaling pathways and DNA-binding transcription factors operating in both lens compartments, and predicting novel pathways required to establish lens transparency.",
+  "year": "2018",
+  "journal": "Experimental eye research",
+  "authors": [
+    "Zhao Y",
+    "Zheng D",
+    "Cvekl A"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/29883638/",
+    "publisher": "https://doi.org/10.1016/j.exer.2018.06.004"
+  }
+}

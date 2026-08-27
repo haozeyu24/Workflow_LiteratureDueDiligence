@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-37906396",
+  "pmid": "37906396",
+  "doi": "10.1007/s10863-023-09990-7",
+  "title": "Transcriptomics profiling reveal the heterogeneity of white and brown adipocyte.",
+  "abstract": "The marker genes associated with white adipocytes and brown adipocytes have been previously identified; however, these markers have not been updated in several years, and the differentiation process of preadipocytes remains relatively fixed. Consequently, there has been a lack of exploration into alternative differentiation schemes. In this particular study, we present a transcriptional signature specific to brown adipocytes and white adipocytes. Notably, our findings reveal that ZNF497, ZIC1, ZFY, UTY, USP9Y, TXLNGY, TTTY14, TNNT3, TNNT2, TNNT1, TNNI1, TNNC1, TDRD15, SOX11, SLN, SFRP2, PRKY, PAX3KLHL40, PAX3, INKA2-AS1, SOX11, and TDRD15 exhibit high expression levels in brown adipocytes. XIST, HOXA10, PCAT19, HOXA7, PLSCR3, and AVPR1A exhibited high expression levels in white adipocytes, suggesting their potential as novel marker genes for the transition from white to brown adipocytes. Furthermore, our analysis revealed the coordinated activation of several pathways, including the PPAR signaling pathway, focal adhesion, retrograde endocannabinoid signaling, oxidative phosphorylation, PI3K-Akt signaling pathway, and thermogenesis pathways, in brown adipocytes. Moreover, in contrast to prevailing culture techniques, we conducted a comparative analysis of the differentiation protocols for white preadipocytes and brown preadipocytes, revealing that the differentiation outcome remained unaffected by the diverse culture schemes employed. However, the expression levels of certain marker genes in both adipocyte types were found to be altered. This investigation not only identified potential novel marker genes for adipocytes but also examined the impact of different differentiation methods on preadipocyte maturation. Consequently, these findings offer significant insights for further research on the differentiation processes of diverse adipocyte subtypes.",
+  "year": "2023",
+  "journal": "Journal of bioenergetics and biomembranes",
+  "authors": [
+    "Zhang Z",
+    "Xu L",
+    "Zhang L",
+    "Lu J",
+    "Peng Z",
+    "Guo X",
+    "Gao J"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/37906396/",
+    "publisher": "https://doi.org/10.1007/s10863-023-09990-7"
+  }
+}

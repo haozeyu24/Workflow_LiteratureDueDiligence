@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-34746812",
+  "pmid": "34746812",
+  "doi": "10.1016/j.crphys.2020.02.001",
+  "title": "Co-ingestion of carbohydrate and whey protein induces muscle strength and myofibrillar protein accretion without a requirement of satellite cell activation.",
+  "abstract": "Muscle development is controlled by the balance between muscle protein synthesis and protein degradation. Protein supplementation has been widely known to enhance muscle protein synthesis, and carbohydrate supplementation may attenuate protein degradation. The purpose of this study was to compare the effects of whey protein plus carbohydrate (CP), whey protein (WP), and placebo (PLA) supplements on resistance training adaptations. Two-month old rats were trained by ladder climbing every 3 days for 8 weeks. PLA, WP, or CP was given immediately after each exercise session. Non-exercise rats were used as a sedentary control (SED). Total body composition was assessed and blood samples were collected before, middle, and end of training. The flexor hallucis longus (FHL) was excised 24\u202fh after the last exercise session. Following training, maximal carrying capacity was significantly greater in CP than PLA and WP. This improved training performance in CP paralleled an increase in total muscle and myofibrillar protein content. Muscle and fiber cross sectional areas (CSA) were significantly increased by exercise training, with a concomitant increase in myonuclear domain. CP significantly elevated IGF-1 protein expression over SED, but there were no significant differences in myostatin, Pax7, MyoD, or myogenin across treatment groups. There was also no difference in the number of total nuclei in each fiber CSA among groups. Corticosterone levels were significantly elevated in PLA and WP over 8 weeks of training, whereas this change in corticosterone over time was not observed in the CP group. The results suggest that the greater improvement of maximal caring capacity for CP compared with PLA and WP was associated with a greater increase in myofibrillar protein content. Satellite cell activation did not appear to contribute to the observed gains in muscle hypertrophy and strength.",
+  "year": "2020",
+  "journal": "Current research in physiology",
+  "authors": [
+    "Wang W",
+    "Hsieh PL",
+    "Farrar RP",
+    "Ivy JL"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/34746812/",
+    "publisher": "https://doi.org/10.1016/j.crphys.2020.02.001"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-28390782",
+  "pmid": "28390782",
+  "doi": "10.1016/j.jdermsci.2017.03.011",
+  "title": "Anti-melanogenic activity of phytosphingosine via the modulation of the microphthalmia-associated transcription factor signaling pathway.",
+  "abstract": "BACKGROUND: Microphthalmia-associated transcription factor (MITF) suppresses the expression of enzymes controlling the production of melanin. Phytosphingosine is a well-known cosmetic agent, but its anti-melanogenic activity and mechanism of action remain unclear.\n\nOBJECTIVE: This study was designed to investigate the effects of phytosphingosine on melanin synthesis and elucidate the plausible mechanism of actions in vitro and ex vivo systems.\n\nMETHODS: Melanin content, cell viability, tyrosinase activity, p-CREB DNA binding activity, and the protein gene expression levels of the enzymes and proteins involved in melanogenesis were measured with the treatment of phytosphingosine.\n\nRESULTS: Phytosphingosine inhibits melanin synthesis in cultured melan-a cells and a reconstructed human skin model. One possible mechanism of the anti-melanogenic activity of phytosphingosine appears to be associated with the modulation of MITF, which suppresses the expression of tyrosinase, tyrosinase-related protein-1 (TRP-1), and TRP-2. Further analysis revealed that phytosphingosine suppressed paired box 3 and SRY-related HMG-box 10, critical transcription factors of MITF. Phytosphingosine also effectively downregulated the protein levels of \u03b2-catenin and the phospho-cAMP response element binding protein, an upstream regulatory factor of MITF. These results are closely related to the suppression of MITF gene expression. In addition, treatment with phytosphingosine for over 12h, which is a relatively long period of time, did not directly suppress these MITF transcriptional factors. Instead, phytosphingosine induced ERK activation, which led to MITF phosphorylation, followed by its degradation. Therefore, the downregulation of MITF protein levels by phytosphingosine with a long time exposure is in part associated with MITF protein degradation through the MAPK kinase activation pathway.\n\nCONCLUSION: The modulation of MITF by phytosphingosine is closely related with the signaling pathways, such as the suppression of the MITF gene expression and the degradation of the MITF protein, depending on the duration of treatment time. These results suggest that phytosphingosine might serve as an effective melanogenesis inhibitor in melanocytes via the regulation of the MITF signaling pathways.",
+  "year": "2017",
+  "journal": "Journal of dermatological science",
+  "authors": [
+    "Jang EJ",
+    "Shin Y",
+    "Park HJ",
+    "Kim D",
+    "Jung C",
+    "Hong JY",
+    "Kim S",
+    "Lee SK"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/28390782/",
+    "publisher": "https://doi.org/10.1016/j.jdermsci.2017.03.011"
+  }
+}

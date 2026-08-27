@@ -1,0 +1,37 @@
+{
+  "paper_id": "pmid-37149540",
+  "pmid": "37149540",
+  "doi": "10.1007/s12185-023-03585-z",
+  "title": "EBF1-JAK2 inhibits the PAX5 function through physical interaction with PAX5 and kinase activity.",
+  "abstract": "Gene aberrations of B-cell regulators and growth signal components such as the JAK-STAT pathway are frequently found in B-cell acute lymphoblastic leukemia (B-ALL). EBF1 is a B-cell regulator that regulates the expression of PAX5 and co-operates with PAX5 to regulate B-cell differentiation. Here, we analyzed the function of the fusion protein of EBF1 and JAK2, EBF1-JAK2 (E-J). E-J caused constitutive activation of JAK-STAT and MAPK pathways and induced autonomous cell growth in a cytokine-dependent cell line. E-J did not affect the transcriptional activity of EBF1 but inhibited that of PAX5. Both the physical interaction of E-J with PAX5 and kinase activity of E-J were required for E-J to inhibit PAX5 function, although the detailed mechanism of inhibition remains unclear. Importantly, gene set enrichment analysis using the results of our previous RNA-seq data of 323 primary BCR-ABL1-negative ALL samples demonstrated repression of the transcriptional target genes of PAX5 in E-J-positive ALL cells, which suggests that E-J also inhibited PAX5 function in ALL cells. Our results shed new light on the mechanisms of differentiation block by kinase fusion proteins.",
+  "year": "2023",
+  "journal": "International journal of hematology",
+  "authors": [
+    "Kojima Y",
+    "Kawashima F",
+    "Yasuda T",
+    "Odaira K",
+    "Inagaki Y",
+    "Yamada C",
+    "Muraki A",
+    "Noura M",
+    "Okamoto S",
+    "Tamura S",
+    "Iwamoto E",
+    "Sanada M",
+    "Matsumura I",
+    "Miyazaki Y",
+    "Kojima T",
+    "Kiyoi H",
+    "Tsuzuki S",
+    "Hayakawa F"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/37149540/",
+    "publisher": "https://doi.org/10.1007/s12185-023-03585-z"
+  }
+}

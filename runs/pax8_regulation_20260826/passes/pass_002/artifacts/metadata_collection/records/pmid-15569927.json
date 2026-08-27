@@ -1,0 +1,29 @@
+{
+  "paper_id": "pmid-15569927",
+  "pmid": "15569927",
+  "doi": "10.1073/pnas.0407577101",
+  "title": "Tyrosine phosphorylation sites on FRS2alpha responsible for Shp2 recruitment are critical for induction of lens and retina.",
+  "abstract": "Early development of the lens and retina depends upon reciprocal inductive interactions between the embryonic surface ectoderm and the underlying neuroepithelium of the optic vesicle. FGF signaling has been implicated in this signal exchange. The docking protein FRS2alpha is a major mediator of FGF signaling by providing a link between FGF receptors (FGFRs) and a variety of intracellular signaling pathways. After FGF stimulation, tyrosine-phosphorylated FRS2alpha recruits four molecules of the adaptor protein Grb2 and two molecules of the protein tyrosine phosphatase Shp2, resulting in activation of the Ras/extracellular signal-regulated kinase (ERK) and phosphatidylinositol-3 kinase/Akt signaling pathways. In this report, we explore the role of signaling pathways downstream of FRS2alpha in eye development by analyzing the phenotypes of mice that carry point mutations in either the Grb2-(Frs2alpha(4F)) or the Shp2-binding sites (Frs2alpha(2F)) of FRS2alpha. Although Frs2alpha(4F/4F) mice exhibited normal early eye development, all Frs2alpha(2F/2F) embryos were defective in eye development and showed anophthalmia or microphthalmia. Consistent with the critical role of FRS2alpha in FGF signaling, the level of activated extracellular signal-regulated kinase in Frs2alpha(2F/2F) embryos was significantly lower than that observed in wild-type embryos. Furthermore, expression of Pax6 and Six3, molecular markers for lens induction, were decreased in the Frs2alpha(2F/2F) presumptive lens ectoderm. Similarly, the expression of Chx10 and Bmp4, genes required for retinal precursor proliferation and for lens development, respectively, was also decreased in the optic vesicles of Frs2alpha(2F/2F) mice. These experiments demonstrate that intracellular signals that depend on specific tyrosine residues in FRS2alpha lie upstream of gene products critical for induction of lens and retina.",
+  "year": "2004",
+  "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+  "authors": [
+    "Gotoh N",
+    "Ito M",
+    "Yamamoto S",
+    "Yoshino I",
+    "Song N",
+    "Wang Y",
+    "Lax I",
+    "Schlessinger J",
+    "Shibuya M",
+    "Lang RA"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/15569927/",
+    "publisher": "https://doi.org/10.1073/pnas.0407577101"
+  }
+}

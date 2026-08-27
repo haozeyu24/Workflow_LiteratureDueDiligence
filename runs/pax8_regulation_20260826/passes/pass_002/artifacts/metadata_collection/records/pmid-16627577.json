@@ -1,0 +1,29 @@
+{
+  "paper_id": "pmid-16627577",
+  "pmid": "16627577",
+  "doi": "10.1210/en.2005-0789",
+  "title": "Bacterial lipopolysaccharide stimulates the thyrotropin-dependent thyroglobulin gene expression at the transcriptional level by involving the transcription factors thyroid transcription factor-1 and paired box domain transcription factor 8.",
+  "abstract": "The bacterial lipopolysaccharide (LPS) is a biological activator that induces expression of multiple genes in several cell types. LPS has been proposed as an etiopathogenic agent in autoimmune diseases. However, whether LPS affects the expression of autoantigens has not been explored. Thyroglobulin (TG) is a key protein in thyroid hormonogenesis and one of the major thyroid autoantigens. This study aimed to analyze the action of LPS on TG gene expression in Fisher rat thyroid cell line FRTL-5 thyroid cells. We demonstrate that LPS increases the TSH-induced TG protein and mRNA level. Evidence that the effect of LPS is exerted at the transcriptional level was obtained by transfecting the minimal TG promoter. The C element of the TG promoter, which contains sequences for paired box domain transcription factor 8 (Pax8) and thyroid transcription factor (TTF)-1 binding, is essential for full TG promoter expression under TSH stimulation. The transcriptional activity of a construct containing five tandem repeats of the C site is increased by LPS, indicating a possible involvement of the C site in the LPS-induced TG gene transcription. We demonstrate that the TG promoter mutated at the Pax8 or TTF-1 binding element in the C site does not respond to LPS. In band shift assays, binding of Pax8 and TTF-1 to the C site is increased by LPS. The Pax8 and TTF-1 mRNA and protein levels are augmented by LPS. The half-lives of TG, Pax8, and TTF-1 are increased in endotoxin-treated cells. Our results reveal the ability of LPS to stimulate the expression of TG, a finding of potential pathophysiological implication.",
+  "year": "2006",
+  "journal": "Endocrinology",
+  "authors": [
+    "V\u00e9lez ML",
+    "Costamagna E",
+    "Kimura ET",
+    "Fozzatti L",
+    "Pellizas CG",
+    "Montesinos MM",
+    "Lucero AM",
+    "Coleoni AH",
+    "Santisteban P",
+    "Masini-Repiso AM"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (\"protein stability\"[Title/Abstract] OR \"protein levels\"[Title/Abstract] OR stabilization[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract]) NOT \"PAX8-AS1\"[Title/Abstract]"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/16627577/",
+    "publisher": "https://doi.org/10.1210/en.2005-0789"
+  }
+}

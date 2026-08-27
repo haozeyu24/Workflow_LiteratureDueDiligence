@@ -1,0 +1,28 @@
+{
+  "paper_id": "pmid-25595912",
+  "pmid": "25595912",
+  "doi": "10.18632/oncotarget.2807",
+  "title": "LCK over-expression drives STAT5 oncogenic signaling in PAX5 translocated BCP-ALL patients.",
+  "abstract": "The PAX5 gene is altered in 30% of BCP-ALL patients and PAX5 chromosomal translocations account for 2-3% of cases. Although PAX5 fusion genes significantly affect the transcription of PAX5 target genes, their role in sustaining leukemia cell survival is poorly understood. In an in vitro model of PAX5/ETV6 leukemia, we demonstrated that Lck hyper-activation, and down-regulation of its negative regulator Csk, lead to STAT5 hyper-activation and consequently to the up-regulation of the downstream effectors, cMyc and Ccnd2. More important, cells from PAX5 translocated patients show LCK up-regulation and over-activation, as well as STAT5 hyper-phosphorylation, compared to PAX5 wt and PAX5 deleted cases. As in BCR/ABL1 positive ALL, the hyper-activation of STAT5 pathway can represent a survival signal in PAX5 translocated cells, alternative to the pre-BCR, which is down-regulated. The LCK inhibitor BIBF1120 selectively reverts this phenomenon both in the murine model and in leukemic primary cells. LCK inhibitor could therefore represent a suitable candidate drug to target this subgroup of ALL patients.",
+  "year": "2015",
+  "journal": "Oncotarget",
+  "authors": [
+    "Cazzaniga V",
+    "Bugarin C",
+    "Bardini M",
+    "Giordan M",
+    "te Kronnie G",
+    "Basso G",
+    "Biondi A",
+    "Fazio G",
+    "Cazzaniga G"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/25595912/",
+    "publisher": "https://doi.org/10.18632/oncotarget.2807"
+  }
+}

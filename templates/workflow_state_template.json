@@ -1,0 +1,16 @@
+{
+  "run_id": "",
+  "status": "initialized",
+  "access_phase": "pmc_learning",
+  "completion_signal": "",
+  "next_action": "",
+  "active_loop_count": 0,
+  "completed_big_loop_count": 0,
+  "min_big_workflow_loops": 2,
+  "max_workflow_loops": 5,
+  "latest_pdf_deferral_decision": "",
+  "manual_pdf_queue_count": 0,
+  "pdf_download_shortlist_count": 0,
+  "pdf_request_count": 0,
+  "reason": ""
+}

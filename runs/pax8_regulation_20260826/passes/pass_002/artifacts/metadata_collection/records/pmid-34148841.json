@@ -1,0 +1,36 @@
+{
+  "paper_id": "pmid-34148841",
+  "pmid": "34148841",
+  "doi": "10.1016/j.jgg.2021.04.006",
+  "title": "Ufl1 deficiency causes kidney atrophy associated with disruption of endoplasmic reticulum homeostasis.",
+  "abstract": "The UFMylation modification is a novel ubiquitin-like conjugation system, consisting of UBA5 (E1), UFC1 (E2), UFL1 (E3), and the conjugating molecule UFM1. Deficiency in this modification leads to embryonic lethality in mice and diseases in humans. However, the function of UFL1 is poorly characterized. Studies on Ufl1 conditional knockout mice have demonstrated that the deletion of Ufl1 in cardiomyocytes and in intestinal epithelial cells causes heart failure and increases susceptibility to experimentally induced colitis, respectively, suggesting an essential role of UFL1 in the maintenance of the homeostasis in these organs. Yet, its physiological function in other tissues and organs remains completely unknown. In this study, we generate the nephron tubules specific Ufl1 knockout mice and find that the absence of Ufl1 in renal tubular results in kidney atrophy and interstitial fibrosis. In addition, Ufl1 deficiency causes the activation of unfolded protein response and cell apoptosis, which may be responsible for the kidney atrophy and interstitial fibrosis. Collectively, our results have demonstrated the crucial role of UFL1 in regulating kidney function and maintenance of endoplasmic reticulum homeostasis, providing another layer of understanding kidney atrophy.",
+  "year": "2021",
+  "journal": "Journal of genetics and genomics = Yi chuan xue bao",
+  "authors": [
+    "Zhou Y",
+    "Ye X",
+    "Zhang C",
+    "Wang J",
+    "Guan Z",
+    "Yan J",
+    "Xu L",
+    "Wang K",
+    "Guan D",
+    "Liang Q",
+    "Mao J",
+    "Zhou J",
+    "Zhang Q",
+    "Wu X",
+    "Wang M",
+    "Cong YS",
+    "Liu J"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (\"protein stability\"[Title/Abstract] OR \"protein levels\"[Title/Abstract] OR stabilization[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract]) NOT \"PAX8-AS1\"[Title/Abstract]"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/34148841/",
+    "publisher": "https://doi.org/10.1016/j.jgg.2021.04.006"
+  }
+}

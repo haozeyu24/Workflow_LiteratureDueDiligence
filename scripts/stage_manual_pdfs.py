@@ -12,6 +12,8 @@ import subprocess
 import sys
 from pathlib import Path
 
+from pass_archive import active_artifacts_dir, load_all_pass_csv, run_input_path
+
 
 WORKFLOW_ROOT = Path(__file__).resolve().parents[1]
 RUNS_DIR = WORKFLOW_ROOT / "runs"
@@ -63,6 +65,30 @@ STOPWORDS = {
 
 def load_csv(path: Path) -> list[dict[str, str]]:
     return list(csv.DictReader(path.open(encoding="utf-8")))
+
+
+def parse_config(path: Path) -> dict[str, str]:
+    if not path.exists():
+        return {}
+    config: dict[str, str] = {}
+    pattern = re.compile(r"-\s+`([^`]+)`:\s+`([^`]+)`")
+    for line in path.read_text(encoding="utf-8").splitlines():
+        match = pattern.match(line.strip())
+        if match:
+            config[match.group(1)] = match.group(2)
+    return config
+
+
+def manual_pdf_allowed(run_dir: Path) -> bool:
+    config = parse_config(run_input_path(run_dir, "run_config.md"))
+    if config.get("access_phase", "pmc_learning") == "final_access" or config.get("pdf_policy") == "require_fulltext_completion":
+        return True
+    shortlist_path = active_artifacts_dir(run_dir) / "fulltext_import" / "pdf_download_shortlist.csv"
+    if not shortlist_path.exists():
+        return False
+    feedback_rows = load_all_pass_csv(run_dir, "artifacts/fulltext_review/pmc_mechanism_feedback.csv")
+    latest_decision = feedback_rows[-1].get("pdf_deferral_decision", "").strip() if feedback_rows else ""
+    return latest_decision == "final_pdf_pass"
 
 
 def write_csv(path: Path, fieldnames: list[str], rows: list[dict[str, str]]) -> None:
@@ -316,12 +342,21 @@ def main() -> int:
     downloads_dir = Path(sys.argv[2]).expanduser() if len(sys.argv) == 3 else Path("~/Downloads").expanduser()
 
     run_dir = RUNS_DIR / run_id
-    import_dir = run_dir / "artifacts" / "fulltext_import"
-    records_dir = run_dir / "artifacts" / "metadata_collection" / "records"
+    artifacts_dir = active_artifacts_dir(run_dir)
+    import_dir = artifacts_dir / "fulltext_import"
+    records_dir = artifacts_dir / "metadata_collection" / "records"
     import_status_path = import_dir / "import_status.csv"
     queue_path = import_dir / "manual_pdf_queue.csv"
     report_path = import_dir / "manual_pdf_import_report.csv"
     pdf_dir = import_dir / "PDF"
+
+    if not manual_pdf_allowed(run_dir):
+        print(
+            "Manual PDF staging is deferred during access_phase=pmc_learning. "
+            "Read PMC-normalized full text and write pmc_mechanism_feedback.csv first, "
+            "then build pdf_download_shortlist.csv after final_pdf_pass before staging PDFs."
+        )
+        return 1
 
     if not import_status_path.exists():
         print(f"Import status not found: {import_status_path}")

@@ -1,0 +1,22 @@
+{
+  "paper_id": "pmid-42258588",
+  "pmid": "42258588",
+  "doi": "10.1159/000552863",
+  "title": "Homer 2 Regulates Muscle Differentiation with NFATc1.",
+  "abstract": "INTRODUCTION: Calcineurin-NFAT is an important pathway that regulates skeletal muscle regeneration. Homer 2 that modulates signal transduction in the central nervous system directly binds to NFATc1. However, its role is not fully understood in skeletal muscle regeneration. We aimed to investigate the change of Homer 2 protein levels and expression patterns during muscle regeneration.\n\nMETHODS: Male ICR mice (12 weeks) were used in the experiment (n = 6/group). Their left tibialis anterior (TA) muscle was damaged via intramuscular injection of 0.5% bupivacaine hydrochloride (100 \u03bcL). The TA muscles of both legs were dissected at 2, 4, and 6 days post-injection and were subjected to immunofluorescence staining with Homer 2, NFATc1, and muscle regeneration markers (Pax7 and myogenin). We calculated their expression frequency by quantifying the immunoreactivity per 500 nuclei.\n\nRESULTS: We observed Homer 2 immunoreactivity in TA muscles at 2, 4, and 6 days post-injection. Homer 2 and Pax7, a satellite cell marker, were co-localized in mononuclear cells also in regenerating TA muscles. Many Homer 2-positive mononuclear cells expressed myogenin. The frequency of Homer 2- and NFATc1-positive cells significantly increased at 4 and 6 days rather than 2 days post-injection. Interestingly, co-immunoprecipitation experiments of Homer 2 and NFATc1 showed markedly increased levels at 4 days.\n\nCONCLUSION: We demonstrated that expression of Homer 2 protein increases in TA muscle regeneration. Homer 2 may act in the muscle regeneration process via the calcineurin-NFAT pathway.",
+  "year": "2026",
+  "journal": "Cells, tissues, organs",
+  "authors": [
+    "Aizawa M",
+    "Kinoshita M",
+    "Sakuma K"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42258588/",
+    "publisher": "https://doi.org/10.1159/000552863"
+  }
+}

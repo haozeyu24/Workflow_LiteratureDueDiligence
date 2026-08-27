@@ -1,0 +1,21 @@
+{
+  "paper_id": "pmid-10668206",
+  "pmid": "10668206",
+  "doi": "10.14670/HH-15.159",
+  "title": "Gene expression and cell turnover in human renal dysplasia.",
+  "abstract": "Kidney malformations are common causes of chronic renal failure in children. Dysplastic kidneys represent a unique model of perturbed epithelial-mesenchymal interaction which leads to the formation of malformed branching tubules surrounded by undifferentiated and metaplastic mesenchymal cells. We have found that human dysplastic epithelia express PAX2 (a transcription factor), BCL2 (a survival factor) and galectin-3 (a cell adhesion/signaling molecule). These genes are implicated in oncogenesis and their persistent expression may drive proliferation of dysplastic cysts, hence explaining the massive growth of some multicystic dysplastic kidneys. We have also detected prominent apoptosis in undifferentiated tissues around dysplastic epithelia, and this may provide a potential mechanism for the well-documented regression of dysplastic kidneys. Hence, although these kidneys may not have any excretory function, it is incorrect to consider them as 'end stage organs' because they are highly active in terms of cell turnover and gene expression; furthermore, these processes can be correlated with patterns of tissue growth and involution. Further elucidation of 'molecular lesions' in renal malformations may lead to novel therapies to enhance the differentiation of progenitor cells.",
+  "year": "2000",
+  "journal": "Histology and histopathology",
+  "authors": [
+    "Woolf AS",
+    "Winyard PJ"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/10668206/",
+    "publisher": "https://doi.org/10.14670/HH-15.159"
+  }
+}

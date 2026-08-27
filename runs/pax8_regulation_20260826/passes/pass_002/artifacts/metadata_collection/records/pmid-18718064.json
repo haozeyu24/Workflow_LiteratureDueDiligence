@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-18718064",
+  "pmid": "18718064",
+  "doi": "",
+  "title": "[Effect of pax5 gene blocked by RNAi on biological characteristics of B cell malignant lymphoma].",
+  "abstract": "This study was aimed to investigate the biological characteristics of B hematological tumor cells such as proliferation, immunological phenotype and apoptosis by silencing pax5. The specific pax5 small hairpin RNA (shRNA) was synthesized by in vitro transcription. For evaluating the inhibition efficiency, the expression change at mRNA and protein levels were assessed by real-time RT-PCR and Western blot respectively. To detect the biological characteristics of pax5-silenced hematological tumor cells, the immunological phenotype, apoptosis and cell proliferation were measured by using real-time RT-PCR, MTT assay and flow cytometry respectively. The results showed that two shRNA were synthesized, both of which were effective to block pax5 expression. After being blocked by RNAi the immunological phenotype of pax5-silenced lymphoma cells was changed, the expressions of CD19 mRNA and protein were reduced, but the expression of IgM was not changed. As compared with control group, the effect on proliferation and apoptosis of lymphoma cells not could be detected after pax5 silencing. It is concluded that the pax5 plays important role in late differentiation of B cells, and may participate in signal transduction of lymphoma cells, but the effect on proliferation and apoptosis of lymphoma cells were not detected after RNAi, which need to be elucidated further.",
+  "year": "2008",
+  "journal": "Zhongguo shi yan xue ye xue za zhi",
+  "authors": [
+    "Yuan XL",
+    "Zhang B",
+    "Jiang LM",
+    "Shen LS"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/18718064/",
+    "publisher": ""
+  }
+}

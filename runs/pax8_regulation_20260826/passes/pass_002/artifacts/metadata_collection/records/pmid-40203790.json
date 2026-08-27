@@ -1,0 +1,31 @@
+{
+  "paper_id": "pmid-40203790",
+  "pmid": "40203790",
+  "doi": "10.1016/j.tranon.2025.102389",
+  "title": "CUL4B regulates thyroid cancer differentiation and treatment sensitivity by ubiquitinating ARID1A.",
+  "abstract": "BACKGROUND: Thyroid cancer (TC) is a prevalent endocrine malignancy with a generally favorable prognosis. However, dedifferentiation of TC poses a significant challenge, resulting in poorer patient outcomes and necessitating urgent attention. Cullin 4B (CUL4B), a scaffold protein involved in proteolysis and epigenetic regulation, has been reported to play an oncogenic role in many human malignancies, though its involvement in TC remains unclear.\n\nMETHODS: The association between CUL4B expression and prognosis in TC patients was assessed using immunohistochemistry. RNA-seq was utilized to investigate the underlying molecular mechanisms, which were further validated through in vitro experiments. The target gene of CUL4B was identified, and the complete ubiquitination regulation process was described. The phenomenon of high expression of CUL4B in TC was explained by identifying that CUL4B-mediated regulation of the SWI/SNF complex.\n\nRESULTS: Our findings revealed that CUL4B expression was positively correlated with tumor progression and poor prognosis in TC. Mechanistically, overexpression of CUL4B promoted the progression and dedifferentiation of TC in vivo models. Crucially, we discovered that CUL4B drives dedifferentiation by promoting the ubiquitination of ARID1A within SWI/SNF complex, leading to decreased expression of the differentiation marker paired box 8 (PAX8). This loss of PAX8 contributes to the dedifferentiation process, ultimately resulting in the formation of anaplastic thyroid carcinoma (ATC). Moreover, silencing CUL4B increased the sensitivity of TC cells to MAPK inhibitors.\n\nCONCLUSION: CUL4B was crucial in driving tumor advancement and inhibiting differentiation in TC by facilitating the ubiquitin-mediated degradation of ARID1A, underscoring its potential as a therapeutic target.",
+  "year": "2025",
+  "journal": "Translational oncology",
+  "authors": [
+    "Gu H",
+    "Han B",
+    "Hu J",
+    "Liu P",
+    "Liu W",
+    "Qu Y",
+    "Zhang L",
+    "Li P",
+    "Wang G",
+    "Liu Z",
+    "Qi M",
+    "Sun F"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (\"protein stability\"[Title/Abstract] OR \"protein levels\"[Title/Abstract] OR stabilization[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract]) NOT \"PAX8-AS1\"[Title/Abstract]"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/40203790/",
+    "publisher": "https://doi.org/10.1016/j.tranon.2025.102389"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-39286266",
+  "pmid": "39286266",
+  "doi": "10.3389/fendo.2024.1426175",
+  "title": "A PRDM16-driven signal regulates body composition in testosterone-treated hypogonadal men.",
+  "abstract": "BACKGROUND: Testosterone (T) therapy increases lean mass and reduces total body and truncal fat mass in hypogonadal men. However, the underlying molecular mechanisms for the reciprocal changes in fat and lean mass in humans are not entirely clear.\n\nMETHODS: Secondary analysis of specimens obtained from a single-arm, open-label clinical trial on pharmacogenetics of response to T therapy in men with late-onset hypogonadism, conducted between 2011 and 2016 involving 105 men (40-74 years old), who were given intramuscular T cypionate 200 mg every 2 weeks for 18 months. Subcutaneous fat (SCF), peripheral blood mononuclear cells (PBMC) and serum were obtained from the participants at different time points of the study. We measured transcription factors for adipogenesis and myogenesis in the SCF, and PBMC, respectively, by real-time quantitative PCR at baseline and 6 months. Serum levels of FOLLISTATIN, PAX7, MYOSTATIN, ADIPSIN, and PRDM16 were measured by ELISA.\n\nRESULTS: As expected, there was a significant increase in T and estradiol levels after 6 months of T therapy. There was also a reduction in fat mass and an increase in lean mass after 6 months of T therapy. Gene-protein studies showed a significant reduction in the expression of the adipogenic markers PPAR\u03b3 in SCF and ADIPSIN levels in the serum, together with a concomitant significant increase in the expression of myogenic markers, MYOD in PBMC and PAX7 and FOLLISTATIN levels in the serum after 6 months of T therapy compared to baseline. Interestingly, there was a significant increase in the adipo-myogenic switch, PRDM16, expression in SCF and PBMC, and in circulating protein levels in the serum after 6 months of T therapy, which is likely from increased estradiol.\n\nCONCLUSION: Our study supports that molecular shift from the adipogenic to the myogenic pathway in men with hypogonadism treated with T could be mediated directly or indirectly by enhanced PRDM16 activity, in turn a result from increased estradiol level. This might have led to the reduction in body fat and increase in lean mass commonly seen in hypogonadal men treated with T.",
+  "year": "2024",
+  "journal": "Frontiers in endocrinology",
+  "authors": [
+    "Bathina S",
+    "Colleluori G",
+    "Villareal DT",
+    "Aguirre L",
+    "Chen R",
+    "Armamento-Villareal R"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/39286266/",
+    "publisher": "https://doi.org/10.3389/fendo.2024.1426175"
+  }
+}

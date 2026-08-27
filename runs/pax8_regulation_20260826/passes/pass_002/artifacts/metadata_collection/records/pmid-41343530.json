@@ -1,0 +1,29 @@
+{
+  "paper_id": "pmid-41343530",
+  "pmid": "41343530",
+  "doi": "10.1371/journal.pone.0337114",
+  "title": "Proinflammatory gene and protein expression alterations in human limbal aniridia fibroblasts.",
+  "abstract": "Aniridia-associated keratopathy (AAK) results from the paired box 6 (PAX6) gene haploinsufficiency, leading to depletion of limbal epithelial stem cells, persistent inflammation and a gradual loss of vision. Although fibroblasts are acknowledged as sentinel cells initiating corneal inflammation, their contribution in the chronic inflammatory state of AAK remains unexplored. Our study aims to compare PAX6 and inflammatory cytokine expression in limbal fibroblast cells (LFCs) of corneal donors and aniridia patients (AN-LFCs). Furthermore, we subjected LFCs and AN-LFCs to LPS and cobalt chloride (CoCl2), to investigate specific inflammatory reactions. Following isolation and culture, primary LFCs (n\u2009=\u20097) and AN-LFCs (n\u2009=\u20097) were subjected to a 24-hour treatment with E. coli LPS or a 48-hour exposure to CoCl2 as a chemical oxidative stress (OS) inducer. Subsequently, PAX6 as well as IL-1\u03b2, IL-6, TNF-\u03b1, and VEGF gene expression was examined by qPCR. Corresponding protein levels were assessed by ELISA from the cell culture supernatants. AN-LFCs exhibited similar PAX6 mRNA levels as normal LFCs (p\u2009\u2265\u20090.38). Notably, LPS treatment (p\u2009\u2264\u20090.02), but not CoCl2, significantly enhanced PAX6 expression. Untreated AN-LFCs showed higher IL-6 mRNA (p\u2009=\u20090.002) and protein levels (p\u2009=\u20090.009) but lower TNF-\u03b1 protein expression (p\u2009=\u20090.016) than LFCs. When exposed to LPS, AN-LFCs exhibited higher IL-1\u03b2 mRNA (p\u2009=\u20090.0008), as well as IL-6 protein expression (p\u2009=\u20090.029) than normal LFCs. Under OS, an elevated IL-6 protein (p\u2009=\u20090.010) was observed in AN-LFCs compared to LFCs. Our study revealed inflammatory gene and protein expression alterations in AN-LFCs, that could be involved in the stromal niche perturbations seen in AAK.",
+  "year": "2025",
+  "journal": "PloS one",
+  "authors": [
+    "Zimmermann JSA",
+    "Trusen S",
+    "Fries FN",
+    "Li Z",
+    "Chai N",
+    "Seitz B",
+    "Suiwal S",
+    "Amini M",
+    "Szentm\u00e1ry N",
+    "Stachon T"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/41343530/",
+    "publisher": "https://doi.org/10.1371/journal.pone.0337114"
+  }
+}

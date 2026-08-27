@@ -1,0 +1,22 @@
+{
+  "paper_id": "pmid-16333316",
+  "pmid": "16333316",
+  "doi": "10.1038/sj.ejhg.5201536",
+  "title": "A novel mutation in PAX9 causes familial form of molar oligodontia.",
+  "abstract": "PAX9 is a paired domain transcription factor that plays a critical role in odontogenesis. All mutations of PAX9 identified to date have been associated with nonsyndromic form of tooth agenesis. The present report describes an unusual novel mutation in PAX9 identified in a family with severe molar oligodontia. This heterozygous deletion combined with 24 bp insertion (including a 5' splice site) is localized in the second exon beyond the highly conserved paired box sequence, and might result either in a premature termination of translation at aa 210 or in an aberrant splicing, leading to a frameshift and premature termination of translation at aa 314. Real-time PCR analysis revealed no mutated transcript in cultured lymphocytes of one of the affected individuals indicating that the novel mutation might result in rapid degradation of the mutated transcript leading to haploinsufficiency of PAX9. Our results support the view that mutations in PAX9 constitute a causative factor in nonsyndromic oligodontia.",
+  "year": "2006",
+  "journal": "European journal of human genetics : EJHG",
+  "authors": [
+    "Mostowska A",
+    "Biedziak B",
+    "Trzeciak WH"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/16333316/",
+    "publisher": "https://doi.org/10.1038/sj.ejhg.5201536"
+  }
+}

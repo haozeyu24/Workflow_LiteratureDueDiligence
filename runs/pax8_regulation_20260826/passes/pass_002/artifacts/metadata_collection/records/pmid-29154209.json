@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-29154209",
+  "pmid": "29154209",
+  "doi": "10.1016/j.molimm.2017.11.011",
+  "title": "External signals regulate germinal center fate-determining transcription factors in the A20 lymphoma cell line.",
+  "abstract": "Due to the apoptosis-prone nature of primary germinal center B (GCB) cells, it remains a huge challenge to dissect signals that guide their differentiation towards memory B cells and plasma cells in vitro. Here we show that the murine lymphoma cell line A20 resembles primary GCB cells in expression of GC-specific surface markers and the master transcription factor BCL6 and may serve as a useful system to model certain GCB cell behaviors in vitro. Using these cells, we found that both CD40 and B cell receptor (BCR) signaling are able to drive BCL6 downregulation, which is a prerequisite of post-GC B-cell differentiation. Under the steady state, BCL6 is constantly and rapidly degraded in A20 cells by the proteasome in a strictly FBXO11-dependent manner. This process can be further enhanced by signals downstream of the BCR. Both CD40 and BCR stimulation can upregulate IRF4, a transcription factor that suppresses BCL6 expression. However, only BCR signaling downregulate PAX5 and BACH2, two transcription factors that help maintain the GCB identity. Together, these results validate the A20 cell line as an experimental system suitable for studying regulation of BCL6 and potentially other transcription factors relevant to post-GC fate determination, and they support that combined signaling from BCR and CD40 receptors would drive termination of the GC program.",
+  "year": "2018",
+  "journal": "Molecular immunology",
+  "authors": [
+    "Feng J",
+    "Liu X",
+    "Ni X",
+    "Qi H"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/29154209/",
+    "publisher": "https://doi.org/10.1016/j.molimm.2017.11.011"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "paper_id": "pmid-32826860",
+  "pmid": "32826860",
+  "doi": "10.1038/s41419-020-02848-5",
+  "title": "PAX6, modified by SUMOylation, plays a protective role in corneal endothelial injury.",
+  "abstract": "Treating corneal endothelial diseases tends to be challenging as human corneal endothelial cells (CECs) do not proliferate in vivo. The pathogenesis or mechanisms underlying injured CECs need further studies. The abnormal expression of PAX6, which is an essential transcription factor for corneal homeostasis, exhibits corneal endothelial defects. However, the effects of PAX6 protein involved in corneal endothelial wound process are still unknown. Here, we found the upregulated protein levels of PAX6 in human corneal endothelial monolayer after injury; the expression of PAX6 also increased in murine and rat corneal endothelium injury models. Enforced PAX6 expression could alleviate the damages to CECs via regulating permeability by prompting cellular tight junction. In addition, SUMOylation mainly happened on both K53 and K89 residues of 48-kD PAX6 (the longest and main isoform expressed in cornea), and de-SUMOylation promoted the stability of PAX6 protein in vitro. In CECs of SENP1+/- mice, increased SUMOylation levels leading to instability and low expression of PAX6, delayed the repair of CECs after injury. Furthermore, overexpression of PAX6 accelerated the rate of corneal endothelial repair of SENP1+/- mice. Our findings indicate that SENP1-mediated de-SUMOylation improving the stability of PAX6, amplifies the protective effects of PAX6 on corneal endothelial injuries, highlighting potentials of PAX6 and/or SUMOylation to be used as a treatment target for corneal endothelial disorders.",
+  "year": "2020",
+  "journal": "Cell death & disease",
+  "authors": [
+    "Yu F",
+    "Zhang W",
+    "Yan C",
+    "Yan D",
+    "Zhou M",
+    "Chen J",
+    "Zhao X",
+    "Zhu A",
+    "Zhou J",
+    "Liu H",
+    "Sun H",
+    "Fu Y"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/32826860/",
+    "publisher": "https://doi.org/10.1038/s41419-020-02848-5"
+  }
+}

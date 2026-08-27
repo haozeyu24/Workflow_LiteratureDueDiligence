@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-26755736",
+  "pmid": "26755736",
+  "doi": "10.14814/phy2.12675",
+  "title": "Possible role for nephron-derived angiotensinogen in angiotensin-II dependent hypertension.",
+  "abstract": "The role of intranephron angiotensinogen (AGT) in blood pressure (BP) regulation is not fully understood. Previous studies showed that proximal tubule-specific overexpression of AGT increases BP, whereas proximal tubule-specific deletion of AGT did not alter BP. The latter study may not have completely eliminated nephron AGT production; in addition, BP was only assessed on a normal salt diet. To evaluate this issue in greater detail, we developed mice with inducible nephron-wide AGT deletion. Mice were generated which were hemizygous for the Pax8-rtTA and LC-1 transgenes and homozygous for loxP-flanked AGT alleles to achieve nephron-wide AGT disruption after doxycycline induction. Compared to controls, AGT knockout (KO) mice demonstrated markedly reduced renal AGT immunostaining, mRNA, and protein levels; unexpectedly AGT KO mice had reduced AGT mRNA levels in the liver along with 50% reduction in plasma AGT levels. BP was significantly lower in the AGT KO mice compared to controls fed a normal, low, or high Na(+) intake, with the highest BP reduction on a low Na(+) diet. Regardless of Na(+) intake, AGT KO mice had higher plasma renin concentration (PRC) and markedly reduced urinary AGT levels compared to controls. Following angiotensin-II (Ang-II) infusion, AGT KO mice demonstrated an attenuated hypertensive response despite similar suppression of PRC in the two groups. Taken together, these data suggest that nephron-derived AGT may be involved in Ang-II-dependent hypertension, however, a clear role for nephron-derived AGT in physiological BP regulation remains to be determined.",
+  "year": "2016",
+  "journal": "Physiological reports",
+  "authors": [
+    "Ramkumar N",
+    "Stuart D",
+    "Calquin M",
+    "Wang S",
+    "Niimura F",
+    "Matsusaka T",
+    "Kohan DE"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (\"protein stability\"[Title/Abstract] OR \"protein levels\"[Title/Abstract] OR stabilization[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract]) NOT \"PAX8-AS1\"[Title/Abstract]"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/26755736/",
+    "publisher": "https://doi.org/10.14814/phy2.12675"
+  }
+}

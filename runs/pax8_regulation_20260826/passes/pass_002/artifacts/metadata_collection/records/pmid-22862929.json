@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-22862929",
+  "pmid": "22862929",
+  "doi": "10.1111/j.1740-0929.2011.00999.x",
+  "title": "Feeding Aspergillus awamori reduces skeletal muscle protein breakdown and stimulates growth in broilers.",
+  "abstract": "This study was conducted to show that dietary supplementation of a fungus, Aspergillus awamori called Koji in Japan, reduces skeletal muscle protein breakdown and stimulates growth in broiler chickens. A total of 30 chicks at 15 days of age was divided into control and two treatment groups (10 birds per treatment). Control group was fed basal diet and treatment groups were fed the basal diets supplemented with A. awamori at levels of 0.05% and 0.2%. The birds were raised for 12 days from 15 to 27 days of age and then the effect on growth, organ weights and plasma 3-methylhistidine concentration and digestibilities of protein and energy was evaluated. The messenger RNAs (mRNAs) of atrogin-1, ubiquitin, proteasome, m-calpain, \u00b5-calpain, \u03b2-actin, myosin and pax-7 in the breast muscle were also measured. Body weight gain and breast muscle weight were increased, although feed intake was decreased by the fungus and thus feed efficiency was increased. Protein and energy digestibilities were increased. Furthermore, plasma 3-methylhistidine concentration was decreased by the fungus. The mRNAs of atrogin-1, ubiquitin, proteasome, m-calpain and \u00b5-calpain were all decreased. The mRNA of \u03b2-actin but not myosin and pax-7 was slightly increased by the fungus. In conclusion, feeding A. awamori improves growth performance because skeletal muscle proteolytic activity is reduced and digestibilities of energy and protein are increased.",
+  "year": "2012",
+  "journal": "Animal science journal = Nihon chikusan Gakkaiho",
+  "authors": [
+    "Saleh AA",
+    "Eid YZ",
+    "Ebeid TA",
+    "Ohtsuka A",
+    "Yamamoto M",
+    "Hayashi K"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/22862929/",
+    "publisher": "https://doi.org/10.1111/j.1740-0929.2011.00999.x"
+  }
+}

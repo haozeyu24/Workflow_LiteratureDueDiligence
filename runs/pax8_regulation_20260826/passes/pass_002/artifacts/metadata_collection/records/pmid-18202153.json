@@ -1,0 +1,22 @@
+{
+  "paper_id": "pmid-18202153",
+  "pmid": "18202153",
+  "doi": "10.1210/me.2007-0093",
+  "title": "Gbetagamma dimers released in response to thyrotropin activate phosphoinositide 3-kinase and regulate gene expression in thyroid cells.",
+  "abstract": "Signaling by TSH through its receptor leads to the dissociation of trimeric G proteins into Galpha and Gbetagamma. Galphas activates adenylyl cyclase, which increases cAMP levels that induce several effects in the thyroid cell, including transcription of the sodium-iodide symporter (NIS) gene through a mechanism involving Pax8 binding to the NIS promoter. Much less is known about the function of Gbetagamma in thyroid differentiation, and therefore we studied their role in TSH signaling. Gbetagamma overexpression inhibits NIS promoter activation and reduces NIS protein accumulation in response to TSH and forskolin. Conversely, inhibition of Gbetagamma-dependent pathways increases NIS promoter activity elicited by TSH but does not modify forskolin-induced activation. Gbetagamma dimers are being released from the Gs subfamily of proteins, because cholera toxin mimics the effects elicited by TSH, whereas pertussis toxin has no effect on NIS promoter activity. We also found that TSH stimulates Akt phosphorylation in a phosphoinositide 3-kinase (PI3K)-dependent and cAMP-independent manner. This is mediated by Gbetagamma, because its overexpression or specific sequestration, respectively, increased or reduced phosphorylated Akt levels upon TSH stimulation. Gbetagamma sequestration increases NIS protein levels induced by TSH and Pax8 binding to the NIS promoter, which is also increased by PI3K inhibition. This is, at least in part, caused by Gbetagamma-mediated Pax8 exclusion from the nucleus that is attenuated when PI3K activity is blocked. These data unequivocally demonstrate that Gbetagamma released by TSH action stimulate PI3K, inhibiting NIS gene expression in a cAMP-independent manner due to a decrease in Pax8 binding to the NIS promoter.",
+  "year": "2008",
+  "journal": "Molecular endocrinology (Baltimore, Md.)",
+  "authors": [
+    "Zaballos MA",
+    "Garcia B",
+    "Santisteban P"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (\"protein stability\"[Title/Abstract] OR \"protein levels\"[Title/Abstract] OR stabilization[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract]) NOT \"PAX8-AS1\"[Title/Abstract]"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/18202153/",
+    "publisher": "https://doi.org/10.1210/me.2007-0093"
+  }
+}

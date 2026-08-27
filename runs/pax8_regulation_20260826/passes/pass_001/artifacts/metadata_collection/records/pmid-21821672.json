@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-21821672",
+  "pmid": "21821672",
+  "doi": "10.1093/hmg/ddr341",
+  "title": "A variant OSR1 allele which disturbs OSR1 mRNA expression in renal progenitor cells is associated with reduction of newborn kidney size and function.",
+  "abstract": "Human nephrons are formed during fetal life through an interaction between the branching ureteric bud and progenitor cells. The wide variation in final nephron number has been attributed to allelic variants of genes regulating ureteric bud arborization. Here, we hypothesize that dysfunctional variants of the Odd-Skipped Related 1 (OSR1) gene which compromise the renal progenitor cell pool might also limit newborn kidney size and function. We show that OSR1 is expressed in human mesenchymal stem cells, the blastemal component of Wilms tumors and CD24+/CD133+ progenitor cells isolated from the mature kidney. We identified an OSR1(rs12329305(T)) allele in 6% of normal Caucasians which alters an exon2 splice enhancer. This variant is predicted to reduce spliceosome-binding affinity and stability of the OSR1 mRNA. In cultured cells, the OSR1(rs12329305)(T) allele produced no identifiable transcript. Normal Caucasian newborns from Montreal with the OSR1(rs12329305)(T) allele had kidney volume 11.8% smaller (P= 0.006) and cord blood cystatin C levels 12.6% higher (P = 0.005) than those with wild-type genotype. Effects of the OSR1(rs12329305)(T) allele are additive with genes that alter ureteric bud branching. Kidney volume was reduced more in newborns bearing both RET(rs1800860)(A) and OSR1(rs12329305)(T) alleles (22%, P= 0.0008) and cystatin C was increased by 17% (P= 0.006) versus newborns with wild-type alleles. Although only two subjects had PAX2(rs11599825)(A) and OSR1(rs12329305)(T) alleles, kidney size was reduced by 27% and cystatin C was increased by 14% versus wild-types (P= NS).",
+  "year": "2011",
+  "journal": "Human molecular genetics",
+  "authors": [
+    "Zhang Z",
+    "Iglesias D",
+    "Eliopoulos N",
+    "El Kares R",
+    "Chu L",
+    "Romagnani P",
+    "Goodyer P"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/21821672/",
+    "publisher": "https://doi.org/10.1093/hmg/ddr341"
+  }
+}

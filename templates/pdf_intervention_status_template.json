@@ -1,7 +1,8 @@
 {
   "status": "not_needed",
-  "interaction_mode": "human_facing",
-  "pdf_policy": "pause_for_user",
+  "interaction_mode": "agent_facing",
+  "pdf_policy": "continue_pmc_only",
+  "access_phase": "pmc_learning",
   "pmc_ready_count": 0,
   "pdf_queue_count": 0,
   "recommended_action": "",

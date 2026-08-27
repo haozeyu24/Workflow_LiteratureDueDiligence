@@ -6,6 +6,8 @@ import csv
 import sys
 from pathlib import Path
 
+from pass_archive import active_artifacts_dir
+
 
 WORKFLOW_ROOT = Path(__file__).resolve().parents[1]
 RUNS_DIR = WORKFLOW_ROOT / "runs"
@@ -42,8 +44,9 @@ def main() -> int:
 
     run_id = sys.argv[1].strip()
     run_dir = RUNS_DIR / run_id
-    import_path = run_dir / "artifacts" / "fulltext_import" / "import_status.csv"
-    fulltext_path = run_dir / "artifacts" / "fulltext_review" / "fulltext_review.csv"
+    artifacts_dir = active_artifacts_dir(run_dir)
+    import_path = artifacts_dir / "fulltext_import" / "import_status.csv"
+    fulltext_path = artifacts_dir / "fulltext_review" / "fulltext_review.csv"
 
     if not import_path.exists():
         print(f"Import status not found: {import_path}")

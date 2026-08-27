@@ -1,0 +1,21 @@
+{
+  "paper_id": "pmid-19794903",
+  "pmid": "19794903",
+  "doi": "10.4161/org.5.2.8930",
+  "title": "The specification and maintenance of renal cell types by epigenetic factors.",
+  "abstract": "The specification of cell lineages and patterning in the embryo occurs sequentially as specific regions are increasingly restricted in their developmental fates. When and how this occurs is still not entirely clear. Nevertheless, the roles of epigenetic regulatory genes in partitioning the genome into active and inactive domains is evident in a variety of organisms and is highly conserved through evolution. The function of Pax2 in the kidney has been inferred by the phenotypic analysis of loss-of-function mutants in mice, fish and humans. Although Pax2 and the related gene, Pax8, are essential for early intermediate mesoderm specification and are found in the epithelial lineage arising from that mesoderm, how these proteins regulate cell lineage restriction and gene expression patterns has remained obscure. Our recent data, suggests that Pax proteins help establish chromatin domains within cell lineages by providing the locus and tissue specificity for epigenetic imprinting complexes that modify histones. The novel protein PTIP is a key adaptor that links Pax proteins and possibly many other types of DNA binding proteins to a histone H3K4 methyltransferase complex. Given the prevalence of Pax2 expression in kidney development and in kidney disease, we now need to address the effects of epigenetics on renal disease states, on the stability of the terminal epithelial phenotype, and in the aging cell.",
+  "year": "2009",
+  "journal": "Organogenesis",
+  "authors": [
+    "Dressler GR"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (stability[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR lysosome[Title/Abstract] OR autophagy[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract])",
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/19794903/",
+    "publisher": "https://doi.org/10.4161/org.5.2.8930"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-20685816",
+  "pmid": "20685816",
+  "doi": "10.1093/nar/gkq683",
+  "title": "Using protein design algorithms to understand the molecular basis of disease caused by protein-DNA interactions: the Pax6 example.",
+  "abstract": "Quite often a single or a combination of protein mutations is linked to specific diseases. However, distinguishing from sequence information which mutations have real effects in the protein's function is not trivial. Protein design tools are commonly used to explain mutations that affect protein stability, or protein-protein interaction, but not for mutations that could affect protein-DNA binding. Here, we used the protein design algorithm FoldX to model all known missense mutations in the paired box domain of Pax6, a highly conserved transcription factor involved in eye development and in several diseases such as aniridia. The validity of FoldX to deal with protein-DNA interactions was demonstrated by showing that high levels of accuracy can be achieved for mutations affecting these interactions. Also we showed that protein-design algorithms can accurately reproduce experimental DNA-binding logos. We conclude that 88% of the Pax6 mutations can be linked to changes in intrinsic stability (77%) and/or to its capabilities to bind DNA (30%). Our study emphasizes the importance of structure-based analysis to understand the molecular basis of diseases and shows that protein-DNA interactions can be analyzed to the same level of accuracy as protein stability, or protein-protein interactions.",
+  "year": "2010",
+  "journal": "Nucleic acids research",
+  "authors": [
+    "Alib\u00e9s A",
+    "Nadra AD",
+    "De Masi F",
+    "Bulyk ML",
+    "Serrano L",
+    "Stricher F"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/20685816/",
+    "publisher": "https://doi.org/10.1093/nar/gkq683"
+  }
+}

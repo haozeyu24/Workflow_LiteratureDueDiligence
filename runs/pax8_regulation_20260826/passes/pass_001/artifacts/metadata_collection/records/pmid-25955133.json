@@ -1,0 +1,31 @@
+{
+  "paper_id": "pmid-25955133",
+  "pmid": "25955133",
+  "doi": "10.3892/ijo.2015.2987",
+  "title": "Sulforaphane reduces molecular response to hypoxia in ovarian tumor cells independently of their resistance to chemotherapy.",
+  "abstract": "One of the recently emerging anticancer strategies is the use of natural dietary compounds, such as sulforaphane, a cancer-chemopreventive isothiocyanate found in broccoli. Based on the growing evidence, sulforaphane acts through molecular mechanisms that interfere with multiple oncogenic pathways in diverse tumor cell types. Herein, we investigated the anticancer effects of bioavailable concentrations of sulforaphane in ovarian carcinoma cell line A2780 and its two derivatives, adriamycin-resistant A2780/ADR and cisplatin-resistant A2780/CP cell lines. Since tumor microenvironment is characterized by reduced oxygenation that induces aggressive tumor phenotype (such as increased invasiveness and resistance to chemotherapy), we evaluated the effects of sulforaphane in ovarian cancer cells exposed to hypoxia (2%\u00a0O2). Using the cell-based reporter assay, we identified several oncogenic pathways modulated by sulforaphane in hypoxia by activating anticancer responses (p53, ARE, IRF-1, Pax-6 and XRE) and suppressing responses supporting tumor progression (AP-1 and HIF-1). We further showed that sulforaphane decreases the level of HIF-1\u03b1 protein without affecting its transcription and stability. It can also diminish transcription and protein level of the HIF-1 target, CA\u00a0IX, which protects tumor cells from hypoxia-induced pH imbalance and facilitates their migration/invasion. Accordingly, sulforaphane treatment leads to diminished pH regulation and reduced migration of ovarian carcinoma cells. These effects occur in all three ovarian cell lines suggesting that sulforaphane can overcome the chemoresistance of cancer cells. This offers a path potentially exploitable in sensitizing resistant cancer cells to therapy, and opens a window for the combined treatments of sulforaphane either with conventional chemotherapy, natural compounds, or with other small molecules.",
+  "year": "2015",
+  "journal": "International journal of oncology",
+  "authors": [
+    "Pastorek M",
+    "Simko V",
+    "Takacova M",
+    "Barathova M",
+    "Bartosova M",
+    "Hunakova L",
+    "Sedlakova O",
+    "Hudecova S",
+    "Krizanova O",
+    "Dequiedt F",
+    "Pastorekova S",
+    "Sedlak J"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/25955133/",
+    "publisher": "https://doi.org/10.3892/ijo.2015.2987"
+  }
+}

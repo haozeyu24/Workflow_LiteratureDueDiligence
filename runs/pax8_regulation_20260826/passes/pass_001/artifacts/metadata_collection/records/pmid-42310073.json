@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-42310073",
+  "pmid": "42310073",
+  "doi": "10.1038/s41698-026-01542-7",
+  "title": "LINC00312 increases gemcitabine sensitivity in nasopharyngeal carcinoma by recruiting PABPC1 and modulating PAX5-mediated transcription of LPLUNC1.",
+  "abstract": "Gemcitabine resistance is an important factor in the treatment failure of nasopharyngeal carcinoma (NPC). LINC00312 has been reported to associate with chemotherapy toxicity and chemoradiotherapy response in NPC. However, the molecular mechanism by which LINC00312 regulates NPC sensitivity to gemcitabine is unclear. We found overexpression of LINC00312 or LPLUNC1 inhibited NPC cell proliferation, migration, invasion, and increased gemcitabine sensitivity. Mechanistically, LINC00312 bound to PABPC1 to increase PAX5 mRNA stability. PAX5 transcriptionally activated LPLUNC1 to inhibit the malignant phenotype of NPC and increase gemcitabine sensitivity. PAX5 depletion diminished the inhibitory effects of gemcitabine on cell viability, while LPLUNC1 overexpression restored chemosensitivity. Furthermore, PAX5 interacted with LINC00312 promoter to transcriptionally activate LINC00312. In turn, the LINC00312-PAX5 feedback axis upregulated LPLUNC1 to inhibit the progression of NPC and increase gemcitabine sensitivity in NPC. In conclusion, LINC00312 increased PAX5 mRNA stability by recruiting PABPC1, which promoted LPLUNC1 transcription to regulate sensitivity of NPC to gemcitabine. Meanwhile, PAX5 in turn transcriptionally activated LINC00312 to form a feedback axis, which further increased gemcitabine sensitivity.",
+  "year": "2026",
+  "journal": "NPJ precision oncology",
+  "authors": [
+    "Guo Z",
+    "Zhang Z",
+    "Liu H",
+    "Liu F",
+    "Chen P",
+    "He B",
+    "Wang H",
+    "Lu J"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42310073/",
+    "publisher": "https://doi.org/10.1038/s41698-026-01542-7"
+  }
+}

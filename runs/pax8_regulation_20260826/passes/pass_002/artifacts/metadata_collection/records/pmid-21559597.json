@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-21559597",
+  "pmid": "21559597",
+  "doi": "10.3892/ijo.5.3.453",
+  "title": "PCR amplification of 40-year-old paraffin-embedded tumor-tissues - comparison of 4 different DNA extraction and purification methods.",
+  "abstract": "Four different methods of DNA extraction from formalin-fixed, paraffin-embedded tissues were compared for their ability to produce DNA suitable as a template for polymerase chain reaction (PCR). Seven paraffin-embedded rhabdomyosarcoma tissue blocks from the 1950s and one from 1960 were treated with the following extraction methods: 1. Proteinase K digestion and phenol/chloroform extraction; 2. Proteinase K digestion followed by boiling to inactivate the enzyme; 3. Proteinase K digestion, addition of Chelex-100, followed by boiling; and 4. Proteinase K digestion and Prep-A-Gene purification. DNA extracted by methods 1 and 2 was degraded, but DNA of high molecular weight was recovered in every sample extracted by methods 3 and 4 - even though some degradation was observed. Extracted DNA was used as a template for PCR amplification of exon 4 of the PAX-3 gene. PCR was successful in 7 out of 8 samples prepared using methods 3 and 4, producing levels of amplified product equivalent to those obtained with control DNA obtained from fresh lymphocytes. Only very weak products were found in samples prepared by methods 1 (2 out of 8) and 2 (4 out of 8). These results indicate that chelation of polyvalent ions (Chelex-100 method) or obviating the need for boiling (Prep-A-Gene) may protect DNA during extraction.",
+  "year": "1994",
+  "journal": "International journal of oncology",
+  "authors": [
+    "Wang W",
+    "Kumar P",
+    "Schwarz M",
+    "Malone G",
+    "Haworth A",
+    "Kumar S"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/21559597/",
+    "publisher": "https://doi.org/10.3892/ijo.5.3.453"
+  }
+}

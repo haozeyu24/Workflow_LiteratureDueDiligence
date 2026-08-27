@@ -1,0 +1,30 @@
+{
+  "paper_id": "pmid-25985210",
+  "pmid": "25985210",
+  "doi": "10.1038/oncsis.2015.12",
+  "title": "The oncogenic role of the cochaperone Sgt1.",
+  "abstract": "Sgt1/Sugt1, a cochaperone of Hsp90, is involved in several cellular activities including Cullin E3 ubiqutin ligase activity. The high level of Sgt1 expression in colorectal and gastric tumors suggests that Sgt1 is involved in tumorigenesis. Here, we report that Sgt1 is overexpressed in colon, breast and lung tumor tissues and in Ewing sarcoma and rhabdomyosarcoma xenografts. We also found that Sgt1 heterozygous knockout resulted in suppressed Hras-mediated transformation in vitro and tumor formation in p53(-/-) mouse embryonic fibroblast cells and significantly increased survival of p53(-/-) mice. Moreover, depletion of Sgt1 inhibited the growth of Ewing sarcoma and rhabdomyosarcoma cells and destabilized EWS-FLI1 and PAX3-FOXO1 oncogenic fusion proteins, respectively, which are required for cellular growth. Our results suggest that Sgt1 contributes to cancer development by stabilizing oncoproteins and that Sgt1 is a potential therapeutic target.",
+  "year": "2015",
+  "journal": "Oncogenesis",
+  "authors": [
+    "Ogi H",
+    "Sakuraba Y",
+    "Kitagawa R",
+    "Xiao L",
+    "Shen C",
+    "Cynthia MA",
+    "Ohta S",
+    "Arnold MA",
+    "Ramirez N",
+    "Houghton PJ",
+    "Kitagawa K"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/25985210/",
+    "publisher": "https://doi.org/10.1038/oncsis.2015.12"
+  }
+}

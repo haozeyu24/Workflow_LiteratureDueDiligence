@@ -1,0 +1,28 @@
+{
+  "paper_id": "pmid-42533127",
+  "pmid": "42533127",
+  "doi": "10.1007/s00467-026-07496-z",
+  "title": "Novel PAX2 variants and phenotypic heterogeneity in pediatric kidney disease: a single-center retrospective study.",
+  "abstract": "BACKGROUND: PAX2 encodes a transcription factor critical for kidney development. Pathogenic PAX2 variants are associated with heterogeneous kidney and extrarenal manifestations. However, the clinical heterogeneity of PAX2-associated kidney disease and the functional consequences of newly identified variants remain incompletely characterized in pediatric cohorts.\n\nMETHODS: We retrospectively analyzed probands from a single-center pediatric genetic kidney disease program (2018-2024). Clinical data, imaging, kidney pathology, follow-up kidney function and genetic results were reviewed. Selected variants were functionally assessed in HEK293 cells using protein expression, cycloheximide-chase, and dual-luciferase reporter assays.\n\nRESULTS: We identified 14 distinct PAX2 variants in 15 probands, including seven previously unreported variants: p.D2Y, p.T210A, p.S242N, p.V206D, p.A160T, p.F256Ffs*40, and p.L44_A45insV. The cohort showed substantial phenotypic heterogeneity, including variability in age at diagnosis, kidney manifestations, disease severity, extrarenal involvement, and intrafamilial expressivity. Kidney biopsy findings, available in seven patients, were heterogeneous and nonspecific. Functional analyses showed that several variants reduced PAX2 protein expression, impaired protein stability, and/or decreased transcriptional activity.\n\nCONCLUSION: This study expands the clinical and molecular spectrum of PAX2-related kidney disease in Chinese children and highlights its substantial phenotypic and pathological heterogeneity. Early genetic testing, retrospective reanalysis, and longitudinal follow-up are valuable for children with unexplained kidney disease.",
+  "year": "2026",
+  "journal": "Pediatric nephrology (Berlin, Germany)",
+  "authors": [
+    "Zhu X",
+    "Liu Q",
+    "He S",
+    "Zheng B",
+    "Wang C",
+    "Zhao F",
+    "Ding G",
+    "Zhang A",
+    "Zhou W"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42533127/",
+    "publisher": "https://doi.org/10.1007/s00467-026-07496-z"
+  }
+}

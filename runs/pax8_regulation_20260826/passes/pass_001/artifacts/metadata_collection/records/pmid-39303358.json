@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-39303358",
+  "pmid": "39303358",
+  "doi": "10.1016/j.tranon.2024.102128",
+  "title": "High expression of PAX8-AS1 correlates with poor prognosis and response to fluorouracil-based chemotherapy in stage II colon cancer.",
+  "abstract": "Decisions regarding adjuvant therapy in patients with stage II colon cancer remains controversial and challenging. We aimed to determine novel biomarkers that help to predict relapse free survival (RFS) and identify a subset of patients with stage II colon cancer who could gain survival benefits from adjuvant chemotherapy. Public microarray datasets of stage II colon cancer samples were extracted from Gene Expression Omnibus database. Global gene expression changes were then analyzed between the paired early relapse and long-term survival group to identify the differentially expressed mRNAs and lncRNAs. Based on Lasso Cox regression modeling analysis, a total of 30 mRNAs and 2 lncRNAs were finally identified. With specific formula, stage II patients in training and validation sets were divided into low and risk groups with significantly different RFS. PAX8-AS1 is the novel lncRNA which showed the highest upregulation in early relapse group. Patients with high PAX8-AS1 expression level showed notably poorer RFS in both meta GEO cohort (P = 0.04, Figure 4B) and FUSCC cohort (P < 0.001, Figure 4C). Among the stage II patients with high PAX8-AS1 level, administration of fluorouracil-based adjuvant chemotherapy provided a substantial improvement in RFS (P = 0.002, Figure 3C). Further mechanistic study unveiled that PAX8-AS1 increases the response of CRC cells to chemotherapy in vitro and in vivo by maintaining the mRNA stability of PAX8. In conclusion, PAX8-AS1 as a novel and reliable biomarker for predicting prognosis and identification of patients with stage II disease who could gain survival benefit from fluorouracil-based adjuvant chemotherapy.",
+  "year": "2024",
+  "journal": "Translational oncology",
+  "authors": [
+    "Fang H",
+    "Han L",
+    "Xu Y",
+    "Gu R",
+    "Cai G",
+    "Xia Z",
+    "Dai W",
+    "Wang R"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (stability[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR lysosome[Title/Abstract] OR autophagy[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/39303358/",
+    "publisher": "https://doi.org/10.1016/j.tranon.2024.102128"
+  }
+}

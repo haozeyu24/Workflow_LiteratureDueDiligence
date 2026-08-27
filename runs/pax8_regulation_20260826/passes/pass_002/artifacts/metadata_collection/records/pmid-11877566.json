@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-11877566",
+  "pmid": "11877566",
+  "doi": "10.1053/ajkd.2002.31391",
+  "title": "Significance of early phenotypic change of glomerular podocytes detected by Pax2 in primary focal segmental glomerulosclerosis.",
+  "abstract": "In primary focal segmental glomerulosclerosis (FSGS), phenotypic alteration of podocytes is important for the development of cellular lesions (CLs), which precede glomerular scar formation. WT1 and Pax2 are transcription factors involved in kidney development and phenotypic regulation of glomerular epithelial cells. However, the role of WT1 and Pax2 in the development of CLs in primary FSGS is unclear. Using immunohistochemistry, the expression of WT1, Pax2, and cytokeratin (CK), an epithelial marker never found in normal podocytes, was examined in 35 biopsy samples of primary FSGS. Segmental lesions were categorized as: (1) classic segmental scar (CS), (2) CL, and (3) monolayer epithelial (ME) lesion. In normal glomeruli, WT1 was strongly positive in podocytes and weakly positive in parietal epithelium of Bowman's capsule. Pax2 was strongly positive in parietal epithelium of Bowman's capsule, but never expressed in podocytes. Expression of WT1, Pax2, and CK was scantly positive in CSs. WT1 expression was decreased in CLs compared with unaffected podocytes, but Pax2 and CK were strongly expressed in CLs and podocytes of morphologically unaffected tufts in cases with CLs. WT1 expression was strong, as well as Pax2 and CK, in ME lesions. Clinically, urinary protein levels were significantly greater, and the interval from clinical onset to biopsy was significantly shorter in patients with CLs. These results suggest that re-expression of Pax2 in podocytes resulting in phenotypic change to a different epithelial form is one of the important changes for the development of CLs and ME lesions. Alteration from WT1 to Pax2 in podocytes may have an important role in the initiation of glomerular injury in primary FSGS.",
+  "year": "2002",
+  "journal": "American journal of kidney diseases : the official journal of the National Kidney Foundation",
+  "authors": [
+    "Ohtaka A",
+    "Ootaka T",
+    "Sato H",
+    "Soma J",
+    "Sato T",
+    "Saito T",
+    "Ito S"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/11877566/",
+    "publisher": "https://doi.org/10.1053/ajkd.2002.31391"
+  }
+}

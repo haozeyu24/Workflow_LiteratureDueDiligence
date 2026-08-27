@@ -1,0 +1,30 @@
+{
+  "paper_id": "pmid-36797435",
+  "pmid": "36797435",
+  "doi": "10.1007/s00414-023-02971-w",
+  "title": "Detection of multiple biomarkers associated with satellite cell fate in the contused skeletal muscle of rats for wound age estimation.",
+  "abstract": "From the perspective of forensic wound age estimation, experiments related to skeletal muscle regeneration after injury have rarely been reported. Here, we examined the time-dependent expression patterns of multiple biomarkers associated with satellite cell fate, including the transcription factor paired box 7 (Pax7), myoblast determination protein (MyoD), myogenin, and insulin-like growth factor (IGF-1), using immunohistochemistry, western blotting, and quantitative real-time PCR in contused skeletal muscle. An animal model of skeletal muscle contusion was established in 30 Sprague-Dawley male rats, and another five rats were employed as non-contused controls. Morphometrically, the data obtained from the numbers of Pax7\u2009+\u2009, MyoD\u2009+\u2009, and myogenin\u2009+\u2009cells were highly correlated with the wound age. Pax7, MyoD, myogenin, and IGF-1 expression patterns were upregulated after injury at both the mRNA and protein levels. Pax7, MyoD, and myogenin protein expression levels confirmed the results of the morphometrical analysis. Additionally, the relative quantity of IGF-1 protein\u2009>\u20090.92 suggested a wound age of 3 to 7\u00a0days. The relative quantity of Pax7 mRNA\u2009>\u20092.44 also suggested a wound age of 3 to 7\u00a0days. Relative quantities of Myod1, Myog, and Igf1 mRNA expression\u2009>\u20092.78,\u2009>\u20097.80, or\u2009>\u20093.13, respectively, indicated a wound age of approximately 3\u00a0days. In conclusion, the expression levels of Pax7, MyoD, myogenin, and IGF-1 were upregulated in a time-dependent manner during skeletal muscle wound healing, suggesting the potential for using them as candidate biomarkers for wound age estimation in skeletal muscle.",
+  "year": "2023",
+  "journal": "International journal of legal medicine",
+  "authors": [
+    "Tian ZL",
+    "Wang RL",
+    "Yang QF",
+    "Qin ZQ",
+    "Dong HW",
+    "Zou DH",
+    "Li ZD",
+    "Wang JM",
+    "Guan DW",
+    "Zhang JH",
+    "Liu NG"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/36797435/",
+    "publisher": "https://doi.org/10.1007/s00414-023-02971-w"
+  }
+}

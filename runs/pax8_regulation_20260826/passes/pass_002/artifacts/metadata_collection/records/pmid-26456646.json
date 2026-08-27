@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-26456646",
+  "pmid": "26456646",
+  "doi": "10.1016/j.bbrc.2015.10.011",
+  "title": "Histone acetyltransferase PCAF is involved in transactivation of Bcl-6 and Pax5 genes in immature B cells.",
+  "abstract": "Histone acetyltransferase p300/CBP-associated factor (PCAF) belonging to GCN5 family regulates various epigenetic events for transcriptional regulation through alterations in the chromatin structure. During normal development of B cells, gene expressions of numerous transcription factors are strictly regulated by epigenetic mechanisms including histone acetylation and deacetylation to complete their development pathways. Here, by analyzing PCAF-deficient DT40 mutants, \u0394PCAF, we report that PCAF takes part in transcriptional activation of B cell lymphoma-6 (Bcl-6) and Paired box gene 5 (Pax5), which are essential transcription factors for normal development of B cells. PCAF-deficiency caused drastic decrease in mRNA levels of Bcl-6 and Pax5, and remarkable increase in that of B lymphocyte-induced maturation protein-1 (Blimp-1). In addition, chromatin immunoprecipitation assay showed that PCAF-deficiency caused remarkable decrease in acetylation levels of both H3K9 and H3K14 residues within chromatin surrounding the 5'-flanking regions of Bcl-6 and Pax5 genes in\u00a0vivo, suggesting that their gene expressions may be regulated by PCAF. These results revealed that PCAF is involved in transactivation of Bcl-6 and Pax5 genes, resulting in down-regulation of Blimp-1 gene expression, and plays a key role in epigenetic regulation of B cell development.",
+  "year": "2015",
+  "journal": "Biochemical and biophysical research communications",
+  "authors": [
+    "Kikuchi H",
+    "Nakayama M",
+    "Kuribayashi F",
+    "Mimuro H",
+    "Imajoh-Ohmi S",
+    "Nishitoh H",
+    "Nakayama T"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/26456646/",
+    "publisher": "https://doi.org/10.1016/j.bbrc.2015.10.011"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-31072927",
+  "pmid": "31072927",
+  "doi": "10.1073/pnas.1804013116",
+  "title": "Activation of PASK by mTORC1 is required for the onset of the terminal differentiation program.",
+  "abstract": "During skeletal muscle regeneration, muscle stem cells (MuSCs) respond to multiple signaling inputs that converge onto mammalian target of rapamycin complex 1 (mTORC1) signaling pathways. mTOR function is essential for establishment of the differentiation-committed progenitors (early stage of differentiation, marked by the induction of myogenin expression), myotube fusion, and, ultimately, hypertrophy (later stage of differentiation). While a major mTORC1 substrate, p70S6K, is required for myotube fusion and hypertrophy, an mTORC1 effector for the induction of myogenin expression remains unclear. Here, we identified Per-Arnt-Sim domain kinase (PASK) as a downstream phosphorylation target of mTORC1 in MuSCs during differentiation. We have recently shown that the PASK phosphorylates Wdr5 to stimulate MuSC differentiation by epigenetically activating the myogenin promoter. We show that phosphorylation of PASK by mTORC1 is required for the activation of myogenin transcription, exit from self-renewal, and induction of the myogenesis program. Our studies reveal that mTORC1-PASK signaling is required for the rise of myogenin-positive committed myoblasts (early stage of myogenesis), whereas mTORC1-S6K signaling is required for myoblast fusion (later stage of myogenesis). Thus, our discoveries allow molecular dissection of mTOR functions during different stages of the myogenesis program driven by two different substrates.",
+  "year": "2019",
+  "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+  "authors": [
+    "Kikani CK",
+    "Wu X",
+    "Fogarty S",
+    "Kang SAW",
+    "Dephoure N",
+    "Gygi SP",
+    "Sabatini DM",
+    "Rutter J"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/31072927/",
+    "publisher": "https://doi.org/10.1073/pnas.1804013116"
+  }
+}

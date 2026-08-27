@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-39127215",
+  "pmid": "39127215",
+  "doi": "10.1016/j.scitotenv.2024.175358",
+  "title": "Positive selection in cilia-related genes may facilitate deep-sea adaptation of Thermocollonia jamsteci.",
+  "abstract": "Deep-sea hydrothermal vents are characterized by high hydrostatic pressure, hypoxia, darkness and toxic substances. However, how organisms adapt to such extreme marine ecosystems remain poorly understood. We hypothesize that adaptive evolution plays an essential role in generating novelty for evolutionary adaptation to the deep-sea environment because adaptive evolution has been found to be critical for species origin and evolution. In this project, the chromosome-level genome of the deep-sea hydrothermal vent gastropod T. jamsteci was constructed for the first time to examine molecular mechanisms of its adaptation to the deep-sea environment. The genome size was large (2.54 Gb), ranking at the top of all species in the Vetigastropoda subclass, driven primarily by the bursts of transposable elements (TEs). The transposition of TEs may also trigger chromosomal changes including both inter-chromosomal fusions and intra-chromosomal activities involving chromosome inversions, rearrangements and fusions, as revealed by comparing the genomes of T. jamsteci and its closely related shallow-sea species Gibbula magus. Innovative changes including the expansion of the ABC transporter gene family that may facilitate detoxification, duplication of genes related to endocytosis, immunity, apoptosis, and anti-apoptotic domains that may help T. jamsteci fight against microbial pathogens, were identified. Furthermore, comparative analysis identified positive selection signals in a large number of genes including the hypoxia up-regulated protein 1, which is a chaperone that may promote adaptation of the T. jamsteci to hypoxic deepsea environments, hox2, Rx2, Pax6 and cilia-related genes BBS1, BBS2, BBS9 and RFX4. Notably, because of the critical importance of cilia and IFT in development, positive selection in cilia-related genes may play a critical role in facilitating T. jamsteci to adapt to the high-pressure deep-sea ecosystem. Results from this study thus revealed important molecular clues that may facilitate further research on the adaptation of molluscs to deep-sea hydrothermal vents.",
+  "year": "2024",
+  "journal": "The Science of the total environment",
+  "authors": [
+    "Duan Z",
+    "Wang J",
+    "Liu S",
+    "Xu Q",
+    "Chen H",
+    "Li C",
+    "Hui M",
+    "Chen N"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/39127215/",
+    "publisher": "https://doi.org/10.1016/j.scitotenv.2024.175358"
+  }
+}

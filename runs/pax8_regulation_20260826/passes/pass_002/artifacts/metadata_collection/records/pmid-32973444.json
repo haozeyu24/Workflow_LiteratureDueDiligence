@@ -1,0 +1,31 @@
+{
+  "paper_id": "pmid-32973444",
+  "pmid": "32973444",
+  "doi": "10.3389/fnmol.2020.00141",
+  "title": "Activation of Type 4 Metabotropic Glutamate Receptor Regulates Proliferation and Neuronal Differentiation in a Cultured Rat Retinal Progenitor Cell Through the Suppression of the cAMP/PTEN/AKT Pathway.",
+  "abstract": "Retinal progenitor cells (RPCs) remain in the eye throughout life and can be characterized by their ability for self-renewal as well as their specialization into different cell types. A recent study has suggested that metabotropic glutamate receptors (mGluRs) participate in the processes of multiple types of stem cells. Therefore, clarifying the functions of different subtypes of mGluRs in RPCs may provide a novel treatment strategy for regulating the proliferation and differentiation of endogenous RPCs after retinal degeneration. In this study, we observed that mGluR4 was functionally expressed in RPCs, with an effect on cell viability and intracellular cAMP concentration. The activation of mGluR4 by VU0155041 (VU, mGluR4 positive allosteric selective modulator) reduced the number of BrdU+/Pax6+ double-positive cells and Cyclin D1 expression levels while increasing the number of neuron-specific class III beta-tubulin (Tuj1)- and Doublecortin (DCX)-positive cells. The knockdown of mGluR4 by target-specific siRNA abolished the effects of VU on RPC proliferation and neuronal differentiation. Further investigation demonstrated that mGluR4 activation inhibited AKT phosphorylation and up-regulated PTEN protein expression. Moreover, the VU0155041-induced inhibition of proliferation and enhancement of neuronal differentiation in RPCs were significantly hampered by Forskolin (adenylyl cyclase activator) and VO-OHpic trihydrate (PTEN inhibitor). In contrast, the effect of LY294002 (a highly selective Akt inhibitor) on proliferation and differentiation was similar to that of VU. These results indicate that mGluR4 activation can suppress proliferation and promote the neural differentiation of cultured rat RPCs through the cAMP/PTEN/AKT pathway. Our research lays the foundation for further pharmacological work exploring a novel potential therapy for several retinal diseases.",
+  "year": "2020",
+  "journal": "Frontiers in molecular neuroscience",
+  "authors": [
+    "Zhang Z",
+    "Liu Y",
+    "Luan Y",
+    "Zhu K",
+    "Hu B",
+    "Ma B",
+    "Chen L",
+    "Liu X",
+    "Lu H",
+    "Chen X",
+    "Liu Y",
+    "Zheng X"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/32973444/",
+    "publisher": "https://doi.org/10.3389/fnmol.2020.00141"
+  }
+}

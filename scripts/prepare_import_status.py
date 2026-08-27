@@ -10,6 +10,8 @@ import time
 import urllib.parse
 from pathlib import Path
 
+from pass_archive import active_artifacts_dir
+
 
 WORKFLOW_ROOT = Path(__file__).resolve().parents[1]
 RUNS_DIR = WORKFLOW_ROOT / "runs"
@@ -87,9 +89,10 @@ def main() -> int:
 
     run_id = sys.argv[1].strip()
     run_dir = RUNS_DIR / run_id
-    manifest_path = run_dir / "artifacts" / "metadata_collection" / "paper_manifest.csv"
-    review2_path = run_dir / "artifacts" / "abstract_review" / "abstract_review2.csv"
-    import_dir = run_dir / "artifacts" / "fulltext_import"
+    artifacts_dir = active_artifacts_dir(run_dir)
+    manifest_path = artifacts_dir / "metadata_collection" / "paper_manifest.csv"
+    review2_path = artifacts_dir / "abstract_review" / "abstract_review2.csv"
+    import_dir = artifacts_dir / "fulltext_import"
     import_path = import_dir / "import_status.csv"
     manual_pdf_path = import_dir / "manual_pdf_queue.csv"
 

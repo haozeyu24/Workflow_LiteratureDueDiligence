@@ -1,0 +1,46 @@
+{
+  "paper_id": "pmid-35676472",
+  "pmid": "35676472",
+  "doi": "10.1038/s41586-022-04809-8",
+  "title": "The renal lineage factor PAX8 controls oncogenic signalling in kidney cancer.",
+  "abstract": "Large-scale human genetic data1-3 have shown that cancer mutations display strong tissue-selectivity, but how this selectivity arises remains unclear. Here, using experimental models, functional genomics and analyses of patient samples, we demonstrate that the lineage transcription factor paired box\u20098 (PAX8) is required for oncogenic signalling by two common genetic alterations that cause clear cell renal cell carcinoma (ccRCC) in humans: the germline variant rs7948643 at 11q13.3 and somatic inactivation of the von Hippel-Lindau tumour suppressor (VHL)4-6. VHL loss, which is observed in about 90% of ccRCCs, can lead to hypoxia-inducible factor\u20092\u03b1 (HIF2A) stabilization6,7. We show that HIF2A is preferentially recruited to PAX8-bound transcriptional enhancers, including a pro-tumorigenic cyclin\u2009D1 (CCND1) enhancer that is controlled by PAX8 and HIF2A. The ccRCC-protective allele\u2009C at rs7948643 inhibits PAX8 binding at this enhancer and downstream activation of CCND1 expression. Co-option of a PAX8-dependent physiological programme that supports the proliferation of normal renal epithelial cells is also required for MYC expression from the ccRCC metastasis-associated amplicons at 8q21.3-q24.3 (ref. 8). These results demonstrate that transcriptional lineage factors are essential for oncogenic signalling and that they mediate tissue-specific cancer risk associated with somatic and inherited genetic variants.",
+  "year": "2022",
+  "journal": "Nature",
+  "authors": [
+    "Patel SA",
+    "Hirosue S",
+    "Rodrigues P",
+    "Vojtasova E",
+    "Richardson EK",
+    "Ge J",
+    "Syafruddin SE",
+    "Speed A",
+    "Papachristou EK",
+    "Baker D",
+    "Clarke D",
+    "Purvis S",
+    "Wesolowski L",
+    "Dyas A",
+    "Castillon L",
+    "Caraffini V",
+    "Bihary D",
+    "Yong C",
+    "Harrison DJ",
+    "Stewart GD",
+    "Machiela MJ",
+    "Purdue MP",
+    "Chanock SJ",
+    "Warren AY",
+    "Samarajiwa SA",
+    "Carroll JS",
+    "Vanharanta S"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (\"protein stability\"[Title/Abstract] OR \"protein levels\"[Title/Abstract] OR stabilization[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract]) NOT \"PAX8-AS1\"[Title/Abstract]"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/35676472/",
+    "publisher": "https://doi.org/10.1038/s41586-022-04809-8"
+  }
+}

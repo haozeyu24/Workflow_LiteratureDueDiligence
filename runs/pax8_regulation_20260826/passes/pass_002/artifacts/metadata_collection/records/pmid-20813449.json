@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-20813449",
+  "pmid": "20813449",
+  "doi": "10.1016/j.diff.2010.07.001",
+  "title": "EGF and bFGF pre-treatment enhances neural specification and the response to neuronal commitment of MIAMI cells.",
+  "abstract": "AIMS: Multipotent mesenchymal stromal cells raise great interest for regenerative medicine studies. Some MSC subpopulations have the potential to undergo neural differentiation, including marrow isolated adult multilineage inducible (MIAMI) cells, which differentiate into neuron-like cells in a multi-step neurotrophin 3-dependent manner. Epidermal and basic fibroblast growth factors are often used in neuronal differentiation protocols for MSCs, but with a limited understanding of their role. In this study, we thoroughly assessed for the first time the capacity of these factors to enhance the neuronal differentiation of MSCs.\n\nMATERIALS AND METHODS: We have characterized MIAMI cell neuronal differentiation program in terms of stem cell molecule expression, cell cycle modifications, acquisition of a neuronal morphology and expression of neural and neuronal molecules in the absence and presence of an EGF-bFGF pre-treatment.\n\nRESULTS: EGF-bFGF pre-treatment down-regulated the expression of stemness markers Oct4A, Notch1 and Hes5, whereas neural/neuronal molecules Nestin, Pax6, Ngn2 and the neurotrophin receptor tyrosine kinase 1 and 3 were up-regulated. During differentiation, a sustained Erk phosphorylation in response to NT3 was observed, cells began to exit from the cell cycle and exhibit increased neurite-like extensions. In addition, neuronal \u03b23-tubulin and neurofilament expression was increased; an effect mediated via the Erk pathway. A slight pre-oligodendrocyte engagement was noted, and no default neurotransmitter phenotype was observed. Overall, mesodermal markers were unaffected or decreased, while neurogenic/adipogenic PPAR\u03b32 was increased.\n\nCONCLUSION: EGF and bFGF pre-treatment enhances neural specification and the response to neuronal commitment of MIAMI cells, further increasing their potential use in adult cell therapy of the nervous system.",
+  "year": "2010",
+  "journal": "Differentiation; research in biological diversity",
+  "authors": [
+    "Delcroix GJ",
+    "Curtis KM",
+    "Schiller PC",
+    "Montero-Menei CN"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/20813449/",
+    "publisher": "https://doi.org/10.1016/j.diff.2010.07.001"
+  }
+}

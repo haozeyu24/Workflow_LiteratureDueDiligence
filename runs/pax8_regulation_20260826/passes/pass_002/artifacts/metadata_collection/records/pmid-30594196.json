@@ -1,0 +1,31 @@
+{
+  "paper_id": "pmid-30594196",
+  "pmid": "30594196",
+  "doi": "10.1186/s12931-018-0948-z",
+  "title": "Investigating the mechanism by which SMAD3 induces PAX6 transcription to promote the development of non-small cell lung cancer.",
+  "abstract": "BACKGROUND: This study investigated the function of SMAD3 (SMAD family member 3) in regulating PAX6 (paired box\u00a06) in non-small cell lung cancer.\n\nMETHODS: First, qRT-PCR was employed to detect SMAD3 expression in cancer tissues along with normal tissues and four cell lines, including BEAS-2B, H125, HCC827 and A549 cells. SMAD3 was knocked down by small interference RNA (siRNA), and then its expression was determined via qRT-PCR and Western blot analysis. The correlation between SMAD3 and PAX6 was determined by double luciferase reporter experiments and chromatin immunoprecipitation (ChIP) assay. Cell viability was evaluated by CCK-8 and colony forming assays, while cell migration and invasion were detected by Transwell analysis.\n\nRESULTS: SMAD3 and PAX6 were upregulated in lung cancer tissues and cancer cells. Knocking down SMAD3 and PAX6 by transfection with siRNAs specifically suppressed the expression of SMAD3 and PAX6 mRNA and protein levels. SMAD3 could promote PAX6 transcriptional activity by binding to its promoter. Reduced expression of SMAD3 led to the downregulation of PAX6 mRNA and protein levels along with decreased cell migration, invasion, proliferation and viability in A549 and HCC827 cells. PAX6 overexpression altered the si-SMAD3-induced inhibition of cell migration, invasion, proliferation and viability in A549 and HCC827 cells. Additionally, PAX6 knockdown alone also repressed the cell migration, invasion, proliferation and viability of the cell lines.\n\nCONCLUSIONS: SMAD3 promotes the progression of non-small cell lung cancer by upregulating PAX6 expression.",
+  "year": "2018",
+  "journal": "Respiratory research",
+  "authors": [
+    "Qian Z",
+    "Zhang Q",
+    "Hu Y",
+    "Zhang T",
+    "Li J",
+    "Liu Z",
+    "Zheng H",
+    "Gao Y",
+    "Jia W",
+    "Hu A",
+    "Li B",
+    "Hao J"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/30594196/",
+    "publisher": "https://doi.org/10.1186/s12931-018-0948-z"
+  }
+}

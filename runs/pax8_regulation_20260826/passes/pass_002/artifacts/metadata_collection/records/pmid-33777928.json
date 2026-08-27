@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-33777928",
+  "pmid": "33777928",
+  "doi": "10.3389/fcell.2021.606403",
+  "title": "c-Abl Kinase Is Required for Satellite Cell Function Through Pax7 Regulation.",
+  "abstract": "Satellite cells (SCs) are tissue-specific stem cells responsible for adult skeletal muscle regeneration and maintenance. SCs function is critically dependent on two families of transcription factors: the paired box (Pax) involved in specification and maintenance and the Muscle Regulatory Factors (MRFs), which orchestrate myogenic commitment and differentiation. In turn, signaling events triggered by extrinsic and intrinsic stimuli control their function via post-translational modifications, including ubiquitination and phosphorylation. In this context, the Abelson non-receptor tyrosine kinase (c-Abl) mediates the activation of the p38 \u03b1/\u03b2 MAPK pathway, promoting myogenesis. c-Abl also regulates the activity of the transcription factor MyoD during DNA-damage stress response, pausing differentiation. However, it is not clear if c-Abl modulates other key transcription factors controlling SC function. This work aims to determine the role of c-Abl in SCs myogenic capacity via loss of function approaches in vitro and in vivo. Here we show that c-Abl inhibition or deletion results in a down-regulation of Pax7 mRNA and protein levels, accompanied by decreased Pax7 transcriptional activity, without a significant effect on MRF expression. Additionally, we provide data indicating that Pax7 is directly phosphorylated by c-Abl. Finally, SC-specific c-Abl ablation impairs muscle regeneration upon acute injury. Our results indicate that c-Abl regulates myogenic progression in activated SCs by controlling Pax7 function and expression.",
+  "year": "2021",
+  "journal": "Frontiers in cell and developmental biology",
+  "authors": [
+    "Montecino F",
+    "Gonz\u00e1lez N",
+    "Blanco N",
+    "Ram\u00edrez MJ",
+    "Gonz\u00e1lez-Mart\u00edn A",
+    "Alvarez AR",
+    "Olgu\u00edn H"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/33777928/",
+    "publisher": "https://doi.org/10.3389/fcell.2021.606403"
+  }
+}

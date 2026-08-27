@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-38781157",
+  "pmid": "38781157",
+  "doi": "10.1371/journal.pone.0294003",
+  "title": "Molecular regulation of PPAR\u03b3/RXR\u03b1 signaling by the novel cofactor ZFP407.",
+  "abstract": "Cofactors interacting with PPAR\u03b3 can regulate adipogenesis and adipocyte metabolism by modulating the transcriptional activity and selectivity of PPAR\u03b3 signaling. ZFP407 was previously demonstrated to regulate PPAR\u03b3 target genes such as GLUT4, and its overexpression improved glucose homeostasis in mice. Here, using a series of molecular assays, including protein-interaction studies, mutagenesis, and ChIP-seq, ZFP407 was found to interact with the PPAR\u03b3/RXR\u03b1 protein complex in the nucleus of adipocytes. Consistent with this observation, ZFP407 ChIP-seq peaks significantly overlapped with PPAR\u03b3 ChIP-seq peaks, with more than half of ZFP407 peaks overlapping with PPAR\u03b3 peaks. Transcription factor binding motifs enriched in these overlapping sites included CTCF, RAR\u03b1/RXR\u03b3, TP73, and ELK1, which regulate cellular development and function within adipocytes. Site-directed mutagenesis of frequent PPAR\u03b3 phosphorylation or SUMOylation sites did not prevent its regulation by ZFP407, while mutagenesis of ZFP407 domains potentially necessary for RXR and PPAR\u03b3 binding abrogated any impact of ZFP407 on PPAR\u03b3 activity. These data suggest that ZFP407 controls the activity of PPAR\u03b3, but does so independently of post-translational modifications, likely by direct binding, establishing ZFP407 as a newly identified PPAR\u03b3 cofactor. In addition, ZFP407 ChIP-seq analyses identified regions that did not overlap with PPAR\u03b3 peaks. These non-overlapping peaks were significantly enriched for the transcription factor binding motifs of TBX19, PAX8, HSF4, and ZKSCAN3, which may contribute to the PPAR\u03b3-independent functions of ZFP407 in adipocytes and other cell types.",
+  "year": "2024",
+  "journal": "PloS one",
+  "authors": [
+    "Charrier A",
+    "Ockunzzi J",
+    "Main L",
+    "Ghanta SV",
+    "Buchner DA"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (\"protein stability\"[Title/Abstract] OR \"protein levels\"[Title/Abstract] OR stabilization[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract]) NOT \"PAX8-AS1\"[Title/Abstract]"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/38781157/",
+    "publisher": "https://doi.org/10.1371/journal.pone.0294003"
+  }
+}

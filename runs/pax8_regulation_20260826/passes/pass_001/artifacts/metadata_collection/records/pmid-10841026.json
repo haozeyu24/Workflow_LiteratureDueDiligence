@@ -1,0 +1,21 @@
+{
+  "paper_id": "pmid-10841026",
+  "pmid": "10841026",
+  "doi": "10.1034/j.1600-0749.2000.130203.x",
+  "title": "Cyclic AMP a key messenger in the regulation of skin pigmentation.",
+  "abstract": "Compelling evidence has been gathered indicating that pro-opiomelanocortin peptides, alpha-melanocyte stimulating hormone (alpha-MSH) and adrenocorticotropic hormone (ACTH), through the cyclic AMP pathway, play a pivotal role in melanocyte differentiation and in the regulation of melanogenesis. Recently, the molecular events linking cAMP to melanogenesis up-regulation have been elucidated. This cascade involves the activation of protein kinase A and CREB transcription factor, leading to the up-regulation of the expression of Microphthalmia associated transcription factor (MITF). MITF has been found mutated in patients with Waardenburg syndrome 2A, and plays a crucial role in melanocyte development. MITF binds and activates melanogenic gene promoters, thereby increasing their expression which results in an increased melanin synthesis. Beyond this simplified scheme, It appears that melanogenic gene expression is controlled by a complex network of regulation involving other transcription factors such as Brn2, TBX2, PAX3 and SOX10. Further studies are required to better understand the respective roles of these factors in the regulation of melanin synthesis. In addition, other intracellular signaling pathways, like the phosphatidyl inositol 3-kinase pathway, as well as the molecular cascade of events governed by the small GTP-binding protein Rho, seem to be involved in the regulation of melanogenesis and melanocyte dendricity. Finally, it should be mentioned that cAMP activates a melanocyte-specific pathway leading to MAP kinase activation. MAP kinase, ERK2, phosphorylates MITF, thereby targeting the transcription factor to proteasomes for degradation. Thus, in addition to the complex transcriptional regulation, melanogenesis is also subjected to a post-translational regulation that controls MITF or tyrosinase function. Taken together, these complex molecular processes would finally allow a fine tuning of melanocyte differentiation leading to melanin synthesis.",
+  "year": "2000",
+  "journal": "Pigment cell research",
+  "authors": [
+    "Busc\u00e0 R",
+    "Ballotti R"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/10841026/",
+    "publisher": "https://doi.org/10.1034/j.1600-0749.2000.130203.x"
+  }
+}

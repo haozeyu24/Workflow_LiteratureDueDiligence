@@ -1,0 +1,22 @@
+{
+  "paper_id": "pmid-20017165",
+  "pmid": "20017165",
+  "doi": "10.1002/pros.21099",
+  "title": "The developmental expression profile of PAX2 in the murine prostate.",
+  "abstract": "BACKGROUND: Nine transcription factors comprise the PAX gene family that regulate organogenesis. The urogenital system of PAX2 null male mice fails to develop properly. PAX2 is overexpressed in PC3 cells. Therefore, PAX2 is implicated in both prostate organogenesis and cancer. However, the expression pattern/profile of PAX2 in the prostate is unknown.\n\nMETHODS: PAX2/5/8 expression was surveyed in E16.5 male urogenital sinus (UGS) by RT-PCR. Prostate samples from 10 developmental stages in C3H male mice were used in quantitative reverse-transcript PCR (Q-PCR) and Western blotting (WB). RT-PCR and WB measured PAX2 expression in prostatic lobes or UGS layers, to identify local-regional expression patterns. Cytoplasmic versus nuclear expression was examined by WB. A castration series in adult C3H male mice and R1881 treatment in serum-free LNCaP cells examined androgen control of PAX2.\n\nRESULTS: PAX2 mRNA levels are higher in early developmental stages as compared to postpubertal prostates. RT-PCR and/or WB indicated a dorsal epithelial-nuclear localization of PAX2. PAX2 mRNA and protein increase postcastration. R1881 decreases expression of PAX2 mRNA in LNCaP cells as compared to controls.\n\nCONCLUSIONS: The expression profile of PAX2 indicates that it may regulate early, androgen-independent stages of murine prostate development, particularly for dorsally derived prostate glands. PAX2 expression appears to be associated with a dorsally localized epithelial cell population that is castration insensitive and retains proliferative and differentiative potential. Such a population of cells may represent a subset of stem-like cells having some characteristics in common with castrate-resistant prostate cancer cells.",
+  "year": "2010",
+  "journal": "The Prostate",
+  "authors": [
+    "Chen Q",
+    "DeGraff DJ",
+    "Sikes RA"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/20017165/",
+    "publisher": "https://doi.org/10.1002/pros.21099"
+  }
+}

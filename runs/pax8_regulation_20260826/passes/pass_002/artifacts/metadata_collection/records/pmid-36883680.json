@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-36883680",
+  "pmid": "36883680",
+  "doi": "10.1002/jcsm.13214",
+  "title": "Muscle stem cells contribute to long-term tissue repletion following surgical sepsis.",
+  "abstract": "BACKGROUND: Over the past decade, advances in sepsis identification and management have resulted in decreased sepsis mortality. This increase in survivorship has highlighted a new clinical obstacle: chronic critical illness (CCI), for which there are no effective treatment options. Up to half of sepsis survivors suffer from CCI, which can include multi-organ dysfunction, chronic inflammation, muscle wasting, physical and mental disabilities, and enhanced frailty. These symptoms prevent survivors from returning to regular day-to-day activities and are directly associated with poor quality of life.\n\nMETHODS: Mice were subjected to cecal ligation and puncture (CLP) with daily chronic stress (DCS) as an in vivo model to study sepsis late-effects/sequelae on skeletal muscle components. Longitudinal monitoring was performed via magnetic resonance imaging, skeletal muscle and/or muscle stem cell (MuSCs) assays (e.g., post-necropsy wet muscle weights, minimum Feret diameter measurements, in vitro MuSC proliferation and differentiation, number of regenerating myofibres and numbers of Pax7-positive nuclei per myofibre), post-sepsis whole muscle metabolomics and MuSC isolation and high-content transcriptional profiling.\n\nRESULTS: We report several findings supporting the hypothesis that MuSCs/muscle regeneration are critically involved in post-sepsis muscle recovery. First, we show that genetic ablation of muscle stem cells (MuSCs) impairs post-sepsis muscle recovery (maintenance of 5-8% average lean mass loss compared with controls). Second, we observe impaired MuSCs expansion capacity and morphological defects at 26\u00a0days post-sepsis compared with control MuSCs (P\u00a0<\u00a00.001). Third, when subjected to an experimental muscle injury, sepsis-recovered mice exhibited evidence of impaired muscle regeneration compared with non-septic mice receiving the same muscle injury (CLP/DCS injured mean minimum Feret is 92.1% of control injured, P\u00a0<\u00a00.01). Fourth, we performed a longitudinal RNA sequencing study on MuSCs isolated from post-sepsis mice and found clear transcriptional differences in all post-sepsis samples compared with controls. At Day 28, CLP/DCS mice satellite cells have multiple altered metabolic pathways, such as oxidative phosphorylation, mitochondrial dysfunction, sirtuin signalling and oestrogen receptor signalling, compared with controls (P\u00a0<\u00a00.001).\n\nCONCLUSIONS: Our data show that MuSCs and muscle regeneration are required for effective post-sepsis muscle recovery and that sepsis triggers morphological, functional, and transcriptional changes in MuSCs. Moving forward, we strive to leverage a more complete understanding of post-sepsis MuSC/regenerative defects to identify and test novel therapies that promote muscle recovery and improve quality of life in sepsis survivors.",
+  "year": "2023",
+  "journal": "Journal of cachexia, sarcopenia and muscle",
+  "authors": [
+    "Schmitt RE",
+    "Dasgupta A",
+    "Arneson-Wissink PC",
+    "Datta S",
+    "Ducharme AM",
+    "Doles JD"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/36883680/",
+    "publisher": "https://doi.org/10.1002/jcsm.13214"
+  }
+}

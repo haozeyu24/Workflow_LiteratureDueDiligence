@@ -1,0 +1,31 @@
+{
+  "paper_id": "pmid-30328290",
+  "pmid": "30328290",
+  "doi": "10.1002/jcsm.12354",
+  "title": "Protein imbalance in the development of skeletal muscle wasting in tumour-bearing mice.",
+  "abstract": "BACKGROUND: Cancer cachexia occurs in approximately 80% of cancer patients and is a key contributor to cancer-related death. The mechanisms controlling development of tumour-induced muscle wasting are not fully elucidated. Specifically, the progression and development of cancer cachexia are underexplored. Therefore, we examined skeletal muscle protein turnover throughout the development of cancer cachexia in tumour-bearing mice.\n\nMETHODS: Lewis lung carcinoma (LLC) was injected into the hind flank of C57BL6/J mice at 8\u00a0weeks age with tumour allowed to develop for 1, 2, 3, or 4\u00a0weeks and compared with PBS injected control. Muscle size was measured by cross-sectional area analysis of haematoxylin and eosin stained tibialis anterior muscle. 2 H2 O was used to assess protein synthesis throughout the development of cancer cachexia. Immunoblot and RT-qPCR were used to measure regulators of protein turnover. TUNEL staining was utilized to measure apoptotic nuclei. LLC conditioned media (LCM) treatment of C2C12 myotubes was used to analyse cancer cachexia in vitro.\n\nRESULTS: Muscle cross-sectional area decreased ~40% 4\u00a0weeks following tumour implantation. Myogenic signalling was suppressed in tumour-bearing mice as soon as 1\u00a0week following tumour implantation, including lower mRNA contents of Pax7, MyoD, CyclinD1, and Myogenin, when compared with control animals. AchR\u03b4 and AchR\u03b5 mRNA contents were down-regulated by ~50% 3\u00a0weeks following tumour implantation. Mixed fractional synthesis rate protein synthesis was ~40% lower in 4\u00a0week tumour-bearing mice when compared with PBS controls. Protein ubiquitination was elevated by ~50% 4\u00a0weeks after tumour implantation. Moreover, there was an increase in autophagy machinery after 4\u00a0weeks of tumour growth. Finally, ERK and p38 MAPK phosphorylations were fourfold and threefold greater than control muscle 4\u00a0weeks following tumour implantation, respectively. Inhibition of p38 MAPK, but not ERK MAPK, in vitro partially rescued LCM-induced loss of myotube diameter.\n\nCONCLUSIONS: Our findings work towards understanding the pathophysiological signalling in skeletal muscle in the initial development of cancer cachexia. Shortly following the onset of the tumour-bearing state alterations in myogenic regulatory factors are apparent, suggesting early onset alterations in the capacity for myogenic induction. Cancer cachexia presents with a combination of a loss of protein synthesis and increased markers of protein breakdown, specifically in the ubiquitin-proteasome system. Also, p38 MAPK may be a potential therapeutic target to combat cancer cachexia via a p38-FOX01-atrogene-ubiquitin-proteasome mechanism.",
+  "year": "2018",
+  "journal": "Journal of cachexia, sarcopenia and muscle",
+  "authors": [
+    "Brown JL",
+    "Lee DE",
+    "Rosa-Caldwell ME",
+    "Brown LA",
+    "Perry RA",
+    "Haynie WS",
+    "Huseman K",
+    "Sataranatarajan K",
+    "Van Remmen H",
+    "Washington TA",
+    "Wiggs MP",
+    "Greene NP"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/30328290/",
+    "publisher": "https://doi.org/10.1002/jcsm.12354"
+  }
+}

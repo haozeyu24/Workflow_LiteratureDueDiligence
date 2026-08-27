@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-24472646",
+  "pmid": "24472646",
+  "doi": "10.1016/j.exer.2014.01.013",
+  "title": "Integrin linked kinase (ILK) is required for lens epithelial cell survival, proliferation and differentiation.",
+  "abstract": "While the role of growth factors in lens development has been investigated extensively, the role of extracellular matrix signalling is less well understood. The developing lens expresses predominantly laminin-binding integrins (such as \u03b13\u03b21, \u03b16\u03b21), which are cooperatively required in the lens epithelium during development. We investigated the role of ILK, a downstream mediator of integrin signalling in mice conditionally null for Ilk. Mutant lenses showed epithelial thinning at E17.5 with reduced proliferation and epithelial cell number and aberrant fibre differentiation. There was complete loss of the central epithelium from postnatal day (P) 2 due to cell death followed by fibre cell degeneration and death by P10 as well as rupture of the lens capsule between P10 and P21. At E17.5 there was significant inhibition (\u223c50%) of epithelial cell cycle progression, as shown by BrdU incorporation, cyclin D1/D2 and phospho-histone H3 immunostaining. The epithelial marker, E-cadherin, was decreased progressively from E17.5 to P2, in the central epithelium, but there was no significant change in Pax6 expression. Analyses of ERK and Akt phosphorylation indicated marked depression of MAPK and PI3K-Akt signalling, which correlated with decreased phosphorylation of FRS2\u03b1 and Shp2, indicating altered activation of FGF receptors. At later postnatal stages there was reduced or delayed expression of fibre cell markers (\u03b2-crystallin and p57(kip2)). Loss of Ilk also affected deposition of extracellular matrix, with marked retention of collagen IV within differentiating fibre cells. By quantitative RT-PCR array there was significantly decreased expression of 19 genes associated with focal adhesions, actin filament stability and MAPK and PI3K/Akt signalling. Overall, these data indicate that ILK is required for complete activation of signalling cascades downstream of the FGF receptor in lens epithelium and fibre cells during development and thus is involved in epithelial proliferation, survival and subsequent fibre differentiation.",
+  "year": "2014",
+  "journal": "Experimental eye research",
+  "authors": [
+    "Teo ZL",
+    "McQueen-Miscamble L",
+    "Turner K",
+    "Martinez G",
+    "Madakashira B",
+    "Dedhar S",
+    "Robinson ML",
+    "de Iongh RU"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/24472646/",
+    "publisher": "https://doi.org/10.1016/j.exer.2014.01.013"
+  }
+}

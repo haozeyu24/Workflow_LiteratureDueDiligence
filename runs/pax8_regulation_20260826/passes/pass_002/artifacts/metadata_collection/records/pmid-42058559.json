@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-42058559",
+  "pmid": "42058559",
+  "doi": "10.3389/fvets.2026.1770540",
+  "title": "\u03b3-Aminobutyric acid enhances myogenesis and heat/cold stress resistance in bovine muscle satellite cells.",
+  "abstract": "INTRODUCTION: \u03b3-Aminobutyric acid (GABA) is the principal inhibitory neurotransmitter in the central nervous system and is involved in the development of neural tissue as well as the regulation of its functions. Meanwhile, GABA has also been demonstrated to confer multiple physiological benefits, including alleviating stress and improving metabolic homeostasis. This study investigated GABA effects on proliferation, differentiation, and temperature stress protection of bovine skeletal muscle satellite cells (BSCs).\n\nMETHODS: BSCs were exposed to graded GABA concentrations for 24-96\u202fh; based on CCK-8 and EdU assays, 0.5 and 1\u202fmM were selected for mechanistic experiments (RT-qPCR, Western blot, immunofluorescence). We further evaluated GABA under heat (41 \u00b0C) and cold (4 \u00b0C) stress by measuring stress-related genes, antioxidant indices, Nrf2/Keap1/HO-1 pathway proteins, and by performing transcriptomic analysis.\n\nRESULTS: GABA significantly promoted BSC proliferation (p\u202f<\u202f0.05) by upregulating PCNA, Ki-67, CCND1, Pax3, and CDK2 mRNA, and enhanced myogenic differentiation (p\u202f<\u202f0.05) by increasing MyoG, MyoD, and MyHC protein levels, with generally stronger effects at 0.5\u202fmM. Under 41 \u00b0C, GABA reduced Hsp72, HSP-H1, HSP27, and HSP90 mRNA (p\u202f<\u202f0.05), whereas at 4 \u00b0C it increased RBM3, CIRBP, and UCP2 mRNA and lowered intracellular ROS (p\u202f<\u202f0.05). At 41 \u00b0C, 0.5\u202fmM GABA elevated HO-1 protein (p\u202f<\u202f0.05); at 4 \u00b0C, it upregulated Nrf2, HO-1, and NQO-1 mRNA, while HO-1 protein declined (p\u202f<\u202f0.05). Transcriptomics revealed enrichment of the p53 and PI3K-Akt pathways at 41 \u00b0C and the p53 and FoxO pathways at 4 \u00b0C (key nodes: CDKN1A, ERBB3, HSPB1, CDK2, ESR2, CCNG2, FDFT1, CCNB1). In an in vivo rumen-protected GABA (RP-GABA) trial under different THI conditions, RP-GABA significantly increased body length at Temperature Humidity Index (THI) 45 and THI 63 (p <\u202f0.05).\n\nCONCLUSION: Across timepoints and indices, 0.5\u202fmM GABA provided protection comparable to or better than 1\u202fmM, suggesting 0.5\u202fmM as the recommended comprehensive dose in vitro and offering molecular targets for functional feeds to improve ruminant resilience to temperature stress.",
+  "year": "2026",
+  "journal": "Frontiers in veterinary science",
+  "authors": [
+    "Manzoor A",
+    "Naseem S",
+    "Fu Z",
+    "Ruan C",
+    "Liu X",
+    "Yan C",
+    "Choi S",
+    "Li X"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42058559/",
+    "publisher": "https://doi.org/10.3389/fvets.2026.1770540"
+  }
+}

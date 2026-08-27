@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-18974227",
+  "pmid": "18974227",
+  "doi": "10.1677/JME-08-0100",
+  "title": "Pax8 protein stability is controlled by sumoylation.",
+  "abstract": "The transcription factor Pax8 is involved in the morphogenesis of the thyroid gland and in the maintenance of the differentiated thyroid phenotype. Despite the critical role played by Pax8 during thyroid development and differentiation, very little is known of its post-translational modifications and how these modifications may regulate its activity. We focused our attention on the study of a specific post-translational modification, i.e., sumoylation. Sumoylation is a dynamic and reversible process regulating gene expression by altering transcription factor stability, protein-protein interaction and subcellular localization of target proteins. The analysis of Pax8 protein sequence revealed the presence of one sumoylation consensus motif (psiKxE), strongly conserved among mammals, amphibians, and fish. We demonstrated that Pax8 is sumoylated by the addition of a single small ubiquitin-like modifier (SUMO) molecule on its lysine residue 309 and that Pax8(K309R), a substitution mutant in which the candidate lysine is replaced with an arginine, is no longer modified by SUMO. In addition, we analyzed whether protein inhibitor of activated signal transducers and activators of transcription (PIASy), a member of the PIAS STAT family of proteins, could function as a SUMO ligase and we demonstrated that indeed PIASy is able to increase the fraction of sumoylated Pax8. Interestingly, we show that Pax8 is targeted in the SUMO nuclear bodies, which are structures that regulate the nucleoplasmic concentration of transcription factors by SUMO trapping. Finally, we report here that the steady-state protein level of Pax8 is controlled by sumoylation.",
+  "year": "2009",
+  "journal": "Journal of molecular endocrinology",
+  "authors": [
+    "de Cristofaro T",
+    "Mascia A",
+    "Pappalardo A",
+    "D'Andrea B",
+    "Nitsch L",
+    "Zannini M"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (stability[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR lysosome[Title/Abstract] OR autophagy[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract])",
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (\"nuclear localization\"[Title/Abstract] OR \"nuclear localisation\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR \"subcellular localization\"[Title/Abstract] OR \"subcellular localisation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract] OR \"nuclear import\"[Title/Abstract] OR \"nuclear export\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/18974227/",
+    "publisher": "https://doi.org/10.1677/JME-08-0100"
+  }
+}

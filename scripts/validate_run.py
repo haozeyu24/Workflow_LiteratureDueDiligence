@@ -3,14 +3,31 @@
 from __future__ import annotations
 
 import csv
+import json
+import re
 import sys
 from pathlib import Path
+
+from pass_archive import active_artifacts_dir, active_path, active_reports_dir, load_all_pass_csv, run_input_path
 
 
 WORKFLOW_ROOT = Path(__file__).resolve().parents[1]
 RUNS_DIR = WORKFLOW_ROOT / "runs"
 
-REQUIRED_INPUTS = [
+FORBIDDEN_CAP_KEYS = {
+    "max_results_per_query",
+    "max_total_results",
+    "retmax",
+    "record_cap",
+    "retrieval_cap",
+    "collection_cap",
+}
+
+ROOT_REQUIRED_INPUTS = [
+    "original_user_prompt.md",
+]
+
+PASS_INPUTS = [
     "request.md",
     "run_config.md",
     "instruction.md",
@@ -25,6 +42,7 @@ REQUIRED_OUTPUTS = [
     "artifacts/fulltext_import/import_status.csv",
     "artifacts/fulltext_import/manual_pdf_queue.csv",
     "artifacts/fulltext_review/fulltext_review.csv",
+    "artifacts/workflow_control/workflow_state.json",
     "reports/final_reading_list.csv",
     "reports/progress_report.md",
 ]
@@ -42,6 +60,24 @@ REQUIRED_COLUMNS = {
         "source_query",
         "retrieval_batch",
         "record_path",
+    ],
+    "query_diagnostics": [
+        "round_id",
+        "query_id",
+        "query",
+        "raw_hit_count",
+        "collected_count",
+        "truncated_by_constraint",
+        "sample_size",
+        "sample_strategy",
+        "sampled_on_topic_count",
+        "sampled_noise_count",
+        "estimated_precision",
+        "dominant_noise_classes",
+        "missing_concepts",
+        "recall_signals",
+        "decision",
+        "revision_rationale",
     ],
     "abstract_review": [
         "paper_id",
@@ -85,6 +121,21 @@ REQUIRED_COLUMNS = {
         "normalized_path",
         "notes",
     ],
+    "pdf_download_shortlist": [
+        "paper_id",
+        "pmid",
+        "doi",
+        "title",
+        "year",
+        "priority",
+        "shortlist_decision",
+        "evidence_category",
+        "learned_criteria_matched",
+        "shortlist_rationale",
+        "source_query",
+        "abstract_reviewer2_decision",
+        "promotion_decision",
+    ],
     "fulltext_review": [
         "paper_id",
         "pmid",
@@ -99,6 +150,60 @@ REQUIRED_COLUMNS = {
         "objective_relevance",
         "topic_centrality",
         "review_confidence",
+    ],
+    "evidence_extraction": [
+        "paper_id",
+        "pmid",
+        "title",
+        "evidence_tier",
+        "evidence_type",
+        "directness",
+        "target_centrality",
+        "evidence_summary",
+        "supporting_text_locator",
+        "query_feedback_signal",
+        "review_confidence",
+    ],
+    "pmc_mechanism_feedback": [
+        "loop_id",
+        "source_paper_count",
+        "direct_mechanisms",
+        "supporting_mechanisms",
+        "retained_keyword_families",
+        "noise_keyword_families",
+        "missing_keyword_families",
+        "recommended_query_changes",
+        "recommended_abstract_rule_changes",
+        "pdf_deferral_decision",
+        "rationale",
+    ],
+    "workflow_loop_decision": [
+        "loop_id",
+        "source_stage",
+        "trigger",
+        "triggered",
+        "action",
+        "target_stage",
+        "rationale",
+        "required_changes",
+        "stop_condition",
+    ],
+    "run_guidance_revision_log": [
+        "revision_id",
+        "feedback_loop_id",
+        "feedback_source_path",
+        "prior_pass_snapshot",
+        "revised_instruction_path",
+        "revised_topic_path",
+        "revised_constraints_path",
+        "search_strategy_path",
+        "retained_mechanisms_added",
+        "noise_or_exclusions_added",
+        "missing_terms_added",
+        "reviewer_rule_changes",
+        "revision_rationale",
+        "revised_by",
+        "created_at",
     ],
     "final_reading_list": [
         "paper_id",
@@ -148,6 +253,24 @@ ALLOWED_VALUES = {
             "not_attempted",
         },
     },
+    "pdf_download_shortlist": {
+        "priority": {"high", "medium", "low", "exclude"},
+        "shortlist_decision": {"request_pdf", "defer_pdf", "do_not_request"},
+        "evidence_category": {
+            "strong_learned_match",
+            "possible_learned_match",
+            "comparator_or_model_match",
+            "access_uncertain",
+            "noise",
+        },
+        "abstract_reviewer2_decision": {
+            "confirm_include",
+            "confirm_exclude",
+            "overturn_to_include",
+            "overturn_to_exclude",
+        },
+        "promotion_decision": {"advance_to_import", "stop"},
+    },
     "fulltext_review": {
         "normalized_source_type": {"pmc_xml", "pdf_grobid", "missing"},
         "fulltext_decision": {"keep", "drop"},
@@ -170,6 +293,51 @@ ALLOWED_VALUES = {
         },
         "normalized_source_type": {"pmc_xml", "pdf_grobid", "missing"},
     },
+    "evidence_extraction": {
+        "evidence_tier": {"direct", "indirect", "comparator", "background", "exclude"},
+        "evidence_type": {
+            "protein_folding_chaperone",
+            "stability_turnover",
+            "ptm_degradation",
+            "localization_retention",
+            "chromatin_binding",
+            "lineage_dependency",
+            "interaction_cofactor",
+            "expression_marker",
+            "methods_only",
+            "other",
+        },
+        "directness": {"direct_target", "same_family_comparator", "pathway_or_context", "incidental"},
+        "target_centrality": {"central", "supporting", "incidental"},
+        "query_feedback_signal": {
+            "none",
+            "tighten_query",
+            "expand_query",
+            "add_rescue_query",
+            "change_scope",
+            "reviewer_calibration",
+        },
+        "review_confidence": {"high", "medium", "low"},
+    },
+    "workflow_loop_decision": {
+        "triggered": {"yes", "no"},
+        "action": {
+            "continue",
+            "pause_for_user",
+            "build_pdf_shortlist",
+            "loop_to_run_guidance_reviser",
+            "loop_to_query_scout",
+            "loop_to_abstract_review",
+            "loop_to_fulltext_review",
+            "stop_blocked",
+        },
+    },
+    "pmc_mechanism_feedback": {
+        "pdf_deferral_decision": {"defer_pdfs", "final_pdf_pass", "require_user_pdf_now"},
+    },
+    "run_guidance_revision_log": {
+        "revised_by": {"agent", "human", "hybrid"},
+    },
 }
 
 
@@ -177,6 +345,83 @@ def load_csv_rows(path: Path) -> tuple[list[str], list[dict[str, str]]]:
     with path.open(encoding="utf-8") as handle:
         reader = csv.DictReader(handle)
         return reader.fieldnames or [], list(reader)
+
+
+def parse_config(path: Path) -> dict[str, str]:
+    if not path.exists():
+        return {}
+    config: dict[str, str] = {}
+    pattern = re.compile(r"-\s+`([^`]+)`:\s+`([^`]+)`")
+    for line in path.read_text(encoding="utf-8").splitlines():
+        match = pattern.match(line.strip())
+        if match:
+            config[match.group(1)] = match.group(2)
+    return config
+
+
+def config_int(config: dict[str, str], key: str, default: int) -> int:
+    value = config.get(key, "").strip()
+    if not value.isdigit():
+        return default
+    return int(value)
+
+
+def validate_no_pubmed_caps(run_dir: Path, query_diagnostics_rows: list[dict[str, str]]) -> list[str]:
+    errors: list[str] = []
+    constraints_path = run_input_path(run_dir, "constraints.md")
+    if constraints_path.exists():
+        for line_number, raw_line in enumerate(constraints_path.read_text(encoding="utf-8").splitlines(), start=1):
+            line = raw_line.strip().replace("`", "")
+            if not line or line.startswith("#"):
+                continue
+            match = re.match(r"^-?\s*([A-Za-z0-9_]+)\s*:", line)
+            if match and match.group(1) in FORBIDDEN_CAP_KEYS:
+                errors.append(
+                    "constraints.md contains a forbidden PubMed collection cap "
+                    f"({match.group(1)} at line {line_number}). Use query refinement instead."
+                )
+
+    for index, row in enumerate(query_diagnostics_rows, start=2):
+        if row.get("round_id", "").strip() != "collection":
+            continue
+        if row.get("truncated_by_constraint", "").strip() == "yes":
+            errors.append(
+                f"query_diagnostics.csv row {index} records capped/truncated collection; PubMed collection caps are forbidden."
+            )
+        raw_hit_count = row.get("raw_hit_count", "").strip()
+        collected_count = row.get("collected_count", "").strip()
+        if raw_hit_count.isdigit() and collected_count.isdigit() and int(collected_count) < int(raw_hit_count):
+            errors.append(
+                f"query_diagnostics.csv row {index} collected fewer records than raw PubMed hits "
+                f"({collected_count} < {raw_hit_count}); capped collection is forbidden."
+            )
+    return errors
+
+
+def validate_required_inputs(run_dir: Path) -> list[str]:
+    errors: list[str] = []
+    for path in ROOT_REQUIRED_INPUTS:
+        if not (run_dir / path).exists():
+            errors.append(f"Missing root input: {path}")
+
+    pass1_inputs_dir = run_dir / "passes" / "pass_001" / "inputs"
+    for path in PASS_INPUTS:
+        if not (pass1_inputs_dir / path).exists():
+            errors.append(f"Missing pass_001 input: passes/pass_001/inputs/{path}")
+    return errors
+
+
+def validate_config_loop_bounds(config: dict[str, str]) -> list[str]:
+    errors: list[str] = []
+    min_value = config_int(config, "min_big_workflow_loops", 2)
+    max_value = config_int(config, "max_workflow_loops", 5)
+    if min_value < 2:
+        errors.append("run_config.md min_big_workflow_loops must be at least 2.")
+    if max_value > 5:
+        errors.append("run_config.md max_workflow_loops must be at most 5.")
+    if max_value < min_value:
+        errors.append("run_config.md max_workflow_loops must be greater than or equal to min_big_workflow_loops.")
+    return errors
 
 
 def unique_ids(rows: list[dict[str, str]], field: str) -> set[str]:
@@ -333,6 +578,7 @@ def validate_final_list(
     import_rows: list[dict[str, str]],
     fulltext_rows: list[dict[str, str]],
     final_rows: list[dict[str, str]],
+    access_phase: str,
 ) -> list[str]:
     errors: list[str] = []
     kept_ids = {
@@ -361,11 +607,215 @@ def validate_final_list(
             "final selected_for_reading rows do not match fulltext_review keep rows "
             f"(missing={sorted(kept_ids - selected_ids)[:10]}, extra={sorted(selected_ids - kept_ids)[:10]})."
         )
-    if unreadable_ids != unavailable_ids:
+    if access_phase == "pmc_learning":
+        if unavailable_ids:
+            errors.append(
+                "pmc_learning final list should not promote unreadable abstract-only papers "
+                f"(examples={sorted(unavailable_ids)[:10]})."
+            )
+    elif unreadable_ids != unavailable_ids:
         errors.append(
             "final unavailable rows do not match advanced papers without normalized full text "
             f"(missing={sorted(unreadable_ids - unavailable_ids)[:10]}, extra={sorted(unavailable_ids - unreadable_ids)[:10]})."
         )
+    return errors
+
+
+def validate_pdf_shortlist(
+    queue_rows: list[dict[str, str]],
+    feedback_rows: list[dict[str, str]],
+    shortlist_rows: list[dict[str, str]],
+    min_big_workflow_loops: int,
+) -> list[str]:
+    errors: list[str] = []
+    if not queue_rows or not feedback_rows:
+        return errors
+    latest_pdf_decision = feedback_rows[-1].get("pdf_deferral_decision", "").strip()
+
+    if len(feedback_rows) < min_big_workflow_loops:
+        if latest_pdf_decision == "final_pdf_pass":
+            errors.append(
+                "pmc_mechanism_feedback.csv marks final_pdf_pass before the minimum big workflow loop count is satisfied "
+                f"({len(feedback_rows)} < {min_big_workflow_loops})."
+            )
+        if shortlist_rows:
+            errors.append(
+                "pdf_download_shortlist.csv exists before the minimum big workflow loop count is satisfied."
+            )
+        return errors
+
+    if latest_pdf_decision != "final_pdf_pass":
+        if shortlist_rows:
+            errors.append(
+                "pdf_download_shortlist.csv has rows before PMC feedback marked final_pdf_pass."
+            )
+        return errors
+
+    queue_ids = unique_ids(queue_rows, "paper_id")
+    shortlist_ids = unique_ids(shortlist_rows, "paper_id")
+    if queue_ids != shortlist_ids:
+        errors.append(
+            "pdf_download_shortlist.csv coverage does not match manual_pdf_queue.csv "
+            f"(missing={sorted(queue_ids - shortlist_ids)[:10]}, extra={sorted(shortlist_ids - queue_ids)[:10]})."
+        )
+
+    requested = [
+        row
+        for row in shortlist_rows
+        if row.get("shortlist_decision", "").strip() == "request_pdf"
+    ]
+    if not requested:
+        errors.append(
+            "pdf_download_shortlist.csv has no request_pdf rows despite a non-empty PDF queue after PMC feedback."
+        )
+
+    high_requested = [
+        row
+        for row in requested
+        if row.get("priority", "").strip() == "high"
+    ]
+    if not high_requested:
+        errors.append(
+            "pdf_download_shortlist.csv has request_pdf rows but no high-priority learned-criteria PDF requests."
+        )
+
+    return errors
+
+
+def validate_workflow_state(
+    state_path: Path,
+    queue_rows: list[dict[str, str]],
+    feedback_rows: list[dict[str, str]],
+    shortlist_rows: list[dict[str, str]],
+    loop_rows: list[dict[str, str]],
+    min_big_workflow_loops: int,
+    max_workflow_loops: int,
+) -> list[str]:
+    errors: list[str] = []
+    try:
+        state = json.loads(state_path.read_text(encoding="utf-8"))
+    except Exception as exc:
+        return [f"workflow_state.json is not valid JSON: {exc}."]
+
+    allowed_status = {
+        "initialized",
+        "running",
+        "loop_required",
+        "awaiting_pdf_shortlist",
+        "complete",
+        "blocked",
+    }
+    status = str(state.get("status", ""))
+    if status not in allowed_status:
+        errors.append(
+            "workflow_state.status is invalid "
+            f"({status}; allowed: {', '.join(sorted(allowed_status))})."
+        )
+
+    active_loop_count = sum(row.get("triggered", "") == "yes" for row in loop_rows)
+    latest_pdf_decision = feedback_rows[-1].get("pdf_deferral_decision", "").strip() if feedback_rows else ""
+    queue_count = len(queue_rows)
+    shortlist_count = len(shortlist_rows)
+
+    if state.get("active_loop_count") != active_loop_count:
+        errors.append(
+            "workflow_state.active_loop_count does not match workflow_loop_decision.csv "
+            f"({state.get('active_loop_count')} vs {active_loop_count})."
+        )
+    if state.get("manual_pdf_queue_count") != queue_count:
+        errors.append(
+            "workflow_state.manual_pdf_queue_count does not match manual_pdf_queue.csv "
+            f"({state.get('manual_pdf_queue_count')} vs {queue_count})."
+        )
+    if state.get("pdf_download_shortlist_count") != shortlist_count:
+        errors.append(
+            "workflow_state.pdf_download_shortlist_count does not match pdf_download_shortlist.csv "
+            f"({state.get('pdf_download_shortlist_count')} vs {shortlist_count})."
+        )
+    if latest_pdf_decision and state.get("latest_pdf_deferral_decision") != latest_pdf_decision:
+        errors.append(
+            "workflow_state.latest_pdf_deferral_decision does not match pmc_mechanism_feedback.csv "
+            f"({state.get('latest_pdf_deferral_decision')} vs {latest_pdf_decision})."
+        )
+    if state.get("completed_big_loop_count") is not None and state.get("completed_big_loop_count") != len(feedback_rows):
+        errors.append(
+            "workflow_state.completed_big_loop_count does not match pmc_mechanism_feedback.csv "
+            f"({state.get('completed_big_loop_count')} vs {len(feedback_rows)})."
+        )
+    if state.get("min_big_workflow_loops") is not None and state.get("min_big_workflow_loops") != min_big_workflow_loops:
+        errors.append(
+            "workflow_state.min_big_workflow_loops does not match run_config.md "
+            f"({state.get('min_big_workflow_loops')} vs {min_big_workflow_loops})."
+        )
+    if state.get("max_workflow_loops") is not None and state.get("max_workflow_loops") != max_workflow_loops:
+        errors.append(
+            "workflow_state.max_workflow_loops does not match run_config.md "
+            f"({state.get('max_workflow_loops')} vs {max_workflow_loops})."
+        )
+
+    if feedback_rows and len(feedback_rows) < min_big_workflow_loops and active_loop_count == 0:
+        errors.append(
+            "workflow_loop_decision.csv has no active loop even though the minimum big workflow loop count is not satisfied."
+        )
+
+    if status == "complete":
+        if active_loop_count:
+            errors.append("workflow_state is complete while controller loops are still active.")
+        if len(feedback_rows) < min_big_workflow_loops:
+            errors.append(
+                "workflow_state is complete before the minimum big workflow loop count is satisfied."
+            )
+        if len(feedback_rows) > max_workflow_loops:
+            errors.append(
+                "workflow_state is complete after exceeding max_workflow_loops."
+            )
+        if latest_pdf_decision != "final_pdf_pass":
+            errors.append("workflow_state is complete before PMC feedback marked final_pdf_pass.")
+        if queue_count and not shortlist_count:
+            errors.append("workflow_state is complete with a non-empty PDF queue but no PDF download shortlist.")
+        if queue_count and state.get("completion_signal") != "pdf_download_shortlist_ready":
+            errors.append("workflow_state complete signal must be pdf_download_shortlist_ready when the PDF queue is non-empty.")
+
+    return errors
+
+
+def validate_guidance_revisions(
+    run_dir: Path,
+    feedback_rows: list[dict[str, str]],
+    revision_rows: list[dict[str, str]],
+) -> list[str]:
+    errors: list[str] = []
+    revisions_by_feedback = {
+        row.get("feedback_loop_id", "").strip(): row
+        for row in revision_rows
+        if row.get("feedback_loop_id", "").strip()
+    }
+
+    for feedback in feedback_rows:
+        if feedback.get("pdf_deferral_decision", "").strip() != "defer_pdfs":
+            continue
+        loop_id = feedback.get("loop_id", "").strip()
+        if not loop_id:
+            continue
+        revision = revisions_by_feedback.get(loop_id)
+        if revision is None:
+            errors.append(
+                "PMC feedback row "
+                f"{loop_id} says defer_pdfs but has no matching row in run_guidance_revision_log.csv."
+            )
+            continue
+        for field in ("revised_instruction_path", "revised_topic_path", "search_strategy_path"):
+            value = revision.get(field, "").strip()
+            if not value:
+                errors.append(f"run_guidance_revision_log.csv row for {loop_id} is missing {field}.")
+                continue
+            candidate = Path(value)
+            if not candidate.is_absolute():
+                candidate = run_dir / value
+            if not candidate.exists():
+                errors.append(
+                    f"run_guidance_revision_log.csv row for {loop_id} points to missing {field}: {value}."
+                )
     return errors
 
 
@@ -381,22 +831,40 @@ def main() -> int:
         return 1
 
     errors: list[str] = []
-    missing_inputs = [path for path in REQUIRED_INPUTS if not (run_dir / path).exists()]
-    missing_outputs = [path for path in REQUIRED_OUTPUTS if not (run_dir / path).exists()]
-    errors.extend(f"Missing input: {path}" for path in missing_inputs)
+    config = parse_config(run_input_path(run_dir, "run_config.md"))
+    access_phase = config.get("access_phase", "pmc_learning")
+    min_big_workflow_loops = max(2, config_int(config, "min_big_workflow_loops", 2))
+    max_workflow_loops = min(5, config_int(config, "max_workflow_loops", 5))
+    if max_workflow_loops < min_big_workflow_loops:
+        max_workflow_loops = min_big_workflow_loops
+    errors.extend(validate_config_loop_bounds(config))
+    missing_outputs = [path for path in REQUIRED_OUTPUTS if not active_path(run_dir, path).exists()]
+    errors.extend(validate_required_inputs(run_dir))
     errors.extend(f"Missing workflow artifact: {path}" for path in missing_outputs)
 
+    artifacts_dir = active_artifacts_dir(run_dir)
+    reports_dir = active_reports_dir(run_dir)
     paths = {
-        "paper_manifest": run_dir / "artifacts" / "metadata_collection" / "paper_manifest.csv",
-        "abstract_review": run_dir / "artifacts" / "abstract_review" / "abstract_review.csv",
-        "abstract_review2": run_dir / "artifacts" / "abstract_review" / "abstract_review2.csv",
-        "import_status": run_dir / "artifacts" / "fulltext_import" / "import_status.csv",
-        "fulltext_review": run_dir / "artifacts" / "fulltext_review" / "fulltext_review.csv",
-        "final_reading_list": run_dir / "reports" / "final_reading_list.csv",
+        "paper_manifest": artifacts_dir / "metadata_collection" / "paper_manifest.csv",
+        "query_diagnostics": artifacts_dir / "search_strategy" / "query_diagnostics.csv",
+        "abstract_review": artifacts_dir / "abstract_review" / "abstract_review.csv",
+        "abstract_review2": artifacts_dir / "abstract_review" / "abstract_review2.csv",
+        "import_status": artifacts_dir / "fulltext_import" / "import_status.csv",
+        "pdf_download_shortlist": artifacts_dir / "fulltext_import" / "pdf_download_shortlist.csv",
+        "evidence_extraction": artifacts_dir / "fulltext_review" / "evidence_extraction.csv",
+        "pmc_mechanism_feedback": artifacts_dir / "fulltext_review" / "pmc_mechanism_feedback.csv",
+        "fulltext_review": artifacts_dir / "fulltext_review" / "fulltext_review.csv",
+        "workflow_loop_decision": artifacts_dir / "workflow_control" / "workflow_loop_decision.csv",
+        "run_guidance_revision_log": artifacts_dir / "workflow_control" / "run_guidance_revision_log.csv",
+        "workflow_state": artifacts_dir / "workflow_control" / "workflow_state.json",
+        "final_reading_list": reports_dir / "final_reading_list.csv",
     }
     tables: dict[str, list[dict[str, str]]] = {}
 
     for name, path in paths.items():
+        if name == "workflow_state":
+            tables[name] = []
+            continue
         if not path.exists():
             tables[name] = []
             continue
@@ -404,6 +872,8 @@ def main() -> int:
         tables[name] = rows
         errors.extend(validate_columns(name, fieldnames))
         errors.extend(validate_allowed_values(name, rows))
+
+    errors.extend(validate_no_pubmed_caps(run_dir, tables.get("query_diagnostics", [])))
 
     if all(paths[name].exists() for name in ("paper_manifest", "abstract_review", "abstract_review2")):
         errors.extend(
@@ -426,6 +896,42 @@ def main() -> int:
                 tables["import_status"],
                 tables["fulltext_review"],
                 tables["final_reading_list"],
+                access_phase,
+            )
+        )
+
+    if paths["pmc_mechanism_feedback"].exists():
+        queue_path = artifacts_dir / "fulltext_import" / "manual_pdf_queue.csv"
+        queue_rows = load_csv_rows(queue_path)[1] if queue_path.exists() else []
+        feedback_rows = load_all_pass_csv(run_dir, "artifacts/fulltext_review/pmc_mechanism_feedback.csv")
+        latest_pdf_decision = feedback_rows[-1].get("pdf_deferral_decision", "").strip() if feedback_rows else ""
+        shortlist_exists = paths["pdf_download_shortlist"].exists()
+        if queue_rows and latest_pdf_decision == "final_pdf_pass" and not shortlist_exists:
+            errors.append(
+                "pdf_download_shortlist.csv is required when PMC feedback marks final_pdf_pass and the PDF queue is non-empty."
+            )
+        shortlist_rows = tables["pdf_download_shortlist"] if shortlist_exists else []
+        errors.extend(validate_pdf_shortlist(queue_rows, feedback_rows, shortlist_rows, min_big_workflow_loops))
+        errors.extend(
+            validate_guidance_revisions(
+                run_dir,
+                feedback_rows,
+                tables.get("run_guidance_revision_log", []),
+            )
+        )
+
+    if paths["workflow_state"].exists():
+        queue_path = artifacts_dir / "fulltext_import" / "manual_pdf_queue.csv"
+        queue_rows = load_csv_rows(queue_path)[1] if queue_path.exists() else []
+        errors.extend(
+            validate_workflow_state(
+                paths["workflow_state"],
+                queue_rows,
+                load_all_pass_csv(run_dir, "artifacts/fulltext_review/pmc_mechanism_feedback.csv"),
+                tables["pdf_download_shortlist"],
+                tables["workflow_loop_decision"],
+                min_big_workflow_loops,
+                max_workflow_loops,
             )
         )
 

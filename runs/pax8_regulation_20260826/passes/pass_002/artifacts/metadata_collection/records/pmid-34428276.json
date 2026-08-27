@@ -1,0 +1,40 @@
+{
+  "paper_id": "pmid-34428276",
+  "pmid": "34428276",
+  "doi": "10.1093/brain/awab134",
+  "title": "Amyloid-\u03b2 toxicity modulates tau phosphorylation through the PAX6 signalling pathway.",
+  "abstract": "The molecular link between amyloid-\u03b2 plaques and neurofibrillary tangles, the two pathological hallmarks of Alzheimer's disease, is still unclear. Increasing evidence suggests that amyloid-\u03b2 peptide activates multiple regulators of cell cycle pathways, including transcription factors CDKs and E2F1, leading to hyperphosphorylation of tau protein. However, the exact pathways downstream of amyloid-\u03b2-induced cell cycle imbalance are unknown. Here, we show that PAX6, a transcription factor essential for eye and brain development which is quiescent in adults, is increased in the brains of patients with Alzheimer's disease and in APP transgenic mice, and plays a key role between amyloid-\u03b2 and tau hyperphosphorylation. Downregulation of PAX6 protects against amyloid-\u03b2 peptide-induced neuronal death, suggesting that PAX6 is a key executor of the amyloid-\u03b2 toxicity pathway. Mechanistically, amyloid-\u03b2 upregulates E2F1, followed by the induction of PAX6 and c-Myb, while Pax6 is a direct target for both E2F1 and its downstream target c-Myb. Furthermore, PAX6 directly regulates transcription of GSK-3\u03b2, a kinase involved in tau hyperphosphorylation and neurofibrillary tangles formation, and its phosphorylation of tau at Ser356, Ser396 and Ser404. In conclusion, we show that signalling pathways that include CDK/pRB/E2F1 modulate neuronal death signals by activating downstream transcription factors c-Myb and PAX6, leading to GSK-3\u03b2 activation and tau pathology, providing novel potential targets for pharmaceutical intervention.",
+  "year": "2021",
+  "journal": "Brain : a journal of neurology",
+  "authors": [
+    "Zhang Y",
+    "Zhang Y",
+    "Aman Y",
+    "Ng CT",
+    "Chau WH",
+    "Zhang Z",
+    "Yue M",
+    "Bohm C",
+    "Jia Y",
+    "Li S",
+    "Yuan Q",
+    "Griffin J",
+    "Chiu K",
+    "Wong DSM",
+    "Wang B",
+    "Jin D",
+    "Rogaeva E",
+    "Fraser PE",
+    "Fang EF",
+    "St George-Hyslop P",
+    "Song YQ"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/34428276/",
+    "publisher": "https://doi.org/10.1093/brain/awab134"
+  }
+}

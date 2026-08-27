@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-9019158",
+  "pmid": "9019158",
+  "doi": "",
+  "title": "Nuclear localization signals, DNA binding, and transactivation properties of quail Pax-6 (Pax-QNR) isoforms.",
+  "abstract": "We reported previously the characterization of Pax-QNR/Pax-6 products expressed in the avian neuroretina. Five proteins (48, 46, 43, 33, and 32 kDa) were characterized, among which the 33 and 32 kDa proteins are devoid of the paired domain. In contrast to the 48-kDa (containing an alternative paired exon 4a) and 46-kDa proteins exclusively located in the nucleus, the 43- (in which the paired exon 5 is spliced out), 33-, and 32-kDa proteins were also found in the cytoplasmic compartment. We report the identification of two nuclear targeting sequences: the basic LKRKLQR region (amino acids 206-212) located in the NH2 terminus of the homeodomain used by the p43 and 33/32 kDa proteins; and the paired exon 5 sequence. A case of human aniridia, where arginine 208 of LKRKLQR is mutated into a tryptophan, has been reported recently. We introduced this mutation into the Pax-QNR p46, p43, and p33/32 proteins. No effect on the nuclear localization or in transactivation potential of the proteins could be observed. Among the several Pax-QNR isoforms characterized, only p46 exhibited DNA-binding and transactivating properties on the Pax-QNR promoter. Deletions of parts of the protein showed that the Pax-6 transactivation domain is located in the carboxyl terminus of the protein.",
+  "year": "1995",
+  "journal": "Cell growth & differentiation : the molecular biology journal of the American Association for Cancer Research",
+  "authors": [
+    "Carri\u00e8re C",
+    "Plaza S",
+    "Caboche J",
+    "Dozier C",
+    "Bailly M",
+    "Martin P",
+    "Saule S"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/9019158/",
+    "publisher": ""
+  }
+}

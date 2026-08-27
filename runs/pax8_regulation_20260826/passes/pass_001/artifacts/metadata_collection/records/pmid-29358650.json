@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-29358650",
+  "pmid": "29358650",
+  "doi": "10.1038/s41588-017-0035-2",
+  "title": "Pioneer factor Pax7 deploys a stable enhancer repertoire for specification of cell fate.",
+  "abstract": "Pioneer transcription factors establish new cell-fate competence by triggering chromatin remodeling. However, many features of pioneer action, such as their kinetics and stability, remain poorly defined. Here, we show that Pax7, by opening a unique repertoire of enhancers, is necessary and sufficient for specification of one pituitary lineage. Pax7 binds its targeted enhancers rapidly, but chromatin remodeling and gene activation are slower. Enhancers opened by Pax7 show a loss of DNA methylation and acquire stable epigenetic memory, as evidenced by binding of nonpioneer factors after Pax7 withdrawal. This work shows that transient Pax7 expression is sufficient for stable specification of cell identity.",
+  "year": "2018",
+  "journal": "Nature genetics",
+  "authors": [
+    "Mayran A",
+    "Khetchoumian K",
+    "Hariri F",
+    "Pastinen T",
+    "Gauthier Y",
+    "Balsalobre A",
+    "Drouin J"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/29358650/",
+    "publisher": "https://doi.org/10.1038/s41588-017-0035-2"
+  }
+}

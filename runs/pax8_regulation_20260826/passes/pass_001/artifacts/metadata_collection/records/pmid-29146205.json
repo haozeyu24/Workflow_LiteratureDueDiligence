@@ -1,0 +1,21 @@
+{
+  "paper_id": "pmid-29146205",
+  "pmid": "29146205",
+  "doi": "10.1016/j.semcancer.2017.11.006",
+  "title": "PAX3-FOXO1: Zooming in on an \"undruggable\" target.",
+  "abstract": "Driver oncogenes are prime targets for therapy in tumors many of which, including leukemias and sarcomas, express recurrent fusion transcription factors. One specific example for such a cancer type is alveolar rhabdomyosarcoma, which is associated in the majority of cases with the fusion protein PAX3-FOXO1. Since fusion transcription factors are challenging targets for development of small molecule inhibitors, indirect inhibitory strategies for this type of oncogenes represent a more promising approach. One can envision strategies at different molecular levels including upstream modifiers and activators, epigenetic and transcriptional co-regulators, and downstream effector targets. In this review, we will discuss the current knowledge regarding potential therapeutic targets that might contribute to indirect interference with PAX3-FOXO1 activity in alveolar rhabdomyosarcoma at the different molecular levels and extrapolate these findings to fusion transcription factors in general.",
+  "year": "2018",
+  "journal": "Seminars in cancer biology",
+  "authors": [
+    "Wachtel M",
+    "Sch\u00e4fer BW"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/29146205/",
+    "publisher": "https://doi.org/10.1016/j.semcancer.2017.11.006"
+  }
+}

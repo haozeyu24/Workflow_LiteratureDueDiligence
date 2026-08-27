@@ -1,0 +1,22 @@
+{
+  "paper_id": "pmid-21209381",
+  "pmid": "21209381",
+  "doi": "10.1152/ajpregu.00393.2010",
+  "title": "Mycobacterium ulcerans infections cause progressive muscle atrophy and dysfunction, and mycolactone impairs satellite cell proliferation.",
+  "abstract": "Clinical observations from Buruli ulcer (BU) patients in West Africa suggest that severe Mycobacterium ulcerans infections can cause skeletal muscle contracture and atrophy leading to significant impairment in function. In the present study, male mice C57BL/6 were subcutaneously injected with M. ulcerans in proximity to the right biceps muscle, avoiding direct physical contact between the infectious agent and the skeletal muscle. The histological, morphological, and functional properties of the muscles were assessed at different times after the injection. On day 42 postinjection, the isometric tetanic force and the cross-sectional area of the myofibers were reduced by 31% and 29%, respectively, in the proximate-infected muscles relative to the control muscles. The necrotic areas of the proximate-infected muscles had spread to 7% of the total area by day 42 postinjection. However, the number of central nucleated fibers and myogenic regulatory factors (MyoD and myogenin) remained stable and low. Furthermore, Pax-7 expression did not increase significantly in mycolactone-injected muscles, indicating that the satellite cell proliferation is abrogated by the toxin. In addition, the fibrotic area increased progressively during the infection. Lastly, muscle-specific RING finger protein 1 (MuRF-1) and atrogin-1/muscle atrophy F-box protein (atrogin-1/MAFbx), two muscle-specific E3 ubiquitin ligases, were upregulated in the presence of M. ulcerans. These findings confirmed that skeletal muscle is affected in our model of subcutaneous infection with M. ulcerans and that a better understanding of muscle contractures and weakness is essential to develop a therapy to minimize loss of function and promote the autonomy of BU patients.",
+  "year": "2011",
+  "journal": "American journal of physiology. Regulatory, integrative and comparative physiology",
+  "authors": [
+    "Houngb\u00e9dji GM",
+    "Bouchard P",
+    "Frenette J"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/21209381/",
+    "publisher": "https://doi.org/10.1152/ajpregu.00393.2010"
+  }
+}

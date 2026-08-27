@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-17131142",
+  "pmid": "17131142",
+  "doi": "10.1007/s00125-006-0509-8",
+  "title": "Adult rat liver cells transdifferentiated with lentiviral IPF1 vectors reverse diabetes in mice: an ex vivo gene therapy approach.",
+  "abstract": "AIMS/HYPOTHESIS: We examined a clinical model of ex vivo transdifferentiation of primary adult hepatocytes to insulin-secreting cells for the treatment of type 1 diabetes.\n\nMATERIALS AND METHODS: Isolated rat hepatocytes were transduced in primary culture with a human lentivirus containing pancreatic duodenal homeobox 1 (PDX1, now known as insulin promoter factor 1, homeodomain transcription factor [IPF1]). Insulin expression and secretion of the newly engineered cells were assessed in vitro by RT-PCR, in situ hybridisation, immunostaining and radioimmunoassay. PDX1-transduced hepatocytes were further studied in vivo by injecting them under the renal capsule of diabetic SCID mice.\n\nRESULTS: Isolated rat hepatocytes were efficiently transduced with the lentiviral vector, as assessed by green fluorescent reporter gene expression. The transduced cells exhibited insulin at both mRNA (RT-PCR, in situ hybridisation) and protein levels (immunostaining and radioimmunoassay). Moreover, insulin secretion by the engineered cells was dependent on glucose and sulfonylurea. Other beta cell genes, including those encoding solute carrier family 2 (facilitated glucose transporter), member 2 (Slc2a2), glucokinase (Gck), ATP-binding cassette, sub-family C (CFTR/MRP), member 8 (Abcc8), the potassium inwardly-rectifying channel, subfamily J, member 11 (Kcnj11) and proprotein convertase subtilisin/kexin type 1 (Pcsk1) were also expressed. The PDX1-transduced hepatocytes expressed several pancreatic transcription factors related to early pancreatic endocrine development (endogenous Pdx1, neurogenic differentiation factor 1 [Neurod1], and NK6 transcription factor related, locus 1 [Nkx6-1]) as well as the late-stage pancreatic transcription factors (paired box gene 4 [Pax4], paired box gene 6 [Pax6], and v-maf musculoaponeurotic fibrosarcoma oncogene homolog A [Mafa]). Transplantation of 3 x 10(6) transdifferentiated liver cells under the renal capsule of seven streptozotocin-induced diabetic SCID mice resulted in significant reduction of non-fasting blood glucose levels from 30.7 +/- 1.3 to 8.7 +/- 3.7 mmol/l (mean +/- SEM, p = 0.01), in 6 to 8 weeks. Removal of the graft resulted in severe hyperglycaemia.\n\nCONCLUSIONS/INTERPRETATION: Ex vivo lentiviral-mediated PDX1 expression in isolated adult liver cells represents a potential model for type 1 diabetes mellitus therapy.",
+  "year": "2007",
+  "journal": "Diabetologia",
+  "authors": [
+    "Fodor A",
+    "Harel C",
+    "Fodor L",
+    "Armoni M",
+    "Salmon P",
+    "Trono D",
+    "Karnieli E"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/17131142/",
+    "publisher": "https://doi.org/10.1007/s00125-006-0509-8"
+  }
+}

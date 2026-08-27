@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-32594240",
+  "pmid": "32594240",
+  "doi": "10.1007/s00439-020-02195-7",
+  "title": "The cataract-linked RNA-binding protein Celf1 post-transcriptionally controls the spatiotemporal expression of the key homeodomain transcription factors Pax6 and Prox1 in lens development.",
+  "abstract": "The homeodomain transcription factors (TFs) Pax6 (OMIM: 607108) and Prox1 (OMIM: 601546) critically regulate gene expression in lens development. While PAX6 mutations in humans can cause cataract, aniridia, microphthalmia, and anophthalmia, among other defects, Prox1 deletion in mice causes severe lens abnormalities, in addition to other organ defects. Furthermore, the optimal dosage/spatiotemporal expression of these key TFs is essential for development. In lens development, Pax6 expression is elevated in cells of the anterior epithelium compared to fiber cells, while Prox1 exhibits the opposite pattern. Whether post-transcriptional regulatory mechanisms control these precise TF expression patterns is unknown. Here, we report the unprecedented finding that the cataract-linked RNA-binding protein (RBP), Celf1 (OMIM: 601074), post-transcriptionally regulates Pax6 and Prox1 protein expression in lens development. Immunostaining shows that Celf1 lens-specific conditional knockout (Celf1cKO) mice exhibit abnormal elevation of Pax6 protein in fiber cells and abnormal Prox1 protein levels in epithelial cells-directly opposite to their normal expression patterns in development. Furthermore, RT-qPCR shows no change in Pax6 and Prox1 transcript levels in Celf1cKO lenses, suggesting that Celf1 regulates these TFs on the translational level. Indeed, RNA-immunoprecipitation assays using Celf1 antibody indicate that Celf1 protein binds to Pax6 and Prox1 transcripts. Furthermore, reporter assays in Celf1 knockdown and Celf1-overexpression cells demonstrate that Celf1 negatively controls Pax6 and Prox1 translation via their 3' UTRs. These data define a new mechanism of RBP-based post-transcriptional regulation that enables precise control over spatiotemporal expression of Pax6 and Prox1 in lens development, thereby uncovering a new etiological\u00a0mechanism for Celf1 deficiency-based cataract.",
+  "year": "2020",
+  "journal": "Human genetics",
+  "authors": [
+    "Aryal S",
+    "Viet J",
+    "Weatherbee BAT",
+    "Siddam AD",
+    "Hernandez FG",
+    "Gautier-Courteille C",
+    "Paillard L",
+    "Lachke SA"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/32594240/",
+    "publisher": "https://doi.org/10.1007/s00439-020-02195-7"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-26436390",
+  "pmid": "26436390",
+  "doi": "10.4238/2015.September.28.1",
+  "title": "Effects of Pax3 and Pax7 expression on muscle mass in the Pekin duck (Anas platyrhynchos domestica).",
+  "abstract": "This study aimed to investigate whether the differential expression of muscle development-related genes is one of the reasons why muscle development differs between Pekin, Jianchang, and Heiwu ducks, which are all domesticated duck breeds (Anas platyrhynchos domestica) breeds. At 2 weeks of age, the RNA expression of paired box 7 (Pax7), paired box 3 (Pax3), myogenic differentiation antigen (MYOD), and myogenin (MYOG) genes were measured by quantitative polymerase chain reaction, and Pax3 and Pax7 protein levels were detected by western blot assay. Myofiber morphology was investigated using paraffin-embedded muscle sections. At 8 weeks of age, 30 ducks of each breed were slaughtered for meat quality determination. The results revealed that Pax3 and Pax7 expression levels at both the RNA and protein levels were high in the Pekin duck. In addition, MYOG expression levels in the Jianchang duck were significantly higher than in the other two duck breeds (P < 0.05). There were no significant differences in MYOD expression levels between the breeds (P > 0.05). Myofiber diameter and cross-sectional area were the largest in the Pekin duck and the smallest in the Heiwu duck. There were significant differences in slaughter data between these breeds, and muscle content was greatest in the Pekin duck. The results indicate that the muscle content of three different duck breeds is associated with the expression of satellite-cell marker genes.",
+  "year": "2015",
+  "journal": "Genetics and molecular research : GMR",
+  "authors": [
+    "Wang Y",
+    "Zhang RP",
+    "Zhao YM",
+    "Li QQ",
+    "Yan XP",
+    "Liu JY",
+    "Gou H",
+    "Li L"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/26436390/",
+    "publisher": "https://doi.org/10.4238/2015.September.28.1"
+  }
+}

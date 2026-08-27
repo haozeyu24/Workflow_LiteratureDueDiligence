@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-26406298",
+  "pmid": "26406298",
+  "doi": "10.1139/cjpp-2015-0106",
+  "title": "Delay in post-ovariectomy estrogen replacement negates estrogen-induced augmentation of post-exercise muscle satellite cell proliferation.",
+  "abstract": "This study examined the effects of a delay in post-ovariectomy replacement of 17\u03b2-estradiol (estrogen) on the post-exercise proliferation of muscle satellite cells. Nine-week-old, ovariectomized, female Sprague-Dawley rats (n = 64) were distributed among 8 groups based on estrogen status (0.25 mg estrogen pellet or sham), exercise status (90 min run at 17 m\u00b7min(-1) and a grade of -13.5\u00b0 or unexercised), and estrogen replacement (\"proximal\", estrogen replacement within 2 weeks; or \"delayed\", estrogen replacement at 11 weeks following ovariectomy). Significant increases in satellite cells were found in the soleus and white gastrocnemius muscle (immunofluorescent colocalization of nuclei with Pax7) 72 h following eccentric exercise (p < 0.05) in all exercised groups. Proximal E2 replacement resulted in a further augmentation of muscle satellite cells in exercised rats (p < 0.05) relative to the delayed estrogen replacement group. Expression of PI3K was unaltered and phosphorylation of Akt relative to total Akt increased following estrogen supplementation and exercise. Exercise alone did not alter the expression levels of Akt. An 11 week delay in post-ovariectomy estrogen replacement negated the augmenting influence seen with proximal (2 week delay) post-ovariectomy estrogen replacement on post-exercise muscle satellite cell proliferation. This effect appears to be independent of the PI3K-Akt signaling pathway.",
+  "year": "2015",
+  "journal": "Canadian journal of physiology and pharmacology",
+  "authors": [
+    "Mangan G",
+    "Iqbal S",
+    "Hubbard A",
+    "Hamilton V",
+    "Bombardier E",
+    "Tiidus PM"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/26406298/",
+    "publisher": "https://doi.org/10.1139/cjpp-2015-0106"
+  }
+}

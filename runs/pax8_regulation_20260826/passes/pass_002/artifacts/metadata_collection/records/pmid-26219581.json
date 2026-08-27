@@ -1,0 +1,22 @@
+{
+  "paper_id": "pmid-26219581",
+  "pmid": "26219581",
+  "doi": "10.1016/j.cbpb.2015.07.006",
+  "title": "Muscle satellite cells increase during hibernation in ground squirrels.",
+  "abstract": "UNLABELLED: Skeletal muscle satellite cells (SCs) are involved in muscle growth and repair. However, clarification of their behavior in hibernating mammals is lacking. The aim of this study was to quantify SCs and total myonuclei in hibernator muscle during different phases of the torpor-arousal cycle. Skeletal muscle was collected from thirteen-lined ground squirrels, Ictidomys tridecemlineatus, at five timepoints during hibernation: control euthermic [CON, stable body temperature (Tb)], early torpor (ET, within 24h), late torpor (LT, 5+ consecutive days), early arousal (EA, increased respiratory rate >60 breaths/min, Tb 9-12\u00b0C) and interbout arousal (IA, euthermic Tb). Protein levels of p21, Myf5, Wnt4, and \u03b2-catenin were determined by western blotting. SCs (Pax7(+)) and myonuclei were identified using immunohistochemistry. Over the torpor-arousal cycle, myonuclei/fiber remained unchanged. However, the percentage of SCs increased significantly during ET (7.35\u00b11.04% vs.\n\nCONTROL: 4.18\u00b10.58%; p<0.05) and returned to control levels during LT. This coincided with a 224% increase in p21 protein during ET. Protein levels of Wnt4 did not change throughout, whereas Myf5 was lower during EA (p<0.08) and IA (p<0.05). Compared to torpor, \u03b2-catenin increased by 247% and 279% during EA and IA, respectively (p<0.05). In conclusion, SCs were not dormant during hibernation and increased numbers of SC during ET corresponded with elevated amounts of p21 suggesting that cell cycle control may explain the SC return to baseline levels during late torpor. Despite relatively low Tb during early arousal, active control of quiescence by Myf5 is reduced.",
+  "year": "2015",
+  "journal": "Comparative biochemistry and physiology. Part B, Biochemistry & molecular biology",
+  "authors": [
+    "Brooks NE",
+    "Myburgh KH",
+    "Storey KB"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/26219581/",
+    "publisher": "https://doi.org/10.1016/j.cbpb.2015.07.006"
+  }
+}

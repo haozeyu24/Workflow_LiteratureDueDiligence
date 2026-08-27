@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-24482418",
+  "pmid": "24482418",
+  "doi": "10.1002/jez.1852",
+  "title": "Cadmium contaminated soil affects retinogenesis in lizard embryos.",
+  "abstract": "Lizards are soil surface animals that represent an important link between invertebrates and higher predators. Being part of wild fauna, they can be affected by contamination from anthropic activities and in particular, pesticides and chemical substances of various nature that reach the soil surface directly or through fall out. Among these substances, heavy metals such as cadmium may exert particularly marked toxic effect on both adult and embryos. In lizards, recent studies show that cadmium may cause developmental defects, including alteration of eye development, with appearance of unilateral microphthalmia and retinal folding. In the present study, the effects of cadmium incubation on retinal development were investigated demonstrating that cadmium interferes with cell cycle regulation by increasing proliferation. An increased expression of Otx2 and Pax6 genes, markers of retinal differentiation, was also found. However, the cellular localization of Pax6 and Otx2 transcripts did not change in treated embryos: in the early stages of retinogenesis, the two genes were expressed in all retinal cells; in the differentiated retina, Otx2 remained in the cellular bodies of retinal cells forming the nuclear and the ganglion layers, whereas Pax6 was expressed only in the cells of the inner nuclear and the ganglion layers. Data suggest that the increased expression of Pax6 and Otx2 could be ascribed to the hyperproliferation of retinal cells rather than to an effective gene overexpression.",
+  "year": "2014",
+  "journal": "Journal of experimental zoology. Part A, Ecological genetics and physiology",
+  "authors": [
+    "Simoniello P",
+    "Trinchella F",
+    "Filosa S",
+    "Scudiero R",
+    "Magnani D",
+    "Theil T",
+    "Motta CM"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/24482418/",
+    "publisher": "https://doi.org/10.1002/jez.1852"
+  }
+}

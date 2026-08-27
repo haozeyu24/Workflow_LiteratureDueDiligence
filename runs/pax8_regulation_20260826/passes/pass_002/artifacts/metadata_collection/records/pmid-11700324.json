@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-11700324",
+  "pmid": "11700324",
+  "doi": "10.1074/jbc.M109663200",
+  "title": "Phosphorylation of Pax2 by the c-Jun N-terminal kinase and enhanced Pax2-dependent transcription activation.",
+  "abstract": "The Pax gene family encodes DNA-binding proteins that can both activate and repress transcription of specific target genes during embryonic development. Pax proteins are required for pattern formation and cell differentiation in a broad spectrum of developing tissues. Consistent with its expression in the intermediate mesoderm, the optic cup and stalk, and the otic vesicle, Pax2, a member of the Pax2/5/8 subfamily, is essential for the development of the renal epithelia, the optic cup, and the inner ear. In addition to a DNA binding domain, the Pax2 protein contains a carboxyl-terminal transactivation domain rich in serine, threonine, and tyrosine. In this report, we demonstrate that the Pax2 transactivation domain is phosphorylated by the c-Jun N-terminal kinase, but not the ERK1/2 or p38 MAP kinases and that phosphorylation is coincident with increased transactivation of a Pax2-dependent reporter gene. Activation of JNK by either upstream kinase MEKK1 or DLK or by expression of Wnt signaling proteins significantly enhances Pax2 phosphorylation in cells. In vitro kinase assays using immunoprecipitated JNK or constitutively active, recombinant JNK show phosphorylation of GST-Pax2 fusion proteins. In transfected cells, phosphorylation of Pax2 correlates with increased transactivation of a Pax2-dependent reporter gene, suggesting that serine/threonine phosphorylation of the transactivation domain is important for Pax2 activity. Pax2 can form a complex with the JNK scaffolding protein JIP1, and this interaction is enhanced by activation of the JNK signaling module with the upstream kinase DLK. The data demonstrate that Pax2 is a new target for the JNK signaling module and point to a novel mechanism for mediating Pax-dependent transcription regulation.",
+  "year": "2002",
+  "journal": "The Journal of biological chemistry",
+  "authors": [
+    "Cai Y",
+    "Lechner MS",
+    "Nihalani D",
+    "Prindle MJ",
+    "Holzman LB",
+    "Dressler GR"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/11700324/",
+    "publisher": "https://doi.org/10.1074/jbc.M109663200"
+  }
+}

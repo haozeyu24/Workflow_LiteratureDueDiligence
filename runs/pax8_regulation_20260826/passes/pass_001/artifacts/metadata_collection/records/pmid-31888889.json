@@ -1,0 +1,32 @@
+{
+  "paper_id": "pmid-31888889",
+  "pmid": "31888889",
+  "doi": "10.1158/0008-5472.CAN-19-1479",
+  "title": "Aurora A Kinase Inhibition Destabilizes PAX3-FOXO1 and MYCN and Synergizes with Navitoclax to Induce Rhabdomyosarcoma Cell Death.",
+  "abstract": "The clinically aggressive alveolar rhabdomyosarcoma (RMS) subtype is characterized by expression of the oncogenic fusion protein PAX3-FOXO1, which is critical for tumorigenesis and cell survival. Here, we studied the mechanism of cell death induced by loss of PAX3-FOXO1 expression and identified a novel pharmacologic combination therapy that interferes with PAX3-FOXO1 biology at different levels. Depletion of PAX3-FOXO1 in fusion-positive (FP)-RMS cells induced intrinsic apoptosis in a NOXA-dependent manner. This was pharmacologically mimicked by the BH3 mimetic navitoclax, identified as top compound in a screen from 208 targeted compounds. In a parallel approach, and to identify drugs that alter the stability of PAX3-FOXO1 protein, the same drug library was screened and fusion protein levels were directly measured as a read-out. This revealed that inhibition of Aurora kinase A most efficiently negatively affected PAX3-FOXO1 protein levels. Interestingly, this occurred through a novel specific phosphorylation event in and binding to the fusion protein. Aurora kinase A inhibition also destabilized MYCN, which is both a functionally important oncogene and transcriptional target of PAX3-FOXO1. Combined treatment with an Aurora kinase A inhibitor and navitoclax in FP-RMS cell lines and patient-derived xenografts synergistically induced cell death and significantly slowed tumor growth. These studies identify a novel functional interaction of Aurora kinase A with both PAX3-FOXO1 and its effector MYCN, and reveal new opportunities for targeted combination treatment of FP-RMS. SIGNIFICANCE: These findings show that Aurora kinase A and Bcl-2 family proteins are potential targets for FP-RMS.",
+  "year": "2020",
+  "journal": "Cancer research",
+  "authors": [
+    "Ommer J",
+    "Selfe JL",
+    "Wachtel M",
+    "O'Brien EM",
+    "Laubscher D",
+    "Roemmele M",
+    "Kasper S",
+    "Delattre O",
+    "Surdez D",
+    "Petts G",
+    "Kelsey A",
+    "Shipley J",
+    "Sch\u00e4fer BW"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/31888889/",
+    "publisher": "https://doi.org/10.1158/0008-5472.CAN-19-1479"
+  }
+}

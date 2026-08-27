@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-39981965",
+  "pmid": "39981965",
+  "doi": "10.1080/10715762.2025.2470900",
+  "title": "Down-regulation of Selenoprotein K impairs the proliferation and differentiation of chicken skeletal muscle satellite cells by inhibiting the Nrf2 antioxidant signaling pathway.",
+  "abstract": "Skeletal muscle satellite cells (SMSCs) are pivotal for skeletal muscle regeneration post-injury, and their development is intricately influenced by regulatory factors. Selenoprotein K (SELENOK), an endoplasmic reticulum resident selenoprotein, is known for its crucial role in maintaining skeletal muscle redox sensing. However, the specific molecular mechanism of SELENOK in SMSCs remains unclear. In this study, a SELENOK knockdown model was established to delve into its role in SMSCs. The results revealed that SELENOK knockdown hindered SMSCs proliferation and differentiation, as evidenced by the regulation of key proteins such as Pax7, Myf5, CyclinD1, MyoD, and Myf6, and the inhibitory effects were mitigated by N-Acetyl-l-cysteine (NAC). SELENOK knockdown induced oxidative stress, further analyses uncovered that SELENOK knockdown downregulated nuclear transcription factor nuclear erythroid factor 2-like 2 (Nrf2) protein expression while upregulating cytoplasmic kelch-like ECH-associated protein 1 (Keap1) protein expression. SELENOK knockdown impeded Nestin and sequestosome 1/p62 (p62) interaction with Keap1, leading to increased Nrf2 ubiquitination. This prevented Nrf2 transportation from cytoplasm to nucleus mediated by Keap1, ultimately resulting in the downregulation of catalase (CAT), heme oxygenase-1 (HO-1), and glutathione peroxidase 4 (GPX4) protein expression. Notably, SELENOK knockdown-induced inhibition of SMSCs proliferation and differentiation was alleviated by Oltipraz, an activator of the Nrf2 pathway. This study provided novel insights, demonstrating that SELENOK is a key player in SMSCs proliferation and differentiation by influencing the Nrf2 antioxidant signaling pathway.",
+  "year": "2025",
+  "journal": "Free radical research",
+  "authors": [
+    "Chen XW",
+    "Li Y",
+    "Fu YT",
+    "Xu WX",
+    "Yang J",
+    "Wen X",
+    "Fan RF"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/39981965/",
+    "publisher": "https://doi.org/10.1080/10715762.2025.2470900"
+  }
+}

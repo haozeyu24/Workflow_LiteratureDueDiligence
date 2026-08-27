@@ -1,0 +1,38 @@
+{
+  "paper_id": "pmid-20631301",
+  "pmid": "20631301",
+  "doi": "10.1073/pnas.1001399107",
+  "title": "Sirtuin 1 regulation of developmental genes during differentiation of stem cells.",
+  "abstract": "The longevity-promoting NAD+-dependent class III histone deacetylase Sirtuin 1 (SIRT1) is involved in stem cell function by controlling cell fate decision and/or by regulating the p53-dependent expression of NANOG. We show that SIRT1 is down-regulated precisely during human embryonic stem cell differentiation at both mRNA and protein levels and that the decrease in Sirt1 mRNA is mediated by a molecular pathway that involves the RNA-binding protein HuR and the arginine methyltransferase coactivator-associated arginine methyltransferase 1 (CARM1). SIRT1 down-regulation leads to reactivation of key developmental genes such as the neuroretinal morphogenesis effectors DLL4, TBX3, and PAX6, which are epigenetically repressed by this histone deacetylase in pluripotent human embryonic stem cells. Our results indicate that SIRT1 is regulated during stem cell differentiation in the context of a yet-unknown epigenetic pathway that controls specific developmental genes in embryonic stem cells.",
+  "year": "2010",
+  "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+  "authors": [
+    "Calvanese V",
+    "Lara E",
+    "Su\u00e1rez-Alvarez B",
+    "Abu Dawud R",
+    "V\u00e1zquez-Chantada M",
+    "Mart\u00ednez-Chantar ML",
+    "Embade N",
+    "L\u00f3pez-Nieva P",
+    "Horrillo A",
+    "Hmadcha A",
+    "Soria B",
+    "Piazzolla D",
+    "Herranz D",
+    "Serrano M",
+    "Mato JM",
+    "Andrews PW",
+    "L\u00f3pez-Larrea C",
+    "Esteller M",
+    "Fraga MF"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/20631301/",
+    "publisher": "https://doi.org/10.1073/pnas.1001399107"
+  }
+}

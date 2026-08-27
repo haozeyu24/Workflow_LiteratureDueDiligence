@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-30315214",
+  "pmid": "30315214",
+  "doi": "10.1038/s41431-018-0288-y",
+  "title": "Functional reassessment of PAX6 single nucleotide variants by in vitro splicing assay.",
+  "abstract": "Nucleotide variants that disrupt normal splicing might be the cause of a large number of diseases. Nevertheless, because of the complexity of splicing regulation, it is not always possible to accurately predict the effect of nucleotide sequence changes on splicing events and mRNA structure. Thereby, a number of newly identified nucleotide variants are falsely classified as VUS (a variant of uncertain significance). In the present study we used the minigene assay to analyze the functional consequences of six intronic (c.142-5T>G, c.142-14C>G, c.142-64A>C, c.141+4A>G, c.1032+ 6T>G, c.682+4delA), one missense (c.140A>G) and one synonymous (c.174C>T) variants in the PAX6 gene found in patients with congenital aniridia. We revealed that all except one (c.142-64A>C) variants lead to the disruption of normal splicing patterns resulting in premature termination codon formation followed by mRNA degradation through the nonsense mediated decay pathway. This produces a null allele of the PAX6 gene. That allowed us to reclassify the analyzed variants as loss-of-function and to establish their functional role.",
+  "year": "2019",
+  "journal": "European journal of human genetics : EJHG",
+  "authors": [
+    "Filatova AY",
+    "Vasilyeva TA",
+    "Marakhonov AV",
+    "Voskresenskaya AA",
+    "Zinchenko RA",
+    "Skoblov MY"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/30315214/",
+    "publisher": "https://doi.org/10.1038/s41431-018-0288-y"
+  }
+}

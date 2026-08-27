@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-42235153",
+  "pmid": "42235153",
+  "doi": "10.1016/j.psj.2026.107197",
+  "title": "miR-6553-3p regulates proliferation and differentiation of chicken myoblasts by targeting FAIM through the PI3K/AKT signaling pathway.",
+  "abstract": "Postnatal skeletal muscle growth in poultry relies on the precise orchestration of skeletal muscle satellite cell (SMSC) fate, yet the regulatory non-coding RNA networks governing this process remain partially veiled. Integrating small RNA sequencing with developmental expression profiling, we identified miR-6553-3p as a key differentially expressed regulator. Functional assays showed that miR-6553-3p markedly reduced SMSC proliferation while promoting myogenic differentiation. Specifically, miR-6553-3p significantly suppressed PAX7 expression at both the mRNA and protein levels, while simultaneously upregulating the mRNA and protein levels of MYOG and MYH1. Mechanistically, dual-luciferase assays confirmed that miR-6553-3p directly targeted Fas Apoptotic Inhibitory Molecule (FAIM). As an indispensable regulator of cellular homeostasis and cell fate decisions, FAIM is known to modulate key signaling cascades such as PI3K/AKT. In this study, we showed that FAIM normally sustained the proliferative pool of SMSCs; however, its repression by miR-6553-3p effectively attenuated AKT phosphorylation, linking this miRNA specifically to the PI3K/AKT pathway. By characterizing the miR-6553-3p-FAIM-AKT axis, our findings provide a molecular basis for fine-tuning muscle development and enhancing production traits during the critical early post-hatch window in the poultry industry.",
+  "year": "2026",
+  "journal": "Poultry science",
+  "authors": [
+    "Hu Z",
+    "Guo L",
+    "Xu H",
+    "Yang T",
+    "Chen J",
+    "Yang S",
+    "Liu Y",
+    "Wang Y"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42235153/",
+    "publisher": "https://doi.org/10.1016/j.psj.2026.107197"
+  }
+}

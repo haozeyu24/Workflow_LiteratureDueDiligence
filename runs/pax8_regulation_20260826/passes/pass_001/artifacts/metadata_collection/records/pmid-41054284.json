@@ -1,0 +1,29 @@
+{
+  "paper_id": "pmid-41054284",
+  "pmid": "41054284",
+  "doi": "10.1002/jcsm.70081",
+  "title": "ARC-18 Improved Motor Performance Through Inhibiting ACLY-Mediated Smad2/3 Acetylation in a Model of Duchenne Muscular Dystrophy.",
+  "abstract": "BACKGROUND: Duchenne muscular dystrophy (DMD) is a genetic disorder characterized by progressive muscle weakness, with inflammation and fibrosis contributing to its pathogenesis. Despite advancements in genetic disease-modifying treatment, there is currently no effective pharmacological treatment for DMD.\n\nMETHODS: New compound ARC-18, a derivative of Arctigenin known for its anti-inflammatory activity, was designed and synthesized in our lab and administered prophylactically to 2-month-old mdx mice for 60\u2009days. The motor performance was investigated by rotarod test, climbing-pole test, grip strength test, hanging endurance test, treadmill endurance test and gait analysis. Afterwards, molecular biological experiments, including proteomics, immunohistochemistry, immunofluorescence, western blots, gene transfection and immunoprecipitation, were employed to investigate the molecular mechanism of ARC-18 in the treatment of mdx.\n\nRESULTS: ARC-18 significantly ameliorated the motor performance of DMD mice (rotating time +65.9%, p < 0.01; hanging time +59.7%, p < 0.05; grip strength +32.1%, p < 0.0001; climbing time -29.0%, p < 0.0001; numbers of electric shocks -69.3%, p < 0.01) by up-regulating the expression of dystrophin-associated proteins (dystrophin, p\u2009<\u20090.01; \u03b1-dystroglycan, p\u2009<\u20090.01) and down-regulating the expression of muscle satellite/stem cell proteins (Pax7, p\u2009<\u20090.05; Myod, p\u2009<\u20090.05; Myog, p\u2009<\u20090.05; \u03b1-SMA, p\u2009<\u20090.01; fibronectin, p\u2009<\u20090.001; collagen I, p\u2009<\u20090.05). ARC-18 prevented the progression of muscle fibrosis, reduced inflammatory factors transforming growth factor (TGF) \u03b21 (p\u2009<\u20090.05), IL-1\u03b2 (p\u2009<\u20090.05) and TNF-\u03b1 (p\u2009<\u20090.05) levels, and promoted the structural integrity of gastrocnemius and triceps muscles. Proteomics analysis demonstrated that ARC-18 treatment reversed the protein expression pattern of DMD model mice, with ATP-citrate synthase (ACLY) enriched in the TCA cycle pathway, showing a significant correlation with DMD expression levels (R\u2009=\u2009-0.72, p\u2009=\u20090.00031). Further investigations revealed that ARC-18 directly bound with ACLY (EC50\u2009=\u2009120.2\u2009nM) to promote its degradation by the proteasome system and suppressed the ACLY-mediated acetylation of Smad2/3 (p\u2009<\u20090.01) to reduce its nuclear localization (p\u2009<\u20090.05) to inhibit fibrosis.\n\nCONCLUSIONS: Our study indicated that oral ARC-18 treatment decelerated the progression of neuromuscular disease in a reliable DMD animal model, suggesting its potential as a promising drug for DMD.",
+  "year": "2025",
+  "journal": "Journal of cachexia, sarcopenia and muscle",
+  "authors": [
+    "Chen C",
+    "Zhang B",
+    "Yang C",
+    "Wang J",
+    "He Y",
+    "Yu H",
+    "Liu J",
+    "Xie Y",
+    "Yang X",
+    "Liu GP"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/41054284/",
+    "publisher": "https://doi.org/10.1002/jcsm.70081"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-16479262",
+  "pmid": "16479262",
+  "doi": "10.1038/sj.ejhg.5201574",
+  "title": "Molecular characterization of a novel PAX9 missense mutation causing posterior tooth agenesis.",
+  "abstract": "Autosomal dominant mutations in the gene encoding the paired box containing transcription factor PAX9 are associated with nonsyndromic human tooth agenesis that primarily affect posterior dentition. The molecular mechanisms contributing to its pathogenesis are poorly understood. In this study, we describe a novel mutation in PAX9 in a family with molar oligodontia. This heterozygous mutation results in the substitution of a highly conserved isoleucine residue by phenylalanine within the carboxyl-terminal subdomain of the paired domain. Immunolocalization and cell fractionation studies to ascertain the subcellular localization of the Ile87Phe protein showed that both wild-type and mutant proteins are synthesized in mammalian cells and that the mutation does not alter the nuclear localization of the mutant protein. Gel-shift assays using two cognate paired-domain recognition sequences, e5 and CD19-2(A-ins), revealed that while wild-type Pax9 binds to both sequences, the mutant protein was unable to bind these sites. In addition, the latter did not alter the DNA-binding activities of wild-type Pax9. Furthermore, we evaluated the ability of the Ile87Phe mutant protein to form a complex with a partner protein, Msx1, and found that the mutation under study has no effect on this interaction. Based on our observed defects in DNA binding by the mutant protein, we propose a loss-of-function mechanism that contributes to haploinsufficiency of PAX9 in this family with posterior tooth agenesis.",
+  "year": "2006",
+  "journal": "European journal of human genetics : EJHG",
+  "authors": [
+    "Kapadia H",
+    "Frazier-Bowers S",
+    "Ogawa T",
+    "D'Souza RN"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/16479262/",
+    "publisher": "https://doi.org/10.1038/sj.ejhg.5201574"
+  }
+}

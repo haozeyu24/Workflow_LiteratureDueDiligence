@@ -1,0 +1,22 @@
+{
+  "paper_id": "pmid-33706916",
+  "pmid": "33706916",
+  "doi": "10.1016/bs.ctdb.2020.10.003",
+  "title": "The regulation of cortical neurogenesis.",
+  "abstract": "The mammalian cerebral cortex is the pinnacle of brain evolution, reaching its maximum complexity in terms of neuron number, diversity and functional circuitry. The emergence of this outstanding complexity begins during embryonic development, when a limited number of neural stem and progenitor cells manage to generate myriads of neurons in the appropriate numbers, types and proportions, in a process called neurogenesis. Here we review the current knowledge on the regulation of cortical neurogenesis, beginning with a description of the types of progenitor cells and their lineage relationships. This is followed by a review of the determinants of neuron fate, the molecular and genetic regulatory mechanisms, and considerations on the evolution of cortical neurogenesis in vertebrates leading to humans. We finish with an overview on how dysregulation of neurogenesis is a leading cause of human brain malformations and functional disabilities.",
+  "year": "2021",
+  "journal": "Current topics in developmental biology",
+  "authors": [
+    "Villalba A",
+    "G\u00f6tz M",
+    "Borrell V"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/33706916/",
+    "publisher": "https://doi.org/10.1016/bs.ctdb.2020.10.003"
+  }
+}

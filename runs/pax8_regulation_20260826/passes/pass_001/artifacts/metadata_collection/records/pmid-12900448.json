@@ -1,0 +1,21 @@
+{
+  "paper_id": "pmid-12900448",
+  "pmid": "12900448",
+  "doi": "10.1242/dev.00662",
+  "title": "Tracing of her5 progeny in zebrafish transgenics reveals the dynamics of midbrain-hindbrain neurogenesis and maintenance.",
+  "abstract": "The midbrain-hindbrain domain (MH) of the vertebrate embryonic neural tube develops in response to the isthmic organizer (IsO), located at the midbrain-hindbrain boundary (MHB). MH derivatives are largely missing in mutants affected in IsO activity; however, the potentialities and fate of MH precursors in these conditions have not been directly determined. To follow the dynamics of MH maintenance in vivo, we used artificial chromosome transgenesis in zebrafish to construct lines where egfp transcription is driven by the complete set of regulatory elements of her5, the first known gene expressed in the MH area. In these lines, egfp transcription faithfully recapitulates her5 expression from its induction phase onwards. Using the stability of GFP protein as lineage tracer, we first demonstrate that her5 expression at gastrulation is a selective marker of MH precursor fate. By comparing GFP protein and her5 transcription, we further reveal the spatiotemporal dynamics of her5 expression that conditions neurogenesis progression towards the MHB over time. Finally, we trace the molecular identity of GFP-positive cells in the acerebellar (ace) and no-isthmus (noi) mutant backgrounds to analyze directly fgf8 and pax2.1 mutant gene activities for their ultimate effect on cell fate. We demonstrate that most MH precursors are maintained in both mutants but express abnormal identities, in a manner that strikingly differs between the ace and noi contexts. Our observations directly support a role for Fgf8 in protecting anterior tectal and metencephalic precursors from acquiring anterior identities, while Pax2.1 controls the choice of MH identity as a whole. Together, our results suggest a model where an ordered MH pro-domain is identified at gastrulation, and where cell identity choices within this domain are subsequently differentially controlled by Fgf8 and Pax2.1 functions.",
+  "year": "2003",
+  "journal": "Development (Cambridge, England)",
+  "authors": [
+    "Tallafuss A",
+    "Bally-Cuif L"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/12900448/",
+    "publisher": "https://doi.org/10.1242/dev.00662"
+  }
+}

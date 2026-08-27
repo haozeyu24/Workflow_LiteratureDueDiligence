@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-33355664",
+  "pmid": "33355664",
+  "doi": "10.1093/molbev/msaa331",
+  "title": "Folding Stability of Pax9 Intronic G-Quadruplex Correlates with Relative Molar Size in Eutherians.",
+  "abstract": "Eutherian dentition has been the focus of a great deal of studies in the areas of evolution, development, and genomics. The development of molar teeth is regulated by an antero-to-posterior cascade mechanism of activators and inhibitors molecules, where the relative sizes of the second (M2) and third (M3) molars are dependent of the inhibitory influence of the first molar (M1). Higher activator/inhibitor ratios will result in higher M2/M1 or M3/M1. Pax9 has been shown to play a key role in tooth development. We have previously shown that a G-quadruplex in the first intron of Pax9 can modulate the splicing efficiency. Using a sliding window approach with we analyzed the association of the folding energy (Mfe) of the Pax9 first intron with the relative molar sizes in 42 mammalian species, representing 9 orders. The Mfe of two regions located in the first intron of Pax9 were shown to be significantly associated with the M2/M1 and M3/M1 areas and mesiodistal lengths. The first region is located at the intron beginning and can fold into a stable G4 structure, whereas the second is downstream the G4 and 265\u2009bp from intron start. Across species, the first intron of Pax9 varied in G-quadruplex structural stability. The correlations were further increased when the Mfe of the two sequences were added. Our results indicate that this region has a role in the evolution of the mammalian dental pattern by influencing the relative size of the molars.",
+  "year": "2021",
+  "journal": "Molecular biology and evolution",
+  "authors": [
+    "Jara-Espejo M",
+    "Hawkins MTR",
+    "Fogalli GB",
+    "Line SRP"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/33355664/",
+    "publisher": "https://doi.org/10.1093/molbev/msaa331"
+  }
+}

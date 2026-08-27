@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-16339205",
+  "pmid": "16339205",
+  "doi": "10.1210/en.2005-0805",
+  "title": "Three-dimensional organization of thyroid cells into follicle structures is a pivotal factor in the control of sodium/iodide symporter expression.",
+  "abstract": "Expression of sodium/iodide symporter (NIS) by thyroid epithelial cells is primarily regulated by TSH, which acts at the level of NIS gene transcription. Knowledge of the mechanisms governing NIS expression mainly comes from studies of rat thyroid-derived cell lines forming cell monolayers. In this study we investigated the impact of the three-dimensional organization of thyroid cells into follicles on the regulation of NIS expression. We used porcine thyrocytes in primary culture that, depending on cell density and the moment TSH is added, either predominantly form a cell monolayer (CM) or reconstitute thyroid follicles (RTF). NIS expression analyzed at transcript and protein levels was remarkably high in RTF compared with CM. Cells forming RTF were NIS positive, whereas in CM, NIS was only detected in the limited number of cells forming follicle-like structures. When thyrocytes were cultured at increasing cell density to obtain a gradual shift from CM to RTF, the progressive increase in the proportion of cells enrolled in RTF was accompanied by a parallel increase in NIS expression. Other TSH-regulated genes, thyroperoxidase, Na(+),K(+)-adenosine triphosphatase alpha-subunit, and thyroglobulin, were expressed at similar levels whatever the organization of thyrocytes in culture. The transcription factor, Pax-8, was equally expressed in NIS-negative CM and NIS-positive RTF. We show that TSH highly activates NIS expression only when thyrocytes have undergone histiotypic morphogenesis. This finding suggests that TSH activation of NIS gene transcription might involve, in addition to Pax-8, a regulatory factor(s) whose synthesis and/or activity are triggered by cell-cell interaction(s) occurring in the course of folliculogenesis.",
+  "year": "2006",
+  "journal": "Endocrinology",
+  "authors": [
+    "Bernier-Valentin F",
+    "Trouttet-Masson S",
+    "Rabilloud R",
+    "Selmi-Ruby S",
+    "Rousset B"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (\"protein stability\"[Title/Abstract] OR \"protein levels\"[Title/Abstract] OR stabilization[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract]) NOT \"PAX8-AS1\"[Title/Abstract]"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/16339205/",
+    "publisher": "https://doi.org/10.1210/en.2005-0805"
+  }
+}

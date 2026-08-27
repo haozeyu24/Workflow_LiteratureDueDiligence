@@ -1,0 +1,30 @@
+{
+  "paper_id": "pmid-9653173",
+  "pmid": "9653173",
+  "doi": "10.1073/pnas.95.14.8251",
+  "title": "Autoregulation of thyroid-specific gene transcription by thyroglobulin.",
+  "abstract": "Thyroglobulin (TG), the primary synthetic product of the thyroid, is the macromolecular precursor of thyroid hormones. TG synthesis, iodination, storage in follicles, and degradation control thyroid hormone formation and secretion into the circulation. Thyrotropin (TSH), via its receptor (TSHR), increases thyroid hormone levels by up-regulating expression of the sodium iodide symporter (NIS), thyroid peroxidase (TPO), and TG genes. TSH does this by modulating the expression and activity of several thyroid-specific transcription factors, thyroid transcription factor (TTF)-1, TTF-2, and Pax-8, which coordinately regulate NIS, TPO, TG, and the TSHR. Major histocompatibility complex class I gene expression, which also is regulated by TTF-1 and Pax-8 in the thyroid, is decreased simultaneously. This helps maintain self-tolerance in the face of TSH-increased gene products necessary for thyroid hormone formation. In this report we show that follicular TG counter-regulates TSH-increased, thyroid-specific gene transcription by suppressing expression of the TTF-1, TTF-2, and Pax-8 genes. This decreases expression of the TG, TPO, NIS, and TSHR genes, but increases class I expression. TG acts transcriptionally, targeting, for example, a sequence within 1.15 kb of the 5' flanking region of TTF-1. TG does not affect ubiquitous transcription factors regulating TG, TPO, NIS, and/or TSHR gene expression. The inhibitory effect of TG on gene expression is not duplicated by thyroid hormones or iodide and may be mediated by a TG-binding protein on the apical membrane. We hypothesize that TG-initiated, transcriptional regulation of thyroid-restricted genes is a normal, feedback, compensatory mechanism that limits follicular function and contributes to follicular heterogeneity.",
+  "year": "1998",
+  "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+  "authors": [
+    "Suzuki K",
+    "Lavaroni S",
+    "Mori A",
+    "Ohta M",
+    "Saito J",
+    "Pietrarelli M",
+    "Singer DS",
+    "Kimura S",
+    "Katoh R",
+    "Kawaoi A",
+    "Kohn LD"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (\"protein stability\"[Title/Abstract] OR \"protein levels\"[Title/Abstract] OR stabilization[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract]) NOT \"PAX8-AS1\"[Title/Abstract]"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/9653173/",
+    "publisher": "https://doi.org/10.1073/pnas.95.14.8251"
+  }
+}

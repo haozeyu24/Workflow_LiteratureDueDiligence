@@ -1,0 +1,32 @@
+{
+  "paper_id": "pmid-32744500",
+  "pmid": "32744500",
+  "doi": "10.7554/eLife.54993",
+  "title": "NuRD subunit CHD4 regulates super-enhancer accessibility in rhabdomyosarcoma and represents a general tumor dependency.",
+  "abstract": "The NuRD complex subunit CHD4 is essential for fusion-positive rhabdomyosarcoma (FP-RMS) survival, but the mechanisms underlying this dependency are not understood. Here, a NuRD-specific CRISPR screen demonstrates that FP-RMS is particularly sensitive to CHD4 amongst the NuRD members. Mechanistically, NuRD complex containing CHD4 localizes to super-enhancers where CHD4 generates a chromatin architecture permissive for the binding of the tumor driver and fusion protein PAX3-FOXO1, allowing downstream transcription of its oncogenic program. Moreover, CHD4 depletion removes HDAC2 from the chromatin, leading to an increase and spread of histone acetylation, and prevents the positioning of RNA Polymerase 2 at promoters impeding transcription initiation. Strikingly, analysis of genome-wide cancer dependency databases identifies CHD4 as a general cancer vulnerability. Our findings describe CHD4, a classically defined repressor, as positive regulator of transcription and super-enhancer accessibility as well as establish this remodeler as an unexpected broad tumor susceptibility and promising drug target for cancer therapy.",
+  "year": "2020",
+  "journal": "eLife",
+  "authors": [
+    "Marques JG",
+    "Gryder BE",
+    "Pavlovic B",
+    "Chung Y",
+    "Ngo QA",
+    "Frommelt F",
+    "Gstaiger M",
+    "Song Y",
+    "Benischke K",
+    "Laubscher D",
+    "Wachtel M",
+    "Khan J",
+    "Sch\u00e4fer BW"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/32744500/",
+    "publisher": "https://doi.org/10.7554/eLife.54993"
+  }
+}

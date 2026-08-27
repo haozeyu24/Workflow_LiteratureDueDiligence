@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-30804124",
+  "pmid": "30804124",
+  "doi": "10.21873/invivo.11493",
+  "title": "Comprehensive Analysis of Somatic Mutations in Colorectal Cancer With Peritoneal Metastasis.",
+  "abstract": "BACKGROUND: To analyze for genetic mutations which may presage peritoneal metastasis by using targeted next-generation sequencing (NGS).\n\nMATERIALS AND METHODS: Formalin-fixed, paraffin-embedded primary tumor specimens were obtained from 10 patients with small obstructing colorectal cancer and peritoneal metastasis (group A) and five with large non-obstructing colorectal cancer and no recurrence (group B). DNA was extracted for the sequencing of 409 cancer genes. The distribution of genetic mutations was compared between the two groups to find genetic mutations related to peritoneal metastasis.\n\nRESULTS: When the samples were sorted based on similarity of gene expression by hierarchical clustering analysis, the samples were well divided between the two study groups. Mutations in AT-rich interactive domain-containing protein 1A (ARID1A), polycystic kidney and hepatic disease 1 (PKHD1), ubiquitin-protein ligase E3 component n-recognin 5 (UBR5), paired box 5 (PAX5), tumor protein p53 (TP53), additional sex combs like 1 (ASXL1) and androgen receptor (AR) genes were detected more frequently in group A.\n\nCONCLUSION: A number of somatic mutations presumed to be relevant to colorectal cancer with peritoneal metastasis were identified in our study by NGS.",
+  "year": "2019",
+  "journal": "In vivo (Athens, Greece)",
+  "authors": [
+    "Lee JH",
+    "Ahn BK",
+    "Baik SS",
+    "Lee KH"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/30804124/",
+    "publisher": "https://doi.org/10.21873/invivo.11493"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "paper_id": "pmid-39891863",
+  "pmid": "39891863",
+  "doi": "10.1007/s11010-025-05216-z",
+  "title": "PAX2 induces endometrial cancer by inhibiting mitochondrial function via the CD133-AKT1 pathway.",
+  "abstract": "Endometrial cancer (EC) is a malignancy of the endometrial epithelium. The prevalence and mortality rates associated with the disease are on the rise globally. A total of 20 cases of type I EC tissues were collected for transcriptomic sequencing, our findings indicate that PAX2 is highly expressed in EC tissues and is closely related to the pathogenesis of EC. PAX2 is a member of the paired homeobox domain family and has been linked to the development of a number of different tumours. In normal endometrial tissue, PAX2 is methylated; however, in EC, it is demethylated. Nevertheless, few studies have focused on its role in EC. A protein-protein interaction (PPI) analysis revealed a regulatory relationship between PAX2 and CD133, which in turn affects the activity of AKT1. CD133 is a well-known marker of tumor stem cells and is involved in tumor initiation, metastasis, recurrence, and drug resistance; AKT1 promotes cell survival by inhibiting apoptosis and is considered a major promoter of many types of cancer. Nevertheless, further investigation is required to ascertain whether PAX2 affects the progression of EC by regulating the CD133-AKT1 pathway. The present study demonstrated that PAX2 promoted cell proliferation, migration, invasion and adhesion, and inhibited apoptosis. Its mechanism of action was found to be the inhibition of mitochondrial oxidative phosphorylation, promotion of glycolysis, increase in mitochondrial copy number, and increase in the levels of reactive oxygen species (ROS) and hexokinase, as well as the concentration of mitochondrial calcium ions. This was achieved through the promotion of CD133 expression and the phosphorylation of AKT1. In conjunction with the aforementioned regulatory pathways, the progression of EC is facilitated.",
+  "year": "2025",
+  "journal": "Molecular and cellular biochemistry",
+  "authors": [
+    "Hua F",
+    "Cai Y"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/39891863/",
+    "publisher": "https://doi.org/10.1007/s11010-025-05216-z"
+  }
+}

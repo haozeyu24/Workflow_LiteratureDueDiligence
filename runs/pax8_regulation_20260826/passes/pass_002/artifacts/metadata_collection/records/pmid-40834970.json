@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-40834970",
+  "pmid": "40834970",
+  "doi": "10.1016/j.yexcr.2025.114709",
+  "title": "Inhibition of HMGN2 SUMOylation ameliorates atherosclerosis by activating PAX5 expression to induce macrophage M2 polarization.",
+  "abstract": "BACKGROUND: As a core pathological process of cardiovascular disease, atherosclerosis (AS) progression is closely linked to macrophage polarization, yet the mechanisms by which post-translational modifications regulate inflammatory responses in AS remain unclear.\n\nMETHODS: Using oxidized low-density lipoprotein (ox-LDL)-induced RAW264.7 foam macrophages and high-fat diet-fed (apolipoprotein E knockout) ApoE-/- mice, we assessed HMGN2 SUMOylation's role in macrophage M2 polarization. Cell proliferation/migration were analyzed via EdU/Transwell assays; macrophage polarization phenotypes were examined by immunofluorescence. Inflammatory cytokines and NF-\u03baB pathway were quantified using ELISA/Western blot. Aortic plaque formation and lipid deposition were evaluated through HE staining and Oil Red O lipid visualization.\n\nRESULTS: In cellular experiments, research demonstrated that HMGN2 enhances interaction with the transcription factor PAX5 through SUMOylation, thereby inhibiting PAX5 activity and driving macrophage polarization toward the pro-inflammatory M1 phenotype. Furthermore, PIAS1 knockdown significantly reduced HMGN2 SUMOylation levels. This disruption suppressed the binding between PAX5 and HMGN2 and reduced inflammatory factor release. Animal experiments revealed that targeted PIAS1 knockdown markedly reduced aortic plaque area, improved lipid metabolic disorders, and modulated inflammatory cytokines by inhibiting NF-\u03baB signaling pathway.\n\nCONCLUSION: The present study systematically reveals the molecular mechanism by which HMGN2 SUMOylation regulates macrophage polarization and inflammatory response through the \"PAX5-NF-\u03baB\" signaling axis, which may become a new target for the treatment of atherosclerosis by targeting epigenetic modification.",
+  "year": "2025",
+  "journal": "Experimental cell research",
+  "authors": [
+    "Wang X",
+    "Wu P",
+    "Shen Y",
+    "Xu S",
+    "Wan Q",
+    "Yang Y"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/40834970/",
+    "publisher": "https://doi.org/10.1016/j.yexcr.2025.114709"
+  }
+}

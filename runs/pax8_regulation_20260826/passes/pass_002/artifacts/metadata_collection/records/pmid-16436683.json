@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-16436683",
+  "pmid": "16436683",
+  "doi": "10.2353/ajpath.2006.050776",
+  "title": "Expression of Pax2 in human renal tumor-derived endothelial cells sustains apoptosis resistance and angiogenesis.",
+  "abstract": "The transcription factor Pax2 is known to play a key role during renal development and to act as an oncogene favoring renal tumor growth. We recently showed that endothelial cells derived from human renal carcinomas display abnormal characteristics of survival and angiogenic properties. In the present study we found that renal tumor-derived endothelial cells, but not normal endothelial cells, expressed Pax2 protein and mRNA. To down-regulate Pax2 expression, we transfected tumor-derived endothelial cells with an anti-sense PAX2 vector whereas we transfected normal human microvascular endothelial cells with a sense PAX2 vector to induce Pax2 expression. The inhibition of Pax2 expression in tumor-derived endothelial cells induced an increase in tumor suppressor PTEN expression and a decrease in Akt phosphorylation. In addition, decreased apoptosis resistance, adhesion, invasion, and in vitro and in vivo angiogenesis were observed. Conversely, Pax2 induction in normal endothelial cells conferred to these cells a proinvasive, proangiogenic phenotype similar to that of tumor-derived endothelial cells. These results indicate that Pax2 is involved in renal tumor angiogenesis and its expression may antagonize that of the PTEN tumor suppressor gene, affecting the Akt-survival pathway and promoting angiogenesis.",
+  "year": "2006",
+  "journal": "The American journal of pathology",
+  "authors": [
+    "Fonsato V",
+    "Buttiglieri S",
+    "Deregibus MC",
+    "Puntorieri V",
+    "Bussolati B",
+    "Camussi G"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/16436683/",
+    "publisher": "https://doi.org/10.2353/ajpath.2006.050776"
+  }
+}

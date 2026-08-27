@@ -1,0 +1,475 @@
+#!/usr/bin/env python3
+
+from __future__ import annotations
+
+import csv
+import json
+import re
+import sys
+from collections import Counter
+from pathlib import Path
+
+from pass_archive import active_artifacts_dir, load_all_pass_csv, run_input_path, snapshot_current_pass
+
+
+WORKFLOW_ROOT = Path(__file__).resolve().parents[1]
+RUNS_DIR = WORKFLOW_ROOT / "runs"
+
+FIELDS = [
+    "loop_id",
+    "source_stage",
+    "trigger",
+    "triggered",
+    "action",
+    "target_stage",
+    "rationale",
+    "required_changes",
+    "stop_condition",
+]
+
+STATE_STATUSES = {
+    "initialized",
+    "running",
+    "loop_required",
+    "awaiting_pdf_shortlist",
+    "complete",
+    "blocked",
+}
+
+
+def load_csv(path: Path) -> list[dict[str, str]]:
+    if not path.exists():
+        return []
+    return list(csv.DictReader(path.open(encoding="utf-8")))
+
+
+def parse_config(path: Path) -> dict[str, str]:
+    if not path.exists():
+        return {}
+    config: dict[str, str] = {}
+    pattern = re.compile(r"-\s+`([^`]+)`:\s+`([^`]+)`")
+    for line in path.read_text(encoding="utf-8").splitlines():
+        match = pattern.match(line.strip())
+        if match:
+            config[match.group(1)] = match.group(2)
+    return config
+
+
+def config_int(config: dict[str, str], key: str, default: int) -> int:
+    value = config.get(key, "").strip()
+    if not value.isdigit():
+        return default
+    return int(value)
+
+
+def ratio(numerator: int, denominator: int) -> float:
+    if denominator == 0:
+        return 0.0
+    return numerator / denominator
+
+
+def add_decision(
+    rows: list[dict[str, str]],
+    source_stage: str,
+    trigger: str,
+    triggered: bool,
+    action: str,
+    target_stage: str,
+    rationale: str,
+    required_changes: str,
+    stop_condition: str,
+) -> None:
+    rows.append(
+        {
+            "loop_id": f"loop_{len(rows) + 1}",
+            "source_stage": source_stage,
+            "trigger": trigger,
+            "triggered": "yes" if triggered else "no",
+            "action": action,
+            "target_stage": target_stage,
+            "rationale": rationale,
+            "required_changes": required_changes,
+            "stop_condition": stop_condition,
+        }
+    )
+
+
+def build_state(
+    run_id: str,
+    access_phase: str,
+    min_big_workflow_loops: int,
+    max_workflow_loops: int,
+    decisions: list[dict[str, str]],
+    fulltext_rows: list[dict[str, str]],
+    pmc_feedback_rows: list[dict[str, str]],
+    queue_rows: list[dict[str, str]],
+    pdf_shortlist_rows: list[dict[str, str]],
+) -> dict[str, object]:
+    active_loop_count = sum(row.get("triggered") == "yes" for row in decisions)
+    latest_pdf_decision = (
+        pmc_feedback_rows[-1].get("pdf_deferral_decision", "").strip()
+        if pmc_feedback_rows
+        else ""
+    )
+    pdf_request_count = sum(
+        row.get("shortlist_decision", "") == "request_pdf"
+        for row in pdf_shortlist_rows
+    )
+
+    state = {
+        "run_id": run_id,
+        "status": "running",
+        "access_phase": access_phase,
+        "completion_signal": "",
+        "next_action": "continue_workflow",
+        "active_loop_count": active_loop_count,
+        "completed_big_loop_count": len(pmc_feedback_rows),
+        "min_big_workflow_loops": min_big_workflow_loops,
+        "max_workflow_loops": max_workflow_loops,
+        "latest_pdf_deferral_decision": latest_pdf_decision,
+        "manual_pdf_queue_count": len(queue_rows),
+        "pdf_download_shortlist_count": len(pdf_shortlist_rows),
+        "pdf_request_count": pdf_request_count,
+        "reason": "Workflow has not yet reached a controller-recognized completion state.",
+    }
+
+    if len(pmc_feedback_rows) >= max_workflow_loops and latest_pdf_decision != "final_pdf_pass":
+        state.update(
+            {
+                "status": "blocked",
+                "next_action": "stop_blocked",
+                "reason": "Maximum big workflow loop count reached without final_pdf_pass.",
+            }
+        )
+    elif active_loop_count:
+        state.update(
+            {
+                "status": "loop_required",
+                "next_action": decisions[0].get("action", "continue_workflow"),
+                "reason": "One or more workflow controller triggers are active.",
+            }
+        )
+    elif fulltext_rows and pmc_feedback_rows and len(pmc_feedback_rows) < min_big_workflow_loops:
+        state.update(
+            {
+                "status": "loop_required",
+                "next_action": "loop_to_query_scout",
+                "reason": "Minimum big workflow loop count has not been satisfied; apply PMC learning to a revised query/review/import pass before final PDF access.",
+            }
+        )
+    elif queue_rows and latest_pdf_decision == "final_pdf_pass" and not pdf_shortlist_rows:
+        state.update(
+            {
+                "status": "awaiting_pdf_shortlist",
+                "next_action": "build_pdf_download_shortlist",
+                "reason": "PMC feedback marks final PDF pass, but the final PDF queue has not been scored.",
+            }
+        )
+    elif fulltext_rows and pmc_feedback_rows and latest_pdf_decision == "final_pdf_pass":
+        if queue_rows:
+            state.update(
+                {
+                    "status": "complete",
+                    "completion_signal": "pdf_download_shortlist_ready",
+                    "next_action": "report_final_loop",
+                    "reason": "Final PMC feedback is satisfied and the PDF queue has a download shortlist.",
+                }
+            )
+        else:
+            state.update(
+                {
+                    "status": "complete",
+                    "completion_signal": "no_pdf_queue",
+                    "next_action": "report_final_loop",
+                    "reason": "Final PMC feedback is satisfied and no manual PDF queue remains.",
+                }
+            )
+    elif latest_pdf_decision == "defer_pdfs":
+        state.update(
+            {
+                "status": "loop_required",
+                "next_action": "loop_to_query_scout",
+                "reason": "PMC feedback says to defer PDFs and use full-text learning to refine the query.",
+            }
+        )
+
+    if state["status"] not in STATE_STATUSES:
+        state["status"] = "running"
+    return state
+
+
+def main() -> int:
+    if len(sys.argv) != 2:
+        print("Usage: python3 scripts/assess_workflow_loops.py <run_id>")
+        return 1
+
+    run_id = sys.argv[1].strip()
+    run_dir = RUNS_DIR / run_id
+    if not run_dir.exists():
+        print(f"Run does not exist: {run_dir}")
+        return 1
+
+    artifacts_dir = active_artifacts_dir(run_dir)
+    metadata_dir = artifacts_dir / "metadata_collection"
+    abstract_dir = artifacts_dir / "abstract_review"
+    import_dir = artifacts_dir / "fulltext_import"
+    fulltext_dir = artifacts_dir / "fulltext_review"
+    control_dir = artifacts_dir / "workflow_control"
+    control_dir.mkdir(parents=True, exist_ok=True)
+
+    manifest_rows = load_csv(metadata_dir / "paper_manifest.csv")
+    abstract_rows = load_csv(abstract_dir / "abstract_review.csv")
+    abstract2_rows = load_csv(abstract_dir / "abstract_review2.csv")
+    import_rows = load_csv(import_dir / "import_status.csv")
+    queue_rows = load_csv(import_dir / "manual_pdf_queue.csv")
+    pdf_shortlist_rows = load_csv(import_dir / "pdf_download_shortlist.csv")
+    fulltext_rows = load_csv(fulltext_dir / "fulltext_review.csv")
+    evidence_rows = load_csv(fulltext_dir / "evidence_extraction.csv")
+    pmc_feedback_rows = load_csv(fulltext_dir / "pmc_mechanism_feedback.csv")
+    all_pmc_feedback_rows = load_all_pass_csv(run_dir, "artifacts/fulltext_review/pmc_mechanism_feedback.csv")
+    config = parse_config(run_input_path(run_dir, "run_config.md"))
+    access_phase = config.get("access_phase", "pmc_learning")
+    min_big_workflow_loops = max(2, config_int(config, "min_big_workflow_loops", 2))
+    max_workflow_loops = min(5, config_int(config, "max_workflow_loops", 5))
+    if max_workflow_loops < min_big_workflow_loops:
+        max_workflow_loops = min_big_workflow_loops
+
+    decisions: list[dict[str, str]] = []
+
+    abstract_include_rate = ratio(
+        sum(row.get("review_decision", "") == "include" for row in abstract_rows),
+        len(manifest_rows),
+    )
+    advance_rate = ratio(
+        sum(row.get("promotion_decision", "") == "advance_to_import" for row in abstract2_rows),
+        len(manifest_rows),
+    )
+    advanced_count = sum(row.get("promotion_decision", "") == "advance_to_import" for row in abstract2_rows)
+    if abstract_include_rate > 0.75 and advance_rate > 0.45 and advanced_count > 300:
+        add_decision(
+            decisions,
+            "abstract_review",
+            "broad_abstract_promotion",
+            True,
+            "loop_to_abstract_review",
+            "abstractReviewer",
+            f"Abstract review included {abstract_include_rate:.0%} of retrieved papers and reviewer 2 advanced {advance_rate:.0%}.",
+            "Tighten abstract reason-code definitions and require each include to name a direct, indirect, comparator, or access-unresolved evidence class.",
+            "Proceed when reviewer rationales are reproducible and broad expression/marker-only records are no longer included.",
+        )
+
+    feedback_query_change = any(
+        row.get("pdf_deferral_decision", "") == "defer_pdfs"
+        and (
+            row.get("recommended_query_changes", "").strip()
+            or row.get("noise_keyword_families", "").strip()
+            or row.get("missing_keyword_families", "").strip()
+        )
+        for row in pmc_feedback_rows
+    )
+    if feedback_query_change and access_phase != "final_access":
+        latest_feedback = pmc_feedback_rows[-1]
+        add_decision(
+            decisions,
+            "fulltext_review",
+            "pmc_learning_query_feedback",
+            True,
+            "loop_to_run_guidance_reviser",
+            "runGuidanceReviser",
+            "PMC mechanism feedback recommends run-guidance revision and query reconstruction before PDF effort.",
+            latest_feedback.get("recommended_query_changes", "")
+            or "Use PMC-derived mechanism and noise terms to revise instruction.md, topic.md, reviewer rules, and then the query.",
+            "Proceed when run_guidance_revision_log.csv records the latest PMC feedback loop and the revised query preserves direct mechanisms while reducing repeated noise families.",
+        )
+
+    latest_pdf_decision = all_pmc_feedback_rows[-1].get("pdf_deferral_decision", "") if all_pmc_feedback_rows else ""
+
+    if fulltext_rows and all_pmc_feedback_rows and len(all_pmc_feedback_rows) < min_big_workflow_loops:
+        latest_feedback = all_pmc_feedback_rows[-1]
+        add_decision(
+            decisions,
+            "fulltext_review",
+            "minimum_big_loop_not_satisfied",
+            True,
+            "loop_to_run_guidance_reviser",
+            "runGuidanceReviser",
+            f"Only {len(all_pmc_feedback_rows)} big PMC-learning pass has completed; the workflow requires at least {min_big_workflow_loops} big passes before final PDF access.",
+            latest_feedback.get("recommended_query_changes", "")
+            or "Use PMC-derived retained mechanisms, missing terms, and noise families to revise run guidance and reconstruct the query, then rerun collection, abstract review, PMC import, and full-text review.",
+            "Proceed to final PDF access only after at least two PMC-feedback passes exist and the latest pass independently marks final_pdf_pass.",
+        )
+    elif all_pmc_feedback_rows and len(all_pmc_feedback_rows) >= max_workflow_loops and latest_pdf_decision != "final_pdf_pass":
+        add_decision(
+            decisions,
+            "workflow_control",
+            "maximum_big_loop_reached",
+            True,
+            "stop_blocked",
+            "reporter",
+            f"The workflow has reached max_workflow_loops={max_workflow_loops} without final_pdf_pass.",
+            "Report the unresolved failure mode and do not continue looping automatically.",
+            "Resume only after a human or parent agent changes scope, query strategy, or access policy.",
+        )
+
+    minimum_big_loop_satisfied = len(all_pmc_feedback_rows) >= min_big_workflow_loops
+
+    if (
+        minimum_big_loop_satisfied
+        and pmc_feedback_rows
+        and queue_rows
+        and latest_pdf_decision == "final_pdf_pass"
+        and not pdf_shortlist_rows
+    ):
+        add_decision(
+            decisions,
+            "fulltext_import",
+            "missing_pdf_shortlist",
+            True,
+            "build_pdf_shortlist",
+            "fullTextImporter",
+            f"PMC mechanism feedback marks the run ready for final PDF pass and the manual PDF queue contains {len(queue_rows)} papers, but no PDF download shortlist exists.",
+            "Build artifacts/fulltext_import/pdf_download_shortlist.csv using PMC-derived mechanism criteria, with request_pdf/defer_pdf/do_not_request decisions for every queued paper.",
+            "Proceed only after the shortlist exists and the user-facing report summarizes the request_pdf subset separately from the raw queue.",
+        )
+
+    pdf_queue_rate = ratio(len(queue_rows), len(import_rows))
+    if import_rows and pdf_queue_rate > 0.50 and access_phase != "final_access":
+        if fulltext_rows and evidence_rows and not pmc_feedback_rows:
+            add_decision(
+                decisions,
+                "fulltext_review",
+                "missing_pmc_mechanism_feedback",
+                True,
+                "loop_to_fulltext_review",
+                "fullTextReviewer",
+                f"Manual PDF queue contains {len(queue_rows)} of {len(import_rows)} advanced papers ({pdf_queue_rate:.0%}), but PMC-readable full text has not been summarized for query learning.",
+                "Read available PMC-normalized full text and write pmc_mechanism_feedback.csv with direct mechanisms, noise keyword families, missing terms, and query changes. Keep PDFs deferred.",
+                "Proceed when PMC feedback either supports query reconstruction or marks the cohort ready for final PDF access.",
+            )
+        elif pmc_feedback_rows and latest_pdf_decision == "defer_pdfs":
+            add_decision(
+                decisions,
+                "fulltext_import",
+                "large_pdf_queue_after_pmc_learning",
+                True,
+                "loop_to_run_guidance_reviser",
+                "runGuidanceReviser",
+                f"Manual PDF queue contains {len(queue_rows)} of {len(import_rows)} advanced papers ({pdf_queue_rate:.0%}) after PMC learning.",
+                "Use pmc_mechanism_feedback.csv to revise run guidance and tighten query families that feed low-value unavailable papers before requesting PDFs.",
+                "Proceed to final PDF access only for direct or high-priority indirect papers after query/reviewer calibration.",
+            )
+        elif pmc_feedback_rows and latest_pdf_decision == "final_pdf_pass" and pdf_shortlist_rows:
+            requested_count = sum(
+                row.get("shortlist_decision", "") == "request_pdf"
+                for row in pdf_shortlist_rows
+            )
+            add_decision(
+                decisions,
+                "fulltext_import",
+                "final_pdf_shortlist_ready",
+                False,
+                "continue",
+                "fullTextImporter",
+                f"PMC feedback marks this as final PDF pass and the shortlist requests {requested_count} of {len(queue_rows)} queued PDFs.",
+                "Use pdf_download_shortlist.csv as the access action list. Do not loop back solely because the raw PDF queue remains large.",
+                "Proceed according to the PDF shortlist and run_config PDF policy.",
+            )
+    elif minimum_big_loop_satisfied and import_rows and pdf_queue_rate > 0.50:
+        add_decision(
+            decisions,
+            "fulltext_import",
+            "large_pdf_queue_final_access",
+            True,
+            "pause_for_user",
+            "fullTextImporter",
+            f"Final access pass has a manual PDF queue containing {len(queue_rows)} of {len(import_rows)} advanced papers ({pdf_queue_rate:.0%}).",
+            "Ask the human or parent agent whether to provide PDFs, continue PMC-only, or require full-text completion.",
+            "Proceed according to the explicit PDF intervention decision.",
+        )
+
+    keep_rate = ratio(
+        sum(row.get("fulltext_decision", "") == "keep" for row in fulltext_rows),
+        len(fulltext_rows),
+    )
+    if fulltext_rows and not evidence_rows:
+        add_decision(
+            decisions,
+            "fulltext_review",
+            "missing_evidence_extraction",
+            True,
+            "loop_to_fulltext_review",
+            "fullTextReviewer",
+            "Full-text review has keep/drop decisions but no evidence extraction table.",
+            "Extract evidence tiers, evidence types, directness, centrality, supporting locator, and query-feedback signal for every readable full text.",
+            "Proceed when every full-text keep is supported by direct, indirect, or run-authorized comparator evidence.",
+        )
+    elif evidence_rows and access_phase == "final_access":
+        fulltext_decisions = {row.get("paper_id", ""): row.get("fulltext_decision", "") for row in fulltext_rows}
+        weak_kept_count = sum(
+            1
+            for row in evidence_rows
+            if row.get("evidence_tier", "") in {"background", "exclude"}
+            and fulltext_decisions.get(row.get("paper_id", "")) == "keep"
+        )
+        weak_kept_rate = ratio(weak_kept_count, len(evidence_rows))
+        if weak_kept_rate > 0.05 or keep_rate > 0.70:
+            rationale_parts = []
+            if weak_kept_rate > 0.05:
+                rationale_parts.append(f"{weak_kept_rate:.0%} of evidence rows are weak/background papers still kept")
+            if keep_rate > 0.70:
+                rationale_parts.append(f"full-text keep rate is {keep_rate:.0%}, which is high enough to require calibration")
+            add_decision(
+                decisions,
+                "fulltext_review",
+                "weak_final_keep_calibration",
+                True,
+                "loop_to_fulltext_review",
+                "fullTextReviewer",
+                "Evidence extraction calibration trigger: " + "; ".join(rationale_parts) + ".",
+                "Audit final keeps against extracted evidence tiers. Drop background/exclude evidence by default; if the keep rate remains high, sample kept papers for false-positive patterns and require each keep to name the decisive direct or strong indirect evidence.",
+                "Proceed when final keeps are mostly direct, strong indirect, or authorized comparator evidence.",
+            )
+
+    if not decisions:
+        add_decision(
+            decisions,
+            "workflow_control",
+            "no_loop_trigger",
+            False,
+            "continue",
+            "reporter",
+            "No artifact-level loop trigger fired.",
+            "No workflow revision required.",
+            "Continue to final reporting.",
+        )
+
+    output_path = control_dir / "workflow_loop_decision.csv"
+    with output_path.open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.DictWriter(handle, fieldnames=FIELDS)
+        writer.writeheader()
+        writer.writerows(decisions)
+
+    triggered = sum(row["triggered"] == "yes" for row in decisions)
+    state = build_state(
+        run_id,
+        access_phase,
+        min_big_workflow_loops,
+        max_workflow_loops,
+        decisions,
+        fulltext_rows,
+        all_pmc_feedback_rows,
+        queue_rows,
+        pdf_shortlist_rows,
+    )
+    state_path = control_dir / "workflow_state.json"
+    state_path.write_text(json.dumps(state, indent=2) + "\n", encoding="utf-8")
+    snapshot_dir = snapshot_current_pass(run_dir, "after_workflow_controller_assessment")
+    if snapshot_dir:
+        print(f"Archived current pass snapshot at {snapshot_dir}")
+    print(f"Wrote {len(decisions)} loop decisions to {output_path} ({triggered} triggered)")
+    print(f"Wrote workflow state to {state_path} (status={state['status']})")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

@@ -1,0 +1,46 @@
+{
+  "paper_id": "pmid-37627061",
+  "pmid": "37627061",
+  "doi": "10.3390/cancers15164034",
+  "title": "Preclinical Evaluation of the FGFR-Family Inhibitor Futibatinib for Pediatric Rhabdomyosarcoma.",
+  "abstract": "Rhabdomyosarcoma (RMS) is the most common pediatric soft tissue sarcoma. Despite decades of clinical trials, the overall survival rate for patients with relapsed and metastatic disease remains below 30%, underscoring the need for novel treatments. FGFR4, a receptor tyrosine kinase that is overexpressed in RMS and mutationally activated in 10% of cases, is a promising target for treatment. Here, we show that futibatinib, an irreversible pan-FGFR inhibitor, inhibits the growth of RMS cell lines in vitro by inhibiting phosphorylation of FGFR4 and its downstream targets. Moreover, we provide evidence that the combination of futibatinib with currently used chemotherapies such as irinotecan and vincristine has a synergistic effect against RMS in vitro. However, in RMS xenograft models, futibatinib monotherapy and combination treatment have limited efficacy in delaying tumor growth and prolonging survival. Moreover, limited efficacy is only observed in a PAX3-FOXO1 fusion-negative (FN) RMS cell line with mutationally activated FGFR4, whereas little or no efficacy is observed in PAX3-FOXO1 fusion-positive (FP) RMS cell lines with FGFR4 overexpression. Alternative treatment modalities such as combining futibatinib with other kinase inhibitors or targeting FGFR4 with CAR T cells or antibody-drug conjugate may be more effective than the approaches tested in this study.",
+  "year": "2023",
+  "journal": "Cancers",
+  "authors": [
+    "Wu JT",
+    "Cheuk A",
+    "Isanogle K",
+    "Robinson C",
+    "Zhang X",
+    "Ceribelli M",
+    "Beck E",
+    "Shinn P",
+    "Klumpp-Thomas C",
+    "Wilson KM",
+    "McKnight C",
+    "Itkin Z",
+    "Sotome H",
+    "Hirai H",
+    "Calleja E",
+    "Wacheck V",
+    "Gouker B",
+    "Peer CJ",
+    "Corvalan N",
+    "Milewski D",
+    "Kim YY",
+    "Figg WD",
+    "Edmondson EF",
+    "Thomas CJ",
+    "Difilippantonio S",
+    "Wei JS",
+    "Khan J"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/37627061/",
+    "publisher": "https://doi.org/10.3390/cancers15164034"
+  }
+}

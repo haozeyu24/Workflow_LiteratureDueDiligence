@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-31847528",
+  "pmid": "31847528",
+  "doi": "10.4149/neo_2019_190429N378",
+  "title": "PAX3 silencing suppresses gastric cancer proliferation and angiogenesis via MET/PI3K signaling.",
+  "abstract": "PAX3 is the key factor in cell signal transduction pathway and may be involved in the regulation of cancer cell proliferation, differentiation and migration. The aim of the study was to investigate the effects and mechanism of PAX3 silencing on the gastric cancer. Specific PAX3 silencing was performed both in vitro and in vivo using small-interfering RNAs (siRNAs). The proliferation, apoptosis and angiogenesis of gastric cancer cells were assessed using MTT assay, flow cytometry and in vitro tube formation assay. Mice with gastric xenografts, which expressed either si-PAX3 or non-coding siRNA (si-NC), were developed and the effects of PAX3 silencing on tumor progression were evaluated. PCNA is a proliferating cell nuclear antigen and can be used as an index for evaluating cell proliferation status. Immunocytochemistry assay was used to quantify PAX3 and PCNA expression. After 4 weeks of tumor inoculation, tumor tissues were weighed. Tumor tissue morphology and apoptosis were evaluated using HE staining and TUNEL assay. In order to investigate the effect of silencing PAX3 on cell apoptosis, angiogenesis and MET/PI3K pathway, quantitative real-time PCR (qRT-PCR) or western blot were used to detect the expression levels of caspase-3, VEGF, MET, p-MET, PI3K and p-PI3K. After PAX3 silencing, PAX3 expression was significantly decreased in two gastric cancer cell lines, MKN-28 and SGC-7901 (p<0.05 vs Control). PAX3 silencing reduced cell proliferation, induced cell apoptosis and inhibited tube formation. PAX3 and PCNA expression were also significantly decreased. In mice, silencing PAX3 significantly inhibited tumor growth and decreased microvessel density in tumor. PAX3 silencing also decreased cell density in tumors, which concurred with increased apoptosis and PAX3 expression. PAX3 silencing upregulated the expression of caspase-3, downregulated the expression of VEGF, phosphorylation of PI3K and MET. Our data showed that these anti-tumor effects of PAX3 silencing might be attributed to its role in inducing cell apoptosis and inhibiting angiogenesis.",
+  "year": "2020",
+  "journal": "Neoplasma",
+  "authors": [
+    "Lv WL",
+    "Hu YY",
+    "Li ZN",
+    "Zhang W",
+    "Pan Q"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/31847528/",
+    "publisher": "https://doi.org/10.4149/neo_2019_190429N378"
+  }
+}

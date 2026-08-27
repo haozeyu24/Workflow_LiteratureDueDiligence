@@ -1,0 +1,22 @@
+{
+  "paper_id": "pmid-29652528",
+  "pmid": "29652528",
+  "doi": "10.1080/02713683.2018.1464193",
+  "title": "ERK1/2-Dependent Gene Expression Contributing to TGF\u03b2-Induced Lens EMT.",
+  "abstract": "PURPOSE: This study aims to highlight some of the genes that are differentially regulated by ERK1/2 signaling in TGF\u03b2-induced EMT in lens, and their potential contribution to this pathological process.\n\nMATERIALS AND METHODS: Rat lens epithelial explants were cultured with or without TGF\u03b2 over a 3-day-culture period to induce EMT, in the presence or absence of UO126 (ERK1/2 signaling inhibitor), both prior to TGF\u03b2-treatment, or 24 or 48\u00a0hours after TGF\u03b2 treatment. Smad2/3-nuclear immunolabeling was used to indicate active TGF\u03b2 signaling, and quantitative RT-PCR was used to analyze changes in the different treatment groups in expression of the following representative genes: TGF\u03b2 signaling (Smad7, Smurf1, and Rnf111), epithelial markers (Pax6, Cdh1, Zeb1, and Zeb2), cell survival/death regulators (Bcl2, Bax, and Bad) and lens mesenchymal markers (Mmp9, Fn1, and Col1a1), over the 3\u00a0days of culture.\n\nRESULTS: ERK1/2 was found to regulate the expression of Smurf1, Smad7, Rnf11, Cdh1, Pax6, Zeb1, Bcl2, Bax, and Bad genes in lens cells. TGF\u03b2 signaling was evident by nuclear localization of Smad2/3 and this was effectively blocked by pre-treatment with UO126, but not by post-treatment with this ERK1/2 signaling inhibitor. TGF\u03b2 induced the expression of its signaling partners (Smad7, Smurf1, and Rnf111), as well as lens mesenchymal genes (Mmp9, Fn1, and Col1a1), consistent with its role in inducing an EMT. These TGF\u03b2-responsive signaling genes, as well as the mesenchymal markers, were all positively regulated by ERK1/2-activity. The expression levels of the lens epithelial genes we examined, and genes that were associated with cell death/survival, were not directly impacted by TGF\u03b2.\n\nCONCLUSIONS: TGF\u03b2-mediated ERK1/2 signaling positively modulates the expression of mesenchymal genes in lens epithelial explants undergoing EMT, in addition to regulating TGF\u03b2-mediated regulatory genes. Independent of TGF\u03b2, ERK1/2 activity can also regulate the expression of endogenous lens epithelial genes, highlighting its potential key role in regulation of both normal and pathological lens cellular processes.",
+  "year": "2018",
+  "journal": "Current eye research",
+  "authors": [
+    "Wojciechowski MC",
+    "Shu DY",
+    "Lovicu FJ"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/29652528/",
+    "publisher": "https://doi.org/10.1080/02713683.2018.1464193"
+  }
+}

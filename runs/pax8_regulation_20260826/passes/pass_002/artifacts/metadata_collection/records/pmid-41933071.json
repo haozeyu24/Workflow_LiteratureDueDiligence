@@ -1,0 +1,29 @@
+{
+  "paper_id": "pmid-41933071",
+  "pmid": "41933071",
+  "doi": "10.1038/s41380-026-03580-w",
+  "title": "Ythdf2/Setd1b regulatory axis is essential for cerebellar development through regulating epigenetic reprogramming.",
+  "abstract": "The epigenetic modification N6-methyladenosine (m6A) is critical for neurodevelopment. However, its interplay with histone modifications during cerebellar development remains poorly understood. Ythdf2 is a core m6A reader that promotes selective degradation of methylated transcripts to shape gene expression dynamics. However, whether Ythdf2 also coordinates epitranscriptomic regulation with chromatin remodeling during cerebellar development is unknown. Here, we generated a Ythdf2 knockout (Ythdf2KO) mouse model and examined cerebellar development at embryonic day 13.5 (E13.5) and postnatal day 3 (P3). Ythdf2KO mice developed overt cerebellar ataxia, manifested by tremors and abnormal gait. At the molecular level, loss of Ythdf2 disrupted neural progenitor maintenance and induced premature neuronal differentiation. The expression of progenitor markers, including Sox2, Nestin and Pax6 were markedly reduced, whereas markers of neuronal differentiation such as Tuj1 and Skor2 were increased. In contrast, genes associated with neuronal maturation, including Map2 and Calb1, and astrocytic marker Gfap were downregulated. m\u2076A RIP seq analysis demonstrated that Ythdf2KO caused a global reduction in m\u2076A levels, with the differentially expressed m\u2076A modified genes enriched for histone modification and chromatin stability. Furthermore, Ythdf2 loss suppressed transcriptional activity by altering H3K4me3 deposition, thereby reducing chromatin accessibility within neuronal developmental pathways. Co-immunoprecipitation revealed a specific interaction between YTHDF2 and the H3K4 methyltransferase SETD1B, but not CXXC1 or SETD1A, and Setd1b knockdown rescued the neural self-renewal and differentiation defects caused by Ythdf2 deletion. Together, these results establish a mechanistic link in which Ythdf2 connects m6A-modified transcripts to Setd1b-mediated H3K4me3 deposition, thereby sustaining chromatin accessibility and transcriptional programs required for proper cerebellar development.",
+  "year": "2026",
+  "journal": "Molecular psychiatry",
+  "authors": [
+    "Ren X",
+    "Jiang J",
+    "Hu X",
+    "Zhang M",
+    "Li J",
+    "Lu J",
+    "Xia W",
+    "Ding C",
+    "Meng Q",
+    "Huang B"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/41933071/",
+    "publisher": "https://doi.org/10.1038/s41380-026-03580-w"
+  }
+}

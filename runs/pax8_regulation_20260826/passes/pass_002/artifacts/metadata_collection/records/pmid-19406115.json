@@ -1,0 +1,21 @@
+{
+  "paper_id": "pmid-19406115",
+  "pmid": "19406115",
+  "doi": "10.1016/j.ydbio.2009.04.026",
+  "title": "Determination of cell fates in the R7 equivalence group of the Drosophila eye by the concerted regulation of D-Pax2 and TTK88.",
+  "abstract": "In the developing Drosophila eye, the precursors of the neuronal photoreceptor cells R1/R6/R7 and non-neuronal cone cells share the same developmental potential and constitute the R7 equivalence group. It is not clear how cells of this group elaborate their distinct fates. Here we show that both TTK88 and D-Pax2 play decisive roles in cone cell development and act in concert to transform developing R1/R6/R7 into cone cells: while TTK88 blocks neuronal development, D-Pax2 promotes cone cell specification. In addition, ectopic TTK88 in R cells induces apoptosis, which is suppressed by ectopic D-Pax2. We further demonstrate that Phyllopod (Phyl), previously shown to promote the neuronal fate in R1/R6/R7 by targeting TTK for degradation, also inhibits D-Pax2 transcription to prevent cone cell specification. Thus, the fates of R1/R6/R7 and cone cells are determined by a dual mechanism that coordinately activates one fate while inhibiting the other.",
+  "year": "2009",
+  "journal": "Developmental biology",
+  "authors": [
+    "Shi Y",
+    "Noll M"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/19406115/",
+    "publisher": "https://doi.org/10.1016/j.ydbio.2009.04.026"
+  }
+}

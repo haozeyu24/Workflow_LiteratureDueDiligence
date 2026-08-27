@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-22813217",
+  "pmid": "22813217",
+  "doi": "10.1111/j.1600-0722.2012.00965.x",
+  "title": "Novel nonsense mutation in MSX1 causes tooth agenesis with cleft lip in a Chinese family.",
+  "abstract": "Tooth agenesis is one of the most common developmental disorders in humans. Previous studies have attributed non-syndromic tooth agenesis to mutations in several genes, including MSX1, PAX9, EDA, and AXIN2. In this study, we investigated a Chinese family with tooth agenesis combined with cleft lip. Genomic DNA was isolated from blood samples of all available family members. Candidate genes MSX1 and PAX9 were amplified by the PCR and directly sequenced. A novel heterozygous mutation at c.C565T, exon 2 of MSX1, was identified in affected members. To analyze the effect of the nonsense mutation on MSX1 expression, vectors containing wild-type and mutated MSX1 were constructed and transfected into COS7 cell lines. Real-time PCR showed that the mRNA expression of the mutated MSX1 was dramatically reduced compared with that of the wild-type MSX1. Our findings suggest that the nonsense mutation in MSX1 might have resulted in rapid degradation of the mutated transcript and caused the phenotype of tooth agenesis with cleft lip in the Chinese family.",
+  "year": "2012",
+  "journal": "European journal of oral sciences",
+  "authors": [
+    "Liang J",
+    "Zhu L",
+    "Meng L",
+    "Chen D",
+    "Bian Z"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/22813217/",
+    "publisher": "https://doi.org/10.1111/j.1600-0722.2012.00965.x"
+  }
+}

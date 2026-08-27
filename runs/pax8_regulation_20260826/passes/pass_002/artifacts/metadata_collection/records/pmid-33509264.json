@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-33509264",
+  "pmid": "33509264",
+  "doi": "10.1186/s13578-021-00534-3",
+  "title": "ACTA1 is inhibited by PAX3-FOXO1 through RhoA-MKL1-SRF signaling pathway and impairs cell proliferation, migration and tumor growth in Alveolar Rhabdomyosarcoma.",
+  "abstract": "BACKGROUND: Alveolar Rhabdomyosarcoma (ARMS) is a pediatric malignant soft tissue tumor with skeletal muscle phenotype. Little work about skeletal muscle proteins in ARMS was reported. PAX3-FOXO1 is a specific fusion gene generated from the chromosomal translocation t (2;13) (q35; q14) in most ARMS. ACTA1 is the skeletal muscle alpha actin gene whose transcript was detected in ARMS. However, ACTA1 expression and regulation in ARMS have not been well investigated. This work aims to explore the expression, regulation and potential role of ACTA1 in ARMS.\n\nRESULTS: ACTA1 protein was detected in the studied RH30, RH4 and RH41 ARMS cells. ACTA1 was found to be inhibited by PAX3-FOXO1 at transcription and protein levels by employing western blot, luciferase reporter, qRT-PCR and immunofluorescence assays. The activities of ACTA1 gene reporter induced by RhoA, MKL1, SRF, STARS or Cytochalasin D molecule were reduced in the presence of overexpressed PAX3-FOXO1 protein. CCG-1423 is an inhibitor of RhoA-MKL1-SRF signaling, we observed there was a synergistic effect between this inhibitor and PAX3-FOXO1 to suppress ACTA1 reporter activity. Furthermore, PAX3-FOXO1 overexpression decreased ACTA1 protein level and knockdown of PAX3-FOXO1 by siRNA enhanced ACTA1 expression. In addition, both MKL1 and SRF, but not RhoA were also found to be inhibited by PAX3-FOXO1 gene at protein levels and increased once knockdown of PAX3-FOXO1 expression. The association between MKL1 and SRF in cells was decreased accordingly with ectopic expression of PAX3-FOXO1. However, the distribution of MKL1 and SRF in nuclear or cytoplasm fraction was not changed by PAX3-FOXO1 expression. Finally, we showed that ACTA1 overexpression in RH30 cells could inhibit cell proliferation and migration in vitro and impair tumor growth in vivo compared with the control groups.\n\nCONCLUSIONS: ACTA1 is inhibited by PAX3-FOXO1 at transcription and protein levels through RhoA-MKL1-SRF signaling pathway and this inhibition may partially contribute to the tumorigenesis and development of ARMS. Our findings improved the understanding of PAX3-FOXO1 in ARMS and provided a potential strategy for the treatment of ARMS in future.",
+  "year": "2021",
+  "journal": "Cell & bioscience",
+  "authors": [
+    "Hu Q",
+    "Zhu L",
+    "Li Y",
+    "Zhou J",
+    "Xu J"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/33509264/",
+    "publisher": "https://doi.org/10.1186/s13578-021-00534-3"
+  }
+}

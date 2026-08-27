@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-18335505",
+  "pmid": "18335505",
+  "doi": "10.1002/gcc.20554",
+  "title": "Identification of PAX3-FKHR-regulated genes differentially expressed between alveolar and embryonal rhabdomyosarcoma: focus on MYCN as a biologically relevant target.",
+  "abstract": "Rhabdomyosarcoma is a family of myogenic soft tissue tumors subdivided into two main subtypes: alveolar (ARMS) and embryonal (ERMS). ARMS is characterized by a frequent 2;13 chromosomal translocation that creates a PAX3-FKHR fusion transcription factor. To identify downstream targets of PAX3-FKHR, we introduced an inducible form of PAX3-FKHR into human RD ERMS cells. Microarray analysis identified 39 genes (29 upregulated and 10 downregulated) that are modulated by PAX3-FKHR in RD cells and differentially expressed between ERMS and PAX3-FKHR-positive ARMS tumors. Functional annotation demonstrated that genes involved in regulation of transcription and development, particularly neurogenesis, are represented in this group. MYCN was one notable neural-related transcription factor-encoding gene identified in this set, and its regulation by PAX3-FKHR was further confirmed at the RNA and protein levels. The findings of cycloheximide inhibition and time-course studies are consistent with the hypothesis that the PAX3-FKHR protein acts directly on the MYCN gene at the transcriptional level. Functional studies established that MYCN cooperates with PAX3-FKHR to enhance oncogenic activity. In conclusion, we identified a selected set of biologically relevant genes modulated by PAX3-FKHR, and demonstrated that PAX3-FKHR contributes to the expression of MYCN and in turn MYCN collaborates with PAX3-FKHR in tumorigenesis.",
+  "year": "2008",
+  "journal": "Genes, chromosomes & cancer",
+  "authors": [
+    "Mercado GE",
+    "Xia SJ",
+    "Zhang C",
+    "Ahn EH",
+    "Gustafson DM",
+    "La\u00e9 M",
+    "Ladanyi M",
+    "Barr FG"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/18335505/",
+    "publisher": "https://doi.org/10.1002/gcc.20554"
+  }
+}

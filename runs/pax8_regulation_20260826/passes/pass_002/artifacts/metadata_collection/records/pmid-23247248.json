@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-23247248",
+  "pmid": "23247248",
+  "doi": "10.1007/s00018-012-1220-1",
+  "title": "SUMOylation of Pax7 is essential for neural crest and muscle development.",
+  "abstract": "Regulatory transcription factors of the Pax family play fundamental roles in the function of multipotent cells during vertebrate development, post-natal regeneration, and cancer. Pax7 and its homologue Pax3 are important players in neural crest and muscle development. Both genes are coexpressed in various tissues and are thought to provide similar, but not identical, functions. The mechanisms that allow specific regulation of Pax7 remain largely unknown. Here, we report for the first time that Pax7 is regulated by SUMOylation. We identify the interaction of Pax7 with Ubc9, the SUMO conjugating enzyme, and reveal that SUMOylation machinery is enriched in neural crest precursors and plays a critical role in NC development. We demonstrate that Pax7 becomes SUMOylated and identify an essential role for lysine 85 (K85) in Pax7-SUMOylation. Despite high conservation surrounding K85 amongst Pax genes, we were unable to identify SUMOylation of other Pax proteins tested, including Pax3. Using a non-SUMOylatable Pax7 variant (K85 X R), we demonstrate that SUMOylation is essential for the function of Pax7 in neural crest development, C2C12 myogenic differentiation, and transcriptional transactivation. Our study provides new mechanistic insight into the molecular regulation of Pax7's function by SUMOylation in neural crest and muscle development.",
+  "year": "2013",
+  "journal": "Cellular and molecular life sciences : CMLS",
+  "authors": [
+    "Luan Z",
+    "Liu Y",
+    "Stuhlmiller TJ",
+    "Marquez J",
+    "Garc\u00eda-Castro MI"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/23247248/",
+    "publisher": "https://doi.org/10.1007/s00018-012-1220-1"
+  }
+}

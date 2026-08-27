@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-36369219",
+  "pmid": "36369219",
+  "doi": "10.1038/s41467-022-34131-w",
+  "title": "Developmental disruption and restoration of brain synaptome architecture in the murine Pax6 neurodevelopmental disease model.",
+  "abstract": "Neurodevelopmental disorders of genetic origin delay the acquisition of normal abilities and cause disabling phenotypes. Nevertheless, spontaneous attenuation and even complete amelioration of symptoms in early childhood and adolescence can occur in many disorders, suggesting that brain circuits possess an intrinsic capacity to overcome the deficits arising from some germline mutations. We examined the molecular composition of almost a trillion excitatory synapses on a brain-wide scale between birth and adulthood in mice carrying a mutation in the homeobox transcription factor Pax6, a neurodevelopmental disorder model. Pax6 haploinsufficiency had no impact on total synapse number at any age. By contrast, the molecular composition of excitatory synapses, the postnatal expansion of synapse diversity and the acquisition of normal synaptome architecture were delayed in all brain regions, interfering with networks and electrophysiological simulations of cognitive functions. Specific excitatory synapse types and subtypes were affected in two key developmental age-windows. These phenotypes were reversed within 2-3 weeks of onset, restoring synapse diversity and synaptome architecture to the normal developmental trajectory. Synapse subtypes with rapid protein turnover mediated the synaptome remodeling. This brain-wide capacity for remodeling of synapse molecular composition to recover and maintain the developmental trajectory of synaptome architecture may help confer resilience to neurodevelopmental genetic disorders.",
+  "year": "2022",
+  "journal": "Nature communications",
+  "authors": [
+    "Tomas-Roca L",
+    "Qiu Z",
+    "Frans\u00e9n E",
+    "Gokhale R",
+    "Bulovaite E",
+    "Price DJ",
+    "Komiyama NH",
+    "Grant SGN"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/36369219/",
+    "publisher": "https://doi.org/10.1038/s41467-022-34131-w"
+  }
+}

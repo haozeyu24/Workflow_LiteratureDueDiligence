@@ -8,6 +8,8 @@ import sys
 from collections import Counter
 from pathlib import Path
 
+from pass_archive import active_artifacts_dir, run_input_path
+
 
 WORKFLOW_ROOT = Path(__file__).resolve().parents[1]
 RUNS_DIR = WORKFLOW_ROOT / "runs"
@@ -63,7 +65,7 @@ STOPWORDS = {
 def load_run_text(run_dir: Path) -> str:
     parts: list[str] = []
     for name in ("instruction.md", "topic.md", "constraints.md"):
-        path = run_dir / name
+        path = run_input_path(run_dir, name)
         if path.exists():
             parts.append(path.read_text(encoding="utf-8"))
     return "\n".join(parts)
@@ -102,7 +104,7 @@ def main() -> int:
 
     run_id = sys.argv[1].strip()
     run_dir = RUNS_DIR / run_id
-    review_path = run_dir / "artifacts" / "abstract_review" / "abstract_review.csv"
+    review_path = active_artifacts_dir(run_dir) / "abstract_review" / "abstract_review.csv"
     if not review_path.exists():
         print(f"Abstract review table not found: {review_path}")
         return 1

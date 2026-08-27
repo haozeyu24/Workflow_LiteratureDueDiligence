@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-31814023",
+  "pmid": "31814023",
+  "doi": "10.1093/hmg/ddz278",
+  "title": "The master transcription factor SOX2, mutated in anophthalmia/microphthalmia, is post-transcriptionally regulated by the conserved RNA-binding protein RBM24 in vertebrate eye development.",
+  "abstract": "Mutations in the key transcription factor, SOX2, alone account for 20% of anophthalmia (no eye) and microphthalmia (small eye) birth defects in humans-yet its regulation is not well understood, especially on the post-transcription level. We report the unprecedented finding that the conserved RNA-binding motif protein, RBM24, positively controls Sox2 mRNA stability and is necessary for optimal SOX2 mRNA and protein levels in development, perturbation of which causes ocular defects, including microphthalmia and anophthalmia. RNA immunoprecipitation assay indicates that RBM24 protein interacts with Sox2 mRNA in mouse embryonic eye tissue. and electrophoretic mobility shift assay shows that RBM24 directly binds to the Sox2 mRNA 3'UTR, which is dependent on AU-rich elements (ARE) present in the Sox2 mRNA 3'UTR. Further, we demonstrate that Sox2 3'UTR AREs are necessary for RBM24-based elevation of Sox2 mRNA half-life. We find that this novel RBM24-Sox2 regulatory module is essential for early eye development in vertebrates. We show that Rbm24-targeted deletion using a constitutive CMV-driven Cre in mouse, and rbm24a-CRISPR/Cas9-targeted mutation or morpholino knockdown in zebrafish, results in Sox2 downregulation and causes the developmental defects anophthalmia or microphthalmia, similar to human SOX2-deficiency defects. We further show that Rbm24 deficiency leads to apoptotic defects in mouse ocular tissue and downregulation of eye development markers Lhx2, Pax6, Jag1, E-cadherin and gamma-crystallins. These data highlight the exquisite specificity that conserved RNA-binding proteins like RBM24 mediate in the post-transcriptional control of key transcription factors, namely, SOX2, associated with organogenesis and human developmental defects.",
+  "year": "2020",
+  "journal": "Human molecular genetics",
+  "authors": [
+    "Dash S",
+    "Brastrom LK",
+    "Patel SD",
+    "Scott CA",
+    "Slusarski DC",
+    "Lachke SA"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/31814023/",
+    "publisher": "https://doi.org/10.1093/hmg/ddz278"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-33198821",
+  "pmid": "33198821",
+  "doi": "10.1186/s13287-020-02003-z",
+  "title": "Enhanced differentiation of human pluripotent stem cells into pancreatic endocrine cells in 3D culture by inhibition of focal adhesion kinase.",
+  "abstract": "BACKGROUND: Generation of insulin-producing cells from human pluripotent stem cells (hPSCs) in vitro would be useful for drug discovery and cell therapy in diabetes. Three-dimensional (3D) culture is important for the acquisition of mature insulin-producing cells from hPSCs, but the mechanism by which it promotes \u03b2 cell maturation is poorly understood.\n\nMETHODS: We established a stepwise method to induce high-efficiency differentiation of human embryonic stem cells (hESCs) into mature monohormonal pancreatic endocrine cells (PECs), with the last maturation stage in 3D culture. To comprehensively compare two-dimensional (2D) and 3D cultures, we examined gene expression, pancreas-specific markers, and functional characteristics in 2D culture-induced PECs and 3D culture-induced PECs. The mechanisms were considered from the perspectives of cell-cell and cell-extracellular matrix interactions which are fundamentally different between 2D and 3D cultures.\n\nRESULTS: The expression of the pancreatic endocrine-specific transcription factors PDX1, NKX6.1, NGN3, ISL1, and PAX6 and the hormones INS, GCG, and SST was significantly increased in 3D culture-induced PECs. 3D culture yielded monohormonal endocrine cells, while 2D culture-induced PECs co-expressed INS and GCG or INS and SST or even expressed all three hormones. We found that focal adhesion kinase (FAK) phosphorylation was significantly downregulated in 3D culture-induced PECs, and treatment with the selective FAK inhibitor PF-228 improved the expression of \u03b2 cell-specific transcription factors in 2D culture-induced PECs. We further demonstrated that 3D culture may promote endocrine commitment by limiting FAK-dependent activation of the SMAD2/3 pathway. Moreover, the expression of the gap junction protein Connexin 36 was much higher in 3D culture-induced PECs than in 2D culture-induced PECs, and inhibition of the FAK pathway in 2D culture increased Connexin 36 expression.\n\nCONCLUSION: We developed a strategy to induce differentiation of monohormonal mature PECs from hPSCs and found limited FAK-dependent activation of the SMAD2/3 pathway and unregulated expression of Connexin 36 in 3D culture-induced PECs. This study has important implications for the generation of mature, functional \u03b2 cells for drug discovery and cell transplantation therapy for diabetes and sheds new light on the signaling events that regulate endocrine specification.",
+  "year": "2020",
+  "journal": "Stem cell research & therapy",
+  "authors": [
+    "Liu X",
+    "Qin J",
+    "Chang M",
+    "Wang S",
+    "Li Y",
+    "Pei X",
+    "Wang Y"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/33198821/",
+    "publisher": "https://doi.org/10.1186/s13287-020-02003-z"
+  }
+}

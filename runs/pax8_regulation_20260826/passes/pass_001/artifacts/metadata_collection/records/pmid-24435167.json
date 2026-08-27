@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-24435167",
+  "pmid": "24435167",
+  "doi": "10.1158/1541-7786.MCR-13-0337",
+  "title": "Functional heterogeneity of PAX5 chimeras reveals insight for leukemia development.",
+  "abstract": "UNLABELLED: PAX5, a transcription factor pivotal for B-cell commitment and maintenance, is one of the most frequent targets of somatic mutations in B-cell precursor acute lymphoblastic leukemia. A number of PAX5 rearrangements result in the expression of in-frame fusion genes encoding chimeric proteins, which at the N-terminus consistently retain the PAX5 DNA-binding paired domain fused to the C-terminal domains of a markedly heterogeneous group of fusion partners. PAX5 fusion proteins are thought to function as aberrant transcription factors, which antagonize wild-type PAX5 activity. To gain mechanistic insight into the role of PAX5 fusion proteins in leukemogenesis, the biochemical and functional properties of uncharacterized fusions: PAX5-DACH1, PAX5-DACH2, PAX5-ETV6, PAX5-HIPK1, and PAX5-POM121 were ascertained. Independent of the subcellular distribution of the wild-type partner proteins, ectopic expression of all PAX5 fusion proteins showed a predominant nuclear localization, and by chromatin immunoprecipitation all of the chimeric proteins exhibited binding to endogenous PAX5 target sequences. Furthermore, consistent with the presence of potential oligomerization motifs provided by the partner proteins, the self-interaction capability of several fusion proteins was confirmed. Remarkably, a subset of the PAX5 fusion proteins conferred CD79A promoter activity; however, in contrast with wild-type PAX5, the fusion proteins were unable to induce Cd79a transcription in a murine plasmacytoma cell line. These data show that leukemia-associated PAX5 fusion proteins share some dominating characteristics such as nuclear localization and DNA binding but also show distinctive features.\n\nIMPLICATIONS: This comparative study of multiple PAX5 fusion proteins demonstrates both common and unique properties, which likely dictate their function and impact on leukemia development.",
+  "year": "2014",
+  "journal": "Molecular cancer research : MCR",
+  "authors": [
+    "Fortschegger K",
+    "Anderl S",
+    "Denk D",
+    "Strehl S"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/24435167/",
+    "publisher": "https://doi.org/10.1158/1541-7786.MCR-13-0337"
+  }
+}

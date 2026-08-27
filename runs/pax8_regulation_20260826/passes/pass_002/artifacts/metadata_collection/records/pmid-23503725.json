@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-23503725",
+  "pmid": "23503725",
+  "doi": "10.1007/s00424-013-1241-0",
+  "title": "Change in Nox4 expression is accompanied by changes in myogenic marker expression in differentiating C2C12 myoblasts.",
+  "abstract": "Myoblast differentiation is mediated by a cascade of changes in gene expression including transcription factors such as myogenin. Subsequent to myoblast differentiation, there is an increase in expression of the transmembrane protein NADPH oxidase (Nox). Nox is one of the primary factors for the generation of reactive oxygen species (ROS) in myogenic (C2C12) cells. Recently, ROS have been shown to be important regulators of several intracellular signaling pathways, and the full extent of their regulatory roles is yet to be discovered. In the present study, qRT PCR analysis demonstrated that Nox4 isoform is primarily expressed in differentiating C2C12 cells and contributes to the generation of ROS in C2C12 myoblast during differentiation. Over-expression and silencing of Nox4 expression during myoblast differentiation was accompanied by a reduction in intracellular ROS concentrations and an alteration in the expression patterns of Myf5, Pax7, MyoD1, and myogenin. This modulation was found to be associated with ERK1/2 phosphorylation. In both over-expression and reduced expression of Nox4, we found significant reductions in ERK1/2 phosphorylation. This indicates that cellular differentiation may be affected by Nox4-mediated endogenous ROS generation. These data suggest a new opportunity to study the temporal expression of Nox4 in the generation of ROS accompanying changes in myogenic differentiation.",
+  "year": "2013",
+  "journal": "Pflugers Archiv : European journal of physiology",
+  "authors": [
+    "Acharya S",
+    "Peters AM",
+    "Norton AS",
+    "Murdoch GK",
+    "Hill RA"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/23503725/",
+    "publisher": "https://doi.org/10.1007/s00424-013-1241-0"
+  }
+}

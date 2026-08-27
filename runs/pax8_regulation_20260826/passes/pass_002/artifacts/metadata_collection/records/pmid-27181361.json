@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-27181361",
+  "pmid": "27181361",
+  "doi": "10.1016/j.bbrc.2016.05.067",
+  "title": "PAX5 tyrosine phosphorylation by SYK co-operatively functions with its serine phosphorylation to cancel the PAX5-dependent repression of BLIMP1: A mechanism for antigen-triggered plasma cell differentiation.",
+  "abstract": "Plasma cell differentiation is initiated by antigen stimulation of the B cell receptor (BCR) and is regulated by BLIMP1. Prior to the stimulation of BCR, BLIMP1 is suppressed by PAX5, which is a key transcriptional repressor that maintains B cell identity. The upregulation of BLIMP1 and subsequent suppression of PAX5 by BLIMP1 are observed after the BCR stimulation. These events are considered to trigger plasma cell differentiation; however, the mechanisms responsible currently remain unclear. We herein demonstrated that the BCR signaling component, SYK, caused PAX5 tyrosine phosphorylation in\u00a0vitro and in cells. Transcriptional repression on the BLIMP1 promoter by PAX5 was attenuated by this phosphorylation. The BCR stimulation induced the phosphorylation of SYK, tyrosine phosphorylation of PAX5, and up-regulation of BLIMP1 mRNA expression in B cells. The tyrosine phosphorylation of PAX5 co-operatively functioned with PAX5 serine phosphorylation by ERK1/2, which was our previous findings, to cancel the PAX5-dependent repression of BLIMP1. This co-operation may be a trigger for plasma cell differentiation. These results imply that PAX5 phosphorylation by a BCR signal is the initial event in plasma cell differentiation.",
+  "year": "2016",
+  "journal": "Biochemical and biophysical research communications",
+  "authors": [
+    "Inagaki Y",
+    "Hayakawa F",
+    "Hirano D",
+    "Kojima Y",
+    "Morishita T",
+    "Yasuda T",
+    "Naoe T",
+    "Kiyoi H"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/27181361/",
+    "publisher": "https://doi.org/10.1016/j.bbrc.2016.05.067"
+  }
+}

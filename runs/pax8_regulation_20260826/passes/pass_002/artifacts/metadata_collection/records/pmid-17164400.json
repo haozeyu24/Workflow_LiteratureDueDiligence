@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-17164400",
+  "pmid": "17164400",
+  "doi": "10.1152/ajprenal.00281.2006",
+  "title": "PAX2 is reactivated in urinary tract obstruction and partially protects collecting duct cells from programmed cell death.",
+  "abstract": "Obstruction of the urinary tract activates apoptotic pathways in collecting duct cells and leads to loss of renal parenchyma before surgical intervention. It has been suggested that developmental pathways may be reactivated to offset acute organ damage. One such molecule, PAX2, is expressed throughout the fetal collecting duct and was recently shown to suppress apoptosis during kidney development. We hypothesized that acute unilateral urinary tract obstruction (UUO) reactivates PAX2 expression in the mature kidney and partially suppresses apoptosis. If so, animals with PAX2 mutations should have increased susceptibility to parenchymal damage. Wild-type and heterozygous Pax2 mutant (C3H/Pax2(1Neu)) mice underwent unilateral ureteric ligation or sham operation at 6 wk of age; kidneys were examined after 5, 10, and 15 days. Whereas PAX2 protein levels fell to low levels in the first weeks of life, it was sharply reactivated by day 10 in collecting duct cells of wild-type but not in Pax2(1Neu) mutant mice with UUO. Wild-type mice with UUO had marked TUNEL and cleaved spectrin staining in tubular cells and reduced kidney weight after 10-15 days. Mutant mice had exaggerated increases in markers of apoptosis and exaggerated loss of renal parenchymal loss in the obstructed kidney. These observations suggest that PAX2 is rapidly reactivated in UUO and that mice with genetically limited PAX2 expression have heightened susceptibility to apoptosis.",
+  "year": "2007",
+  "journal": "American journal of physiology. Renal physiology",
+  "authors": [
+    "Cohen T",
+    "Loutochin O",
+    "Amin M",
+    "Capolicchio JP",
+    "Goodyer P",
+    "Jednak R"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/17164400/",
+    "publisher": "https://doi.org/10.1152/ajprenal.00281.2006"
+  }
+}

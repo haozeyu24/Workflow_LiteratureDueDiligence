@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-41970083",
+  "pmid": "41970083",
+  "doi": "10.7759/cureus.105001",
+  "title": "Zinner Syndrome: An Incidental Finding.",
+  "abstract": "The authors present a case of a 56-year-old man referred to the urology clinic after an incidental finding on abdominal ultrasound. Imaging revealed an oval cystic lesion adjacent to the right seminal vesicle, initially interpreted as a probable atrophic ectopic kidney. Magnetic resonance imaging (MRI) confirmed right renal agenesis, ipsilateral seminal vesicle cyst, and probable ejaculatory duct obstruction. A small intralesional nodular component was identified. The patient was asymptomatic, with preserved renal function and a prostate-specific antigen of 0.9 ng/mL. A transrectal biopsy was performed due to the suspicious nodule. Histopathological analysis demonstrated seminal vesicle/ejaculatory duct tissue with stromal edema lined by a single-layer cuboidal epithelium (CK7+, 34BE12+, PAX8+, PSA-, CK20-) and low Ki-67 (<1%), with no evidence of malignancy. Conservative management with imaging surveillance was adopted. Follow-up MRI at six-month intervals showed lesion stability. The patient remains asymptomatic, emphasizing the role of imaging in the diagnosis, assessment, and monitoring of asymptomatic Zinner syndrome.",
+  "year": "2026",
+  "journal": "Cureus",
+  "authors": [
+    "Serrano P",
+    "Barros P",
+    "Moreira AS",
+    "Dores M",
+    "Coutinho A"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (stability[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR lysosome[Title/Abstract] OR autophagy[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/41970083/",
+    "publisher": "https://doi.org/10.7759/cureus.105001"
+  }
+}

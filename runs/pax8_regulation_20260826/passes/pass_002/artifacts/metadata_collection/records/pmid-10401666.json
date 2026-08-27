@@ -1,0 +1,33 @@
+{
+  "paper_id": "pmid-10401666",
+  "pmid": "10401666",
+  "doi": "10.1016/s0300-9084(99)80078-9",
+  "title": "Thyroglobulin regulates follicular function and heterogeneity by suppressing thyroid-specific gene expression.",
+  "abstract": "Thyroglobulin (TG) is the primary synthetic product of the thyroid and the macromolecular precursor of thyroid hormones. TG synthesis, iodination, storage in follicles, and lysosomal degradation can each modulate thyroid hormone formation and secretion into the circulation. Thyrotropin (TSH), via its receptor (the TSHR), increases thyroid hormone levels by upregulating expression of the sodium iodide symporter (NIS), thyroid peroxidase (TPO), and TG genes. TSH does this by modulating the expression and activity of the thyroid-specific transcription factors, thyroid transcription factor (TTF)-1, TTF-2, and Pax-8, which coordinately regulate NIS, TPO, TG, and the TSHR. Major histocompatibility complex (MHC) class I gene expression, which is also regulated by TTF-1 and Pax-8 in the thyroid, is simultaneously decreased; this maintains self tolerance in the face of TSH-increased gene products necessary for thyroid hormone formation. We now show that follicular TG, 27S > 19S > 12S, counter-regulates TSH-increased thyroid-specific gene transcription by suppressing the expression of the TTF-1, TTF-2, and Pax-8 genes. This decreases expression of the TG, TPO, NIS and TSHR genes, but increases class I expression. TG action involves an apical membrane TG-binding protein; however, it acts transcriptionally, targeting, for example, a sequence within 1.15 kb of the start of TTF-1 transcription. TG does not affect ubiquitous transcription factors regulating TG, TPO, NIS and/or TSHR gene expression. TG activity is not duplicated by thyroid hormones or iodide. We hypothesize that TG-initiated, transcriptional regulation of thyroid-restricted genes is a normal, feedback, compensatory mechanism which regulates follicular function, regulates thyroid hormone secretion, and contributes to follicular heterogeneity.",
+  "year": "1999",
+  "journal": "Biochimie",
+  "authors": [
+    "Suzuki K",
+    "Mori A",
+    "Lavaroni S",
+    "Ulianich L",
+    "Miyagi E",
+    "Saito J",
+    "Nakazato M",
+    "Pietrarelli M",
+    "Shafran N",
+    "Grassadonia A",
+    "Kim WB",
+    "Consiglio E",
+    "Formisano S",
+    "Kohn LD"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (\"protein stability\"[Title/Abstract] OR \"protein levels\"[Title/Abstract] OR stabilization[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract]) NOT \"PAX8-AS1\"[Title/Abstract]"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/10401666/",
+    "publisher": "https://doi.org/10.1016/s0300-9084(99)80078-9"
+  }
+}

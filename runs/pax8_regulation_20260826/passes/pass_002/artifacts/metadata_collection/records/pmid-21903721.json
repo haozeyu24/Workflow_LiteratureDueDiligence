@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-21903721",
+  "pmid": "21903721",
+  "doi": "10.1210/me.2011-0038",
+  "title": "Regulation of thyroid oxidative state by thioredoxin reductase has a crucial role in thyroid responses to iodide excess.",
+  "abstract": "The phenomenon that supraphysiological doses of iodide (I(-)) temporarily inhibit thyroid hormone synthesis is known as thyroid iodide autoregulation. Recovery of thyroid function has been attributed to sodium-iodide symporter (NIS) inhibition, but the diversity of available data makes it difficult to reach definitive conclusions. Iodide excess induces reactive oxygen species production and cell toxicity. However, the roles of the oxidative state of the cell and antioxidant selenoproteins in I(-) autoregulation have never been explored. Here we analyze the effects of high I(-) doses in rat thyroids and in PCCl3 cells in the period comprising I(-) autoregulation (i.e. 0-72 h after I(-) administration), focusing on NIS expression, redox state, and the expression and activity of selenoproteins. Our results show that NIS mRNA inhibition by I(-) does not occur at the transcriptional level, because neither NIS promoter activity nor Pax8 expression or its binding to DNA was modulated. Because I(-) uptake was inhibited much earlier than NIS protein, and no effect was observed on its subcellular localization, we suggest that I(-) is inhibiting NIS in the plasma membrane. The increased reactive oxygen species production leads to an increase in thioredoxin reductase mRNA levels and enzyme activity, which reduces the oxidative stress. Inhibition of thioredoxin reductase at either gene expression or activity levels prevented NIS recovery, thus illustrating a new role played by this selenoprotein in the regulation of cell homeostasis and consequently in I(-) autoregulation.",
+  "year": "2011",
+  "journal": "Molecular endocrinology (Baltimore, Md.)",
+  "authors": [
+    "Leoni SG",
+    "Kimura ET",
+    "Santisteban P",
+    "De la Vieja A"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (\"nuclear localization\"[Title/Abstract] OR \"nuclear localisation\"[Title/Abstract] OR \"nuclear localization signal\"[Title/Abstract] OR \"functional domains\"[Title/Abstract] OR \"subcellular localization\"[Title/Abstract] OR \"nuclear import\"[Title/Abstract] OR \"nuclear export\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract]) NOT \"PAX8-AS1\"[Title/Abstract]"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/21903721/",
+    "publisher": "https://doi.org/10.1210/me.2011-0038"
+  }
+}

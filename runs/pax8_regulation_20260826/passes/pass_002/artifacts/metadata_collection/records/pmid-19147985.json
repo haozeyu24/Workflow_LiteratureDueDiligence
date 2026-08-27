@@ -1,0 +1,28 @@
+{
+  "paper_id": "pmid-19147985",
+  "pmid": "19147985",
+  "doi": "10.1159/000193397",
+  "title": "Histone deacetylase inhibitor, trichostatin A, affects gene expression patterns during morphogenesis of chicken limb buds in vivo.",
+  "abstract": "Acetylation is one of the key chromatin modifications that control gene transcription during embryonic development and tumorigenesis. The types of genes sensitive to such modifications in vivo are not known to date. We investigated the expression of a number of genes involved in embryonic development after treatment with trichostatin A (TSA), a histone deacetylase (HDAC) inhibitor, in the limbs of chicken embryos. Our results show that TSA affects the expression profiles of some genes that play important roles during limb development. The expression of BMP4, SF/HGF and Twist1 increased, whereas the expression of BMP2, FGF8, Shh, Scleraxis, Myf5 and MyoD was decreased or even inhibited. In contrast, the expression of Pax3, Paraxis, Msx1, CREB, and PCNA was not affected. Our results indicate that the chicken embryo can serve as an effective in vivo model for studying the effect of HDAC inhibitors on gene expression and can be helpful for understanding the role of chromatin remodeling and epigenetic control of gene expression.",
+  "year": "2009",
+  "journal": "Cells, tissues, organs",
+  "authors": [
+    "Zhao W",
+    "Dai F",
+    "Bonafede A",
+    "Schafer S",
+    "Jung M",
+    "Yusuf F",
+    "Gamel AJ",
+    "Wang J",
+    "Brand-Saberi B"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/19147985/",
+    "publisher": "https://doi.org/10.1159/000193397"
+  }
+}

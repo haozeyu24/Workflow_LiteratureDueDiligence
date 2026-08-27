@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-29897957",
+  "pmid": "29897957",
+  "doi": "10.1371/journal.pone.0198611",
+  "title": "Preclinical characterization of the JAK/STAT inhibitor SGI-1252 on skeletal muscle function, morphology, and satellite cell content.",
+  "abstract": "BACKGROUND: Recent studies have highlighted the JAK/STAT signaling pathway in the regulation of muscle satellite cell behavior. Herein we report preclinical studies designed to characterize the effects of a novel JAK/STAT inhibitor on plantar flexor skeletal muscle function, morphology, and satellite cell content.\n\nMETHODS: The compound, SGI-1252, was administered orally (400mg/kg) in a 10% dextrose solution to wild type mice (n = 6) 3 times per week for 8 weeks. A control group (n = 6) received only the dextrose solution.\n\nRESULTS: SGI-1252 was well tolerated, as animals displayed similar weight gain over the 8-week treatment period. Following treatment, fatigue in the gastrocnemius-soleus-plantaris complex was greater in the SGI-1252 mice during a 300 second tetanic contraction bout (p = 0.035), though both the rate of fatigue and maximal force production were similar. SGI-1252 treated mice had increased type II myofiber cross-sectional area (1434.8 \u00b1 225.4 vs 1754.7 \u00b1 138.5 \u03bcm2), along with an increase in wet muscle mass (125.45 \u00b1 5.46 vs 139.6 \u00b1 12.34 mg, p = 0.032) of the gastrocnemius relative to vehicle treated mice. SGI-1252 treatment reduced gastrocnemius STAT3 phosphorylation 53% (94.79 \u00b1 45.9 vs 44.5 \u00b1 6.1 MFI) and significantly increased the concentration of Pax7+ satellite cells (2589.2 \u00b1 105.5 vs 2859.4 \u00b1 177.5 SC/mm3) in the gastrocnemius. SGI-1252 treatment suppressed MyoD (p = 0.013) and Myogenin (p<0.0001) expression in human primary myoblasts, resulting in reduced myogenic differentiation (p = 0.039).\n\nCONCLUSIONS: Orally delivered SGI-1252 was well tolerated, attenuates skeletal muscle STAT3 activity, and increases satellite cell content in mouse gastrocnemius muscle, likely by inhibiting myogenic progression.",
+  "year": "2018",
+  "journal": "PloS one",
+  "authors": [
+    "Sorensen JR",
+    "Fuqua JD",
+    "Deyhle MR",
+    "Parmley J",
+    "Skousen C",
+    "Hancock C",
+    "Parcell AC",
+    "Hyldahl RD"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/29897957/",
+    "publisher": "https://doi.org/10.1371/journal.pone.0198611"
+  }
+}

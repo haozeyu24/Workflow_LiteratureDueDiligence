@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-23328540",
+  "pmid": "23328540",
+  "doi": "10.1016/j.diff.2012.12.001",
+  "title": "Histone deacetylase inhibitor Trichostatin A induces neural tube defects and promotes neural crest specification in the chicken neural tube.",
+  "abstract": "Epigenetic mechanisms serve as key regulatory elements during vertebrate embryogenesis. Histone acetylation levels, controlled by the opposing action of histone acetyl transferases (HATs) and histone deacetylases (HDACs), influence the accessibility of DNA to transcription factors and thereby dynamically regulate transcriptional programs. HDACs execute important functions in the control of proliferation, differentiation, and the establishment of cell identities during embryonic development. To investigate the global role of the HDAC family during neural tube development, we employed Trichostatin A (TSA) to locally block enzymatic HDAC activity in chick embryos in ovo. We found that TSA treatment induces neural tube defects at the level of the posterior neuropore, ranging from slight undulations to a complete failure of neural tube closure. This phenotype is accompanied by morphological changes in neuroepithelial cells and induction of apoptosis. As a molecular consequence of HDAC inhibition, we observed a timely deregulated cadherin switching in the dorsal neural tube, illustrated by induction of Cadherin 6B as well as reciprocal downregulation of N-Cadherin expression. Concomitantly, several neural crest specific markers, including Bmp4, Pax3, Sox9 and Sox10 are induced, causing a premature loss of epithelial characteristics. Our findings provide evidence that HDAC function is crucial to control the regulatory circuits operating during trunk neural crest development and neural tube closure.",
+  "year": "2013",
+  "journal": "Differentiation; research in biological diversity",
+  "authors": [
+    "Murko C",
+    "Lagger S",
+    "Steiner M",
+    "Seiser C",
+    "Schoefer C",
+    "Pusch O"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/23328540/",
+    "publisher": "https://doi.org/10.1016/j.diff.2012.12.001"
+  }
+}

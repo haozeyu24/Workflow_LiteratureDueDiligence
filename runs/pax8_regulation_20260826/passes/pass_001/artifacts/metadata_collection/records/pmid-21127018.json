@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-21127018",
+  "pmid": "21127018",
+  "doi": "10.1093/cercor/bhq238",
+  "title": "A role for intermediate radial glia in the tangential expansion of the mammalian cerebral cortex.",
+  "abstract": "The cerebral cortex of large mammals undergoes massive surface area expansion and folding during development. Specific mechanisms to orchestrate the growth of the cortex in surface area rather than in thickness are likely to exist, but they have not been identified. Analyzing multiple species, we have identified a specialized type of progenitor cell that is exclusive to mammals with a folded cerebral cortex, which we named intermediate radial glia cell (IRGC). IRGCs express Pax6 but not Tbr2, have a radial fiber contacting the pial surface but not the ventricular surface, and are found in both the inner subventricular zone and outer subventricular zone (OSVZ). We find that IRGCs are massively generated in the OSVZ, thus augmenting the numbers of radial fibers. Fanning out of this expanding radial fiber scaffold promotes the tangential dispersion of radially migrating neurons, allowing for the growth in surface area of the cortical sheet. Accordingly, the tangential expansion of particular cortical regions was preceded by high proliferation in the underlying OSVZ, whereas the experimental reduction of IRGCs impaired the tangential dispersion of neurons and resulted in a smaller cortical surface. Thus, the generation of IRGCs plays a key role in the tangential expansion of the mammalian cerebral cortex.",
+  "year": "2011",
+  "journal": "Cerebral cortex (New York, N.Y. : 1991)",
+  "authors": [
+    "Reillo I",
+    "de Juan Romero C",
+    "Garc\u00eda-Cabezas M\u00c1",
+    "Borrell V"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/21127018/",
+    "publisher": "https://doi.org/10.1093/cercor/bhq238"
+  }
+}

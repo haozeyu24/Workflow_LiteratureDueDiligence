@@ -8,6 +8,7 @@ For each run, write a concrete instruction here that states:
 2. what kinds of papers should be prioritized
 3. what kinds of papers should be deprioritized or excluded
 4. what counts as a useful final reading set
+5. what mechanism classes are allowed to drive PubMed retrieval
 
 This file should be generated or drafted by the `runSetupAgent` role from the user request.
 
@@ -21,3 +22,11 @@ That is acceptable because:
 - it is not part of the reusable workflow definition
 
 Reusable scripts and role definitions must read this file as input rather than embedding its contents.
+
+## Query Scope Contract
+
+- primary entities:
+- declared mechanism classes for PubMed retrieval:
+- authorized comparator entities or systems:
+- secondary context for synthesis only:
+- adjacent biology deferred from first-pass retrieval:

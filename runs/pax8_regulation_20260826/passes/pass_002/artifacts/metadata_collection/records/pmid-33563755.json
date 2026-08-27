@@ -1,0 +1,32 @@
+{
+  "paper_id": "pmid-33563755",
+  "pmid": "33563755",
+  "doi": "10.1073/pnas.2021342118",
+  "title": "CD20 as a gatekeeper of the resting state of human B cells.",
+  "abstract": "CD20 is a B cell-specific membrane protein and represents an attractive target for therapeutic antibodies. Despite widespread usage of anti-CD20 antibodies for B cell depletion therapies, the biological function of their target remains unclear. Here, we demonstrate that CD20 controls the nanoscale organization of receptors on the surface of resting B lymphocytes. CRISPR/Cas9-mediated ablation of CD20 in resting B cells resulted in relocalization and interaction of the IgM-class B cell antigen receptor with the coreceptor CD19. This receptor rearrangement led to a transient activation of B cells, accompanied by the internalization of many B cell surface marker proteins. Reexpression of CD20 restored the expression of the B cell surface proteins and the resting state of Ramos B cells. Similarly, treatment of Ramos or naive human B cells with the anti-CD20 antibody rituximab induced nanoscale receptor rearrangements and transient B cell activation in vitro and in vivo. A departure from the resting B cell state followed by the loss of B cell identity of CD20-deficient Ramos B cells was accompanied by a PAX5 to BLIMP-1 transcriptional switch, metabolic reprogramming toward oxidative phosphorylation, and a shift toward plasma cell development. Thus, anti-CD20 engagement or the loss of CD20 disrupts membrane organization, profoundly altering the fate of human B cells.",
+  "year": "2021",
+  "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+  "authors": [
+    "Kl\u00e4sener K",
+    "Jellusova J",
+    "Andrieux G",
+    "Salzer U",
+    "B\u00f6hler C",
+    "Steiner SN",
+    "Albinus JB",
+    "Cavallari M",
+    "S\u00fc\u00df B",
+    "Voll RE",
+    "Boerries M",
+    "Wollscheid B",
+    "Reth M"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/33563755/",
+    "publisher": "https://doi.org/10.1073/pnas.2021342118"
+  }
+}

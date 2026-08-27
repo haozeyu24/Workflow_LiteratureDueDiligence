@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-17912488",
+  "pmid": "17912488",
+  "doi": "10.1007/s11095-007-9451-9",
+  "title": "Paclitaxel prodrugs with sustained release and high solubility in poly(ethylene glycol)-b-poly(epsilon-caprolactone) micelle nanocarriers: pharmacokinetic disposition, tolerability, and cytotoxicity.",
+  "abstract": "PURPOSE: Develop a Cremophor and solvent free formulation of paclitaxel using amphiphilic block co-polymer micelles of poly(ethylene glycol)-b-poly(epsilon-caprolactone) (PEG-b-PCL) and characterize their release, solubility, cytotoxicity, tolerability, and disposition.\n\nMETHODS: Hydrophobic prodrugs of paclitaxel were synthesized via DCC/DMAP or anhydride chemistry to overcome the poor loading (<1% w/w) of paclitaxel in micelles of PEG-b-PCL. Micelles were prepared by a co-solvent extraction technique. A micellar formulation of paclitaxel prodrug (PAX7'C(6)) was dosed intravenously to rats (10 mg/kg) and compared to Taxol (paclitaxel in CrEL:EtOH) and PAX7'C(6) in CrEL:EtOH as controls at the same dose. Pharmacokinetic parameters and tissue distribution were assessed.\n\nRESULTS: Paclitaxel prodrugs had solubilities >5 mg/ml in PEG-b-PCL micelles. Resulting PEG-b-PCL micelles contained 17-22% w/w prodrug and were less than 50 nm in diameter. PEG-b-PCL micelles released paclitaxel prodrugs over several days, t(1/2)>3 d. Only the 7'derivative of paclitaxel with the shortest acylchain 7'hexonoate (PAX7'C(6)) maintained cytotoxic activity similar to unmodified paclitaxel. PAX7'C(6) micelles demonstrated an increase in area under the curve, half-life, and mean residence time while total clearance and volume of distribution decreased.\n\nCONCLUSIONS: Paclitaxel prodrugs in PEG-b-PCL micelle nanocarriers augment the disposition and increase tolerability making further studies on tumor efficacy warranted.",
+  "year": "2008",
+  "journal": "Pharmaceutical research",
+  "authors": [
+    "Forrest ML",
+    "Y\u00e1\u00f1ez JA",
+    "Remsberg CM",
+    "Ohgami Y",
+    "Kwon GS",
+    "Davies NM"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/17912488/",
+    "publisher": "https://doi.org/10.1007/s11095-007-9451-9"
+  }
+}

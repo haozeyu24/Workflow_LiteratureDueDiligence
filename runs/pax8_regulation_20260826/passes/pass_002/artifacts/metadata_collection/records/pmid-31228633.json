@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-31228633",
+  "pmid": "31228633",
+  "doi": "10.1016/j.actbio.2019.06.025",
+  "title": "Co-delivery of Wnt7a and muscle stem cells using synthetic bioadhesive hydrogel enhances murine muscle regeneration and cell migration during engraftment.",
+  "abstract": "Skeletal muscle possesses efficient ability to regenerate upon minor injuries, but its capacity to regenerate is severely compromised with traumatic injuries and muscle-associated diseases. Recent evidence suggests that skeletal muscle regeneration can be enhanced by transplantation of muscle satellite cells (MuSCs) or treatment with pro-myogenic factors, such as Wingless-type MMTV Integrated 7a (Wnt7a) protein. Although direct intramuscular injection is the simplest method to deliver MuSCs and Wnt7a for regenerative therapy, direct injections are not viable in many clinical cases where structural integrity is severely compromised. To address this challenge, we evaluated the feasibility of co-delivering pro-myogenic factors, such as Wnt7a, and MuSCs using a synthetic poly(ethylene glycol) (PEG)-based hydrogel to the affected skeletal muscles. The Wnt7a release rate can be controlled by modulating the polymer density of the hydrogel, and this release rate can be further accelerated through the proteolytic degradation of the hydrogel. Treating cryo-injured tibialis anterior (TA) muscles with Wnt7a-loaded hydrogels resulted in an improved regenerative response by day 14, measured by increased muscle fiber cross-sectional area, bulk TA mass, and the number of Pax7+ MuSCs at the injury site, compared to the TA muscles treated with Wnt7a-free hydrogels. Co-delivery of Wnt7a and primary MuSCs using the synthetic hydrogel to the cryo-injured TA muscles significantly increased cellular migration during the engraftment process. This work provides a synthetic biomaterial platform for advancing treatment strategies of skeletal muscle conditions where direct intramuscular injection may be challenging. Finally, the current outcomes establish an important foundation for future applications in treating severe muscle trauma and diseases, where the endogenous repair capacity is critically impaired. STATEMENT OF SIGNIFICANCE: Skeletal muscle injuries and diseases cause debilitating health consequences, including disability and diminished quality of life. Treatment using protein and stem cell-based therapeutics may help regenerate the affected muscles, but direct intramuscular injection may not be feasible in severe muscle injuries due to the gravely damaged tissue structure. In chronic muscle diseases, such as Duchenne muscular dystrophy, local treatment of the diaphragm, a muscle critical for respiration, may be necessary but direct injection is difficult due to its thin dimensions. To address this challenge, this work presents a synthetic and bioactive muscle \"patch\" that enables concurrent administration of proteins and muscle stem cells for accelerated muscle healing.",
+  "year": "2019",
+  "journal": "Acta biomaterialia",
+  "authors": [
+    "Han WM",
+    "Mohiuddin M",
+    "Anderson SE",
+    "Garc\u00eda AJ",
+    "Jang YC"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/31228633/",
+    "publisher": "https://doi.org/10.1016/j.actbio.2019.06.025"
+  }
+}

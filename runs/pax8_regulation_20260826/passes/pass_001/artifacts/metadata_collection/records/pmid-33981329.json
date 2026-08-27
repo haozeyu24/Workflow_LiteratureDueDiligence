@@ -1,0 +1,29 @@
+{
+  "paper_id": "pmid-33981329",
+  "pmid": "33981329",
+  "doi": "10.3389/fgene.2021.640266",
+  "title": "DNA Methylation and Expression Profiles of Whole Blood in Parkinson's Disease.",
+  "abstract": "Parkinson's disease (PD) is the second most common age-related neurodegenerative disease. It is presently only accurately diagnosed at an advanced stage by a series of motor deficits, which are predated by a litany of non-motor symptoms manifesting over years or decades. Aberrant epigenetic modifications exist across a range of diseases and are non-invasively detectable in blood as potential markers of disease. We performed comparative analyses of the methylome and transcriptome in blood from PD patients and matched controls. Our aim was to characterize DNA methylation and gene expression patterns in whole blood from PD patients as a foundational step toward the future goal of identifying molecular markers that could predict, accurately diagnose, or track the progression of PD. We found that differentially expressed genes (DEGs) were involved in the processes of transcription and mitochondrial function and that PD methylation profiles were readily distinguishable from healthy controls, even in whole-blood DNA samples. Differentially methylated regions (DMRs) were functionally varied, including near transcription factor nuclear transcription factor Y subunit alpha (NFYA), receptor tyrosine kinase DDR1, RING finger ubiquitin ligase (RNF5), acetyltransferase AGPAT1, and vault RNA VTRNA2-1. Expression quantitative trait methylation sites were found at long non-coding RNA PAX8-AS1 and transcription regulator ZFP57 among others. Functional epigenetic modules were highlighted by IL18R1, PTPRC, and ITGB2. We identified patterns of altered disease-specific DNA methylation and associated gene expression in whole blood. Our combined analyses extended what we learned from the DEG or DMR results alone. These studies provide a foundation to support the characterization of larger sample cohorts, with the goal of building a thorough, accurate, and non-invasive molecular PD biomarker.",
+  "year": "2021",
+  "journal": "Frontiers in genetics",
+  "authors": [
+    "Henderson AR",
+    "Wang Q",
+    "Meechoovet B",
+    "Siniard AL",
+    "Naymik M",
+    "De Both M",
+    "Huentelman MJ",
+    "Caselli RJ",
+    "Driver-Dunckley E",
+    "Dunckley T"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (stability[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR lysosome[Title/Abstract] OR autophagy[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/33981329/",
+    "publisher": "https://doi.org/10.3389/fgene.2021.640266"
+  }
+}

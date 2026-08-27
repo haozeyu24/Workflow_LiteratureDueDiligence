@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-28096335",
+  "pmid": "28096335",
+  "doi": "10.1073/pnas.1612988114",
+  "title": "Myofibril breakdown during atrophy is a delayed response requiring the transcription factor PAX4 and desmin depolymerization.",
+  "abstract": "A hallmark of muscle atrophy is the excessive degradation of myofibrillar proteins primarily by the ubiquitin proteasome system. In mice, during the rapid muscle atrophy induced by fasting, the desmin cytoskeleton and the attached Z-band-bound thin filaments are degraded after ubiquitination by the ubiquitin ligase tripartite motif-containing protein 32 (Trim32). To study the order of events leading to myofibril destruction, we investigated the slower atrophy induced by denervation (disuse). We show that myofibril breakdown is a two-phase process involving the initial disassembly of desmin filaments by Trim32, which leads to the later myofibril breakdown by enzymes, whose expression is increased by the paired box 4 (PAX4) transcription factor. After denervation of mouse tibialis anterior muscles, phosphorylation and Trim32-dependent ubiquitination of desmin filaments increased rapidly and stimulated their gradual depolymerization (unlike their rapid degradation during fasting). Trim32 down-regulation attenuated the loss of desmin and myofibrillar proteins and reduced atrophy. Although myofibrils and desmin filaments were intact at 7 d after denervation, inducing the dissociation of desmin filaments caused an accumulation of ubiquitinated proteins and rapid destruction of myofibrils. The myofibril breakdown normally observed at 14 d after denervation required not only dissociation of desmin filaments, but also gene induction by PAX4. Down-regulation of PAX4 or its target gene encoding the p97/VCP ATPase reduced myofibril disassembly and degradation on denervation or fasting. Thus, during atrophy, the initial loss of desmin is critical for the subsequent myofibril destruction, and over time, myofibrillar proteins become more susceptible to PAX4-induced enzymes that promote proteolysis.",
+  "year": "2017",
+  "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+  "authors": [
+    "Volodin A",
+    "Kosti I",
+    "Goldberg AL",
+    "Cohen S"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/28096335/",
+    "publisher": "https://doi.org/10.1073/pnas.1612988114"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "paper_id": "pmid-18708529",
+  "pmid": "18708529",
+  "doi": "10.1110/ps.035956.108",
+  "title": "Identification of serine 205 as a site of phosphorylation on Pax3 in proliferating but not differentiating primary myoblasts.",
+  "abstract": "Pax3, a member of the paired class homeodomain family of transcription factors, is essential for early skeletal muscle development. Previously, others and we have shown that the stability of Pax3 is regulated on a post-translational level. Evidence in the literature and from our laboratory suggests that phosphorylation, a common form of regulation, may play a role. However, at present, the sites of Pax3 phosphorylation are not known. We demonstrate here the first evidence that Pax3 exists as a phosphoprotein in proliferating mouse primary myoblasts. Using an in vitro kinase assay, deletion, and point mutant analysis, we conclusively identify Ser205 as a site of phosphorylation. The phosphorylation of Ser205 on endogenously expressed Pax3 was confirmed in vivo using antibodies specific for phosphorylation at Ser205. Finally, we demonstrate for the first time that the phosphorylation status of endogenous Pax3 changes rapidly upon the induction of myogenic differentiation. The presence of phosphorylation in a region of Pax3 important for mediating protein-protein interactions, and the fact that phosphorylation is lost upon induction of differentiation, allow for speculation on the biological relevance of phosphorylation.",
+  "year": "2008",
+  "journal": "Protein science : a publication of the Protein Society",
+  "authors": [
+    "Miller PJ",
+    "Dietz KN",
+    "Hollenbach AD"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/18708529/",
+    "publisher": "https://doi.org/10.1110/ps.035956.108"
+  }
+}

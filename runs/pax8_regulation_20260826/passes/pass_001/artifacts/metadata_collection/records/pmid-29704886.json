@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-29704886",
+  "pmid": "29704886",
+  "doi": "10.1111/apha.13083",
+  "title": "Physiological role of Kv\u03b22 (AKR6) in murine skeletal muscle growth and regulation.",
+  "abstract": "AIM: Potassium channel accessory subunits (Kv\u03b2) play a key role in cardiac electrical activity through ion channel modulation. In this study, we hypothesize that Kv\u03b22 regulates skeletal muscle growth and fibre phenotype via protein-protein interactions.\n\nMETHODS: Kv\u03b22 knockout mouse model was used for morphometric, immunohistochemical and biochemical analysis to evaluate the role of Kv\u03b22 in skeletal muscle physiology.\n\nRESULTS: Deletion of Kv\u03b22 gene in mice (Kv\u03b22 knockout, KO) leads to significant decrease in body weight along with skeletal muscle size. Key hindlimb muscles such as biceps, soleus and gastrocnemius were significantly smaller in size in KO mice compared to that of wild type. Morphometric measurements and histological analysis clearly point that the fibre size is decreased in each of the muscle type in KO compared with wild-type mice. In addition, Kv\u03b22 deletion contributes to fibre-type switching from fast to slow fibre as indicated by more abundant MHCI-expressing fibres in gastrocnemius and soleus muscles, which may underscore the smaller muscle size alongside increase in U3 ubiquitin ligase; NEDD4 expression. Using targeted siRNA knockdown approach, we identified that Kv\u03b22 knockdown does not affect the myoblasts proliferation. However, Pax7 expression was significantly decreased in 4-week-old gastrocnemius muscle, suggesting that cellular reserve for growth may be deficient in KO mice. This is further supported by decreased migratory capacity of C2C12 cells upon siRNA-targeted Kv\u03b22 knockdown.\n\nCONCLUSION: Overall, this is the first report identifying that genetic deletion of Kv\u03b22 leads to decreased skeletal muscle size along with isotype switching.",
+  "year": "2018",
+  "journal": "Acta physiologica (Oxford, England)",
+  "authors": [
+    "Chapalamadugu KC",
+    "Tur J",
+    "Badole SL",
+    "Kukreja RC",
+    "Brotto M",
+    "Tipparaju SM"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/29704886/",
+    "publisher": "https://doi.org/10.1111/apha.13083"
+  }
+}

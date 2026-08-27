@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-30626726",
+  "pmid": "30626726",
+  "doi": "10.1042/BSR20182022",
+  "title": "HOXD8/DIAPH2-AS1 epigenetically regulates PAX3 and impairs HTR-8/SVneo cell function under hypoxia.",
+  "abstract": "The present study aimed to unravel the molecular basis underlying PAX3 down-regulation, known to be involved in pre-eclampsia (PE) occurrence and development. Data obtained from databases suggested that Pax3 methylation levels in the promoter region are high in the placentas of PE patients. However, the expression of methylation-adjusting enzymes, including DNMT1, LSD1, and EZH2, did not change. Since lncRNAs enhance the function of methylation-related enzymes independently of expression, we selected three lncRNAs, RP11-269F21.2, DIAPH2-AS1, and RP11-445K13.2, predicted to interact with methylation-adjusting enzymes. Two transcription factors, HOXD8 and Lhx3, predicted to regulate the expression of lncRNAs, were also selected. Using RNA interference technology, HOXD8 and Lhx3 were found to positively regulate DIAPH2-AS1 and RP11-445K13.2 in HTR-8/SVneo cells. Chromatin immunoprecipitation assays determined that DIAPH2-AS1 recruited LSD1 to histone 3, increasing DNMT1 stability at H3. The HOXD8/DIAPH2-AS1 network regulated HTR-8/SVneo cell function under hypoxia by epigenetically regulating PAX3. This regulatory network may thus be responsible for PAX3 down-regulation in the placentas of PE patients.",
+  "year": "2019",
+  "journal": "Bioscience reports",
+  "authors": [
+    "Feng Y",
+    "Wang J",
+    "He Y",
+    "Zhang H",
+    "Jiang M",
+    "Cao D",
+    "Wang A"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/30626726/",
+    "publisher": "https://doi.org/10.1042/BSR20182022"
+  }
+}

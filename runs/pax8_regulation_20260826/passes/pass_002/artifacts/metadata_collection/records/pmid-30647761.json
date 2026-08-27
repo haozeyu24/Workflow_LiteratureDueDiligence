@@ -1,0 +1,30 @@
+{
+  "paper_id": "pmid-30647761",
+  "pmid": "30647761",
+  "doi": "10.1155/2018/2810840",
+  "title": "Nutmeg Extract Increases Skeletal Muscle Mass in Aging Rats Partly via IGF1-AKT-mTOR Pathway and Inhibition of Autophagy.",
+  "abstract": "The sarcopenic phenotype is characterized by a reduction of muscle mass, a shift in fiber-type distribution, and reduced satellite cell regeneration. Sarcopenia is still a major challenge to healthy aging. Traditional Indonesian societies in Sulawesi island have been using nutmeg for maintaining health condition during aging. Interestingly, nutmeg has been known to stimulate peroxisome proliferator activated receptors \u03b3 (PPAR\u03b3) which may contribute to myogenesis process in cardiac muscle. There is limited information about the role of nutmeg extract into physiological health benefit during aging especially myogenesis process in skeletal muscle. In the present study, we want to explore the potential effect of nutmeg in preserving skeletal muscle mass of aging rats. Aging rats, 80 weeks old, were divided into two groups (control and nutmeg). Nutmeg extract was administered for 12 weeks by gavaging. After treatment, rats were anaesthesized, then soleus and gastrocnemius muscles were collected, weighted, frozen using liquid nitrogen, and stored at -80\u00b0C until use. We observed phenomenon that nutmeg increased a little but significant food consumption on week 12, but significant decrease in body weight on weeks 10 and 12 unexpectedly increased significantly in soleus muscle weight (p<0.05). Nutmeg extract increased significantly gene expression of myogenic differentiation (MyoD), paired box 7 (Pax7), myogenin, myosin heavy chain I (MHC I), and insulin-like growth factor I (p<0.01) in soleus muscle. Furthermore, nutmeg increased serine/threonine kinase (AKT) protein levels and activation of mammalian target of rapamycin (mTOR), inhibited autophagy activity, and stimulated or at least preserved muscle mass during aging. Taken together, nutmeg extract may increase muscle mass or prevent decrease of muscle wasting in soleus muscle by partly stimulating myogenesis, regeneration process, and preserving muscle mass via IGF-AKT-mTOR pathway leading to inhibition of autophagy activity during aging. This finding may reveal the potential nutmeg benefits as alternative supplement for preserving skeletal muscle mass and preventing sarcopenia in elderly.",
+  "year": "2018",
+  "journal": "Evidence-based complementary and alternative medicine : eCAM",
+  "authors": [
+    "Pratiwi YS",
+    "Lesmana R",
+    "Goenawan H",
+    "Sylviana N",
+    "Setiawan I",
+    "Tarawan VM",
+    "Lestari K",
+    "Abdulah R",
+    "Dwipa L",
+    "Purba A",
+    "Supratman U"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/30647761/",
+    "publisher": "https://doi.org/10.1155/2018/2810840"
+  }
+}

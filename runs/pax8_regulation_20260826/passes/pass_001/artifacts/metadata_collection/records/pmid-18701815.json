@@ -1,0 +1,28 @@
+{
+  "paper_id": "pmid-18701815",
+  "pmid": "18701815",
+  "doi": "10.1159/000151448",
+  "title": "Identification and functional analysis of two novel PAX9 mutations.",
+  "abstract": "The paired-domain transcription factor PAX9 plays a critical role in tooth development, as heterozygous mutations in PAX9 have been shown to be associated with human tooth agenesis. In this study, we report 2 novel missense mutations, gly6arg (G6R) and ser43lys (S43K), in the paired domain of PAX9 in Chinese patients with varying degrees of nonsyndromic tooth agenesis. Excluding third molars, the individual with the G6R mutation was missing 2 mandibular incisors and a maxillary premolar, while the phenotype of individuals with the S43K mutation consisted of peg-shaped upper lateral incisors and missing molars, premolars and canines. As these 2 mutations occur at highly conserved amino acids in the PAX gene family and between different species, we further analyzed the effects of the mutations on the function of the resulting proteins. Immunofluorescence and immunoblotting studies showed that the mutations did not alter nuclear localization in mammalian cells. Gel shift and super shift assays indicate that both mutant proteins bound DNA at a lower level than the normal protein, with G6R having a greater affinity for DNA than S43K. Likewise, the G6R protein was able to transcriptionally activate a Bmp4 promoter construct to a greater extent than S43K. Our finding that the severity of tooth agenesis in the patients was correlated to the DNA-binding capacity of the mutated PAX9 9proteins supports the hypothesis that DNA binding is responsible for the genetic defect.",
+  "year": "2009",
+  "journal": "Cells, tissues, organs",
+  "authors": [
+    "Wang Y",
+    "Wu H",
+    "Wu J",
+    "Zhao H",
+    "Zhang X",
+    "Mues G",
+    "D'Souza RN",
+    "Feng H",
+    "Kapadia H"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/18701815/",
+    "publisher": "https://doi.org/10.1159/000151448"
+  }
+}

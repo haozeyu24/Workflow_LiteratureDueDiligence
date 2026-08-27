@@ -1,0 +1,28 @@
+{
+  "paper_id": "pmid-29681515",
+  "pmid": "29681515",
+  "doi": "10.1016/j.stem.2018.03.022",
+  "title": "The Dystrophin Glycoprotein Complex Regulates the Epigenetic Activation of Muscle Stem Cell Commitment.",
+  "abstract": "Asymmetrically dividing muscle stem cells in skeletal muscle give rise to committed cells, where the\u00a0myogenic determination factor Myf5 is transcriptionally activated by Pax7. This activation is\u00a0dependent on Carm1, which methylates Pax7 on\u00a0multiple arginine residues, to recruit the ASH2L:MLL1/2:WDR5:RBBP5 histone methyltransferase complex to the proximal promoter of Myf5. Here, we found that Carm1 is a specific substrate of p38\u03b3/MAPK12 and that phosphorylation of Carm1 prevents its nuclear translocation. Basal localization of the p38\u03b3/p-Carm1 complex in muscle stem cells occurs via binding to the dystrophin-glycoprotein complex (DGC) through \u03b21-syntrophin. In dystrophin-deficient muscle stem cells undergoing asymmetric division, p38\u03b3/\u03b21-syntrophin interactions are abrogated, resulting in enhanced Carm1 phosphorylation. The resulting progenitors exhibit reduced Carm1 binding to Pax7, reduced H3K4-methylation of chromatin, and reduced transcription of Myf5 and other Pax7 target genes. Therefore, our experiments suggest that dysregulation of p38\u03b3/Carm1 results in altered epigenetic gene regulation in Duchenne muscular dystrophy.",
+  "year": "2018",
+  "journal": "Cell stem cell",
+  "authors": [
+    "Chang NC",
+    "Sincennes MC",
+    "Chevalier FP",
+    "Brun CE",
+    "Lacaria M",
+    "Segal\u00e9s J",
+    "Mu\u00f1oz-C\u00e1noves P",
+    "Ming H",
+    "Rudnicki MA"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/29681515/",
+    "publisher": "https://doi.org/10.1016/j.stem.2018.03.022"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "paper_id": "pmid-21559212",
+  "pmid": "21559212",
+  "doi": "10.1155/2011/130484",
+  "title": "Preclinical testing of erlotinib in a transgenic alveolar rhabdomyosarcoma mouse model.",
+  "abstract": "Rhabdomyosarcoma is an aggressive childhood malignancy, accounting for more than 50% of all soft-tissue sarcomas in children. Even with extensive therapy, the survival rate among alveolar rhabdomyosarcoma patients with advanced disease is only 20%. The receptor tyrosine kinase Epidermal Growth Factor Receptor (EGFR) has been found to be expressed and activated in human rhabdomyosarcomas. In this study we have used a genetically engineered mouse model for alveolar rhabdomyosarcoma (ARMS) which faithfully recapitulates the human disease by activating the pathognomic Pax3:Fkhr fusion gene and inactivating p53 in the maturing myoblasts. We have demonstrated that tumors from our mouse model of alveolar rhabdomyosarcoma express EGFR at both the mRNA and protein levels. We then tested the EGFR inhibitor, Erlotinib, for its efficacy in this mouse model of alveolar rhabdomyosarcoma. Surprisingly, Erlotinib had no effect on tumor progression, yet mice treated with Erlotinib showed 10-20% loss of body weight. These results suggest that EGFR might not be an a priori monotherapy target in alveolar rhabdomyosarcoma.",
+  "year": "2011",
+  "journal": "Sarcoma",
+  "authors": [
+    "Abraham J",
+    "Nelon LD",
+    "Kubicek CB",
+    "Kilcoyne A",
+    "Hampton ST",
+    "Zarzabal LA",
+    "Giles FJ",
+    "Michalek JE",
+    "Rubin BP",
+    "Keller C"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/21559212/",
+    "publisher": "https://doi.org/10.1155/2011/130484"
+  }
+}

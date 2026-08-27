@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-24107448",
+  "pmid": "24107448",
+  "doi": "10.1158/1535-7163.MCT-13-0277",
+  "title": "Small molecule inhibition of PAX3-FOXO1 through AKT activation suppresses malignant phenotypes of alveolar rhabdomyosarcoma.",
+  "abstract": "Alveolar rhabdomyosarcoma comprises a rare highly malignant tumor presumed to be associated with skeletal muscle lineage in children. The hallmark of the majority of alveolar rhabdomyosarcoma is a chromosomal translocation that generates the PAX3-FOXO1 fusion protein, which is an oncogenic transcription factor responsible for the development of the malignant phenotype of this tumor. Alveolar rhabdomyosarcoma cells are dependent on the oncogenic activity of PAX3-FOXO1, and its expression status in alveolar rhabdomyosarcoma tumors correlates with worst patient outcome, suggesting that blocking this activity of PAX3-FOXO1 may be an attractive therapeutic strategy against this fusion-positive disease. In this study, we screened small molecule chemical libraries for inhibitors of PAX3-FOXO1 transcriptional activity using a cell-based readout system. We identified the Sarco/endoplasmic reticulum Ca(2+)-ATPases (SERCA) inhibitor thapsigargin as an effective inhibitor of PAX3-FOXO1. Subsequent experiments in alveolar rhabdomyosarcoma cells showed that activation of AKT by thapsigargin inhibited PAX3-FOXO1 activity via phosphorylation. Moreover, this AKT activation appears to be associated with the effects of thapsigargin on intracellular calcium levels. Furthermore, thapsigargin inhibited the binding of PAX3-FOXO1 to target genes and subsequently promoted its proteasomal degradation. In addition, thapsigargin treatment decreases the growth and invasive capacity of alveolar rhabdomyosarcoma cells while inducing apoptosis in vitro. Finally, thapsigargin can suppress the growth of an alveolar rhabdomyosarcoma xenograft tumor in vivo. These data reveal that thapsigargin-induced activation of AKT is an effective mechanism to inhibit PAX3-FOXO1 and a potential agent for targeted therapy against alveolar rhabdomyosarcoma.",
+  "year": "2013",
+  "journal": "Molecular cancer therapeutics",
+  "authors": [
+    "Jothi M",
+    "Mal M",
+    "Keller C",
+    "Mal AK"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/24107448/",
+    "publisher": "https://doi.org/10.1158/1535-7163.MCT-13-0277"
+  }
+}

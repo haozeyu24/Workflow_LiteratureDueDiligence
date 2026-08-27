@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-42368027",
+  "pmid": "42368027",
+  "doi": "10.64898/2026.05.15.725287",
+  "title": "Loss of LanC-like proteins delays post-injury regeneration of aging skeletal muscles.",
+  "abstract": "The adult skeletal muscle regenerates robustly upon injury, but this regenerative capacity rapidly declines with age. In this study, we identify the lanthionine synthetase C-Like (LanCL) proteins, mammalian homologs of the bacterial peptide cyclase LanC, as positive regulators of muscle regeneration in middle-aged mice. In a barium chloride-induced injury model, we found the protein levels of LanCL1 and LanCL2 to increase during an early phase of regeneration in middle-aged (12-month-old) but not young adult (4-month-old) mice. Utilizing a mouse line lacking all three LanCL proteins (LanCL triple KO or LTKO), we examined a potential role of LanCL in injury-induced muscle regeneration. Consistent with an age-dependent function of LanCL, we observed a delayed regeneration of the tibialis anterior (TA) muscle after injury, as reflected by reduced sizes of regenerating myofibers at day 7 after injury in middle-aged (but not young) LTKO compared to age-matched WT mice. Although the pool size of quiescent satellite cells (Pax7+) was comparable between 12-month-old LTKO and WT muscles without injury, the number of Pax7+ cells was significantly higher in regenerating LTKO muscles at day 5 after injury, accompanied by drastically decreased numbers of MyoD+ and MyoG+ cells, as well as increased numbers of proliferating cells. In addition, we detected elevated expression of pro inflammatory cytokines in regenerating LTKO muscles, while the number of macrophages was similar comparing LTKO and WT muscles. Taken together, our observations suggest that in aging muscles LanCLs are important for proper timing of inflammation resolution and regeneration upon injury.",
+  "year": "2026",
+  "journal": "bioRxiv : the preprint server for biology",
+  "authors": [
+    "Reyes-Ordo\u00f1ez A",
+    "Zhou TH",
+    "Rao TC",
+    "Barai P",
+    "van der Donk WA",
+    "Chen J"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42368027/",
+    "publisher": "https://doi.org/10.64898/2026.05.15.725287"
+  }
+}

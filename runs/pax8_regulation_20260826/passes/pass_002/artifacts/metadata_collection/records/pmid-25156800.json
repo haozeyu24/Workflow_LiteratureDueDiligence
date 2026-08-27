@@ -1,0 +1,29 @@
+{
+  "paper_id": "pmid-25156800",
+  "pmid": "25156800",
+  "doi": "10.1002/mc.22196",
+  "title": "Dishevelled-3 activates p65 to upregulate p120-catenin transcription via a p38-dependent pathway in non-small cell lung cancer.",
+  "abstract": "Dishevelled-3 (Dvl-3) and p120-catenin (p120ctn) have abnormal expression in non-small cell lung cancer (NSCLC), which is associated with poor prognosis. Dvl-3 upregulates p120ctn transcription in NSCLC cells, but the mechanism is unknown. Here we transiently transfected Dvl-3 cDNA to NSCLC cells. Dvl-3 transfection is sufficient for induction of p38 signaling. In turn, Dvl-3 induces p38-mediated activation of the p65 so as to facilitate its nuclear translocation. Treatment with SB203580 (p38 inhibitor) or BAY 11-7082 (I\u03baB-\u03b1 phosphorylation inhibitor) suppresses Dvl-3 induced activation of p65. The results further show that active p65 interacts with PAX2 promoter to increase the expression of PAX2 and then PAX2 binds to p120ctn promoter so as to upregulate p120ctn gene transcription. Moreover, Dvl-3 transfection enhanced the binding of active p65 to Sp1 so as to decrease the binding of Sp1 to p120ctn promoter. The above-mentioned effects are linked to biological behavior of non-small cell lung cancer cells. These findings confirm that p38 and PAX2 are important for the Dvl-3 induced upregulation of p120ctn. Dvl-3 activates a p38\u2009\u2192\u2009p65\u2009\u2192\u2009PAX2\u2009\u2192\u2009p120ctn pathway to affect biological behavior of NSCLC cells.",
+  "year": "2015",
+  "journal": "Molecular carcinogenesis",
+  "authors": [
+    "Zhao H",
+    "Zhao Y",
+    "Jiang G",
+    "Zhang X",
+    "Zhang Y",
+    "Dong Q",
+    "Luan L",
+    "Papavassiliou P",
+    "Wang E",
+    "Wang E"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/25156800/",
+    "publisher": "https://doi.org/10.1002/mc.22196"
+  }
+}

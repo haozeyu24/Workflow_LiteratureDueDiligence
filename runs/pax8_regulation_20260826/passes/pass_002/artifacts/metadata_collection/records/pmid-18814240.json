@@ -1,0 +1,28 @@
+{
+  "paper_id": "pmid-18814240",
+  "pmid": "18814240",
+  "doi": "10.1002/ijc.23900",
+  "title": "Early aberrant insulin-like growth factor signaling in the progression to endometrial carcinoma is augmented by tamoxifen.",
+  "abstract": "Tamoxifen is an important selective estrogen receptor (ER) modulator for treatment of steroid hormone positive breast cancer. In addition to the beneficial effect, tamoxifen is one risk factor for endometrial carcinoma (EnCa) development. We hypothesized that, (1) dysregulation of gene expression and protein phosphorylation of the insulin-like growth factor (IGF) and steroid hormone receptor-signaling occur early in benign endometrial tissues and (2) signaling differences would be detected between patients with or without tamoxifen treatment. Seventy-eight tissues, including 2 benign cohorts from patients treated with (n = 24) or without tamoxifen (n = 28) (hyperproliferative endometrium, hyperplasia, polyps), EnCa (n = 12) with endometrium controls (n = 14) were analyzed for expression of 15 genes from the IGF and steroid hormone receptor-signaling, including the target genes Syncytin-1, PAX2 and c-myc. Total and phosphorylated protein expression were examined for ERalpha, PTEN, AKT, mTOR and Syncytin-1. Compared to controls similar significant deregulation of IGF and steroid hormone receptor-signaling, Syncytin-1 and PAX2 occurred in both benign cohorts, irrelevant of tamoxifen treatment. Comparing both benign cohorts with and without tamoxifen significant expression differences were noted. Increased total protein and phosphorylation of pERalpha-Ser118, pPTEN-Thr380, pAKT-Thr308, pAKT-Ser473, pmTOR-Ser2448 and Syncytin-1 were noted in early benign tissue stages associating with tamoxifen, especially polyps. Functional kinetic studies following tamoxifen treatment of the PTEN mutated RL95-2 EnCa cell line, demonstrated a doubling of phosphorylation of pERalpha-Ser118 and a 4.2-fold induction of pAKT-Thr308 along with Syncytin-1 induction. This study supports that dysregulated IGF and steroid hormone receptor signaling is prominent in endometrial benign stages and these alterations could represent clinical indicators for the risk of EnCa and also help in development of new therapies.",
+  "year": "2008",
+  "journal": "International journal of cancer",
+  "authors": [
+    "Strissel PL",
+    "Ellmann S",
+    "Loprich E",
+    "Thiel F",
+    "Fasching PA",
+    "Stiegler E",
+    "Hartmann A",
+    "Beckmann MW",
+    "Strick R"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/18814240/",
+    "publisher": "https://doi.org/10.1002/ijc.23900"
+  }
+}

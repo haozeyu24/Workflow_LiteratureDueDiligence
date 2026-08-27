@@ -1,0 +1,30 @@
+{
+  "paper_id": "pmid-30271355",
+  "pmid": "30271355",
+  "doi": "10.3389/fphys.2018.01273",
+  "title": "Integrin Beta 1 Is Crucial for Urinary Concentrating Ability and Renal Medulla Architecture in Adult Mice.",
+  "abstract": "Integrins are heterodimers anchoring cells to the surrounding extracellular matrix (ECM), an active and complex process mediating a series of inside-out and outside-in stimuli regulating cellular turn-over, tissue growth and architecture. Itgb1 is the main subunit of the renal integrins and it is critical for renal development. This study aims to investigate the role of Itgb1 in the adult renal epithelial cells by knocking down Itgb1 in PAX8 expressing cells. Itgb1-Pax8 cKO mice develop a progressively worsening proteinuria and renal abnormalities leading to severe renal failure and hypertension. This phenotype is also associated with severe dysfunction of distal nephron and polyuria. To further investigate whether distal nephron involvement was primarily related to Itgb1 suppression or secondary to renal failure, an Itgb1-AQP2 cKO mouse model was generated. These mice lack Itgb1 expression in AQP2 expressing cells. They do not show any developmental alteration, but 1 month old mice are resistant to dDAVP administration and finally, at 2 months of age, they develop overt polyuria. This phenotype is due to primary collecting duct (CD) cells anoikis. The entire architecture of the outer medulla is altered, with loss of the typical organization pattern of vascular and tubular bundles alternation. Indeed, even though not primarily affected by genetic ablation, the TAL is secondarily affected in this model. It is sufficient to suppress Itgb1 expression in the CD in order to stimulate proliferation and then disappearance of neighboring TAL cells. This study shows that cell to cell interaction through the ECM is critical for architecture and function maintenance of the outer medulla and that Itgb1 is crucial for this process.",
+  "year": "2018",
+  "journal": "Frontiers in physiology",
+  "authors": [
+    "Iervolino A",
+    "De La Motte LR",
+    "Petrillo F",
+    "Prosperi F",
+    "Alvino FM",
+    "Schiano G",
+    "Perna AF",
+    "Di Matteo D",
+    "De Felice M",
+    "Capasso G",
+    "Trepiccione F"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (stability[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR lysosome[Title/Abstract] OR autophagy[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/30271355/",
+    "publisher": "https://doi.org/10.3389/fphys.2018.01273"
+  }
+}

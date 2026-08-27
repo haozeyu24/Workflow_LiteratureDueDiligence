@@ -1,0 +1,21 @@
+{
+  "paper_id": "pmid-29442331",
+  "pmid": "29442331",
+  "doi": "10.1007/978-981-10-7311-3_18",
+  "title": "Role of Zic Family Proteins in Transcriptional Regulation and Chromatin Remodeling.",
+  "abstract": "Proper functions of Zic proteins are essential for animals in health and disease. Here, we summarize our current understanding of the molecular properties and functions of the Zic family across animal species and paralog subtypes. Zics are basic proteins with some posttranslational modifications and can move to the cell nucleus via importin- and CRM1-based nucleocytoplasmic shuttling mechanisms. Degradation is mediated by the ubiquitin proteasome system. Many Zic proteins are capable of binding to two types of target DNA sequences (CTGCTG-core-type and GC-stretch-type). Recent chromatin immunoprecipitation assays showed that CTGCTG-core-type target sequences are enriched in enhancers. Nonetheless, the DNA binding is not always required for transcriptional regulation by Zic proteins. On the other hand, Zic proteins bind many proteins including transcription factors (Gli1-3, Tcf1 or Tcf4, Smad2 or Smad3, Oct4, Pax3, Cdx, and SRF), chromatin-remodeling factors (NuRD and NURF), and other nuclear enzymes (DNA-PK, PARP1, and RNA helicase A). Zic family-mediated gene expression control involves both their actions near the transcription start site and those affecting the global gene expression via binding to enhancers. Although Zic proteins perform essential functions in transcriptional regulation of Oct4 and Nanog expression via their promoters, recent genome-wide analyses of the Zic-binding sites and their downstream targets indicate that Zic proteins are associated with distant regulatory elements and are the critical enhancer-priming nuclear regulators in organismal development. Chromatin-remodeling complexes such as NuRD and NURF that interact with Zic proteins have been shown to participate in Zic-mediated enhancer regulation.",
+  "year": "2018",
+  "journal": "Advances in experimental medicine and biology",
+  "authors": [
+    "Hatayama M",
+    "Aruga J"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/29442331/",
+    "publisher": "https://doi.org/10.1007/978-981-10-7311-3_18"
+  }
+}

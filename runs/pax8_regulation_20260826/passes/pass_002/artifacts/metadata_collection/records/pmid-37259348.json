@@ -1,0 +1,33 @@
+{
+  "paper_id": "pmid-37259348",
+  "pmid": "37259348",
+  "doi": "10.3390/ph16020199",
+  "title": "BET Bromodomain Degradation Disrupts Function but Not 3D Formation of RNA Pol2 Clusters.",
+  "abstract": "Fusion-positive rhabdomyosarcoma (FP-RMS) is driven by a translocation that creates the chimeric transcription factor PAX3-FOXO1 (P3F), which assembles de novo super enhancers to drive high levels of transcription of other core regulatory transcription factors (CRTFs). P3F recruits co-regulatory factors to super enhancers such as BRD4, which recognizes acetylated lysines via BET bromodomains. In this study, we demonstrate that inhibition or degradation of BRD4 leads to global decreases in transcription, and selective downregulation of CRTFs. We also show that the BRD4 degrader ARV-771 halts transcription while preserving RNA Polymerase II (Pol2) loops between super enhancers and their target genes, and causes the removal of Pol2 only past the transcriptional end site of CRTF genes, suggesting a novel effect of BRD4 on Pol2 looping. We finally test the most potent molecule, inhibitor BMS-986158, in an orthotopic PDX mouse model of FP-RMS with additional high-risk mutations, and find that it is well tolerated in vivo and leads to an average decrease in tumor size. This effort represents a partnership with an FP-RMS patient and family advocates to make preclinical data rapidly accessible to the family, and to generate data to inform future patients who develop this disease.",
+  "year": "2023",
+  "journal": "Pharmaceuticals (Basel, Switzerland)",
+  "authors": [
+    "Chin DH",
+    "Osman I",
+    "Porch J",
+    "Kim H",
+    "Buck KK",
+    "Rodriguez J",
+    "Carapia B",
+    "Yan D",
+    "Moura SB",
+    "Sperry J",
+    "Nakashima J",
+    "Altman K",
+    "Altman D",
+    "Gryder BE"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/37259348/",
+    "publisher": "https://doi.org/10.3390/ph16020199"
+  }
+}

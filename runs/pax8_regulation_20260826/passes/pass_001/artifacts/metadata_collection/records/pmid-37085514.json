@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-37085514",
+  "pmid": "37085514",
+  "doi": "10.1038/s41467-023-37994-9",
+  "title": "Igh and Igk loci use different folding principles for V gene recombination due to distinct chromosomal architectures of pro-B and pre-B cells.",
+  "abstract": "Extended loop extrusion across the immunoglobulin heavy-chain (Igh) locus facilitates VH-DJH recombination following downregulation of the cohesin-release factor Wapl by Pax5, resulting in global changes in the chromosomal architecture of pro-B cells. Here, we demonstrate that chromatin looping and VK-JK recombination at the Igk locus were insensitive to Wapl upregulation in pre-B cells. Notably, the Wapl protein was expressed at a 2.2-fold higher level in pre-B cells compared with pro-B cells, which resulted in a distinct chromosomal architecture with normal loop sizes in pre-B cells. High-resolution chromosomal contact analysis of the Igk locus identified multiple internal loops, which likely juxtapose VK and JK elements to facilitate VK-JK recombination. The higher Wapl expression in Ig\u03bc-transgenic pre-B cells prevented extended loop extrusion at the Igh locus, leading to recombination of only the 6 most 3' proximal VH genes and likely to allelic exclusion of all other VH genes in pre-B cells. These results suggest that pro-B and pre-B cells with their distinct chromosomal architectures use different chromatin folding principles for V gene recombination, thereby enabling allelic exclusion at the Igh locus, when the Igk locus is recombined.",
+  "year": "2023",
+  "journal": "Nature communications",
+  "authors": [
+    "Hill L",
+    "Wutz G",
+    "Jaritz M",
+    "Tagoh H",
+    "Calder\u00f3n L",
+    "Peters JM",
+    "Goloborodko A",
+    "Busslinger M"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/37085514/",
+    "publisher": "https://doi.org/10.1038/s41467-023-37994-9"
+  }
+}

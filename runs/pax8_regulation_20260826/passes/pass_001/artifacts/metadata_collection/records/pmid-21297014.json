@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-21297014",
+  "pmid": "21297014",
+  "doi": "10.1177/0022034510387430",
+  "title": "Msx1 mutations: how do they cause tooth agenesis?",
+  "abstract": "Mutations in the transcription factors PAX9 and MSX1 cause selective tooth agenesis in humans. In tooth bud mesenchyme of mice, both proteins are required for the expression of Bmp4, which is the key signaling factor for progression to the next step of tooth development. We have previously shown that Pax9 can transactivate a 2.4-kb Bmp4 promoter construct, and that most tooth-agenesis-causing PAX9 mutations impair DNA binding and Bmp4 promoter activation. We also found that Msx1 by itself represses transcription from this proximal Bmp4 promoter, and that, in combination with Pax9, it acts as a potentiator of Pax9-induced Bmp4 transactivation. This synergism of Msx1 with Pax9 is significant, because it is currently the only documented mechanism for Msx1-mediated activation of Bmp4. In this study, we investigated whether the 5 known tooth-agenesis-causing MSX1 missense mutations disrupt this Pax9-potentiation effect, or if they lead to deficiencies in protein stability, protein-protein interactions, nuclear translocation, and DNA-binding. We found that none of the studied molecular mechanisms yielded a satisfactory explanation for the pathogenic effects of the Msx1 mutations, calling for an entirely different approach to the investigation of this step of odontogenesis on the molecular level.",
+  "year": "2011",
+  "journal": "Journal of dental research",
+  "authors": [
+    "Wang Y",
+    "Kong H",
+    "Mues G",
+    "D'Souza R"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/21297014/",
+    "publisher": "https://doi.org/10.1177/0022034510387430"
+  }
+}

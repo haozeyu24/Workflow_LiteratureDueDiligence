@@ -1,0 +1,31 @@
+{
+  "paper_id": "pmid-25398439",
+  "pmid": "25398439",
+  "doi": "10.1158/0008-5472.CAN-14-1246",
+  "title": "PLK1 phosphorylates PAX3-FOXO1, the inhibition of which triggers regression of alveolar Rhabdomyosarcoma.",
+  "abstract": "Pediatric tumors harbor very low numbers of somatic mutations and therefore offer few targets to improve therapeutic management with targeted drugs. In particular, outcomes remain dismal for patients with metastatic alveolar rhabdomyosarcoma (aRMS), where the chimeric transcription factor PAX3/7-FOXO1 has been implicated but problematic to target. In this report, we addressed this challenge by developing a two-armed screen for druggable upstream regulatory kinases in the PAX3/7-FOXO1 pathway. Screening libraries of kinome siRNA and small molecules, we defined PLK1 as an upstream-acting regulator. Mechanistically, PLK1 interacted with and phosphorylated PAX3-FOXO1 at the novel site S503, leading to protein stabilization. Notably, PLK1 inhibition led to elevated ubiquitination and rapid proteasomal degradation of the PAX3-FOXO1 chimeric oncoprotein. On this basis, we embarked on a preclinical validation of PLK1 as a target in a xenograft mouse model of aRMS, where the PLK1 inhibitor BI 2536 reduced PAX3-FOXO1-mediated gene expression and elicited tumor regression. Clinically, analysis of human aRMS tumor biopsies documented high PLK1 expression to offer prognostic significance for both event-free survival and overall survival. Taken together, these preclinical studies validate the PLK1-PAX3-FOXO1 axis as a rational target to treat aRMS.",
+  "year": "2015",
+  "journal": "Cancer research",
+  "authors": [
+    "Thalhammer V",
+    "Lopez-Garcia LA",
+    "Herrero-Martin D",
+    "Hecker R",
+    "Laubscher D",
+    "Gierisch ME",
+    "Wachtel M",
+    "Bode P",
+    "Nanni P",
+    "Blank B",
+    "Koscielniak E",
+    "Sch\u00e4fer BW"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/25398439/",
+    "publisher": "https://doi.org/10.1158/0008-5472.CAN-14-1246"
+  }
+}

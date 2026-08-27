@@ -1,0 +1,42 @@
+{
+  "paper_id": "pmid-41125676",
+  "pmid": "41125676",
+  "doi": "10.1038/s41598-025-12734-9",
+  "title": "Tofogliflozin ameliorates cardiotoxin induced skeletal muscle injury and fibrosis in obesity.",
+  "abstract": "Obesity impairs muscle function through effects on lipid metabolism, systemic inflammation, and insulin resistance, leading to muscle loss and reduced regeneration. Tofogliflozin (Tofo), a sodium-glucose cotransporter 2 inhibitor (SGLT2i), exclusively inhibits SGLT2 and is used to treat hyperglycemia in patients with diabetes. The mechanism by which Tofo promotes myogenic potential in an injury model remains elusive. This study investigated Tofo's role in skeletal muscle repair in diet-induced obesity. C57BL/6\u00a0J male mice were fed a high-fat diet (HFD) with or without Tofo for 12\u00a0weeks. Cardiotoxin (CTX) was used to induce acute injury. We showed that Tofo administration during HFD alleviates obesity-induced disruption in glucose metabolism and upregulates Pax7 and MyoG expression in skeletal muscle, thereby promoting myogenesis following acute injury. Tofo activates fibro-adipogenic progenitors (FAPs) in skeletal muscle, leading to upregulated follistatin (Fst) expression and boosting the recovery process after acute injury. Mechanistically, Tofo prevented the obesity-induced decline in AMPK phosphorylation, rescued the impairment of lipid metabolism, and improved skeletal muscle function, which led to increased exercise tolerance, activation of FAPs, facilitation of skeletal muscle repair, and reduction of fibrosis.",
+  "year": "2025",
+  "journal": "Scientific reports",
+  "authors": [
+    "Bilal M",
+    "Phuong NQ",
+    "Kado T",
+    "Liu J",
+    "Anh LD",
+    "Khalid S",
+    "Aslam MR",
+    "Memoona",
+    "Nishimura A",
+    "Igarashi Y",
+    "Watanabe Y",
+    "Abbas W",
+    "Yokoyama M",
+    "Onogi Y",
+    "Hirabayashi K",
+    "Yamamoto S",
+    "Yagi K",
+    "Lino M",
+    "Usui I",
+    "Kato M",
+    "Fujisaka S",
+    "Nawaz A",
+    "Tobe K"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/41125676/",
+    "publisher": "https://doi.org/10.1038/s41598-025-12734-9"
+  }
+}

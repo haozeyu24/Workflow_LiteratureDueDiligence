@@ -1,0 +1,30 @@
+{
+  "paper_id": "pmid-37549955",
+  "pmid": "37549955",
+  "doi": "10.14814/phy2.15784",
+  "title": "Cold water immersion in recovery following a single bout resistance exercise suppresses mechanisms of miRNA nuclear export and maturation.",
+  "abstract": "Cold water immersion (CWI) following intense exercise is a common athletic recovery practice. However, CWI impacts muscle adaptations to exercise training, with attenuated muscle hypertrophy and increased angiogenesis. Tissue temperature modulates the abundance of specific miRNA species and thus CWI may affect muscle adaptations via modulating miRNA expression following a bout of exercise. The current study focused on the regulatory mechanisms involved in cleavage and nuclear export of mature miRNA, including DROSHA, EXPORTIN-5, and DICER. Muscle biopsies were obtained from the vastus lateralis of young males (n\u2009=\u20099) at rest and at 2, 4, and 48\u2009h of recovery from an acute bout of resistance exercise, followed by either 10\u2009min of active recovery (ACT) at ambient temperature or CWI at 10\u00b0C. The abundance of key miRNA species in the regulation of intracellular anabolic signaling (miR-1 and miR-133a) and angiogenesis (miR-15a and miR-126) were measured, along with several gene targets implicated in satellite cell dynamics (NCAM and PAX7) and angiogenesis (VEGF and SPRED-1). When compared to ACT, CWI suppressed mRNA expression of DROSHA (24\u2009h p\u2009=\u20090.025 and 48\u2009h p\u2009=\u20090.017), EXPORTIN-5 (24\u2009h p\u2009=\u20090.008), and DICER (24\u2009h p\u2009=\u20090.0034). Of the analyzed miRNA species, miR-133a (24\u2009h p\u2009<\u20090.001 and 48\u2009h p\u2009=\u20090.007) and miR-126 (24\u2009h p\u2009<\u20090.001 and 48\u2009h p\u2009<\u20090.001) remained elevated at 24\u2009h post-exercise in the CWI trial only. Potential gene targets of these miRNA, however, did not differ between trials. CWI may therefore impact miRNA abundance in skeletal muscle, although the precise physiological relevance needs further investigation.",
+  "year": "2023",
+  "journal": "Physiological reports",
+  "authors": [
+    "D'Souza RF",
+    "Figueiredo VC",
+    "Markworth JF",
+    "Zeng N",
+    "Hedges CP",
+    "Roberts LA",
+    "Raastad T",
+    "Coombes JS",
+    "Peake JM",
+    "Mitchell CJ",
+    "Cameron-Smith D"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/37549955/",
+    "publisher": "https://doi.org/10.14814/phy2.15784"
+  }
+}

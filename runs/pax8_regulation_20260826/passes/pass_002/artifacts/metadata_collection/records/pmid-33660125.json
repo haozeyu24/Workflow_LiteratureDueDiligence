@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-33660125",
+  "pmid": "33660125",
+  "doi": "10.1007/s11655-021-2865-0",
+  "title": "Wide Pulse Width Electroacupuncture Ameliorates Denervation-Induced Skeletal Muscle Atrophy in Rats via IGF-1/PI3K/Akt Pathway.",
+  "abstract": "OBJECTIVE: To evaluate the effect of the pulse width of electroacupuncture (EA) in the treatment of denervation-induced skeletal muscle atrophy in rats and examine the role of insulin-like growth factor 1 (IGF-1)/phosphatidylinositol 3-kinase (PI3K)/Akt signaling pathway during EA.\n\nMETHODS: Sciatic nerve functional index (SFI), muscle wet weight and the cross-sectional area (CSA) of the gastrocnemius muscle were analyzed after treatment in model rats with EA of various pulse widths (0.5, 50, 100 and 200 ms). The apoptosis index (AI) and paired box (PAX)3 and PAX7 protein expression were also determined. Further, the mRNA and protein expressions of components of IGF-1/PI3K/Akt pathway and their downstream targets were determined, along with the inhibiting effect of the pathway with a PI3-specific inhibitor.\n\nRESULTS: EA with a pulse width of 200 ms was found to have the best effect with regard to increasing SFI, CSA and muscle weight, decreasing AI, and increasing the expression of PAX3 and PAX7. The IGF-1/PI3K/Akt pathway was found to be activated by denervation, although the downstream forkhead box O (FoxO) pathway was not suppressed by its activation. The PI3K/Akt pathway and its downstream molecule mammalian target of rapamycin (mTOR) were up-regulated further by EA to promote muscle protein synthesis. Meanwhile, the expressions of downstream FoxO and F-box protein 32 (ATROGIN-1) were down-regulated to reduce protein degradation.\n\nCONCLUSIONS: EA with 200-ms pulse width was found to have a more significant effect than 0.5-ms EA. The positive effects of EA disappeared after inhibition of the PI3K/Akt pathway.",
+  "year": "2021",
+  "journal": "Chinese journal of integrative medicine",
+  "authors": [
+    "Huang XQ",
+    "Xu JS",
+    "Ye XR",
+    "Chen X"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/33660125/",
+    "publisher": "https://doi.org/10.1007/s11655-021-2865-0"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "paper_id": "pmid-34871761",
+  "pmid": "34871761",
+  "doi": "10.1016/j.gene.2021.146109",
+  "title": "Identification of specific gene methylation patterns during motor neuron differentiation from spinal muscular atrophy patient-derived iPSC.",
+  "abstract": "Spinal muscular atrophy is a progressive motor neuron disorder caused by deletions or point mutations in the SMN1 gene. It is not known why motor neurons are particularly sensitive to a decrease in SMN protein levels and what factors besides SMN2 underlie the high clinical heterogeneity of the disease. Here we studied the methylation patterns of genes on sequential stages of motor neuron differentiation from induced pluripotent stem cells derived from the patients with SMA type I and II. The genes involved in the regulation of pluripotency, neural differentiation as well as those associated with spinal muscular atrophy development were included. The results show that the PAX6, HB9, CHAT, ARHGAP22, and SMN2 genes are differently methylated in cells derived from SMA patients compared to the cells of healthy individuals. This study clarifies the specificities of the disease pathogenesis and extends the knowledge of pathways involved in the SMA progression.",
+  "year": "2022",
+  "journal": "Gene",
+  "authors": [
+    "Maretina MA",
+    "Valetdinova KR",
+    "Tsyganova NA",
+    "Egorova AA",
+    "Ovechkina VS",
+    "Schi\u00f6th HB",
+    "Zakian SM",
+    "Baranov VS",
+    "Kiselev AV"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/34871761/",
+    "publisher": "https://doi.org/10.1016/j.gene.2021.146109"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "paper_id": "pmid-21364645",
+  "pmid": "21364645",
+  "doi": "10.1038/cddis.2010.17",
+  "title": "c-Flip overexpression affects satellite cell proliferation and promotes skeletal muscle aging.",
+  "abstract": "This study shows that forcing c-Flip overexpression in undifferentiated skeletal myogenic cells in vivo results in early aging muscle phenotype. In the transgenic mice, adult muscle histology, histochemistry and biochemistry show strong alterations: reduction of fibers size and muscle mass, mitochondrial abnormalities, increase in protein oxidation and apoptosis markers and reduced AKT/GSK3\u03b2 phosphorylation. In the infant, higher levels of Pax-7, PCNA, P-ERK and active-caspase-3 were observed, indicating enhanced proliferation and concomitant apoptosis of myogenic precursors. Increased proliferation correlated with NF-\u03baB activation, detected as p65 phosphorylation, and with high levels of embryonic myosin heavy chain. Reduced regenerative potential after muscle damage in the adult and impaired fiber growth associated with reduced NFATc2 activation in the infant were also observed, indicating that the satellite cell pool is prematurely compromised. Altogether, these data show a role for c-Flip in modulating skeletal muscle phenotype by affecting the proliferative potential of undifferentiated cells. This finding indicates a novel additional mechanism through which c-Flip might possibly control tissue remodeling.",
+  "year": "2010",
+  "journal": "Cell death & disease",
+  "authors": [
+    "Giampietri C",
+    "Petrungaro S",
+    "Coluccia P",
+    "Antonangeli F",
+    "Giannakakis K",
+    "Faraggiana T",
+    "Filippini A",
+    "Cossu G",
+    "Ziparo E"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/21364645/",
+    "publisher": "https://doi.org/10.1038/cddis.2010.17"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-35390666",
+  "pmid": "35390666",
+  "doi": "10.1016/j.imbio.2022.152211",
+  "title": "Embryonic stem cells-derived exosomes enhance retrodifferentiation of retinal M\u00fcller cells by delivering BDNF protein to activate Wnt pathway.",
+  "abstract": "OBJECTIVE: The present study was intended to investigate the role of embryonic stem cell-derived exosomes (ESC-Exos) in M\u00fcller cell retrodifferentiation and their specific mechanism.\n\nMETHODS: Following co-incubation of the extracted ESC-Exos and M\u00fcller cells, their effects on the retrodifferentiation and proliferation of M\u00fcller cells were measured by EdU staining, immunofluorescence, and western blot. ESCs transfected with small interfering RNA of BDNF were co-incubated with M\u00fcller cells to determine M\u00fcller cell proliferation and retrodifferentiation. \u03b2-catenin expression in the nucleus and GSK-3\u03b2 phosphorylation were measured to determine the role of the Wnt pathway in M\u00fcller cells. The function of the retina in RCS rats was observed using flash electroretinogram.\n\nRESULTS: Co-incubation of ESCs with M\u00fcller cells or overexpression of BDNF contributed to M\u00fcller cell retrodifferentiation and proliferation, as evidenced by increased cell proliferation, fluorescence intensities of proliferation markers and retinal stem cell markers, and expression of BDNF and \u03b2-catenin, and suppressed GSK-3\u03b2 phosphorylation. However, co-incubation with ESCs silencing BDNF or treatment with GW4869 inhibited the proliferation and retrodifferentiation of retinal M\u00fcller cells. In addition, exosome injection increased BDNF, BrdU, PH3, SOX2, and Pax6 expression, enhanced \u03b2-catenin expression in the nucleus, diminished GSK-3\u03b2, and improved retinal degeneration in RCS rats.\n\nCONCLUSION: ESC-Exos accelerated M\u00fcller cell retrodifferentiation and proliferation through Wnt pathway activation by delivering BDNF protein to M\u00fcller cells.",
+  "year": "2022",
+  "journal": "Immunobiology",
+  "authors": [
+    "Gao Y",
+    "Li H",
+    "Qin C",
+    "Yang B",
+    "Ke Y"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/35390666/",
+    "publisher": "https://doi.org/10.1016/j.imbio.2022.152211"
+  }
+}

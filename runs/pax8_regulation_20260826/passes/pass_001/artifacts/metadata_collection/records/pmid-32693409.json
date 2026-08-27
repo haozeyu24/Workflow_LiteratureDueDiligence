@@ -1,0 +1,48 @@
+{
+  "paper_id": "pmid-32693409",
+  "pmid": "32693409",
+  "doi": "10.1182/blood.2020006164",
+  "title": "Molecular basis of ETV6-mediated predisposition to childhood acute lymphoblastic leukemia.",
+  "abstract": "There is growing evidence supporting an inherited basis for susceptibility to acute lymphoblastic leukemia (ALL) in children. In particular, we and others reported recurrent germline ETV6 variants linked to ALL risk, which collectively represent a novel leukemia predisposition syndrome. To understand the influence of ETV6 variation on ALL pathogenesis, we comprehensively characterized a cohort of 32 childhood leukemia cases arising from this rare syndrome. Of 34 nonsynonymous germline ETV6 variants in ALL, we identified 22 variants with impaired transcription repressor activity, loss of DNA binding, and altered nuclear localization. Missense variants retained dimerization with wild-type ETV6 with potentially dominant-negative effects. Whole-transcriptome and whole-genome sequencing of this cohort of leukemia cases revealed a profound influence of germline ETV6 variants on leukemia transcriptional landscape, with distinct ALL subsets invoking unique patterns of somatic cooperating mutations. 70% of ALL cases with damaging germline ETV6 variants exhibited hyperdiploid karyotype with characteristic recurrent mutations in NRAS, KRAS, and PTPN11. In contrast, the remaining 30% cases had a diploid leukemia genome and an exceedingly high frequency of somatic copy-number loss of PAX5 and ETV6, with a gene expression pattern that strikingly mirrored that of ALL with somatic ETV6-RUNX1 fusion. Two ETV6 germline variants gave rise to both acute myeloid leukemia and ALL, with lineage-specific genetic lesions in the leukemia genomes. ETV6 variants compromise its tumor suppressor activity in vitro with specific molecular targets identified by assay for transposase-accessible chromatin sequencing profiling. ETV6-mediated ALL predisposition exemplifies the intricate interactions between inherited and acquired genomic variations in leukemia pathogenesis.",
+  "year": "2021",
+  "journal": "Blood",
+  "authors": [
+    "Nishii R",
+    "Baskin-Doerfler R",
+    "Yang W",
+    "Oak N",
+    "Zhao X",
+    "Yang W",
+    "Hoshitsuki K",
+    "Bloom M",
+    "Verbist K",
+    "Burns M",
+    "Li Z",
+    "Lin TN",
+    "Qian M",
+    "Moriyama T",
+    "Gastier-Foster JM",
+    "Rabin KR",
+    "Raetz E",
+    "Mullighan C",
+    "Pui CH",
+    "Yeoh AE",
+    "Zhang J",
+    "Metzger ML",
+    "Klco JM",
+    "Hunger SP",
+    "Newman S",
+    "Wu G",
+    "Loh ML",
+    "Nichols KE",
+    "Yang JJ"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/32693409/",
+    "publisher": "https://doi.org/10.1182/blood.2020006164"
+  }
+}

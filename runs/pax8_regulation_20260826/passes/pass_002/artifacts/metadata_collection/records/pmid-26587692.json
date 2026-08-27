@@ -1,0 +1,31 @@
+{
+  "paper_id": "pmid-26587692",
+  "pmid": "26587692",
+  "doi": "10.1097/CMR.0000000000000212",
+  "title": "Haplosufficiency of PAX3 for melanoma development in Tyr: NRASQ61K; Cdkn2a-/- mice allows identification and sorting of melanoma cells using a Pax3GFP reporter allele.",
+  "abstract": "The role of the Pax3 gene in embryonic development of pigment cells is well characterized. By contrast, the function of Pax3 in melanoma development is controversial. Indeed, data obtained from cultured cells suggest that PAX3 may contribute to melanomagenesis. PAX3 is found to be overexpressed in melanomas and also in nevi compared with normal skin samples. Pax3 homozygous loss of function is embryonic lethal. To assess the role of Pax3 in melanoma development in vivo, we analyzed Pax3 haploinsufficiency in a mouse model of melanoma predisposition. The Pax3(GFP/+) knock-in reporter system was combined with the Tyr::NRAS(Q61K); Cdkn2a(-/-) mouse melanoma model. Melanoma development was followed over 18 months. Histopathological, immunohistochemical, and molecular analyses of lesions at different stages of melanoma progression were carried out. Fluorescence-activated cell sorting on GFP of cells from primary or metastatic melanoma was followed by ex-vivo transformation tests and in-vivo passaging. We report here that Tyr::NRAS(Q61K); Cdkn2a(-/-); Pax3(GFP/+) mice developed metastasizing melanoma as their Tyr::NRAS(Q61K); Cdkn2a(-/-); littermates. Histopathology showed no differences between the two genotypes, although Pax3 mRNA and PAX3 protein levels in Pax3(GFP/+) lesions were reduced by half. The Pax3(GFP) allele proved to be a convenient marker to identify and directly sort heterogeneous populations of melanoma cells within the tumor bulk at each stage of melanoma progression. This new mouse model represents an accurate and reproducible means for identifying melanoma cells in vivo to study the mechanisms of melanoma development.",
+  "year": "2016",
+  "journal": "Melanoma research",
+  "authors": [
+    "Campagne C",
+    "Reyes-Gomez E",
+    "Loiodice S",
+    "Gadin S",
+    "Ezagal J",
+    "Bernex F",
+    "Abitbol M",
+    "Louise A",
+    "Beermann F",
+    "Panthier JJ",
+    "Aubin-Houzelstein G",
+    "Egidy G"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/26587692/",
+    "publisher": "https://doi.org/10.1097/CMR.0000000000000212"
+  }
+}

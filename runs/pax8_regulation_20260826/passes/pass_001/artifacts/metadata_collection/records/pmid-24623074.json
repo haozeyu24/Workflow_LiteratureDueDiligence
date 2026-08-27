@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-24623074",
+  "pmid": "24623074",
+  "doi": "10.1387/ijdb.130109sc",
+  "title": "Essential role of AWP1 in neural crest specification in Xenopus.",
+  "abstract": "The neural crest (NC) comprises a transient and multipotent embryonic cell population, which gives rise to a wide variety of cell types, including craniofacial cartilage, melanocytes, and neurons and glia of the peripheral nervous system. The NC is induced by the integrated action of Wnt, FGF, and BMP signaling, and its cell fates are subsequently specified by a genetic cascade of specific transcription factors. Here we describe a critical role of AWP1 in NC induction during Xenopus early development. Xenopus AWP1 (XAWP1) was found to be expressed in the presumptive preplacodal ectoderm, neural tissue, and posterior dorsal mesoderm, but was absent in the neural fold along the anterior-posterior axis of the neurulae. Notably, XAWP1 was induced by FGF8a in na\u00efve ectodermal tissue. XAWP1-depleted embryos exhibited defects in pigmentation, craniofacial cartilage, and in the dorsal fin. A knockdown of XAWP1 impaired both endogenous and the FGF8a or Wnt8-induced expression of NC markers without affecting mesoderm formation. Furthermore, NC induction inhibited by XAWP1 depletion was rescued by co-expression of activating forms of beta-catenin or TCF3. In addition, overexpression of XAWP1, in concert with BMP inhibition, induced the expression of neural plate border specifiers, Pax3 and Msx1, and these regulatory factors recovered NC induction in the XAWP1-depleted embryos. Beta-catenin stability and Wnt-responsive reporter activity were also impaired in AWP1-depleted cells. Taken together, these results suggest that XAWP1 functions as a mediator of Wnt signaling to regulate NC specification.",
+  "year": "2013",
+  "journal": "The International journal of developmental biology",
+  "authors": [
+    "Seo JH",
+    "Park DS",
+    "Hong M",
+    "Chang EJ",
+    "Choi SC"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/24623074/",
+    "publisher": "https://doi.org/10.1387/ijdb.130109sc"
+  }
+}

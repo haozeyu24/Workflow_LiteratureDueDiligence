@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-36614229",
+  "pmid": "36614229",
+  "doi": "10.3390/ijms24010786",
+  "title": "Novel Missense Variants in PAX8 and NKX2-1 Cause Congenital Hypothyroidism.",
+  "abstract": "Primary congenital hypothyroidism (CH) is a common neonatal endocrine disorder characterized by elevated concentrations of thyroid stimulating hormone (TSH) and low concentrations of free thyroxine (FT4). PAX8 and NKX2-1 are important transcription factors involved in thyroid development. In this study, we detected three novel variants in PAX8 (c.149A > C and c.329G > A) and NKX2-1 (c.706A > G) by whole exome sequencing (WES) in three unrelated CH patients with variable phenotypes. The results of Western blot and immunofluorescence analysis showed that the three variants had no effect on protein expression and subcellular localization. However, the results of the electrophoretic mobility shift assay (EMSA) and dual-luciferase reporter assay suggested that the three variants in PAX8 and NKX2-1 both affected their DNA-binding ability and reduced their transactivation capacity. Moreover, a dominant-negative effect in K236E\u2212NKX2-1 was identified by dual-luciferase reporter assay. To sum up, our findings extend our knowledge of the current mutation spectrum of PAX8 and NKX2-1 and provide important information for diagnosing, treating, and preventing CH in these families.",
+  "year": "2023",
+  "journal": "International journal of molecular sciences",
+  "authors": [
+    "Li M",
+    "Li Z",
+    "Chen M",
+    "Hu Z",
+    "Zhou M",
+    "Wu L",
+    "Zhang C",
+    "Liang D"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (\"nuclear localization\"[Title/Abstract] OR \"nuclear localisation\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR \"subcellular localization\"[Title/Abstract] OR \"subcellular localisation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract] OR \"nuclear import\"[Title/Abstract] OR \"nuclear export\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/36614229/",
+    "publisher": "https://doi.org/10.3390/ijms24010786"
+  }
+}

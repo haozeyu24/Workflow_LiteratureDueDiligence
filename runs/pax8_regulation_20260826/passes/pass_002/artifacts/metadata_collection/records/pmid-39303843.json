@@ -1,0 +1,29 @@
+{
+  "paper_id": "pmid-39303843",
+  "pmid": "39303843",
+  "doi": "10.1016/j.exer.2024.110105",
+  "title": "Increased susceptibility of human limbal aniridia fibroblasts to oxidative stress.",
+  "abstract": "Aniridia-associated keratopathy originates from a haploinsufficiency of the transcription factor PAX6 (PAX6+/-). In the corneal epithelium of PAX6+/- mice, a significant increase in oxidized proteins was observed, accompanied by impaired compensation for elevated oxidative stress (OS). The extent to which limbal fibroblast cells (LFCs) are affected by an increased susceptibility to OS in cases of congenital aniridia (AN) has not been determined, yet. Our aim was to examine the impact of OS on antioxidant enzyme expression in normal and AN-LFCs. Following isolation and culture of primary LFCs (n\u00a0=\u00a08) and AN-LFCs (n\u00a0=\u00a08), cells were treated with cobalt chloride for 48\u00a0h to chemically induce hypoxic conditions and OS. Subsequently, HIF-1\u03b1/-2\u03b1, PHD1/2, Nrf2, CAT, SOD1, PRDX6, and GPX1 gene expression was examined by qPCR. SOD1, PRDX6, and GPX1 protein levels were assessed from the cell lysate by Western blot. The induction of hypoxia led to reduced HIF-1\u03b1 gene expression in both fibroblast groups (p\u22640.008), while the decrease in PHD1 was limited to AN-LFCs (p\u00a0=\u00a00.0007). On the other hand, under hypoxic conditions, PHD2 showed higher mRNA expression in AN-LFCs compared to normal LFCs (p\u00a0=\u00a00.013). As a result of OS, the mRNA levels of Nrf2 (p<0.0001) and the antioxidant enzymes CAT (p\u00a0=\u00a00.005), SOD1 (p\u00a0=\u00a00.005), GPX1 (p\u00a0=\u00a00.002) decreased in AN-LFCs. This was accompanied by an increased protein expression of SOD1 (p\u00a0=\u00a00.019) and PRDX6 (p=0.0009). In the normal LFC group, the induced extent of OS had no impact on the gene (p\u22650.151) and protein expression (p\u00a0\u2265\u00a00.629) of antioxidant enzymes, except for the GPX1 mRNA level (p\u00a0=\u00a00.027). AN-LFCs exhibit higher susceptibility to OS than normal LFCs. Therefore, in AN-LFCs, there are sustained alterations in gene and protein expression of antioxidative enzymes even after 48\u00a0h of CoCl2 treatment.",
+  "year": "2024",
+  "journal": "Experimental eye research",
+  "authors": [
+    "Trusen S",
+    "Zimmermann JSA",
+    "Fries FN",
+    "Li Z",
+    "Chai N",
+    "Seitz B",
+    "Suiwal S",
+    "Amini M",
+    "Szentm\u00e1ry N",
+    "Stachon T"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/39303843/",
+    "publisher": "https://doi.org/10.1016/j.exer.2024.110105"
+  }
+}

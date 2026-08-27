@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-19793891",
+  "pmid": "19793891",
+  "doi": "10.1242/dev.036335",
+  "title": "BMP7 promotes proliferation of nephron progenitor cells via a JNK-dependent mechanism.",
+  "abstract": "The iterative formation of nephrons during embryonic development relies on continual replenishment of progenitor cells throughout nephrogenesis. Defining molecular mechanisms that maintain and regulate this progenitor pool is essential to understanding nephrogenesis in developmental and regenerative contexts. Maintenance of nephron progenitors is absolutely dependent on BMP7 signaling, and Bmp7-null mice exhibit rapid loss of progenitors. However, the signal transduction machinery operating downstream of BMP7 as well as the precise target cell remain undefined. Using a novel primary progenitor isolation system, we have investigated signal transduction and biological outcomes elicited by BMP7. We find that BMP7 directly and rapidly activates JNK signaling in nephron progenitors resulting in phosphorylation of Jun and ATF2 transcription factors. This signaling results in the accumulation of cyclin D3 and subsequent proliferation of PAX2(+) progenitors, inversely correlating with the loss of nephron progenitors seen in the Bmp7-null kidney. Activation of Jun and ATF2 is severely diminished in Bmp7-null kidneys, providing an important in vivo correlate. BMP7 thus promotes proliferation directly in nephron progenitors by activating the JNK signaling circuitry.",
+  "year": "2009",
+  "journal": "Development (Cambridge, England)",
+  "authors": [
+    "Blank U",
+    "Brown A",
+    "Adams DC",
+    "Karolak MJ",
+    "Oxburgh L"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/19793891/",
+    "publisher": "https://doi.org/10.1242/dev.036335"
+  }
+}

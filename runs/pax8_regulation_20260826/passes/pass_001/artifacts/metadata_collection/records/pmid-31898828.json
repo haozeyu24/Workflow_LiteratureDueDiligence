@@ -1,0 +1,36 @@
+{
+  "paper_id": "pmid-31898828",
+  "pmid": "31898828",
+  "doi": "10.1002/humu.23969",
+  "title": "Loss of RAD9B impairs early neural development and contributes to the risk for human spina bifida.",
+  "abstract": "DNA damage response (DDR) genes orchestrating the network of DNA repair, cell cycle control, are essential for the rapid proliferation of neural progenitor cells. To date, the potential association between specific DDR genes and the risk of human neural tube defects (NTDs) has not been investigated. Using whole-genome sequencing and targeted sequencing, we identified significant enrichment of rare deleterious RAD9B variants in spina bifida cases compared to controls (8/409 vs. 0/298; p\u2009=\u2009.0241). Among the eight identified variants, the two frameshift mutants and p.Gln146Glu affected RAD9B nuclear localization. The two frameshift mutants also decreased the protein level of RAD9B. p.Ser354Gly, as well as the two frameshifts, affected the cell proliferation rate. Finally, p.Ser354Gly, p.Ser10Gly, p.Ile112Met, p.Gln146Glu, and the two frameshift variants showed a decreased ability for activating JNK phosphorylation. RAD9B knockdowns in human embryonic stem cells profoundly affected early differentiation through impairing PAX6 and OCT4 expression. RAD9B deficiency impeded in vitro formation of neural organoids, a 3D cell culture model for human neural development. Furthermore, the RNA-seq data revealed that loss of RAD9B dysregulates cell adhesion genes during organoid formation. These results represent the first demonstration of a DDR gene as an NTD risk factor in humans.",
+  "year": "2020",
+  "journal": "Human mutation",
+  "authors": [
+    "Cao X",
+    "Tian T",
+    "Steele JW",
+    "Cabrera RM",
+    "Aguiar-Pulido V",
+    "Wadhwa S",
+    "Bhavani N",
+    "Bi P",
+    "Gargurevich NH",
+    "Hoffman EN",
+    "Cai CQ",
+    "Marini NJ",
+    "Yang W",
+    "Shaw GM",
+    "Ross ME",
+    "Finnell RH",
+    "Lei Y"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/31898828/",
+    "publisher": "https://doi.org/10.1002/humu.23969"
+  }
+}

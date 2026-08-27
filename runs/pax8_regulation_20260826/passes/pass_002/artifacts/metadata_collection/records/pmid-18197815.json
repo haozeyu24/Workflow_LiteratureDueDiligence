@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-18197815",
+  "pmid": "18197815",
+  "doi": "10.1615/critrevimmunol.v27.i4.60",
+  "title": "Regulation of aicda expression and AID activity: relevance to somatic hypermutation and class switch DNA recombination.",
+  "abstract": "Expression and activity of activation-induced cytidine deaminase (AID) encoded by the aicda gene are essential for immunoglobulin (Ig) gene somatic hypermutation (SHM) and class switch DNA recombination (CSR). SHM and CSR unfold, in general, in germinal centers and/are central to the maturation of effective antibody responses. AID expression is induced by activated B-cell CD40 signaling, which is critical for the germinal center reaction, and is further enhanced by other stimuli, including interleukin-4 (IL-4) secreted from CD4+ T cells or Toll-like receptor (TLR)-activating bacterial and/or viral molecules. Integration of different intracellular signal transduction pathways, as activated by these stimuli, leads to a dynamic aicda-regulating program, which involves both positively acting trans-factors, such as Pax5, HoxC4, E47, and Irf8, and negative modulators, such as Blimp1 and Id2, to restrict aicda expression primarily to germinal center B cells. The phosphatidylinositol 3-kinase (PI 3-K), which functions downstream of activated B-cell receptor (BCR) signaling, likely plays an important role in triggering the downregulation of aicda expression in postgerminal center B cells and throughout plasmacytoid differentiation. In B cells undergoing SHM and CSR, AID activity, and, possibly, AID targeting to the Ig locus are regulated at a posttranslational level, including AID dimerization/oligomerization, nuclear/cytoplasmic AID translocation, and phosphorylation of the AID Ser38 residue by protein kinase A (PKA). Here, we discuss the role of B-cell activation signals, transcription regulation programs, and posttranslational modifications in controlling aicda expression and AID activity, thereby delineating an integrated model of modulation of SHM and CSR in the germinal center reaction.",
+  "year": "2007",
+  "journal": "Critical reviews in immunology",
+  "authors": [
+    "Xu Z",
+    "Pone EJ",
+    "Al-Qahtani A",
+    "Park SR",
+    "Zan H",
+    "Casali P"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/18197815/",
+    "publisher": "https://doi.org/10.1615/critrevimmunol.v27.i4.60"
+  }
+}

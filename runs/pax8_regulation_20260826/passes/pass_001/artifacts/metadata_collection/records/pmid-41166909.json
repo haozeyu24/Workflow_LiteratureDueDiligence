@@ -1,0 +1,31 @@
+{
+  "paper_id": "pmid-41166909",
+  "pmid": "41166909",
+  "doi": "10.1016/j.phymed.2025.157445",
+  "title": "Betulin, an active component from Chinese herb birch bark, suppresses tumor angiogenesis and tumor growth by inhibiting the PAX2/VEGF-A/VEGR2 signaling pathway in non-small cell lung cancer.",
+  "abstract": "INTRODUCTION: Angiogenesis inhibition is an effective therapeutic strategy for patients with non-small cell lung cancer (NSCLC). Natural products serve as critical sources of antiangiogenic inhibitors. Betula platyphylla Suk (birch bark) is a Chinese medicine that can clear heat, detoxify, relieve cough and resolve phlegm. This herb has attracted increasing attention because of its antitumor effects. Betulin is a crucial active ingredient of Betula platyphylla Suk and has been shown to have antitumor effects through the induction of apoptosis and ferroptosis. However, its antiangiogenic effect remains unclear.\n\nOBJECTIVES: This study aimed to investigate the antiangiogenic of betulin in NSCLC and elucidate the underlying mechanism.\n\nMETHODS: Endothelial cell, pericyte, aortic ring, chorioallantoic membrane, zebrafish and xenograft models were used to evaluate the antiangiogenic effect of betulin. RNA- sequencing, RT-qPCR, and western blotting were employed for target validation. RNA stability assays, methylated RNA immunoprecipitation-PCR, luciferase reporter assays and chromatin immunoprecipitation assays were performed to explore the underlying mechanism.\n\nRESULTS: Betulin obviously suppressed tumor angiogenesis and tumor growth in both lung adenocarcinoma and lung squamous carcinoma models. Further research revealed that betulin suppressed angiogenesis by inhibiting N6-methyladenosine of paired box 2 (PAX2) mRNA and subsequently reducing PAX2 mRNA stability. Betulin also dissociated PAX2 from the VEGF-A promoter and subsequently reduced VEGF-A expression, leading to the blockade of VEGF-A/VEGFR2 signaling.\n\nCONCLUSION: These results suggest that betulin is a novel angiogenesis inhibitor with potential clinical application for NSCLC therapy. Our study also suggested that PAX2 is a potential therapeutic target for tumor angiogenesis.",
+  "year": "2025",
+  "journal": "Phytomedicine : international journal of phytotherapy and phytopharmacology",
+  "authors": [
+    "Li Z",
+    "Huang M",
+    "Wang J",
+    "Lin J",
+    "Wu Q",
+    "Wang P",
+    "Zhuo S",
+    "Zhang W",
+    "Liu Z",
+    "Deng Q",
+    "Yu X",
+    "Lei X"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/41166909/",
+    "publisher": "https://doi.org/10.1016/j.phymed.2025.157445"
+  }
+}

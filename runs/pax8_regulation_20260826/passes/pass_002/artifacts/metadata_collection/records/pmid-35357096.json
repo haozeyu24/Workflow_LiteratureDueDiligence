@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-35357096",
+  "pmid": "35357096",
+  "doi": "10.1515/hsz-2022-0103",
+  "title": "PHF20L1 mediates PAX2 expression to promote angiogenesis and liver metastasis in colorectal cancer through regulating HIC1.",
+  "abstract": "Colorectal cancer (CRC) is a common cancer with poor prognosis. The research was designed to explore the role of PHF20L1 in angiogenesis and liver metastasis in CRC and discuss its molecular mechanism. Expression levels of PHF20L1, HIC1 and PAX2 in CRC tissues collected from CRC patients were detected using qRT-PCR, WB and immunohistochemical staining. CRC cells were transfected with PHF20L1, HIC1 and PAX2 overexpression or knockdown vectors and the proliferation, apoptosis, EMT and angiogenesis of the cells were determined. WB was utilized to assess protein levels of PHF20L1, HIC1, PAX2 and angiogenesis factor (ANGPT2, FGF1, PDGFA and VEGFA). The role of PHF20L1 regulating tumor formation and liver metastasis in vivo was detected as well. PHF20L1 was observed to express at a high level of CRC tissues. PHF20L1 promoted CRC cell growth, EMT and angiogenesis, and inhibited cell apoptosis. Knockdown of PHF20L1 had opposite effects on CRC cells. PHF20L1 negatively regulated HIC1 expression to promote PAX2 expression, thus promoting CRC cell progression. The in vivo results showed that PHF20L1 contributed to tumor formation and liver metastasis. PHF20L1 increases PAX2 expression to promote angiogenesis in CRC by inhibiting HIC1, therefore facilitating CRC cell EMT and liver metastasis. Our finding may provide a novel insight for CRC pathogenesis.",
+  "year": "2022",
+  "journal": "Biological chemistry",
+  "authors": [
+    "Zhu QC",
+    "Sun JH",
+    "Liang MJ",
+    "Zhang ZY",
+    "Xia Y"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/35357096/",
+    "publisher": "https://doi.org/10.1515/hsz-2022-0103"
+  }
+}

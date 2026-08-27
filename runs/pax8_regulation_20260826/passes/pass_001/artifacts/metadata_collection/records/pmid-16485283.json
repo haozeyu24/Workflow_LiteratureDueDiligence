@@ -1,0 +1,28 @@
+{
+  "paper_id": "pmid-16485283",
+  "pmid": "16485283",
+  "doi": "10.1002/cne.20880",
+  "title": "Visual cycle protein RPE65 persists in new retinal cells during retinal regeneration of adult newt.",
+  "abstract": "Adult newts can regenerate their entire retina through transdifferentiation of the retinal pigment epithelium (RPE). The objective of this study was to redescribe the retina regeneration process by means of modern biological techniques. We report two different antibodies (RPE-No.112 and MAB5428) that recognize the newt homolog of RPE65, which is involved in the visual cycle and exclusively label the RPE cell-layer in the adult newt eye. We analyzed the process of retinal regeneration by immunohistochemistry and immunoblotting and propose that this process should be divided into nine stages. We found that the RPE65 protein is present in the RPE-derived new retinal rudiment at 14 days postoperative (po) and in the regenerating retinas at the 3-4 cell stage (19 days po). These observations suggest that certain characteristics of RPE cells overlap with those of retinal stem/progenitor cells during the period of transdifferentiation. However, RPE65 protein was not detected in either retinal stem/progenitor cells in the ciliary marginal zone (CMZ) of adult eyes or in neuroepithelium present during retina development, where it was first detected in differentiated RPE. Moreover, the gene expression of RPE65 was drastically downregulated in the early phase of transdifferentiation (by 10 days po), while those of Connexin43 and Pax-6, both expressed in regenerating retinas, were differently upregulated. These observations suggest that the RPE65 protein in the RPE-derived retinal rudiment may represent the remainder after protein degradation or discharge rather than newly synthesized protein.",
+  "year": "2006",
+  "journal": "The Journal of comparative neurology",
+  "authors": [
+    "Chiba C",
+    "Hoshino A",
+    "Nakamura K",
+    "Susaki K",
+    "Yamano Y",
+    "Kaneko Y",
+    "Kuwata O",
+    "Maruo F",
+    "Saito T"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/16485283/",
+    "publisher": "https://doi.org/10.1002/cne.20880"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-40138919",
+  "pmid": "40138919",
+  "doi": "10.1016/j.biopha.2025.118008",
+  "title": "Excess heme orchestrates progesterone resistance in uterine endometrial cancer through macrophage polarization and the IL-33/PAX8/PGR axis.",
+  "abstract": "Progesterone is an important drug for hormone therapy in uterine endometrial cancer (UEC). However, the therapeutic efficacy of progestogen is often limited by resistance, and the underlying mechanism remains unknown. In this study, we observed heme metabolism is more active in progesterone-insensitive patients. Heme induced macrophages (M\u03c6s) bias towards M2-like phenotype and downregulated the expression of IL-33, resulting in increased levels of Paired box gene 8 (PAX8). Further study showed PAX8 inhibited the transcriptional activity of PGR by binding to the PGR promoter region. In addition, PGR can also act as a transcriptional factor to regulate the transcription of autophagy-related gene 7 (ATG). Low expression of PGR decreases the transcriptional activity of ATG7 promoter, which decreases cell autophagy and promotes the progression of UEC. Overall, this study reveals the important interaction between heme metabolism, IL-33 and PGR in progesterone-insensitive UEC, and is promising to provide new therapeutic targets for overcoming progesterone resistance.",
+  "year": "2025",
+  "journal": "Biomedicine & pharmacotherapy = Biomedecine & pharmacotherapie",
+  "authors": [
+    "Lu JJ",
+    "Ning Y",
+    "Hu WT",
+    "Sheng YR",
+    "Liu YK",
+    "Xie F",
+    "Li MQ",
+    "Zhu XY"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (stability[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR lysosome[Title/Abstract] OR autophagy[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/40138919/",
+    "publisher": "https://doi.org/10.1016/j.biopha.2025.118008"
+  }
+}

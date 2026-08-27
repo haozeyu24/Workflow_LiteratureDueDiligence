@@ -1,0 +1,21 @@
+{
+  "paper_id": "pmid-17934490",
+  "pmid": "17934490",
+  "doi": "10.1038/sj.onc.1210766",
+  "title": "Mechanisms of transcription factor deregulation in lymphoid cell transformation.",
+  "abstract": "The most frequent targets of genetic alterations in human lymphoid leukemias are transcription factor genes with essential functions in blood cell development. TAL1, LYL1, HOX11 and other transcription factors essential for normal hematopoiesis are often misexpressed in the thymus in T-cell acute lymphoblastic leukemia (T-ALL), leading to differentiation arrest and cell transformation. Recent advances in the ability to assess DNA copy number have led to the discovery that the MYB transcription factor oncogene is tandemly duplicated in T-ALL. The NOTCH1 gene, which is essential for key embryonic cell-fate decisions in multicellular organisms, was found to be activated by mutation in a large percentage of T-ALL patients. The gene encoding the FBW7 protein ubiquitin ligase, which regulates the turnover of the intracellular form of NOTCH (ICN), is also mutated in T-ALL, resulting in stabilization of the ICN and activation of the NOTCH signaling pathway. In mature B-lineage ALL and Burkitt lymphoma, the MYC transcription factor oncogene is overexpressed due to translocation into the IG locus. PAX5, a transcription factor essential for B-lineage commitment, is inactivated in 32% of cases of B-progenitor ALL. Translocations resulting in oncogenic fusion transcription factors also occur frequently in this form of ALL. The most frequent transcription factor chimeric fusion, TEL-AML1, is an initiating event in B-progenitor ALL that acts by repressing transcription. Therefore, deregulated transcription and its consequent effects on key developmental pathways play a major role in the molecular pathogenesis of lymphoid malignancy. Once the full complement of cooperating mutations in transformed B- and T-progenitor cells is known, and the deregulated downstream pathways have been elucidated, it will be possible to identify vulnerable components and to target them with small-molecule inhibitors.",
+  "year": "2007",
+  "journal": "Oncogene",
+  "authors": [
+    "O'Neil J",
+    "Look AT"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/17934490/",
+    "publisher": "https://doi.org/10.1038/sj.onc.1210766"
+  }
+}

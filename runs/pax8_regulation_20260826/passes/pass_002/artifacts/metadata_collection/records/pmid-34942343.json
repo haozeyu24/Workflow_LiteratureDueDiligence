@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-34942343",
+  "pmid": "34942343",
+  "doi": "10.1016/j.ntt.2021.107057",
+  "title": "Antiepileptic drugs lamotrigine and valproate differentially affect neuronal maturation in the developing chick embryo, yet with PAX6 as a potential common mediator.",
+  "abstract": "Exposing the immature nervous system to specific antiepileptic drugs (AEDs) during pregnancy is linked to neurodevelopmental disorders such as autism spectrum disorder (ASD). Newer AEDs like lamotrigine (LTG) are hailed as safer, but recent epidemiological data suggest that even LTG carries a risk, although much lower than that associated with valproic acid (VPA), an older AED, which is also known to cause morphological alterations in the developing brain. Increasing evidence highlights cerebellar abnormalities as important in ASD pathophysiology. Transcription factor PAX6 is a key activity-dependent mediator and regulates crucial processes during cerebellar development. The chicken cerebellum recapitulates important characteristics of human cerebellar development, and may thus be suitable for the assessment of interventions aiming to modify maturation and cerebellar development. In the present study, exposure of chicken on embryonic day 16 (E16) to LTG or VPA resulted in decreased cerebellar mass and level of proliferating nuclear cell antigen (PCNA) for clinically relevant concentrations of VPA. However, both AEDs reduced cerebellar protein levels of PAX6 and MMP-9 at E17. Furthermore, PAX6 immunohistochemical staining of coronal sections of chicken cerebellum showed a significant reduction in PAX6-positive cell density and changes in cerebellar cortex thickness, mostly caused by the change in IGL-layer thickness. In conclusion, prenatal exposure to LTG or VPA provoked differential maturational changes in the developing cerebellum that may reflect some of the underlying molecular mechanisms for the observed human ASD pathology after AEDs exposure during pregnancy.",
+  "year": "2022",
+  "journal": "Neurotoxicology and teratology",
+  "authors": [
+    "Zosen D",
+    "Austdal LPE",
+    "Bj\u00f8rnstad S",
+    "Lumor JS",
+    "Paulsen RE"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/34942343/",
+    "publisher": "https://doi.org/10.1016/j.ntt.2021.107057"
+  }
+}

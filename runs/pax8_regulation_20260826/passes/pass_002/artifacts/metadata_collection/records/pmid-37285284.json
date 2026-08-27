@@ -1,0 +1,28 @@
+{
+  "paper_id": "pmid-37285284",
+  "pmid": "37285284",
+  "doi": "10.7554/eLife.84570",
+  "title": "Inhibition of type I PRMTs reforms muscle stem cell identity enhancing their therapeutic capacity.",
+  "abstract": "In skeletal muscle, muscle stem cells (MuSC) are the main cells responsible for regeneration upon injury. In diseased skeletal muscle, it would be therapeutically advantageous to replace defective MuSCs, or rejuvenate them with drugs to enhance their self-renewal and ensure long-term regenerative potential. One limitation of the replacement approach has been the inability to efficiently expand MuSCs ex vivo, while maintaining their stemness and engraftment abilities. Herein, we show that inhibition of type I protein arginine methyltransferases (PRMTs) with MS023 increases the proliferative capacity of ex vivo cultured MuSCs. Single cell RNA sequencing (scRNAseq) of ex vivo cultured MuSCs revealed the emergence of subpopulations in MS023-treated cells which are defined by elevated Pax7 expression and markers of MuSC quiescence, both features of enhanced self-renewal. Furthermore, the scRNAseq identified MS023-specific subpopulations to be metabolically altered with upregulated glycolysis and oxidative phosphorylation (OxPhos). Transplantation of MuSCs treated with MS023 had a better ability to repopulate the MuSC niche and contributed efficiently to muscle regeneration following injury. Interestingly, the preclinical mouse model of Duchenne muscular dystrophy had increased grip strength with MS023 treatment. Our findings show that inhibition of type I PRMTs increased the proliferation capabilities of MuSCs with altered cellular metabolism, while maintaining their stem-like properties such as self-renewal and engraftment potential.",
+  "year": "2023",
+  "journal": "eLife",
+  "authors": [
+    "Dominici C",
+    "Villarreal OD",
+    "Dort J",
+    "Heckel E",
+    "Wang YC",
+    "Ragoussis I",
+    "Joyal JS",
+    "Dumont N",
+    "Richard S"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/37285284/",
+    "publisher": "https://doi.org/10.7554/eLife.84570"
+  }
+}

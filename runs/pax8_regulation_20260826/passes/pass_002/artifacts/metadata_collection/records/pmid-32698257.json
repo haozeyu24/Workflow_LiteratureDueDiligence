@@ -1,0 +1,20 @@
+{
+  "paper_id": "pmid-32698257",
+  "pmid": "32698257",
+  "doi": "10.20463/pan.2020.0010",
+  "title": "Protective effects of endurance exercise on skeletal muscle remodeling against doxorubicin-induced myotoxicity in mice.",
+  "abstract": "PURPOSE: Doxorubicin (DOX) is a potent anti-cancer drug that appears to have severe myotoxicity due to accumulation. The skeletal muscle has a regeneration capacity through satellite cell activation when exposed to extracellular stimulus or damage. Endurance exercise (EXE) is a therapeutic strategy that improves pathological features and contributes to muscle homeostasis. Thus, this study investigated the effect of EXE training in mitigating chronic DOX-induced myotoxicity.\n\nMETHODS: Male C57BL/6J mice were housed and allowed to acclimatize with free access to food and water. All the mice were randomly divided into four groups: sedentary control (CON, n=9), exercise training (EXE, n=9), doxorubicin treatment (DOX, n=9), doxorubicin treatment and exercise training (DOX+EXE, n=9) groups. The animals were intraperitoneally injected with 5 mg/kg/week of DOX treatment for 4 weeks, and EXE training was initiated for treadmill adaptation for 1 week and then performed for 4 weeks. Both sides of the soleus (SOL) muscle tissues were dissected and weighed after 24 hours of the last training sessions.\n\nRESULTS: DOX chemotherapy induced an abnormal myofiber's phenotype and transition of myosin heavy chain (MHC) isoforms. The paired box 7 (PAX7) and myoblast determination protein 1 (MYOD) protein levels were triggered by DOX, while no alterations were shown for the myogenin (MYOG). DOX remarkably impaired the a-actinin (ACTN) protein, but the EXE training seems to repair it. DOX-induced myotoxicity stimulated the expression of the forkhead box O3 (FOXO3a) protein, which was accurately controlled and adjusted by the EXE training. However, the FOXO3a-mediated downstream markers were not associated with DOX and EXE.\n\nCONCLUSION: EXE postconditioning provides protective effects against chronic DOX-induced myotoxicity, and should be recommended to alleviate cancer chemotherapy-induced late-onset myotoxicity.",
+  "year": "2020",
+  "journal": "Physical activity and nutrition",
+  "authors": [
+    "Kwon I"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/32698257/",
+    "publisher": "https://doi.org/10.20463/pan.2020.0010"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-27573479",
+  "pmid": "27573479",
+  "doi": "10.1038/srep31949",
+  "title": "Noggin inactivation affects the number and differentiation potential of muscle progenitor cells in vivo.",
+  "abstract": "Inactivation of Noggin, a secreted antagonist of Bone Morphogenetic Proteins (BMPs), in mice leads, among others, to severe malformations of the appendicular skeleton and defective skeletal muscle fibers. To determine the molecular basis of the phenotype, we carried out a histomorphological and molecular analysis of developing muscles Noggin(-/-) mice. We show that in 18.5\u2009dpc embryos there is a marked reduction in muscle fiber size and a failure of nuclei migration towards the cell membrane. Molecularly, the absence of Noggin results in an increased BMP signaling in muscle tissue as shown by the increase in SMAD1/5/8 phosphorylation, concomitant with the induction of BMP target genes such as Id1, 2, 3 as well as Msx1. Finally, upon removal of Noggin, the number of mesenchymal Pax7(+) muscle precursor cells is reduced and they are more prone to differentiate into adipocytes in vitro. Thus, our results highlight the importance of Noggin/BMP balance for myogenic commitment of early fetal progenitor cells.",
+  "year": "2016",
+  "journal": "Scientific reports",
+  "authors": [
+    "Costamagna D",
+    "Mommaerts H",
+    "Sampaolesi M",
+    "Tylzanowski P"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/27573479/",
+    "publisher": "https://doi.org/10.1038/srep31949"
+  }
+}

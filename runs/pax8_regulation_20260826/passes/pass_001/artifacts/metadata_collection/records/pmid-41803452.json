@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-41803452",
+  "pmid": "41803452",
+  "doi": "10.1038/s12276-026-01700-8",
+  "title": "Retraction Note: PAX8-AS1 knockdown facilitates cell growth and inactivates autophagy in osteoblasts via the miR-1252-5p/GNB1 axis in osteoporosis.",
+  "abstract": "",
+  "year": "2026",
+  "journal": "Experimental & molecular medicine",
+  "authors": [
+    "Huang C",
+    "Li R",
+    "Yang C",
+    "Ding R",
+    "Li Q",
+    "Xie D",
+    "Zhang R",
+    "Qiu Y"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (stability[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR lysosome[Title/Abstract] OR autophagy[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/41803452/",
+    "publisher": "https://doi.org/10.1038/s12276-026-01700-8"
+  }
+}

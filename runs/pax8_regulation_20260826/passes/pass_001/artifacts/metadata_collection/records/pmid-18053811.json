@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-18053811",
+  "pmid": "18053811",
+  "doi": "10.1016/j.febslet.2007.11.056",
+  "title": "Dissection of the functional interaction between p53 and the embryonic proto-oncoprotein PAX3.",
+  "abstract": "Studies from murine embryogenesis and cancer cells derived from human melanomas have identified a critical role for the transcription factor PAX3 in the suppression of p53 protein accumulation and p53-dependent apoptosis. Here we show, using a well-defined over-expression system, that PAX3 suppresses p53-dependent transcription from promoters of p53-responsive genes, notably BAX and HDM2-P2, and reduces p53 protein abundance by promoting its degradation. We define the functional domains of PAX3 required for this activity, and furthermore present evidence that PAX3-dependent inhibition of p53 is independent of binding of the N-terminal domain of p53 to HDM2, the primary negative regulator of cellular p53 activity.",
+  "year": "2007",
+  "journal": "FEBS letters",
+  "authors": [
+    "Underwood TJ",
+    "Amin J",
+    "Lillycrop KA",
+    "Blaydes JP"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/18053811/",
+    "publisher": "https://doi.org/10.1016/j.febslet.2007.11.056"
+  }
+}

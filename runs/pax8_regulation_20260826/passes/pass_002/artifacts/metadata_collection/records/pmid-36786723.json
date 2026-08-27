@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-36786723",
+  "pmid": "36786723",
+  "doi": "10.1096/fj.202202065RR",
+  "title": "Acute hypoxia attenuates resistance exercise-induced ribosome signaling but does not impact satellite cell pool expansion in human skeletal muscle.",
+  "abstract": "Cumulative evidence supports the hypothesis that hypoxia acts as a regulator of muscle mass. However, the underlying molecular mechanisms remain incompletely understood, particularly in human muscle. Here we examined the effect of hypoxia on signaling pathways related to ribosome biogenesis and myogenic activity following an acute bout of resistance exercise. We also investigated whether hypoxia influenced the satellite cell response to resistance exercise. Employing a randomized, crossover design, eight men performed resistance exercise in normoxia (FiO2 21%) or normobaric hypoxia (FiO2 12%). Muscle biopsies were collected in a time-course manner (before, 0, 90, 180\u2009min and 24\u2009h after exercise) and were analyzed with respect to cell signaling, gene expression and satellite cell content using immunoblotting, RT-qPCR and immunofluorescence, respectively. In normoxia, resistance exercise increased the phosphorylation of RPS6, TIF-1A and UBF above resting levels. Hypoxia reduced the phosphorylation of these targets by ~37%, ~43% and\u2009~\u200967% throughout the recovery period, respectively (p\u2009<\u2009.05 vs. normoxia). Resistance exercise also increased 45\u2009S pre-rRNA expression and mRNA expression of c-Myc, Pol I and TAF-1A above resting levels, but no differences were observed between conditions. Similarly, resistance exercise increased mRNA expression of myogenic regulatory factors throughout the recovery period and Pax7+ cells were elevated 24\u2009h following exercise in mixed and type II muscle fibers, with no differences observed between normoxia and hypoxia. In conclusion, acute hypoxia attenuates ribosome signaling, but does not impact satellite cell pool expansion and myogenic gene expression following a bout of resistance exercise in human skeletal muscle.",
+  "year": "2023",
+  "journal": "FASEB journal : official publication of the Federation of American Societies for Experimental Biology",
+  "authors": [
+    "Horwath O",
+    "Nordstr\u00f6m F",
+    "von Walden F",
+    "Apr\u00f3 W",
+    "Moberg M"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/36786723/",
+    "publisher": "https://doi.org/10.1096/fj.202202065RR"
+  }
+}

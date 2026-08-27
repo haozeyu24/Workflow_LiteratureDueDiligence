@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-38776375",
+  "pmid": "38776375",
+  "doi": "10.1073/pnas.2314619121",
+  "title": "SUMO-specific protease 1 regulates germinal center B cell response through deSUMOylation of PAX5.",
+  "abstract": "Humoral immunity depends on the germinal center (GC) reaction where B cells are tightly controlled for class-switch recombination and somatic hypermutation and finally generated into plasma and memory B cells. However, how protein SUMOylation regulates the process of the GC reaction remains largely unknown. Here, we show that the expression of SUMO-specific protease 1 (SENP1) is up-regulated in GC B cells. Selective ablation of SENP1 in GC B cells results in impaired GC dark and light zone organization and reduced IgG1-switched GC B cells, leading to diminished production of class-switched antibodies with high-affinity in response to a TD antigen challenge. Mechanistically, SENP1 directly binds to Paired box protein 5 (PAX5) to mediate PAX5 deSUMOylation, sustaining PAX5 protein stability to promote the transcription of activation-induced cytidine deaminase. In summary, our study uncovers SUMOylation as an important posttranslational mechanism regulating GC B cell response.",
+  "year": "2024",
+  "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+  "authors": [
+    "Qi J",
+    "Yan L",
+    "Sun J",
+    "Huang C",
+    "Su B",
+    "Cheng J",
+    "Shen L"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/38776375/",
+    "publisher": "https://doi.org/10.1073/pnas.2314619121"
+  }
+}

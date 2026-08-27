@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-39923457",
+  "pmid": "39923457",
+  "doi": "10.1016/j.bbrc.2025.151401",
+  "title": "Research on the mechanism of resistance exercise in promoting glucose metabolic shift to regulate muscle satellite cell proliferation in type 2 diabetic rats.",
+  "abstract": "Skeletal muscle atrophy is a common complication in patients with type 2 diabetes (T2D) and is associated with dysfunction of muscle satellite cells. The activation and proliferation of muscle satellite cells involve a switch in glucose metabolism, which is regulated by driving the acetylation of histones to control the expression of related genes. Studies have confirmed that resistance exercise can improve insulin resistance and activate muscle satellite cells, but the specific molecular mechanisms are not yet clear. This study aims to investigate whether resistance exercise can promote the proliferation of muscle satellite cells and improve muscle atrophy in type 2 diabetic rats by enhancing glucose metabolism in skeletal muscles. A T2D rat model was induced by combining a high-fat diet with streptozotocin injection. After 8 weeks of resistance exercise, the activity of key enzymes (Pyruvate Kinase, Phosphofructokinase, Pyruvate Dehydrogenase) in glucose metabolism in the skeletal muscles of T2D rats significantly increased, the expression of Sirtuin 1 (Sirt1) and Nicotin -amide Phosphoribosyltransferase (Nampt) in the skeletal muscles of the rats decreased, and the expression of acetylation of lysine 16 on histone H4 (H4K16ac) significantly increased, indicating an elevated level of the H4K16ac. The expression of paired box 7 (Pax7) and myogenic differentiation (MyoD) was significantly upregulated, indicating that exercise promoted the proliferation of muscle satellite cells. These results suggest that resistance exercise may promote glucose metabolism in skeletal muscles of T2D rats by regulating the activity of key enzymes in sugar metabolism, further regulating Sirt1-mediated histone H4K16ac, thereby promoting the proliferation of muscle satellite cells and improving muscle atrophy.",
+  "year": "2025",
+  "journal": "Biochemical and biophysical research communications",
+  "authors": [
+    "Li Y",
+    "Xiao N",
+    "Wang Q",
+    "Liu B",
+    "Cui Y",
+    "Liu Y",
+    "Ji Y",
+    "Zheng M"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/39923457/",
+    "publisher": "https://doi.org/10.1016/j.bbrc.2025.151401"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "paper_id": "pmid-26679610",
+  "pmid": "26679610",
+  "doi": "10.1152/japplphysiol.00175.2015",
+  "title": "Acupuncture plus low-frequency electrical stimulation (Acu-LFES) attenuates denervation-induced muscle atrophy.",
+  "abstract": "Muscle wasting occurs in a variety of clinical situations, including denervation. There is no effective pharmacological treatment for muscle wasting. In this study, we used a tibial nerve denervation model to test acupuncture plus low-frequency electric stimulation (Acu-LFES) as a therapeutic strategy for muscle atrophy. Acupuncture needles were connected to an SDZ-II electronic acupuncture device delivering pulses at 20 Hz and 1 mA; the treatment was 15 min daily for 2 wk. Acu-LFES prevented soleus and plantaris muscle weight loss and increased muscle cross-sectional area in denervated mice. The abundances of Pax7, MyoD, myogenin, and embryonic myosin heavy chain were significantly increased by Acu-LFES in both normal and denervated muscle. The number of central nuclei was increased in Acu-LFES-treated muscle fibers. Phosphorylation of Akt was downregulated by denervation leading to a decline in muscle mass; however, Acu-LFES prevented the denervation-induced decline largely by upregulation of the IGF-1 signaling pathway. Acu-LFES reduced the abundance of muscle catabolic proteins forkhead O transcription factor and myostatin, contributing to the attenuated muscle atrophy. Acu-LFES stimulated the expression of macrophage markers (F4/80, IL-1b, and arginase-1) and inflammatory cytokines (IL-6, IFN\u03b3, and TNF\u03b1) in normal and denervated muscle. Acu-LFES also stimulated production of the muscle-specific microRNAs miR-1 and miR-206. We conclude that Acu-LFES is effective in counteracting denervation-induced skeletal muscle atrophy and increasing muscle regeneration. Upregulation of IGF-1, downregulation of myostatin, and alteration of microRNAs contribute to the attenuation of muscle atrophy in denervated mice.",
+  "year": "2016",
+  "journal": "Journal of applied physiology (Bethesda, Md. : 1985)",
+  "authors": [
+    "Su Z",
+    "Hu L",
+    "Cheng J",
+    "Klein JD",
+    "Hassounah F",
+    "Cai H",
+    "Li M",
+    "Wang H",
+    "Wang XH"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/26679610/",
+    "publisher": "https://doi.org/10.1152/japplphysiol.00175.2015"
+  }
+}

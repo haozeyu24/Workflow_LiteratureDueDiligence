@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-25422638",
+  "pmid": "25422638",
+  "doi": "10.4103/1673-5374.143421",
+  "title": "Adenosine monophosphate-activated protein kinase activation enhances embryonic neural stem cell apoptosis in a mouse model of amyotrophic lateral sclerosis.",
+  "abstract": "Alterations in embryonic neural stem cells play crucial roles in the pathogenesis of amyotrophic lateral sclerosis. We hypothesized that embryonic neural stem cells from SOD1(G93A) individuals might be more susceptible to oxidative injury, resulting in a propensity for neurodegeneration at later stages. In this study, embryonic neural stem cells obtained from human superoxide dismutase 1 mutant (SOD1(G93A)) and wild-type (SOD1(WT)) mouse models were exposed to H2O2. We assayed cell viability with mitochondrial succinic dehydrogenase colorimetric reagent, and measured cell apoptosis by flow cytometry. Moreover, we evaluated the expression of the adenosine monophosphate-activated protein kinase (AMPK) \u03b1-subunit, paired box 3 (Pax3) protein, and p53 in western blot analyses. Compared with SOD1(WT) cells, SOD1(G93A) embryonic neural stem cells were more likely to undergo H2O2-induced apoptosis. Phosphorylation of AMPK\u03b1 in SOD1(G93A) cells was higher than that in SOD1(WT) cells. Pax3 expression was inversely correlated with the phosphorylation levels of AMPK\u03b1. p53 protein levels were also correlated with AMPK\u03b1 phosphorylation levels. Compound C, an inhibitor of AMPK\u03b1, attenuated the effects of H2O2. These results suggest that embryonic neural stem cells from SOD1(G93A) mice are more susceptible to apoptosis in the presence of oxidative stress compared with those from wild-type controls, and the effects are mainly mediated by Pax3 and p53 in the AMPK\u03b1 pathway.",
+  "year": "2014",
+  "journal": "Neural regeneration research",
+  "authors": [
+    "Sui Y",
+    "Zhao Z",
+    "Liu R",
+    "Cai B",
+    "Fan D"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/25422638/",
+    "publisher": "https://doi.org/10.4103/1673-5374.143421"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-26196842",
+  "pmid": "26196842",
+  "doi": "10.1097/SHK.0000000000000444",
+  "title": "Skeletal Muscle Loss is Associated with TNF Mediated Insufficient Skeletal Myogenic Activation After Burn.",
+  "abstract": "Muscle loss accompanies severe burn; in this hyper-catabolic state, muscle undergoes atrophy through protein degradation and disuse. Muscle volume is related to the relative rates of cellular degradation and myogenesis. We hypothesize that muscle atrophy after injury is in part because of insufficient myogenesis associated with the hyper-inflammatory response. The aim of this study was to investigate the role of skeletal myogenesis and muscle cell homeostasis in response to severe burn. Twenty-eight male C57BL6 mice received 25% TBSA scald. Gluteus muscle from these animals was analyzed at days 1, 3, 7, and 14 after injury. Six additional animals without burn served as controls. We showed muscle wet weight and protein content decreased at days 3 and 7 after burn, with elevated tumor necrosis factor (TNF) mRNA expression (P\u200a<\u200a0.05). Increased cell death was observed through TUNEL staining, and cleaved caspase-3 levels reached a peak in muscle lysate at day 3 (P\u200a<\u200a0.05). The cell proliferation marker proliferating cell nuclear antigen (PCNA) significantly increased after burn, associated with increased gene and protein expression of myogenesis markers Pax7 and myogenin. Desmin mRNA expression and the ratio of desmin to PCNA protein expression, however, significantly decreased at day 7 (P\u200a<\u200a0.05). In vitro, the ratio of desmin to PCNA protein expression significantly decreased in C2C12 murine myoblasts after TNF-\u03b1 stimulation for 24\u200ah. We showed that severe burn induces both increased cell death and proliferation. Myogenesis, however, does not counterbalance increased cell death after burn. Data suggest insufficient myogenesis might be associated with pro-inflammatory mediator TNF activity.",
+  "year": "2015",
+  "journal": "Shock (Augusta, Ga.)",
+  "authors": [
+    "Song J",
+    "Saeman MR",
+    "De Libero J",
+    "Wolf SE"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/26196842/",
+    "publisher": "https://doi.org/10.1097/SHK.0000000000000444"
+  }
+}

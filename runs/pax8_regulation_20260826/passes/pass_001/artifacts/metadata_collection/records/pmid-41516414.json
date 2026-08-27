@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-41516414",
+  "pmid": "41516414",
+  "doi": "10.3390/ijms27010539",
+  "title": "Dicer Deletion in the Ear Can Cut Most Neurons and Their Innervation of Hair Cells to Project to the Ear and the Brainstem.",
+  "abstract": "Dicer is crucial for the generation of microRNAs (miRNAs), which are essential for regulating gene expression and keeping neuronal health. Dicer's conditional deletion cuts all spiral ganglion neurons but spares a small fraction of vestibular ganglion neurons, innervating the utricle and part of the saccule. Hair cells develop in the utricle, saccule, posterior crista, and the cochlea in Pax2Cre; Dicerf/f. Cochlear hair cells develop at the base and expand the OHC and IHC in the middle, or split into a base/middle and the apex. In contrast, Foxg1Cre; Dicerf/f cuts all canal cristae and cochlea hair cells, leaving a reduced utricle and an exceedingly small saccule. Likewise, Foxg1Cre; Gata3f/f shows no cochlear hair cells and is absent in the horizontal and reduced in the posterior crista. In contrast, the utricle, saccule, and anterior crista are nearly normal, underscoring the intricate regulatory networks involved in hair cell and neuronal development. The central projections have been described as the topology of various null deletions. Still, without spiral ganglion neurons, fibers from Dicer null mice navigate to the cochlear nuclei and expand into the vestibular nuclei to innervate the caudal brainstem. Beyond a ramification around the CN, no fibers expand to reach the cerebellum, likely due to Pax2 and Foxg1 that cut these neurons. Genetic alterations, such as Dicer deletion, can lead to hearing loss and impairments in auditory signal processing, illustrating the critical role of microRNAs in the development and function of auditory and vestibular neurons. Further studies on this topic could help in understanding potential therapeutic targets for hearing loss associated with neuronal degradation of miRNA.",
+  "year": "2026",
+  "journal": "International journal of molecular sciences",
+  "authors": [
+    "Yamoah EN",
+    "Pavlinkova G",
+    "Lee JH",
+    "Kersigo J",
+    "Pierce ML",
+    "Fritzsch B"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/41516414/",
+    "publisher": "https://doi.org/10.3390/ijms27010539"
+  }
+}

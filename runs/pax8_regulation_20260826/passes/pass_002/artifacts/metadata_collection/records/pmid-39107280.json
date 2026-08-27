@@ -1,0 +1,49 @@
+{
+  "paper_id": "pmid-39107280",
+  "pmid": "39107280",
+  "doi": "10.1038/s41420-024-02115-y",
+  "title": "HDAC3 genetic and pharmacologic inhibition radiosensitizes fusion positive rhabdomyosarcoma by promoting DNA double-strand breaks.",
+  "abstract": "Radiotherapy (RT) plays a critical role in the management of rhabdomyosarcoma (RMS), the prevalent soft tissue sarcoma in childhood. The high risk PAX3-FOXO1 fusion-positive subtype (FP-RMS) is often resistant to RT. We have recently demonstrated that inhibition of class-I histone deacetylases (HDACs) radiosensitizes FP-RMS both in vitro and in vivo. However, HDAC inhibitors exhibited limited success on solid tumors in human clinical trials, at least in part due to the presence of off-target effects. Hence, identifying specific HDAC isoforms that can be targeted to radiosensitize FP-RMS is imperative. We, here, found that only HDAC3 silencing, among all class-I HDACs screened by siRNA, radiosensitizes FP-RMS cells by inhibiting colony formation. Thus, we dissected the effects of HDAC3 depletion using CRISPR/Cas9-dependent HDAC3 knock-out (KO) in FP-RMS cells, which resulted in Endoplasmatic Reticulum Stress activation, ERK inactivation, PARP1- and caspase-dependent apoptosis and reduced stemness when combined with irradiation compared to single treatments. HDAC3 loss-of-function increased DNA damage in irradiated cells augmenting H2AX phosphorylation and DNA double-strand breaks (DSBs) and counteracting irradiation-dependent activation of ATM and DNA-Pkcs as well as Rad51 protein induction. Moreover, HDAC3 depletion hampers FP-RMS tumor growth in vivo and maximally inhibits the growth of irradiated tumors compared to single approaches. We, then, developed a new HDAC3 inhibitor, MC4448, which showed specific cell anti-tumor effects and mirrors the radiosensitizing effects of HDAC3 depletion in vitro synergizing with ERKs inhibition. Overall, our findings dissect the pro-survival role of HDAC3 in FP-RMS and suggest HDAC3 genetic or pharmacologic inhibition as a new promising strategy to overcome radioresistance in this tumor.",
+  "year": "2024",
+  "journal": "Cell death discovery",
+  "authors": [
+    "Cassandri M",
+    "Porrazzo A",
+    "Pomella S",
+    "Noce B",
+    "Zwergel C",
+    "Aiello FA",
+    "Vulcano F",
+    "Milazzo L",
+    "Camero S",
+    "Pajalunga D",
+    "Spada M",
+    "Manzi V",
+    "Gravina GL",
+    "Codenotti S",
+    "Piccione M",
+    "Tomaciello M",
+    "Signore M",
+    "Barillari G",
+    "Marchese C",
+    "Fanzani A",
+    "De Angelis B",
+    "Quintarelli C",
+    "Vakoc CR",
+    "Chen EY",
+    "Megiorni F",
+    "Locatelli F",
+    "Valente S",
+    "Mai A",
+    "Rota R",
+    "Marampon F"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/39107280/",
+    "publisher": "https://doi.org/10.1038/s41420-024-02115-y"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "paper_id": "pmid-18497074",
+  "pmid": "18497074",
+  "doi": "10.1007/978-0-387-69080-3_49",
+  "title": "Proteomic analysis of autocrine/paracrine effects of human growth hormone in human mammary carcinoma cells.",
+  "abstract": "Human growth hormone (hGH) is expressed by mammary epithelial cells and associated with proliferative disorders of the human breast. Our goal is to characterize the paracrine effects of hGH on morphological and functional changes of mammary carcinoma cells using MCF7 cells stably transfected with the hGH gene (MCFhGH). To identify the molecular actors involved in autocrine hGH-induced cell proliferation, we have used a protein chip technology using a commercial antibody microarray. The results enabled us to qualitatively characterize MCF-hGH cell's proteome from a panel of 500 proteins. Statistical analysis of variations in protein levels between the two cell lines did not highlight any significant differences. Thus, we concluded that variations in MCF-hGH proteome are more likely to reside in the activation status rather than drastic variations in the expression level of the 500 spotted proteins. To test this hypothesis, we confronted the protein chip result to the study of the regulation of the transcriptional factor Pax (Paired-box)-5 whose expression was not found to be altered on the protein chip. Surprisingly, we found that autocrine production of hGH in MCF7 cells was associated with a strong nuclear accumulation of Pax5 in a JAK2-dependent manner associated with an increase in Pax5-DNA binding activity. Our work indicates that subtle changes mediated by Pax5 are responsible for autocrine hGH-induced cell proliferation.",
+  "year": "2008",
+  "journal": "Advances in experimental medicine and biology",
+  "authors": [
+    "Vouyovitch CM",
+    "Vidal L",
+    "Borges S",
+    "Raccurt M",
+    "Arnould C",
+    "Chiesa J",
+    "Lobie PE",
+    "Lachuer J",
+    "Mertani HC"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/18497074/",
+    "publisher": "https://doi.org/10.1007/978-0-387-69080-3_49"
+  }
+}

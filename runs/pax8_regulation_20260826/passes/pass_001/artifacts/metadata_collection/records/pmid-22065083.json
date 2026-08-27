@@ -1,0 +1,50 @@
+{
+  "paper_id": "pmid-22065083",
+  "pmid": "22065083",
+  "doi": "10.1158/1078-0432.CCR-11-1981",
+  "title": "Antitumor activity of sustained N-myc reduction in rhabdomyosarcomas and transcriptional block by antigene therapy.",
+  "abstract": "PURPOSE: Rhabdomyosarcomas are a major cause of cancer death in children, described with MYCN amplification and, in the alveolar subtype, transcription driven by the PAX3-FOXO1 fusion protein. Our aim was to determine the prevalence of N-Myc protein expression and the potential therapeutic effects of reducing expression in rhabdomyosarcomas, including use of an antigene strategy that inhibits transcription.\n\nEXPERIMENTAL DESIGN: Protein expression was assessed by immunohistochemistry. MYCN expression was reduced in representative cell lines by RNA interference and an antigene peptide nucleic acid (PNA) oligonucleotide conjugated to a nuclear localization signal peptide. Associated gene expression changes, cell viability, and apoptosis were analyzed in vitro. As a paradigm for antigene therapy, the effects of systemic treatment of mice with rhabdomyosarcoma cell line xenografts were determined.\n\nRESULTS: High N-Myc levels were significantly associated with genomic amplification, presence of the PAX3/7-FOXO1 fusion genes, and proliferative capacity. Sustained reduction of N-Myc levels in all rhabdomyosarcoma cell lines that express the protein decreased cell proliferation and increased apoptosis. Positive feedback was shown to regulate PAX3-FOXO1 and N-Myc levels in the alveolar subtype that critically decrease PAX3-FOXO1 levels on reducing N-Myc. Pharmacologic systemic administration of the antigene PNA can eliminate alveolar rhabdomyosarcoma xenografts in mice, without relapse or toxicity.\n\nCONCLUSION: N-Myc, with its restricted expression in non-fetal tissues, is a therapeutic target to treat rhabdomyosarcomas, and blocking gene transcription using antigene oligonucleotide strategies has therapeutic potential in the treatment of cancer and other diseases that has not been previously realized in vivo.",
+  "year": "2012",
+  "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+  "authors": [
+    "Tonelli R",
+    "McIntyre A",
+    "Camerin C",
+    "Walters ZS",
+    "Di Leo K",
+    "Selfe J",
+    "Purgato S",
+    "Missiaglia E",
+    "Tortori A",
+    "Renshaw J",
+    "Astolfi A",
+    "Taylor KR",
+    "Serravalle S",
+    "Bishop R",
+    "Nanni C",
+    "Valentijn LJ",
+    "Faccini A",
+    "Leuschner I",
+    "Formica S",
+    "Reis-Filho JS",
+    "Ambrosini V",
+    "Thway K",
+    "Franzoni M",
+    "Summersgill B",
+    "Marchelli R",
+    "Hrelia P",
+    "Cantelli-Forti G",
+    "Fanti S",
+    "Corradini R",
+    "Pession A",
+    "Shipley J"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/22065083/",
+    "publisher": "https://doi.org/10.1158/1078-0432.CCR-11-1981"
+  }
+}

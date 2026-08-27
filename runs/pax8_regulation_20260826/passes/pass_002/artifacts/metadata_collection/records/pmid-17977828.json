@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-17977828",
+  "pmid": "17977828",
+  "doi": "10.1074/jbc.M705262200",
+  "title": "Ets-1 regulates plasma cell differentiation by interfering with the activity of the transcription factor Blimp-1.",
+  "abstract": "Development of immunoglobulin-secreting plasma cells from B cells is a tightly regulated process controlled by the action of a number of transcription factors. In particular, the transcription factor Blimp-1 is a key positive regulator of plasmacytic differentiation via its ability to suppress expression of genes involved in the mature B cell program. The transcription factor Ets-1 is a negative regulator of plasmacytic differentiation, as indicated by the development of increased numbers of IgM-secreting plasma cells in Ets-1 knock-out mice. We have previously shown that Ets-1-deficient B cells undergo enhanced differentiation into IgM-secreting plasma cells in response to Toll-like receptor 9 (TLR9) signaling. We now explore the mechanism by which Ets-1 limits differentiation downstream of TLR9. Our results indicate that Ets-1 physically interacts with Blimp-1, which leads to a block in Blimp-1 DNA binding activity and a reduction in the ability of Blimp-1 to repress target genes without interfering with Blimp-1 protein levels. In addition, we show that Ets-1 induces the expression of several target genes that are repressed by Blimp-1, including Pax-5. These results reveal a previously unknown mechanism for the control of Blimp-1 activity by Ets-1 and suggest that expression of Ets-1 must be down-regulated before plasmacytic differentiation can occur.",
+  "year": "2008",
+  "journal": "The Journal of biological chemistry",
+  "authors": [
+    "John SA",
+    "Clements JL",
+    "Russell LM",
+    "Garrett-Sinha LA"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/17977828/",
+    "publisher": "https://doi.org/10.1074/jbc.M705262200"
+  }
+}

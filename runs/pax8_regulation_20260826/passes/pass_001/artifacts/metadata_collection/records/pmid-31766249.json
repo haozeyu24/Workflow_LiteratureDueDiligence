@@ -1,0 +1,22 @@
+{
+  "paper_id": "pmid-31766249",
+  "pmid": "31766249",
+  "doi": "10.3390/ijms20225686",
+  "title": "Conditional Deletion of Dicer in Adult Mice Impairs Skeletal Muscle Regeneration.",
+  "abstract": "Skeletal muscle has a remarkable regenerative capacity, which is orchestrated by multiple processes, including the proliferation, fusion, and differentiation of the resident stem cells in muscle. MicroRNAs (miRNAs) are small noncoding RNAs that mediate the translational repression or degradation of mRNA to regulate diverse biological functions. Previous studies have suggested that several miRNAs play important roles in myoblast proliferation and differentiation in vitro. However, their potential roles in skeletal muscle regeneration in vivo have not been fully established. In this study, we generated a mouse in which the Dicer gene, which encodes an enzyme essential in miRNA processing, was knocked out in a tamoxifen-inducible way (iDicer KO mouse) and determined its regenerative potential after cardiotoxin-induced acute muscle injury. Dicer mRNA expression was significantly reduced in the tibialis anterior muscle of the iDicer KO mice, whereas the expression of muscle-enriched miRNAs was only slightly reduced in the Dicer-deficient muscles. After cardiotoxin injection, the iDicer KO mice showed impaired muscle regeneration. We also demonstrated that the number of PAX7+ cells, cell proliferation, and the myogenic differentiation capacity of the primary myoblasts did not differ between the wild-type and the iDicer KO mice. Taken together, these data demonstrate that Dicer is a critical factor for muscle regeneration in vivo.",
+  "year": "2019",
+  "journal": "International journal of molecular sciences",
+  "authors": [
+    "Oikawa S",
+    "Lee M",
+    "Akimoto T"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/31766249/",
+    "publisher": "https://doi.org/10.3390/ijms20225686"
+  }
+}

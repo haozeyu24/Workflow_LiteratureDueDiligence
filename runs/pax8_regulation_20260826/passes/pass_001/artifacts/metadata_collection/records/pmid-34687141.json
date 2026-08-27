@@ -1,0 +1,36 @@
+{
+  "paper_id": "pmid-34687141",
+  "pmid": "34687141",
+  "doi": "10.1111/aos.15034",
+  "title": "Advantages of nanofibrous membranes for culturing of primary RPE cells compared to commercial scaffolds.",
+  "abstract": "PURPOSE: Dysfunction of the retinal pigment epithelium (RPE) causes numerous forms of retinal degeneration. RPE replacement is a modern option to save vision. We aimed to test the results of transplanting cultured RPEs on biocompatible membranes.\n\nMETHODS: We cultivated porcine primary RPE cells isolated from cadaver eyes from the slaughterhouse on two types of membranes: commercial polyester scaffolds Transwell (Corning Inc., Kenneburg, ME, USA) with 0.4\u2009\u00b5m pore size and prepared Poly (L-lactide-co-DL-lactide) (PDLLA) nanofibrous membranes with an average pore size of 0.4\u2009\u00b5m.\n\nRESULTS: Five types of assays were used for the analysis: immunocytochemistry (ICC), phagocytosis assay, Western blotting, real-time qPCR (RT-qPCR) and electron microscopy. RT-qPCR demonstrated that RPEs cultured on nanofibrous membranes have higher expressions of BEST1 (bestrophin 1), RLBP1 (retinaldehyde-binding protein 1), RPE65 (retinal pigment epithelium-specific 65\u2009kDa protein), PAX6 (transcription factor PAX6), SOX9 (transcription factor SOX9), DCT (dopachrome tautomerase) and MITF (microphthalmia-associated transcription factor). ICC of the RPEs cultured on nanofibrous membranes showed more intensive staining of markers such as BEST1, MCT1 (monocarboxylate transporter 1), Na+ /K+ ATPase, RPE65 and acetylated tubulin in comparison with commercial ones. Additionally, the absence of \u03b1-SMA proved the stability of the RPE polarization state and the absence of epithelial-to-mesenchymal transition. RPE possessed high phagocytic activity. Electron microscopy of both membranes confirmed a confluent layer of RPE cells and their genuine morphological structure, which was comparable to native RPEs.\n\nCONCLUSIONS: Retinal pigment epitheliums cultured on polylactide nanofibrous membranes improved the final quality of the cell product by having better maturation and long-term survival of the RPE monolayer compared to those cultured on commercial polyester scaffolds. PDLLA-cultured RPEs are a plausible source for the replacement of non-functioning RPEs during cell therapy.",
+  "year": "2022",
+  "journal": "Acta ophthalmologica",
+  "authors": [
+    "Tichotov\u00e1 L",
+    "Studenovska H",
+    "Petrovski G",
+    "Popelka \u0160",
+    "Nemesh Y",
+    "Sedl\u00e1\u010dkov\u00e1 M",
+    "Drutovi\u010d S",
+    "Rohiwal S",
+    "Jendelov\u00e1 P",
+    "Erceg S",
+    "Brymov\u00e1 A",
+    "Artero-Castro A",
+    "Lytvynchuk L",
+    "Stra\u0148\u00e1k Z",
+    "Ellederov\u00e1 Z",
+    "Motl\u00edk J",
+    "Ardan T"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/34687141/",
+    "publisher": "https://doi.org/10.1111/aos.15034"
+  }
+}

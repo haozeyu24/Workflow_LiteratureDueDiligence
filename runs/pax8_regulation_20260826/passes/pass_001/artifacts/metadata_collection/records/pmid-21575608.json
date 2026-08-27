@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-21575608",
+  "pmid": "21575608",
+  "doi": "10.1016/j.bbrc.2011.05.012",
+  "title": "Prolyl hydroxylase domain protein 3 targets Pax2 for destruction.",
+  "abstract": "Prolyl hydroxylase domain proteins (PHDs) hydroxylate HIF\u03b1 in the presence of oxygen, leading to HIF\u03b1 proteasomal destruction. The PHDs family comprises PHD1, 2, and 3. Recent studies indicate that, in addition to HIF\u03b1, PHDs have other substrates. Paired box (Pax) 2, a transcription factor, was found aberrantly expressed in a variety of cancers. However, the underlying mechanisms remain unknown. Here we demonstrate that PHD3 is a negative regulator of expression of Pax2. We found that PHD3 bound to Pax2 and mediated Pax2 destruction directly. Inhibition of PHD3 hydroxylase activity led to upregulation of Pax2 protein but not mRNA level. We found that Pax2 protein was increased and PHD3 protein was decreased in colorectal cancer, and the increased Pax2 was associated with decreased PHD3. Our results suggest that PHD3 targets Pax2 for destruction. The findings may disclose a mechanism for the regulation of Pax2 expression in cancer cells.",
+  "year": "2011",
+  "journal": "Biochemical and biophysical research communications",
+  "authors": [
+    "Yan B",
+    "Jiao S",
+    "Zhang HS",
+    "Lv DD",
+    "Xue J",
+    "Fan L",
+    "Wu GH",
+    "Fang J"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/21575608/",
+    "publisher": "https://doi.org/10.1016/j.bbrc.2011.05.012"
+  }
+}

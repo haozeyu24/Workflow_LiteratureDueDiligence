@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-35596231",
+  "pmid": "35596231",
+  "doi": "10.1111/odi.14259",
+  "title": "Detection of novel variant and functional study in a Chinese family with nonsyndromic oligodontia.",
+  "abstract": "OBJECTIVES: To investigate the pathogenic gene of a patient with nonsyndromic oligodontia, and analyze its possible pathogenic mechanism.\n\nSUBJECTS AND METHODS: The variant was detected by whole exome sequencing (WES) and Sanger sequencing in a family with oligodontia. Bioinformatic and structural analyses were used to analyze variant. Functional studies including western blotting and immunofluorescent analyses and luciferase reporter assay were conducted to explore the functional effects.\n\nRESULTS: We identified a novel frameshift variant of PAX9 (c.491-510delGCCCT-ATCACGGCGGCGGCC, p.P165Qfs*145) outside the DNA-binding domain causing an autosomal-dominant nonsyndromic oligodontia in a Chinese family. Bioinformatic and structural analyses revealed that the variant is pathogenic and conserved evolutionarily, and the changes might affect protein stability or folding. Functional studies demonstrate dramatically reduced ability in activating transcription activity of BMP4 promoter and a marked decrease in protein production, as evaluated by western blotting and immunofluorescent analyses.\n\nCONCLUSIONS: We found a novel frameshift variant of PAX9 causing nonsyndromic oligodontia in a Chinese family. Our findings indicate that frameshift variants cause loss of function of PAX9 protein during the patterning of the dentition and the subsequent tooth agenesis, providing new molecular insights into the role of frameshift variant of PAX9 and broaden the pathogenic spectrum of PAX9 variants.",
+  "year": "2023",
+  "journal": "Oral diseases",
+  "authors": [
+    "Sun R",
+    "Li S",
+    "Xia B",
+    "Zhu J"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/35596231/",
+    "publisher": "https://doi.org/10.1111/odi.14259"
+  }
+}

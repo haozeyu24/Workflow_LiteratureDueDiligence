@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-15978250",
+  "pmid": "15978250",
+  "doi": "10.1016/j.exer.2005.01.004",
+  "title": "Suppression of Mitf by small interfering RNA induces dedifferentiation of chick embryonic retinal pigment epithelium.",
+  "abstract": "Recent studies indicate a key role of Mitf (microphthalmia-associated transcription factor) in the differentiation of the retinal pigment epithelium (RPE). To explore transdifferentiation processes, we used small interfering RNA (siRNA) targeting Mitf. Transfection of embryonic chick RPE cells with a non-silencing fluorescein-labelled control siRNA demonstrated a high (84%) transfection efficiency. Transfection of Mitf siRNA reduced Mitf synthesis at the mRNA and protein levels as analysed by real-time RT-PCR and Western blot. Mitf siRNA suppressed the expression of Mitf RNA to 25.0% of the level in control cells (P<0.005). The expression of melanosomal matrix glycoprotein 115 (MMP115), a marker of differentiated pigment cells, was also markedly suppressed (to 52.2+/-6.6%) (P<0.0005). Moreover, the expression of Pax6 was increased by Mitf siRNA (to 143.5+/-18.0%) (P<0.0005), and induced dedifferentiation of the RPE cells. These data suggest siRNA can be an effective gene silencing approach in RPE, and reduction of Mitf expression is essential for the dedifferentiation of RPE cells.",
+  "year": "2005",
+  "journal": "Experimental eye research",
+  "authors": [
+    "Iwakiri R",
+    "Kobayashi K",
+    "Okinami S",
+    "Kobayashi H"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/15978250/",
+    "publisher": "https://doi.org/10.1016/j.exer.2005.01.004"
+  }
+}

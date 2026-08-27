@@ -1,0 +1,31 @@
+{
+  "paper_id": "pmid-27484908",
+  "pmid": "27484908",
+  "doi": "10.1186/s13023-016-0495-y",
+  "title": "Expanding the clinical spectrum of COL1A1 mutations in different forms of glaucoma.",
+  "abstract": "BACKGROUND: Primary congenital glaucoma (PCG) and early onset glaucomas are one of the major causes of children and young adult blindness worldwide. Both autosomal recessive and dominant inheritance have been described with involvement of several genes including CYP1B1, FOXC1, PITX2, MYOC and PAX6. However, mutations in these genes explain only a small fraction of cases suggesting the presence of further candidate genes.\n\nMETHODS: To elucidate further genetic causes of these conditions whole exome sequencing (WES) was performed in an Italian patient, diagnosed with PCG and retinal detachment, and his unaffected parents. Sanger sequencing of the complete coding region of COL1A1 was performed in a total of 26 further patients diagnosed with PCG or early onset glaucoma. Exclusion of pathogenic variations in known glaucoma genes as CYP1B1, MYOC, FOXC1, PITX2 and PAX6 was additionally done per Sanger sequencing and Multiple Ligation-dependent Probe Amplification (MLPA) analysis.\n\nRESULTS: In the patient diagnosed with PCG and retinal detachment, analysis of WES data identified compound heterozygous variants in COL1A1 (p.Met264Leu; p.Ala1083Thr). Targeted COL1A1 screening of 26 additional patients detected three further heterozygous variants (p.Arg253*, p.Gly767Ser and p.Gly154Val) in three distinct subjects: two of them diagnosed with early onset glaucoma and mild form of osteogenesis imperfecta (OI), one patient with a diagnosis of PCG at age 4\u00a0years. All five variants affected evolutionary, highly conserved amino acids indicating important functional restrictions. Molecular modeling predicted that the heterozygous variants are dominant in effect and affect protein stability and thus the amount of available protein, while the compound heterozygous variants act as recessive alleles and impair binding affinity to two main COL1A1 binding proteins: Hsp47 and fibronectin.\n\nCONCLUSIONS: Dominant inherited mutations in COL1A1 are known causes of connective tissues disorders such as OI. These disorders are also associated with different ocular abnormalities, although recognition of the common pathology for both features is seldom being recognized. Our results expand the role of COL1A1 mutations in different forms of early-onset glaucoma with and without signs of OI. Thus, we suggest including COL1A1 mutation screening in the genetic work-up of glaucoma cases and detailed ophthalmic examinations with fundus analysis in patients with OI.",
+  "year": "2016",
+  "journal": "Orphanet journal of rare diseases",
+  "authors": [
+    "Mauri L",
+    "Uebe S",
+    "Sticht H",
+    "Vossmerbaeumer U",
+    "Weisschuh N",
+    "Manfredini E",
+    "Maselli E",
+    "Patrosso M",
+    "Weinreb RN",
+    "Penco S",
+    "Reis A",
+    "Pasutto F"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/27484908/",
+    "publisher": "https://doi.org/10.1186/s13023-016-0495-y"
+  }
+}

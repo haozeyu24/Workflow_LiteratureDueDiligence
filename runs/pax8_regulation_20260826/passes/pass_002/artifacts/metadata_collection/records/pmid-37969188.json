@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-37969188",
+  "pmid": "37969188",
+  "doi": "",
+  "title": "Gene expression profiles to analyze the anticancer and carcinogenic effects of arsenic in bladder cancer.",
+  "abstract": "OBJECTIVES: Arsenic is one of the greatest hazards as an environmental carcinogen. At the same time it is also a promising anticancer agent, that can be used to treat acute promyelocytic leukemia (APL) and some other tumors. Arsenic trioxide (ATO) exerts its therapeutic effect by promoting degradation of an oncogenic protein that drives the growth of APL cells. However, the molecular mechanisms that govern these paradoxical effects of arsenic in bladder cancer remain unclear. We speculate that they share the common mechanism that arsenic binds to the target proteins and subsequently impacts the expression of downstream genes.\n\nMETHODS: To address this issue, three Gene Set Enrichments (GSE) were loaded from the Gene Expression Omnibus (GEO) database with four expression matrices. Three of them were mice samples at exposure times of 1, 2, and 12 weeks, and the last was a human urothelial cell (HUC1) sample. Differentially expressed genes (DEGs) from 4 expression groups were identified at iDEP and analyzed at Metascape and Cytoscape for signaling pathway analysis and protein-protein interaction (PPI) analysis. The web-portals UALCAN and GEPIA were used to analyze the role of DEGs in the crosstalk between carcinogenic and anticancer effects. The putative downstream genes of arsenic binding proteins were retrieved using the Cistrome Data Browser. Real-time PCR was used to validate the expression of DEGs.\n\nRESULTS: The signaling pathways referred to lipid metabolism. Responses to various stimuli or hormones were overrepresented in 4 expression matrices. The PPI network emphasized the role of KRAS and TNF signaling in different groups. Furthermore, BDKRB2, FOS, NR4A1, PLAU, SH3BGRL, and F10 played an important role in the crosstalk between carcinogenic and anticancer effects in bladder cancer. Arsenic may impact the activity of ACTB, BACH1, NME2, RBBP4, PARP1, and PML by direct binding, and thus influence the expression of downstream genes such as PAX6, MLLT11, LTBP1, PCSK5, ZFP36, COL8A2, and IL1R2.\n\nCONCLUSION: Arsenic exerted carcinogenic and anticancer functions by altering the expression of crosstalk genes such as BDKRB2, FOS, NR4A1, PLAU, SH3BGRL, and F10, and these were due to arsenic binding proteins.",
+  "year": "2023",
+  "journal": "American journal of translational research",
+  "authors": [
+    "Han X",
+    "Zhang T",
+    "Ma Q",
+    "Chang R",
+    "Xin S",
+    "Yu Q",
+    "Zhang G",
+    "Wang Y"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/37969188/",
+    "publisher": ""
+  }
+}

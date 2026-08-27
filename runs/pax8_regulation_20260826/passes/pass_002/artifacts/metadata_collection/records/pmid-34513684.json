@@ -1,0 +1,30 @@
+{
+  "paper_id": "pmid-34513684",
+  "pmid": "34513684",
+  "doi": "10.3389/fonc.2021.703612",
+  "title": "Case Report: The Formation of a Truncated PAX5 Transcript in a Case of Ph-Positive Mixed Phenotype Acute Leukemia With dic(7;9)(p11-p13;p13).",
+  "abstract": "PAX5 plays a critical role in B-cell precursor development and is involved in various chromosomal translocations that involve the fusion of a portion of PAX5 to at least 49 different partners reported to date. Here, we identified a novel PAX5 fusion transcript in a Ph-positive mixed phenotype acute leukemia case with dic(7;9)(q13;q13), in which a translocation juxtaposes the 5' region of PAX5 and the ubiquitin-conjugating enzyme E2D4 (UBE2D4) to generate a PAX5-UBE2D4 fusion gene. To further explore the general characteristics and function of PAX5-UBE2D4, we cloned the full-length cDNA, which was amplified from the bone marrow of the patient. Interestingly, the fusion was located in the nucleus and negatively affected PAX5 transcription activity. Importantly, the fusion promoted tumor growth in nude mice and the proliferation of NIH3T3 cells in vitro. In conclusion, the fusion resulted in partial oncogenic activity, in contrast to the tumor suppressor activity of wild-type PAX5.",
+  "year": "2021",
+  "journal": "Frontiers in oncology",
+  "authors": [
+    "Yu Y",
+    "Zeng Z",
+    "Xie J",
+    "Lu Q",
+    "Cai W",
+    "Zhang R",
+    "Pan J",
+    "Zhao Y",
+    "Sun A",
+    "Qiu H",
+    "Chen S"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/34513684/",
+    "publisher": "https://doi.org/10.3389/fonc.2021.703612"
+  }
+}

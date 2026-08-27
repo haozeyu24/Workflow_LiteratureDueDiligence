@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-16876822",
+  "pmid": "16876822",
+  "doi": "10.1016/j.jmb.2006.06.045",
+  "title": "DNA recognition by the brinker repressor--an extreme case of coupling between binding and folding.",
+  "abstract": "The Brinker (Brk) nuclear repressor is a major element of the Drosophila Decapentaplegic morphogen signaling pathway. Its N-terminal part has weak homology to the Antennapedia homeodomain and binds to GC-rich DNA sequences. We have investigated the conformation and dynamics of the N-terminal 101 amino acid residues of Brk in the absence and in the presence of cognate DNA by solution NMR spectroscopy. In the absence of DNA, Brk is unfolded and highly flexible throughout the entire backbone. Addition of cognate DNA induces the formation of a well-folded structure for residues R46 to R95. This structure consists of four helices forming a helix-turn-helix motif that differs from homeodomains, but has similarities to the Tc3 transposase, the Pax-6 Paired domain, and the human centromere-binding protein. The GC-rich DNA recognition can be explained by specific major groove hydrogen bonds from the N-terminal end of helix alpha3. The transition from a highly flexible, completely unfolded conformation in the absence of DNA to a well-formed structure in the complex presents a very extreme case of the \"coupling of binding and folding\" phenomenon.",
+  "year": "2006",
+  "journal": "Journal of molecular biology",
+  "authors": [
+    "Cordier F",
+    "Hartmann B",
+    "Rogowski M",
+    "Affolter M",
+    "Grzesiek S"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/16876822/",
+    "publisher": "https://doi.org/10.1016/j.jmb.2006.06.045"
+  }
+}

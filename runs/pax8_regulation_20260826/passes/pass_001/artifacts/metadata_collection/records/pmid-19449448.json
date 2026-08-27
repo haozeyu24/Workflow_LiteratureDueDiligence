@@ -1,0 +1,21 @@
+{
+  "paper_id": "pmid-19449448",
+  "pmid": "19449448",
+  "doi": "10.1002/biof.29",
+  "title": "Physiological factors that regulate skin pigmentation.",
+  "abstract": "More than 150 genes have been identified that affect skin color either directly or indirectly, and we review current understanding of physiological factors that regulate skin pigmentation. We focus on melanosome biogenesis, transport and transfer, melanogenic regulators in melanocytes, and factors derived from keratinocytes, fibroblasts, endothelial cells, hormones, inflammatory cells, and nerves. Enzymatic components of melanosomes include tyrosinase, tyrosinase-related protein 1, and dopachrome tautomerase, which depend on the functions of OA1, P, MATP, ATP7A, and BLOC-1 to synthesize eumelanins and pheomelanins. The main structural component of melanosomes is Pmel17/gp100/Silv, whose sorting involves adaptor protein 1A (AP1A), AP1B, AP2, and spectrin, as well as a chaperone-like component, MART-1. During their maturation, melanosomes move from the perinuclear area toward the plasma membrane. Microtubules, dynein, kinesin, actin filaments, Rab27a, melanophilin, myosin Va, and Slp2-a are involved in melanosome transport. Foxn1 and p53 up-regulate skin pigmentation via bFGF and POMC derivatives including alpha-MSH and ACTH, respectively. Other critical factors that affect skin pigmentation include MC1R, CREB, ASP, MITF, PAX3, SOX9/10, LEF-1/TCF, PAR-2, DKK1, SCF, HGF, GM-CSF, endothelin-1, prostaglandins, leukotrienes, thromboxanes, neurotrophins, and neuropeptides. UV radiation up-regulates most factors that increase melanogenesis. Further studies will elucidate the currently unknown functions of many other pigment genes/proteins. (c) 2009 International Union of Biochemistry and Molecular Biology, Inc.",
+  "year": "2009",
+  "journal": "BioFactors (Oxford, England)",
+  "authors": [
+    "Yamaguchi Y",
+    "Hearing VJ"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/19449448/",
+    "publisher": "https://doi.org/10.1002/biof.29"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-40923318",
+  "pmid": "40923318",
+  "doi": "10.1172/jci.insight.191837",
+  "title": "Thyroidal expression of ER molecular chaperone GRP170 is required for efficient TSH-mediated thyroid hormone synthesis.",
+  "abstract": "Intracellular trafficking of secretory and membrane proteins from the endoplasmic reticulum (ER) to the cell surface, via the secretory pathway, is crucial to the differentiated function of epithelial tissues. In the thyroid gland, a prerequisite for such trafficking is proper protein folding in the ER, assisted by an array of ER molecular chaperones. One of the most abundant of these chaperones, Glucose-Regulated-Protein-170 (GRP170, encoded by Hyou1), is a noncanonical hsp70-like family member. Thyroid follicular epithelial cells abundantly express GRP170, but the role of this abundant ER chaperone in thyrocytes remains unknown. Here, we have examined the effect of inducible Pax8-specific (thyroid and kidney) deficiency of GRP170 in mice, in parallel with siRNA-treated PCCL3 (rat) thyrocytes for knockdown of GRP170. Thyrocyte-specific loss of GRP170 in vivo triggers primary hypothyroidism with a deficient thyroidal response to Thyroid-Stimulating Hormone (TSH). In addition, knockdown of GRP170 in PCCL3 thyrocytes inhibits the folding and forward trafficking of TSH receptors to the cell surface. Taken together, our findings suggest that GRP170 contributes to the conformational maturation of TSH receptors and thyroid gland responsiveness to TSH, which is required for proper regulation of thyroid hormone synthesis.",
+  "year": "2025",
+  "journal": "JCI insight",
+  "authors": [
+    "Zhang X",
+    "Young C",
+    "Liao XH",
+    "Refetoff S",
+    "Mutchler SM",
+    "Brodsky JL",
+    "Buck TM",
+    "Arvan P"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (stability[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR lysosome[Title/Abstract] OR autophagy[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/40923318/",
+    "publisher": "https://doi.org/10.1172/jci.insight.191837"
+  }
+}

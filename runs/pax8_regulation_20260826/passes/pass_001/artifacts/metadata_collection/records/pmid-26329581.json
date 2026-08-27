@@ -1,0 +1,36 @@
+{
+  "paper_id": "pmid-26329581",
+  "pmid": "26329581",
+  "doi": "10.1126/scisignal.aab1995",
+  "title": "The E3 ligase APC/C(Cdh1) promotes ubiquitylation-mediated proteolysis of PAX3 to suppress melanocyte proliferation and melanoma growth.",
+  "abstract": "The anaphase-promoting complex or cyclosome with the subunit Cdh1 (APC/C(Cdh1)) is an E3 ubiquitin ligase involved in the control of the cell cycle. Here, we identified sporadic mutations occurring in the genes encoding APC components, including Cdh1, in human melanoma samples and found that loss of APC/C(Cdh1) may promote melanoma development and progression, but not by affecting cell cycle regulatory targets of APC/C. Most of the mutations we found in CDH1 were those associated with ultraviolet light (UV)-induced melanomagenesis. Compared with normal human skin tissue and human or mouse melanocytes, the abundance of Cdh1 was decreased and that of the transcription factor PAX3 was increased in human melanoma tissue and human or mouse melanoma cell lines, respectively; Cdh1 abundance was further decreased with advanced stages of human melanoma. PAX3 was a substrate of APC/C(Cdh1) in melanocytes, and APC/C(Cdh1)-mediated ubiquitylation marked PAX3 for proteolytic degradation in a manner dependent on the D-box motif in PAX3. Either mutating the D-box in PAX3 or knocking down Cdh1 prevented the ubiquitylation and degradation of PAX3 and increased proliferation and melanin production in melanocytes. Knocking down Cdh1 in melanoma cells in culture or before implantation in mice promoted doxorubicin resistance, whereas reexpressing wild-type Cdh1, but not E3 ligase-deficient Cdh1 or a mutant that could not interact with PAX3, restored doxorubicin sensitivity in melanoma cells both in culture and in xenografts. Thus, our findings suggest a tumor suppressor role for APC/C(Cdh1) in melanocytes and that targeting PAX3 may be a strategy for treating melanoma.",
+  "year": "2015",
+  "journal": "Science signaling",
+  "authors": [
+    "Cao J",
+    "Dai X",
+    "Wan L",
+    "Wang H",
+    "Zhang J",
+    "Goff PS",
+    "Sviderskaya EV",
+    "Xuan Z",
+    "Xu Z",
+    "Xu X",
+    "Hinds P",
+    "Flaherty KT",
+    "Faller DV",
+    "Goding CR",
+    "Wang Y",
+    "Wei W",
+    "Cui R"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/26329581/",
+    "publisher": "https://doi.org/10.1126/scisignal.aab1995"
+  }
+}

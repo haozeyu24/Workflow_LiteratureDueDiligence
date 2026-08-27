@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-40065099",
+  "pmid": "40065099",
+  "doi": "10.1038/s44318-025-00397-1",
+  "title": "Mitochondrial fatty acid oxidation regulates adult muscle stem cell function through modulating metabolic flux and protein acetylation.",
+  "abstract": "During homeostasis and regeneration, satellite cells, the resident stem cells of skeletal muscle, have distinct metabolic requirements for fate transitions between quiescence, proliferation and differentiation. However, the contribution of distinct energy sources to satellite cell metabolism and function remains largely unexplored. Here, we uncover a role of mitochondrial fatty acid oxidation (FAO) in satellite cell integrity and function. Single-cell RNA sequencing revealed progressive enrichment of mitochondrial FAO and downstream pathways during activation, proliferation and myogenic commitment of satellite cells. Deletion of Carnitine palmitoyltransferase 2 (Cpt2), the rate-limiting enzyme in FAO, hampered muscle stem\u00a0cell expansion and differentiation upon acute muscle injury, markedly delaying regeneration. Cpt2 deficiency reduces acetyl-CoA levels in satellite cells, impeding the metabolic flux and acetylation of selective proteins including Pax7, the central transcriptional regulator of satellite cells. Notably, acetate supplementation restored cellular metabolic flux and partially rescued the regenerative defects of Cpt2-null satellite cells. These findings highlight an essential role of fatty acid oxidation in controlling satellite cell function and suggest an integration of lipid metabolism and protein acetylation in adult stem cells.",
+  "year": "2025",
+  "journal": "The EMBO journal",
+  "authors": [
+    "Yue F",
+    "Gu L",
+    "Qiu J",
+    "Oprescu SN",
+    "Beckett LM",
+    "Ellis JM",
+    "Donkin SS",
+    "Kuang S"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/40065099/",
+    "publisher": "https://doi.org/10.1038/s44318-025-00397-1"
+  }
+}

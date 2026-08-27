@@ -7,6 +7,12 @@ runs/*/artifacts/
 runs/*/reports/
 runs/*/downloads/
 runs/*/logs/
+runs/*/passes/pass_*/artifacts/fulltext_import/PMC_XML/
+runs/*/passes/pass_*/artifacts/fulltext_import/PDF/
+runs/*/passes/pass_*/artifacts/fulltext_import/PDFs/
+runs/*/passes/pass_*/artifacts/fulltext_import/pdfs/
+runs/*/passes/pass_*/artifacts/fulltext_import/downloads/
+runs/*/passes/pass_*/artifacts/fulltext_import/**/*.pdf
 
 # Keep run definitions versioned so completed runs remain reproducible.
 !runs/README.md

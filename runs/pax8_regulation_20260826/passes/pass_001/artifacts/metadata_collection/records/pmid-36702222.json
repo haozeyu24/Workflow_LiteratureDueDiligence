@@ -1,0 +1,21 @@
+{
+  "paper_id": "pmid-36702222",
+  "pmid": "36702222",
+  "doi": "10.1016/j.ijbiomac.2023.123375",
+  "title": "An inclusive study of deleterious missense PAX9 variants using user-friendly tools reveals structural, functional alterations, as well as potential therapeutic targets.",
+  "abstract": "Mutations in the PAX9 are responsible for non-syndromic tooth agenesis in humans, although their structural and functional consequences on protein phenotype, stability, and posttranslational modifications (PTMs) have not yet been adequately investigated. This in silico study focuses on retrieving the six most deleterious mutations (L21P, R26W, R28P, G51S, I87F, and K91E) of PAX9 that has been linked to severe oligodontia. Several computational algorithm methods were used to determine the deleterious effects of PAX9 mutations. Analysis of gene ontology, protein interactions, and PTMs indicated significant functional changes caused by PAX9 mutations. The structural superimposition of the wild-type and mutant PAX9 variants revealed structural changes in locations that were present in the structures of all six variations. The conserved domain analysis revealed that the areas shared by all six variations contained unique sections that lacked DNA binding or protein-protein interaction sites, suggesting prospective drug target sites for functional restoration. The protein-protein interaction network showed KDM5B as PAX9's strongest interacting partner similar to MSX1. The PAX9 protein's structural conformations, compactness, stiffness, and function may all be impacted by changes, according to MD simulations. In addition, research on cell lines and animal models may be valuable in establishing their specific roles in functional annotations.",
+  "year": "2023",
+  "journal": "International journal of biological macromolecules",
+  "authors": [
+    "Ranjan P",
+    "Das P"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/36702222/",
+    "publisher": "https://doi.org/10.1016/j.ijbiomac.2023.123375"
+  }
+}

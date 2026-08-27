@@ -1,0 +1,31 @@
+{
+  "paper_id": "pmid-14630796",
+  "pmid": "14630796",
+  "doi": "10.1182/blood-2003-08-2694",
+  "title": "BAFF/BLyS can potentiate B-cell selection with the B-cell coreceptor complex.",
+  "abstract": "The tumor necrosis factor (TNF)-like ligand BAFF/BLyS (B-cell activating factor of the TNF family/B-lymphocyte stimulator) is a potent B-cell survival factor, yet its functional relationship with other B-cell surface molecules such as CD19 and CD40 is poorly understood. We found that follicular dendritic cells (FDCs) in human lymph nodes expressed BAFF abundantly. BAFF up-regulated a B cell-specific transcription factor Pax5/BSAP (Pax5/B cell-specific activator protein) activity and its target CD19, a major component of the B-cell coreceptor complex, and synergistically enhanced CD19 phosphorylation by B-cell antigen receptor (BCR). BAFF further enhanced B-cell proliferation, immunoglobulin G (IgG) production, and reactivity to CD154 by BCR/CD19 coligation and interleukin-15 (IL-15). Our results suggest that BAFF may play an important role in FDC-B-cell interactions through the B-cell coreceptor complex and a possibly sequential link between the T cell-independent and -dependent B-cell responses in the germinal centers.",
+  "year": "2004",
+  "journal": "Blood",
+  "authors": [
+    "Hase H",
+    "Kanno Y",
+    "Kojima M",
+    "Hasegawa K",
+    "Sakurai D",
+    "Kojima H",
+    "Tsuchiya N",
+    "Tokunaga K",
+    "Masawa N",
+    "Azuma M",
+    "Okumura K",
+    "Kobata T"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/14630796/",
+    "publisher": "https://doi.org/10.1182/blood-2003-08-2694"
+  }
+}

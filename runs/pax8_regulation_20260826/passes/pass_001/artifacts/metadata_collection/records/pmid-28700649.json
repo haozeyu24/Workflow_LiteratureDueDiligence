@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-28700649",
+  "pmid": "28700649",
+  "doi": "10.1371/journal.pone.0180868",
+  "title": "Autophagy mediates cell cycle response by regulating nucleocytoplasmic transport of PAX6 in limbal stem cells under ultraviolet-A stress.",
+  "abstract": "Limbal stem cells (LSC) account for homeostasis and regeneration of corneal epithelium. Solar ultraviolet A (UVA) is the major source causing oxidative damage in the ocular surface. Autophagy, a lysosomal degradation mechanism, is essential for physiologic function and stress defense of stem cells. PAX6, a master transcription factor governing corneal homeostasis by regulating cell cycle and cell fate of LSC, responds to oxidative stress by nucleocytoplasmic shuttling. Impaired autophagy and deregulated PAX6 have been reported in oxidative stress-related ocular surface disorders. We hypothesize a functional role for autophagy and PAX6 in LSC's stress response to UVA. Therefore, human LSC colonies were irradiated with a sub-lethal dose of UVA and autophagic activity and intracellular reactive oxygen species (ROS) were measured by CYTO-ID assay and CM-H2DCFDA live staining, respectively. Following UVA irradiation, the percentage of autophagic cells significantly increased in LSC colonies while intracellular ROS levels remained unaffected. siRNA-mediated knockdown (KD) of ATG7 abolished UVA-induced autophagy and led to an excessive accumulation of ROS. Upon UVA exposure, LSCs displayed nuclear-to-cytoplasmic translocation of PAX6, while ATG7KD or antioxidant pretreatment largely attenuated the intracellular trafficking event. Immunofluorescence showing downregulation of proliferative marker PCNA and induction of cell cycle regulator p21 indicates cell cycle arrest in UVA-irradiated LSC. Abolishing autophagy, adenoviral-assisted restoration of nuclear PAX6 or antioxidant pretreatment abrogated the UVA-induced cell cycle arrest. Adenoviral expression of an ectopic PAX gene, PAX7, did not affect UVA cell cycle response. Furthermore, knocking down PAX6 attenuated the cell cycle progression of irradiated ATG7KD LSC by de-repressing p21 expression. Collectively, our data suggest a crosstalk between autophagy and PAX6 in regulating cell cycle response of ocular progenitors under UVA stress. Autophagy deficiency leads to impaired intracellular trafficking of PAX6, perturbed redox balance and uncurbed cell cycle progression in UVA-stressed LSCs. The coupling of autophagic machinery and PAX6 in cell cycle regulation represents an attractive therapeutic target for hyperproliferative ocular surface disorders associated with solar radiation.",
+  "year": "2017",
+  "journal": "PloS one",
+  "authors": [
+    "Laggner M",
+    "Pollreisz A",
+    "Schmidinger G",
+    "Schmidt-Erfurth U",
+    "Chen YT"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/28700649/",
+    "publisher": "https://doi.org/10.1371/journal.pone.0180868"
+  }
+}

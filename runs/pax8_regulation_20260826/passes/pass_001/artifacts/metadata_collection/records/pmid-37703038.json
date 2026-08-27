@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-37703038",
+  "pmid": "37703038",
+  "doi": "10.1167/iovs.64.12.24",
+  "title": "Nystagmus Associated With the Absence of MYOD Expression Across the Lifespan in Extraocular and Limb Muscles.",
+  "abstract": "PURPOSE: The extraocular muscles (EOMs) undergo significant levels of continuous myonuclear turnover and myofiber remodeling throughout life, in contrast to limb skeletal muscles. Activation of the myogenic pathway in muscle precursor cells is controlled by myogenic transcription factors, such as MYOD. Limb muscles from MyoD-/- mice develop normally but have a regeneration defect, and these mice develop nystagmus. We examined MyoD-/- mice to determine if they have an aging phenotype.\n\nMETHODS: Eye movements of aging MyoD-/- mice and littermate controls (wild type) were examined using optokinetic nystagmus (OKN). We assessed limb muscle function, changes to myofiber number, mean cross-sectional area, and abundance of the PAX7 and PITX2 populations of myogenic precursor cells.\n\nRESULTS: Aging did not significantly affect limb muscle function despite decreased mean cross-sectional areas at 18+\u00a0months. Aging wild type mice had normal OKN responses; all aging MyoD-/- mice had nystagmus. With OKN stimulus present, the MyoD-/- mice at all ages had shorter slow phase durations compared to wild type age matched controls. In the dark, the MyoD-/- mice had a shorter slow phase duration with age. This correlated with significantly decreased fiber numbers and cross-sectional areas. The EOM in MyoD-/- mice had increased numbers of PAX7-positive satellite cells and significantly decreased PITX2-positive myonuclei.\n\nCONCLUSIONS: The absence of MYOD expression in aging mice causes a decrease in on-going myofiber remodeling, EOM fiber size, and number, and is associated with the development of spontaneous nystagmus. These results suggest that muscle-specific mutations can result in nystagmus, with increasing aging-related changes in the MyoD-/- EOM.",
+  "year": "2023",
+  "journal": "Investigative ophthalmology & visual science",
+  "authors": [
+    "Johnson LL",
+    "Hebert S",
+    "Kueppers RB",
+    "McLoon LK"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/37703038/",
+    "publisher": "https://doi.org/10.1167/iovs.64.12.24"
+  }
+}

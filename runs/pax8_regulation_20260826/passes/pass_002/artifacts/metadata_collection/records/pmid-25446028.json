@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-25446028",
+  "pmid": "25446028",
+  "doi": "10.1016/j.ydbio.2014.10.019",
+  "title": "Xenopus laevis FGF receptor substrate 3 (XFrs3) is important for eye development and mediates Pax6 expression in lens placode through its Shp2-binding sites.",
+  "abstract": "Members of the fibroblast growth factor (FGF) family play important roles during various developmental processes including eye development. FRS (FGF receptor substrate) proteins bind to FGFR and serve as adapters for coordinated assembly of multi-protein complexes involved in Ras/MAPK and PI3 kinase/Akt pathways. Here, we identified Xenopus laevis Frs3 (XFrs3), a homolog of vertebrate Frs3, and investigated its roles during embryogenesis. XFrs3 is expressed maternally and zygotically with specific expression patterns throughout the early development. Knockdown of XFrs3 using a specific antisense morpholino oligonucleotide (MO) caused reduction of Pax6 expression in the lens placode, and defects in the eye ranging from microphthalmia to anophthalmia. XFrs3 MO-induced defects were alleviated by wild type XFrs3 or a mutant XFrs3 (XFrs3-4YF), in which the putative tyrosine phosphorylation sites served as Grb2-binding sites are mutated. However, another XFrs3 mutant (XFrs3-2YF), in which the putative Shp2-binding sites are mutated, could not rescue the defects of XFrs3 morphants. In addition, we found that XFrs3 is important for FGF or IGF-induced ERK activation in ectodermal tissue. Taken together, our results suggest that signaling through Shp2-binding sites of XFrs3 is necessary for the eye development in Xenopus laevis.",
+  "year": "2015",
+  "journal": "Developmental biology",
+  "authors": [
+    "Kim YJ",
+    "Bahn M",
+    "Kim YH",
+    "Shin JY",
+    "Cheong SW",
+    "Ju BG",
+    "Kim WS",
+    "Yeo CY"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/25446028/",
+    "publisher": "https://doi.org/10.1016/j.ydbio.2014.10.019"
+  }
+}

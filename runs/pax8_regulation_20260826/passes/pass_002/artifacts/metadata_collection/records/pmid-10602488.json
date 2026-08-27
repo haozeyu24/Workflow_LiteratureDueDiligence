@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-10602488",
+  "pmid": "10602488",
+  "doi": "10.1038/sj.onc.1203159",
+  "title": "Regulation of the forkhead transcription factor FKHR, but not the PAX3-FKHR fusion protein, by the serine/threonine kinase Akt.",
+  "abstract": "Akt, a proto-oncogene that encodes a cytosolic serine/threonine kinase, can phosphorylate and modulate the activity of several proteins involved in cellular metabolism and survival. Recently, two mammalian highly related forkhead transcription factors FKHRL1 and AFX and their nematode homologue Daf-16 have been found to be targets of this kinase. Here we show that Akt, but not inactive Akt, represses the transcriptional activity of FKHR, another member of the forkhead family. FKHR mutants with alanine substitutions at three Akt phosphorylation consensus sites (T24, S256 and S319) were inhibited by Akt, but mutation of all three sites rendered FKHR resistant to suppression. By contrast, the transcriptional activity of the oncogenic PAX3-FKHR fusion protein, containing two consensus phosphorylation sites, was not inhibited by Akt. Importantly, Akt inhibited the translocation of FKHR to the nucleus, providing a mechanism by which Akt might regulate the transcriptional activity of FKHR. Consistent with this model, the localization of the PAX3-FKHR fusion protein was nuclear and was not altered by Akt. These results provide evidence that Akt inhibits the transcriptional activity of FKHR by controlling its trafficking into the nucleus and that oncogenic PAX3-FKHR can escape this negative regulation by Akt.",
+  "year": "1999",
+  "journal": "Oncogene",
+  "authors": [
+    "del Peso L",
+    "Gonz\u00e1lez VM",
+    "Hern\u00e1ndez R",
+    "Barr FG",
+    "N\u00fa\u00f1ez G"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/10602488/",
+    "publisher": "https://doi.org/10.1038/sj.onc.1203159"
+  }
+}

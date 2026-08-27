@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-32314713",
+  "pmid": "32314713",
+  "doi": "",
+  "title": "[Construction of lentivirus plasmid pCDH-NLRX1 and stable expression of NLRX1 in A549 cells].",
+  "abstract": "Objective To construct nucleotide-binding oligomerization domain-like receptors family member X1 (NLRX1) lentivirus plasmid and stable NLRX1-overexpressing A549 cell line. Methods Full-length cDNA encoding human NLRX1 was amplified from pCMV3-NLRX1 plasmid and then was inserted into pCDH-CMV-MCS-EF1-Puro vector to obtain NLRX1-overexpressing plasmid pCDH-NLRX1. pCDH-NLRX1 lentivirus particles were obtained by co-transfecting pCDH-NLRX1 with packaging plasmids (pMD2 and pAX2) into HEK293T cells. A549 cells were infected with concentrated pCDH-NLRX1 lentivirus particles and then were screened by puromycin to obtain stable NLRX1-overexpressed A549 cell line. The mRNA transcription and protein expression of NLRX1 were detected by real-time quantitative PCR, Western blot analysis and immunofluorescence. Results The lentivirus plasmid pCDH-NLRX1 was successfully constructed. After pCDH-NLRX1 and packaging plasmids were co-transfected into HEK293T cells, we obtained NLRX1 lentivirus particles with the titer of 1\u00d7105 TU/mL. After A549 cells were infected with lentivirus particles and screened by puromycin, a stable over-expression cell line of NLRX1 was obtained. NLRX1 was obviously expressed in the lentivirus-infected A549 cells and its mRNA and protein levels significantly increased. Conclusion NLRX1 lentivirus plasmid and stable NLRX1-overexpressing A549 cell line have been successfully constructed.",
+  "year": "2020",
+  "journal": "Xi bao yu fen zi mian yi xue za zhi = Chinese journal of cellular and molecular immunology",
+  "authors": [
+    "Dong Y",
+    "Zhang X",
+    "Wang F",
+    "Ying Q",
+    "Feng Y",
+    "Liu R",
+    "Wu X"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/32314713/",
+    "publisher": ""
+  }
+}

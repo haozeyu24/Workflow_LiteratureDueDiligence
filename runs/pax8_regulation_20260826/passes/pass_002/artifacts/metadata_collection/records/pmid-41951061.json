@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-41951061",
+  "pmid": "41951061",
+  "doi": "10.1016/j.mcp.2026.102070",
+  "title": "ZMIZ1 promotes PAX6 ubiquitination through SMAD3 to drive the malignant progression of acute myeloid leukemia.",
+  "abstract": "Previous research has indicated that Zinc finger MIZ domain-containing protein 1 (ZMIZ1) was elevated in patients with acute myeloid leukemia (AML); however, the pathological mechanisms underlying ZMIZ1 up-regulation in AML remain unclear. The expression levels of the target proteins, PAX6 ubiquitination modifications, and protein stability were evaluated by Western blot. The effects of regulating ZMIZ1 expression on the growth of AML cells were detected through in vitro and in vivo experiments. The regulatory effects of ZMIZ1 on SMAD3 and PAX6, as well as rescue experiments, were conducted in HL60\u00a0cells. In this study, we found that ZMIZ1 and SMAD3 were upregulated in patients with AML, while PAX6 was downregulated. Overexpression of ZMIZ1 significantly promoted HL60\u00a0cell growth, while inhibiting cell apoptosis. Consistent with these observations, up-regulation of ZMIZ1 markedly promoted tumor cell growth in nude mice, manifested as increased tumor volume and weight, as well as enhanced tumor cell proliferation. However, ZMIZ1 down-regulation had opposite effects both in vitro and in vivo. Mechanistically, PAX6 is a downstream regulatory factor of ZMIZ1, and its ubiquitination at the K53 position is regulated by ZMIZ1. SMAD3 acts as a bridge to mediate the ubiquitination modification of ZMIZ1 on PAX6. More importantly, PAX6 up-regulation suppressed cell growth induced by ZMIZ1 or SMAD3 overexpression. In conclusion, our findings suggest that targeting ZMIZ1 or overexpressing PAX6 serve as a therapeutic strategy for AML.",
+  "year": "2026",
+  "journal": "Molecular and cellular probes",
+  "authors": [
+    "Zhou L",
+    "Li J",
+    "Wang M",
+    "Geng Y"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/41951061/",
+    "publisher": "https://doi.org/10.1016/j.mcp.2026.102070"
+  }
+}

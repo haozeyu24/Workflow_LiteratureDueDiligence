@@ -1,0 +1,29 @@
+{
+  "paper_id": "pmid-27690155",
+  "pmid": "27690155",
+  "doi": "10.1111/apha.12811",
+  "title": "Cyclosporin a induces renal episodic hypoxia.",
+  "abstract": "AIM: Cyclosporin A (CsA) causes renal toxicity. The underlying mechanisms are incompletely understood, but may involve renal hypoxia and hypoxia-inducible factors (Hifs). We sought for hypoxia and Hif in mouse kidneys with CsA-induced toxicity, assessed their time course, Hif-mediated responses and the impact of interventional Hif upregulation.\n\nMETHODS: Mice received CsA or its solvent cremophore for up to 6\u00a0weeks. Low salt diet (Na+ \u2193) was given in combination with CsA to enhance toxicity. We assessed fine morphology, renal function, blood oxygen level-dependent magnetic resonance imaging under room air and following changes in breathing gas composition which correlate with vascular reactivity, pimonidazole adducts (which indicate O2 tensions below 10\u00a0mmHg), Hif-\u03b1 proteins, as well as expression of Hif target genes. Stable Hif upregulation was achieved by inducible, Pax8-rtTA-based knockout of von Hippel-Lindau protein (Vhl-KO), which is crucial for Hif-\u03b1 degradation.\n\nRESULTS: Cyclosporin A transiently increased renal deoxyhaemoglobin (R2*). Augmented vascular reactivity was observed at 2\u00a0h, but decreased at 24\u00a0h after CsA treatment. Na+ \u2193/CsA provoked chronic renal failure with tubular degeneration and interstitial fibrosis. Nephron segments at risk for injury accumulated pimonidazole adducts, as well as Hif-\u03b1 proteins. Remarkably, Hif target gene expression remained unchanged, while factor-inhibiting Hif (Fih) was enhanced. Na+ \u2193/CsA/Vhl-KO aggravated morpho-functional outcome of chronic renal CsA toxicity.\n\nCONCLUSIONS: Cyclosporin A provokes episodic hypoxia in nephron segments most susceptible to chronic CsA toxicity. Fih is upregulated and likely blocks further Hif activity. Continuous tubular Hif upregulation via Vhl-KO worsens the outcome of chronic CsA-induced renal toxicity.",
+  "year": "2017",
+  "journal": "Acta physiologica (Oxford, England)",
+  "authors": [
+    "F\u00e4hling M",
+    "Mathia S",
+    "Scheidl J",
+    "Abramovitch R",
+    "Milman Z",
+    "Paliege A",
+    "Peters H",
+    "Persson PB",
+    "Heyman SN",
+    "Rosenberger C"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (stability[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR lysosome[Title/Abstract] OR autophagy[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/27690155/",
+    "publisher": "https://doi.org/10.1111/apha.12811"
+  }
+}

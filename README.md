@@ -36,11 +36,15 @@ When creating instructions, prompts, or scripts for this workflow:
 
 Reusable files must operate on run inputs such as:
 
-- `request.md`
-- `run_config.md`
-- `instruction.md`
-- `topic.md`
-- optional `constraints.md`
+- `original_user_prompt.md`
+- `passes/pass_001/inputs/request.md`
+- `passes/pass_001/inputs/run_config.md`
+- `passes/pass_001/inputs/instruction.md`
+- `passes/pass_001/inputs/topic.md`
+- optional `passes/pass_001/inputs/constraints.md`
+- learned `passes/pass_###/inputs/` guidance for later passes
+- pass-scoped `passes/pass_###/artifacts/`
+- pass-scoped `passes/pass_###/reports/`
 
 Example-specific content belongs only inside `runs/<run_id>/`.
 
@@ -82,7 +86,7 @@ Important interpretation:
 - broad retrieval and exhaustive abstract review are different from per-call context size
 - if the scout and collector produce `1,000+` potentially related papers, those papers should still all go through `abstractReviewer` and `abstractReviewer2`
 - batching exists only so the model reads the cohort in manageable pieces
-- low retrieval caps should not be introduced just to keep the cohort small; recall comes first unless the user explicitly wants a limit
+- PubMed collection caps are forbidden; recall comes first, and large cohorts must be handled by query refinement plus review batching
 
 ## Prompt engineering rule
 
@@ -137,4 +141,5 @@ Current wrapper behavior:
 - successful TEI output is normalized to the same JSON contract used for full-text review
 - if no reachable parser endpoint is available, staged PDFs remain explicitly `parser_pending`
 - PMC-normalized papers can still continue into full-text review
-- manual PDF ingest should continue directly into full-text keep/drop review for any newly readable papers before the ingest cycle is considered complete
+- during `access_phase = pmc_learning`, manual PDF ingest is deferred; PMC-normalized papers should be read first for mechanism and query-feedback signals
+- during `access_phase = final_access`, manual PDF ingest should continue directly into full-text keep/drop review for any newly readable papers before the ingest cycle is considered complete

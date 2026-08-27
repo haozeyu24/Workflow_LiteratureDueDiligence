@@ -1,0 +1,22 @@
+{
+  "paper_id": "pmid-22354964",
+  "pmid": "22354964",
+  "doi": "10.1074/jbc.M111.286641",
+  "title": "De-SUMOylation of CCCTC binding factor (CTCF) in hypoxic stress-induced human corneal epithelial cells.",
+  "abstract": "Epigenetic factor CCCTC binding factor (CTCF) plays important roles in the genetic control of cell fate. Previous studies found that CTCF is positively and negatively regulated at the transcriptional level by epidermal growth factor (EGF) and ultraviolet (UV) stimulation, respectively. However, it is unknown whether other stresses modify the CTCF protein. Here, we report that regulation of CTCF by de-SUMOylation is dependent upon hypoxic and oxidative stresses. We found that stimulation of human corneal epithelial cells with hypoxic stress suppressed a high molecular mass form of CTCF (150 kDa), but not a lower molecular weight form of CTCF (130 kDa). Further investigation revealed that the hypoxic stress-suppressed 150-kDa CTCF was a small ubiquitin-related modifier (SUMO)ylated form of the protein. Hypoxic stress-induced de-SUMOylation of human CTCF was associated with lysine 74 and 689 residues, but not to the phosphorylation of CTCF. Overexpression of SENP1 induced de-SUMOylation of CTCF. However, knockdown of SENP1 could not rescue hypoxic stress-induced CTCF de-SUMOylation. Overexpression of SUMO1 and SUMO2 increased SUMOylation of CTCF and partially blocked hypoxic stress-induced CTCF de-SUMOylation, suggesting that free cellular SUMO proteins play roles in regulating hypoxia-induced CTCF de-SUMOylation. In addition, hypoxic stress significantly inhibited PAX6 mRNA and protein expressions by suppression of PAX6-P0 promoter activity. The result was further supported by data showing that knockdown of CTCF significantly enhanced expression of PAX6 and abolished hypoxia-induced suppression of PAX6. Thus, we conclude that hypoxic stress induces de-SUMOylation of CTCF to functionally regulate CTCF activity.",
+  "year": "2012",
+  "journal": "The Journal of biological chemistry",
+  "authors": [
+    "Wang J",
+    "Wang Y",
+    "Lu L"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/22354964/",
+    "publisher": "https://doi.org/10.1074/jbc.M111.286641"
+  }
+}

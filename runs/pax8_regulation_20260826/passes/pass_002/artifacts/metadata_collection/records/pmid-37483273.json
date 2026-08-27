@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-37483273",
+  "pmid": "37483273",
+  "doi": "10.1016/j.omtn.2023.06.016",
+  "title": "Restoration of functional PAX6 in aniridia patient iPSC-derived ocular tissue models using repurposed nonsense suppression drugs.",
+  "abstract": "Congenital aniridia is a rare, pan-ocular disease causing severe sight loss, with only symptomatic intervention offered to patients. Approximately 40% of aniridia patients present with heterozygous nonsense variants in PAX6, resulting in haploinsufficiency. Translational readthrough-inducing drugs (TRIDs) have the ability to weaken the recognition of in-frame premature termination codons (PTCs), permitting full-length protein to be translated. We established induced pluripotent stem cell (iPSC)-derived 3D optic cups and 2D limbal epithelial stem cell (LESC) models from two aniridia patients with prevalent PAX6 nonsense mutations. Both in\u00a0vitro models show reduced PAX6 protein levels, mimicking the disease. The repurposed TRIDs amlexanox and 2,6-diaminopurine (DAP) and the positive control compounds ataluren and G418 were tested for their efficiency. Amlexanox was identified as the most promising TRID, increasing full-length PAX6 levels in both models and rescuing the disease phenotype through normalization of VSX2 and cell proliferation in the optic cups and reduction of ABCG2 protein and SOX10 expression in LESCs. This study highlights the significance of patient iPSC-derived cells as a new model system for aniridia and proposes amlexanox as a new putative treatment for nonsense-mediated aniridia.",
+  "year": "2023",
+  "journal": "Molecular therapy. Nucleic acids",
+  "authors": [
+    "Lima Cunha D",
+    "Sarkar H",
+    "Eintracht J",
+    "Harding P",
+    "Zhou JH",
+    "Moosajee M"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/37483273/",
+    "publisher": "https://doi.org/10.1016/j.omtn.2023.06.016"
+  }
+}

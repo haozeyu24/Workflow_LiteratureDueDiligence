@@ -1,0 +1,31 @@
+{
+  "paper_id": "pmid-41349461",
+  "pmid": "41349461",
+  "doi": "10.1016/j.cbd.2025.101708",
+  "title": "A multi-omics atlas of testicular development in Leiocassis longirostris: dynamic regulation of spermatogenesis.",
+  "abstract": "The Chinese longsnout catfish (Leiocassis longirostris) is a commercially valuable freshwater species in China. We elucidated molecular mechanisms underlying testicular development of L. longirostris across five stages (stages I to V) through integrated transcriptomic and proteomic analyses, which is crucial for enhancing its sperm quality and efficient reproduction. Enrichment analyses identified several key pathways as essential for testicular development, including TGF-\u03b2 signaling, Wnt signaling, ECM-receptor interaction, ferroptosis, cell cycle regulation, and ubiquitin-mediated proteolysis. Gene Ontology (GO) enrichment highlighted core biological processes such as germ cell proliferation, differentiation, meiotic progression, and spermatogenesis regulation involved in development. Notably, qPCR validation showed peak expression levels of wnt7a, pax6, and kiss1r at distinct spermatogenic phases (p\u00a0<\u00a00.01), suggesting their potential as temporal biomarkers for identification of development stages. Furthermore, protein-protein interaction (PPI) analyses revealed C-type lysozyme (LysC) as a potential regulatory factor, with peak expression at stages I and III, possibly linking testicular immunity and reproductive processes. These findings elucidate the molecular mechanisms of testicular development and provide insights for developing efficient artificial breeding strategies for L. longirostris.",
+  "year": "2026",
+  "journal": "Comparative biochemistry and physiology. Part D, Genomics & proteomics",
+  "authors": [
+    "Qin F",
+    "Liu F",
+    "Cao Q",
+    "Wei Z",
+    "Gao H",
+    "Zheng W",
+    "Ke Z",
+    "Xiong Y",
+    "Luo H",
+    "Wu R",
+    "Wang Z",
+    "Ye H"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/41349461/",
+    "publisher": "https://doi.org/10.1016/j.cbd.2025.101708"
+  }
+}

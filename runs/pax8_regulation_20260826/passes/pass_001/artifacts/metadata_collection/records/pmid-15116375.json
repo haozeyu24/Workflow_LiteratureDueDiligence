@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-15116375",
+  "pmid": "15116375",
+  "doi": "10.1002/mus.20012",
+  "title": "Continuous myofiber remodeling in uninjured extraocular myofibers: myonuclear turnover and evidence for apoptosis.",
+  "abstract": "Unlike normal mature limb skeletal muscles, in which satellite cells are quiescent unless the muscle is injured, satellite cells in mammalian adult extraocular muscles (EOM) are chronically activated. This is evidenced by hepatocyte growth factor, the myogenic regulatory factor, Pax-7, and the cell-cycle marker, Ki-67, localized to the satellite cell position using serial sections and the positional markers laminin and dystrophin. Bromodeoxyuridine (brdU) labeling combined with dystrophin immunostaining showed brdU-positive myonuclei, presumably the result of fusion of activated satellite cells into existing myofibers. One new myonucleus was added to every 1000 myofibers in cross-section using a 12-hour brdU-labeling paradigm. The EOM thus appear to retain a stable nuclear population by an opposing process of apoptosis that results in myonuclear removal as visualized by terminal deoxynucleotidyltransferase-mediated nick end labeling (TUNEL). Activated caspase-3 was present in localized cytoplasmic domains extending from 10 to 210 microm within individual myofibers, suggesting segmental cytoplasmic reorganization. Understanding the cellular mechanisms that maintain this process of continuous myonuclear addition and removal in normal adult EOM may suggest new hypotheses to explain the preferential involvement or sparing of these muscles in skeletal muscle disease.",
+  "year": "2004",
+  "journal": "Muscle & nerve",
+  "authors": [
+    "McLoon LK",
+    "Rowe J",
+    "Wirtschafter J",
+    "McCormick KM"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/15116375/",
+    "publisher": "https://doi.org/10.1002/mus.20012"
+  }
+}

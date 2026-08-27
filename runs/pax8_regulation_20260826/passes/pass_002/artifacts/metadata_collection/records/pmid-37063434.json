@@ -1,0 +1,31 @@
+{
+  "paper_id": "pmid-37063434",
+  "pmid": "37063434",
+  "doi": "10.7150/ijbs.77150",
+  "title": "PI3K/ c-Myc/AFF4 axis promotes pancreatic tumorigenesis through fueling nucleotide metabolism.",
+  "abstract": "MLL-AFF4 fusion gene has been discovered in acute leukemia, whether AFF4 alone plays a role in tumor, especially pancreatic tumorigenesis, is still elusive. Increasing evidence suggests that cancer cells altered nucleotide metabolism during tumorigenesis. In present study, we observed AFF4 overexpression promoted cell proliferation, colony formation and cell cycle progression while loss of AFF4 impairs above phenotypes of pancreatic ductal carcinoma (PDAC) cells. Using RNA-profiling, we revealed that HPRT1 and IMPDH2, two enzymes in the nucleotide metabolism pathway, were upregulated following AFF4 overexpression. Simultaneous expression of HPRT1 and IMPDH2 would mainly rescue the phenotypes of cells lacking AFF4. Additionally, xenograft study proved HPRT1 and IMPDH2 genetically function in the downstream of AFF4, which was recruited by PAX2 when CDK9 mediated AFF4 phosphorylation at S388 and drove HPRT1 and IMPDH2 expression. We further discovered PI3K/c-Myc axis is required for AFF4 expression in PDAC cells. Finally, we obtained the positive correlation between c-Myc and AFF4 or AFF4 and HPRT1/IMPDH2 in clinical PDAC samples. Otherwise, we conducted data-mining and found that the expression levels of AFF4 and HPRT1/IMPDH2 are correlated with patients' prognosis, establishing AFF4 as a potential biomarker and therapeutic target for PDAC.",
+  "year": "2023",
+  "journal": "International journal of biological sciences",
+  "authors": [
+    "Ni C",
+    "Liu W",
+    "Zheng K",
+    "Guo S",
+    "Song B",
+    "Jing W",
+    "Li G",
+    "Li B",
+    "Ni C",
+    "Shi K",
+    "Jin G",
+    "Yu G"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/37063434/",
+    "publisher": "https://doi.org/10.7150/ijbs.77150"
+  }
+}

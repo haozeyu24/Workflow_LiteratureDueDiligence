@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-20234184",
+  "pmid": "20234184",
+  "doi": "10.4161/cbt.9.9.11432",
+  "title": "MCF-7 breast cancer cells selected for tamoxifen resistance acquire new phenotypes differing in DNA content, phospho-HER2 and PAX2 expression, and rapamycin sensitivity.",
+  "abstract": "Patients with estrogen receptor-positive (ER+) breast cancers are often treated with aromatase inhibitors or by antiestrogens such as tamoxifen to prevent disease recurrence. Resistant tumors nevertheless develop and it is commonly assumed that they arise by the induction of mutations. However, it is also possible that resistant tumors grow from preexisting variant populations within the original tumor. We have investigated this possibility in the case of the MCF-7 breast cancer cell line. The line was cultured for a prolonged period either in the presence of tamoxifen to block the action of oestrogen or in the absence of estrogen to mimic the action of oophorectomy or treatment with aromatase inhibitors. Both treatments led to growth inhibition followed by eventual outgrowth of sub-lines. Five of these sub-lines were developed and characterized for sensitivity to tamoxifen and to the antibiotic rapamycin, expression of HE R2 and PAX2, and phosphorylation of Akt, p70S6K, 4E-BP1, rpS6, EGFR1, Erk and HE R2. All six lines were ER+ and could be divided into four phenotypes distinguished by cell volume, DNA content (ploidy) and cell cycle time. In two cases, selection with tamoxifen and selection in the absence of estrogen produced similar phenotypes. Rapamycin resistance was a feature of the sub-lines developed under estrogen deprivation and was associated with loss of active phospho-HE R2 and acquisition of PAX2 expression. The results support the conclusion that the MCF-7 cell line is heterogeneous and that the selection conditions allow the growth of pre-existing phenotypes.",
+  "year": "2010",
+  "journal": "Cancer biology & therapy",
+  "authors": [
+    "Leung E",
+    "Kannan N",
+    "Krissansen GW",
+    "Findlay MP",
+    "Baguley BC"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/20234184/",
+    "publisher": "https://doi.org/10.4161/cbt.9.9.11432"
+  }
+}

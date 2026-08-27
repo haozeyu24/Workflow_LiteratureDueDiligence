@@ -1,0 +1,29 @@
+{
+  "paper_id": "pmid-40001141",
+  "pmid": "40001141",
+  "doi": "10.1186/s12951-025-03245-w",
+  "title": "Influences of lead-based perovskite nanoparticles exposure on early development of human retina.",
+  "abstract": "BACKGROUND: Lead-based perovskite nanoparticles (Pb-PNPs) are widely utilized in the photovoltaic industry. However, due to their poor stability and high water solubility, lead often gets released into the environment, which can negatively impact the development of the central nervous system (CNS). As an extension of the CNS, the effects and mechanisms of Pb-PNPs on human retinal development have remained elusive.\n\nOBJECTIVES: We aimed to investigate the effects of Pb-PNPs on human retinal development.\n\nMETHODS: Human embryonic stem cell-derived three-dimensional floating retinal organoids (hEROs) were established to simulate early retinal development. Using immunofluorescence staining, biological-transmission electron microscopy analysis, inductively coupled plasma-mass spectrometry, two-dimensional element distribution detection, and RNA sequencing, we evaluated and compared the toxicity of CsPbBr3 nanoparticles (a representative substance of Pb-PNPs) and Pb(AC)2 and investigated the toxicity-reducing effects of SiO2 encapsulation.\n\nRESULTS: Our findings revealed that CsPbBr3 nanoparticles exposure resulted in a concentration-dependent decrease in the area and thickness of the neural retina in hEROs. Additionally, CsPbBr3 nanoparticles exposure hindered cell proliferation and promoted cell apoptosis while suppressing the retinal ganglion cell differentiation, an alteration that further led to the disruption of retinal structure. By contrast, CsPbBr3 nanoparticles exposure to hEROs was slightly less toxic than Pb(AC)2. Mechanistically, CsPbBr3 nanoparticles exposure activated endoplasmic reticulum stress, which promoted apoptosis by up-regulating Caspase-3 and inhibited retinal ganglion cell development by down-regulating Pax6. Interestingly, after coating CsPbBr3 nanoparticles with silica, it exhibited lower toxicities to hEROs by alleviating endoplasmic reticulum stress.\n\nCONCLUSION: Overall, our study provides evidence of Pb-PNPs-induced developmental toxicity in the human retina, explores the potential mechanisms of CsPbBr3 nanoparticles' developmental toxicity, and suggests a feasible strategy to reduce toxicity.",
+  "year": "2025",
+  "journal": "Journal of nanobiotechnology",
+  "authors": [
+    "Yang C",
+    "Du Z",
+    "Mei L",
+    "Chen X",
+    "Liao Y",
+    "Ge L",
+    "Kang J",
+    "Gu Z",
+    "Fan X",
+    "Xu H"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/40001141/",
+    "publisher": "https://doi.org/10.1186/s12951-025-03245-w"
+  }
+}

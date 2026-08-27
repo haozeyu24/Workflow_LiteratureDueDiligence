@@ -1,0 +1,30 @@
+{
+  "paper_id": "pmid-33522413",
+  "pmid": "33522413",
+  "doi": "10.1152/ajprenal.00371.2020",
+  "title": "Epigenetic regulation of arginine vasopressin receptor 2 expression by PAX2 and Pax transcription interacting protein.",
+  "abstract": "Renal arginine vasopressin receptor 2 (AVPR2) plays a crucial role in osmoregulation. Engagement of ligand with AVPR2 results in aquaporin 2 movement to the apical membrane and water reabsorption from the urinary filtrate. Despite this essential role, little is known about transcriptional regulation of Avpr2. Here, we identify novel roles for PAX2, a transcription factor crucial for kidney development, and its adaptor protein, Pax transcription interacting protein (PTIP), for epigenetic regulation of Avpr2 and thus body water balance. Chromatin immunoprecipitation (ChIP) from murine inner medulla cells (IMCD-3) identified the minimal DNA-binding region of PAX2 on the Avpr2 promoter. Regulation of Avpr2 by PAX2 was confirmed using a heterologous DNA expression system. PAX2 recruits the adaptor protein PTIP and its associated histone methyltransferase (HMT) complex to Avpr2 promoter, imposing epigenetic marks on this region and throughout the coding sequence that modulate Avpr2 gene transcription. Reduction of PAX2 or PTIP protein levels by siRNA prevented histone lysine methylation and expression of Avpr2. ChIP using mouse or human kidneys determined that PAX2 is highly enriched in the AVPR2 promoter alongside PTIP and HMT proteins, leading to high levels of histone H3 lysine trimethylation within the promoter and throughout the gene. In conclusion, PAX2 provides locus specificity for PTIP, allowing the HMT complex to impart epigenetic changes at the Avpr2 locus and regulate Avpr2 transcription. These finding have major implications for understanding regulation of body water balance.NEW & NOTEWORTHY The transcription factor PAX2 plays an indispensable role in kidney development. In the adult kidney, we identified the first described protein this protein regulates. PAX2 and its interacting partner Pax transcription interacting protein recruit a histone methyltransferase complex to the promoter and epigentically regulate the expression of arginine vasopressin receptor 2, a protein that plays a crucial role in osmoregulation in the distal tubule.",
+  "year": "2021",
+  "journal": "American journal of physiology. Renal physiology",
+  "authors": [
+    "Abraham S",
+    "Paknikar R",
+    "Bhumbra S",
+    "Luan D",
+    "Venkatareddy M",
+    "O'Connor C",
+    "Bitzer M",
+    "Fenton RA",
+    "Hurd T",
+    "Garg P",
+    "Patel SR"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/33522413/",
+    "publisher": "https://doi.org/10.1152/ajprenal.00371.2020"
+  }
+}

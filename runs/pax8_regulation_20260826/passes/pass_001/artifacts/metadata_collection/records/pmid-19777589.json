@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-19777589",
+  "pmid": "19777589",
+  "doi": "10.1002/dvdy.22088",
+  "title": "Neural stem cell self-renewal requires the Mrj co-chaperone.",
+  "abstract": "The Mrj co-chaperone is expressed throughout the mouse conceptus, yet its requirement for placental development has prohibited a full understanding of its embryonic function. Here, we show that Mrj(-/-) embryos exhibit neural tube defects independent of the placenta phenotype, including exencephaly and thin-walled neural tubes. Molecular analyses revealed fewer proliferating cells and a down-regulation of early neural progenitor (Pax6, Olig2, Hes5) and neuronal (Nscl2, SCG10) cell markers in Mrj(-/-) neuroepithelial cells. Furthermore, Mrj(-/-) neurospheres are significantly smaller and form fewer secondary neurospheres indicating that Mrj is necessary for self-renewal of neural stem cells. However, the molecular function of Mrj in this context remains elusive because Mrj does not colocalize with Bmi-1, a self-renewal protein. Furthermore, unlike in Mrj(-/-) placentas, intermediate filament-containing aggregates do not accumulate in Mrj(-/-) neuroepithelium, ruling out nestin as a substrate for Mrj. Regardless, Mrj plays an important role in neural stem cell self-renewal.",
+  "year": "2009",
+  "journal": "Developmental dynamics : an official publication of the American Association of Anatomists",
+  "authors": [
+    "Watson ED",
+    "Mattar P",
+    "Schuurmans C",
+    "Cross JC"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/19777589/",
+    "publisher": "https://doi.org/10.1002/dvdy.22088"
+  }
+}

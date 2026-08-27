@@ -1,0 +1,29 @@
+{
+  "paper_id": "pmid-21169561",
+  "pmid": "21169561",
+  "doi": "10.1091/mbc.E10-06-0541",
+  "title": "Role of Pax3 acetylation in the regulation of Hes1 and Neurog2.",
+  "abstract": "Pax3 plays a role in regulating Hes1 and Neurog2 activity and thereby stem cell maintenance and neurogenesis. A mechanism for Pax3 regulation of these two opposing events, during caudal neural tube development, is examined in this study. Pax3 acetylation on C-terminal lysine residues K437 and K475 may be critical for proper regulation of Hes1 and Neurog2. Removal of these lysine residues increased Hes1 but decreased Neurog2 promoter activity. SIRT1 deacetylase may be a key component in regulating Pax3 acetylation. Chromatin immunoprecipitation assays showed that SIRT1 is associated with Hes1 and Neurog2 promoters during murine embryonic caudal neural tube development at E9.5, but not at E12.5. Overexpression of SIRT1 decreased Pax3 acetylation, Neurog2 and Brn3a positive staining. Conversely, siRNA-mediated silencing of SIRT1 increased these factors. These studies suggest that Pax3 acetylation results in decreased Hes1 and increased Neurog2 activity, thereby promoting sensory neuron differentiation.",
+  "year": "2011",
+  "journal": "Molecular biology of the cell",
+  "authors": [
+    "Ichi S",
+    "Boshnjaku V",
+    "Shen YW",
+    "Mania-Farnell B",
+    "Ahlgren S",
+    "Sapru S",
+    "Mansukhani N",
+    "McLone DG",
+    "Tomita T",
+    "Mayanil CS"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/21169561/",
+    "publisher": "https://doi.org/10.1091/mbc.E10-06-0541"
+  }
+}

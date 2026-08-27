@@ -1,0 +1,21 @@
+{
+  "paper_id": "pmid-17010201",
+  "pmid": "17010201",
+  "doi": "10.1186/1471-213X-6-43",
+  "title": "Eye and neural defects associated with loss of GDF6.",
+  "abstract": "BACKGROUND: In Xenopus the bone morphogenetic protein growth and differentiation factor 6 (GDF6) is expressed at the edge of the neural plate, and within the anterior neural plate including the eye fields. Here we address the role of GDF6 in neural and eye development by morpholino knockdown experiments.\n\nRESULTS: We show that depletion of GDF6 (BMP13) resulted in a reduction in eye size, loss of laminar structure and a reduction in differentiated neural cell types within the retina. This correlated with a reduction in staining for Smad1/5/8 phosphorylation indicating a decrease in GDF6 signalling through loss of phosphorylation of these intracellular mediators of bone morphogenetic protein (BMP) signalling. In addition, the Pax6 expression domain is reduced in size at early optic vesicle stages. Neural cell adhesion molecule (NCAM) is generally reduced in intensity along the neural tube, while in the retina and brain discreet patches of NCAM expression are also lost. GDF6 knock down resulted in an increase in cell death along the neural tube and within the retina as determined by terminal deoxynucleotidyl transferase-mediated dUTP nick end labeling (TUNEL) staining.\n\nCONCLUSION: Our data demonstrate that GDF6 has an important role in neural differentiation in the eye as well as within the central nervous system, and that GDF6 may act in some way to maintain cell survival within the ectoderm, during the normal waves of programmed cell death.",
+  "year": "2006",
+  "journal": "BMC developmental biology",
+  "authors": [
+    "Hanel ML",
+    "Hensey C"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/17010201/",
+    "publisher": "https://doi.org/10.1186/1471-213X-6-43"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "paper_id": "pmid-25788948",
+  "pmid": "25788948",
+  "doi": "10.1155/2015/961307",
+  "title": "Effects of Transient Hypoxia versus Prolonged Hypoxia on Satellite Cell Proliferation and Differentiation In Vivo.",
+  "abstract": "The microenvironment of the injury site can have profound effects on wound healing. Muscle injury results in ischemia leading to short-term local hypoxia, but there are conflicting reports on the role of hypoxia on the myogenic program in vivo and in vitro. In our rat model of mitochondrial restoration (MR), temporary upregulation of mitochondrial activity by a cocktail of organelle-encoded RNAs results in satellite cell proliferation and initiation of myogenesis. We now report that MR leads to a transient hypoxic response in situ. Inhibition of hypoxia by lowering mitochondrial O2 consumption, either by respiratory electron transport inhibitors, or by NO-mediated inhibition of O2 binding to cytochrome c oxidase, resulted in exacerbation of inflammation. Lentivirus-mediated knockdown of hypoxia-inducible factor 1\u03b1 (HIF1\u03b1) or of Notch signaling components had a similar effect, and pharmacologic inhibition of HIF or Notch reduced the number of proliferating Pax7(+) cells. In contrast, a prolonged hypoxic response induced either by uncoupling of respiration from oxidative phosphorylation or through HIF stabilization by dimethyloxalylglycine (DMOG) had an immediate anti-inflammatory effect. Although significant satellite cell proliferation occurred in presence of DMOG, expression of differentiation markers was affected. These results emphasize the importance of transient hypoxia as opposed to prolonged hypoxia for myogenesis.",
+  "year": "2015",
+  "journal": "Stem cells international",
+  "authors": [
+    "Jash S",
+    "Adhya S"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/25788948/",
+    "publisher": "https://doi.org/10.1155/2015/961307"
+  }
+}

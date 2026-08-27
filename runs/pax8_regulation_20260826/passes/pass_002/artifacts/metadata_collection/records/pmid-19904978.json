@@ -1,0 +1,22 @@
+{
+  "paper_id": "pmid-19904978",
+  "pmid": "19904978",
+  "doi": "10.1021/bi9012947",
+  "title": "Phosphorylation of serine 205 by the protein kinase CK2 persists on Pax3-FOXO1, but not Pax3, throughout early myogenic differentiation.",
+  "abstract": "The myogenic transcription factor Pax3 plays an essential role in early skeletal muscle development and is a key component in alveolar rhabdomyosarcoma (ARMS), a childhood solid muscle tumor. ARMS is characterized by a t(2;13) chromosomal translocation resulting in the fusion of the 5' Pax3 sequences to the 3' FOXO1 sequences to encode the oncogenic fusion protein, Pax3-FOXO1. Posttranslational modifications such as phosphorylation are common mechanisms by which transcription factors are regulated. Consistent with this fact, we demonstrated in a previous report that Pax3 is phosphorylated on Ser205 in proliferating, but not differentiated, primary myoblasts. However, the kinase that mediates this phosphorylation event has yet to be identified. In addition, it is not known whether Pax3-FOXO1 is phosphorylated at this site or how the phosphorylation of the fusion protein changes during early myogenic differentiation. In this report we identify CK2 (formerly termed \"casein kinase II\") as the kinase responsible for phosphorylating Pax3 and Pax3-FOXO1 at Ser205 in proliferating mouse primary myoblasts. Furthermore, we demonstrate that, in contrast to wild-type Pax3, phosphorylation at Ser205 persists on Pax3-FOXO1 throughout early myogenic differentiation. Finally, we show that Pax3-FOXO1 is phosphorylated at Ser205 in a variety of translocation-containing ARMS cell lines. The results presented in this report not only suggest a possible mechanism by which the disregulation of Pax3-FOXO1 may contribute to tumorigenesis but also identify a novel target for the development of therapies for the treatment of ARMS.",
+  "year": "2009",
+  "journal": "Biochemistry",
+  "authors": [
+    "Dietz KN",
+    "Miller PJ",
+    "Hollenbach AD"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/19904978/",
+    "publisher": "https://doi.org/10.1021/bi9012947"
+  }
+}

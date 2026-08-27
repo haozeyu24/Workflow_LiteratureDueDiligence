@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-37116471",
+  "pmid": "37116471",
+  "doi": "10.1016/j.cell.2023.03.018",
+  "title": "Regulation of Pax3 by Proteasomal Degradation of Monoubiquitinated Protein in Skeletal Muscle Progenitors.",
+  "abstract": "",
+  "year": "2023",
+  "journal": "Cell",
+  "authors": [
+    "Boutet SC",
+    "Disatnik MH",
+    "Chan LS",
+    "Iori K",
+    "Rando TA"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/37116471/",
+    "publisher": "https://doi.org/10.1016/j.cell.2023.03.018"
+  }
+}

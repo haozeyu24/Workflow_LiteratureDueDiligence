@@ -1,0 +1,29 @@
+{
+  "paper_id": "pmid-23672649",
+  "pmid": "23672649",
+  "doi": "10.1089/ten.TEA.2012.0565",
+  "title": "In vitro development and characterization of a tissue-engineered conduit resembling esophageal wall using human and pig skeletal myoblast, oral epithelial cells, and biologic scaffolds.",
+  "abstract": "INTRODUCTION: Tissue engineering represents a promising approach for esophageal replacement, considering the complexity and drawbacks of conventional techniques.\n\nAIM: To create the components necessary to reconstruct in vitro or in vivo an esophageal wall, we analyzed the feasibility and the optimal conditions of human and pig skeletal myoblast (HSM and PSM) and porcine oral epithelial cell (OEC) culture on biologic scaffolds.\n\nMATERIALS AND METHODS: PSM and HSM were isolated from striated muscle and porcine OECs were extracted from oral mucosa biopsies. Myoblasts were seeded on an acellular scaffold issue from porcine small intestinal submucosa (SIS) and OEC on decellularized human amniotic membrane (HAM). Seeding conditions (cell concentrations [0.5\u00d710(6) versus 10(6) cells/cm(2)] and culture periods [7, 14 and 21 days]), were analyzed using the methyl thiazoltetrazolium assay, quantitative PCR, flow cytometry, and immunohistochemistry.\n\nRESULTS: Phenotypic stability was observed after cellular expansion for PSM and HSM (85% and 97% CD56-positive cells, respectively), and OECs (90% AE1/AE3- positive cells). After PSM and HSM seeding, quantities of viable cells were similar whatever the initial cell concentration used and remained stable at all time points. During cell culture on SIS, a decrease of CD56-positive cells was observed (76% and 76% by D7, 56% and 70% by D14, 28% and 60% by D21, for PSM and HSM, respectively). Multilayered surface of \u03b1-actin smooth muscle and Desmine-positive cells organized in bundles was seen as soon as D7, with no evidence of cell within the SIS. Myoblasts fusion was observed at D21. Pax3 and Pax7 expression was downregulated and MyoD expression upregulated, at D14.OEC proliferation was observed on HAM with both cell concentrations from D7 to D21. The cell metabolism activity was more important on matrix seeded by 10(6) cells/cm(2). With 0.5\u00d710(6) OEC/cm(2), a single layer of pancytokeratin-positive cells was seen at D7, which became pluristratified by D14, while when 10(6) OEC/cm(2) were used, a pluristratified epithelial structure was seen as soon as D7. Proliferative cells (Proliferating Cell Nuclear Antigen staining) were mainly located at the basal layer.\n\nCONCLUSION: In this model, the optimal conditions of cell seeding in terms of cell concentration and culture duration were 0.5\u00d710(6) myoblasts/cm(2) and 10(6) OEC/cm(2), and 7 days.",
+  "year": "2013",
+  "journal": "Tissue engineering. Part A",
+  "authors": [
+    "Poghosyan T",
+    "Gaujoux S",
+    "Vanneaux V",
+    "Bruneval P",
+    "Domet T",
+    "Lecourt S",
+    "Jarraya M",
+    "Sfeir R",
+    "Larghero J",
+    "Cattan P"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/23672649/",
+    "publisher": "https://doi.org/10.1089/ten.TEA.2012.0565"
+  }
+}

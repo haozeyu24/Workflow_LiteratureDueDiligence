@@ -1,0 +1,33 @@
+{
+  "paper_id": "pmid-39015146",
+  "pmid": "39015146",
+  "doi": "10.1016/j.isci.2024.110241",
+  "title": "The E3 ubiquitin ligase Nedd4L preserves skeletal muscle stem cell quiescence by inhibiting their activation.",
+  "abstract": "Adult stem cells play a critical role in tissue repair and maintenance. In tissues with slow turnover, including skeletal muscle, these cells are maintained in a mitotically quiescent state yet remain poised to re-enter the cell cycle to replenish themselves and regenerate the tissue. Using a panomics approach we show that the PAX7/NEDD4L axis acts against muscle stem cell activation in homeostatic skeletal muscle. Our findings suggest that PAX7 transcriptionally activates the E3 ubiquitin ligase Nedd4L and that the conditional genetic deletion of Nedd4L impairs muscle stem cell quiescence, with an upregulation of cell cycle and myogenic differentiation genes. Loss of Nedd4L in muscle stem cells results in the expression of doublecortin (DCX), which is exclusively expressed during their in\u00a0vivo activation. Together, these data establish that the ubiquitin proteasome system, mediated by Nedd4L, is a key contributor to the muscle stem cell quiescent state in adult mice.",
+  "year": "2024",
+  "journal": "iScience",
+  "authors": [
+    "Blackburn DM",
+    "Sahinyan K",
+    "Hern\u00e1ndez-Corchado A",
+    "Lazure F",
+    "Richard V",
+    "Raco L",
+    "Perron G",
+    "Zahedi RP",
+    "Borchers CH",
+    "Lepper C",
+    "Kawabe H",
+    "Jahani-Asl A",
+    "Najafabadi HS",
+    "Soleimani VD"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/39015146/",
+    "publisher": "https://doi.org/10.1016/j.isci.2024.110241"
+  }
+}

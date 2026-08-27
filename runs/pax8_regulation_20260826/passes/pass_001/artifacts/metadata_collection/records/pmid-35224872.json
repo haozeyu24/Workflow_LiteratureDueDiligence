@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-35224872",
+  "pmid": "35224872",
+  "doi": "10.14814/phy2.15188",
+  "title": "Does the early aldosterone-induced SGK1 play a role in early Kaliuresis?",
+  "abstract": "Urinary K+ potassium excretion rapidly increases after a potassium-rich meal. The early aldosterone-induced sgk1\u00a0gene (encoding serum and glucocorticoid-induced kinase 1), activates potassium clearance, but the role of this kinase in the early activation of K+ secretion has not been clearly defined. Here, we challenged inducible renal-tubule-specific Sgk1Pax8 / LC1 \u00a0knockout mice with an acute high-potassium load (HK:5%K+ ) and compared the physiological and molecular responses to control mice. We observe that urinary excretion after a K+ load over the first 3\u00a0h is not dependent on SGK1 but is coincident with the rapid dephosphorylation of the Na+ ,Cl- -cotransporter (NCC) to increase distal salt delivery. Molecular analyses indicate that whereas SGK1-mediated phosphorylation of the ubiquitin-protein ligase NEDD4-2 begins to increase by 3h, SGK1-dependent proteolytic activation of ENaC only becomes detectable after 6 h of HK intake. Consistent with SGK1-dependent ENaC activation via inhibition of NEDD4-2-mediated ubiquitylation, Sgk1Pax8 / LC1 \u00a0mice are unable to efficiently inhibit NEDD4-2 or increase ENaC cleavage after 6\u00a0h of HK. Nevertheless, no defect in acute K+ balance was detected in the mutant mice after 6 h of HK. Moreover, we found that Sgk1Pax8 / LC1 \u00a0mice reduce NCC phosphorylation and NCC-mediated salt absorption to a greater extent than control mice after a K+ load, promoting increased amiloride-sensitive Na+ -reabsorption via ENaC to maintain adequate kaliuresis. Together, these data indicate that: (a) during the early 3 h of HK intake, K+ excretion is SGK1-independent even under an extreme K+ challenge, (b) shortly after, SGK1 inhibits NEDD4-2 and activates ENaC to stimulate K+ -secretion, (c) SGK1-dependent phosphorylation of NCC occurs, acting more likely as a brake pedal to prevent excessive K+ loss.",
+  "year": "2022",
+  "journal": "Physiological reports",
+  "authors": [
+    "Al-Qusairi L",
+    "Basquin D",
+    "Stifanelli M",
+    "Welling PA",
+    "Staub O"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (stability[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR lysosome[Title/Abstract] OR autophagy[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/35224872/",
+    "publisher": "https://doi.org/10.14814/phy2.15188"
+  }
+}

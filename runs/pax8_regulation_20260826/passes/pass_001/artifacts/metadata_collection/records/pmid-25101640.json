@@ -1,0 +1,31 @@
+{
+  "paper_id": "pmid-25101640",
+  "pmid": "25101640",
+  "doi": "10.1371/journal.pone.0102944",
+  "title": "Characterization of novel MSX1 mutations identified in Japanese patients with nonsyndromic tooth agenesis.",
+  "abstract": "Since MSX1 and PAX9 are linked to the pathogenesis of nonsyndromic tooth agenesis, we performed detailed mutational analysis of these two genes sampled from Japanese patients. We identified two novel MSX1 variants with an amino acid substitution within the homeodomain; Thr174Ile (T174I) from a sporadic hypodontia case and Leu205Arg (L205R) from a familial oligodontia case. Both the Thr174 and Leu205 residues in the MSX1 homeodomain are highly conserved among different species. To define possible roles of mutations at these amino acids in the pathogenesis of nonsyndromic tooth agenesis, we performed several functional analyses. It has been demonstrated that MSX1 plays a pivotal role in hard tissue development as a suppressor for mesenchymal cell differentiation. To evaluate the suppression activity of the variants in mesenchymal cells, we used the myoD-promoter, which is one of convenient reporter assay system for MSX1. Although the gene products of these MSX1 variants are stable and capable of normal nuclear localization, they do not suppress myoD-promoter activity in differentiated C2C12 cells. To clarify the molecular mechanisms underlying our results, we performed further analyses including electrophoretic mobility shift assays, and co-immunoprecipitation assays to survey the molecular interactions between the mutant MSX1 proteins and the oligonucleotide DNA with MSX1 consensus binding motif or EZH2 methyltransferase. Since EZH2 is reported to interact with MSX1 and regulate MSX1 mediated gene suppression, we hypothesized that the T174I and L205R substitutions would impair this interaction. We conclude from the results of our experiments that the DNA binding ability of MSX1 is abolished by these two amino acid substitutions. This illustrates a causative role of the T174I and L205R MSX1 homeodomain mutations in tooth agenesis, and suggests that they may influence cell proliferation and differentiation resulting in lesser tooth germ formation in vivo.",
+  "year": "2014",
+  "journal": "PloS one",
+  "authors": [
+    "Yamaguchi S",
+    "Machida J",
+    "Kamamoto M",
+    "Kimura M",
+    "Shibata A",
+    "Tatematsu T",
+    "Miyachi H",
+    "Higashi Y",
+    "Jezewski P",
+    "Nakayama A",
+    "Shimozato K",
+    "Tokita Y"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/25101640/",
+    "publisher": "https://doi.org/10.1371/journal.pone.0102944"
+  }
+}

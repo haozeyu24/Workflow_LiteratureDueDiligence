@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-34906197",
+  "pmid": "34906197",
+  "doi": "10.1186/s13046-021-02199-9",
+  "title": "Flavonoids kaempferol and quercetin are nuclear receptor 4A1 (NR4A1, Nur77) ligands and inhibit rhabdomyosarcoma cell and tumor growth.",
+  "abstract": "BACKGROUND: Flavonoids exhibit both chemopreventive and chemotherapeutic activity for multiple tumor types, however, their mechanisms of action are not well defined. Based on some of their functional and gene modifying activities as anticancer agents, we hypothesized that kaempferol and quercetin were nuclear receptor 4A1 (NR4A1, Nur77) ligands and confirmed that both compounds directly bound NR4A1 with KD values of 3.1 and 0.93\u2009\u03bcM, respectively.\n\nMETHODS: The activities of kaempferol and quercetin were determined in direct binding to NR4A1 protein\u00a0and in NR4A1-dependent transactivation assays in Rh30 and Rh41 rhabdomyosarcoma (RMS) cells. Flavonoid-dependent effects as inhibitors of cell growth, survival and invasion were determined in XTT and Boyden chamber assays respectively and changes in protein levels were determined by western blots. Tumor growth inhibition studies were carried out in athymic nude mice bearing Rh30 cells as xenografts.\n\nRESULTS: Kaempferol and quercetin bind NR4A1 protein and inhibit NR4A1-dependent transactivation in RMS cells. NR4A1 also regulates RMS cell growth, survival, mTOR signaling and invasion. The pro-oncogenic PAX3-FOXO1 and G9a genes are also regulated by NR4A1 and, these pathways and genes are all inhibited by kaempferol and quercetin. Moreover, at a dose of 50\u2009mg/kg/d kaempferol and quercetin inhibited tumor growth in an athymic nude mouse xenograft model bearing Rh30 cells.\n\nCONCLUSION: These results demonstrate the clinical potential for repurposing kaempferol and quercetin for clinical applications as precision medicine for treating RMS patients that express NR4A1 in order to increase the efficacy and decrease dosages of currently used cytotoxic drugs.",
+  "year": "2021",
+  "journal": "Journal of experimental & clinical cancer research : CR",
+  "authors": [
+    "Shrestha R",
+    "Mohankumar K",
+    "Martin G",
+    "Hailemariam A",
+    "Lee SO",
+    "Jin UH",
+    "Burghardt R",
+    "Safe S"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/34906197/",
+    "publisher": "https://doi.org/10.1186/s13046-021-02199-9"
+  }
+}

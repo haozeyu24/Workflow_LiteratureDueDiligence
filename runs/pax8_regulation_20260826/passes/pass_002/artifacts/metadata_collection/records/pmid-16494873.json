@@ -1,0 +1,21 @@
+{
+  "paper_id": "pmid-16494873",
+  "pmid": "16494873",
+  "doi": "10.1016/j.febslet.2006.02.011",
+  "title": "Sumoylation of the SOX10 transcription factor regulates its transcriptional activity.",
+  "abstract": "SRY-related HMG box-containing factor 10 (SOX10) is a transcription factor essential for neural crest development and differentiation, and involved in Waardenburg syndrome type IV and PCWH syndrome. Here we show that the SOX10 protein is modified by sumoylation, a highly dynamic post-translational modification that affects stability, activity and localisation of some specific transcription factors. Three sumoylation consensus sites were found in the SOX10 protein, all of them are functional and modulate SOX10 activity. Sumoylation does not affect SOX10 sub-cellular localisation, but represses its transcriptional activity on two of its target genes, GJB1 and MITF, and modulates its synergy with its cofactors EGR2 and PAX3 on these promoters.",
+  "year": "2006",
+  "journal": "FEBS letters",
+  "authors": [
+    "Girard M",
+    "Goossens M"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/16494873/",
+    "publisher": "https://doi.org/10.1016/j.febslet.2006.02.011"
+  }
+}

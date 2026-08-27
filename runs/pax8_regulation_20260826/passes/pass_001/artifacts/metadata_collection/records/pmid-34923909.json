@@ -1,0 +1,29 @@
+{
+  "paper_id": "pmid-34923909",
+  "pmid": "34923909",
+  "doi": "10.1080/15548627.2021.2008691",
+  "title": "Autophagy modulates cell fate decisions during lineage commitment.",
+  "abstract": "Early events during development leading to exit from a pluripotent state and commitment toward a specific germ layer still need in-depth understanding. Autophagy has been shown to play a crucial role in both development and differentiation. This study employs human embryonic and induced pluripotent stem cells to understand the early events of lineage commitment with respect to the role of autophagy in this process. Our data indicate that a dip in autophagy facilitates exit from pluripotency. Upon exit, we demonstrate that the modulation of autophagy affects SOX2 levels and lineage commitment, with induction of autophagy promoting SOX2 degradation and mesendoderm formation, whereas inhibition of autophagy causes SOX2 accumulation and neuroectoderm formation. Thus, our results indicate that autophagy-mediated SOX2 turnover is a determining factor for lineage commitment. These findings will deepen our understanding of development and lead to improved methods to derive different lineages and cell types.Abbreviations: ACTB: Actin, beta; ATG: Autophagy-related; BafA1: Bafilomycin A1; CAS9: CRISPR-associated protein 9; CQ: Chloroquine; DE: Definitive endoderm; hESCs: Human Embryonic Stem Cells; hiPSCs: Human Induced Pluripotent Stem Cells; LAMP1: Lysosomal Associated Membrane Protein 1; MAP1LC3: Microtubule-Associated Protein 1 Light Chain 3; MTOR: Mechanistic Target Of Rapamycin Kinase; NANOG: Nanog Homeobox; PAX6: Paired Box 6; PE: Phosphatidylethanolamine; POU5F1: POU class 5 Homeobox 1; PRKAA2: Protein Kinase AMP-Activated Catalytic Subunit Alpha 2; SOX2: SRY-box Transcription Factor 2; SQSTM1: Sequestosome 1; ULK1: unc-51 like Autophagy Activating Kinase 1; WDFY3: WD Repeat and FYVE Domain Containing 3.",
+  "year": "2022",
+  "journal": "Autophagy",
+  "authors": [
+    "Sharma K",
+    "Asp NT",
+    "Harrison S",
+    "Siller R",
+    "Baumgarten SF",
+    "Gupta S",
+    "Chollet ME",
+    "Andersen E",
+    "Sullivan GJ",
+    "Simonsen A"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/34923909/",
+    "publisher": "https://doi.org/10.1080/15548627.2021.2008691"
+  }
+}

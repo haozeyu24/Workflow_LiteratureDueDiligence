@@ -1,0 +1,29 @@
+{
+  "paper_id": "pmid-22553175",
+  "pmid": "22553175",
+  "doi": "10.1002/stem.1120",
+  "title": "Numb regulates glioma stem cell fate and growth by altering epidermal growth factor receptor and Skp1-Cullin-F-box ubiquitin ligase activity.",
+  "abstract": "Glioblastoma contains a hierarchy of stem-like cancer cells, but how this hierarchy is established is unclear. Here, we show that asymmetric Numb localization specifies glioblastoma stem-like cell (GSC) fate in a manner that does not require Notch inhibition. Numb is asymmetrically localized to CD133-hi GSCs. The predominant Numb isoform, Numb4, decreases Notch and promotes a CD133-hi, radial glial-like phenotype. However, upregulation of a novel Numb isoform, Numb4 delta 7 (Numb4d7), increases Notch and AKT activation while nevertheless maintaining CD133-hi fate specification. Numb knockdown increases Notch and promotes growth while favoring a CD133-lo, glial progenitor-like phenotype. We report the novel finding that Numb4 (but not Numb4d7) promotes SCF(Fbw7) ubiquitin ligase assembly and activation to increase Notch degradation. However, both Numb isoforms decrease epidermal growth factor receptor (EGFR) expression, thereby regulating GSC fate. Small molecule inhibition of EGFR activity phenocopies the effect of Numb on CD133 and Pax6. Clinically, homozygous NUMB deletions and low Numb mRNA expression occur primarily in a subgroup of proneural glioblastomas. Higher Numb expression is found in classical and mesenchymal glioblastomas and correlates with decreased survival. Thus, decreased Numb promotes glioblastoma growth, but the remaining Numb establishes a phenotypically diverse stem-like cell hierarchy that increases tumor aggressiveness and therapeutic resistance.",
+  "year": "2012",
+  "journal": "Stem cells (Dayton, Ohio)",
+  "authors": [
+    "Jiang X",
+    "Xing H",
+    "Kim TM",
+    "Jung Y",
+    "Huang W",
+    "Yang HW",
+    "Song S",
+    "Park PJ",
+    "Carroll RS",
+    "Johnson MD"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/22553175/",
+    "publisher": "https://doi.org/10.1002/stem.1120"
+  }
+}

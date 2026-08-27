@@ -1,0 +1,21 @@
+{
+  "paper_id": "pmid-31025266",
+  "pmid": "31025266",
+  "doi": "10.1007/s11154-019-09496-x",
+  "title": "Functions of stem cells of thyroid glands in health and disease.",
+  "abstract": "Thyroid gland has been implicated in the regulation of many functions using endocrine, paracrine and autocrine signals. Functional thyroid follicular cells derived from stem cells attracted a great interest from researchers as a strategy for thyroid's regenerative therapy. Thyroid has a very low rate of turnover; however, studies showed that the regenerative ability is enhanced following diseases or thyroidectomy, which promotes the role of stem cell. The objective of this review is to summarize the morphological characterization and the expression of stem cell genes/markers in the thyroid. Also, to highlight the mechanisms of tumor formation in thyroid via its stem cells. The most important thyroid stem cell's markers are: stem cell antigen 1 (SCA-1), octamer-binding transcription 4 (OCT-4), p63, CD34+ CD45-, paired box gene 8 (PAX-8), thyroid transcription factor 1 (TTF-1), thyroid transcription factor 2 (TTF-2), hematopoietically expressed homeobox protein HHEX, the transcription factor GATA-4, hepatocyte nuclear factor 4-\u03b1 (HNF-4-\u03b1) and homeobox transcription factor Nanog (hNanog). This review highlights the functional characterization describing the mechanisms of stem cell's differentiation into functional thyroid follicle and proposing mechanisms involving in cancer formation through one of these cell types: fetal cell, thyroblasts, prothyrocytes, certain genetic mutation in the mature thyroid cells or presence of a special type of cells (cancer stem cell) which are responsible for different types of cancer formation. Understanding the mechanisms of thyroid's stem cell in cancer formation and the expression of the biomarkers in normal and abnormal thyroid status are promising physiological tools in promoting thyroid regeneration and in provision management for thyroid cancer.",
+  "year": "2019",
+  "journal": "Reviews in endocrine & metabolic disorders",
+  "authors": [
+    "Al-Suhaimi EA",
+    "Al-Khater K"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (\"protein stability\"[Title/Abstract] OR \"protein levels\"[Title/Abstract] OR stabilization[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract]) NOT \"PAX8-AS1\"[Title/Abstract]"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/31025266/",
+    "publisher": "https://doi.org/10.1007/s11154-019-09496-x"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "paper_id": "pmid-16847320",
+  "pmid": "16847320",
+  "doi": "10.1128/MCB.00313-06",
+  "title": "Hypomorphic mutation of the TALE gene Prep1 (pKnox1) causes a major reduction of Pbx and Meis proteins and a pleiotropic embryonic phenotype.",
+  "abstract": "The interaction of Prep1 and Pbx homeodomain transcription factors regulates their activity, nuclear localization, and likely, function in development. To understand the in vivo role of Prep1, we have analyzed an embryonic lethal hypomorphic mutant mouse (Prep1(i/i)). Prep1(i/i) embryos die at embryonic day 17.5 (E17.5) to birth with an overall organ hypoplasia, severe anemia, impaired angiogenesis, and eye anomalies, particularly in the lens and retina. The anemia correlates with delayed differentiation of erythroid progenitors and may be, at least in part, responsible for intrauterine death. At E14.5, Prep1 is present in fetal liver (FL) cMyb-positive cells, whose deficiency causes a marked hematopoietic phenotype. Prep1 is also localized to FL endothelial progenitors, consistent with the observed angiogenic phenotype. Likewise, at the same gestational day, Prep1 is present in the eye cells that bear Pax6, implicated in eye development. The levels of cMyb and Pax6 in FL and in the retina, respectively, are significantly decreased in Prep1(i/i) embryos, consistent with the hematopoietic and eye phenotypes. Concomitantly, Prep1 deficiency results in the overall decrease of protein levels of its related family member Meis1 and its partners Pbx1 and Pbx2. As both Prep1 and Meis interact with Pbx, the overall Prep1/Meis-Pbx DNA-binding activity is strongly reduced in whole Prep1(i/i) embryos and their organs. Our data indicate that Prep1 is an essential gene that acts upstream of and within a Pbx-Meis network that regulates multiple aspects of embryonic development.",
+  "year": "2006",
+  "journal": "Molecular and cellular biology",
+  "authors": [
+    "Ferretti E",
+    "Villaescusa JC",
+    "Di Rosa P",
+    "Fernandez-Diaz LC",
+    "Longobardi E",
+    "Mazzieri R",
+    "Miccio A",
+    "Micali N",
+    "Selleri L",
+    "Ferrari G",
+    "Blasi F"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/16847320/",
+    "publisher": "https://doi.org/10.1128/MCB.00313-06"
+  }
+}

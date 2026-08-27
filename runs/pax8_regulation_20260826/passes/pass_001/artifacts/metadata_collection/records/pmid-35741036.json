@@ -1,0 +1,22 @@
+{
+  "paper_id": "pmid-35741036",
+  "pmid": "35741036",
+  "doi": "10.3390/cells11121904",
+  "title": "Nuclear Transporter IPO13 Is Central to Efficient Neuronal Differentiation.",
+  "abstract": "Molecular transport between the nucleus and cytoplasm of the cell is mediated by the importin superfamily of transport receptors, of which the bidirectional transporter Importin 13 (IPO13) is a unique member, with a critical role in early embryonic development through nuclear transport of key regulators, such as transcription factors Pax6, Pax3, and ARX. Here, we examined the role of IPO13 in neuronal differentiation for the first time, using a mouse embryonic stem cell (ESC) model and a monolayer-based differentiation protocol to compare IPO13-/- to wild type ESCs. Although IPO13-/- ESCs differentiated into neural progenitor cells, as indicated by the expression of dorsal forebrain progenitor markers, reduced expression of progenitor markers Pax6 and Nestin compared to IPO13-/- was evident, concomitant with reduced nuclear localisation/transcriptional function of IPO13 import cargo Pax6. Differentiation of IPO13-/- cells into neurons appeared to be strongly impaired, as evidenced by altered morphology, reduced expression of key neuronal markers, and altered response to the neurotransmitter glutamate. Our findings establish that IPO13 has a key role in ESC neuronal differentiation, in part through the nuclear transport of Pax6.",
+  "year": "2022",
+  "journal": "Cells",
+  "authors": [
+    "Gajewska KA",
+    "Haynes JM",
+    "Jans DA"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/35741036/",
+    "publisher": "https://doi.org/10.3390/cells11121904"
+  }
+}

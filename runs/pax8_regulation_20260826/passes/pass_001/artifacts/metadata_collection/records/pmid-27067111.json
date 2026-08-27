@@ -1,0 +1,22 @@
+{
+  "paper_id": "pmid-27067111",
+  "pmid": "27067111",
+  "doi": "10.1016/j.jmb.2016.04.004",
+  "title": "Structural and Dynamics Studies of Pax5 Reveal Asymmetry in Stability and DNA Binding by the Paired Domain.",
+  "abstract": "The eukaryotic transcription factor Pax5 or B-cell specific activator protein (BSAP) is central to B-cell development and has been implicated in a large number of cellular malignancies resulting from loss- or gain-of-function mutations. In this study, we characterized the DNA-binding Paired domain (PD) of Pax5 in its free and DNA-bound forms using NMR spectroscopy. In isolation, the PD folds as two independent helical bundle subdomains separated by a conformationally disordered linker. The two subdomains differ in stability, with the C-terminal subdomain (CTD) being ~10-fold more protected from amide hydrogen exchange (HX) than the N-terminal subdomain (NTD). Upon binding DNA, the linker and an induced N-terminal \u03b2-hairpin become ordered with significantly dampened motions and increased HX protection. Both subdomains of the PD contribute to specific DNA binding, resulting in an equilibrium dissociation constant more than three orders of magnitude lower than exhibited by the separate subdomains for their respective half-sites (nM versus \u03bcM). The isolated CTD binds non-specific DNA sequences with only ~10-fold weaker affinity than cognate sequences. In contrast, the NTD associates very poorly with non-specific DNA. We propose that the more stable CTD has evolved to provide relatively low affinity non-specific contacts with DNA. In contrast, the more dynamic NTD discriminates between cognate and non-specific sites. The distinct roles of the PD subdomains may enable efficient searching of genomic DNA by Pax5 while retaining specificity for functional regulatory sites.",
+  "year": "2016",
+  "journal": "Journal of molecular biology",
+  "authors": [
+    "Perez-Borrajero C",
+    "Okon M",
+    "McIntosh LP"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/27067111/",
+    "publisher": "https://doi.org/10.1016/j.jmb.2016.04.004"
+  }
+}

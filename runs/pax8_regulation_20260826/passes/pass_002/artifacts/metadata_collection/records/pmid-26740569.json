@@ -1,0 +1,21 @@
+{
+  "paper_id": "pmid-26740569",
+  "pmid": "26740569",
+  "doi": "10.1242/bio.012450",
+  "title": "BRE facilitates skeletal muscle regeneration by promoting satellite cell motility and differentiation.",
+  "abstract": "The function of the Bre gene in satellite cells was investigated during skeletal muscle regeneration. The tibialis anterior leg muscle was experimentally injured in Bre knockout mutant (BRE-KO) mice. It was established that the accompanying muscle regeneration was impaired as compared with their normal wild-type counterparts (BRE-WT). There were significantly fewer pax7(+) satellite cells and smaller newly formed myofibers present in the injury sites of BRE-KO mice. Bre was required for satellite cell fusion and myofiber formation. The cell fusion index and average length of newly-formed BRE-KO myofibers were found to be significantly reduced as compared with BRE-WT myofibers. It is well established that satellite cells are highly invasive which confers on them the homing ability to reach the muscle injury sites. Hence, we tracked the migratory behavior of these cells using time-lapse microscopy. Image analysis revealed no difference in directionality of movement between BRE-KO and BRE-WT satellite cells but there was a significant decrease in the velocity of BRE-KO cell movement. Moreover, chemotactic migration assays indicated that BRE-KO satellite cells were significantly less responsive to chemoattractant SDF-1\u03b1 than BRE-WT satellite cells. We also established that BRE normally protects CXCR4 from SDF-1\u03b1-induced degradation. In sum, BRE facilitates skeletal muscle regeneration by enhancing satellite cell motility, homing and fusion.",
+  "year": "2016",
+  "journal": "Biology open",
+  "authors": [
+    "Xiao L",
+    "Lee KK"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/26740569/",
+    "publisher": "https://doi.org/10.1242/bio.012450"
+  }
+}

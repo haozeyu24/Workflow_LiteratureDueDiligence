@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-30210296",
+  "pmid": "30210296",
+  "doi": "10.3389/fncel.2018.00259",
+  "title": "Counter-Balance Between Gli3 and miR-7 Is Required for Proper Morphogenesis and Size Control of the Mouse Brain.",
+  "abstract": "Brain morphogenesis requires precise regulation of multiple genes to control specification of distinct neural progenitors (NPs) and neuronal production. Dysregulation of these genes results in severe brain malformation such as macrocephaly and microcephaly. Despite studies of the effect of individual pathogenic genes, the counter-balance between multiple factors in controlling brain size remains unclear. Here we show that cortical deletion of Gli3 results in enlarged brain and folding structures in the cortical midline at the postnatal stage, which is mainly caused by the increased percentage of intermediate progenitors (IPs) and newborn neurons. In addition, dysregulation of neuronal migration also contributes to the folding defects in the cortical midline region. Knockdown of microRNA (miRNA) miR-7 can rescue abnormal brain morphology in Gli3 knockout mice by recovering progenitor specification, neuronal production and migration through a counter-balance of the Gli3 activity. Moreover, miR-7 likely exerts its function through silencing target gene Pax6. Our results indicate that proper brain morphogenesis is an outcome of interactive regulations of multiple molecules such as Gli3 and miR-7. Because miRNAs are easy to synthesize and deliver, miR-7 could be a potential therapeutic means to macrocephaly caused by Gli3-deficiency.",
+  "year": "2018",
+  "journal": "Frontiers in cellular neuroscience",
+  "authors": [
+    "Zhang L",
+    "Mubarak T",
+    "Chen Y",
+    "Lee T",
+    "Pollock A",
+    "Sun T"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/30210296/",
+    "publisher": "https://doi.org/10.3389/fncel.2018.00259"
+  }
+}

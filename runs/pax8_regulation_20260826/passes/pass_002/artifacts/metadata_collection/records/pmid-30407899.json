@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-30407899",
+  "pmid": "30407899",
+  "doi": "10.1667/RR15078.1",
+  "title": "UV-Radiation Response Proteins Reveal Undifferentiated Cutaneous Interfollicular Melanocytes with Hyperradiosensitivity to Differentiation at 0.05 Gy Radiotherapy Dose Fractions.",
+  "abstract": "To date, the response activated in melanocytes by repeated genotoxic insults from radiotherapy has not been explored. We hypothesized that the molecular pathways involved in the response of melanocytes to ionizing radiation and ultraviolet radiation (UVR) are similar. Skin punch biopsies, not sun-exposed, were collected from prostate cancer patients before, as well as at 1 and 6.5 weeks after daily doses of 0.05-1.1 Gy. Interfollicular melanocytes were identified by \u0394Np63- and eosin-periodic acid Schiff staining. Immunohistochemistry and immunofluorescence were performed to detect molecular markers of the melanocyte lineage. Melanocytes were negative for \u0394Np63, and the number remained unchanged over the treatment period. At radiation doses as low as 0.05 Gy, melanocytes express higher protein levels of microphthalmia-associated transcription factor (MITF) and Bcl-2. Subsets of MITF- and Bcl-2-negative melanocytes were identified among interfollicular melanocytes in unexposed skin; the cell number in both subsets was reduced after irradiation in a way that indicates low-dose hyperradiosensitivity. A corresponding increase in MITF- and Bcl-2-positive cells was observed. PAX3 and SOX10 co-localized to some extent with MITF in unexposed skin, more so with radiation exposure. Low doses of ionizing radiation also intensified c-KIT and DCT staining. Nuclear p53 and p21 were undetectable in melanocytes. Apoptosis and proliferation could not be observed. In conclusion, undifferentiated interfollicular melanocytes were identified, and responded with differentiation in a hypersensitive manner at 0.05 Gy doses. Radioresistance regarding cell death was maintained up to fractionated doses of 1.1 Gy, applied for 7 weeks. The results suggest that the initial steps of melanin synthesis are common to ionizing radiation and UVR, and underline the importance of keratinocyte-melanocyte interaction behind hyperpigmentation and depigmentation to radiotherapy.",
+  "year": "2019",
+  "journal": "Radiation research",
+  "authors": [
+    "Fess\u00e9 P",
+    "Qvarnstr\u00f6m F",
+    "Nyman J",
+    "Hermansson I",
+    "Ahlgren J",
+    "Turesson I"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/30407899/",
+    "publisher": "https://doi.org/10.1667/RR15078.1"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "paper_id": "pmid-22751011",
+  "pmid": "22751011",
+  "doi": "10.1096/fj.11-203232",
+  "title": "Induction of muscle regeneration by RNA-mediated mitochondrial restoration.",
+  "abstract": "Skeletal muscle injury is associated with general down-regulation of mitochondrial function. Postinjury regeneration of skeletal muscle occurs through activation, proliferation, and differentiation of resident stem cells, including satellite cells and endothelial precursor cells. We wanted to determine the role of mitochondrial function in the regeneration process. Using a previously described method for complex-mediated delivery to intracellular mitochondria, a combination of polycistronic RNAs encoding the H strand of the rat mitochondrial genome was administered to injured rat quadriceps muscle, resulting in restoration of mitochondrial mRNA levels, organellar translation, and respiratory capacity. Intramuscular ATP levels were elevated on pcRNA treatment of injured muscle; concomitantly, levels of reactive oxygen species in the injured muscle were reduced. These effects combined to produce a notable increase in the rate of wound resolution, accompanied by reduction of fibrosis and acceleration of myogenesis, vasculogenesis, and resumption of muscle contractile function. There was evidence of proliferation of Pax7+ satellite cells, expression of muscle-specific regulatory factors in a specific time sequence, and formation of new myofibers in the regenerating muscle. RNA-induced wound resolution and satellite cell proliferation were sensitive to mitochondrial inhibitors, indicating the importance of oxidative phosphorylation. These results highlight the activation of endogenous stem cells through mitochondrial restoration as a possible alternative to implantation of cultured stem cells.",
+  "year": "2012",
+  "journal": "FASEB journal : official publication of the Federation of American Societies for Experimental Biology",
+  "authors": [
+    "Jash S",
+    "Adhya S"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/22751011/",
+    "publisher": "https://doi.org/10.1096/fj.11-203232"
+  }
+}

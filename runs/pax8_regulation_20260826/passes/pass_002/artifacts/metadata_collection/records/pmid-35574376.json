@@ -1,0 +1,44 @@
+{
+  "paper_id": "pmid-35574376",
+  "pmid": "35574376",
+  "doi": "10.3389/fonc.2022.835642",
+  "title": "MET Inhibition Sensitizes Rhabdomyosarcoma Cells to NOTCH Signaling Suppression.",
+  "abstract": "Rhabdomyosarcoma (RMS) is a pediatric myogenic soft tissue sarcoma. The Fusion-Positive (FP) subtype expresses the chimeric protein PAX3-FOXO1 (P3F) while the Fusion-Negative (FN) is devoid of any gene translocation. FP-RMS and metastatic FN-RMS are often unresponsive to conventional therapy. Therefore, novel therapeutic approaches are needed to halt tumor progression. NOTCH signaling has oncogenic functions in RMS and its pharmacologic inhibition through \u03b3-secretase inhibitors blocks tumor growth in vitro and in vivo. Here, we show that NOTCH signaling blockade resulted in the up-regulation and phosphorylation of the MET oncogene in both RH30 (FP-RMS) and RD (FN-RMS) cell lines. Pharmacologic inhibition of either NOTCH or MET signaling slowed proliferation and restrained cell survival compared to control cells partly by increasing Annexin V and CASP3/7 activation. Co-treatment with NOTCH and MET inhibitors significantly amplified these effects and enhanced PARP1 cleavage in both cell lines. Moreover, it severely hampered cell migration, colony formation, and anchorage-independent growth compared to single-agent treatments in both cell lines and significantly prevented the growth of FN-RMS cells grown as spheroids. Collectively, our results unveil the overexpression of the MET oncogene by NOTCH signaling targeting in RMS cells and show that MET pathway blockade sensitizes them to NOTCH inhibition.",
+  "year": "2022",
+  "journal": "Frontiers in oncology",
+  "authors": [
+    "Perrone C",
+    "Pomella S",
+    "Cassandri M",
+    "Pezzella M",
+    "Milano GM",
+    "Colletti M",
+    "Cossetti C",
+    "Pericoli G",
+    "Di Giannatale A",
+    "de Billy E",
+    "Vinci M",
+    "Petrini S",
+    "Marampon F",
+    "Quintarelli C",
+    "Taulli R",
+    "Roma J",
+    "Gallego S",
+    "Camero S",
+    "Mariottini P",
+    "Cervelli M",
+    "Maestro R",
+    "Miele L",
+    "De Angelis B",
+    "Locatelli F",
+    "Rota R"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/35574376/",
+    "publisher": "https://doi.org/10.3389/fonc.2022.835642"
+  }
+}

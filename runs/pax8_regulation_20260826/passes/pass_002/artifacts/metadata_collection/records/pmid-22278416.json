@@ -1,0 +1,32 @@
+{
+  "paper_id": "pmid-22278416",
+  "pmid": "22278416",
+  "doi": "10.1007/s12253-012-9498-8",
+  "title": "Epigenetic and copy number variation analysis in retinoblastoma by MS-MLPA.",
+  "abstract": "Retinoblastoma is the most common primary intraocular malignancy in children. Two step inactivation of RB1 (M1-M2) represents the key event in the pathogenesis of retinoblastoma but additional genetic and epigenetic events (M3-Mn) are required for tumor development. In the present study, we employed Methylation Specific Multiplex Ligation Probe Assay to investigate methylation status and copy number changes of 25 and 39 oncosuppressor genes, respectively. This technique was applied to analyse 12 retinoblastomas (5 bilateral and 7 unilateral) and results were compared to corresponding normal retina. We identified hypermethylation in seven new genes: MSH6 (50%), CD44 (42%), PAX5 (42%), GATA5 (25%), TP53 (8%), VHL (8%) and GSTP1 (8%) and we confirmed the previously reported hypermethylation of MGMT (58%), RB1 (17%) and CDKN2 (8%). These genes belong to key pathways including DNA repair, pRB and p53 signalling, transcriptional regulation, protein degradation, cell-cell interaction, cellular adhesion and migration. In the same group of retinoblastomas, a total of 29 copy number changes (19 duplications and 10 deletions) have been identified. Interestingly, we found deletions of the following oncosuppressor genes that might contribute to drive retinoblastoma tumorigenesis: TP53, CDH13, GATA5, CHFR, TP73 and IGSF4. The present data highlight the importance of epigenetic changes in retinoblastoma and indicate seven hypermethylated oncosuppressors never associated before to retinoblastoma pathogenesis. This study also confirms the presence of copy number variations in retinoblastoma, expecially in unilateral cases (mean 3 \u00b1 1.3) where these changes were found more frequently respect to bilateral cases (mean 1.4 \u00b1 1.1).",
+  "year": "2012",
+  "journal": "Pathology oncology research : POR",
+  "authors": [
+    "Livide G",
+    "Epistolato MC",
+    "Amenduni M",
+    "Disciglio V",
+    "Marozza A",
+    "Mencarelli MA",
+    "Toti P",
+    "Lazzi S",
+    "Hadjistilianou T",
+    "De Francesco S",
+    "D'Ambrosio A",
+    "Renieri A",
+    "Ariani F"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/22278416/",
+    "publisher": "https://doi.org/10.1007/s12253-012-9498-8"
+  }
+}

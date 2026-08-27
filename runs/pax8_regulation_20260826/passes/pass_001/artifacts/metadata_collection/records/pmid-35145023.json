@@ -1,0 +1,31 @@
+{
+  "paper_id": "pmid-35145023",
+  "pmid": "35145023",
+  "doi": "10.1073/pnas.2101848119",
+  "title": "A distinct role of STING in regulating glucose homeostasis through insulin sensitivity and insulin secretion.",
+  "abstract": "Insulin resistance and \u03b2-cell dysfunction are two main molecular bases yet to be further elucidated for type 2 diabetes (T2D). Accumulating evidence indicates that stimulator of interferon genes (STING) plays an important role in regulating insulin sensitivity. However, its function in \u03b2-cells remains unknown. Herein, using global STING knockout (STING-/-) and \u03b2-cell-specific STING knockout (STING-\u03b2KO) mouse models, we revealed a distinct role of STING in the regulation of glucose homeostasis through peripheral tissues and \u03b2-cells. Specially, although STING-/- beneficially alleviated insulin resistance and glucose intolerance induced by high-fat diet, it surprisingly impaired islet glucose-stimulated insulin secretion (GSIS). Importantly, STING is decreased in islets of db/db mice and patients with T2D, suggesting a possible role of STING in \u03b2-cell dysfunction. Indeed, STING-\u03b2KO caused glucose intolerance due to impaired GSIS, indicating that STING is required for normal \u03b2-cell function. Islet transcriptome analysis showed that STING deficiency decreased expression of \u03b2-cell function-related genes, including Glut2, Kcnj11, and Abcc8, contributing to impaired GSIS. Mechanistically, the assay for transposase-accessible chromatin with high-throughput sequencing (ATAC-seq) and cleavage under targets and tagmentation (CUT&Tag) analyses suggested that Pax6 was the transcription factor that might be associated with defective GSIS in STING-\u03b2KO mice. Indeed, Pax6 messenger RNA and protein levels were down-regulated and its nuclear localization was lost in STING-\u03b2KO \u03b2-cells. Together, these data revealed a function of STING in the regulation of insulin secretion and established pathophysiological significance of fine-tuned STING within \u03b2-cells and insulin target tissues for maintaining glucose homeostasis.",
+  "year": "2022",
+  "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+  "authors": [
+    "Qiao J",
+    "Zhang Z",
+    "Ji S",
+    "Liu T",
+    "Zhang X",
+    "Huang Y",
+    "Feng W",
+    "Wang K",
+    "Wang J",
+    "Wang S",
+    "Meng ZX",
+    "Liu M"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/35145023/",
+    "publisher": "https://doi.org/10.1073/pnas.2101848119"
+  }
+}

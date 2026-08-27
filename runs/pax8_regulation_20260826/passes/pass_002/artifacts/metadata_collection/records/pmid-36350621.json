@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-36350621",
+  "pmid": "36350621",
+  "doi": "10.1167/iovs.63.12.11",
+  "title": "miR-328-3p Affects Axial Length Via Multiple Routes and Anti-miR-328-3p Possesses a Potential to Control Myopia Progression.",
+  "abstract": "PURPOSE: We previously reported miR-328-3p as a novel risk factor for myopia through a genetic association study of the PAX6 gene. In the present study, we first explored the effects of miR-328-3p on other myopia-related genes, and then tested whether anti-miR-328-3p may be used for myopia control.\n\nMETHODS: The luciferase report assay and transient transfection were used to confirm miR-328-3p target genes. The chromatin immunoprecipitation (ChIP) assay was used to investigate retinoic acid receptor on the miR-328-3p promoter. Mice and pigmented rabbits were induced to have myopia by the form deprivation method, and then anti-miR-328-3p oligonucleotide was topically instilled to the myopic eyes. The axial length was measured to assess the therapeutic effect of anti-miR-328-3p. A toxicity study using much higher doses was conducted to assess the safety and ocular irritation of anti-miR-328-3p.\n\nRESULTS: The report assay and transfection of miR-328-3p mimic confirmed that miR-328-3p dose-dependently decreased both mRNA and protein expression of fibromodulin (FMOD) and collagen1A1 (COL1A1). We subsequently showed that FMOD promoted TGF-\u03b21 expression, and overexpression of FMOD increased the phosphorylation levels of p38-MAPK and JNK. The ChIP study showed that retinoic acid binds to miR-328-3p promoter and up-regulates miR-328-3p expression. In myopic animal studies, anti-miR-328-3p was as effective as 1% atropine and had a dose-dependent effect on suppressing axial elongation. In the toxicity study, anti-miR-328-3p did not cause any unwanted effects in the eyes or other organs.\n\nCONCLUSIONS: Micro (mi)R-328-3p affects myopia development via multiple routes. anti-miR-328-3p possesses a potential as a novel therapy for myopia control.",
+  "year": "2022",
+  "journal": "Investigative ophthalmology & visual science",
+  "authors": [
+    "Liang CL",
+    "Chen KC",
+    "Hsi E",
+    "Lin JY",
+    "Chen CY",
+    "Tseng JK",
+    "Juo SH"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/36350621/",
+    "publisher": "https://doi.org/10.1167/iovs.63.12.11"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-42363419",
+  "pmid": "42363419",
+  "doi": "10.1111/jcmm.71265",
+  "title": "Dynamic Transcriptomic Profiling of Mouse Endometrium Across the Estrous Cycle Reveals Phase-Specific Regulatory Networks Underlying Cyclic Remodelling.",
+  "abstract": "The mouse estrous cycle drives cyclical remodelling of the endometrium, essential for uterine function and embryo implantation. However, the molecular mechanisms orchestrating these dynamic changes remain incompletely defined. In this study, we preliminarily staged C57BL/6 mice using vaginal smear cytology and confirmed phase-dependent morphological changes, including cyclical endometrial thickening and glandular remodelling, via histological assessment. To elucidate the underlying molecular landscape, we performed comprehensive RNA sequencing of the mouse endometrium across four distinct phases: proestrus, estrus, metestrus and diestrus. To ensure analytical rigour and identify core regulatory factors, we integrated three synergistic computational approaches: WGCNA to identify phase-specific co-expression modules, MFUZZ to characterize dynamic temporal expression trajectories, and DESeq2 to pinpoint significantly differentially expressed genes (DEGs). Functional enrichment analysis revealed that these phase-specific signatures are predominantly involved in the cell cycle, extracellular matrix organization, oxidative phosphorylation and DNA replication. Notably, we identified several high-connectivity hub genes and pathways, including Natural Killer (NK) cell-mediated cytotoxicity (Cd244a, Klra4, Klrd1), Oestrogen signalling (Ccnd1, Akt1, Prkaca) and Wnt signalling components (Cdh1, Skp1a, Pax2). Transcription factors such as Sox4 and Lef1, along with the cell cycle regulator Cks1b, exhibited phase-consistent expression patterns aligned with endometrial proliferation and preparation for implantation. Our findings delineate a complex hub-gene regulatory network coordinating cyclic endometrial regeneration. This study provides a comprehensive transcriptomic atlas of the murine endometrium, offering novel insights into uterine biology with significant implications for understanding reproductive health and uterine diseases.",
+  "year": "2026",
+  "journal": "Journal of cellular and molecular medicine",
+  "authors": [
+    "Wang X",
+    "Xu K",
+    "Li B",
+    "Xu X",
+    "Lu G",
+    "Wang L",
+    "Pan R",
+    "Zhang T"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42363419/",
+    "publisher": "https://doi.org/10.1111/jcmm.71265"
+  }
+}

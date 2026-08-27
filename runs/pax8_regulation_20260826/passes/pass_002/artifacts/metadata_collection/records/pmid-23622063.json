@@ -1,0 +1,33 @@
+{
+  "paper_id": "pmid-23622063",
+  "pmid": "23622063",
+  "doi": "10.1016/j.neuron.2013.02.012",
+  "title": "Pax6 exerts regional control of cortical progenitor proliferation via direct repression of Cdk6 and hypophosphorylation of pRb.",
+  "abstract": "The mechanisms by which early spatiotemporal expression patterns of transcription factors such as Pax6 regulate cortical progenitors in a region-specific manner are poorly understood. Pax6 is expressed in a gradient across the developing cortex and is essential for normal corticogenesis. We found that constitutive or conditional loss of Pax6 increases cortical progenitor proliferation by amounts that vary regionally with normal Pax6 levels. We compared the gene expression profiles of equivalent Pax6-expressing progenitors isolated from Pax6\u207a/\u207a and Pax6\u207b/\u207b cortices and identified many negatively regulated cell-cycle genes, including Cyclins and Cdks. Biochemical assays indicated that Pax6 directly represses Cdk6 expression. Cyclin/Cdk repression inhibits retinoblastoma protein (pRb) phosphorylation, thereby limiting the transcription of genes that directly promote the mechanics of the cell cycle, and we found that Pax6 inhibits pRb phosphorylation and represses genes involved in DNA replication. Our results indicate that Pax6's modulation of cortical progenitor cell cycles is regional and direct.",
+  "year": "2013",
+  "journal": "Neuron",
+  "authors": [
+    "Mi D",
+    "Carr CB",
+    "Georgala PA",
+    "Huang YT",
+    "Manuel MN",
+    "Jeanes E",
+    "Niisato E",
+    "Sansom SN",
+    "Livesey FJ",
+    "Theil T",
+    "Hasenpusch-Theil K",
+    "Simpson TI",
+    "Mason JO",
+    "Price DJ"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/23622063/",
+    "publisher": "https://doi.org/10.1016/j.neuron.2013.02.012"
+  }
+}

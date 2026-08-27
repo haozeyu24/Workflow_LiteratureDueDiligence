@@ -1,0 +1,20 @@
+{
+  "paper_id": "pmid-12971829",
+  "pmid": "12971829",
+  "doi": "10.1186/1476-4598-2-29",
+  "title": "The biology of the Ets1 proto-oncogene.",
+  "abstract": "The Ets1 proto-oncoprotein is a member of the Ets family of transcription factors that share a unique DNA binding domain, the Ets domain. The DNA binding activity of Ets1 is controlled by kinases and transcription factors. Some transcription factors, such as AML-1, regulate Ets1 by targeting its autoinhibitory module. Others, such as Pax-5, alter Ets1 DNA binding properties. Ets1 harbors two phosphorylation sites, threonine-38 and an array of serines within the exon VII domain. Phosphorylation of threonine-38 by ERK1/2 activates Ets1, whereas phosphorylation of the exon VII domain by CaMKII or MLCK inhibits Ets1 DNA binding activity. Ets1 is expressed by numerous cell types. In haemotopoietic cells, it contributes to the regulation of cellular differentiation. In a variety of other cells, including endothelial cells, vascular smooth muscle cells and epithelial cancer cells, Ets1 promotes invasive behavior. Regulation of MMP1, MMP3, MMP9 and uPA as well as of VEGF and VEGF receptor gene expression has been ascribed to Ets1. In tumors, Ets1 expression is indicative of poorer prognosis.",
+  "year": "2003",
+  "journal": "Molecular cancer",
+  "authors": [
+    "Dittmer J"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/12971829/",
+    "publisher": "https://doi.org/10.1186/1476-4598-2-29"
+  }
+}

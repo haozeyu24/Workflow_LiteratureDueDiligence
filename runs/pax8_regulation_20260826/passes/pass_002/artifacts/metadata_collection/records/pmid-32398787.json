@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-32398787",
+  "pmid": "32398787",
+  "doi": "10.1038/s41417-020-0178-7",
+  "title": "Improvement of muscular atrophy by AAV-SaCas9-mediated myostatin gene editing in aged mice.",
+  "abstract": "Muscle mass and area usually decrease with age, and this phenomenon is known as sarcopenia. This age-related atrophy correlates with insufficient levels of muscle cells differentiate and proliferate regulated by the TGF-\u03b2 signaling pathway and the expression of E3s ubiquitin-protein ligase by the aged. Sarcopenia makes a huge impact on the aging society, because it has the characteristic of high incidence, extensive adverse effects and disease aggravation gradually. Guided by a single-guide RNA (sgRNA), Cas9 nuclease has been widely used in genome editing, opening up a new pathway for sarcopenia treatment. Here, we present two rAAV9 systems, pX601-AAV-CMV:SaCas9-U6:sgRNA and pX601-AAV-EF1\u03b1:SaCas9-tRNAGLN: sgRNA, which edited myostatin efficiently. By delivering the two rAAV-SaCas9 targets to myostatin via intramuscular injection of aged mice, an increase in body weight and an increase in the number and area of myofibers were observed. Knockout of myostatin led to TGF-\u03b2 signaling pathway changes, and increased MyoD, Pax7 and MyoG protein levels and increased the number of satellite cells to improve muscle cells differentiation. Moreover, knockout of myostatin prevented the atrophy of muscle cells through reduced Murf1 and MAFbx protein levels. We found that both rAAV-SaCas9 systems had gene editing efficiency, reducing the expression of myostatin by affecting the relevant signaling pathways, thereby altering the physiological status. We showed that myostatin has an important role in activating skeletal muscle proliferation and inhibiting muscular atrophy during aging. Thus, we propose that knockout of myostatin using the rAAV9-SaCas9 system has significant therapeutic potential in sarcopenia.",
+  "year": "2020",
+  "journal": "Cancer gene therapy",
+  "authors": [
+    "Weng S",
+    "Gao F",
+    "Wang J",
+    "Li X",
+    "Chu B",
+    "Wang J",
+    "Yang G"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/32398787/",
+    "publisher": "https://doi.org/10.1038/s41417-020-0178-7"
+  }
+}

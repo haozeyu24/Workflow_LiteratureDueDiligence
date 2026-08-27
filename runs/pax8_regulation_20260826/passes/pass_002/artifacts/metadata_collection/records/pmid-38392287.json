@@ -1,0 +1,29 @@
+{
+  "paper_id": "pmid-38392287",
+  "pmid": "38392287",
+  "doi": "10.3390/biology13020068",
+  "title": "H3 Acetylation-Induced Basal Progenitor Generation and Neocortex Expansion Depends on the Transcription Factor Pax6.",
+  "abstract": "Enrichment of basal progenitors (BPs) in the developing neocortex is a central driver of cortical enlargement. The transcription factor Pax6 is known as an essential regulator in generation of BPs. H3 lysine 9 acetylation (H3K9ac) has emerged as a crucial epigenetic mechanism that activates the gene expression program required for BP pool amplification. In this current work, we applied immunohistochemistry, RNA sequencing, chromatin immunoprecipitation and sequencing, and the yeast two-hybrid assay to reveal that the BP-genic effect of H3 acetylation is dependent on Pax6 functionality in the developing mouse cortex. In the presence of Pax6, increased H3 acetylation caused BP pool expansion, leading to enhanced neurogenesis, which evoked expansion and quasi-convolution of the mouse neocortex. Interestingly, H3 acetylation activation exacerbates the BP depletion and corticogenesis reduction effect of Pax6 ablation in cortex-specific Pax6 mutants. Furthermore, we found that H3K9 acetyltransferase KAT2A/GCN5 interacts with Pax6 and potentiates Pax6-dependent transcriptional activity. This explains a genome-wide lack of H3K9ac, especially in the promoter regions of BP-genic genes, in the Pax6 mutant cortex. Together, these findings reveal a mechanistic coupling of H3 acetylation and Pax6 in orchestrating BP production and cortical expansion through the promotion of a BP gene expression program during cortical development.",
+  "year": "2024",
+  "journal": "Biology",
+  "authors": [
+    "Sokpor G",
+    "Kerimoglu C",
+    "Ulmke PA",
+    "Pham L",
+    "Nguyen HD",
+    "Brand-Saberi B",
+    "Staiger JF",
+    "Fischer A",
+    "Nguyen HP",
+    "Tuoc T"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/38392287/",
+    "publisher": "https://doi.org/10.3390/biology13020068"
+  }
+}

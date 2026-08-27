@@ -1,0 +1,30 @@
+{
+  "paper_id": "pmid-36058293",
+  "pmid": "36058293",
+  "doi": "10.1016/j.ab.2022.114876",
+  "title": "Quantitation of Pax-6 protein in ocular impression cytology samples using an electrochemiluminescence immunoassay.",
+  "abstract": "Paired box protein Pax-6 (oculothrombin) is a transcription factor that plays an important regulatory role in ocular, brain, and pancreatic development. Mutations of the PAX6 gene cause aniridia and Peters anomaly. Reduction in Pax-6 protein is also associated with ocular diseases such as dry eye. An electrochemiluminescence immunoassay method using the Meso Scale Discovery platform was developed to measure Pax-6 protein levels in corneal epithelial cells obtained by impression cytology. Impression cytology involves harvesting ocular epithelial cells by applying a polyethersulfone membrane patch briefly to the ocular surface using a commercially available EYEPRIM\u2122 device. The epithelial cells that adhere to the membrane patch of the EYEPRIM\u2122 device provide a biological sample which can be assayed for Pax-6 protein levels. Assay development identified an antibody pair capable of detecting purified recombinant Pax-6 protein produced in mammalian cells. The optimized assay has a dynamic range of 24\u00a0pg\u00a0mL-1 to 100,000\u00a0pg\u00a0mL-1 and a lower limit of quantification of 24\u00a0pg\u00a0mL-1. Assay selectivity was demonstrated using either HeLa or HEK293\u00a0cells transfected with inhibitory RNA. Finally, the method was validated by measuring Pax-6 protein levels in impression cytology acquired samples obtained using the EYEPRIM\u2122 device from rabbit cornea.",
+  "year": "2022",
+  "journal": "Analytical biochemistry",
+  "authors": [
+    "Zaworski PG",
+    "Schwartz R",
+    "Burr J",
+    "Skutnik D",
+    "Mollin A",
+    "Kumar B",
+    "Ngumah Q",
+    "Welch E",
+    "Johnson B",
+    "Narasimhan J",
+    "Weetall M"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/36058293/",
+    "publisher": "https://doi.org/10.1016/j.ab.2022.114876"
+  }
+}

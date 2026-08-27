@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-26153023",
+  "pmid": "26153023",
+  "doi": "10.1093/carcin/bgv098",
+  "title": "Artesunate induces ROS- and p38 MAPK-mediated apoptosis and counteracts tumor growth in vivo in embryonal rhabdomyosarcoma cells.",
+  "abstract": "Rhabdomyosarcoma represents about 50% of soft-tissue sarcomas and 10% of malignant solid tumors in childhood. Embryonal rhabdomyosarcoma (ERMS) is the most frequent subtype, suggested to have an origin in muscle precursor cells that fail to exit the cell cycle and terminally differentiate mainly because of overexpression of the transcription factor, PAX7, which sustains proliferation, migration and invasiveness in ERMS cells. Artesunate (ARS) is a semi-synthetic derivative of artemisinin (ART), a natural compound well known as an antimalarial drug. However, ART and its derivatives have been found efficacious even as anticancer drugs that induce cell cycle arrest and/or apoptosis in several kinds of cancer. Here, we show that ARS dose-dependently induces DNA damage and apoptosis in ERMS cell lines. Production of reactive oxygen species (ROS) and activation of p38 MAPK have a central role in triggering ARS-mediated apoptosis in ERMS cells; indeed either the antioxidant, N-acetylcysteine or the p38 MAPK inhibitor, SB203580, protects ERMS cells from ARS-induced apoptosis. Moreover, ARS treatment in ERMS cells ROS-dependently induces the expression of the myo-miRs, miR-133a and miR-206, which are down-regulated in RMS, and reduces PAX7 protein levels. Finally, ARS upregulates the expression of the adhesion molecules, NCAM and integrin \u03b21, and reduces migration and invasiveness of ERMS cells in vitro, and ARS treatment reduces of about 50% the growth of ERMS xenografts in vivo. Our results are the first evidence of efficacy of ART derivatives in restraining ERMS growth in vivo, and suggest ARS as a potential candidate for therapeutic treatment of ERMS.",
+  "year": "2015",
+  "journal": "Carcinogenesis",
+  "authors": [
+    "Beccafico S",
+    "Morozzi G",
+    "Marchetti MC",
+    "Riccardi C",
+    "Sidoni A",
+    "Donato R",
+    "Sorci G"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/26153023/",
+    "publisher": "https://doi.org/10.1093/carcin/bgv098"
+  }
+}

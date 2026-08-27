@@ -1,0 +1,30 @@
+{
+  "paper_id": "pmid-32841355",
+  "pmid": "32841355",
+  "doi": "10.1210/clinem/dgaa584",
+  "title": "Congenital Hypothyroidism Due to Truncating PAX8 Mutations: A Case Series and Molecular Function Studies.",
+  "abstract": "CONTEXT: PAX8 is a transcription factor required for thyroid development, and its mutation causes congenital hypothyroidism (CH). More than 20 experimentally verified loss-of-function PAX8 mutations have been described, and all but one were located in the DNA-binding paired domain.\n\nOBJECTIVE: We report the identification and functional characterization of 3 novel truncating PAX8 mutations located outside the paired domain.\n\nMETHODS: Three CH probands, diagnosed in the frame of newborn screening, had thyroid hypoplasia and were treated with levothyroxine. Next-generation sequencing-based mutation screening was performed. Functionality of the identified mutations were verified with Western blotting, intracellular localization assays, and transactivation assays with use of HeLa cells. Luciferase complementation assays were used to evaluate the effect of mutations on the interaction between PAX8 and its partner, NKX2-1.\n\nRESULTS: Each proband had novel truncating PAX8 mutations that were I160Sfs*52, Q213Efs*27, and F342Rfs*85. Western blotting showed destabilization of the I160fs-PAX8 protein. Q213fs-PAX8 and F342fs-PAX8 showed normal protein expression levels and normal nuclear localization, but showed loss of transactivation of the luciferase reporter. By luciferase complementation assays, we showed that PAX8-NKX2-1 interaction was defective in Q213fs-PAX8. We also characterized the recombinant PAX8 proteins, and found that the protein sequence corresponding to exon 10 (363-400 aa residues) was essential for the PAX8-NKX2-1 interaction.\n\nCONCLUSIONS: Clinical and molecular findings of 3 novel truncating PAX8 mutations located outside the paired domain were reported. Experiments using cultured cells and recombinant proteins showed that the C-terminal portion (ie, 363-400 aa) of PAX8 is required for the PAX8-NKX2-1 interaction.",
+  "year": "2020",
+  "journal": "The Journal of clinical endocrinology and metabolism",
+  "authors": [
+    "Iwahashi-Odano M",
+    "Nagasaki K",
+    "Fukami M",
+    "Nishioka J",
+    "Yatsuga S",
+    "Asakura Y",
+    "Adachi M",
+    "Muroya K",
+    "Hasegawa T",
+    "Narumi S"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (\"protein stability\"[Title/Abstract] OR \"protein levels\"[Title/Abstract] OR stabilization[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract]) NOT \"PAX8-AS1\"[Title/Abstract]",
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (\"nuclear localization\"[Title/Abstract] OR \"nuclear localisation\"[Title/Abstract] OR \"nuclear localization signal\"[Title/Abstract] OR \"functional domains\"[Title/Abstract] OR \"subcellular localization\"[Title/Abstract] OR \"nuclear import\"[Title/Abstract] OR \"nuclear export\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract]) NOT \"PAX8-AS1\"[Title/Abstract]"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/32841355/",
+    "publisher": "https://doi.org/10.1210/clinem/dgaa584"
+  }
+}

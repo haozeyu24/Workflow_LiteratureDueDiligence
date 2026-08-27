@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-37604830",
+  "pmid": "37604830",
+  "doi": "10.1038/s41598-023-40491-0",
+  "title": "Roles unveiled for membrane-associated mucins at the ocular surface using a Muc4 knockout mouse model.",
+  "abstract": "Membrane-associated mucins (MAMs) are proposed to play critical roles at the ocular surface; however, in vivo evidence has been lacking. Here we investigate these roles by phenotyping of a Muc4 KO mouse. Histochemical analysis for expression of the beta-galactosidase transgene replacing Muc4 revealed a spiraling ribbon pattern across the corneal epithelium, consistent with centripetal cell migration from the limbus. Depletion of Muc4 compromised transcellular barrier function, as evidenced by an increase in rose bengal staining. In addition, the corneal surface was less smooth, consistent with disruption of tear film stability. While surface cells presented with well-developed microprojections, an increase in the number of cells with fewer microprojections was observed. Moreover, an increase in skin-type keratin K10 and a decrease in transcription factor Pax6 was observed, suggesting an incipient transdifferentiation. Despite this, no evidence of inflammatory dry eye disease was apparent. In addition, Muc4 had no effect on signaling by toll-like receptor Tlr4, unlike reports for MUC1 and MUC16. Results of this study provide the first in vivo evidence for the role of MAMs in transcellular barrier function, tear film stability, apical epithelial cell architecture, and epithelial mucosal differentiation at the ocular surface.",
+  "year": "2023",
+  "journal": "Scientific reports",
+  "authors": [
+    "Martinez-Carrasco R",
+    "Rachagani S",
+    "Batra SK",
+    "Arg\u00fceso P",
+    "Fini ME"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/37604830/",
+    "publisher": "https://doi.org/10.1038/s41598-023-40491-0"
+  }
+}

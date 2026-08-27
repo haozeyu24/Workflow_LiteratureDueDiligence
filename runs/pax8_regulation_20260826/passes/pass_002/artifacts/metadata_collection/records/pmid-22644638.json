@@ -1,0 +1,28 @@
+{
+  "paper_id": "pmid-22644638",
+  "pmid": "22644638",
+  "doi": "10.1002/mus.23266",
+  "title": "PAX7+ satellite cells in young and older adults following resistance exercise.",
+  "abstract": "INTRODUCTION: Resistance exercise (RE) stimulates a muscle protein anabolic response partially through enhanced satellite cell (SC) activity, however, age- and gender-related changes in SC content over a 24-h time course are not known.\n\nMETHODS: Ten young (27 \u00b1 2 years) men and women and 11 older (70 \u00b1 2 years) men and women performed an acute bout of RE. Myofiber and SC characteristics were determined from muscle biopsies of the vastus lateralis using immunohistochemistry. Immunoblotting was used to determine phosphorylation of cyclin-dependent kinase-2 and protein expression of p27(Kip1) and cyclin D1.\n\nRESULTS: Pax7+ SC were significantly increased in young men 24 h following RE. Percent SC were significantly increased in older women at 6 and 24 h following RE. Aging decreased myonuclear domain and increased protein expression of p27(Kip1) .\n\nCONCLUSIONS: An acute bout of RE increases SC content in young men at 24 h and older women at 6 and 24 h.",
+  "year": "2012",
+  "journal": "Muscle & nerve",
+  "authors": [
+    "Walker DK",
+    "Fry CS",
+    "Drummond MJ",
+    "Dickinson JM",
+    "Timmerman KL",
+    "Gundermann DM",
+    "Jennings K",
+    "Volpi E",
+    "Rasmussen BB"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/22644638/",
+    "publisher": "https://doi.org/10.1002/mus.23266"
+  }
+}

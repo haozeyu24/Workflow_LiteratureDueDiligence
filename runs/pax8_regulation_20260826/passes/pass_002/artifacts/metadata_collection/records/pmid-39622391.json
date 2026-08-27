@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-39622391",
+  "pmid": "39622391",
+  "doi": "10.1016/j.brainresbull.2024.111156",
+  "title": "Molecular mechanism of METTL14-mediated m6A modification regulating microglial function post ischemic stroke.",
+  "abstract": "This study explores the molecular mechanism of METTL14 regulating microglial function post ischemic stroke. A murine model was established by tMCAO. The neurological function was evaluated by mNSS. The cerebral infarct size and pathological changes were observed by TTC and H&E staining. M1 and M2 microglia in brain tissues were detected by flow cytometry. BV2 cells were subjected to OGD/R to establish an in vitro model. qRT-PCR and Western blot were used for detecting METTL14, PAX6, YTHDF2, TREM2, iNOS, and Arg1 expressions. The m6A level was quantitatively analyzed, and the binding of YTHDF2 or m6A to PAX6 was analyzed by RIP. PAX6 mRNA stability was assessed after actinomycin D treatment. ChIP was utilized for determining the enrichment of PAX6 on TREM2 promoter. The binding relationship between TREM2 and PAX6 was verified by dual-luciferase reporter assay. METTL14 was highly expressed after tMCAO, and silence of METTL14 alleviated symptoms of tMCAO mice and promoted microglial M2 polarization. METTL14 enhanced PAX6 mRNA m6A modification to promote YTHDF2 binding to PAX6 mRNA and its degradation. PAX6 bound to TREM2 promoter and facilitated its transcription and expression. In conclusion, METTL14-mediated m6A modification aggravates ischemic stroke by promoting microglial M1 polarization via YTHDF2/PAX6/TREM2 axis.",
+  "year": "2025",
+  "journal": "Brain research bulletin",
+  "authors": [
+    "Zhang X",
+    "Du P",
+    "Bai B",
+    "Lian X",
+    "Xue G"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/39622391/",
+    "publisher": "https://doi.org/10.1016/j.brainresbull.2024.111156"
+  }
+}

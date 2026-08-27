@@ -1,0 +1,28 @@
+{
+  "paper_id": "pmid-41865652",
+  "pmid": "41865652",
+  "doi": "10.1016/j.psj.2026.106810",
+  "title": "Metabolic and cellular physiological differences between embryonic breast and leg muscle satellite cells in chickens.",
+  "abstract": "This study aimed to compare the anatomical characteristics of embryonic chicken muscle satellite cells (CMSCs) derived from breast and leg muscles of 18-day-old embryos. We analyzed the cellular behaviors related to proliferation, metabolism, and differentiation capacity. Breast-derived CMSCs exhibited significantly higher proliferation rates and accelerated cell cycle progression, as evidenced by a higher S phase distribution and lower G2/M phase distribution compared to leg-derived CMSCs. In addition, immunofluorescence staining for myogenic regulatory factors revealed that breast-derived CMSCs exhibited higher expression levels of paired box protein 7 (PAX7), consistent with elevated PAX7 and myogenic differentiation 1 (MYOD) mRNA expression compared with leg-derived CMSCs. In contrast, leg-derived CMSCs showed significantly higher expression of myogenin (MYOG). Moreover, leg-derived CMSCs exhibited significantly higher mitochondrial respiratory activity indices, including oxygen consumption rate and basal respiration. In differentiation capacity analysis, the leg-derived CMSCs formed structurally more developed myotubes, and the expression of muscle-specific genes (MYOD, MYOG, MYH1E, MYH7, TNNI1, TNNI2) was also significantly higher. These findings suggest that breast-derived CMSCs exhibit superior proliferative capacity, while leg-derived CMSCs possess enhanced myogenic differentiation potential, as supported by their increased oxidative phosphorylation activity and elevated expression of differentiation-related markers. In conclusion, the anatomical origin of CMSCs significantly influences their proliferative and differentiation capacities as well as their metabolic properties, providing a valuable basis for selecting optimal cell sources for cultured meat production and meat quality improvement.",
+  "year": "2026",
+  "journal": "Poultry science",
+  "authors": [
+    "Kim J",
+    "Lee J",
+    "Yu D",
+    "Kim L",
+    "Kang D",
+    "Park J",
+    "Song G",
+    "Lee H",
+    "Shim K"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/41865652/",
+    "publisher": "https://doi.org/10.1016/j.psj.2026.106810"
+  }
+}

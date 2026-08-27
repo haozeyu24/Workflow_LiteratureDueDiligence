@@ -1,0 +1,30 @@
+{
+  "paper_id": "pmid-40531840",
+  "pmid": "40531840",
+  "doi": "10.1371/journal.pone.0324946",
+  "title": "Effect of retinoic acid treatment on the retinoic acid signaling pathway in a human siRNA-based aniridia limbal epithelial cell model, in vitro.",
+  "abstract": "PURPOSE: In the present study, we evaluate gene and protein expression levels in an in vitro siRNA-mediated PAX6 knockdown limbal epithelial cell (LEC) model after RA treatment. This study aims to investigate the direct effects of active RA products and their association with key regulators of the RA signaling pathway in siRNA PAX6 knockdown LECs, providing further insights into the potential role of RA signaling in AAK pathogenesis.\n\nMETHODS: Primary human limbal epithelial cells (LECs) were subjected to siRNA-mediated PAX6 knockdown to mimic PAX6 deletion in congenital aniridia (n\u2009=\u20098). Following knockdown, 0 \u00b5M, 1 \u00b5M, and 5 \u00b5M all-trans retinoic acid (RA) treatments were applied to both the siRNA PAX6 control and knockdown groups. After 48 hours of incubation, the mRNA expression levels of paired box 6 (PAX6), alcohol dehydrogenase 7 (ADH7), retinol dehydrogenase 10 (RDH10), aldehyde dehydrogenase 1 family member A1 (ALDH1A1), cytochrome P450 family 26 subfamily A member 1 (CYP26A1), retinol-binding protein 1 (RBP1), cellular retinoic acid-binding protein 2 (CRABP2), fatty acid-binding protein 5 (FABP5), retinoid X receptor alpha (RXRA), retinoid X receptor beta (RXRB), retinoic acid receptor alpha (RARA), retinoic acid receptor beta (RARB), peroxisome proliferator-activated receptor gamma (PPARG), and vascular endothelial growth factor A (VEGFA) were analyzed using qPCR. Protein expression levels were assessed using ELISA or Western blot, while cell proliferation rates were measured using the BrdU assay.\n\nRESULTS: PAX6, ADH7, ALDH1A1, FABP5 mRNA levels and PAX6, ADH7, ALDH1A1, FABP5, PPARG2, RARB protein levels were significantly lower in the PAX6 knockdown group, than in controls (p\u2009\u2264\u20090.018). PPARG mRNA level was significantly higher in the PAX6 knockdown group than in controls (p\u2009=\u20090.012). ALDH1A1 mRNA expression was significantly downregulated using 5 \u00b5M RA treatment in the control group (p\u2009=\u20090.038). CYP26A1 mRNA expression was upregulated using 1 \u00b5M and 5 \u00b5M RA treatment in both the PAX6 control (p\u2009<\u20090.001; p\u2009<\u20090.001) and the PAX6 knockdown group (p\u2009=\u20090.001; p\u2009=\u20090.002). CRABP2 mRNA expression in the PAX6 knockdown group (p\u2009=\u20090.02) and CRABP2 protein expression in both groups were downregulated using 5 \u00b5M RA concentration (p\u2009=\u20090.003; p\u2009=\u20090.02). Protein expression of RXRA was downregulated to 5 \u00b5M RA treatment in the controls (p\u2009=\u20090.007). mRNA expression of RARA in the PAX6 knockdown groups (p\u2009=\u20090.023) and mRNA expression of RARB in both groups (p\u2009=\u20090.007, p\u2009<\u20090.001) were downregulated to 5 \u00b5M RA treatment. RARB protein expression was downregulated to 1 \u00b5M and 5 \u00b5M RA treatment (p\u2009=\u20090.02, p\u2009=\u20090.004) in the controls. VEGFA mRNA expression in PAX6 controls was upregulated using 5 \u00b5M RA (p\u2009=\u20090.041). Cell proliferation rate was downregulated in PAX6 knockdown groups compared to the controls and downregulated using 5 \u00b5M RA concentration only in the controls (p\u2009<\u20090.001, p\u2009=\u20090.025).\n\nCONCLUSIONS: Our results reveal a reduced proliferation rate in PAX6 knockdown LECs, along with a less pronounced downregulation of proliferation in response to increased RA concentration. Additionally, the study highlights altered expression of key regulators in the RA signaling pathway, influenced by both PAX6 activity and RA treatment. These findings suggest a potential disruption in RA-mediated cellular regulation in PAX6-deficient LECs.",
+  "year": "2025",
+  "journal": "PloS one",
+  "authors": [
+    "Hsu SL",
+    "Stachon T",
+    "Fries FN",
+    "Li Z",
+    "Li S",
+    "Liu S",
+    "Seitz B",
+    "Kundu S",
+    "Amini M",
+    "Suiwal S",
+    "Szentm\u00e1ry N"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/40531840/",
+    "publisher": "https://doi.org/10.1371/journal.pone.0324946"
+  }
+}

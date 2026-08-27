@@ -1,0 +1,30 @@
+{
+  "paper_id": "pmid-22723015",
+  "pmid": "22723015",
+  "doi": "10.1093/hmg/dds239",
+  "title": "Epigenetic changes and disturbed neural development in a human embryonic stem cell-based model relating to the fetal valproate syndrome.",
+  "abstract": "Exposure to the antiepileptic drug valproic acid (VPA) during gestation causes neurofunctional and anatomic deficits in later life. At present, there are little human data on how early neural development is affected by chemicals. We used human embryonic stem cells, differentiating to neuroectodermal precursors, as a model to investigate the modes of action of VPA. Microarray expression profiling, qPCR of specific marker genes, immunostaining and the expression of green fluorescent protein under the control of the promoter of the canonical neural precursor cell marker HES5 were used as readouts. Exposure to VPA resulted in distorted marker gene expression, characterized by a relative increase in NANOG and OCT4 and a reduction in PAX6. A similar response pattern was observed with trichostatin A, a potent and specific histone deacetylase inhibitor (HDACi), but not with several other toxicants. Differentiation markers were disturbed by prolonged, but not by acute treatment with HDACi, and the strongest disturbance of differentiation was observed by toxicant exposure during early neural fate decision. The increased acetylation of histones observed in the presence of HDACi may explain the up-regulation of some genes. However, to understand the down-regulation of PAX6 and the overall complex transcript changes, we examined further epigenetic markers. Alterations in the methylation of lysines 4 and 27 of histone H3 were detected in the promoter region of PAX6 and OCT4. The changes in these activating and silencing histone marks provide a more general mechanistic rational for the regulation of developmentally important genes at non-cytotoxic drug concentrations.",
+  "year": "2012",
+  "journal": "Human molecular genetics",
+  "authors": [
+    "Balmer NV",
+    "Weng MK",
+    "Zimmer B",
+    "Ivanova VN",
+    "Chambers SM",
+    "Nikolaeva E",
+    "Jagtap S",
+    "Sachinidis A",
+    "Hescheler J",
+    "Waldmann T",
+    "Leist M"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/22723015/",
+    "publisher": "https://doi.org/10.1093/hmg/dds239"
+  }
+}

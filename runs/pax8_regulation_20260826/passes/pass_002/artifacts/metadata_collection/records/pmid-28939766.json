@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-28939766",
+  "pmid": "28939766",
+  "doi": "10.1074/jbc.M117.799676",
+  "title": "Casein kinase 2-mediated phosphorylation of Brahma-related gene 1 controls myoblast proliferation and contributes to SWI/SNF complex composition.",
+  "abstract": "Transcriptional regulation is modulated in part by chromatin-remodeling enzymes that control gene accessibility by altering chromatin compaction or nucleosome positioning. Brahma-related gene 1 (Brg1), a catalytic subunit of the mammalian SWI/SNF chromatin-remodeling enzymes, is required for both myoblast proliferation and differentiation, and the control of Brg1 phosphorylation by calcineurin, PKC\u03b21, and p38 regulates the transition to differentiation. However, we hypothesized that Brg1 activity might be regulated by additional kinases. Here, we report that Brg1 is also a target of casein kinase 2 (CK2), a serine/threonine kinase, in proliferating myoblasts. We found that CK2 interacts with Brg1, and mutation of putative phosphorylation sites to non-phosphorylatable (Ser to Ala, SA) or phosphomimetic residues (Ser to Glu, SE) reduced Brg1 phosphorylation by CK2. Although BRG1-deleted myoblasts that ectopically express the SA-Brg1 mutant proliferated similarly to the parental cells or cells ectopically expressing wild-type (WT) Brg1, ectopic expression of the SE-Brg1 mutant reduced proliferation and increased cell death, similar to observations from cells lacking Brg1. Moreover, pharmacological inhibition of CK2 increased myoblast proliferation. Furthermore, the Pax7 promoter, which controls expression of a key transcription factor required for myoblast proliferation, was in an inaccessible chromatin state in the SE-Brg1 mutant, suggesting that hyperphosphorylated Brg1 cannot remodel chromatin. WT-, SA-, and SE-Brg1 exhibited distinct differences in interacting with and affecting expression of the SWI/SNF subunits Baf155 and Baf170 and displayed differential sub-nuclear localization. Our results indicate that CK2-mediated phosphorylation of Brg1 regulates myoblast proliferation and provides insight into one mechanism by which composition of the mammalian SWI/SNF enzyme complex is regulated.",
+  "year": "2017",
+  "journal": "The Journal of biological chemistry",
+  "authors": [
+    "Padilla-Benavides T",
+    "Nasipak BT",
+    "Paskavitz AL",
+    "Haokip DT",
+    "Schnabl JM",
+    "Nickerson JA",
+    "Imbalzano AN"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/28939766/",
+    "publisher": "https://doi.org/10.1074/jbc.M117.799676"
+  }
+}

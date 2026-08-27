@@ -1,0 +1,30 @@
+{
+  "paper_id": "pmid-41025492",
+  "pmid": "41025492",
+  "doi": "10.1111/apha.70114",
+  "title": "MiR-126-5p Derived From Bone Marrow Mesenchymal Stem Cell Exosomes Promotes Skeletal Muscle Regeneration by Regulating FBXO32/MyoD Signaling.",
+  "abstract": "AIM: In the process of muscle growth and repair, microRNAs (miRNAs) serve as a critical factor in spatiotemporal regulation. Nevertheless, the molecular regulatory mechanisms underlying muscle regeneration remain largely unknown.\n\nMETHODS: Exosomes from control and miR-126-knockdown BMSCs were isolated via ultracentrifugation. A mouse muscle injury model was established using 1.2% barium chloride in gastrocnemius muscles. Injured tissues received local injections of BMSC exosomes or AAV-miR-126. Gene expression was analyzed by qRT-PCR/Western blot. Tissue morphology and repair were assessed via H&E staining, while regeneration markers were evaluated through immunostaining.\n\nRESULTS: Here, we identified miR-126-5p in BMSC-derived exosomes as a positive regulator of muscle regeneration. These exosomes promoted the proliferation and maturation of myoblasts and facilitated the regeneration of skeletal muscle in male C57BL/6J mice. FBXO32 was confirmed as the downstream target of exosomal miR-126-5p to regulate skeletal muscle regeneration, and it ubiquitinated and degraded myogenic differentiation 1 (MyoD). Notably, miR-126-5p knockdown from BMSC-derived exosomes significantly inhibited proliferation and differentiation of Pax7+ SCs and muscle regeneration, whereas adeno-associated virus (AAV)-mediated overexpression of miR-126-5p accelerated these processes. Specifically, the BMSC-derived exosomes delivered miR-126-5p to skeletal muscle, thus decreasing the expression of FBXO32, in turn increasing MyoD expression, finally significantly promoting satellite cell differentiation and skeletal muscle regeneration.\n\nCONCLUSIONS: BMSC-derived exosomes could promote skeletal muscle injury repair through miR-126-5p, and thus miR-126-5p may act as a molecular therapeutic target of skeletal muscle diseases. Elucidating functional mechanisms of exosomes and miRNA is of great significance for developing new biotherapy strategies for skeletal muscle disease.",
+  "year": "2025",
+  "journal": "Acta physiologica (Oxford, England)",
+  "authors": [
+    "Yan Y",
+    "Zheng M",
+    "Wang X",
+    "Fu T",
+    "Qi J",
+    "Wei X",
+    "Sun Y",
+    "Lu J",
+    "Luo X",
+    "Wang Y",
+    "Wang H"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/41025492/",
+    "publisher": "https://doi.org/10.1111/apha.70114"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-27840956",
+  "pmid": "27840956",
+  "doi": "10.3892/or.2016.5213",
+  "title": "MET/ERK2 pathway regulates the motility of human alveolar rhabdomyosarcoma cells.",
+  "abstract": "In alveolar rhabdomyosarcoma (ARMS) that is a highly malignant pediatric soft tissue tumor, MET, a receptor of hepatocyte growth factor (HGF), was reported to be downstream of the PAX3-FOXO1 fusion gene specific to ARMS, and a key mediator of metastatic behavior in RMS. So far, no studies have investigated the downstream signaling pathways of MET in ARMS, even though HGF and MET have been suggested to be deeply involved in the invasiveness of ARMS. In this study, we demonstrated the functions of MET signaling in ARMS in\u00a0vitro by using three human ARMS cell lines and three human embryonal rhabdomyosarcoma (ERMS) cell lines. MET mRNA levels and MET protein expression in ARMS cell lines was higher than those in ERMS cell lines as detected by real-time quantitative PCR and western blotting, respectively. Based on cell growth and cell cycle analyses it was found that HGF stimulation did not enhance the proliferation of ERMS or ARMS cell lines. HGF-stimulated cell motility of ARMS cell lines was inhibited by U0126 (ERK1/2 inhibitor) but was only partially inhibited by PD98059 (ERK1 inhibitor) or rapamycin (mTOR inhibitor) as observed in wound-healing and migration assays. Western blotting revealed that ERK1/2 was dephosphorylated by U0126 to a higher extent than by PD98059 in the ARMS cells. HGF-stimulated cell motility of Rh30 cell line was inhibited not by ERK1 siRNA, but by ERK2 siRNA. Our data thus suggest that HGF/MET signaling promotes motility of ARMS cells mainly through ERK2 signaling. A specific inhibitor of ERK2 phosphorylation could therefore be a specific anticancer agent against invasiveness and metastasis in ARMS.",
+  "year": "2017",
+  "journal": "Oncology reports",
+  "authors": [
+    "Otabe O",
+    "Kikuchi K",
+    "Tsuchiya K",
+    "Katsumi Y",
+    "Yagyu S",
+    "Miyachi M",
+    "Iehara T",
+    "Hosoi H"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/27840956/",
+    "publisher": "https://doi.org/10.3892/or.2016.5213"
+  }
+}

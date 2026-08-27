@@ -1,0 +1,22 @@
+{
+  "paper_id": "pmid-30691681",
+  "pmid": "30691681",
+  "doi": "10.1016/bs.acr.2018.12.001",
+  "title": "Regulation of cancer stem cell properties by SIX1, a member of the PAX-SIX-EYA-DACH network.",
+  "abstract": "The PAX-SIX-EYA-DACH network (PSEDN) is a central developmental transcriptional regulatory network from Drosophila to humans. The PSEDN is comprised of four conserved protein families; including paired box (PAX), sine oculis (SIX), eyes absent (EYA), and dachshund (DACH). Aberrant expression of PSEDN members, particularly SIX1, has been observed in multiple human cancers, where SIX1 expression correlates with increased aggressiveness and poor prognosis. In conjunction with its transcriptional activator EYA, the SIX1 transcription factor increases cancer stem cell (CSC) numbers and induces epithelial-mesenchymal transition (EMT). SIX1 promotes multiple hallmarks and enabling characteristics of cancer via regulation of cell proliferation, senescence, apoptosis, genome stability, and energy metabolism. SIX1 also influences the tumor microenvironment, enhancing recruitment of tumor-associated macrophages and stimulating angiogenesis, to promote tumor development and progression. EYA proteins are multifunctional, possessing a transcriptional activation domain and tyrosine phosphatase activity, that each contributes to cancer stem cell properties. DACH proteins function as tumor suppressors in solid cancers, opposing the actions of SIX-EYA and reducing CSC prevalence. Multiple mechanisms can lead to increased SIX1 expression, including loss of SIX1-targeting tumor suppressor microRNAs (miRs), whose expression correlates inversely with SIX1 expression in cancer patient samples. In this review, we discuss the major mechanisms by which SIX1 confers CSC and EMT features and other important cancer cell characteristics. The roles of EYA and DACH in CSCs and cancer progression are briefly highlighted. Finally, we summarize the clinical significance of SIX1 in cancer to emphasize the potential therapeutic benefits of effective strategies to disrupt PSEDN protein interactions and functions.",
+  "year": "2019",
+  "journal": "Advances in cancer research",
+  "authors": [
+    "Kingsbury TJ",
+    "Kim M",
+    "Civin CI"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/30691681/",
+    "publisher": "https://doi.org/10.1016/bs.acr.2018.12.001"
+  }
+}

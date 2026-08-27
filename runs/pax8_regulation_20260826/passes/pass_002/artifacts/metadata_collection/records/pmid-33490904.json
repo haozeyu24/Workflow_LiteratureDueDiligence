@@ -1,0 +1,48 @@
+{
+  "paper_id": "pmid-33490904",
+  "pmid": "33490904",
+  "doi": "10.1016/j.isci.2020.101996",
+  "title": "17-DMAG dually inhibits Hsp90 and histone lysine demethylases in alveolar rhabdomyosarcoma.",
+  "abstract": "Histone lysine demethylases (KDMs) play critical roles in oncogenesis and therefore may be effective targets for anticancer therapy. Using a time-resolved fluorescence resonance energy transfer demethylation screen assay, in combination with multiple orthogonal validation approaches, we identified geldanamycin and its analog 17-DMAG as KDM inhibitors. In addition, we found that these Hsp90 inhibitors increase degradation of the alveolar rhabdomyosarcoma (aRMS) driver oncoprotein PAX3-FOXO1 and induce the repressive epigenetic mark H3K9me3 and H3K36me3 at genomic loci of PAX3-FOXO1 targets. We found that as monotherapy 17-DMAG significantly inhibits expression of PAX3-FOXO1 target genes and multiple oncogenic pathways, induces a muscle differentiation signature, delays tumor growth and extends survival in aRMS xenograft mouse models. The combination of 17-DMAG with conventional chemotherapy significantly enhances therapeutic efficacy, indicating that targeting KDM in combination with chemotherapy may serve as a therapeutic approach to PAX3-FOXO1-positive aRMS.",
+  "year": "2021",
+  "journal": "iScience",
+  "authors": [
+    "Singh S",
+    "Abu-Zaid A",
+    "Lin W",
+    "Low J",
+    "Abdolvahabi A",
+    "Jin H",
+    "Wu Q",
+    "Cooke B",
+    "Fang J",
+    "Bowling J",
+    "Vaithiyalingam S",
+    "Currier D",
+    "Yun MK",
+    "Fernando DM",
+    "Maier J",
+    "Tillman H",
+    "Bulsara P",
+    "Lu Z",
+    "Das S",
+    "Shelat A",
+    "Li Z",
+    "Young B",
+    "Lee R",
+    "Rankovic Z",
+    "Murphy AJ",
+    "White SW",
+    "Davidoff AM",
+    "Chen T",
+    "Yang J"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/33490904/",
+    "publisher": "https://doi.org/10.1016/j.isci.2020.101996"
+  }
+}

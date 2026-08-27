@@ -1,0 +1,28 @@
+{
+  "paper_id": "pmid-22556407",
+  "pmid": "22556407",
+  "doi": "10.1074/jbc.M112.368241",
+  "title": "Heparan sulfate facilitates FGF and BMP signaling to drive mesoderm differentiation of mouse embryonic stem cells.",
+  "abstract": "Heparan sulfate (HS) has been implicated in regulating cell fate decisions during differentiation of embryonic stem cells (ESCs) into advanced cell types. However, the necessity and the underlying molecular mechanisms of HS in early cell lineage differentiation are still largely unknown. In this study, we examined the potential of EXT1(-/-) mouse ESCs (mESCs), that are deficient in HS, to differentiate into primary germ layer cells. We observed that EXT1(-/-) mESCs lost their differentiation competence and failed to differentiate into Pax6(+)-neural precursor cells and mesodermal cells. More detailed analyses highlighted the importance of HS for the induction of Brachyury(+) pan-mesoderm as well as normal gene expression associated with the dorso-ventral patterning of mesoderm. Examination of developmental cell signaling revealed that EXT1 ablation diminished FGF and BMP but not Wnt signaling. Furthermore, restoration of FGF and BMP signaling each partially rescued mesoderm differentiation defects. We further show that BMP4 is more prone to degradation in EXT1(-/-) mESCs culture medium compared with that of wild type cells. Therefore, our data reveal that HS stabilizes BMP ligand and thereby maintains the BMP signaling output required for normal mesoderm differentiation. In summary, our study demonstrates that HS is required for ESC pluripotency, in particular lineage specification into mesoderm through facilitation of FGF and BMP signaling.",
+  "year": "2012",
+  "journal": "The Journal of biological chemistry",
+  "authors": [
+    "Kraushaar DC",
+    "Rai S",
+    "Condac E",
+    "Nairn A",
+    "Zhang S",
+    "Yamaguchi Y",
+    "Moremen K",
+    "Dalton S",
+    "Wang L"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/22556407/",
+    "publisher": "https://doi.org/10.1074/jbc.M112.368241"
+  }
+}

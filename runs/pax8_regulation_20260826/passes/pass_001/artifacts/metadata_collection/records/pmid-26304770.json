@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-26304770",
+  "pmid": "26304770",
+  "doi": "10.1002/stem.2125",
+  "title": "NEDD4 Regulates PAX7 Levels Promoting Activation of the Differentiation Program in Skeletal Muscle Precursors.",
+  "abstract": "The transcription factor Pax7 regulates skeletal muscle stem cell (satellite cells) specification and maintenance through various mechanisms, including repressing the activity of the muscle regulatory factor MyoD. Hence, Pax7-to-MyoD protein ratios can determine maintenance of the committed-undifferentiated state or activation of the differentiation program. Pax7 expression decreases sharply in differentiating myoblasts but is maintained in cells (re)acquiring quiescence, yet the mechanisms regulating Pax7 levels based on differentiation status are not well understood. Here we show that Pax7 levels are directly regulated by the ubiquitin-ligase Nedd4. Our results indicate that Nedd4 is expressed in quiescent and activated satellite cells, that Nedd4 and Pax7 physically interact during early muscle differentiation-correlating with Pax7 ubiquitination and decline-and that Nedd4 loss of function prevented this effect. Furthermore, even transient nuclear accumulation of Nedd4 induced a drop in Pax7 levels and precocious muscle differentiation. Consequently, we propose that Nedd4 functions as a novel Pax7 regulator, which activity is temporally and spatially controlled to modulate the Pax7 protein levels and therefore satellite cell fate.",
+  "year": "2015",
+  "journal": "Stem cells (Dayton, Ohio)",
+  "authors": [
+    "Bustos F",
+    "de la Vega E",
+    "Cabezas F",
+    "Thompson J",
+    "Cornelison DD",
+    "Olwin BB",
+    "Yates JR 3rd",
+    "Olgu\u00edn HC"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/26304770/",
+    "publisher": "https://doi.org/10.1002/stem.2125"
+  }
+}

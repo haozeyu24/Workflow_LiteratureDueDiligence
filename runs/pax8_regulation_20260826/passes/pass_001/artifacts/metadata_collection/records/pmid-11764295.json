@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-11764295",
+  "pmid": "11764295",
+  "doi": "10.1046/j.0022-202x.2001.00010.x",
+  "title": "Microphthalmia-associated transcription factor (MITF): multiplicity in structure, function, and regulation.",
+  "abstract": "Microphthalmia-associated transcription factor (MITF) regulates the differentiation and development of melanocytes and retinal pigment epithelium and is also responsible for pigment cell-specific transcription of the melanogenesis enzyme genes. Heterozygous mutations in the MITF gene cause auditory-pigmentary syndromes. MITF consists of at least five isoforms, MITF-A, MITF-B, MITF-C, MITF-H, and MITF-M, differing at their N-termini and expression patterns. Here we show a remarkable similarity between the N-terminal domain of MITF-A and cytoplasmic retinoic acid-binding proteins. To date, four isoform-specific first exons have been identified in the MITF gene: exons 1A, 1H, 1B, and 1M in the 5' to 3' direction, each of which encodes the unique N-terminus of a given isoform. The 5'-flanking regions of these isoform-specific exons are termed A, H, B, and M promoters, respectively. Among these promoters, the M promoter has received particular attention, because it is functional only in melanocyte-lineage cells and is upregulated by Wnt signaling via the functional LEF-1-binding site. Moreover, the M promoter is upregulated by other transcription factors, PAX3, SOX10, and CREB. The activity and degradation of MITF-M are regulated by extracellular signals via protein phosphorylation, such as c-Kit signaling. Together, multiple signals appear to converge on the M promoter as well as on MITF proteins, leading to the proper regulation of MITF-M in melanocytes and other MITF isoforms in many cell types.",
+  "year": "2001",
+  "journal": "The journal of investigative dermatology. Symposium proceedings",
+  "authors": [
+    "Shibahara S",
+    "Takeda K",
+    "Yasumoto K",
+    "Udono T",
+    "Watanabe K",
+    "Saito H",
+    "Takahashi K"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/11764295/",
+    "publisher": "https://doi.org/10.1046/j.0022-202x.2001.00010.x"
+  }
+}

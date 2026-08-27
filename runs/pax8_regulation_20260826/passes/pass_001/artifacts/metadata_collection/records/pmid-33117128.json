@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-33117128",
+  "pmid": "33117128",
+  "doi": "10.3389/fnmol.2020.00154",
+  "title": "Gene Expression Profile at the Motor Endplate of the Neuromuscular Junction of Fast-Twitch Muscle.",
+  "abstract": "The neuromuscular junction (NMJ) is a prototypic chemical synapse between the spinal motor neuron and the motor endplate. Gene expression profiles of the motor endplate are not fully elucidated. Collagen Q (ColQ) is a collagenic tail subunit of asymmetric forms of acetylcholinesterase and is driven by two distinct promoters. pColQ1 is active throughout the slow-twitch muscle, whereas pColQ1a is active at the motor endplate of fast-twitch muscle. We made a transgenic mouse line that expresses nuclear localization signal (NLS)-attached Cre recombinase under the control of pColQ1a (pColQ1a-Cre mouse). RiboTag mouse expresses an HA-tagged ribosomal subunit, RPL22, in cells expressing Cre recombinase. We generated pColQ1a-Cre:RiboTag mouse, and confirmed that HA-tagged RPL22 was enriched at the NMJ of tibialis anterior (TA) muscle. Next, we confirmed that Chrne and Musk that are specifically expressed at the NMJ were indeed enriched in HA-immunoprecipitated (IP) RNA, whereas Sox10 and S100b, markers for Schwann cells, and Icam1, a marker for vascular endothelial cells, and Pax3, a marker for muscle satellite cells, were scarcely detected. Gene set enrichment analysis (GSEA) of RNA-seq data showed that \"phosphatidylinositol signaling system\" and \"extracellular matrix receptor interaction\" were enriched at the motor endplate. Subsequent analysis revealed that genes encoding diacylglycerol kinases, phosphatidylinositol kinases, phospholipases, integrins, and laminins were enriched at the motor endplate. We first characterized the gene expression profile under translation at the motor endplate of TA muscle using the RiboTag technique. We expect that our gene expression profiling will help elucidate molecular mechanisms of the development, maintenance, and pathology of the NMJ.",
+  "year": "2020",
+  "journal": "Frontiers in molecular neuroscience",
+  "authors": [
+    "Huang K",
+    "Li J",
+    "Ito M",
+    "Takeda JI",
+    "Ohkawara B",
+    "Ogi T",
+    "Masuda A",
+    "Ohno K"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/33117128/",
+    "publisher": "https://doi.org/10.3389/fnmol.2020.00154"
+  }
+}

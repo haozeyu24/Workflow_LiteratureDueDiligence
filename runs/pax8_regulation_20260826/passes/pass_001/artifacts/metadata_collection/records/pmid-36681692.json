@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-36681692",
+  "pmid": "36681692",
+  "doi": "10.1038/s41598-023-27782-2",
+  "title": "Codon modification of Tuba1a alters mRNA levels and causes a severe neurodevelopmental phenotype in mice.",
+  "abstract": "The tubulinopathies are an umbrella of rare diseases that result from mutations in tubulin genes and are frequently characterised by severe brain malformations. The characteristics of a given disease reflect the expression pattern of the transcript, the function of a given tubulin gene, and the role microtubules play in a particular cell type. Mouse models have proved to be valuable tools that have provided insight into the molecular and cellular mechanisms that underlie the disease state. In this manuscript we compare two Tuba1a mouse models, both of which express wild-type TUBA1A protein but employ different codon usage. We show that modification of the Tuba1a mRNA sequence results in homozygous lethality and a severe neurodevelopmental phenotype. This is associated with a decrease in the number of post-mitotic neurons, PAX6 positive progenitors, and an increase in the number of apoptotic cells. We attribute this to a decrease in the stability of the modified Tuba1a transcript, and the absence of compensation by the other neurogenic tubulins. Our findings highlight the importance of maintaining the wild-type coding sequence when engineering mouse lines and the impact of synonymous genetic variation.",
+  "year": "2023",
+  "journal": "Scientific reports",
+  "authors": [
+    "Leca I",
+    "Phillips AW",
+    "Ushakova L",
+    "Cushion TD",
+    "Keays DA"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/36681692/",
+    "publisher": "https://doi.org/10.1038/s41598-023-27782-2"
+  }
+}

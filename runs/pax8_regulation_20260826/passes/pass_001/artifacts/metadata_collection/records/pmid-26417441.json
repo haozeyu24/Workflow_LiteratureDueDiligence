@@ -1,0 +1,31 @@
+{
+  "paper_id": "pmid-26417441",
+  "pmid": "26417441",
+  "doi": "10.1002/iid3.65",
+  "title": "Overexpression of Fkbp11, a feature of lupus B cells, leads to B cell tolerance breakdown and initiates plasma cell differentiation.",
+  "abstract": "Systemic Lupus Erythematosus (SLE) is a severe systemic autoimmune disease, characterized by multi-organ damages, triggered by an autoantibody-mediated inflammation, and with a complex genetic influence. It is today accepted that adult SLE arises from the building up of many subtle gene variations, each one adding a new brick on the SLE susceptibility and contributing to a phenotypic trait to the disease. One of the ways to find these gene variations consists in comprehensive analysis of gene expression variation in a precise cell type, which can constitute a good complementary strategy to genome wide association studies. Using this strategy, and considering the central role of B cells in SLE, we analyzed the B cell transcriptome of quiescent SLE patients, and identified an overexpression of FKBP11, coding for a cytoplasmic putative peptidyl-prolyl cis/trans isomerase and chaperone enzyme. To understand the consequences of FKBP11 overexpression on B cell function and on autoimmunity's development, we created lentiviral transgenic mice reproducing this gene expression variation. We showed that high expression of Fkbp11 reproduces by itself two phenotypic traits of SLE in mice: breakdown of B cell tolerance against DNA and initiation of plasma cell differentiation by acting upstream of Pax5 master regulator gene.",
+  "year": "2015",
+  "journal": "Immunity, inflammation and disease",
+  "authors": [
+    "Ruer-Laventie J",
+    "Simoni L",
+    "Schickel JN",
+    "Soley A",
+    "Duval M",
+    "Knapp AM",
+    "Marcellin L",
+    "Lamon D",
+    "Korganow AS",
+    "Martin T",
+    "Pasquali JL",
+    "Soulas-Sprauel P"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/26417441/",
+    "publisher": "https://doi.org/10.1002/iid3.65"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-36214976",
+  "pmid": "36214976",
+  "doi": "10.1007/s12033-022-00564-3",
+  "title": "Paired Box 5-Induced LINC00467 Upregulation Promotes the Progression of Laryngeal Squamous Cell Cancer by Triggering the MicroRNA-4735-3p/TNF Alpha-Induced Protein 3 Pathway.",
+  "abstract": "LINC00467 was reported as an oncogenic gene in different types of human cancers. In this study, we investigated the molecular mechanisms of LINC00467 in the tumorigenesis of laryngeal squamous cell cancer (LSCC). RT-qPCR was utilized to detect the mRNA expression of genes, and western blot assay was used to determine the protein levels of TNF alpha-induced protein 3 (TNFAIP3). The cell viability was detected by CCK-8 assay. Transwell assays were conducted to determine the cell migration and invasion of LSCC cells, and the cell cycle was assessed by flow cytometry. The association between paired box 5 (PAX5), LINC00467, miR-4735-3p, and TNFAIP3 was verified using ChIP, RNA pull-down, or luciferase reporter assays. In our study, we found that LINC00467 was upregulated in LSCC, and knockdown of LINC00467 suppressed cell viability and metastasis of LSCC. Besides, LINC00467 transcription could be activated by PAX5 in LSCC. Furthermore, LINC00467 acted as competitive endogenous RNA (ceRNA) for miR-4735-3p to accelerate LSCC progression. In the meantime, TNFAIP3 was identified as a downstream gene of miR-4735-3p. Finally, TNFAIP3 overexpression could overturn the effects of miR-4735-3p mimic on LSCC cellular activities. In conclusion, our results demonstrated that PAX5-induced LINC00467 facilitated LSCC progression by inhibiting miR-4735-3p to increase TNFAIP3 expression.",
+  "year": "2023",
+  "journal": "Molecular biotechnology",
+  "authors": [
+    "Li Y",
+    "Wu Y",
+    "Dai L",
+    "Wu H",
+    "Chen C",
+    "Ni J",
+    "Jin E",
+    "Zhou X"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/36214976/",
+    "publisher": "https://doi.org/10.1007/s12033-022-00564-3"
+  }
+}

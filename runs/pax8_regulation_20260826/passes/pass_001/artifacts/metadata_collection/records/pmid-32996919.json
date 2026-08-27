@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-32996919",
+  "pmid": "32996919",
+  "doi": "10.1039/d0bm00871k",
+  "title": "Scaffold-supported extracellular matrices preserved by magnesium hydroxide nanoparticles for renal tissue regeneration.",
+  "abstract": "Fibroblast-derived extracellular matrix (fECM)-supported scaffolds made up of poly(lactic-co-glycolic acid) were prepared with the enhanced preservation of ECM components by composites with magnesium hydroxide nanoparticles (MH NPs), and were applied for the renal tissue regeneration. MH NP utilization resulted in an increased ECM protein amount, decreased scaffold degradation, and surface hydrophilic modification. These effects were correlated with the improved adhesion and viability of renal proximal tubule epithelial cells on the scaffold. In vivo experiments demonstrated effects of fECM and MH NPs on renal regeneration. The number of glomeruli was the largest in the ECM scaffold with MH NPs as compared to the pristine scaffold and ECM scaffold without MH NPs. Quantitative PCR analysis exhibited less inflammation (IL-1\u03b2, TNF-\u03b1, and IL-6) and fibrosis-related (vimentin, collagen I, and \u03b1-SMA) markers, whereas opposite results were found in regeneration-related markers (Pax2, vWf, Wt1, and Emx2). The concentration of renal function-related molecules, creatinine and blood urea nitrogen diminished in the ECM scaffold with MH NPs. All results indicate that MH NPs utilization for the renal regenerative scaffold is effective for in vitro and in vivo environments and is, therefore, a good model for regeneration of kidneys and other tissues, and organs.",
+  "year": "2020",
+  "journal": "Biomaterials science",
+  "authors": [
+    "Kim YA",
+    "Chun SY",
+    "Park SB",
+    "Kang E",
+    "Koh WG",
+    "Kwon TG",
+    "Han DK",
+    "Joung YK"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/32996919/",
+    "publisher": "https://doi.org/10.1039/d0bm00871k"
+  }
+}

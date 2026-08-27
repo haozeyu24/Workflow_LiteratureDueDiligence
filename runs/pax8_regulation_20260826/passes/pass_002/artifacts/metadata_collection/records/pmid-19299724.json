@@ -1,0 +1,36 @@
+{
+  "paper_id": "pmid-19299724",
+  "pmid": "19299724",
+  "doi": "10.4049/jimmunol.0800489",
+  "title": "IL-7 Dependence in human B lymphopoiesis increases during progression of ontogeny from cord blood to bone marrow.",
+  "abstract": "IL-7 is critical for B cell production in adult mice; however, its role in human B lymphopoiesis is controversial. One challenge was the inability to differentiate human cord blood (CB) or adult bone marrow (BM) hematopoietic stem cells (HSCs) without murine stroma. Here, we examine the role of IL-7 in human B cell development using a novel, human-only model based on coculturing human HSCs on primary human BM stroma. In this model, IL-7 increases human B cell production by >60-fold from both CB and adult BM HSCs. IL-7-induced increases are dose-dependent and specific to CD19(+) cells. STAT5 phosphorylation and expression of the Ki-67 proliferation Ag indicate that IL-7 acts directly on CD19(+) cells to increase proliferation at the CD34(+) and CD34(-) pro-B cell stages. Without IL-7, HSCs in CB, but not BM, give rise to a small but consistent population of CD19(lo) B lineage cells that express EBF (early B cell factor) and PAX-5 and respond to subsequent IL-7 stimulation. Flt3 ligand, but not thymic stromal-derived lymhopoietin (TSLP), was required for the IL-7-independent production of human B lineage cells. As compared with CB, adult BM shows a reduction of in vitro generative capacity that is progressively more profound in developmentally sequential populations, resulting in an approximately 50-fold reduction in IL-7-dependent B lineage generative capacity. These data provide evidence that IL-7 is essential for human B cell production from adult BM and that IL-7-induced expansion of the pro-B compartment is increasingly critical for human B cell production during the progression of ontogeny.",
+  "year": "2009",
+  "journal": "Journal of immunology (Baltimore, Md. : 1950)",
+  "authors": [
+    "Parrish YK",
+    "Baez I",
+    "Milford TA",
+    "Benitez A",
+    "Galloway N",
+    "Rogerio JW",
+    "Sahakian E",
+    "Kagoda M",
+    "Huang G",
+    "Hao QL",
+    "Sevilla Y",
+    "Barsky LW",
+    "Zielinska E",
+    "Price MA",
+    "Wall NR",
+    "Dovat S",
+    "Payne KJ"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/19299724/",
+    "publisher": "https://doi.org/10.4049/jimmunol.0800489"
+  }
+}

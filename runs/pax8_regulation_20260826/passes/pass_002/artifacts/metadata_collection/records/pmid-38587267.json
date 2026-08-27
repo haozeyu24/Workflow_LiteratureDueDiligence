@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-38587267",
+  "pmid": "38587267",
+  "doi": "10.1039/d3fo03938b",
+  "title": "Vitamin C regulates skeletal muscle post-injury regeneration by promoting myoblast proliferation through its direct interaction with the Pax7 protein.",
+  "abstract": "Previous studies have shown that vitamin C (VC), an essential vitamin for the human body, can promote the differentiation of muscle satellite cells (MuSCs) in vitro and play an important role in skeletal muscle post-injury regeneration. However, the molecular mechanism of VC regulating MuSC proliferation has not been elucidated. In this study, the role of VC in promoting MuSC proliferation and its molecular mechanism were explored using cell molecular biology and animal experiments. The results showed that VC accelerates the progress of skeletal muscle post-injury regeneration by promoting MuSC proliferation in vivo. VC can also promote skeletal muscle regeneration in the case of atrophy. Using the C2C12 myoblast murine cell line, we observed that VC also stimulated cell proliferation. In addition, after an in vitro study establishing the occurrence of a physical interaction between VC and Pax7, we observed that VC also upregulated the total and nuclear Pax7 protein levels. This mechanism increased the expression of Myf5 (Myogenic Factor 5), a Pax7 target gene. This study establishes a theoretical foundation for understanding the regulatory mechanisms underlying VC-mediated MuSC proliferation and skeletal muscle regeneration. Moreover, it develops the application of VC in animal muscle nutritional supplements and treatment of skeletal muscle-related diseases.",
+  "year": "2024",
+  "journal": "Food & function",
+  "authors": [
+    "Zhang X",
+    "Tian B",
+    "Yu H",
+    "Li S",
+    "Li S",
+    "Su J",
+    "Tong H"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/38587267/",
+    "publisher": "https://doi.org/10.1039/d3fo03938b"
+  }
+}

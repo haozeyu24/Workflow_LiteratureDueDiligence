@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-16643884",
+  "pmid": "16643884",
+  "doi": "10.1016/j.ydbio.2006.03.011",
+  "title": "Activin A is an endogenous inhibitor of ureteric bud outgrowth from the Wolffian duct.",
+  "abstract": "Development of metanephric kidney begins with ureteric bud outgrowth from the Wolffian duct (WD). GDNF is believed to be a crucial positive signal in the budding process, but the negative regulation of this process remains unclear. Here, we examined the role of activin A, a member of TGF-beta family, in bud formation using an in vitro WD culture system. When cultured with the surrounding mesonephros, WDs formed many ectopic buds in response to GDNF. While the activin signaling pathway is normally active along the non-budding WD (as measured by expression of activin A and phospho-Smad2/3), activin A was absent and phospho-Smad2/3 was undetectable in the ectopic buds induced by GDNF. To examine the role of activin A in bud formation, we attempted to inactivate activin action. Interestingly, the addition of neutralizing anti-activin A antibody potentiated GDNF action. To further clarify the role of activin A, we also tested the effect of activin blockade on the WD cultured in the absence of mesonephros. WDs without mesonephros did not form ectopic buds even in the presence of GDNF. In contrast, blockade of activin action with a variety of agents acting through different mechanisms (natural antagonist, neutralizing antibodies, siRNA) enabled GDNF to induce ectopic buds. Inhibition of GDNF-induced bud formation by activin A was accompanied by inhibition of cell proliferation, reduced expression of Pax-2, and decreased phosphorylation of PI3-kinase and MAP kinase in the WD. Our data suggest that activin A is an endogenous inhibitor of bud formation and that cancellation of activin A autocrine action may be critical for the initiation of this process.",
+  "year": "2006",
+  "journal": "Developmental biology",
+  "authors": [
+    "Maeshima A",
+    "Vaughn DA",
+    "Choi Y",
+    "Nigam SK"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/16643884/",
+    "publisher": "https://doi.org/10.1016/j.ydbio.2006.03.011"
+  }
+}

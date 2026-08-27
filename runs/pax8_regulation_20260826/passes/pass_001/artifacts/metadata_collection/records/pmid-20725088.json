@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-20725088",
+  "pmid": "20725088",
+  "doi": "10.1038/cdd.2010.102",
+  "title": "Primate-specific RFPL1 gene controls cell-cycle progression through cyclin B1/Cdc2 degradation.",
+  "abstract": "Ret finger protein-like 1 (RFPL1) is a primate-specific target gene of Pax6, a key transcription factor for pancreas, eye and neocortex development. However, its cellular activity remains elusive. In this article, we report that Pax6-elicited expression of the human (h)RFPL1 gene in HeLa cells can be enhanced by in vivo p53 binding to its promoter and therefore investigated the hypothesis that hRFPL1 regulates cell-cycle progression. Upon expression in these cells, hRFPL1 decreased cell number through a kinase-dependent mechanism as PKC activates and Cdc2 inhibits hRFPL1 activity. hRFPL1 antiproliferative activity led to an increased cell population in G(2)/M phase and specific cyclin B1 and Cdc2 downregulations, which were precluded by a proteasome inhibitor. Specifically, cytoplasm-localized hRFPL1 prevented cyclin B1 and Cdc2 accumulation during interphase. Consequently, cells showed a delayed entry into mitosis and cell-cycle lengthening resulting from a threefold increase in G(2) phase duration. Given previous reports that RFPL1 is expressed during cell differentiation, its impact on cell-cycle lengthening therefore provides novel insights into primate-specific development.",
+  "year": "2011",
+  "journal": "Cell death and differentiation",
+  "authors": [
+    "Bonnefont J",
+    "Laforge T",
+    "Plastre O",
+    "Beck B",
+    "Sorce S",
+    "Dehay C",
+    "Krause KH"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/20725088/",
+    "publisher": "https://doi.org/10.1038/cdd.2010.102"
+  }
+}

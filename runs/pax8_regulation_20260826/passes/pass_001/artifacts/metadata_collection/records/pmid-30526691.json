@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-30526691",
+  "pmid": "30526691",
+  "doi": "10.1186/s13395-018-0183-9",
+  "title": "The RNA-binding proteins Zfp36l1 and Zfp36l2 act redundantly in myogenesis.",
+  "abstract": "BACKGROUND: Members of the ZFP36 family of RNA-binding proteins regulate gene expression post-transcriptionally by binding to AU-rich elements in the 3'UTR of mRNA and stimulating mRNA degradation. The proteins within this family target different transcripts in different tissues. In particular, ZFP36 targets myogenic transcripts and may have a role in adult muscle stem cell quiescence. Our study examined the requirement of ZFP36L1 and ZFP36L2 in adult muscle cell fate regulation.\n\nMETHODS: We generated single and double conditional knockout mice in which Zfp36l1 and/or Zfp36l2 were deleted in Pax7-expressing cells. Immunostained muscle sections were used to analyse resting skeletal muscle, and a cardiotoxin-induced injury model was used to determine the regenerative capacity of muscle.\n\nRESULTS: We show that ZFP36L1 and ZFP36L2 proteins are expressed in satellite cells. Mice lacking the two proteins in Pax7-expressing cells have reduced body weight and have reduced skeletal muscle mass. Furthermore, the number of satellite cells is reduced in adult skeletal muscle and the capacity of this muscle to regenerate following muscle injury is diminished.\n\nCONCLUSION: ZFP36L1 and ZFP36L2 act redundantly in myogenesis. These findings add further intricacy to the regulation of the cell fate of Pax7-expressing cells in skeletal muscle by RNA-binding proteins.",
+  "year": "2018",
+  "journal": "Skeletal muscle",
+  "authors": [
+    "Bye-A-Jee H",
+    "Pugazhendhi D",
+    "Woodhouse S",
+    "Brien P",
+    "Watson R",
+    "Turner M",
+    "Pell J"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/30526691/",
+    "publisher": "https://doi.org/10.1186/s13395-018-0183-9"
+  }
+}

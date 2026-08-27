@@ -1,0 +1,33 @@
+{
+  "paper_id": "pmid-31765609",
+  "pmid": "31765609",
+  "doi": "10.1016/j.ydbio.2019.11.010",
+  "title": "Six2 regulates Pax9 expression, palatogenesis and craniofacial bone formation.",
+  "abstract": "In this study, we investigated the role of the transcription factor Six2 in palate development. Six2 was selected using the SysFACE tool to predict genes from the 2p21 locus, a region associated with clefting in humans by GWAS, that are likely to be involved in palatogenesis. We functionally validated the predicted role of Six2 in palatogenesis by showing that 22% of Six2 null embryos develop cleft palate. Six2 contributes to palatogenesis by promoting mesenchymal cell proliferation and regulating bone formation. The clefting phenotype in Six2-/- embryos is similar to Pax9 null embryos, so we examined the functional relationship of these two genes. Mechanistically, SIX2 binds to a PAX9 5' upstream regulatory element and activates PAX9 expression. In addition, we identified a human SIX2 coding variant (p.Gly264Glu) in a proband with cleft palate. We show this missense mutation affects the stability of the SIX2 protein and leads to decreased PAX9 expression. The low penetrance of clefting in the Six2 null mouse combined with the mutation in one patient with cleft palate underscores the potential combinatorial interactions of other genes in clefting. Our study demonstrates that Six2 interacts with the developmental gene regulatory network in the developing palate.",
+  "year": "2020",
+  "journal": "Developmental biology",
+  "authors": [
+    "Sweat YY",
+    "Sweat M",
+    "Mansaray M",
+    "Cao H",
+    "Eliason S",
+    "Adeyemo WL",
+    "Gowans LJJ",
+    "Eshete MA",
+    "Anand D",
+    "Chalkley C",
+    "Saadi I",
+    "Lachke SA",
+    "Butali A",
+    "Amendt BA"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/31765609/",
+    "publisher": "https://doi.org/10.1016/j.ydbio.2019.11.010"
+  }
+}

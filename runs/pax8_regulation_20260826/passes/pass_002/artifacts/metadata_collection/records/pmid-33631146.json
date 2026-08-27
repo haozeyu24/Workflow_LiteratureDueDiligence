@@ -1,0 +1,30 @@
+{
+  "paper_id": "pmid-33631146",
+  "pmid": "33631146",
+  "doi": "10.1016/j.metabol.2021.154734",
+  "title": "The MafA-target gene PPP1R1A regulates GLP1R-mediated amplification of glucose-stimulated insulin secretion in \u03b2-cells.",
+  "abstract": "The amplification of glucose-stimulated insulin secretion (GSIS) through incretin signaling is critical for maintaining physiological glucose levels. Incretins, like glucagon-like peptide 1 (GLP1), are a target of type 2 diabetes drugs aiming to enhance insulin secretion. Here we show that the protein phosphatase 1 inhibitor protein 1A (PPP1R1A), is expressed in \u03b2-cells and that its expression is reduced in dysfunctional \u03b2-cells lacking MafA and upon acute MafA knock down. MafA is a central regulator of GSIS and \u03b2-cell function. We observed a strong correlation of MAFA and PPP1R1A mRNA levels in human islets, moreover, PPP1R1A mRNA levels were reduced in type 2 diabetic islets and positively correlated with GLP1-mediated GSIS amplification. PPP1R1A silencing in INS1 (832/13) \u03b2-cells impaired GSIS amplification, PKA-target protein phosphorylation, mitochondrial coupling efficiency and also the expression of critical \u03b2-cell marker genes like MafA, Pdx1, NeuroD1 and Pax6. Our results demonstrate that the \u03b2-cell transcription factor MafA is required for PPP1R1A expression and that reduced \u03b2-cell PPP1R1A levels impaired \u03b2-cell function and contributed to \u03b2-cell dedifferentiation during type 2 diabetes. Loss of PPP1R1A in type 2 diabetic \u03b2-cells may explains the unresponsiveness of type 2 diabetic patients to GLP1R-based treatments.",
+  "year": "2021",
+  "journal": "Metabolism: clinical and experimental",
+  "authors": [
+    "Cataldo LR",
+    "Vishnu N",
+    "Singh T",
+    "Bertonnier-Brouty L",
+    "Bsharat S",
+    "Luan C",
+    "Renstr\u00f6m E",
+    "Prasad RB",
+    "Fex M",
+    "Mulder H",
+    "Artner I"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/33631146/",
+    "publisher": "https://doi.org/10.1016/j.metabol.2021.154734"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-30060475",
+  "pmid": "30060475",
+  "doi": "10.3390/ijms19082192",
+  "title": "Regulation of Energy Metabolism during Early B Lymphocyte Development.",
+  "abstract": "The most important feature of humoral immunity is the adaptation of the diversity of newly generated B cell receptors, that is, the antigen receptor repertoire, to the body's own and foreign structures. This includes the transient propagation of B progenitor cells and B cells, which possess receptors that are positively selected via anabolic signalling pathways under highly competitive conditions. The metabolic regulation of early B-cell development thus has important consequences for the expansion of normal or malignant pre-B cell clones. In addition, cellular senescence programs based on the expression of B cell identity factors, such as Pax5, act to prevent excessive proliferation and cellular deviation. Here, we review the basic mechanisms underlying the regulation of glycolysis and oxidative phosphorylation during early B cell development in bone marrow. We focus on the regulation of glycolysis and mitochondrial oxidative phosphorylation at the transition from non-transformed pro- to pre-B cells and discuss some ongoing issues. We introduce Swiprosin-2/EFhd1 as a potential regulator of glycolysis in pro-B cells that has also been linked to Ca2+-mediated mitoflashes. Mitoflashes are bioenergetic mitochondrial events that control mitochondrial metabolism and signalling in both healthy and disease states. We discuss how Ca2+ fluctuations in pro- and pre-B cells may translate into mitoflashes in early B cells and speculate about the consequences of these changes.",
+  "year": "2018",
+  "journal": "International journal of molecular sciences",
+  "authors": [
+    "Urbanczyk S",
+    "Stein M",
+    "Schuh W",
+    "J\u00e4ck HM",
+    "Mougiakakos D",
+    "Mielenz D"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/30060475/",
+    "publisher": "https://doi.org/10.3390/ijms19082192"
+  }
+}

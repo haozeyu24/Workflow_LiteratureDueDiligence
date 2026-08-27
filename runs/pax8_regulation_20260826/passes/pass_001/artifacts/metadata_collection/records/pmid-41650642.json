@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-41650642",
+  "pmid": "41650642",
+  "doi": "10.1016/j.psj.2026.106552",
+  "title": "Simultaneous improvement of breast muscle yield and meat quality in Langshan chickens.",
+  "abstract": "Compared to white-featured broilers, the native Chinese Langshan chickens possess superior meat quality but have a lower growth rate and breast muscle yield. Increasing the breast muscle yield of these breeds while maintaining their high meat quality would greatly enhance their commercial value. Although elevated muscle growth often impairs meat quality, this relationship remains unclear in Langshan chickens. In the present study, 15-week-old Langshan chickens were divided into high (HPB, 14.15 %) and low (LPB, 9.85 %) percentages of breast muscle yield groups after slaughter. Differences in meat quality, myogenic capacity, protein deposition capacity, and metabolic profiles were investigated. Interestingly, the results demonstrated that, compared to the LPB group, the HPB group exhibited improved meat quality with reduced shear force (19.05 N vs 22.63 N) and drip loss (2.50% vs 3.07 %). The HPB group showed a decreased average muscle fiber diameter and an increased muscle fiber density, suggesting increased numbers of muscle fibers. Moreover, immunostaining revealed a higher number of PAX7+, MYOD1+, and PAX7+/MYOD1+ satellite cells in the HPB group, accompanied by elevated gene expression of MYF5, MYOD1, and MRF4. Consistently, protein deposition capacity was enhanced as genes and proteins related to protein synthesis were upregulated while genes and proteins related to degradation were downregulated. Untargeted metabolomic profiling identified 253 differential metabolites. Enrichment analysis of up-regulated differential metabolites in the HPB group identified pathways such as unsaturated fatty acid biosynthesis and arachidonic acid metabolism, suggesting a potential function of unsaturated fatty acids in myogenic regulation. We also validated the positive effects of a key differential metabolite, docosapentaenoic acid (DPA), on the myogenic differentiation of SCs by in vitro cell culture experiments. Collectively, these findings provide novel insights that enhancing breast muscle yield did not impair meat quality but instead improved meat tenderness and water-holding capacity, an effect that may be attributable to increased numbers but not sizes of muscle fibers. Therefore, this work establishes a theoretical basis for simultaneously improving breast muscle yield and meat quality in chickens.",
+  "year": "2026",
+  "journal": "Poultry science",
+  "authors": [
+    "Chen J",
+    "Zhang X",
+    "Zhang L",
+    "Xing T",
+    "Gao F",
+    "Zhao L"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/41650642/",
+    "publisher": "https://doi.org/10.1016/j.psj.2026.106552"
+  }
+}

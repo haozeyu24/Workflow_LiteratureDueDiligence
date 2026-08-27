@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-24971463",
+  "pmid": "24971463",
+  "doi": "10.4161/cbt.29684",
+  "title": "Sulforaphane induces apoptosis in rhabdomyosarcoma and restores TRAIL-sensitivity in the aggressive alveolar subtype leading to tumor elimination in mice.",
+  "abstract": "Rhadbomyosarcoma (RMS) is the most common soft-tissue sarcoma in children and is subdivided in the embryonal (ERMS) and alveolar (ARMS) subtypes, the latter being associated with the worst prognosis. We report that sulforaphane (SFN), a broccoli-derived anticancer isothiocyanate, causes dose- and time-dependent growth inhibition and apoptosis in both ERMS and ARMS cells. In ARMS, SFN induced the modulation of expression of crucial genes and proteins: mRNA and protein levels of PAX3-FKHR, MYCN, and MET decreased, while those of p21 and TRAIL-receptor DR5 (but not DR4) increased. Since DR5 expression increased specifically in ARMS, we treated ARMS cells with TRAIL, SFN, or their combination. While ARMS cells (RH30 and RH4) proved to be TRAIL-resistant, SFN restored their sensitivity to TRAIL-induced cell-growth inhibition, leading to a stronger effect in combination with TRAIL. ARMS cells transfected with siDR5 showed that SFN-induced DR5 acts as a key regulator, being directly related to the TRAIL-induced cell-growth inhibition. The in vivo anti-tumor activity of SFN and TRAIL was evaluated in a xenograft murine model of ARMS through microPET. The results showed that the systemic treatment (3 wk) of mice with SFN or TRAIL as single agents only delayed tumor evolution, while the combined treatment of SFN and TRAIL led to tumor elimination. These findings indicate that SFN triggers the apoptotic pathway in both alveolar and embryonal rhabdomyosarcomas and that combined treatment with SFN and TRAIL might be a promising therapy for the aggressive alveolar subtype.",
+  "year": "2014",
+  "journal": "Cancer biology & therapy",
+  "authors": [
+    "Bergantin E",
+    "Quarta C",
+    "Nanni C",
+    "Fanti S",
+    "Pession A",
+    "Cantelli-Forti G",
+    "Tonelli R",
+    "Hrelia P"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/24971463/",
+    "publisher": "https://doi.org/10.4161/cbt.29684"
+  }
+}

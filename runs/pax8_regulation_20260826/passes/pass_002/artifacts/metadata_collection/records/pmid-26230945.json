@@ -1,0 +1,28 @@
+{
+  "paper_id": "pmid-26230945",
+  "pmid": "26230945",
+  "doi": "10.1371/journal.pone.0134511",
+  "title": "Acupuncture plus Low-Frequency Electrical Stimulation (Acu-LFES) Attenuates Diabetic Myopathy by Enhancing Muscle Regeneration.",
+  "abstract": "Mortality and morbidity are increased in patients with muscle atrophy resulting from catabolic diseases such as diabetes. At present there is no pharmacological treatment that successfully reverses muscle wasting from catabolic conditions. We hypothesized that acupuncture plus low frequency electric stimulation (Acu-LFES) would mimic the impact of exercise and prevent diabetes-induced muscle loss. Streptozotocin (STZ) was used to induce diabetes in mice. The mice were then treated with Acu-LFES for 15 minutes daily for 14 days. Acupuncture points were selected according to the WHO Standard Acupuncture Nomenclature guide. The needles were connected to an SDZ-II electronic acupuncture device delivering pulses at 20Hz and 1mA. Acu-LFES prevented soleus and EDL muscle weight loss and increased hind-limb muscle grip function in diabetic mice. Muscle regeneration capacity was significantly increased by Acu-LFES. The expression of Pax7, MyoD, myogenin and embryo myosin heavy chain (eMyHC) was significantly decreased in diabetic muscle vs. control muscle. The suppressed levels in diabetic muscle were reversed by Acu-LFES. The IGF-1 signaling pathway was also upregulated by Acu-LFES. Phosphorylation of Akt, mTOR and p70S6K were downregulated by diabetes leading to a decline in muscle mass, however, Acu-LFES countered the diabetes-induced decline. In addition, microRNA-1 and -206 were increased by Acu-LFES after 24 days of treatment. We conclude that Acu-LFES is effective in counteracting diabetes-induced skeletal muscle atrophy by increasing IGF-1 and its stimulation of muscle regeneration.",
+  "year": "2015",
+  "journal": "PloS one",
+  "authors": [
+    "Su Z",
+    "Robinson A",
+    "Hu L",
+    "Klein JD",
+    "Hassounah F",
+    "Li M",
+    "Wang H",
+    "Cai H",
+    "Wang XH"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/26230945/",
+    "publisher": "https://doi.org/10.1371/journal.pone.0134511"
+  }
+}

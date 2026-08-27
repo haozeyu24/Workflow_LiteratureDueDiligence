@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-40565101",
+  "pmid": "40565101",
+  "doi": "10.3390/ijms26125637",
+  "title": "Enhancing Skeletal Muscle Fiber Type Transition Through Substrate Coating Alteration in Myoblast Cell Culture.",
+  "abstract": "Skeletal muscle diseases often exhibit fiber-type-specific characteristics and pose substantial clinical challenges, necessitating innovative therapies. The extracellular matrix (ECM) plays a pivotal role in muscle physiology and regeneration, influencing cell differentiation. However, its specific role and mechanisms influencing muscle fiber type specification remain insufficiently understood. In this study, C2C12GFP myoblasts were differentiated into myofibers on plates coated with fibronectin, Collagen I, and Geltrex\u2122. Differentiation occurred successfully across all ECM substrates, resulting in myofiber formation. Quantitative polymerase chain reaction (qPCR) analysis confirmed myogenic marker expression patterns, indicating decreased Pax7 and increased Myog levels by day 7. Protein analysis through Western blot and immunofluorescence assays along with transcriptomic profiling through RNA sequencing consistently indicated that Collagen I promoted slow-type fibers development, as evidenced by increased slow myofiber protein expression and the upregulation of slow fiber-associated genes, potentially mediated by pathways involving calcineurin/NFAT, MEF2, MYOD, AMPK, PI3K/AKT, and ERK1. In contrast, fibronectin and Geltrex\u2122 led to fast-type fiber development, with elevated fast-type fiber protein levels and upregulation of fast fiber-associated genes, possibly through activation of HIF1A, FOXO1, NFKB, and ERK2. These findings elucidate ECM-mediated muscle fiber type differentiation mechanisms, informing future targeted therapies for muscle regeneration.",
+  "year": "2025",
+  "journal": "International journal of molecular sciences",
+  "authors": [
+    "Riskawati YK",
+    "Lin CY",
+    "Niwa A",
+    "Chang H"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/40565101/",
+    "publisher": "https://doi.org/10.3390/ijms26125637"
+  }
+}

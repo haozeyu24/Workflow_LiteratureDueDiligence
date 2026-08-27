@@ -1,0 +1,31 @@
+{
+  "paper_id": "pmid-36064939",
+  "pmid": "36064939",
+  "doi": "10.1038/s41419-022-05219-4",
+  "title": "The MBNL1/circNTRK2/PAX5 pathway regulates aerobic glycolysis in glioblastoma cells by encoding a novel protein NTRK2-243aa.",
+  "abstract": "Glioblastoma multiforme (GBM) is the most common tumor of the human central nervous system. Aerobic glycolysis has been strongly related to tumor development and malignant behavior. In this study, we found that MBNL1, circNTRK2, and NTRK2-243aa were markedly downregulated and inhibited glycolysis in GBM, whereas PAX5 was upregulated and promoted glycolysis. Functionally, MBNL1 promoted the expression of circNTRK2 by binding to NTRK2 pre-mRNA, as validated using RNA pull-down and nascent RNA immunoprecipitation assays. Mass spectrometry, western blotting, and immunofluorescence staining methods were used to detect the expression of NTRK2-243aa. NTRK2-243aa-encoded by circNTRK2-phosphorylated PAX5 at Y102, leading to the attenuation of the half-life of PAX5, as validated by in vitro kinase and MG132 rescue assays. Besides, PAX5 transcriptionally facilitated the expression of PKM2 and HK2 by binding to their promoter regions, as verified by luciferase reporter and chromatin immunoprecipitation assays. Finally, overexpression of MBNL1 and circNTRK2 combined with PAX5 knockdown effectively inhibited the formation of GBM xenograft tumors and significantly prolonged the survival of orthotopic nude mice. We have delineated that the MBNL1/circNTRK2/PAX5 pathway plays a crucial role in regulating GBM glycolysis and could provide potential targets and alternative strategies for the treatment of GBM.",
+  "year": "2022",
+  "journal": "Cell death & disease",
+  "authors": [
+    "Zhao Y",
+    "Song J",
+    "Dong W",
+    "Liu X",
+    "Yang C",
+    "Wang D",
+    "Xue Y",
+    "Ruan X",
+    "Liu L",
+    "Wang P",
+    "Zhang M",
+    "Liu Y"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/36064939/",
+    "publisher": "https://doi.org/10.1038/s41419-022-05219-4"
+  }
+}

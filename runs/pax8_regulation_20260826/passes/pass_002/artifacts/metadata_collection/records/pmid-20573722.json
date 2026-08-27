@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-20573722",
+  "pmid": "20573722",
+  "doi": "10.1210/en.2009-1472",
+  "title": "Palmitate affects insulin receptor phosphorylation and intracellular insulin signal in a pancreatic alpha-cell line.",
+  "abstract": "This study investigated in a pancreatic alpha-cell line the effects of chronic exposure to palmitate on the insulin and IGF-I receptor (IGF-IR) and intracellular insulin pathways. alpha-TC1-6 cells were cultured in the presence or absence of palmitate (0.5 mmol/liter) up to 48 h. Glucagon secretion, insulin and IGF-IR autophosphorylation, and insulin receptor substrate (IRS)-1, IRS-2, phosphatidylinositol kinase (PI3K) (p85 alpha), and serine-threonine protein kinase (Akt) phosphorylated (active) forms were measured. Erk 44/42 and p38 phosphorylation (P) (MAPK pathway markers) were also measured. Because MAPK can regulate Pax6, a transcription factor that controls glucagon expression, paired box gene 6 (Pax6) and glucagon gene and protein expression were also measured. Basal glucagon secretion was increased and the inhibitory effect of acute insulin exposure reduced in alpha-TC1 cells cultured with palmitate. Insulin-stimulated insulin receptor phosphorylation was greatly reduced by exposure to palmitate. Similar results were observed with IRS-1-P, PI3K (p85 alpha), and Akt-P. In contrast, with IGF-IR and IRS-2-P, the basal levels (i.e. in the absence of insulin stimulation) were higher in cells cultured with palmitate. Similar data were obtained with Erk 44/42-P and p-38-P. Pax6 and glucagon gene and protein expression were higher in cells cultured with palmitate. In these cells cultured, specifics MAPKs inhibitors were able to reduce both Pax6 and glucagon gene and protein expression. These results indicate that alpha-cells exposed to palmitate show insulin resistance of the IRS-1/PI3K/Akt pathway that likely controls glucagon secretion. In contrast, the IRS-2/MAPKs pathway is stimulated, through an activation of the IGF-IR, leading to increased Pax6 and glucagon expression. Our data support the hypothesis that the chronic elevation of fatty acids contribute to alpha-cell dysregulation frequently observed in type 2 diabetes.",
+  "year": "2010",
+  "journal": "Endocrinology",
+  "authors": [
+    "Piro S",
+    "Maniscalchi ET",
+    "Monello A",
+    "Pandini G",
+    "Mascali LG",
+    "Rabuazzo AM",
+    "Purrello F"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/20573722/",
+    "publisher": "https://doi.org/10.1210/en.2009-1472"
+  }
+}

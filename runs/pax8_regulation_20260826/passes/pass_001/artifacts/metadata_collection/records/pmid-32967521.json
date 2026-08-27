@@ -1,0 +1,30 @@
+{
+  "paper_id": "pmid-32967521",
+  "pmid": "32967521",
+  "doi": "10.1080/15548627.2020.1826716",
+  "title": "Loss of PKD1/polycystin-1 impairs lysosomal activity in a CAPN (calpain)-dependent manner.",
+  "abstract": "Mutations in the PKD1 gene result in autosomal dominant polycystic kidney disease (ADPKD), the most common monogenetic cause of end-stage renal disease (ESRD) in humans. Previous reports suggested that PKD1, together with PKD2/polycystin-2, may function as a receptor-cation channel complex at cilia and on intracellular membranes and participate in various signaling pathways to regulate cell survival, proliferation and macroautophagy/autophagy. However, the exact molecular function of PKD1 and PKD2 has remained enigmatic. Here we used Pkd1-deficient mouse inner medullary collecting duct cells (mIMCD3) genetically deleted for Pkd1, and tubular epithelial cells isolated from nephrons of doxycycline-inducible conditional pkd1fl/fl;Pax8rtTA;TetOCre+ knockout mice to show that the lack of Pkd1 caused diminished lysosomal acidification, LAMP degradation and reduced CTSB/cathepsin B processing and activity. This led to an impairment of autophagosomal-lysosomal fusion, a lower delivery of ubiquitinated cargo from multivesicular bodies (MVB)/exosomes to lysosomes and an enhanced secretion of unprocessed CTSB into the extracellular space. The TFEB-dependent lysosomal biogenesis pathway was however unaffected. Pkd1-deficient cells exhibited increased activity of the calcium-dependent CAPN (calpain) proteases, probably due to a higher calcium influx. Consistent with this notion CAPN inhibitors restored lysosomal function, CTSB processing/activity and autophagosomal-lysosomal fusion, and blocked CTSB secretion and LAMP degradation in pkd1 knockout cells. Our data reveal for the first time a lysosomal function of PKD1 which keeps CAPN activity in check and ensures lysosomal integrity and a correct autophagic flux.Abbreviations: acCal: acetyl-calpastatin peptide; ADPKD: autosomal dominant polycystic kidney disease; CI-1: calpain inhibitor-1; CQ: chloroquine; Dox: doxycycline; EV: extracellular vesicles; EXO: exosomes; LAMP1/2: lysosomal-associated membrane protein 1/2; LGALS1/GAL1/galectin-1: lectin, galactose binding, soluble 1; LMP: lysosomal membrane permeabilization; mIMCD3: mouse inner medullary collecting duct cells; MV: microvesicles; MVB: multivesicular bodies; PAX8: paired box 8; PKD1/polycystin-1: polycystin 1, transient receptor potential channel interacting; PKD2/polycystin-2: polycystin 2, transient receptor potential cation channel; Tet: tetracycline; TFEB: transcription factor EB; VFM: vesicle-free medium; WT: wild-type.",
+  "year": "2021",
+  "journal": "Autophagy",
+  "authors": [
+    "Peintner L",
+    "Venkatraman A",
+    "Waeldin A",
+    "Hofherr A",
+    "Busch T",
+    "Voronov A",
+    "Viau A",
+    "Kuehn EW",
+    "K\u00f6ttgen M",
+    "Borner C"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (stability[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR lysosome[Title/Abstract] OR autophagy[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract])",
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/32967521/",
+    "publisher": "https://doi.org/10.1080/15548627.2020.1826716"
+  }
+}

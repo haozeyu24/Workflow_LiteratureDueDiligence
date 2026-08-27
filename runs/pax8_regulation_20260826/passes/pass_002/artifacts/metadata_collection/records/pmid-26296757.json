@@ -1,0 +1,32 @@
+{
+  "paper_id": "pmid-26296757",
+  "pmid": "26296757",
+  "doi": "10.1016/j.bbadis.2015.08.008",
+  "title": "PAX2 promoted prostate cancer cell invasion through transcriptional regulation of HGF in an in vitro model.",
+  "abstract": "Elucidating the mechanism of prostate cancer cell invasion may lead to the identification of novel therapeutic strategies for its treatment. Paired box 2 (PAX2) and hepatocyte growth factor (HGF) proteins are promoters of prostate cancer cell invasion. We found that PAX2 protein activated the HGF gene promoter through histone H3 acetylation and upregulated HGF gene expression. Deletion analysis revealed that the region from -637 to -314 of the HGF gene was indispensable for HGF promoter activation by PAX2. This region contains consensus PAX2 binding sequences and mutations of the sequences attenuated HGF promoter activation. Using an in vitro invasion model, we found that PAX2 and HGF promoted prostate cancer cell invasion in the same pathway. Knockdown of HGF expression attenuated the cells' invasive capacity. Moreover, in tissue samples of human prostate cancers, HGF and PAX2 expression levels were positively correlated. These results suggested that upregulation of HGF gene expression by PAX2 enhanced the invasive properties of prostate cancer cells. The PAX2/HGF pathway in prostate cancer cells may be a novel therapeutic target in prostate cancer patients.",
+  "year": "2015",
+  "journal": "Biochimica et biophysica acta",
+  "authors": [
+    "Ueda T",
+    "Ito S",
+    "Shiraishi T",
+    "Taniguchi H",
+    "Kayukawa N",
+    "Nakanishi H",
+    "Nakamura T",
+    "Naya Y",
+    "Hongo F",
+    "Kamoi K",
+    "Okihara K",
+    "Kawauchi A",
+    "Miki T"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/26296757/",
+    "publisher": "https://doi.org/10.1016/j.bbadis.2015.08.008"
+  }
+}

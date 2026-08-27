@@ -1,0 +1,29 @@
+{
+  "paper_id": "pmid-31699935",
+  "pmid": "31699935",
+  "doi": "10.1126/science.aax1694",
+  "title": "Alternative polyadenylation of Pax3 controls muscle stem cell fate and muscle function.",
+  "abstract": "Adult stem cells are essential for tissue homeostasis. In skeletal muscle, muscle stem cells (MuSCs) reside in a quiescent state, but little is known about the mechanisms that control homeostatic turnover. Here we show that, in mice, the variation in MuSC activation rate among different muscles (for example, limb versus diaphragm muscles) is determined by the levels of the transcription factor Pax3. We further show that Pax3 levels are controlled by alternative polyadenylation of its transcript, which is regulated by the small nucleolar RNA U1. Isoforms of the Pax3 messenger RNA that differ in their 3' untranslated regions are differentially susceptible to regulation by microRNA miR206, which results in varying levels of the Pax3 protein in vivo. These findings highlight a previously unrecognized mechanism of the homeostatic regulation of stem cell fate by multiple RNA species.",
+  "year": "2019",
+  "journal": "Science (New York, N.Y.)",
+  "authors": [
+    "de Morree A",
+    "Klein JDD",
+    "Gan Q",
+    "Farup J",
+    "Urtasun A",
+    "Kanugovi A",
+    "Bilen B",
+    "van Velthoven CTJ",
+    "Quarta M",
+    "Rando TA"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/31699935/",
+    "publisher": "https://doi.org/10.1126/science.aax1694"
+  }
+}

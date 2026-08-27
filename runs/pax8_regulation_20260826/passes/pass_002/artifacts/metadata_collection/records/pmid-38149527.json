@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-38149527",
+  "pmid": "38149527",
+  "doi": "10.1002/adbi.202300573",
+  "title": "Increased Expression of MiRNA-1 Contributes to Hypobaric Hypoxia-Induced Skeletal Muscle Loss.",
+  "abstract": "The present study aims to analyze the role of microRNA-1 in the regulation of skeletal muscle loss under hypobaric hypoxia (HH). Male Sprague Dawley rats (n = 10) weighing 230-250\u00a0g are divided into two groups, control and HH exposure for 7 days at 25\u00a0000\u00a0ft. After the hypoxia exposure, the animals are sacrificed and hindlimb skeletal muscles are excised for further analysis. Studies found the potential role of miR-1 (myomiR) as a biomarker under different atrophic conditions. Prolonged exposure to HH leads to enhanced expression of miR-1 in skeletal muscle as compared to unexposed controls. The Bioinformatics approach is used to identify the validated targets and the biological processes of miR-1. The target prediction tools identify PAX3 and HSP70 as major targets for miR-1. Exposure to HH significantly reduces PAX3 and HSP70 expression during 7 days of HH exposure, which further enhances the activity of FOXO3, MSTN, and ATROGIN known for the progression of skeletal muscle atrophy in relation to control rats. This study indicates the increased expressions of miR-1 and reduced expression of PAX3 and HSP70 lead to impaired myogenesis in skeletal muscle under HH. Further, enhanced expression of muscle degradation genes such as FOXO3, MSTN, and ATROGIN under HH exposure causes skeletal muscle protein loss.",
+  "year": "2024",
+  "journal": "Advanced biology",
+  "authors": [
+    "Srivastava S",
+    "Mondal S",
+    "Rathor R",
+    "Srivastava S",
+    "Suryakumar G"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/38149527/",
+    "publisher": "https://doi.org/10.1002/adbi.202300573"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "paper_id": "pmid-24575094",
+  "pmid": "24575094",
+  "doi": "10.3389/fimmu.2014.00045",
+  "title": "Function of YY1 in Long-Distance DNA Interactions.",
+  "abstract": "During B cell development, long-distance DNA interactions are needed for V(D)J somatic rearrangement of the immunoglobulin (Ig) loci to produce functional Ig genes, and for class switch recombination (CSR) needed for antibody maturation. The tissue-specificity and developmental timing of these mechanisms is a subject of active investigation. A small number of factors are implicated in controlling Ig locus long-distance interactions including Pax5, Yin Yang 1 (YY1), EZH2, IKAROS, CTCF, cohesin, and condensin proteins. Here we will focus on the role of\u2009YY1 in controlling these mechanisms. YY1 is a multifunctional transcription factor involved in transcriptional activation and repression, X chromosome inactivation, Polycomb Group (PcG) protein DNA recruitment, and recruitment of proteins required for epigenetic modifications (acetylation, deacetylation, methylation, ubiquitination, sumoylation, etc.). YY1 conditional knock-out indicated that YY1 is required for B cell development, at least in part, by controlling long-distance DNA interactions at the immunoglobulin heavy chain and Ig\u03ba loci. Our recent data show that YY1 is also required for CSR. The mechanisms implicated in YY1 control of long-distance DNA interactions include controlling non-coding antisense RNA transcripts, recruitment of PcG proteins to DNA, and interaction with complexes involved in long-distance DNA interactions including the cohesin and condensin complexes. Though common rearrangement mechanisms operate at all Ig loci, their distinct temporal activation along with the ubiquitous nature of\u2009YY1 poses challenges for determining the specific mechanisms of\u2009YY1 function in these processes, and their regulation at the tissue-specific and B cell stage-specific level. The large numbers of post-translational modifications that control YY1 functions are possible candidates for regulation.",
+  "year": "2014",
+  "journal": "Frontiers in immunology",
+  "authors": [
+    "Atchison ML"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/24575094/",
+    "publisher": "https://doi.org/10.3389/fimmu.2014.00045"
+  }
+}

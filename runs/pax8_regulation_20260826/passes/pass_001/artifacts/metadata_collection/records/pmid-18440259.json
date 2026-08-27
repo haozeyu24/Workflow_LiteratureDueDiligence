@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-18440259",
+  "pmid": "18440259",
+  "doi": "10.1016/j.jaapos.2007.11.021",
+  "title": "Elliptical anterior iris stromal defects associated with PAX6 gene sequence changes.",
+  "abstract": "BACKGROUND: PAX6 gene mutations have been observed in aniridia and other anterior segment abnormalities. We report a novel PAX6 genotype and phenotype with an autosomal-dominant mode of inheritance in two unrelated pedigrees.\n\nMETHODS: Two unrelated pedigrees were identified: one involving four generations; the other involving three generations. Full ocular examination was performed on all available members. Total genomic DNA from peripheral blood was used for genetic analysis.\n\nRESULTS: A novel phenotype was identified in both families, with variable expression of elliptical anterior stromal iris defects. Presenile nuclear sclerosis, corectopia, corneal pannus, optic nerve hypoplasia, nystagmus, and macular hypoplasia were also seen in different combinations in different members of both families. One child had classic aniridia. Molecular genetic testing of affected members in Family 1 showed a deletion of a guanine in exon 5 at position 468, which has been previously reported. Affected members of Family 2 have a missense mutation in exon 5 (G469A). This is a novel sequence change.\n\nCONCLUSIONS: PAX6 sequence changes in both families segregated with the anterior segment phenotype and were not observed in controls. Both mutations occur in the paired domain of the PAX6 gene. The crystal structure of DNA-bound PAX6 indicates that residue G36 does not have a role in DNA binding. Therefore the mutation would likely not affect the stability of the paired domain. The importance of the phenotypes reported herein lies in the fact that recognition will allow for appropriate genetic testing and counseling.",
+  "year": "2008",
+  "journal": "Journal of AAPOS : the official publication of the American Association for Pediatric Ophthalmology and Strabismus",
+  "authors": [
+    "Sharan S",
+    "Mirzayans F",
+    "Footz T",
+    "Walter M",
+    "Levin AV"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/18440259/",
+    "publisher": "https://doi.org/10.1016/j.jaapos.2007.11.021"
+  }
+}

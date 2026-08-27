@@ -1,0 +1,22 @@
+{
+  "paper_id": "pmid-15355349",
+  "pmid": "15355349",
+  "doi": "10.1111/j.1432-1033.2004.04312.x",
+  "title": "The HNF1beta transcription factor has several domains involved in nephrogenesis and partially rescues Pax8/lim1-induced kidney malformations.",
+  "abstract": "The tissue-specific transcription factors HNF1alpha and HNF1beta are closely related homeodomain proteins conserved in vertebrate evolution. Heterozygous mutations in human HNF1beta but not in HNF1alpha genes are associated with kidney malformations. Overexpression of HNF1beta in Xenopus embryos leads to defective pronephros development, while HNF1alpha has no effect. We have defined the regions responsible for this functional difference between HNF1beta and HNF1alpha in transfected HeLa cells as well as in injected Xenopus embryos. Using domain swapping experiments, we located a nuclear localization signal in the POUH domain of HNF1beta, and showed that the POUS and POUH domains of HNF1beta mediate a high transactivation potential in transfected cells. In injected Xenopus embryos three HNF1beta domains are involved in nephrogenesis. These include the dimerization domain, the 26 amino acid segment specific for splice variant A as well as the POUH domain. As HNF1beta together with Pax8 and lim1 constitute the earliest regulators in the pronephric anlage, it is possible that they cooperate during early nephrogenesis. We have shown here that HNF1beta can overcome the enlargement and the induction of an ectopic pronephros mediated by overexpression of Pax8 and lim1. However, the phenotype induced by Pax8 and lim1 overexpression and characterized by cyst-like structures and thickening of the pronephric tubules was not altered by HNF1beta overexpression. Taken together, HNF1beta acts antagonistically to Pax8 and lim1 in only some processes during nephrogenesis, and a simple antagonistic relationship does not completely describe the functions of these genes. We conclude that HNF1beta has some distinct morphogenetic properties during nephrogenesis.",
+  "year": "2004",
+  "journal": "European journal of biochemistry",
+  "authors": [
+    "Wu G",
+    "Bohn S",
+    "Ryffel GU"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (\"nuclear localization\"[Title/Abstract] OR \"nuclear localisation\"[Title/Abstract] OR \"nuclear localization signal\"[Title/Abstract] OR \"functional domains\"[Title/Abstract] OR \"subcellular localization\"[Title/Abstract] OR \"nuclear import\"[Title/Abstract] OR \"nuclear export\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract]) NOT \"PAX8-AS1\"[Title/Abstract]"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/15355349/",
+    "publisher": "https://doi.org/10.1111/j.1432-1033.2004.04312.x"
+  }
+}

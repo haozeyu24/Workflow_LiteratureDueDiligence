@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-16224792",
+  "pmid": "16224792",
+  "doi": "10.1002/bit.20746",
+  "title": "Zinc as an insulin replacement in hybridoma cultures.",
+  "abstract": "There are many advantages to the use of protein-free media for biologics production, including a reduced risk of viral contamination from animal-derived proteins and simplification of downstream purification. In the course of developing protein-free media for hybridoma and myeloma cells, zinc was found to be an effective replacement for insulin, with no negative impact on viable cell density and antibody production. Transcript profiling using DNA microarrays indicated no major change in the global expression profile between the insulin and zinc-supplemented cultures, which is consistent with their similar growth and metabolic characteristics. Both DNA microarray and quantitative RT-PCR analysis showed increase in insulin receptor substrate 1 (Irs1) expression in zinc-supplemented cultures, while several key genes downstream of Irs1 in the insulin-signaling pathway, such as protein kinase B (PKB/Akt) and 3-phosphoinositide dependent protein kinase 1 (Pdpk1) did not show significant differences at the transcript level. Comparison of transcript profiles from cultures with low versus optimal zinc supplementation implicated the involvement of the insulin-related genes Pax6 and Phas1. Subtle differences were also observed between insulin and zinc in the serine-473 phosphorylation of Akt. Zinc increased serine-473 phosphorylation of Akt, but to a lesser extent than insulin. The phosphoinositide 3-kinase (PI3K) inhibitor, wortmannin, totally blocked the effect of both zinc and insulin on Akt activation, indicating the involvement of PI3K in the activation of Akt by zinc, rather than zinc acting on Akt directly. Our results highlight the impact of trace metal supplementation as protein-free media formulations move towards greater chemical definition.",
+  "year": "2006",
+  "journal": "Biotechnology and bioengineering",
+  "authors": [
+    "Wong VV",
+    "Nissom PM",
+    "Sim SL",
+    "Yeo JH",
+    "Chuah SH",
+    "Yap MG"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/16224792/",
+    "publisher": "https://doi.org/10.1002/bit.20746"
+  }
+}

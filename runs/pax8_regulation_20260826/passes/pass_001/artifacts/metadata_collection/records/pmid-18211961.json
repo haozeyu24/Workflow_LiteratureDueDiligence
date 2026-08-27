@@ -1,0 +1,28 @@
+{
+  "paper_id": "pmid-18211961",
+  "pmid": "18211961",
+  "doi": "10.1242/jcs.017202",
+  "title": "ER stress is associated with dedifferentiation and an epithelial-to-mesenchymal transition-like phenotype in PC Cl3 thyroid cells.",
+  "abstract": "Conditions perturbing the homeostasis of the endoplasmic reticulum (ER) cause accumulation of unfolded proteins and trigger ER stress. In PC Cl3 thyroid cells, thapsigargin and tunicamycin interfered with the folding of thyroglobulin, causing accumulation of this very large secretory glycoprotein in the ER. Consequently, mRNAs encoding BiP and XBP-1 were induced and spliced, respectively. In the absence of apoptosis, differentiation of PC Cl3 cells was inhibited. mRNA and protein levels of the thyroid-specific genes encoding thyroglobulin, thyroperoxidase and the sodium/iodide symporter and of the genes encoding the thyroid transcription factors TTF-1, TTF-2 and Pax-8 were dramatically downregulated. These effects were, at least in part, transcriptional. Moreover, they were selective and temporally distinct from the general and transient PERK-dependent translational inhibition. Thyroid dedifferentiation was accompanied by changes in the organization of the polarized epithelial monolayer. Downregulation of the mRNA encoding E-cadherin, and upregulation of the mRNAs encoding vimentin, alpha-smooth muscle actin, alpha(1)(I) collagen and SNAI1/SIP1, together with formation of actin stress fibers and loss of trans-epithelial resistance were found, confirming an epithelial-mesenchymal transition (EMT). The thyroid-specific and epithelial dedifferentiation by thapsigargin or tunicamycin were completely prevented by the PP2 inhibitor of Src-family kinases and by stable expression of a dominant-negative Src. Together, these data indicate that ER stress induces dedifferentiation and an EMT-like phenotype in thyroid cells through a Src-mediated signaling pathway.",
+  "year": "2008",
+  "journal": "Journal of cell science",
+  "authors": [
+    "Ulianich L",
+    "Garbi C",
+    "Treglia AS",
+    "Punzi D",
+    "Miele C",
+    "Raciti GA",
+    "Beguinot F",
+    "Consiglio E",
+    "Di Jeso B"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (stability[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR lysosome[Title/Abstract] OR autophagy[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/18211961/",
+    "publisher": "https://doi.org/10.1242/jcs.017202"
+  }
+}

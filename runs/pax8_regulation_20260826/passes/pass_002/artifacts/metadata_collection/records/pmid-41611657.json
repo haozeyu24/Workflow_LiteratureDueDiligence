@@ -1,0 +1,33 @@
+{
+  "paper_id": "pmid-41611657",
+  "pmid": "41611657",
+  "doi": "10.1038/s41419-026-08417-6",
+  "title": "Aberrant maintenance of developmental transcription factor PAX6 promotes neuronal cell death via JNK3 signaling.",
+  "abstract": "Retinal ganglion cell (RGC) degeneration is a hallmark of glaucoma and other optic neuropathies, yet the transcriptional mechanisms that drive stress-induced neuronal apoptosis remain incompletely understood. Here, we identify the developmental transcription factor PAX6 as an aberrantly sustained and stress-responsive regulator in mature retinal neurons. Upon NMDA-induced excitotoxic stress, PAX6 is phosphorylated by the neuronal stress kinase JNK3, without changes in total expression levels. In vitro kinase assays confirm direct phosphorylation of PAX6 by JNK3, while genetic ablation of JNK3 abolishes PAX6 activation. This phosphorylation enhances PAX6 chromatin binding and enables its co-recruitment with JNK3 to promoters of pro-apoptotic genes, including Bax and Gadd45a. Genome-wide ChIP-seq and transcriptomic analyses reveal that PAX6 and JNK3 form a transcriptional complex that drives apoptotic gene expression. In vivo, AAV-shRNA-mediated knockdown of either PAX6 or JNK3 significantly attenuates excitotoxic RGC death. These findings define a previously unrecognized transcriptional mechanism by which JNK3-mediated phosphorylation of persistently expressed PAX6 converts a developmental factor into a driver of neuronal apoptosis. More broadly, this study highlights how the dysregulation of developmental transcriptional programs in postmitotic neurons can contribute to neurodegeneration, offering new mechanistic insights into stress-induced neuronal loss in chronic neurodegenerative diseases.",
+  "year": "2026",
+  "journal": "Cell death & disease",
+  "authors": [
+    "Kim JY",
+    "An MJ",
+    "Kim J",
+    "Kim CH",
+    "Park Y",
+    "Shin GS",
+    "Lee HM",
+    "Jo AR",
+    "Kim MJ",
+    "Hwangbo Y",
+    "Hong TK",
+    "Kim JT",
+    "Choi U",
+    "Kim JW"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/41611657/",
+    "publisher": "https://doi.org/10.1038/s41419-026-08417-6"
+  }
+}

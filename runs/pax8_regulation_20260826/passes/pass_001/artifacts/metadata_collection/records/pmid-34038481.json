@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-34038481",
+  "pmid": "34038481",
+  "doi": "10.1371/journal.pone.0252135",
+  "title": "Investigation of niclosamide as a repurposing agent for skeletal muscle atrophy.",
+  "abstract": "Skeletal muscle atrophy is a feature of aging (termed sarcopenia) and various diseases, such as cancer and kidney failure. Effective drug treatment options for muscle atrophy are lacking. The tapeworm medication, niclosamide is being assessed for repurposing to treat numerous diseases, including end-stage cancer metastasis and hepatic steatosis. In this study, we investigated the potential of niclosamide as a repurposing drug for muscle atrophy. In a myotube atrophy model using the glucocorticoid, dexamethasone, niclosamide did not prevent the reduction in myotube diameter or the decreased expression of phosphorylated FOXO3a, which upregulates the ubiquitin-proteasome pathway of muscle catabolism. Treatment of normal myotubes with niclosamide did not activate mTOR, a major regulator of muscle protein synthesis, and increased the expression of atrogin-1, which is induced in catabolic states. Niclosamide treatment also inhibited myogenesis in muscle precursor cells, enhanced the expression of myoblast markers Pax7 and Myf5, and downregulated the expression of differentiation markers MyoD, MyoG and Myh2. In an animal model of muscle atrophy, niclosamide did not improve muscle mass, grip strength or muscle fiber cross-sectional area. Muscle atrophy is also feature of cancer cachexia. IC50 analyses indicated that niclosamide was more cytotoxic for myoblasts than cancer cells. In addition, niclosamide did not suppress the induction of iNOS, a key mediator of atrophy, in an in vitro model of cancer cachexia and did not rescue myotube diameter. Overall, these results suggest that niclosamide may not be a suitable repurposing drug for glucocorticoid-induced skeletal muscle atrophy or cancer cachexia. Nevertheless, niclosamide may be employed as a compound to study mechanisms regulating myogenesis and catabolic pathways in skeletal muscle.",
+  "year": "2021",
+  "journal": "PloS one",
+  "authors": [
+    "Kim HJ",
+    "Lee JH",
+    "Kim SW",
+    "Lee SH",
+    "Jung DW",
+    "Williams DR"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/34038481/",
+    "publisher": "https://doi.org/10.1371/journal.pone.0252135"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "paper_id": "pmid-42357754",
+  "pmid": "42357754",
+  "doi": "10.3390/vetsci13060556",
+  "title": "Establishment and Characterization of an Immortalized Porcine Satellite Cell Line from China Junmu No.1 Pigs.",
+  "abstract": "Junmu No.1 is a commercially important Chinese pig breed, yet stable in vitro models for investigating its muscle development mechanisms and genetic regulation remain lacking; this study aimed to establish an immortalized porcine satellite cell line from Junmu No.1 pigs to address this gap. Primary porcine satellite cells (PSCs) were isolated from a 2-day-old Junmu No.1 piglet and immortalized via lentiviral transduction using the pHAGE-EF1\u03b1-eGFP-SV40LT-BleoR vector. The resulting cell line (imPSC-JM) was characterized for morphology, satellite cell marker expression, karyotype stability, myogenic differentiation capacity, and long-term proliferative potential, and RNA sequencing combined with Gene Set Enrichment Analysis (GSEA) was performed to assess transcriptomic fidelity relative to primary PSCs. The imPSC-JM line retained characteristic spindle-shaped satellite cell morphology, consistently expressed PAX7, maintained a normal diploid karyotype (2n = 38, XY), and showed stable SV40 large T antigen expression, enabling sustained proliferation exceeding 100 cumulative population doublings while preserving myogenic differentiation and the formation of multinucleated myotubes expressing Desmin, MYHC, and DMD. Transcriptomic profiles were highly concordant with primary PSCs (Pearson r \u2265 0.95; R2 = 0.9188; 83.8% of expressed genes unchanged), with key satellite-cell and myogenic regulator genes (PAX7, MYOD1, MYF5, MYOG, MYF6) unaltered, while GSEA revealed upregulation of autophagy and inflammatory signaling and downregulation of ribosome biogenesis. The imPSC-JM line thus provides a reliable experimental platform with high transcriptomic fidelity for studying muscle development and genetic regulation in Junmu No.1 pigs.",
+  "year": "2026",
+  "journal": "Veterinary sciences",
+  "authors": [
+    "Li J",
+    "He Y",
+    "Zhang X",
+    "Ning J",
+    "Wang D",
+    "Bai C",
+    "Sun B",
+    "Zhang S",
+    "Liang S",
+    "Sun H"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42357754/",
+    "publisher": "https://doi.org/10.3390/vetsci13060556"
+  }
+}

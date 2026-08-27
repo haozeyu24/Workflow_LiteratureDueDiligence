@@ -1,0 +1,21 @@
+{
+  "paper_id": "pmid-22392277",
+  "pmid": "22392277",
+  "doi": "10.1007/s12539-012-0114-0",
+  "title": "Predictions on impact of missense mutations on structure function relationship of PAX6 and its alternatively spliced isoform PAX6(5a).",
+  "abstract": "The PAX6 contains two DNA-binding domains, paired domain (PD), homeodomain (HD), and a transactivation domain (TD). Only the crystal structure of PD and the solution structure of HD of PAX6 are known. Mutations in PAX6 show variable penetrance, and expressivity of ocular and neural diseases, but the mechanism is poorly understood. Its alternatively spliced isoform PAX6(5a), is also required in a specific ratio for optimal functions. To understand impact of missense mutations on stability, and conformation of PAX6, whose functional analyses are described in PAX6 allelic variant database, were considered. Representative mutations like PAX6-L46R, -C52R, -V126D, -R128C, -R242T, -P375Q, -Q422R, -V256E, and -S259P from PD, HD, and TD of PAX6 were explored. The secondary structures were analyzed through PSIPRED, and relative solvent accessibilities (RSA) of the mutant and the wild type amino acid residues were compared through SABLE. The change in the contact residues and calculations of energy level were studied through SVMcon, MUpro, and FoldX, respectively. The 3D modeling was performed with the help of MODELLER and models were visualized in Chimera. Predictions suggest mutation induced alterations in local conformation or misfolding in DNA-binding domains of PAX6 and PAX6(5a). The predicted impact of mutations via secondary structure, changes in free energy, stability, conformation, and experimental reports on DNA-binding and transactivation, necessarily provides a strong background to explain structure-function relationship of PAX6 and PAX6(5a). However, because of their predictive nature, these findings need to be validated with other experimental evidences when structure of full length PAX6 is available.",
+  "year": "2012",
+  "journal": "Interdisciplinary sciences, computational life sciences",
+  "authors": [
+    "Shukla S",
+    "Mishra R"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/22392277/",
+    "publisher": "https://doi.org/10.1007/s12539-012-0114-0"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "paper_id": "pmid-25356868",
+  "pmid": "25356868",
+  "doi": "10.1038/cddis.2014.462",
+  "title": "microRNA-320/RUNX2 axis regulates adipocytic differentiation of human mesenchymal (skeletal) stem cells.",
+  "abstract": "The molecular mechanisms promoting lineage-specific commitment of human mesenchymal (skeletal or stromal) stem cells (hMSCs) into adipocytes (ADs) are not fully understood. Thus, we performed global microRNA (miRNA) and gene expression profiling during adipocytic differentiation of hMSC, and utilized bioinformatics as well as functional and biochemical assays, and identified several novel miRNAs differentially expressed during adipogenesis. Among these, miR-320 family (miR-320a, 320b, 320c, 320d and 320e) were ~2.2-3.0-fold upregulated. Overexpression of miR-320c in hMSC enhanced adipocytic differentiation and accelerated formation of mature ADs in ex vivo cultures. Integrated analysis of bioinformatics and global gene expression profiling in miR-320c overexpressing cells and during adipocytic differentiation of hMSC identified several biologically relevant gene targets for miR-320c including RUNX2, MIB1 (mindbomb E3 ubiquitin protein ligase 1), PAX6 (paired box 6), YWHAH and ZWILCH. siRNA-mediated silencing of those genes enhanced adipocytic differentiation of hMSC, thus corroborating an important role for those genes in miR-320c-mediated adipogenesis. Concordant with that, lentiviral-mediated stable expression of miR-320c at physiological levels (~1.5-fold) promoted adipocytic and suppressed osteogenic differentiation of hMSC. Luciferase assay validated RUNX2 (Runt-related transcription factor 2) as a bona fide target for miR-320 family. Therefore, our data suggest miR-320 family as possible molecular switch promoting adipocytic differentiation of hMSC. Targeting miR-320 may have therapeutic potential in vivo through regulation of bone marrow adipogenesis.",
+  "year": "2014",
+  "journal": "Cell death & disease",
+  "authors": [
+    "Hamam D",
+    "Ali D",
+    "Vishnubalaji R",
+    "Hamam R",
+    "Al-Nbaheen M",
+    "Chen L",
+    "Kassem M",
+    "Aldahmash A",
+    "Alajez NM"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/25356868/",
+    "publisher": "https://doi.org/10.1038/cddis.2014.462"
+  }
+}

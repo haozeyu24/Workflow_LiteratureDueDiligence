@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-8812138",
+  "pmid": "8812138",
+  "doi": "10.1006/dbio.1996.0227",
+  "title": "Expression of avian Pax1 and Pax9 is intrinsically regulated in the pharyngeal endoderm, but depends on environmental influences in the paraxial mesoderm.",
+  "abstract": "Pax1 and Pax9 represent a subfamily of paired-box-containing genes. In vertebrates, Pax1 and Pax9 transcripts have been found specifically in mesodermal tissues and the pharyngeal endoderm. Pax1 expression in the sclerotomes has been shown to be indispensable for proper formation of the axial skeleton, but expression of Pax1 in the endoderm has not been studied in detail. We have cloned the chick homologue of the murine Pax9 gene. Our results show that transcripts of Pax1 and Pax9 are first detectable in the prospective foregut endoderm of headfold-stage avian embryos. Endodermal expression correlates with the highly proliferative zones of the folding foregut and evaginating pharyngeal pouches. In later stages, Pax1 and Pax9 are expressed in overlapping but distinct patterns within the developing sclerotomes and limb buds. From grafting experiments we conclude that activation of pharyngeal Pax1 and Pax9 expression is an intrinsic property of the endoderm, not requiring midline structures or head mesoderm. In contrast, notochord is required to induce Pax1 in competent sclerotomes. Here we show that in vitro there is a cranio-caudal gradient of inductive capacity in the notochord. This coincides with the graded expression of Pax1 and Pax9 along the cranio-caudal axis in 2- to 3-day-old embryos. Furthermore, paraxial head mesoderm shows no competence to express Pax1. Finally, in vitro we find counteracting influences on notochord signaling by lateral tissues (lateral plate, intermediate mesoderm), leading to an inhibition of Sonic hedgehog (Shh) expression in notochord and floor plate, as well as Pax1 and Pax9 expression in sclerotomes. Taken together, our results demonstrate that different mechanisms regulate expression of Pax1 and Pax9 in foregut and sclerotome, but suggest a common function for both genes in the two tissues that is promoting proliferation and preventing fusion of neighboring blastemas.",
+  "year": "1996",
+  "journal": "Developmental biology",
+  "authors": [
+    "M\u00fcller TS",
+    "Ebensperger C",
+    "Neub\u00fcser A",
+    "Koseki H",
+    "Balling R",
+    "Christ B",
+    "Wilting J"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/8812138/",
+    "publisher": "https://doi.org/10.1006/dbio.1996.0227"
+  }
+}

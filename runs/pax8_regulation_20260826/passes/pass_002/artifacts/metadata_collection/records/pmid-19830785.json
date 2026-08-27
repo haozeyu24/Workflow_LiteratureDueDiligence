@@ -1,0 +1,22 @@
+{
+  "paper_id": "pmid-19830785",
+  "pmid": "19830785",
+  "doi": "10.1002/jcb.22369",
+  "title": "Zebrafish cnbp intron1 plays a fundamental role in controlling spatiotemporal gene expression during embryonic development.",
+  "abstract": "Cellular nucleic acid binding protein (CNBP) is a strikingly conserved zinc-finger nucleic acid chaperone required for forebrain development. Its depletion causes forebrain truncation mainly as a consequence of a reduction in size of craniofacial structures and neural crest derivatives. The CNBP expression pattern is complex and highly dynamic, but little is known of the underlying mechanisms regulating its spatiotemporal pattern. CNBP expression is highly conserved between all vertebrates characterized. In this study we have combined comparative sequence analysis and in vivo testing of DNA fragments in zebrafish to identify evolutionarily constrained regulatory motifs that likely control expression of the cnbp gene in embryos. We found a novel exon sequence located 5' upstream of the Exon1-sequence reported in most databases, and two transcription start sites that generate two primary-transcripts that differ in their 5'UTRs and expression profile during zebrafish embryonic development. Furthermore, we found a region inside the intron1 sequence that controls the cnbp developmental-specific transcriptional activation. Conserved binding sites for neural crest transcription factors were identified in this region. Mutagenesis analysis of the regulatory region revealed that Pax6/FoxD3 binding sites are required for proper zygotic cnbp expression. This is the first study that identifies, in vivo, cis-regulatory sequences inside intron sequences and typical neural crest transcription factors involved in cnbp spatiotemporal specific transcriptional control during vertebrate embryonic development.",
+  "year": "2009",
+  "journal": "Journal of cellular biochemistry",
+  "authors": [
+    "Weiner AM",
+    "Allende ML",
+    "Calcaterra NB"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/19830785/",
+    "publisher": "https://doi.org/10.1002/jcb.22369"
+  }
+}

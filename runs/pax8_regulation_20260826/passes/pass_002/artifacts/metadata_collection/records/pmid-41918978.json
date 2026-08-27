@@ -1,0 +1,32 @@
+{
+  "paper_id": "pmid-41918978",
+  "pmid": "41918978",
+  "doi": "10.1007/s13340-026-00886-6",
+  "title": "Heat shock protein 72 (HSP72) modulates glucagon secretion via JNK inhibition in pancreatic \u03b1-cells.",
+  "abstract": "UNLABELLED: Heat shock protein 72 (HSP72) plays a protective role against metabolic stress through suppression of c-Jun N-terminal kinase (JNK). While HSP72 has been extensively studied in insulin-sensitive tissues and pancreatic \u03b2-cells, its role in regulating glucagon secretion in \u03b1-cells remains unclear. Because glucagon secretion is enhanced by stress-responsive kinases including JNK, we hypothesized that HSP72 may negatively regulate glucagon secretion. To evaluate the effects of HSP72 on glucagon regulation, HSP72 induction was achieved using a combination of heat shock (HS) and mild electrical stimulation (MES) in db/db mice. In vitro, \u03b1TC cells were treated with HS\u2009+\u2009MES, transfected with HSP72 overexpression plasmids, or subjected to HSP72 knockdown. Glucagon secretion, JNK phosphorylation, insulin signaling, and expression of glucagon-related transcription factors were analyzed. Pancreatic islets were isolated from wild-type (WT) and HSP72-knockout (KO) mice to assess glucagon secretion under basal, inflammatory, and metabolic stress conditions. HS\u2009+\u2009MES-treated db/db mice showed reduced fasting and random glucagon levels, accompanied by increased pancreatic HSP72 expression and decreased glucagon-positive islet area. In \u03b1TC cells, HSP72 induction suppressed TNF-\u03b1-induced glucagon secretion and JNK phosphorylation while restoring insulin-induced Akt phosphorylation. HSP72 knockdown abolished these protective effects. Islets from KO mice secreted significantly more glucagon under inflammatory (TNF-\u03b1) and metabolic (high-fat diet) stress. HSP72 overexpression decreased Pax6 and MafB mRNA levels, indicating transcriptional suppression of proglucagon expression. HSP72 suppresses glucagon secretion by inhibiting JNK activation, improving insulin signaling, and downregulating key glucagon transcription factors in \u03b1-cells. These findings identify HSP72 as a novel regulator of \u03b1-cell stress responses and a potential therapeutic target for glucagon dysregulation in diabetes.\n\nSUPPLEMENTARY INFORMATION: The online version contains supplementary material available at 10.1007/s13340-026-00886-6.",
+  "year": "2026",
+  "journal": "Diabetology international",
+  "authors": [
+    "Watanabe T",
+    "Kondo T",
+    "Yoshizumi R",
+    "Miyakawa N",
+    "Kitano S",
+    "Suico MA",
+    "Sato M",
+    "Sakaguchi M",
+    "Igata M",
+    "Matsumura T",
+    "Kai H",
+    "Araki E",
+    "Kubota N"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/41918978/",
+    "publisher": "https://doi.org/10.1007/s13340-026-00886-6"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-19477936",
+  "pmid": "19477936",
+  "doi": "10.1210/en.2009-0327",
+  "title": "Analysis of hypertrophic thyrotrophs in pituitaries of athyroid Pax8-/- mice.",
+  "abstract": "Thyroid hormone is important for pituitary development and maintenance. We previously reported that in the Pax8(-/-) mouse model of congenital hypothyroidism, lactotrophs are almost undetectable, whereas the thyrotrophs exhibit hyperplasia and hypertrophy. Because the latter might be caused by an overstimulation of thyrotrophs with TRH, we analyzed TRH-R1(-/-)Pax8(-/-) double-knockout mice, which miss a functional thyroid gland and the TRH transducing receptor-1 at pituitary target sites. Interestingly, in these double mutants, the hypertrophy and hyperplasia of the thyrotrophs still persist, suggesting that the phenotype is rather a direct consequence of the athyroidism of the animals. The increased expression of TSH in the Pax8(-/-) mice was paralleled by a strongly up-regulated expression of deiodinase type 2 (Dio2) in thyrotrophic cells. Moreover, coexpression of TSH and Dio2 could also be demonstrated in the pituitary of wild-type mice, underlining the important role of this enzyme in the negative feedback regulation of TSH by thyroid hormone. As another consequence of the athyroidism in the mutant mice, tyrosine hydroxylase mRNA expression was found to be also highly up-regulated in thyrotrophic cells of the pituitaries from Pax8(-/-) mice, whereas the transcript levels in the hypothalamus were not affected. Accordingly, tyrosine hydroxylase protein levels, enzyme activities, and ultimately dopamine concentrations were found to be strongly increased in the pituitaries of Pax8(-/-) mice compared with wild-type animals. These findings may explain in part the reduced number of lactotrophs found in the pituitary of athyroid Pax8(-/-) mice and suggest a novel paracrine regulatory mechanism of lactotroph activity.",
+  "year": "2009",
+  "journal": "Endocrinology",
+  "authors": [
+    "Mittag J",
+    "Friedrichsen S",
+    "Strube A",
+    "Heuer H",
+    "Bauer K"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (\"protein stability\"[Title/Abstract] OR \"protein levels\"[Title/Abstract] OR stabilization[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract]) NOT \"PAX8-AS1\"[Title/Abstract]"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/19477936/",
+    "publisher": "https://doi.org/10.1210/en.2009-0327"
+  }
+}

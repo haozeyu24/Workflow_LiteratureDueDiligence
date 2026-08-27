@@ -18,10 +18,10 @@ Judge abstract-level relevance to the run objective.
 
 ## Inputs
 
-- `runs/<run_id>/instruction.md`
-- `runs/<run_id>/topic.md`
-- `runs/<run_id>/constraints.md` if present
-- `runs/<run_id>/artifacts/abstract_review/abstract_review.csv`
+- current pass `runs/<run_id>/passes/pass_###/inputs/instruction.md`
+- current pass `runs/<run_id>/passes/pass_###/inputs/topic.md`
+- current pass `runs/<run_id>/passes/pass_###/inputs/constraints.md` if present
+- active pass `runs/<run_id>/passes/pass_###/artifacts/abstract_review/abstract_review.csv`
 
 ## Required output fields
 

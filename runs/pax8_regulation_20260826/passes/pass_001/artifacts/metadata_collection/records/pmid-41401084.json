@@ -1,0 +1,32 @@
+{
+  "paper_id": "pmid-41401084",
+  "pmid": "41401084",
+  "doi": "10.1172/jci.insight.193221",
+  "title": "Therapeutic targeting of YOD1 disrupts the PAX-FOXO1/N-Myc feedback loop in rhabdomyosarcoma.",
+  "abstract": "Fusion-positive rhabdomyosarcoma (FP-RMS), driven by PAX-FOXO1 fusion oncoproteins, represents the subtype of RMS with the poorest prognosis. However, the oncogenic mechanisms and therapeutic strategies of PAX-FOXO1 remain incompletely understood. Here, we discovered that N-Myc, in addition to being a classic downstream target of PAX-FOXO1, can also activate its expression and form a transcriptional complex with PAX-FOXO1, thereby markedly amplifying oncogenic signaling. The reciprocal transcriptional activation of PAX3-FOXO1 and N-Myc is critical for FP-RMS malignancy. We further identified YOD1 as a deubiquitinating enzyme that stabilizes both PAX-FOXO1 and N-Myc. Knocking down YOD1 or inhibiting it with G5 could suppress FP-RMS growth both in vitro and in vivo, through promoting the degradation of both PAX-FOXO1 and N-Myc. Collectively, our results identify that YOD1 promotes RMS progression by regulating the PAX3-FOXO1/N-Myc positive feedback loop, and highlight YOD1 inhibition as a promising therapeutic strategy that concurrently reduces the levels of both oncogenic proteins.",
+  "year": "2026",
+  "journal": "JCI insight",
+  "authors": [
+    "Ying W",
+    "Yu J",
+    "Wang X",
+    "Liu J",
+    "Deng B",
+    "Shao X",
+    "Wang J",
+    "Tao T",
+    "Cao J",
+    "He Q",
+    "Yang B",
+    "Chen Y",
+    "Ying M"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/41401084/",
+    "publisher": "https://doi.org/10.1172/jci.insight.193221"
+  }
+}

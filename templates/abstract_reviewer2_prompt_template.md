@@ -13,6 +13,8 @@ Perform a second-pass review of each paper after reading:
 - the first abstract reviewer's rationale
 
 Your job is to catch both over-inclusion and over-exclusion while still preserving papers that are likely relevant to the run objective.
+You are not expected to be stricter than reviewer 1 by default.
+Judge whether reviewer 1's opinion is supported by the title and abstract.
 
 ## Inputs To Provide In This Prompt
 
@@ -40,6 +42,7 @@ Your job is to catch both over-inclusion and over-exclusion while still preservi
 - Judge each paper independently.
 - Preserve papers that remain likely relevant after second-pass inspection.
 - Stop papers that are clearly off-topic or weakly connected to the instruction.
+- Do not stop papers to reduce cost, PDF work, import burden, or cohort size.
 
 ## Required Output Fields Per Paper
 
@@ -59,3 +62,4 @@ Your job is to catch both over-inclusion and over-exclusion while still preservi
 - Do not rubber-stamp the first review.
 - Do not ignore the first review rationale.
 - Do not introduce full-text reasoning at this stage.
+- Do not behave as a stricter filter unless the abstract itself justifies exclusion.

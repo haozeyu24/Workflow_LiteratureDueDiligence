@@ -1,0 +1,32 @@
+{
+  "paper_id": "pmid-41522349",
+  "pmid": "41522349",
+  "doi": "10.7150/ijbs.121503",
+  "title": "IGF2BP2 Drives Thyroid Cancer Dedifferentiation Through m6A-Dependent STAT1 mRNA Destabilization.",
+  "abstract": "Thyroid cancer is the most common endocrine malignancy globally. While papillary thyroid carcinoma (PTC) typically exhibits favorable prognosis, a subset undergoes dedifferentiation into anaplastic thyroid carcinoma (ATC), an aggressive, treatment-refractory subtype with near-universal lethality. However, the molecular driver of this process remains elusive. In this study, we find that IGF2BP2 is upregulated in ATC and correlates with adverse prognosis. Pseudotime trajectory analysis tracks progressively escalating IGF2BP2 expression throughout dedifferentiation. Functionally, IGF2BP2 promotes proliferation, suppresses thyroid differentiation genes (TSHR, SLC26A4, SLC5A5, TPO, PAX8, FOXE1, and NKX2.1), and enhances cancer stemness. Mechanistically, integrated multi-omics analysis (RNA-seq, RIP-seq, and MeRIP-seq) reveals that IGF2BP2 binds m6A-modified STAT1 mRNA, accelerating its decay. STAT1 directly activates transcription of thyroid differentiation genes. Rescue experiments confirms that STAT1 mediates IGF2BP2-driven dedifferentiation. The IGF2BP2-m6A-STAT1 complex is a master regulator of thyroid cancer dedifferentiation, establishing a novel therapeutic target for redifferentiation therapy in advanced thyroid cancer.",
+  "year": "2026",
+  "journal": "International journal of biological sciences",
+  "authors": [
+    "Chen R",
+    "Li YX",
+    "Lu WL",
+    "Wu KF",
+    "Wang YX",
+    "Wang ZW",
+    "Li YH",
+    "Yang HY",
+    "Zhang X",
+    "Shi L",
+    "Zhou D",
+    "Wang Y",
+    "Ding Q"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (\"protein stability\"[Title/Abstract] OR \"protein levels\"[Title/Abstract] OR stabilization[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract]) NOT \"PAX8-AS1\"[Title/Abstract]"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/41522349/",
+    "publisher": "https://doi.org/10.7150/ijbs.121503"
+  }
+}

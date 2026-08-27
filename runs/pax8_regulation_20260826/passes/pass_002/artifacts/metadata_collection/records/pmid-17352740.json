@@ -1,0 +1,28 @@
+{
+  "paper_id": "pmid-17352740",
+  "pmid": "17352740",
+  "doi": "10.1111/j.1365-2443.2007.01059.x",
+  "title": "HDAC2 controls IgM H- and L-chain gene expressions via EBF1, Pax5, Ikaros, Aiolos and E2A gene expressions.",
+  "abstract": "We previously reported that histone deacetylase-2 (HDAC2) controls the amount of IgM H-chain at the steps of transcription of its gene and alternative processing of its pre-mRNA in DT40 cells. Here, we showed not only that the HDAC2-deficiency caused repressions of gene expressions for HDAC7, EBF1, Pax5, Aiolos and Ikaros, and elevations of gene expressions for HDAC4, HDAC5, PCAF and E2A, but also that it caused altered acetylation levels of several Lys residues of core histones. Using gene targeting techniques, we generated three homozygous DT40 mutants: EBF1(-/-), Aiolos(-/-) and E2A(-/-), devoid of EBF1, Aiolos and E2A genes, respectively. Semiquantitative RT-PCR analysis of the resultant mutants revealed not only that EBF1 and Aiolos down-regulate expressions of IgM H- and L-chain genes, but also that E2A up-regulates expressions of these two genes. These results, together with others, indicate that HDAC2 controls indirectly expressions of IgM H- and L-chain genes through opposite transcriptional regulations of EBF1, Pax5, Aiolos plus Ikaros and E2A genes.",
+  "year": "2007",
+  "journal": "Genes to cells : devoted to molecular & cellular mechanisms",
+  "authors": [
+    "Nakayama M",
+    "Suzuki H",
+    "Yamamoto-Nagamatsu N",
+    "Barman HK",
+    "Kikuchi H",
+    "Takami Y",
+    "Toyonaga K",
+    "Yamashita K",
+    "Nakayama T"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/17352740/",
+    "publisher": "https://doi.org/10.1111/j.1365-2443.2007.01059.x"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "paper_id": "pmid-42588596",
+  "pmid": "42588596",
+  "doi": "10.3390/cancers18152375",
+  "title": "PAX3::FOXO1-Targeting PROTAC Induces Myogenic Differentiation of Fusion-Positive Rhabdomyosarcoma Cells.",
+  "abstract": "Background/Objectives: Fusion-positive rhabdomyosarcoma (FP-RMS) is characterized by the presence of tumor-specific chromosomal translocation products, most commonly PAX3::FOXO1, and typically results in lower survival rates compared to fusion-negative RMS cases. PAX3::FOXO1 plays a critical role in FP-RMS oncogenesis in both tumor initiation and maintenance, making it an excellent target for therapeutic intervention in FP-RMS. Methods: We created Proteolysis Targeting Chimeras (PROTACs) by combining PAX3::FOXO1-binding small molecules with E3 ligase recruiters for cereblon (CRBN) or S-Phase Kinase Associated Protein 1 (SKP1). Results: The PROTACs achieved up to 70% degradation of the endogenous PAX3::FOXO1 protein in FP-RMS cell lines in a concentration-, time-, and proteasome-dependent manner. Moreover, the PROTAC-mediated targeted degradation of PAX3::FOXO1 in FP-RMS cells deregulated the endogenous PAX3::FOXO1 gene expression signature and induced myogenic differentiation. Importantly, treatment of FP-RMS cells with PAX3::FOXO1-PROTACs synergized with vincristine treatment and impaired >80% of anchorage-independent growth in soft agar. Conclusions: Taken together, we demonstrate the proof of principle of PROTACs targeting the oncogenic fusion protein PAX3::FOXO1 in FP-RMS cells. The PROTACs created in this study will not only be useful tools in studying PAX3::FOXO1 biology in laboratory models but could also serve as molecular scaffolds for designing clinical-grade molecules to assess the therapeutic potential of PAX3::FOXO1-targeting PROTACs in FP-RMS patients.",
+  "year": "2026",
+  "journal": "Cancers",
+  "authors": [
+    "Knoll N",
+    "Somay K",
+    "Tiwari PB",
+    "Deniz E",
+    "Formen JSSK",
+    "Frye I",
+    "Nelson E",
+    "Wolf C",
+    "Toretsky JA",
+    "\u00dcren A"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42588596/",
+    "publisher": "https://doi.org/10.3390/cancers18152375"
+  }
+}

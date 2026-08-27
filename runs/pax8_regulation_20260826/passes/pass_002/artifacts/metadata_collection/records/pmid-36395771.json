@@ -1,0 +1,29 @@
+{
+  "paper_id": "pmid-36395771",
+  "pmid": "36395771",
+  "doi": "10.1016/j.molcel.2022.10.025",
+  "title": "PAX3-FOXO1 coordinates enhancer architecture, eRNA transcription, and RNA polymerase pause release at select gene targets.",
+  "abstract": "Transcriptional control is a highly dynamic process that changes rapidly in response to various cellular and extracellular cues, making it difficult to define the mechanism of transcription factor function using slow genetic methods. We used a chemical-genetic approach to rapidly degrade a canonical transcriptional activator, PAX3-FOXO1, to define the mechanism by which it regulates gene expression programs. By coupling rapid protein degradation with the analysis of nascent transcription over short time courses and integrating CUT&RUN, ATAC-seq, and eRNA analysis with deep proteomic analysis, we defined PAX3-FOXO1 function at a small network of direct transcriptional targets. PAX3-FOXO1 degradation impaired RNA polymerase pause release and transcription elongation at most regulated gene targets. Moreover, the activity of PAX3-FOXO1 at enhancers controlling this core network was surprisingly selective, affecting single elements in super-enhancers. This combinatorial analysis indicated that PAX3-FOXO1 was continuously required to maintain chromatin accessibility and enhancer architecture at regulated enhancers.",
+  "year": "2022",
+  "journal": "Molecular cell",
+  "authors": [
+    "Zhang S",
+    "Wang J",
+    "Liu Q",
+    "McDonald WH",
+    "Bomber ML",
+    "Layden HM",
+    "Ellis J",
+    "Borinstein SC",
+    "Hiebert SW",
+    "Stengel KR"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/36395771/",
+    "publisher": "https://doi.org/10.1016/j.molcel.2022.10.025"
+  }
+}

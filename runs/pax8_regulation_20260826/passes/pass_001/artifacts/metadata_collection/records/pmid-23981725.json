@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-23981725",
+  "pmid": "23981725",
+  "doi": "10.5966/sctm.2012-0156",
+  "title": "Long-term maintenance of limbal epithelial progenitor cells using rho kinase inhibitor and keratinocyte growth factor.",
+  "abstract": "Corneal epithelial stem cells are located in the limbus, the junction between the cornea and the conjunctiva. A limbal epithelium model in vitro would be useful for the study of epithelial stem cells, as well as improving the quality of cultivated epithelial sheets for the treatment of limbal stem cell deficiency. In this study, we succeeded in constructing a limbal epithelium-like structure that could be maintained for at least 5 months in vitro. We modified conventional medium by replacing epidermal growth factor with keratinocyte growth factor (KGF) and adding Y-27632, a rho kinase inhibitor. Using this medium, epithelial cells freshly isolated from human limbus were cocultured with human mesenchymal stem cell-derived feeder cells. Cells formed a stratified layer without air exposure, and both basal and suprabasal layers maintained their unique morphologies for up to 5 months. Basal layers expressed the progenitor marker p63 uniformly and K15 heterogeneously. Expressions of PAX6, K3, and K12 indicated that cell sheets underwent normal differentiation in the corneal epithelium lineage. Although medium was changed daily after day 7, cell debris was observed every day, suggesting that cell sheets underwent turnover. Furthermore, secondary colonies were observed from cells dissociated from 1-month and 3-month cultured sheets. In conclusion, human limbal epithelial cell sheet cultures with KGF and Y-27632 maintained stratification, high expression of both stem/progenitor markers and differentiation markers, and colony-forming cells long-term. This protocol may be useful as an in vitro limbal epithelial model for basic studies.",
+  "year": "2013",
+  "journal": "Stem cells translational medicine",
+  "authors": [
+    "Miyashita H",
+    "Yokoo S",
+    "Yoshida S",
+    "Kawakita T",
+    "Yamagami S",
+    "Tsubota K",
+    "Shimmura S"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/23981725/",
+    "publisher": "https://doi.org/10.5966/sctm.2012-0156"
+  }
+}

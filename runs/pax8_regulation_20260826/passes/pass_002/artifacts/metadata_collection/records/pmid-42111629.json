@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-42111629",
+  "pmid": "42111629",
+  "doi": "10.1007/s10616-026-00975-z",
+  "title": "Sodium tanshinone IIA sulfonate modulates proliferation and differentiation of human skeletal muscle satellite cells via the PI3K/AKT pathway.",
+  "abstract": "UNLABELLED: Human skeletal muscle satellite cells (HSkMSCs) are the primary stem cells responsible for skeletal muscle regeneration and repair. The balance between their proliferation and differentiation is essential for maintaining muscle homeostasis. Sodium tanshinone IIA sulfonate (STS) has been reported to possess anti-inflammatory, antioxidant, and antifibrotic effects. However, the regulatory role and underlying mechanisms of STS in governing the fate of HSkMSCs remain largely unexplored. This study aimed to investigate the effects of STS on the proliferation and differentiation of HSkMSCs and to elucidate the potential molecular mechanisms. HSkMSCs were treated with different concentrations of STS. Cell proliferation was assessed using EdU assay. The expression levels of the proliferation marker Pax7 and the myogenic differentiation-related genes MyoD and fast-twitch skeletal myosin heavy chain (MyHC -II) were determined by RT-qPCR and western blotting. To verify the involvement of PI3K/AKT signaling pathway, the inhibitor LY294002 was co-administered with STS to further evaluate the regulatory role of this signaling in mediating the biological effects of STS. EdU staining revealed that STS significantly reduced the proliferation of HSkMSCs in a dose-dependent manner. STS markedly downregulated the expression of Pax7, while upregulating the expression of MyoD and MyHC-II. Furthermore, STS treatment significantly enhanced the phosphorylation levels of PI3K and AKT. Notably, co-treatment with LY294002 effectively attenuated the regulatory effects of STS on Pax7, MyoD, and MyHC-II expression. In conclusion, STS inhibits the proliferation and upregulates myogenic differentiation markers expression in HSkMSCs by activating the PI3K/AKT signaling pathway.\n\nSUPPLEMENTARY INFORMATION: The online version contains supplementary material available at 10.1007/s10616-026-00975-z.",
+  "year": "2026",
+  "journal": "Cytotechnology",
+  "authors": [
+    "Zhang Z",
+    "Zhou Z",
+    "Zhang P",
+    "Wang H",
+    "Huo Y"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42111629/",
+    "publisher": "https://doi.org/10.1007/s10616-026-00975-z"
+  }
+}

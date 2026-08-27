@@ -1,0 +1,28 @@
+{
+  "paper_id": "pmid-31003009",
+  "pmid": "31003009",
+  "doi": "10.1016/j.rvsc.2019.04.006",
+  "title": "Age-dependent variations in the expression of myosin isoforms and myogenic factors during the involution of the proximal sesamoidean ligament of sheep.",
+  "abstract": "In ungulates the stability of the fetlock joint is dependent on several muscles, which are exposed to high stress and strain. Among those muscles, the proximal sesamoidean ligament or PSL (also known as the suspensory ligament or Ruini's elasto-tendinous organ) is organized at birth in layers of muscle fibres alternated with abundant tendinous tissue that, during the postnatal development, becomes the predominant tissue. In this study we analysed the PSL of the sheep at the age of 1, 30 and 180\u202fdays and determined the expression of several genes which either (a) are markers of muscle fibre growth and maturation, or (b) play a role as signal molecules. We observed an accelerated maturation, as indicated by the transition of MyHC isoform expression towards the slow isoforms and a reduced regenerative potential indicated by the low Pax7 expression and the altered Wnt signalling. We also found a specific myogenic expression pattern of MyoD, Myf5 and Myogenin in the developing PSL and high mRNA levels of specific fibrogenic factors, as TGF-\u03b21, that, undoubtedly, stimulate the growth of connective tissue. Our observations confirmed, at molecular level, the peculiarity of the fast involution observed in PSL a muscle that undergoes a very specific active differentiation process during early development, which implies myofibres involution and their replacement with connective tissue.",
+  "year": "2019",
+  "journal": "Research in veterinary science",
+  "authors": [
+    "Cancellara L",
+    "Quartesan S",
+    "Toniolo L",
+    "Reggiani C",
+    "Mascarello F",
+    "Melotti L",
+    "Francolini M",
+    "Maccatrozzo L",
+    "Patruno M"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/31003009/",
+    "publisher": "https://doi.org/10.1016/j.rvsc.2019.04.006"
+  }
+}

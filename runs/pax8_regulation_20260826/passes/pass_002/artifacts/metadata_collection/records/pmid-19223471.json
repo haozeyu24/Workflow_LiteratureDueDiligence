@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-19223471",
+  "pmid": "19223471",
+  "doi": "10.1128/MCB.01543-08",
+  "title": "Pax6 regulates the proglucagon processing enzyme PC2 and its chaperone 7B2.",
+  "abstract": "Pax6 is important in the development of the pancreas and was previously shown to regulate pancreatic endocrine differentiation, as well as the insulin, glucagon, and somatostatin genes. Prohormone convertase 2 (PC2) is the main processing enzyme in pancreatic alpha cells, where it processes proglucagon to produce glucagon under the spatial and temporal control of 7B2, which functions as a molecular chaperone. To investigate the role of Pax6 in glucagon biosynthesis, we studied potential target genes in InR1G9 alpha cells transfected with Pax6 small interfering RNA and in InR1G9 clones expressing a dominant-negative form of Pax6. We now report that Pax6 controls the expression of the PC2 and 7B2 genes. By binding and transactivation studies, we found that Pax6 indirectly regulates PC2 gene transcription through cMaf and Beta2/NeuroD1 while it activates the 7B2 gene both directly and indirectly through the same transcription factors, cMaf and Beta2/NeuroD1. We conclude that Pax6 is critical for glucagon biosynthesis and processing by directly and indirectly activating the glucagon gene through cMaf and Beta2/NeuroD1, as well as the PC2 and 7B2 genes.",
+  "year": "2009",
+  "journal": "Molecular and cellular biology",
+  "authors": [
+    "Katz LS",
+    "Gosmain Y",
+    "Marthinet E",
+    "Philippe J"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/19223471/",
+    "publisher": "https://doi.org/10.1128/MCB.01543-08"
+  }
+}

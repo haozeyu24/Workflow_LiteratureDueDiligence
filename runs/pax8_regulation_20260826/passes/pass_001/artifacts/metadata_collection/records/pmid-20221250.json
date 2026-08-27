@@ -1,0 +1,32 @@
+{
+  "paper_id": "pmid-20221250",
+  "pmid": "20221250",
+  "doi": "10.1371/journal.pgen.1000870",
+  "title": "Papillorenal syndrome-causing missense mutations in PAX2/Pax2 result in hypomorphic alleles in mouse and human.",
+  "abstract": "Papillorenal syndrome (PRS, also known as renal-coloboma syndrome) is an autosomal dominant disease characterized by potentially-blinding congenital optic nerve excavation and congenital kidney abnormalities. Many patients with PRS have mutations in the paired box transcription factor gene, PAX2. Although most mutations in PAX2 are predicted to result in complete loss of one allele's function, three missense mutations have been reported, raising the possibility that more subtle alterations in PAX2 function may be disease-causing. To date, the molecular behaviors of these mutations have not been explored. We describe a novel mouse model of PRS due to a missense mutation in a highly-conserved threonine residue in the paired domain of Pax2 (p.T74A) that recapitulates the ocular and kidney findings of patients. This mutation is in the Pax2 paired domain at the same location as two human missense mutations. We show that all three missense mutations disrupt potentially critical hydrogen bonds in atomic models and result in reduced Pax2 transactivation, but do not affect nuclear localization, steady state mRNA levels, or the ability of Pax2 to bind its DNA consensus sequence. Moreover, these mutations show reduced steady-state levels of Pax2 protein in vitro and (for p.T74A) in vivo, likely by reducing protein stability. These results suggest that hypomorphic alleles of PAX2/Pax2 can lead to significant disease in humans and mice.",
+  "year": "2010",
+  "journal": "PLoS genetics",
+  "authors": [
+    "Alur RP",
+    "Vijayasarathy C",
+    "Brown JD",
+    "Mehtani M",
+    "Onojafe IF",
+    "Sergeev YV",
+    "Boobalan E",
+    "Jones M",
+    "Tang K",
+    "Liu H",
+    "Xia CH",
+    "Gong X",
+    "Brooks BP"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/20221250/",
+    "publisher": "https://doi.org/10.1371/journal.pgen.1000870"
+  }
+}

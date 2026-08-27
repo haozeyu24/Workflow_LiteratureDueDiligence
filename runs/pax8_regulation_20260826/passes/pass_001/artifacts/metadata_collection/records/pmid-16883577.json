@@ -1,0 +1,28 @@
+{
+  "paper_id": "pmid-16883577",
+  "pmid": "16883577",
+  "doi": "10.1002/jcp.20757",
+  "title": "Myostatin induces cachexia by activating the ubiquitin proteolytic system through an NF-kappaB-independent, FoxO1-dependent mechanism.",
+  "abstract": "Myostatin, a transforming growth factor-beta (TGF-beta) super-family member, has been well characterized as a negative regulator of muscle growth and development. Myostatin has been implicated in several forms of muscle wasting including the severe cachexia observed as a result of conditions such as AIDS and liver cirrhosis. Here we show that Myostatin induces cachexia by a mechanism independent of NF-kappaB. Myostatin treatment resulted in a reduction in both myotube number and size in vitro, as well as a loss in body mass in vivo. Furthermore, the expression of the myogenic genes myoD and pax3 was reduced, while NF-kappaB (the p65 subunit) localization and expression remained unchanged. In addition, promoter analysis has confirmed Myostatin inhibition of myoD and pax3. An increase in the expression of genes involved in ubiquitin-mediated proteolysis is observed during many forms of muscle wasting. Hence we analyzed the effect of Myostatin treatment on proteolytic gene expression. The ubiquitin associated genes atrogin-1, MuRF-1, and E214k were upregulated following Myostatin treatment. We analyzed how Myostatin may be signaling to induce cachexia. Myostatin signaling reversed the IGF-1/PI3K/AKT hypertrophy pathway by inhibiting AKT phosphorylation thereby increasing the levels of active FoxO1, allowing for increased expression of atrophy-related genes. Therefore, our results suggest that Myostatin induces cachexia through an NF-kappaB-independent mechanism. Furthermore, increased Myostatin levels appear to antagonize hypertrophy signaling through regulation of the AKT-FoxO1 pathway.",
+  "year": "2006",
+  "journal": "Journal of cellular physiology",
+  "authors": [
+    "McFarlane C",
+    "Plummer E",
+    "Thomas M",
+    "Hennebry A",
+    "Ashby M",
+    "Ling N",
+    "Smith H",
+    "Sharma M",
+    "Kambadur R"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/16883577/",
+    "publisher": "https://doi.org/10.1002/jcp.20757"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-29607880",
+  "pmid": "29607880",
+  "doi": "10.1266/ggs.17-00057",
+  "title": "A novel nuclear localization signal spans the linker of the two DNA-binding subdomains in the conserved paired domain of Pax6.",
+  "abstract": "Paired box (Pax) 6, a member of the Pax family of transcription factors, contains two DNA-binding domains, called the paired domain (PD) and the homeodomain (HD), and plays pivotal roles in development of structures such as the eye, central nervous system and pancreas. Pax6 is a major developmental switching molecule because, for example, ectopic expression of the Pax6 gene can induce ectopic whole eye development. Intensive research has been devoted to elucidating the molecular mechanism(s) involved in the function(s) of Pax6, but many issues remain unexplained. One of the important issues is to identify the nuclear localization signal (NLS) in the PD of Pax6, which is predicted to have a stronger NLS activity than that in the HD. We produced expression plasmid constructs that encode the chick Pax6 protein modified to delete the entire PD except for fragments containing putative NLS sequences, and electroporated them in ovo into the developing chick midbrain to define the NLS of the PD. The results show that the NLS in the PD of chick Pax6 consists of an unusually long sequence of 36 amino acid residues. Within this long NLS motif, the central 18 amino acids comprising two consecutive nine-residue segments showed highest NLS activity; this central area corresponds to the C-terminal half of the third \u03b1-helix of the PAI subdomain and the subsequent 11 amino acids of a 16-residue linker between PAI and the adjacent RED subdomain. This information helps to elucidate the molecular mechanism by which Pax6 plays a pivotal role during ontogeny.",
+  "year": "2018",
+  "journal": "Genes & genetic systems",
+  "authors": [
+    "Tabata H",
+    "Koinui A",
+    "Ogura A",
+    "Nishihara D",
+    "Yamamoto H"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/29607880/",
+    "publisher": "https://doi.org/10.1266/ggs.17-00057"
+  }
+}

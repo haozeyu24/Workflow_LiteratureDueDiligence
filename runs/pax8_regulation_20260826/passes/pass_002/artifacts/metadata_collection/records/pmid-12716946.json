@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-12716946",
+  "pmid": "12716946",
+  "doi": "10.1523/JNEUROSCI.23-08-03385.2003",
+  "title": "Epidermal growth factor receptors control competence to interpret leukemia inhibitory factor as an astrocyte inducer in developing cortex.",
+  "abstract": "Cortical progenitors begin to interpret leukemia inhibitory factor (LIF) and bone morphogenetic protein (BMP) as astrocyte-inducing signals during late embryonic cortical development, coincident with an increase in their expression of epidermal growth factor receptors (EGFRs). To determine whether the developmental change in EGFRs regulates the change in responsiveness to LIF and BMP, we analyzed cortical progenitors induced to express EGFRs prematurely and progenitors from late embryonic EGFR-null cortex. Premature elevation of EGFRs conferred premature competence to interpret LIF, but not BMP, as an astrocyte-inducing signal. EGFR-null progenitors from late embryonic cortex did not interpret LIF as an astrocyte-inducing signal but responded to BMP4. LIF responsiveness in EGFR-null cells was rescued by the addition of EGFRs but not by the stimulation of fibroblast growth factor receptors. Astrocyte differentiation induced by LIF depends on signal transducer and activator of transcription 3 (STAT3). We show that the level of STAT3 increases during late embryonic development in a subset of progenitors. EGFRs regulate this change in STAT3 and increase STAT3 phosphorylation in response to LIF. Increasing STAT3 prematurely with a retrovirus also increased the phosphorylation of STAT3 by LIF. In contrast to the finding with EGFRs, however, increasing STAT3 did not cause LIF to induce astrocytes, although it reduced expression of the neurogenic factor PAX6 (paired box gene 6 ). Our findings show that developmental changes in EGFRs regulate the competence of progenitors to interpret LIF as an astrocyte-inducing signal. EGFRs elevate STAT3 expression and increase its phosphorylation by LIF, but this is not sufficient to change LIF responsiveness to astrocyte induction, suggesting that EGFRs also regulate LIF responsiveness downstream of STAT3.",
+  "year": "2003",
+  "journal": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+  "authors": [
+    "Viti J",
+    "Feathers A",
+    "Phillips J",
+    "Lillien L"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/12716946/",
+    "publisher": "https://doi.org/10.1523/JNEUROSCI.23-08-03385.2003"
+  }
+}

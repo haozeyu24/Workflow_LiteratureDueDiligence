@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-26321142",
+  "pmid": "26321142",
+  "doi": "10.1016/j.stemcr.2015.07.015",
+  "title": "Preferential Propagation of Competent SIX2+ Nephronic Progenitors by LIF/ROCKi Treatment of the Metanephric Mesenchyme.",
+  "abstract": "Understanding the mechanisms responsible for nephrogenic stem cell preservation and commitment is fundamental to harnessing the potential of the metanephric mesenchyme (MM) for nephron regeneration. Accordingly, we established a culture model that preferentially expands the MM SIX2+ progenitor pool using leukemia inhibitory factor (LIF), a Rho kinase inhibitor (ROCKi), and extracellular matrix. Passaged MM cells express the key stem cell regulators Six2 and Pax2 and remain competent to respond to WNT4 induction and form mature tubular epithelia and glomeruli. Mechanistically, LIF activates STAT, which binds to a Stat consensus sequence in the Six2 proximal promoter and sustains SIX2 levels. ROCKi, on the other hand, attenuates the LIF-induced differentiation activity of JNK. Concomitantly, the combination of LIF/ROCKi upregulates Slug expression and activates YAP, which maintains SIX2, PAX2, and SALL1. Using this novel model, our study underscores the pivotal roles of SIX2 and YAP in MM stem cell stability.",
+  "year": "2015",
+  "journal": "Stem cell reports",
+  "authors": [
+    "Tanigawa S",
+    "Sharma N",
+    "Hall MD",
+    "Nishinakamura R",
+    "Perantoni AO"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/26321142/",
+    "publisher": "https://doi.org/10.1016/j.stemcr.2015.07.015"
+  }
+}

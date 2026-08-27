@@ -1,0 +1,28 @@
+{
+  "paper_id": "pmid-30499004",
+  "pmid": "30499004",
+  "doi": "10.1007/s10103-018-2680-9",
+  "title": "The retinal pigment epithelial response after retinal laser photocoagulation in diabetic mice.",
+  "abstract": "To investigate the characteristics of regenerated retinal pigment epithelial (RPE) cells after retinal laser photocoagulation in diabetic mice. C57BL/6J mice were used to induce diabetes using intraperitoneal injection of streptozotocin. The proliferation of RPE cells after laser photocoagulation was determined using the 5-ethynyl-2'-deoxyuridine (EdU) assay in both diabetic and wild-type mice. The morphological changes of RPE cells were evaluated by using Voronoi diagram from immunostaining for \u00df-catenin. Characteristics of regenerated cells were evaluated by quantifying the mRNA and protein levels of RPE and epithelial-mesenchymal transition (EMT) markers. There were significantly less EdU-positive cells in laser-treated areas in diabetic mice than wild-type mice. Hexagonality was extensively lost in diabetic mice. Many EdU-positive cells were co-localized with Otx2-positive cells in the center of the laser-treated areas in wild-type mice, but only EdU-positive cells were widely distributed in diabetic mice. Quantitative analysis of mRNA and protein levels showed that the expression levels of RPE markers, Pax6, Mitf, and Otx2, were significantly decreased in RPE of diabetic mice compared with that of wild-type mice, whereas the expression levels of EMT markers, vimentin and fibronectin, were significantly increased. The proliferation and hexagonality of regenerating RPE cells were impaired after laser photocoagulation, and the regenerated RPE cells lost their original properties in diabetic mice. Further clinical research is needed to elucidate the RPE response after laser photocoagulation in diabetic patients.",
+  "year": "2019",
+  "journal": "Lasers in medical science",
+  "authors": [
+    "Jang SY",
+    "Cho IH",
+    "Yang JY",
+    "Park HY",
+    "Woo SE",
+    "Madrakhimov SB",
+    "Chang HS",
+    "Lyu J",
+    "Park TK"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/30499004/",
+    "publisher": "https://doi.org/10.1007/s10103-018-2680-9"
+  }
+}

@@ -6,6 +6,8 @@ import csv
 import sys
 from pathlib import Path
 
+from pass_archive import active_artifacts_dir
+
 
 WORKFLOW_ROOT = Path(__file__).resolve().parents[1]
 RUNS_DIR = WORKFLOW_ROOT / "runs"
@@ -34,8 +36,9 @@ def main() -> int:
 
     run_id = sys.argv[1].strip()
     run_dir = RUNS_DIR / run_id
-    abstract_review_path = run_dir / "artifacts" / "abstract_review" / "abstract_review.csv"
-    abstract_review2_path = run_dir / "artifacts" / "abstract_review" / "abstract_review2.csv"
+    artifacts_dir = active_artifacts_dir(run_dir)
+    abstract_review_path = artifacts_dir / "abstract_review" / "abstract_review.csv"
+    abstract_review2_path = artifacts_dir / "abstract_review" / "abstract_review2.csv"
 
     if not abstract_review_path.exists():
         print(f"Abstract review table not found: {abstract_review_path}")

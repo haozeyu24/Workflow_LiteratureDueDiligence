@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-24113918",
+  "pmid": "24113918",
+  "doi": "10.1007/s10616-013-9635-6",
+  "title": "Effects of stress hormone cortisol on the mRNA expression of myogenenin, MyoD, Myf5, PAX3 and PAX7.",
+  "abstract": "The present investigation was carried out to evaluate the effect of stress hormone cortisol on the myogenic markers in the C2C12 cells co-cultured with 3T3-L1 preadipocytes. Co-culturing was achieved by transwell inserts with a 0.4\u00a0\u03bcm porous membrane. C2C12 and 3T3-L1 cells were grown independently on the transwell plates. After differentiation, inserts containing 3T3-L1 cells were transferred to C2C12 plates for co-culturing. 10 \u03bcg/\u03bcl of cortisol was added to the medium. After 72\u00a0h of treatment, C2C12 cells which were in the lower well were harvested for analysis. RT-PCR analysis of myogenic markers such as of myogenin, MyoD, Myf5, PAX3 and PAX7 showed a significant reduction in the mRNA expression of these myogenic markers. In addition, cortisol increased calpain activity, which led to accelerated protein degradation, which in turn reduced the myogenic rate. In conclusion, cortisol treatment reduced mRNA expression of myogenic markers in the co-cultured C2C12 cells, which is quite distinct from one dimensional mono-cultured C2C12 cells.",
+  "year": "2014",
+  "journal": "Cytotechnology",
+  "authors": [
+    "Pandurangan M",
+    "Moorthy H",
+    "Sambandam R",
+    "Jeyaraman V",
+    "Irisappan G",
+    "Kothandam R"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/24113918/",
+    "publisher": "https://doi.org/10.1007/s10616-013-9635-6"
+  }
+}

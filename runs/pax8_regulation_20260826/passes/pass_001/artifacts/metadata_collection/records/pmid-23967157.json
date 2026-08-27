@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-23967157",
+  "pmid": "23967157",
+  "doi": "10.1371/journal.pone.0071117",
+  "title": "Increased corneal epithelial turnover contributes to abnormal homeostasis in the Pax6(+/-) mouse model of aniridia.",
+  "abstract": "We aimed to test previous predictions that limbal epithelial stem cells (LESCs) are quantitatively deficient or qualitatively defective in Pax6(+/-) mice and decline with age in wild-type (WT) mice. Consistent with previous studies, corneal epithelial stripe patterns coarsened with age in WT mosaics. Mosaic patterns were also coarser in Pax6(+/-) mosaics than WT at 15 weeks but not at 3 weeks, which excludes a developmental explanation and strengthens the prediction that Pax6(+/-) mice have a LESC-deficiency. To investigate how Pax6 genotype and age affected corneal homeostasis, we compared corneal epithelial cell turnover and label-retaining cells (LRCs; putative LESCs) in Pax6(+/-) and WT mice at 15 and 30 weeks. Limbal BrdU-LRC numbers were not reduced in the older WT mice, so this analysis failed to support the predicted age-related decline in slow-cycling LESC numbers in WT corneas. Similarly, limbal BrdU-LRC numbers were not reduced in Pax6(+/-) heterozygotes but BrdU-LRCs were also present in Pax6(+/-) corneas. It seems likely that Pax6(+/-) LRCs are not exclusively stem cells and some may be terminally differentiated CD31-positive blood vessel cells, which invade the Pax6(+/-) cornea. It was not, therefore, possible to use this approach to test the prediction that Pax6(+/-) corneas had fewer LESCs than WT. However, short-term BrdU labelling showed that basal to suprabasal movement (leading to cell loss) occurred more rapidly in Pax6(+/-) than WT mice. This implies that epithelial cell loss is higher in Pax6(+/-) mice. If increased corneal epithelial cell loss exceeds the cell production capacity it could cause corneal homeostasis to become unstable, resulting in progressive corneal deterioration. Although it remains unclear whether Pax6(+/-) mice have LESC-deficiency, we suggest that features of corneal deterioration, that are often taken as evidence of LESC-deficiency, might occur in the absence of stem cell deficiency if corneal homeostasis is destabilised by excessive cell loss.",
+  "year": "2013",
+  "journal": "PloS one",
+  "authors": [
+    "Douvaras P",
+    "Mort RL",
+    "Edwards D",
+    "Ramaesh K",
+    "Dhillon B",
+    "Morley SD",
+    "Hill RE",
+    "West JD"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/23967157/",
+    "publisher": "https://doi.org/10.1371/journal.pone.0071117"
+  }
+}

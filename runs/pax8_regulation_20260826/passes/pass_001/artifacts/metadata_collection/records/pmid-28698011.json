@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-28698011",
+  "pmid": "28698011",
+  "doi": "10.1016/j.jtos.2017.07.001",
+  "title": "Clinical and morphological manifestations of aniridia-associated keratopathy on anterior segment optical coherence tomography and in\u00a0vivo confocal microscopy.",
+  "abstract": "PURPOSE: The study aimed to evaluate clinical and morphological changes in the limbal palisades of Vogt (POV) at different stages of aniridia-associated keratopathy (AAK) and to assess possible utility of anterior segment optical coherence tomography (AS-OCT) for the visualization of limbal progenitor structures as it correlates to laser scanning confocal microscopy (LSCM) data.\n\nMETHODS: The study involved 32 patients (59 eyes) with congenital aniridia. AAK stage was defined based on biomicroscopy. Assessment of limbal zone and detection of POVs in identical areas was performed by LSCM (HRT3) and AS-OCT (RTVue XR Avanti) using 3D Cornea (En Face mode) and Cornea Cross Line protocols.\n\nRESULTS: Intact and changed POVs were found in 8/8 stage 0 eyes, in 1/21 stage I and 2/13 stage II eyes. Spearman's correlation coefficient in assessing the consistency of the POV diagnostic results by LSCM and AS-OCT for the inferior limbus was rS\u00a0=\u00a00.85 (P\u00a0<\u00a00.05), for the superior limbus - rS\u00a0=\u00a00.53 (P\u00a0<\u00a00.05). AS-OCT was less sensitive for detection of partially present POVs in superior limbus. The negative correlation between AAK stage and POV preservation was determined (rS\u00a0=\u00a0-0.5, P\u00a0<\u00a00.05). There was no correlation between AAK stage and patient age (rS\u00a0=\u00a00.235, P\u00a0=\u00a00.209). Three patients with PAX6 3' deletion showed stage 0 AAK with intact or slightly disturbed POVs morphology and transparent cornea.\n\nCONCLUSION: AS-OCT may be an additional diagnostic tool for POV visualization in\u00a0vivo in aniridic patients. Its diagnostic accuracy is subject to selection of anatomic region, nystagmus and the degree of POV degradation.",
+  "year": "2017",
+  "journal": "The ocular surface",
+  "authors": [
+    "Voskresenskaya A",
+    "Pozdeyeva N",
+    "Vasilyeva T",
+    "Batkov Y",
+    "Shipunov A",
+    "Gagloev B",
+    "Zinchenko R"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/28698011/",
+    "publisher": "https://doi.org/10.1016/j.jtos.2017.07.001"
+  }
+}

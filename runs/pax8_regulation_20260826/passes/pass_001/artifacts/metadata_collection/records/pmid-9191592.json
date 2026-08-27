@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-9191592",
+  "pmid": "9191592",
+  "doi": "",
+  "title": "Pax-6, Prox 1, and Chx10 homeobox gene expression correlates with phenotypic fate of retinal precursor cells.",
+  "abstract": "PURPOSE: To study the expression patterns of the homeobox genes Pax-6, Prox 1, and Chx10 during chick retinal development in vivo and in vitro.\n\nMETHODS: Sections of paraformaldehyde-fixed, paraffin-embedded eyes were obtained at a range of developmental stages. In situ hybridization was carried out on tissue sections using digoxigenin-labeled sense and antisense RNA probes that recognize chicken Pax-6 and Prox 1 (whose sequences were already available), and chicken Chx10 (which was cloned and sequenced as part of this study). Selected developmental stages were also studied by immunocytochemistry with antibodies against Pax-6 and Prox 1, and by Northern blot analysis using 32P-labeled probes.\n\nRESULTS: Until embryonic day (ED) 5, in situ hybridization shows widespread, diffuse distribution of all three genes. Between ED 6 and ED 8, however, they acquire distinct, topographically specific patterns of expression. The Prox 1 signal is predominantly expressed in the prospective horizontal cell layer of the neuroepithelium, decreases vitreally, and is absent from ganglion cells and the prospective photoreceptor layer. Pax-6 is strongly expressed only in the prospective ganglion-cell and amacrine-cell regions at the same stages, and is not detected in prospective photoreceptors. Chx10 expression becomes concentrated in the future bipolar-cell region of the inner nuclear layer. Similar patterns are maintained by ED 15 through ED 18, after cell differentiation has taken place. Pax-6 and Prox 1 immunoreactive materials showed nuclear localization and a pattern of laminar distribution equivalent to that seen by in situ hybridization.\n\nCONCLUSIONS: These results suggest that the differentiated fate of retinal precursor cells may be influenced by Pax-6, Prox 1, or Chx10, this hypothesis is now being tested using dissociated chick embryo retinal cell cultures.",
+  "year": "1997",
+  "journal": "Investigative ophthalmology & visual science",
+  "authors": [
+    "Belecky-Adams T",
+    "Tomarev S",
+    "Li HS",
+    "Ploder L",
+    "McInnes RR",
+    "Sundin O",
+    "Adler R"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/9191592/",
+    "publisher": ""
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "paper_id": "pmid-24199455",
+  "pmid": "24199455",
+  "doi": "10.3923/pjbs.2012.215.223",
+  "title": "Effects of sustanon on the distribution of satellite cells and the morphology of skeletal muscle fibers during maturation.",
+  "abstract": "Sustanon is one of the most commonly used anabolic androgenic drugs to increase skeletal muscle mass and strength. This drug is a blend of four esterized testosterone derivatives: Testosterone propionate, testosterone phenylpropionate, testosterone isocaproate and testosterone decanoate. Little is known about the effects of this drug on skeletal muscle at the cellular level. This study aimed to investigate the influence of Sustanon on the morphology of skeletal muscle fibers and the distribution of myogenic stem cells known as Satellite Cells (SCs) during postnatal growth. We hypothesized that Sustanon-induced skeletal muscle hypertrophy is associated with an increase in the number of SCs. Robust immunocytochemical techniques and morphometric analyses were used to calculate the numbers of SCs and myonuclei within the pectoralis muscle of chickens. Also, DNA concentration and Pax7 protein levels were measured to confirm immunocytochemical findings. Sustanon significantly increased pectoralis mass and fiber size. All SC indices and the number of myonuclei increased significantly by Sustanon administration. In addition, greater DNA concentration and Pax7 protein expression were found in Sustanon-treated birds. This study indicates that Sustanon can induce avian skeletal muscle hypertrophy and that this is correlated with increased numbers of SCs and myonuclei.",
+  "year": "2012",
+  "journal": "Pakistan journal of biological sciences : PJBS",
+  "authors": [
+    "Allouh MZ",
+    "Aldirawi MH"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/24199455/",
+    "publisher": "https://doi.org/10.3923/pjbs.2012.215.223"
+  }
+}

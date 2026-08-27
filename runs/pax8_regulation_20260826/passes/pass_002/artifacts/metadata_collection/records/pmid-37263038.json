@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-37263038",
+  "pmid": "37263038",
+  "doi": "10.1016/j.jtherbio.2023.103490",
+  "title": "Neuro-immunohistochemical and molecular gene expression variations during hibernation and activity phases between Rana mascareniensis and Rana ridibunda.",
+  "abstract": "Low temperatures and the lack of food during the winter lead the marsh frog Rana ridibunda and the grass frog Rana mascareniensis to hibernate in order to survive. The present study aimed to investigate the cytoarchitecture of brain sub-regions affected by the thermal cycle's fluctuations during the hibernation and activity period, besides the regional distribution quantitative expression of Na(+)/K(+)-ATPase and Pax6 transcriptional factor, the molecular gene expressions of some heat shock proteins, uncoupling protein, and metallothionein. The two frog species were isolated from the field during summer and hibernation time in winter. During hibernation it was notable the destitution of degenerated, pyknotic and vasogenic neurons in different brain areas with high rate nearby the pallium. The immunohistochemical expression of Na+/ K+-ATPase and Pax 6 is decreased during hibernation in different brain sub-regions in the two species suggesting their tendency for energy conservation strategy during hibernation. Additionally, RT-qPCR recorded the up regulation of a number of heat shock protein genes during hibernation with sharing increase between two species for hsp90 besides and the non-significant expression in summer and hibernation periods for hsp47 for both species. Moreover, uncoupling protein (ucp1and ucp2) and metallothionein genes in olfactory bulb were with significant up regulation during the hibernation suggesting that these proteins possibly have a protective effect against reactive oxygen species ROS. So, brain adaptations to low temperature play a crucial role in coordinating stress responses. The present study shed light on the importance of the olfactory bulb in the thermoregulation and sensation of temperature elevations during the hibernation period and defended by the expression of heat shock proteins and uncoupling proteins preventing the cellular damage and proteins misfolding. Neuronal energy production and regeneration activities among amphibians are markedly reduced with decreasing body temperature.",
+  "year": "2023",
+  "journal": "Journal of thermal biology",
+  "authors": [
+    "Rabeae HM",
+    "Mahfouz SS",
+    "Abdel Latif AKM",
+    "Hafez HS",
+    "Abdel-Aziz AM"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/37263038/",
+    "publisher": "https://doi.org/10.1016/j.jtherbio.2023.103490"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "paper_id": "pmid-27403997",
+  "pmid": "27403997",
+  "doi": "10.1167/iovs.16-19105",
+  "title": "Modeling Keratoconus Using Induced Pluripotent Stem Cells.",
+  "abstract": "PURPOSE: To model keratoconus (KC) using induced pluripotent stem cells (iPSC) generated from fibroblasts of both KC and normal human corneal stroma by a viral method.\n\nMETHODS: Both normal and KC corneal fibroblasts from four human donors were reprogramed directly by delivering reprogramming factors in a single virus using 2A \"self-cleaving\" peptides, using a single polycistronic lentiviral vector coexpressing four transcription factors (Oct 4, Sox2, Klf4, and Myc) to yield iPSC. These iPS cells were characterized by immunofluorescence detection using of stem cell markers (SSEA4, Oct4, and Sox2). The mRNA sequencing was performed and the datasets were analyzed using ingenuity pathways analysis (IPA) software.\n\nRESULTS: The generated stem cell-like clones expressed the pluripotency markers, SSEA4, Oct4, Sox2, Tra-1-60, and also expressed pax6. Our transcriptome analysis showed 4300 genes, which had 2-fold change and 870 genes with a q-value of <0.05 in keratoconus iPSC compared to normal iPSC. One of the genes that showed difference in KC iPSC was FGFR2 (down-regulated by 2.4 fold), an upstream target of Pi3-Kinase pathway, was further validated in keratoconus corneal sections and also KC iPSC-derived keratocytes (down regulated by 2.0-fold). Both normal and KC-derived keratocytes expressed keratocan, signature marker for keratocytes. KC iPSC-derived keratocytes showed adverse growth and proliferation and was further confirmed by using Ly2924002, a PI3k inhibitor, which severely affected the growth and differentiation in normal iPSC.\n\nCONCLUSIONS: Based on our result, we propose a model for KC in which inhibition FGFR2-Pi3-Kinase pathway affects the AKT phosphorylation, and thus affecting the keratocytes survival signals. This inhibition of the survival signals could be a potential mechanism for the KC-specific decreased cell survival and apoptosis of keratocytes.",
+  "year": "2016",
+  "journal": "Investigative ophthalmology & visual science",
+  "authors": [
+    "Joseph R",
+    "Srivastava OP",
+    "Pfister RR"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/27403997/",
+    "publisher": "https://doi.org/10.1167/iovs.16-19105"
+  }
+}

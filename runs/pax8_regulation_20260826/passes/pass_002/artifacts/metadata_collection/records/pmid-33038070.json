@@ -1,0 +1,22 @@
+{
+  "paper_id": "pmid-33038070",
+  "pmid": "33038070",
+  "doi": "10.14814/phy2.14599",
+  "title": "Transient activation of mTORC1 signaling in skeletal muscle is independent of Akt1 regulation.",
+  "abstract": "The regulation of cellular protein synthesis is a critical determinant of skeletal muscle growth and hypertrophy in response to an increased workload such as resistance exercise. The mechanistic target of rapamycin complex 1 (mTORC1) and its upstream protein kinase Akt1 have been implicated as a central signaling pathway that regulates protein synthesis in the skeletal muscle; however, the precise molecular regulation of mTORC1 activity is largely unknown. This study employed germline Akt1 knockout (KO) mice to examine whether upstream Akt1 regulation is necessary for the acute activation of mTORC1 signaling in the plantaris muscle following mechanical overload. The phosphorylation states of S6 kinase 1, ribosomal protein S6, and eukaryotic translation initiation factor 4E-binding protein 1 which show the functional activity of mTORC1 signaling, were significantly increased in the skeletal muscle of both wildtype and Akt1 KO mice following an acute bout (3 and 12\u00a0hr) of mechanical overload. Akt1 deficiency did not affect load-induced alteration of insulin-like growth factor-1 (IGF-1)/IGF receptor mRNA expression. Also, no effect of Akt1 deficiency was observed on the overload-induced increase in the gene expressions of pax7 and myogenic regulatory factor of myogenin. These observations show that the upstream IGF-1/Akt1 regulation is dispensable for the acute activation of mTORC1 signaling and regulation of satellite cells in response to mechanical overload.",
+  "year": "2020",
+  "journal": "Physiological reports",
+  "authors": [
+    "Miyazaki M",
+    "Moriya N",
+    "Takemasa T"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/33038070/",
+    "publisher": "https://doi.org/10.14814/phy2.14599"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "paper_id": "pmid-19579288",
+  "pmid": "19579288",
+  "doi": "10.1089/scd.2008.0320",
+  "title": "Isolation and characterization of resident mesenchymal stem cells in human glomeruli.",
+  "abstract": "In humans, renal resident stem cells were identified within the interstitium, the tubular cells, and the Bowman's capsule. The aim of the present study was to investigate whether multipotent stem cells are present also in the adult human-decapsulated glomeruli and whether they represent a resident population. We found that human glomeruli deprived of the Bowman's capsule contain a population of CD133+CD146+ cells and a population of CD133-CD146+ cells expressing mesenchymal stem cell (MSC) markers and renal stem cell markers CD24 and Pax-2. The CD133+CD146+ cells differed from those previously isolated from Bowman's capsule as they co-expressed endothelial markers, such as CD31 and von Willebrand factor (vWF), were CD24-negative and were not clonogenic, suggesting an endothelial commitment. The glomerular mesenchymal CD133-CD146+ population (Gl-MSC) exhibited self-renewal capability, clonogenicity, and multipotency. In addition to osteogenic, adipogenic, and chondrogenic differentiation, these cells were able to differentiate to endothelial cells and epithelial cells expressing podocytes markers such as nephrin, podocin, and synaptopodin. Moreover, Gl-MSC when cultured in appropriate conditions, acquired mesangial cell markers such as alpha-smooth muscle actin (alpha-SMA) and angiotensin II (AT-II) receptor I. The expression of the embryonic organ-specific PAX-2 gene and protein and of donor sex identity when isolated from glomeruli of a renal allograft suggested these cells to be a tissue resident population. In conclusion, these results indicate the presence of a multipotent mesenchymal cell population resident in human glomeruli that may have a role in the physiological cell turnover and/or in response to glomerular injury.",
+  "year": "2009",
+  "journal": "Stem cells and development",
+  "authors": [
+    "Bruno S",
+    "Bussolati B",
+    "Grange C",
+    "Collino F",
+    "di Cantogno LV",
+    "Herrera MB",
+    "Biancone L",
+    "Tetta C",
+    "Segoloni G",
+    "Camussi G"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/19579288/",
+    "publisher": "https://doi.org/10.1089/scd.2008.0320"
+  }
+}

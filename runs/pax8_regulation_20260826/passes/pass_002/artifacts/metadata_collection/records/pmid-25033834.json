@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-25033834",
+  "pmid": "25033834",
+  "doi": "10.1038/emm.2014.42",
+  "title": "APE1/Ref-1 as an emerging therapeutic target for various human diseases: phytochemical modulation of its functions.",
+  "abstract": "Apurinic/apyrimidinic endonuclease 1 (APE1) is a multifunctional enzyme involved in the base excision repair (BER) pathway, which repairs oxidative base damage caused by endogenous and exogenous agents. APE1 acts as a reductive activator of many transcription factors (TFs) and has also been named redox effector factor 1, Ref-1. For example, APE1 activates activator protein-1, nuclear factor kappa B, hypoxia-inducible factor 1\u03b1, paired box gene 8, signal transducer activator of transcription 3 and p53, which are involved in apoptosis, inflammation, angiogenesis and survival pathways. APE1/Ref-1 maintains cellular homeostasis (redox) via the activation of TFs that regulate various physiological processes and that crosstalk with redox balancing agents (for example, thioredoxin, catalase and superoxide dismutase) by controlling levels of reactive oxygen and nitrogen species. The efficiency of APE1/Ref-1's function(s) depends on pairwise interaction with participant protein(s), the functions regulated by APE1/Ref-1 include the BER pathway, TFs, energy metabolism, cytoskeletal elements and stress-dependent responses. Thus, APE1/Ref-1 acts as a 'hub-protein' that controls pathways that are important for cell survival. In this review, we will discuss APE1/Ref-1's versatile nature in various human etiologies, including neurodegeneration, cancer, cardiovascular and other diseases that have been linked with alterations in the expression, subcellular localization and activities of APE/Ref-1. APE1/Ref-1 can be targeted for therapeutic intervention using natural plant products that modulate the expression and functions of APE1/Ref-1. In addition, studies focusing on translational applications based on APE1/Ref-1-mediated therapeutic interventions are discussed.",
+  "year": "2014",
+  "journal": "Experimental & molecular medicine",
+  "authors": [
+    "Thakur S",
+    "Sarkar B",
+    "Cholia RP",
+    "Gautam N",
+    "Dhiman M",
+    "Mantha AK"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (\"nuclear localization\"[Title/Abstract] OR \"nuclear localisation\"[Title/Abstract] OR \"nuclear localization signal\"[Title/Abstract] OR \"functional domains\"[Title/Abstract] OR \"subcellular localization\"[Title/Abstract] OR \"nuclear import\"[Title/Abstract] OR \"nuclear export\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract]) NOT \"PAX8-AS1\"[Title/Abstract]"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/25033834/",
+    "publisher": "https://doi.org/10.1038/emm.2014.42"
+  }
+}

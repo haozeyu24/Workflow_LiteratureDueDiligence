@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-24292683",
+  "pmid": "24292683",
+  "doi": "10.1038/onc.2013.509",
+  "title": "Downregulation of IGFBP2 is associated with resistance to IGF1R therapy in rhabdomyosarcoma.",
+  "abstract": "Agents targeting the insulin-like growth factor-1 receptor (IGF1R) are in clinical development, but, despite some initial success of single agents in sarcoma, response rates are low with brief durations. Thus, it is important to identify markers predictive of response, to understand mechanisms of resistance, and to explore combination therapies. In this study, we found that, although associated with PAX3-FKHR translocation, increased IGF1R level is an independent prognostic marker for worse overall survival, particularly in patients with PAX3-FKHR-positive rhabdomyosarcoma (RMS). IGF1R antibody-resistant RMS cells were generated using an in vivo model. Expression analysis indicated that IGFBP2 is both the most affected gene in the insulin-like growth factor (IGF) signaling pathway and the most significantly downregulated gene in the resistant lines, indicating that there is a strong selection to repress IGFBP2 expression in tumor cells resistant to IGF1R antibody. IGFBP2 is inhibitory to IGF1R phosphorylation and its signaling. Similar to antibodies to IGF1/2 or IGF2, the addition of exogenous IGFBP2 potentiates the activity of IGF1R antibody against the RMS cells, and it reverses the resistance to IGF1R antibody. In contrast to IGF1R, lower expression of IGFBP2 is associated with poorer overall survival, consistent with its inhibitory activity found in this study. Finally, blocking downstream Protein kinase B (AKT) activation with Phosphatidylinositide 3-kinases (PI3K)- or mammalian target of rapamycin (mTOR)-specific inhibitors significantly sensitized the resistant cells to the IGF1R antibody. These findings show that constitutive IGFBP2 downregulation may represent a novel mechanism for acquired resistance to IGF1R therapeutic antibody in vivo and suggest various drug combinations to enhance antibody activity and to overcome resistance.",
+  "year": "2014",
+  "journal": "Oncogene",
+  "authors": [
+    "Kang Z",
+    "Yu Y",
+    "Zhu YJ",
+    "Davis S",
+    "Walker R",
+    "Meltzer PS",
+    "Helman LJ",
+    "Cao L"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/24292683/",
+    "publisher": "https://doi.org/10.1038/onc.2013.509"
+  }
+}

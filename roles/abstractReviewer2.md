@@ -17,10 +17,10 @@ Second-pass abstract review role for abstract triage decisions.
 
 ## Inputs
 
-- `runs/<run_id>/instruction.md`
-- `runs/<run_id>/topic.md`
-- `runs/<run_id>/artifacts/abstract_review/abstract_review.csv`
-- `runs/<run_id>/artifacts/abstract_review/abstract_review2.csv`
+- current pass `runs/<run_id>/passes/pass_###/inputs/instruction.md`
+- current pass `runs/<run_id>/passes/pass_###/inputs/topic.md`
+- active pass `runs/<run_id>/passes/pass_###/artifacts/abstract_review/abstract_review.csv`
+- active pass `runs/<run_id>/passes/pass_###/artifacts/abstract_review/abstract_review2.csv`
   This table must include the original title and abstract, not only the first
   reviewer's decision.
 
@@ -56,6 +56,7 @@ For each row, populate:
 
 - `confirm_include` or `overturn_to_include` usually maps to `advance_to_import`
 - `confirm_exclude` or `overturn_to_exclude` usually maps to `stop`
+- do not use cost, PDF availability, import burden, or a desired cohort size as a reason to stop a paper
 
 ## Batching note
 
@@ -81,9 +82,12 @@ The prompt should not:
 ## Priority
 
 `abstractReviewer2` should reduce both overinclusive and underinclusive abstract triage errors by rereading the abstract rather than relying on the first review alone.
+It should not be stricter by default.
+Its job is independent adjudication over the title, abstract, and reviewer-1 opinion.
 
 ## Limits
 
 - `abstractReviewer2` should inspect the paper abstract, not just the first reviewer's prose.
 - `abstractReviewer2` is a quality-control role, not a retrieval role.
 - `abstractReviewer2` must reread the abstract together with the first reviewer's opinion before deciding.
+- `abstractReviewer2` must not act as a cost-control or full-text-access filter.

@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-25720496",
+  "pmid": "25720496",
+  "doi": "10.1074/jbc.M115.638577",
+  "title": "Mdm2 promotes myogenesis through the ubiquitination and degradation of CCAAT/enhancer-binding protein \u03b2.",
+  "abstract": "Myogenesis is a tightly regulated differentiation process during which precursor cells express in a coordinated fashion the myogenic regulatory factors, while down-regulating the satellite cell marker Pax7. CCAAT/Enhancer-binding protein \u03b2 (C/EBP\u03b2) is also expressed in satellite cells and acts to maintain the undifferentiated state by stimulating Pax7 expression and by triggering a decrease in MyoD protein expression. Herein, we show that C/EBP\u03b2 protein is rapidly down-regulated upon induction of myogenesis and this is not due to changes in Cebpb mRNA expression. Rather, loss of C/EBP\u03b2 protein is accompanied by an increase in Mdm2 expression, an E3 ubiquitin ligase. We demonstrate that Mdm2 interacts with, ubiquitinates and targets C/EBP\u03b2 for degradation by the 26 S proteasome, leading to increased MyoD expression. Knockdown of Mdm2 expression in myoblasts using a shRNA resulted in high C/EBP\u03b2 levels and a blockade of myogenesis, indicating that Mdm2 is necessary for myogenic differentiation. Primary myoblasts expressing the shMdm2 construct were unable to contribute to muscle regeneration when grafted into cardiotoxin-injured muscle. The differentiation defect imposed by loss of Mdm2 could be partially rescued by loss of C/EBP\u03b2, suggesting that the regulation of C/EBP\u03b2 turnover is a major role for Mdm2 in myoblasts. Taken together, we provide evidence that Mdm2 regulates entry into myogenesis by targeting C/EBP\u03b2 for degradation by the 26 S proteasome.",
+  "year": "2015",
+  "journal": "The Journal of biological chemistry",
+  "authors": [
+    "Fu D",
+    "Lala-Tabbert N",
+    "Lee H",
+    "Wiper-Bergeron N"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/25720496/",
+    "publisher": "https://doi.org/10.1074/jbc.M115.638577"
+  }
+}

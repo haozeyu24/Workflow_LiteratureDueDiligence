@@ -1,0 +1,22 @@
+{
+  "paper_id": "pmid-32068319",
+  "pmid": "32068319",
+  "doi": "10.1002/cbin.11325",
+  "title": "Inhibition of RING1B alters lineage specificity in human embryonic stem cells.",
+  "abstract": "Polycomb group (PcG) proteins are histone modifiers which are known to perform transcriptional repression and have been shown to be critical during murine embryonic development. PcGs are broadly characterized into polycomb repressive complex 1 (PRC1) and 2 and (PRC2). RING1B, core catalytic unit of PRC1 performs H2AK119 monoubiquitination leading to transcriptional repression. We used human embryonic stem cell (hESC) line to study the fate of pluripotent stem cells (PSCs) under inhibition of RING1B, as its role in human development is still to be completely explored. Embryoid bodies (EBs) were generated to differentiate hESCs using hanging drop method. PRT4165 (synthetic RING1B catalytic activity inhibitor) was added to undifferentiated and differentiated cells for 24\u2009h. When we inhibited RING1B in undifferentiated cells, OCT4 levels remained unchanged indicating RING1B does not regulate pluripotency. The drug when added to differentiated cells led to decrease in the levels of RING1B, BMI1, and H2AK119ub1. Interestingly, we also report that the differentiated cells show an increased expression of neuroectodermal markers: SOX1 and PAX6 as well as expression of other neuroectodermal markers such as TUJ1, FOXG1, and NCAM. However, there was reduction in expression of endodermal (SOX17 and FOXA2) mesodermal marker BRACHYURY and TBX5 in treated EBs compared with control EBs. In summary, alteration of RING1B catalytic activity in hESCs during differentiation promotes neuroectodermal differentiation thus, we demonstrate critical role of RING1B in regulating neural differentiation. The strategy of inhibiting RING1B could be used to direct PSCs towards early neuronal fate.",
+  "year": "2020",
+  "journal": "Cell biology international",
+  "authors": [
+    "Desai D",
+    "Khanna A",
+    "Pethe P"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/32068319/",
+    "publisher": "https://doi.org/10.1002/cbin.11325"
+  }
+}

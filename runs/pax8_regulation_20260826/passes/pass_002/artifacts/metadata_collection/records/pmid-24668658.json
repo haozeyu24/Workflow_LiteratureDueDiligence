@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-24668658",
+  "pmid": "24668658",
+  "doi": "10.1007/s13539-014-0141-2",
+  "title": "Modeling human cancer cachexia in colon 26 tumor-bearing adult mice.",
+  "abstract": "BACKGROUND: Muscle wasting is a profound side effect of advanced cancer. Cancer-induced cachexia decreases patient quality of life and is associated with poor patient survival. Currently, no clinical therapies exist to treat cancer-induced muscle wasting. Although cancers commonly associated with cachexia occur in older individuals, the standard animal models used to elucidate the causes of cachexia rely on juvenile mice.\n\nMETHODS: In an effort to better model human cancer cachexia, we determined whether cachectic features seen in young mice could be achieved in adult, pre-sarcopenic mice following colon 26 (C-26) tumor cell inoculation.\n\nRESULTS: Both young and adult mice developed similar-sized tumors and progressed to cachexia with similar kinetics, as evidenced by losses in body mass, and adipose and skeletal muscle tissues. Proteolytic signaling, including proteasome and autophagy genes, was also increased in muscles from both young and adult tumor-bearing animals. Furthermore, tumor-associated muscle damage and activation of Pax7 progenitor cells was induced in both young and adult mice.\n\nCONCLUSIONS: Although cancer cachexia generally occurs in older individuals, these data suggest that the phenotype and underlying mechanisms can be effectively modeled using the currently accepted protocol in juvenile mice.",
+  "year": "2014",
+  "journal": "Journal of cachexia, sarcopenia and muscle",
+  "authors": [
+    "Talbert EE",
+    "Metzger GA",
+    "He WA",
+    "Guttridge DC"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/24668658/",
+    "publisher": "https://doi.org/10.1007/s13539-014-0141-2"
+  }
+}

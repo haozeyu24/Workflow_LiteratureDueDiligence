@@ -1,0 +1,22 @@
+{
+  "paper_id": "pmid-40679038",
+  "pmid": "40679038",
+  "doi": "10.1242/dev.204848",
+  "title": "Mutual repression between Pax2 and Snail factors regulates the epithelial/mesenchymal state during intermediate mesoderm differentiation.",
+  "abstract": "The pronephros is the first renal structure in the embryo, arising by mesenchymal-to-epithelial transition of the intermediate mesoderm, where Pax2 induces epithelialization and differentiation of this mesenchyme. Here, we show in chick embryos that Snail1 is sufficient to keep the intermediate mesoderm in an undifferentiated state by directly repressing Pax2 transcription. Reciprocally, Pax2 is sufficient and necessary to induce mesenchymal-to-epithelial transition by directly repressing Snail1 expression. We also show that BMP7 acts as an epithelialization signal by downregulating Snail1 and upregulating Pax2 expression. This, together with the Snail1/Pax2 reciprocal repression, establishes a regulatory loop within the bi-stability domain, a dynamic region of the anteroposterior axis where opposing retinoic acid/fibroblast growth factor gradients converge, and which has been found to regulate differentiation of the neural tube and somites. In conclusion, we show that the antagonism between Snail1 and Pax2 determines the epithelial/mesenchymal state during the differentiation of the intermediate mesoderm and propose that the bi-stability domain extends to the intermediate mesoderm, synchronizing the differentiation of all tissues aligned along the mediolateral embryonic axis.",
+  "year": "2025",
+  "journal": "Development (Cambridge, England)",
+  "authors": [
+    "Fons JM",
+    "Oca\u00f1a OH",
+    "Nieto MA"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/40679038/",
+    "publisher": "https://doi.org/10.1242/dev.204848"
+  }
+}

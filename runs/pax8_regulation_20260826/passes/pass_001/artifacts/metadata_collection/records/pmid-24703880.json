@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-24703880",
+  "pmid": "24703880",
+  "doi": "10.1016/j.bbamcr.2014.03.025",
+  "title": "Halofuginone improves muscle-cell survival in muscular dystrophies.",
+  "abstract": "Halofuginone has been shown to prevent fibrosis via the transforming growth factor-\u03b2/Smad3 pathway in muscular dystrophies. We hypothesized that halofuginone would reduce apoptosis--the presumed cause of satellite-cell depletion during muscle degradation-in the mdx mouse model of Duchenne muscular dystrophy. Six-week-old mdx mouse diaphragm exhibited fourfold higher numbers of apoptotic nuclei compared with wild-type mice as determined by a TUNEL assay. Apoptotic nuclei were found in macrophages and in Pax7-expressing cells; some were located in centrally-nucleated regenerating myofibers. Halofuginone treatment of mdx mice reduced the apoptotic nuclei number in the diaphragm, together with reduction in Bax and induction in Bcl2 levels in myofibers isolated from these mice. A similar effect was observed when halofuginone was added to cultured myofibers. No apparent effect of halofuginone was observed in wild-type mice. Inhibition of apoptosis or staurosporine-induced apoptosis by halofuginone in mdx primary myoblasts and C2 myogenic cell line, respectively, was reflected by less pyknotic/apoptotic cells and reduced Bax expression. This reduction was reversed by a phosphinositide-3-kinase and mitogen-activated protein kinase/extracellular signal-regulated protein kinase inhibitors, suggesting involvement of these pathways in mediating halofuginone's effects on apoptosis. Halofuginone increased apoptosis in \u03b1 smooth muscle actin- and prolyl 4-hydroxylase \u03b2-expressing cells in mdx diaphragm and in myofibroblasts, the major source of extracellular matrix. The data suggest an additional mechanism by which halofuginone improves muscle pathology and function in muscular dystrophies.",
+  "year": "2014",
+  "journal": "Biochimica et biophysica acta",
+  "authors": [
+    "Bodanovsky A",
+    "Guttman N",
+    "Barzilai-Tutsch H",
+    "Genin O",
+    "Levy O",
+    "Pines M",
+    "Halevy O"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/24703880/",
+    "publisher": "https://doi.org/10.1016/j.bbamcr.2014.03.025"
+  }
+}

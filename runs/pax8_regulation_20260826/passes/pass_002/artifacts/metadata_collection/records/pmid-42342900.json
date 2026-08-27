@@ -1,0 +1,33 @@
+{
+  "paper_id": "pmid-42342900",
+  "pmid": "42342900",
+  "doi": "10.1038/s41418-026-01789-4",
+  "title": "Inhibition of Pax6 sumoylation suppresses the tumorigenicity of pancreatic cancer cells.",
+  "abstract": "Pax6 is a critical transcription factor that regulates the development of multiple tissues, including the nervous system, ocular tissues, and pancreas. We have previously demonstrated that p32 Pax6 function is substantially regulated by protein sumoylation mediated through SUMO1 at the primary residue, Lys-91, and to a less degree at Lys-110 of the p32 Pax6 (K91/110) (Yan et al., 2010, PNAS). To further investigate the function of Pax6 sumoylation, we established stable PANC-1 pancreatic cancer cell line overexpressing p32 Pax6. Injection of these cells into immune-deficient mice promoted much enhanced tumor development than both parental and vector-transfected cells. Inhibition of Pax6 sumoylation with the sumoylation inhibitor ML-792 markedly suppressed tumor growth. Moreover, ML-792 treatment of the developed tumors also significantly suppressed tumor growth. To further study the underlying mechanisms, we generated the PANC-1 cell lines expressing K91/110R-p32 Pax6 and demonstrated that inhibition of Pax6 sumoylation through K91/110R mutations also suppressed its ability to promote tumor development in nude mice. Furthermore, K91R-p32 Pax6 knock-in mice exhibited changed cell populations in adult pancreas tissue and altered transcriptomes in the pancreas in vivo, which resembled the changes observed in PANC-1 cells expressing K91/110R-p32 Pax6 ex vivo. RNA sequencing, gel mobility shifting, chromatin immunoprecipitation, and Cut & Run assays revealed that the CXXC finger protein 4 (CXXC4) is the major downstream target directly regulated by Pax6. Silencing of CXXC4 in PANC-1 and CAPAN-1 cells expressing p32 Pax6 inhibited Pax6-induced tumor development in nude mice, exhibiting the phenotype similar to that observed in PANC-1 and CAPAN-1 cells expressing K91/110R-p32 Pax6. Together, our results demonstrated that inhibition of Pax6 sumoylation suppresses tumorigenicity of PANC-1 and CAPAN-1 pancreatic cancer cells through CXXC4. Our findings suggest that targeting Pax6 sumoylation may serve as a potential therapeutic target for pancreatic cancer treatment.",
+  "year": "2026",
+  "journal": "Cell death and differentiation",
+  "authors": [
+    "Xiao Y",
+    "Wang JM",
+    "Shan YY",
+    "Fu JL",
+    "Deng M",
+    "Wang Y",
+    "Zhang JP",
+    "Zheng SY",
+    "Zou M",
+    "Gan YW",
+    "Liang XM",
+    "Hu XB",
+    "Zhang L",
+    "Li DW"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42342900/",
+    "publisher": "https://doi.org/10.1038/s41418-026-01789-4"
+  }
+}

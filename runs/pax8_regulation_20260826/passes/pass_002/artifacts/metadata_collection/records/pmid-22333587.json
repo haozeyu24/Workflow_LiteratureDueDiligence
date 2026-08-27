@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-22333587",
+  "pmid": "22333587",
+  "doi": "10.4161/cc.11.5.19346",
+  "title": "AKT and PAX3-FKHR cooperation enforces myogenic differentiation blockade in alveolar rhabdomyosarcoma cell.",
+  "abstract": "The chimeric PAX3-FKHR transcription factor is present in a majority of alveolar rhabdomyosarcoma (ARMS), an aggressive skeletal muscle cancer of childhood. PAX3-FKHR-mediated aberrant myogenic gene expression resulting in escape from terminal differentiation program is believed to contribute in ARMS development. In skeletal muscle differentiation, activation of AKT pathway leads to myogenic gene activation and terminal differentiation. Here, we report that AKT acts, in part, by modulating PAX3-FKHR transcriptional activity via phosphorylation in the maintenance of the myogenic differentiation blockade in established mouse models of ARMS cells. We observed that low levels of AKT activity are associated with elevated levels of PAX3-FKHR transcriptional activity, and AKT hyperactivation results in PAX3-FKHR phosphorylation coupled with decreased activity once cells are under differentiation-permissible conditions. Subsequent data shows that attenuated AKT activity-associated PAX3-FKHR activity is required to suppress the function of MyoD, a key myogenic regulator of muscle differentiation. Conversely, decreased PAX3-FKHR activity results in the eradication of MyoD expression and subsequent suppression of the myogenic differentiation. Thus, AKT regulation of the PAX3- FKHR suppresses myogenic gene expression in ARMS cells, causing a failure in differentiation. Evidence is presented that provides a novel molecular link between AKT and PAX3-FKHR in maintaining myogenic differentiation blockade in ARMS.",
+  "year": "2012",
+  "journal": "Cell cycle (Georgetown, Tex.)",
+  "authors": [
+    "Jothi M",
+    "Nishijo K",
+    "Keller C",
+    "Mal AK"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/22333587/",
+    "publisher": "https://doi.org/10.4161/cc.11.5.19346"
+  }
+}

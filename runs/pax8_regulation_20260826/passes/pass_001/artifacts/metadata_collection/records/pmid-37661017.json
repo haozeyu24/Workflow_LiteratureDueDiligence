@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-37661017",
+  "pmid": "37661017",
+  "doi": "10.1016/j.neuroscience.2023.08.036",
+  "title": "NEDD4 Like E3 Ubiquitin Protein Ligase Represses Astrocyte Activation and Aggravates Neuroinflammation in Mice with Depression via Paired Box 6 Ubiquitination.",
+  "abstract": "Astrocytes are implicated in stress-induced neuroinflammatory responses in depression. This paper was to explore the molecular mechanism of the E3 ubiquitin ligase NEDD4L (NEDD4 like E3 ubiquitin protein ligase) in depressed mice by regulating astrocyte activation, and to find a new target for depression. A mouse model of depression was established by CUMS (chronic mild unpredictable stress) in 48 6-week male C57BL/6 mice and injected with sh-NEDD4L vector for testing behavioral and cognitive abilities, histopathological changes, and the number of GFAP-positive cells. The mRNA and protein levels of NEDD4L, PAX6 (paired box 6) and P2X7R (purinergic ligand-gated ion channel 7 receptor) were measured. Inflammation model was established by lipopolysaccharide treatment of mouse astrocyte line C8-D1A and infected with sh-NEDD4L. After CUMS induction, mice showed depression-like symptoms, increased inflammatory infiltration, decreased glial fibrillary acidic protein (GFAP)-positive cells in brain tissue, and increased NEDD4L protein levels. NEDD4L inhibition increased GFAP-positive cells, increased PAX6 protein levels and decreased P2X7R mRNA and protein levels, and decreased inflammatory factor secretion in brain tissue and in vitro cells. PAX6 knockdown or P2X7R overexpression partially reversed the effects of NEDD4L inhibition on astrocyte activation and neuroinflammation. To conclude, highly-expressed NEDD4L in depression-like mouse brain inhibits astrocyte activation and exacerbates neuroinflammation by ubiquitinating PAX6 and promoting P2X7R level.",
+  "year": "2023",
+  "journal": "Neuroscience",
+  "authors": [
+    "Wang X",
+    "Su M",
+    "Wang L",
+    "Zhou Y",
+    "Li N",
+    "Yang B"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/37661017/",
+    "publisher": "https://doi.org/10.1016/j.neuroscience.2023.08.036"
+  }
+}

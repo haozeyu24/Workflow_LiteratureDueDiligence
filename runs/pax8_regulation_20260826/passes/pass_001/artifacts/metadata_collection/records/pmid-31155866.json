@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-31155866",
+  "pmid": "31155866",
+  "doi": "10.13702/j.1000-0607.180593",
+  "title": "[Effect of electroacupuncture at \"Weizhong\" (BL40) on expression of collagen I and matrix meta-lloproteinases 2 in rats with lumbar multifidus muscle injury].",
+  "abstract": "OBJECTIVE: To observe the effect of electroacupuncture (EA) at \"Weizhong\" (BL40) on histopathological changes and expression of extracellular matrix (ECM) component Collagen \u2160\uff0c matrix metalloproteinases 2 (MMP2), MyoD and Pax7 proteins of lumbar muscle tissues in rats with lumbar multifidus muscle injury (LMMI), so as to explore its underlying mechanisms in improving muscular injury.\n\nMETHODS: A total of 24 male SD rats were equally randomized into blank control, model and EA groups. The LMMI model was established by injection of 0.5% Bupivacaine (100 \u00b5L/ point) into bilateral multifidus muscles of lumbar 4 and 5 (4 points). EA (2 Hz/100 Hz in frequency, 1\uff0d2 mA) was applied to BL40 for 20 min, once a day for 3 days. The morphological changes of the left lumbar multifidus muscle were observed under microscope after H\uff0eE. and Masson staining, and the expression of Collagen \u2160\uff0c MMP2, MyoD and Pax7 of the right lumbar multifidus muscle was determined by Western blot.\n\nRESULTS: H\uff0eE. staining showed large areas of degeneration and necrosis of muscle fibers, and vacuolar structure formed by degradation of muscle fibers in the model group, and newborn juvenile muscle fibers with different diameters in the EA group. Masson staining showed a large number of morphologically damaged muscle fibers and blue stained collagen fibers in the model group, and significantly reduced collagen fibers as well as new muscle fibers with uneven diameters in the EA group. The expression levels of Collagen \u2160\uff0c MMP2 and MyoD proteins were significantly up-regulated (P<0.01, P<0.05), and that of Pax7 was considerably down-regulated in the model group relative to the control group (P<0.01). After EA intervention, the expression levels of Collagen \u2160 was significantly down-regulated (P<0.01), and those of MMP2, MyoD and Pax7 proteins were obviously or further obviously up-regulated in the EA group compared with the model group (P<0.01, P<0.05).\n\nCONCLUSION: EA at BL40 can reduce the degree of skeletal muscle fibrosis to promote the regeneration of the injured multifidus at the early phase, which may be related to its effect in regulating the expression of Collagen \u2160 and MMP2 proteins.",
+  "year": "2019",
+  "journal": "Zhen ci yan jiu = Acupuncture research",
+  "authors": [
+    "Chen YP",
+    "Liu T",
+    "Xu Y",
+    "Chen J",
+    "Wang SY",
+    "Zhang L",
+    "Huo ZJ"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/31155866/",
+    "publisher": "https://doi.org/10.13702/j.1000-0607.180593"
+  }
+}

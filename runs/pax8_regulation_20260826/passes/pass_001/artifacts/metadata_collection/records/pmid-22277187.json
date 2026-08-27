@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-22277187",
+  "pmid": "22277187",
+  "doi": "10.1016/j.archoralbio.2011.12.005",
+  "title": "Novel missense mutations in PAX9 causing oligodontia.",
+  "abstract": "OBJECTIVE: We investigated the disease-causing gene of oligodontia in Chinese families and analysed the pathogenesis of mutations of this gene that results in oligodontia.\n\nMETHODS: Two families with oligodontia, but of different descent and 100 unrelated healthy controls were enrolled in our study. Genomic DNA was isolated from blood samples. Mutation analysis was performed by amplifying MSX1 and PAX9 exons and sequencing the products. After identifying the mutations, we performed site-directed mutagenesis to generate mutated vectors. The wild-type and mutated PAX9 vectors were then transfected separately to NIH3T3 cells. Immunolocalization, electrophoretic mobility shift assay (EMSA) and luciferase reporter assay were performed to analyse the effects of mutations on protein function.\n\nRESULTS: We identified two novel missense mutations, Leu27Pro (L27P) and Ile29Thr (I29T) in the paired-domain of PAX9. Analysis of homologous PAX proteins indicated that these two substitutions may affect the function of the PAX9 protein. Results of immunofluorescence and western blot showed that the mutations did not alter the nuclear localization of PAX9. EMSA and luciferase reporter assays indicated that both the mutated proteins could not bind DNA or transactivate the BMP4 promoter.\n\nCONCLUSIONS: Two novel missense mutations in PAX9 have been indentified in Chinese families causing oligodontia.",
+  "year": "2012",
+  "journal": "Archives of oral biology",
+  "authors": [
+    "Liang J",
+    "Song G",
+    "Li Q",
+    "Bian Z"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/22277187/",
+    "publisher": "https://doi.org/10.1016/j.archoralbio.2011.12.005"
+  }
+}

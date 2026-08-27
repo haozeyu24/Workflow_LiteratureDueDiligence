@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-37110174",
+  "pmid": "37110174",
+  "doi": "10.3390/metabo13040516",
+  "title": "Gymnema Sylvestre Supplementation Restores Normoglycemia, Corrects Dyslipidemia, and Transcriptionally Modulates Pancreatic and Hepatic Gene Expression in Alloxan-Induced Hyperglycemic Rats.",
+  "abstract": "Gymnema sylvestre is traditionally used as an herbal remedy for diabetes. The effect of Gymnema sylvestre supplementation on beta cell and hepatic activity was explored in an alloxan-induced hyperglycemic adult rat. Animals were made hyperglycemic via a single inj. (i.p) of Alloxan. Gymnema sylvestre was supplemented in diet @250 mg/kg and 500 mg/kg b.w. Animals were sacrificed, and blood and tissues (pancreas and liver) were collected for biochemical, expression, and histological analysis. Gymnema sylvestre significantly reduced blood glucose levels with a subsequent increase in plasma insulin levels in a dosage-dependent manner. Total oxidant status (TOS), malondialdehyde, LDL, VLDL, ALT, AST, triglyceride, total cholesterol, and total protein levels were reduced significantly. Significantly raised paraoxonase, arylesterase, albumin, and HDL levels were also observed in Gymnema sylvestre treated hyperglycemic rats. Increased mRNA expression of Ins-1, Ins-2, Gck, Pdx1, Mafa, and Pax6 was observed, while decreased expression of Cat, Sod1, Nrf2, and NF-kB was observed in the pancreas. However, increased mRNA expression of Gck, Irs1, SREBP1c, and Foxk1 and decreased expression of Irs2, ChREBP, Foxo1, and FoxA2 were observed in the liver. The current study indicates the potent effect of Gymnema sylvestre on the transcription modulation of the insulin gene in the alloxan-induced hyperglycemic rat model. Enhanced plasma insulin levels further help to improve hyperglycemia-induced dyslipidemia through transcriptional modulation of hepatocytes.",
+  "year": "2023",
+  "journal": "Metabolites",
+  "authors": [
+    "Muzaffar H",
+    "Qamar I",
+    "Bashir M",
+    "Jabeen F",
+    "Irfan S",
+    "Anwar H"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/37110174/",
+    "publisher": "https://doi.org/10.3390/metabo13040516"
+  }
+}

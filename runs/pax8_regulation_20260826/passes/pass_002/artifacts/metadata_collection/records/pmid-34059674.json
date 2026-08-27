@@ -1,0 +1,28 @@
+{
+  "paper_id": "pmid-34059674",
+  "pmid": "34059674",
+  "doi": "10.1038/s41467-021-23577-z",
+  "title": "Acetylation of PAX7 controls muscle stem cell self-renewal and differentiation potential in mice.",
+  "abstract": "Muscle stem cell function has been suggested to be regulated by Acetyl-CoA and NAD+ availability, but the mechanisms remain unclear. Here we report the identification of two acetylation sites on PAX7 that positively regulate its transcriptional activity. Lack of PAX7 acetylation reduces DNA binding, specifically to the homeobox motif. The acetyltransferase MYST1 stimulated by Acetyl-CoA, and the deacetylase SIRT2 stimulated by NAD\u2009+, are identified as direct regulators of PAX7 acetylation and asymmetric division in muscle stem cells. Abolishing PAX7 acetylation in mice using CRISPR/Cas9 mutagenesis leads to an expansion of the satellite stem cell pool, reduced numbers of asymmetric stem cell divisions, and increased numbers of oxidative IIA myofibers. Gene expression analysis confirms that lack of PAX7 acetylation preferentially affects the expression of target genes regulated by homeodomain binding motifs. Therefore, PAX7 acetylation status regulates muscle stem cell function and differentiation potential to facilitate metabolic adaptation of muscle tissue.",
+  "year": "2021",
+  "journal": "Nature communications",
+  "authors": [
+    "Sincennes MC",
+    "Brun CE",
+    "Lin AYT",
+    "Rosembert T",
+    "Datzkiw D",
+    "Saber J",
+    "Ming H",
+    "Kawabe YI",
+    "Rudnicki MA"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/34059674/",
+    "publisher": "https://doi.org/10.1038/s41467-021-23577-z"
+  }
+}

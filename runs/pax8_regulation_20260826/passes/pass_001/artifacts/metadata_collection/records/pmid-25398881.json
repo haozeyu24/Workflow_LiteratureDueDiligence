@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-25398881",
+  "pmid": "25398881",
+  "doi": "10.1074/jbc.M114.591628",
+  "title": "Heat shock 70-kDa protein 5 (Hspa5) is essential for pronephros formation by mediating retinoic acid signaling.",
+  "abstract": "Heat shock 70-kDa protein 5 (Hspa5), also known as binding immunoglobulin protein (Bip) or glucose-regulated protein 78 (Grp78), belongs to the heat shock protein 70 kDa family. As a multifunctional protein, it participates in protein folding and calcium homeostasis and serves as an essential regulator of the endoplasmic reticulum (ER) stress response. It has also been implicated in signal transduction by acting as a receptor or co-receptor residing at the plasma membrane. Its function during embryonic development, however, remains largely elusive. In this study, we used morpholino antisense oligonucleotides (MOs) to knock down Hspa5 activity in Xenopus embryos. In Hspa5 morphants, pronephros formation was strongly inhibited with the reduction of pronephric marker genes Lim homeobox protein 1 (lhx1), pax2, and \u03b21 subunit of Na/K-ATPase (atp1b1). Pronephros tissue was induced in vitro by treating animal caps with all-trans-retinoic acid and activin. Depletion of Hspa5 in animal caps, however, blocked the induction of pronephros as well as reduced the expression of retinoic acid (RA)-responsive genes, suggesting that knockdown of Hspa5 attenuated RA signaling. Knockdown of Hspa5 in animal caps resulted in decreased expression of lhx1, a transcription factor directly regulated by RA signaling and essential for pronephros specification. Co-injection of Hspa5MO with lhx1 mRNA partially rescued the phenotype induced by Hspa5MO. These results suggest that the RA-Lhx1 signaling cascade is involved in Hspa5MO-induced pronephros malformation. This study shows that Hspa5, a key regulator of the unfolded protein response, plays an essential role in pronephros formation, which is mediated in part through RA signaling during early embryonic development.",
+  "year": "2015",
+  "journal": "The Journal of biological chemistry",
+  "authors": [
+    "Shi W",
+    "Xu G",
+    "Wang C",
+    "Sperber SM",
+    "Chen Y",
+    "Zhou Q",
+    "Deng Y",
+    "Zhao H"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/25398881/",
+    "publisher": "https://doi.org/10.1074/jbc.M114.591628"
+  }
+}

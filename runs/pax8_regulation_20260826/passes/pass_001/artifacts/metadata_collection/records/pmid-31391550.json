@@ -1,0 +1,31 @@
+{
+  "paper_id": "pmid-31391550",
+  "pmid": "31391550",
+  "doi": "10.1038/s41388-019-0907-2",
+  "title": "HBx regulates transcription factor PAX8 stabilization to promote the progression of hepatocellular carcinoma.",
+  "abstract": "Transcription factor PAX8 expression is upregulated in several types of cancers. However, little is known about the function of PAX8 in the progression of hepatoma and its regulatory mechanisms. Here, we show that PAX8 silencing inhibits the proliferation and clonogenicity of hepatoma cells and its growth in vivo. The HBV X protein (HBx) does not directly interacts, but stabilizes PAX8 by inhibiting proteasome-dependent ubiquitination and degradation. Furthermore, the E3 ubiquitin ligase complex component Skp2 through its LRR domain directly interacts with the Prd domain of PAX8 and targets PAX8 by recognizing its lysine 275 for ubiquitination and degradation in hepatoma cells. In addition, HBx directly interacts and is colocalized with Skp2 to inhibit its recognition and subsequent ubiquitination and degradation of PAX8 in hepatoma cells. Moreover, HBx upregulates the expression and phosphorylation of Aurora A, a serine-threonine kinase, which interacts with and phosphorylates PAX8 at S209 and T277, compromising the Skp2-recognized PAX8 ubiquitination and destabilization. Thus, HBx stabilizes PAX8 protein by inhibiting the Skp2 targeted PAX8 ubiquitination and enhancing the Aurora A-mediated its phosphorylation, contributing to the progression of hepatoma. Our findings suggest that PAX8 may a new target for design of therapies and uncover new insights into the pathogenesis of hepatoma.",
+  "year": "2019",
+  "journal": "Oncogene",
+  "authors": [
+    "Wang J",
+    "Li N",
+    "Huang ZB",
+    "Fu S",
+    "Yu SM",
+    "Fu YM",
+    "Zhou PC",
+    "Chen RC",
+    "Zhou RR",
+    "Huang Y",
+    "Hu XW",
+    "Fan XG"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (stability[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR lysosome[Title/Abstract] OR autophagy[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/31391550/",
+    "publisher": "https://doi.org/10.1038/s41388-019-0907-2"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "paper_id": "pmid-32484994",
+  "pmid": "32484994",
+  "doi": "10.15252/embj.2019104163",
+  "title": "NR2F1 regulates regional progenitor dynamics in the mouse neocortex and cortical gyrification in BBSOAS patients.",
+  "abstract": "The relationships between impaired cortical development and consequent malformations in neurodevelopmental disorders, as well as the genes implicated in these processes, are not fully elucidated to date. In this study, we report six novel cases of patients affected by BBSOAS (Boonstra-Bosch-Schaff optic atrophy syndrome), a newly emerging rare neurodevelopmental disorder, caused by loss-of-function mutations of the transcriptional regulator NR2F1. Young patients with NR2F1 haploinsufficiency display mild to moderate intellectual disability and show reproducible polymicrogyria-like brain malformations in the parietal and occipital cortex. Using a recently established BBSOAS mouse model, we found that Nr2f1 regionally controls long-term self-renewal of neural progenitor cells via modulation of cell cycle genes and key cortical development master genes, such as Pax6. In the human fetal cortex, distinct NR2F1 expression levels encompass gyri and sulci and correlate with local degrees of neurogenic activity. In addition, reduced NR2F1 levels in cerebral organoids affect neurogenesis and PAX6 expression. We propose NR2F1 as an area-specific regulator of mouse and human brain morphology and a novel causative gene of abnormal gyrification.",
+  "year": "2020",
+  "journal": "The EMBO journal",
+  "authors": [
+    "Bertacchi M",
+    "Romano AL",
+    "Loubat A",
+    "Tran Mau-Them F",
+    "Willems M",
+    "Faivre L",
+    "Khau van Kien P",
+    "Perrin L",
+    "Devillard F",
+    "Sorlin A",
+    "Kuentz P",
+    "Philippe C",
+    "Garde A",
+    "Neri F",
+    "Di Giaimo R",
+    "Oliviero S",
+    "Cappello S",
+    "D'Incerti L",
+    "Frassoni C",
+    "Studer M"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/32484994/",
+    "publisher": "https://doi.org/10.15252/embj.2019104163"
+  }
+}

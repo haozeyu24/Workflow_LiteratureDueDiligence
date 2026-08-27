@@ -1,0 +1,32 @@
+{
+  "paper_id": "pmid-40378211",
+  "pmid": "40378211",
+  "doi": "10.1126/sciadv.adu6632",
+  "title": "Dual DNA demethylation mechanisms implement epigenetic memory driven by the pioneer factor PAX7.",
+  "abstract": "Pioneer transcription factors have the unique ability to open chromatin at enhancers to implement new cell fates. They also provide epigenetic memory through demethylation of enhancer DNA, but the underlying mechanisms remain unclear. We now show that the pioneer paired box 7 (PAX7) triggers DNA demethylation using two replication-dependent mechanisms, including direct PAX7 interaction with the E3 ubiquitin-protein ligase (UHRF1)-DNA methyltransferase 1 (DNMT1) complex that is responsible for DNA methylation maintenance. PAX7 binds to UHRF1 and prevents its interaction with DNMT1, thus blocking activation of its enzyme activity. The ten-eleven translocation DNA dioxygenase (TET) DNA demethylases also contribute to the replication-dependent loss of DNA methylation. Thus, PAX7 hijacks UHRF1 to block activation of DNMT1 after replication, leading to loss of DNA methylation by dilution, and the process is assisted by the action of TET demethylases.",
+  "year": "2025",
+  "journal": "Science advances",
+  "authors": [
+    "Harris J",
+    "Mayran A",
+    "Gouhier A",
+    "Gauthier Y",
+    "Sleiman NH",
+    "Merabet S",
+    "Dukatz M",
+    "Bashtrykov P",
+    "Jeltsch A",
+    "Djambazian H",
+    "Chen SH",
+    "Balsalobre A",
+    "Drouin J"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/40378211/",
+    "publisher": "https://doi.org/10.1126/sciadv.adu6632"
+  }
+}

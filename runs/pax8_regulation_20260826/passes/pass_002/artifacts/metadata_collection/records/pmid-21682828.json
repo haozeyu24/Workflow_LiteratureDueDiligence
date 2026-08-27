@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-21682828",
+  "pmid": "21682828",
+  "doi": "10.1111/j.1872-034X.2011.00827.x",
+  "title": "Activator protein-2\u03b1 functions as a master regulator of multiple transcription factors in the mouse liver.",
+  "abstract": "AIM: Activator protein 2\u03b1 (AP-2\u03b1) belongs to the AP-2 family of transcription factors that are involved in the regulation of cell proliferation, differentiation, apoptosis and carcinogenesis and has been suggested to function as a tumor suppressor in many cancers. However, the physiological role of AP-2\u03b1 in hepatocytes is unknown. The present study is to characterize the expression and function of AP-2\u03b1 in the liver of conscience mouse.\n\nMETHODS: Exogenous AP-2\u03b1 was overexpressed in the mouse liver by in vivo gene delivery and changes in transcription factor expression were identified by using protein-DNA arrays and immunoblotting.\n\nRESULTS: Western blotting and protein/DNA arrays showed that AP-2\u03b1 is expressed in the nuclei of mouse hepatocytes. Overexpression of AP-2\u03b1in vivo significantly suppressed transcription factors AP-1, CREB and c-Myc, and markedly increased CBF, c-Myb, NF-1, Pax-5, RXR, Smad3/4, TR(DR-4), USF-1 and GATA. Among all GATA proteins, only GATA-4 level was dramatically elevated and there was a concomitant loss of phospho-GATA-4. Corresponding changes were detected in upstream kinases Akt, GSK-3\u03b2 and PKA, which regulates the phosphorylation status and stability of GATA-4 protein.\n\nCONCLUSIONS: AP-2\u03b1 is expressed in mouse hepatocytes and it acts as a master regulator of numerous transcription factors in the liver.",
+  "year": "2011",
+  "journal": "Hepatology research : the official journal of the Japan Society of Hepatology",
+  "authors": [
+    "Li Q",
+    "Luo C",
+    "L\u00f6hr CV",
+    "Dashwood RH"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/21682828/",
+    "publisher": "https://doi.org/10.1111/j.1872-034X.2011.00827.x"
+  }
+}

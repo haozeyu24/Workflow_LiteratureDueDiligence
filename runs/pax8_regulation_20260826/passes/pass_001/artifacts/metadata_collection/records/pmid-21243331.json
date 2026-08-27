@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-21243331",
+  "pmid": "21243331",
+  "doi": "10.1007/s00122-011-1528-5",
+  "title": "Molecular basis of seed lipoxygenase null traits in soybean line OX948.",
+  "abstract": "The poor stability and off-flavors of soybean oil and protein products can be reduced by eliminating lipoxygenases from soybean seed. Mature seeds of OX948, a lipoxygenase triple null mutant line, do not contain lipoxygenase proteins. The objective of this study was to determine the molecular basis of the seed lipoxygenase null traits in OX948. Comparisons of the sequences for lipoxygenase 1 (Lx1) and lipoxygenase 2 (Lx2) genes in the mutant (OX948) with those in a line with normal lipoxygenase levels (RG10) showed that the mutations in these genes affected a highly conserved group of six histidines necessary for enzymatic activity. The OX948 mutation in Lx1 is a 74\u00a0bp deletion in exon 8, which introduces a stop codon that prematurely terminates translation. A single T-A substitution in Lx2 changes histidine H532 (one of the iron-binding ligands essential for L-2 activity) to glutamine. The mutation in the lipoxygenase 3 (Lx3) gene in OX948 is in the promoter region and represents two single base substitutions in a cis-acting AAATAC paired box. All three mutations would result in the loss of lipoxygenase activity in mature seed. The seed lipoxygenase gene mutation-based molecular markers could be used to accelerate and simplify breeding efforts for soybean cultivars with improved flavor.",
+  "year": "2011",
+  "journal": "TAG. Theoretical and applied genetics. Theoretische und angewandte Genetik",
+  "authors": [
+    "Reinprecht Y",
+    "Luk-Labey SY",
+    "Yu K",
+    "Poysa VW",
+    "Rajcan I",
+    "Ablett GR",
+    "Peter Pauls K"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/21243331/",
+    "publisher": "https://doi.org/10.1007/s00122-011-1528-5"
+  }
+}

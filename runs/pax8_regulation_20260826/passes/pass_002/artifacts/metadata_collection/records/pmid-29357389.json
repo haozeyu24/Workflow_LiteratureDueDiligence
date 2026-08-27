@@ -1,0 +1,22 @@
+{
+  "paper_id": "pmid-29357389",
+  "pmid": "29357389",
+  "doi": "10.1371/journal.ppat.1006868",
+  "title": "Interferon regulatory factor 8 regulates caspase-1 expression to facilitate Epstein-Barr virus reactivation in response to B cell receptor stimulation and chemical induction.",
+  "abstract": "Interferon regulatory factor 8 (IRF8), also known as interferon consensus sequence-binding protein (ICSBP), is a transcription factor of the IRF family. IRF8 plays a key role in normal B cell differentiation, a cellular process that is intrinsically associated with Epstein-Barr virus (EBV) reactivation. However, whether IRF8 regulates EBV lytic replication remains unknown. In this study, we utilized a CRISPR/Cas9 genomic editing approach to deplete IRF8 and found that IRF8 depletion dramatically inhibits the reactivation of EBV upon lytic induction. We demonstrated that IRF8 depletion suppresses the expression of a group of genes involved in apoptosis and thus inhibits apoptosis induction upon lytic induction by B cell receptor (BCR) stimulation or chemical induction. The protein levels of caspase-1, caspase-3 and caspase-8 all dramatically decreased in IRF8-depleted cells, which led to reduced caspase activation and the stabilization of KAP1, PAX5 and DNMT3A upon BCR stimulation. Interestingly, caspase inhibition blocked the degradation of KAP1, PAX5 and DNMT3A, suppressed EBV lytic gene expression and viral DNA replication upon lytic induction, suggesting that the reduced caspase expression in IRF8-depleted cells contributes to the suppression of EBV lytic replication. We further demonstrated that IRF8 directly regulates CASP1 (caspase-1) gene expression through targeting its gene promoter and knockdown of caspase-1 abrogates EBV reactivation upon lytic induction, partially through the stabilization of KAP1. Together our study suggested that, by modulating the activation of caspases and the subsequent cleavage of KAP1 upon lytic induction, IRF8 plays a critical role in EBV lytic reactivation.",
+  "year": "2018",
+  "journal": "PLoS pathogens",
+  "authors": [
+    "Lv DW",
+    "Zhang K",
+    "Li R"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/29357389/",
+    "publisher": "https://doi.org/10.1371/journal.ppat.1006868"
+  }
+}

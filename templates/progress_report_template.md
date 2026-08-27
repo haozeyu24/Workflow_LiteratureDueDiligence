@@ -7,6 +7,7 @@
 ## Current stage
 
 -
+- access phase:
 
 ## Counts
 
@@ -17,6 +18,7 @@
 - no PMC access:
 - PDF needed:
 - final kept:
+- PMC mechanism feedback rows:
 
 ## Queues
 
@@ -25,3 +27,4 @@
 ## Notes
 
 -
+- During `pmc_learning`, manual PDFs are deferred while PMC-readable full text is used to improve query terms.

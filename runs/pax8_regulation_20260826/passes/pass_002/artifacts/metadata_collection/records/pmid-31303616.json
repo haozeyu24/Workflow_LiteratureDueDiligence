@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-31303616",
+  "pmid": "31303616",
+  "doi": "10.11817/j.issn.1672-7347.2019.05.009",
+  "title": "[Molecular markers derived from ovarian cancer and its correlation with the types of oviductal epithelial lesions].",
+  "abstract": "To explore the role of P53, pairing box gene 8 antibody (PAX8), and calcium omentum protein (Calretinin) in the origin of epithelial ovarian cancer.\u2029 Methods: A total of 63 tissue samples of ovarian tumor and fallopian tubes were collected. Immunohistochemistry methods were used to analyze the expression of P53, PAX8, and Calretinin. The relationship between these protein levels and the classification of ovarian tumors was evaluated.\u2029 Results: In epithelial ovarian cancer, the P53 or PAX8 was correlated with the occurrence of high-grade carcinoma, while the calretinin was correlated with the occurrence of low-grade carcinoma (P<0.05). The combination of PAX8 with Calretinin was correlated with the grade of ovarian tumor (P<0.05). The combination of P53 with Calretinin was correlated with the grade of tumor (P<0.05). The combination of P53 with PAX8 was correlated with the grade of tumor (P<0.05). The expression of P53 in fallopian tubes was correlated with the malignant degree of epithelial ovarian cancer (P<0.05). The degree of fallopian tube lesions in patients with ovarian cancer was correlated with epithelial ovarian cancer. The malignant lesions of tubal epithelium was correlated with high-grade carcinoma, while the normal or atypical hyperplasia of tubal epithelium was correlated with low-grade carcinoma (P<0.05).\u2029 Conclusion: P53 and Calretinin combined with PAX8 show a synergistic effect on the differentiation of epithelial ovarian cancer grade. The morphology of HE and the expression of TP53 in the fallopian tube epithelium play an auxiliary role in the diagnosis of epithelial ovarian cancer.",
+  "year": "2019",
+  "journal": "Zhong nan da xue xue bao. Yi xue ban = Journal of Central South University. Medical sciences",
+  "authors": [
+    "Yuan Y",
+    "Zhu W",
+    "Gong G",
+    "Jiang J",
+    "Wang Y",
+    "Wu X"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (\"protein stability\"[Title/Abstract] OR \"protein levels\"[Title/Abstract] OR stabilization[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract]) NOT \"PAX8-AS1\"[Title/Abstract]"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/31303616/",
+    "publisher": "https://doi.org/10.11817/j.issn.1672-7347.2019.05.009"
+  }
+}

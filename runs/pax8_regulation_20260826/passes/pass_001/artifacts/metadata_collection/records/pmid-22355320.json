@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-22355320",
+  "pmid": "22355320",
+  "doi": "10.1371/journal.pone.0030614",
+  "title": "Functional redundancy of two Pax-like proteins in transcriptional activation of cyst wall protein genes in Giardia lamblia.",
+  "abstract": "The protozoan Giardia lamblia differentiates from a pathogenic trophozoite into an infectious cyst to survive outside of the host. During encystation, genes encoding cyst wall proteins (CWPs) are coordinately induced. Pax family transcription factors are involved in a variety of developmental processes in animals. Nine Pax proteins have been found to play an important role in tissue and organ development in humans. To understand the progression from primitive to more complex eukaryotic cells, we tried to identify putative pax genes in the G. lamblia genome and found two genes, pax1 and pax2, with limited similarity. We found that Pax1 may transactivate the encystation-induced cwp genes and interact with AT-rich initiatior elements that are essential for promoter activity and transcription start site selection. In this study, we further characterized Pax2 and found that, like Pax1, Pax2 was present in Giardia nuclei and it may specifically bind to the AT-rich initiator elements of the encystation-induced cwp1-3 and myb2 genes. Interestingly, overexpression of Pax2 increased the cwp1-3 and myb2 gene expression and cyst formation. Deletion of the C-terminal paired domain or mutation of the basic amino acids of the paired domain resulted in a decrease of nuclear localization, DNA-binding activity, and transactivation activity of Pax2. These results are similar to those found in the previous Pax1 study. In addition, the profiles of gene expression in the Pax2 and Pax1 overexpressing cells significantly overlap in the same direction and ERK1 associated complexes may phosphorylate Pax2 and Pax1, suggesting that Pax2 and Pax1 may be downstream components of a MAPK/ERK1 signaling pathway. Our results reveal functional redundancy between Pax2 and Pax1 in up-regulation of the key encystation-induced genes. These results illustrate functional redundancy of a gene family can occur in order to increase maintenance of important gene function in the protozoan organism G. lamblia.",
+  "year": "2012",
+  "journal": "PloS one",
+  "authors": [
+    "Chuang SF",
+    "Su LH",
+    "Cho CC",
+    "Pan YJ",
+    "Sun CH"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/22355320/",
+    "publisher": "https://doi.org/10.1371/journal.pone.0030614"
+  }
+}

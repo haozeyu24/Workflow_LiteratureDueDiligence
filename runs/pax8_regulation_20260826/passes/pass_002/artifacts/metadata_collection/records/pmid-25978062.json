@@ -1,0 +1,28 @@
+{
+  "paper_id": "pmid-25978062",
+  "pmid": "25978062",
+  "doi": "10.1371/journal.pone.0126942",
+  "title": "EphA4 Regulates the Balance between Self-Renewal and Differentiation of Radial Glial Cells and Intermediate Neuronal Precursors in Cooperation with FGF Signaling.",
+  "abstract": "In mouse cerebral corticogenesis, neurons are generated from radial glial cells (RGCs) or from their immediate progeny, intermediate neuronal precursors (INPs). The balance between self-renewal of these neuronal precursors and specification of cell fate is critical for proper cortical development, but the signaling mechanisms that regulate this progression are poorly understood. EphA4, a member of the receptor tyrosine kinase superfamily, is expressed in RGCs during embryogenesis. To illuminate the function of EphA4 in RGC cell fate determination during early corticogenesis, we deleted Epha4 in cortical cells at E11.5 or E13.5. Loss of EphA4 at both stages led to precocious in vivo RGC differentiation toward neurogenesis. Cortical cells isolated at E14.5 and E15.5 from both deletion mutants showed reduced capacity for neurosphere formation with greater differentiation toward neurons. They also exhibited lower phosphorylation of ERK and FRS2\u03b1 in the presence of FGF. The size of the cerebral cortex at P0 was smaller than that of controls when Epha4 was deleted at E11.5 but not when it was deleted at E13.5, although the cortical layers were formed normally in both mutants. The number of PAX6-positive RGCs decreased at later developmental stages only in the E11.5 Epha4 deletion mutant. These results suggest that EphA4, in cooperation with an FGF signal, contributes to the maintenance of RGC self-renewal and repression of RGC differentiation through the neuronal lineage. This function of EphA4 is especially critical and uncompensated in early stages of corticogenesis, and thus deletion at E11.5 reduces the size of the neonatal cortex.",
+  "year": "2015",
+  "journal": "PloS one",
+  "authors": [
+    "Chen Q",
+    "Arai D",
+    "Kawakami K",
+    "Sawada T",
+    "Jing X",
+    "Miyajima M",
+    "Hirai S",
+    "Sakaguchi K",
+    "Furushima K"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/25978062/",
+    "publisher": "https://doi.org/10.1371/journal.pone.0126942"
+  }
+}

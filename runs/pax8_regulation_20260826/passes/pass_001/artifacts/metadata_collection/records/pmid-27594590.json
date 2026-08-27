@@ -1,0 +1,39 @@
+{
+  "paper_id": "pmid-27594590",
+  "pmid": "27594590",
+  "doi": "10.1016/j.stemcr.2016.08.002",
+  "title": "Identification and Characterization of the Dermal Panniculus Carnosus Muscle Stem Cells.",
+  "abstract": "The dermal Panniculus carnosus (PC) muscle is important for wound contraction in lower mammals and represents an interesting model\u00a0of muscle regeneration due to its high cell turnover. The resident satellite cells (the bona fide muscle stem cells) remain poorly characterized. Here we analyzed PC satellite cells with regard to developmental origin and purported function. Lineage tracing shows that they originate in Myf5(+), Pax3/Pax7(+) cell populations. Skin and muscle wounding increased PC myofiber turnover, with the satellite cell progeny being involved in muscle regeneration but with no detectable contribution to the wound-bed myofibroblasts. Since hematopoietic stem cells fuse to PC myofibers in the absence of injury, we also studied the contribution of bone marrow-derived cells to the PC\u00a0satellite cell compartment, demonstrating that cells of donor origin are capable of repopulating the PC muscle stem cell niche after irradiation and bone marrow transplantation but may not fully acquire the relevant myogenic commitment.",
+  "year": "2016",
+  "journal": "Stem cell reports",
+  "authors": [
+    "Naldaiz-Gastesi N",
+    "Goicoechea M",
+    "Alonso-Mart\u00edn S",
+    "Aiastui A",
+    "L\u00f3pez-Mayorga M",
+    "Garc\u00eda-Belda P",
+    "Lacalle J",
+    "San Jos\u00e9 C",
+    "Ara\u00fazo-Bravo MJ",
+    "Trouilh L",
+    "Anton-Leberre V",
+    "Herrero D",
+    "Matheu A",
+    "Bernad A",
+    "Garc\u00eda-Verdugo JM",
+    "Carvajal JJ",
+    "Relaix F",
+    "Lopez de Munain A",
+    "Garc\u00eda-Parra P",
+    "Izeta A"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/27594590/",
+    "publisher": "https://doi.org/10.1016/j.stemcr.2016.08.002"
+  }
+}

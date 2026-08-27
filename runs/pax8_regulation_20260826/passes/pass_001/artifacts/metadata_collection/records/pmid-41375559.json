@@ -1,0 +1,28 @@
+{
+  "paper_id": "pmid-41375559",
+  "pmid": "41375559",
+  "doi": "10.3390/ani15233501",
+  "title": "Blood Transcriptome Analysis Reveals Immune Characteristics of Captive Forest Musk Deer (Moschus berezovskii) at High Altitude in Bianba County, Tibet.",
+  "abstract": "The hypoxic, cold, and high-ultraviolet radiation environments at high altitude pose severe challenges to mammalian immune and metabolic systems. However, little is known about how captive forest musk deer adapt to high-altitude environments and their seasonal variations. This study analyzed peripheral blood transcriptomes of 33 captive forest musk deer (Moschus berezovskii) at high altitude (~3900 m) and low altitude (~1450 m) during autumn-winter and spring-summer seasons. Results revealed comprehensive immune suppression in the high-altitude group during autumn-winter (downregulation of complement system CFB/C2/C3, interferon pathway genes including FLT3, with only natural killer (NK) cell PRKCQ upregulated), coupled with energy-conserving metabolic reprogramming (altered carbohydrate metabolism, inhibited lipid synthesis, fat mobilization, suppressed protein degradation). During spring-summer, neutrophil antimicrobial responses (SLPI/NCF1/ELANE) and humoral immunity (B cell differentiation genes PAX5/RUNX1; class-switch enzyme AICDA) partially recovered while cellular immunity (IL15/B2M) remained suppressed, accompanied by enhanced anabolic metabolism and adipocyte differentiation. Notably, NK cell-mediated cytotoxicity showed selective enhancement despite comprehensive immune suppression, representing an energy-efficient innate defense strategy. This study provides the first characterization of seasonal immune dynamics in a high-altitude cervid species. These findings reveal persistent immune constraints in high-altitude populations and provide theoretical foundations for disease prevention and health management in captive forest musk deer at high altitudes.",
+  "year": "2025",
+  "journal": "Animals : an open access journal from MDPI",
+  "authors": [
+    "Chen L",
+    "Li X",
+    "Chen Z",
+    "Bai J",
+    "Zhao Y",
+    "Gan M",
+    "Chang W",
+    "Cai J",
+    "Zhang X"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/41375559/",
+    "publisher": "https://doi.org/10.3390/ani15233501"
+  }
+}

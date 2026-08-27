@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-39460795",
+  "pmid": "39460795",
+  "doi": "10.1007/s11033-024-10026-5",
+  "title": "Differential regulation of Shh-Gli1 cell signalling pathway on homeodomain transcription factors Nkx2.2 and Pax6 during the medulloblastoma genesis.",
+  "abstract": "BACKGROUND: Medulloblastoma is a pediatric malignant brain tumor associated with an aberrantly activated Shh pathway. The Shh pathway acts via downstream effector molecules, including Pax6 and Nkx2.2. Transcription factor Nkx2.2 plays crucial roles during early embryonic patterning and development. In this study, we aimed to determine the role of transcription factor Nkx2.2 in medulloblastoma development.\n\nMETHODS AND RESULTS: Here, whole transcriptome levels and suppressive effect of transcription factor Nkx2.2 on Pax6 were assessed using one normal human brain and three surgically removed medulloblastoma samples. Additionally, protein levels of Shh, Gli1, Pax6, and Nkx2.2 and co-expression patterns of Pax6 and Nkx2.2 were assessed in 14 medulloblastoma samples. Quantitative reverse transcription-polymerase chain reaction revealed the suppressive effect of Nkx2.2 on Pax6. D283 cells were treated with the Shh pathway activator, SAG, and Gli1 inhibitor, GANT61, which revealed Pax6-Nkx2.2 regulation. Increased cell proliferation was observed in D283 cells transfected with Nkx2.2 small interfering RNA. Moreover, mRNA expression levels of Shh, Pax6, Nkx2.2, and Gli1 were assessed in Daoy cells transfected with Gli1 and Nkx2.2 small interfering RNAs using quantitative reverse transcription-polymerase chain reaction. Pax6 levels were increased in Nkx2.2 siRNA-transfected cells.\n\nCONCLUSIONS: Aberrantly activated Shh pathway leads to the ectopic expression of Pax6 in granular cells, inducing medulloblastoma development. Moreover, Nkx2.2 transcription factor acts as a suppressor of Pax6 during medulloblastoma development and maintenance. Overall, this study provides novel insights for the development of effective therapeutic strategies and suggests potential targets for medulloblastoma.",
+  "year": "2024",
+  "journal": "Molecular biology reports",
+  "authors": [
+    "P M MM",
+    "Farheen S",
+    "Sharma RM",
+    "Shahi MH"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/39460795/",
+    "publisher": "https://doi.org/10.1007/s11033-024-10026-5"
+  }
+}

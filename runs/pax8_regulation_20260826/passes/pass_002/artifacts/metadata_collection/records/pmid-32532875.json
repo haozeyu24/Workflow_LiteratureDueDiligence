@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-32532875",
+  "pmid": "32532875",
+  "doi": "10.1101/mcs.a004853",
+  "title": "Case report for an adolescent with germline RET mutation and alveolar rhabdomyosarcoma.",
+  "abstract": "In this case report we evaluate the genetics of and scientific basis of therapeutic options for a 14-yr-old male patient diagnosed with metastatic PAX3-FOXO1 fusion positive alveolar rhabdomyosarcoma. A distinguishing genetic feature of this patient was a germline RET C634F mutation, which is a known driver of multiple endocrine neoplasia type 2A (MEN2A) cancer. Through sequential DNA and RNA sequencing analyses over the patient's clinical course, a set of gene mutations, amplifications, and overexpressed genes were identified and biological hypotheses generated to explore the biology of RET and coexisting signaling pathways in rhabdomyosarcoma. Somatic genetic abnormalities identified include CDK4 amplification and FGFR4 G388R polymorphism. Because of the initial lack of patient-derived primary cell cultures, these hypotheses were evaluated using several approaches including western blot analysis and pharmacological evaluation with molecularly similar alveolar rhabdomyosarcoma cell lines. Once a primary cell culture became available, the RET inhibitor cabozantinib was tested but showed no appreciable efficacy in vitro, affirming with the western blot negative for RET protein expression that RET germline mutation could be only incidental. In parallel, the patient was treated with cabozantinib without definitive clinical benefit. Parallel chemical screens identified PI3K and HSP90 as potential tumor-specific biological features. Inhibitors of PI3K and HSP90 were further validated in drug combination synergy experiments and shown to be synergistic in the patient-derived culture. We also evaluated the use of JAK/STAT pathway inhibitors in the context of rhabdomyosarcomas bearing the FGFR4 G388R coding variant. Although the patient succumbed to his disease, study of the patient's tumor has generated insights into the biology of RET and other targets in rhabdomyosarcoma.",
+  "year": "2020",
+  "journal": "Cold Spring Harbor molecular case studies",
+  "authors": [
+    "Crawford KA",
+    "Berlow NE",
+    "Tsay J",
+    "Lazich M",
+    "Mancini M",
+    "Noakes C",
+    "Huang T",
+    "Keller C"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/32532875/",
+    "publisher": "https://doi.org/10.1101/mcs.a004853"
+  }
+}

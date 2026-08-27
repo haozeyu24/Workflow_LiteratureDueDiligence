@@ -1,0 +1,45 @@
+{
+  "paper_id": "pmid-26459632",
+  "pmid": "26459632",
+  "doi": "10.1093/jmcb/mjv060",
+  "title": "Atad2 is a generalist facilitator of chromatin dynamics in embryonic stem cells.",
+  "abstract": "Although the conserved AAA ATPase and bromodomain factor, ATAD2, has been described as a transcriptional co-activator upregulated in many cancers, its function remains poorly understood. Here, using a combination of ChIP-seq, ChIP-proteomics, and RNA-seq experiments in embryonic stem cells where Atad2 is normally highly expressed, we found that Atad2 is an abundant nucleosome-bound protein present on active genes, associated with chromatin remodelling, DNA replication, and DNA repair factors. A structural analysis of its bromodomain and subsequent investigations demonstrate that histone acetylation guides ATAD2 to chromatin, resulting in an overall increase of chromatin accessibility and histone dynamics, which is required for the proper activity of the highly expressed gene fraction of the genome. While in exponentially growing cells Atad2 appears dispensable for cell growth, in differentiating ES cells Atad2 becomes critical in sustaining specific gene expression programmes, controlling proliferation and differentiation. Altogether, this work defines Atad2 as a facilitator of general chromatin-templated activities such as transcription.",
+  "year": "2016",
+  "journal": "Journal of molecular cell biology",
+  "authors": [
+    "Morozumi Y",
+    "Boussouar F",
+    "Tan M",
+    "Chaikuad A",
+    "Jamshidikia M",
+    "Colak G",
+    "He H",
+    "Nie L",
+    "Petosa C",
+    "de Dieuleveult M",
+    "Curtet S",
+    "Vitte AL",
+    "Rabatel C",
+    "Debernardi A",
+    "Cosset FL",
+    "Verhoeyen E",
+    "Emadali A",
+    "Schweifer N",
+    "Gianni D",
+    "Gut M",
+    "Guardiola P",
+    "Rousseaux S",
+    "G\u00e9rard M",
+    "Knapp S",
+    "Zhao Y",
+    "Khochbin S"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/26459632/",
+    "publisher": "https://doi.org/10.1093/jmcb/mjv060"
+  }
+}

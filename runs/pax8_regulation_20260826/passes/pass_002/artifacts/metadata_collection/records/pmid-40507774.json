@@ -1,0 +1,28 @@
+{
+  "paper_id": "pmid-40507774",
+  "pmid": "40507774",
+  "doi": "10.3390/ijms26114963",
+  "title": "MSTN Regulates Bovine Skeletal Muscle Satellite Cell Differentiation via PSMA6-Mediated AKT Signaling Pathway.",
+  "abstract": "MSTN has been used as a candidate gene in the genetics, breeding, and improvement of animal breeds. However, the possible mechanism by which the MSTN gene regulates muscle development through PSMA6 is not well understood. Previous methylome and transcriptome sequencing analyses of gluteal muscle tissues from MSTN+/-Luxi cattle and wild-type Luxi cattle identified that the PSMA6 gene exhibited a negative correlation between methylation levels and transcriptional activity. To investigate whether MSTN expression regulates PSMA6 gene expression, we examined the effects of MSTN on DNA methyltransferases (DNMT1, DNMT2, DNMT3A, and DNMT3B) and DNA demethylases (TET1, TET2, and TET3). Additionally, chromatin immunoprecipitation (ChIP) assays were performed to detect the binding interaction between PSMA6 and TET2. In this paper, we first established an MSTN knockdown cellular model to preliminarily validate its regulatory effect on PSMA6 expression. Subsequently, the developmental impact of PSMA6 on bovine skeletal muscle satellite cells was further investigated through both knockdown and overexpression of the PSMA6 gene. Furthermore, we examined changes in the expression of key components of the AKT/mTOR signaling pathway to elucidate the mechanisms underlying the PSMA6-mediated regulation of satellite cell development. The results demonstrate that myostatin (MSTN) inhibition significantly decreased proteasome 20S subunit alpha-6 (PSMA6) gene expression, while increasing demethylase expression, particularly ten-eleven translocation-2 (TET2), which exhibited the most pronounced changes. During the cell proliferation stage, the markers Paired Box 7 (PAX7) and Ki-67 exhibited no significant changes, whereas the PSMA6 gene was either overexpressed or disrupted. Conversely, PSMA6 overexpression altered the myogenic differentiation markers, causing the differential regulation of myosin heavy chain (MyHC) and myogenin (MyoG) expression, with MyHC upregulation and concurrent MyoG downregulation. PSMA6 gene overexpression led to the downregulation of AKT1 and Rac1, as well as the activation of the AKT/mTOR pathway, including key factors such as mTOR, p-mTOR, RPS6, p-RPS6, and RhoA. PSMA6 interference resulted in the downregulation of p-mTOR and the upregulation of p-RPS6. Gene expression profiling in our study revealed that the myostatin (MSTN) knockout model significantly reduced the transcriptional levels of the proteasome \u03b16 subunit (PSMA6) (p < 0.05), with the regulatory intensity showing a significant negative correlation with MSTN expression. This molecular evidence substantiates a negative regulatory axis between MSTN and PSMA6. Functional experiments demonstrated that PSMA6 overexpression specifically enhanced myotube formation rates in bovine skeletal muscle satellite cells, whereas siRNA-mediated PSMA6 knockdown exhibited no significant effects on cellular proliferation, indicating the functional specificity of this gene in myogenic differentiation. Mechanistic investigations further revealed that PSMA6 activates the canonical AKT/mTOR signaling transduction cascade through the phosphorylation of AKT and its downstream effector mTOR, thereby mediating the expression of myogenic regulatory factors MyoD and myogenin. Collectively, these findings demonstrate that MSTN deficiency alleviates the transcriptional repression of PSMA6, remodels skeletal muscle differentiation-associated signaling networks, and ultimately drives the directional differentiation of satellite cells toward myofiber specification.",
+  "year": "2025",
+  "journal": "International journal of molecular sciences",
+  "authors": [
+    "Ma T",
+    "Miao M",
+    "Liu X",
+    "Zhang L",
+    "Guo Y",
+    "Li X",
+    "Ding X",
+    "Guo H",
+    "Hu D"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/40507774/",
+    "publisher": "https://doi.org/10.3390/ijms26114963"
+  }
+}

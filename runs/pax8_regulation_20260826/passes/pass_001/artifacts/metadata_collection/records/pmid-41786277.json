@@ -1,0 +1,28 @@
+{
+  "paper_id": "pmid-41786277",
+  "pmid": "41786277",
+  "doi": "10.1016/j.canlet.2026.218381",
+  "title": "Cancer-associated fibroblasts drive gemcitabine resistance in pancreatic cancer by promoting ferroptosis resistance via the PAX6/PAK3/SLC3A2 axis.",
+  "abstract": "Gemcitabine serves as a cornerstone chemotherapeutic agent for pancreatic cancer; however, gemcitabine resistance remains a major obstacle to improving treatment efficacy. The aim of our study was to elucidate the underlying mechanisms of gemcitabine resistance in pancreatic cancer. Through transcriptomic sequencing of gemcitabine-resistant pancreatic cancer cells, we found that p21-activated kinase 3 (PAK3) was significantly upregulated in both gemcitabine-resistant cell lines and tissues. In gemcitabine-resistant pancreatic cancer cells, PAK3 phosphorylates serine 175 of SLC3A2, thereby enhancing the stability of SLC3A2, promoting ferroptosis resistance in pancreatic cancer cells, and mediating gemcitabine resistance. Further mechanistic studies elucidated that FGF1 secreted by cancer-associated fibroblasts upregulates PAX6, which promotes the transcription of PAK3. Subsequently, PAK3 phosphorylates SLC3A2 at Serine 175, preventing its recognition and ubiquitination by the E3 ligase STUB1. This process enhances SLC3A2 protein stability by thwarting its degradation, culminating in acquired gemcitabine resistance. This study unveils a novel mechanism of gemcitabine resistance in pancreatic cancer and provides a potential therapeutic target for reversing drug resistance.",
+  "year": "2026",
+  "journal": "Cancer letters",
+  "authors": [
+    "Chen H",
+    "Hu J",
+    "Wu Z",
+    "Dai C",
+    "Jiang H",
+    "Li Z",
+    "Fu Z",
+    "Cheng D",
+    "Zheng S"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/41786277/",
+    "publisher": "https://doi.org/10.1016/j.canlet.2026.218381"
+  }
+}

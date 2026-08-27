@@ -1,0 +1,28 @@
+{
+  "paper_id": "pmid-39179932",
+  "pmid": "39179932",
+  "doi": "10.1038/s41590-024-01933-7",
+  "title": "Transcriptional function of E2A, Ebf1, Pax5, Ikaros and Aiolos analyzed by in vivo acute protein degradation in early B cell development.",
+  "abstract": "Early B cell lymphopoiesis depends on E2A, Ebf1, Pax5 and Ikaros family members. In the present study, we used acute protein degradation in mice to identify direct target genes of these transcription factors in pro-B, small pre-B and immature B cells. E2A, Ebf1 and Pax5 predominantly function as transcriptional activators by inducing open chromatin at their target genes, have largely unique functions and are essential for early B cell maintenance. Ikaros and Aiolos act as dedicated repressors to cooperatively control early B cell development. The surrogate light-chain genes Igll1 and Vpreb1 are directly activated by Ebf1 and Pax5 in pro-B cells and directly repressed by Ikaros and Aiolos in small pre-B cells. Pax5 and E2A contribute to V(D)J recombination by activating Rag1, Rag2, Dntt, Irf4 and Irf8. Similar to Pax5, Ebf1 also represses the cohesin-release factor gene Wapl to mediate prolonged loop extrusion across the Igh locus. In summary, in vivo protein degradation has provided unprecedented insight into the control of early B cell lymphopoiesis by five transcription factors.",
+  "year": "2024",
+  "journal": "Nature immunology",
+  "authors": [
+    "Fedl AS",
+    "Tagoh H",
+    "Gruenbacher S",
+    "Sun Q",
+    "Schenk RL",
+    "Froussios K",
+    "Jaritz M",
+    "Busslinger M",
+    "Schwickert TA"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/39179932/",
+    "publisher": "https://doi.org/10.1038/s41590-024-01933-7"
+  }
+}

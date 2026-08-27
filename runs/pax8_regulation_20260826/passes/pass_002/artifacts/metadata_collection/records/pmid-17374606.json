@@ -1,0 +1,36 @@
+{
+  "paper_id": "pmid-17374606",
+  "pmid": "17374606",
+  "doi": "10.1074/jbc.M611476200",
+  "title": "Protein phosphatase-1 modulates the function of Pax-6, a transcription factor controlling brain and eye development.",
+  "abstract": "Pax-6 is an evolutionarily conserved transcription factor and acts high up in the regulatory hierarchy controlling eye and brain development in humans, mice, zebrafish, and Drosophila. Previous studies have shown that Pax-6 is a phosphoprotein, and its phosphorylation by ERK, p38, and homeodomain-interacting protein kinase 2 greatly enhances its transactivation activity. However, the protein phosphatases responsible for the dephosphorylation of Pax-6 remain unknown. Here, we present both in vitro and in vivo evidence to show that protein serine/threonine phosphatase-1 is a major phosphatase that directly dephosphorylates Pax-6. First, purified protein phosphatase-1 directly dephosphorylates Pax-6 in vitro. Second, immunoprecipitation-linked Western blot revealed that both protein phosphatase-1alpha and protein phosphatase-1beta interact with Pax-6. Third, overexpression of protein phosphatase-1 in human lens epithelial cells leads to dephosphorylation of Pax-6. Finally, inhibition of protein phosphatase-1 activity by calyculin A or knockdown of protein phosphatase-1alpha and protein phosphatase-1beta by RNA interference leads to enhanced phosphorylation of Pax-6. Moreover, our results also demonstrate that dephosphorylation of Pax-6 by protein phosphatase-1 significantly modulates its function in regulating expression of both exogenous and endogenous genes. These results demonstrate that protein phosphatase 1 acts as a major phosphatase to dephosphorylate Pax-6 and modulate its function.",
+  "year": "2007",
+  "journal": "The Journal of biological chemistry",
+  "authors": [
+    "Yan Q",
+    "Liu WB",
+    "Qin J",
+    "Liu J",
+    "Chen HG",
+    "Huang X",
+    "Chen L",
+    "Sun S",
+    "Deng M",
+    "Gong L",
+    "Li Y",
+    "Zhang L",
+    "Liu Y",
+    "Feng H",
+    "Xiao Y",
+    "Liu Y",
+    "Li DW"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/17374606/",
+    "publisher": "https://doi.org/10.1074/jbc.M611476200"
+  }
+}

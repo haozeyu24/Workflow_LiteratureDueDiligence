@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-42082121",
+  "pmid": "42082121",
+  "doi": "10.1016/j.bcp.2026.118016",
+  "title": "Niacin accelerates skeletal muscle regeneration and enhances C2C12 differentiation by activating the PI3K/Akt signaling pathway.",
+  "abstract": "Skeletal muscle injury is prevalent in clinical practice and sports medicine, and efficient regeneration is crucial for restoring motor function. Niacin (vitamin B3, NIA), a water-soluble essential nutrient and key precursor of nicotinamide adenine dinucleotide (NAD\u00a0+\u00a0), regulates muscle metabolism and mitochondrial function, but its role and underlying mechanisms in skeletal muscle injury repair remain unclear. In this study, a mouse model of acute skeletal muscle injury was established via intramuscular injection of bupivacaine hydrochloride, and C2C12 myoblasts were used as an in vitro model to explore NIA's effects on muscle regeneration and myogenic differentiation. In vivo experiments showed that oral NIA supplementation (73 m\u00a0g/kg/day for 8\u00a0weeks) significantly promoted repair of the injured tibialis anterior (TA) muscle: compared with the NC group, NIA-treated mice had increased TA muscle mass, larger myofiber cross-sectional area, a higher proportion of centrally nucleated fibers, and improved muscle function. Western blot analysis revealed that NIA upregulated the expression of myogenic regulatory factors (MRFs) including Pax7, MyoD, and MyoG in injured tissues. In vitro assays demonstrated that NIA promoted C2C12 myoblast differentiation dose-dependently, with 1\u00a0mM as the optimal concentration, confirmed by increased MyoD and MyoG expression and a higher myotube fusion index. Bioinformatics analyses predicted the PI3K/Akt signaling pathway as a potential downstream target. Mechanistically, NIA increased Akt phosphorylation (p-Akt) in C2C12 cells, while PI3K inhibition by LY294002 eliminated NIA-induced p-Akt upregulation, MRFs expression, and myotube fusion. In conclusion, NIA accelerates skeletal muscle regeneration and enhances C2C12 myoblast differentiation by activating the PI3K/Akt signaling pathway. This study clarifies NIA's molecular mechanism in muscle regeneration and provides a theoretical basis for its clinical application in treating skeletal muscle injury.",
+  "year": "2026",
+  "journal": "Biochemical pharmacology",
+  "authors": [
+    "Dai L",
+    "Wang J",
+    "Cao Z",
+    "Yu T",
+    "Liu J",
+    "Li Y",
+    "Zhang Y",
+    "Xiao J"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42082121/",
+    "publisher": "https://doi.org/10.1016/j.bcp.2026.118016"
+  }
+}

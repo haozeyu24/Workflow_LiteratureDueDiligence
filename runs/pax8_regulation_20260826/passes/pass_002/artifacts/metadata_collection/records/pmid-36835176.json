@@ -1,0 +1,45 @@
+{
+  "paper_id": "pmid-36835176",
+  "pmid": "36835176",
+  "doi": "10.3390/ijms24043765",
+  "title": "Pathophysiological Aspects of Muscle Atrophy and Osteopenia Induced by Chronic Constriction Injury (CCI) of the Sciatic Nerve in Rats.",
+  "abstract": "Skeletal muscle atrophy is a condition characterized by a loss of muscle mass and muscle strength caused by an imbalance between protein synthesis and protein degradation. Muscle atrophy is often associated with a loss of bone mass manifesting as osteoporosis. The aim of this study was to evaluate if chronic constriction injury (CCI) of the sciatic nerve in rats can be a valid model to study muscle atrophy and consequent osteoporosis. Body weight and body composition were assessed weekly. Magnetic resonance imaging (MRI) was performed on day zero before ligation and day 28 before sacrifice. Catabolic markers were assessed via Western blot and Quantitative Real-time PCR. After the sacrifice, a morphological analysis of the gastrocnemius muscle and Micro-Computed Tomography (Micro-CT) on the tibia bone were performed. Rats that underwent CCI had a lower body weight increase on day 28 compared to the naive group of rats (p < 0.001). Increases in lean body mass and fat mass were also significantly lower in the CCI group (p < 0.001). The weight of skeletal muscles was found to be significantly lower in the ipsilateral hindlimb compared to that of contralateral muscles; furthermore, the cross-sectional area of muscle fibers decreased significantly in the ipsilateral gastrocnemius. The CCI of the sciatic nerve induced a statistically significant increase in autophagic and UPS (Ubiquitin Proteasome System) markers and a statistically significant increase in Pax-7 (Paired Box-7) expression. Micro-CT showed a statistically significant decrease in the bone parameters of the ipsilateral tibial bone. Chronic nerve constriction appeared to be a valid model for inducing the condition of muscle atrophy, also causing changes in bone microstructure and leading to osteoporosis. Therefore, sciatic nerve constriction could be a valid approach to study muscle-bone crosstalk and to identify new strategies to prevent osteosarcopenia.",
+  "year": "2023",
+  "journal": "International journal of molecular sciences",
+  "authors": [
+    "Bosco F",
+    "Guarnieri L",
+    "Nucera S",
+    "Scicchitano M",
+    "Ruga S",
+    "Cardamone A",
+    "Maurotti S",
+    "Russo C",
+    "Coppoletta AR",
+    "Macr\u00ec R",
+    "Bava I",
+    "Scarano F",
+    "Castagna F",
+    "Serra M",
+    "Caminiti R",
+    "Maiuolo J",
+    "Oppedisano F",
+    "Ilari S",
+    "Lauro F",
+    "Giancotti L",
+    "Muscoli C",
+    "Carresi C",
+    "Palma E",
+    "Gliozzi M",
+    "Musolino V",
+    "Mollace V"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/36835176/",
+    "publisher": "https://doi.org/10.3390/ijms24043765"
+  }
+}

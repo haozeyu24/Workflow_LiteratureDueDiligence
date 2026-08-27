@@ -1,0 +1,31 @@
+{
+  "paper_id": "pmid-31621494",
+  "pmid": "31621494",
+  "doi": "10.1089/neu.2019.6742",
+  "title": "Acute and Chronic Molecular Signatures and Associated Symptoms of Blast Exposure in Military Breachers.",
+  "abstract": "Injuries from exposure to explosions rose dramatically during the Iraq and Afghanistan wars, which motivated investigations of blast-related neurotrauma and operational breaching. In this study, military \"breachers\" were exposed to controlled, low-level blast during a 10-day explosive breaching course. Using an omics approach, we assessed epigenetic, transcriptional, and inflammatory profile changes in blood from operational breaching trainees, with varying levels of lifetime blast exposure, along with daily self-reported symptoms (with tinnitus, headaches, and sleep disturbances as the most frequently reported). Although acute exposure to blast did not confer epigenetic changes, specifically in DNA methylation, differentially methylated regions (DMRs) with coordinated gene expression changes associated with lifetime cumulative blast exposures were identified. The accumulative effect of blast showed increased methylation of PAX8 antisense transcript with coordinated repression of gene expression, which has been associated with sleep disturbance. DNA methylation analyses conducted in conjunction with reported symptoms of tinnitus in the low versus high blast incidents groups identified DMRS in KCNE1 and CYP2E1 genes. KCNE1 and CYP2E1 showed the expected inverse correlation between DNA methylation and gene expression, which have been previously implicated in noise-related hearing loss. Although no significant transcriptional changes were observed in samples obtained at the onset of the training course relative to chronic cumulative blast, we identified a large number of transcriptional perturbations acutely pre- versus post-blast exposure. Acutely, 67 robustly differentially expressed genes (fold change \u22651.5), including UFC1 and YOD1 ubiquitin-related proteins, were identified. Inflammatory analyses of cytokines and chemokines revealed dysregulation of MCP-1, GCSF, HGF, MCSF, and RANTES acutely after blast exposure. These data show the importance of an omics approach, revealing that transcriptional and inflammatory biomarkers capture acute low-level blast overpressure exposure, whereas DNA methylation marks encapsulate chronic long-term symptoms.",
+  "year": "2020",
+  "journal": "Journal of neurotrauma",
+  "authors": [
+    "Wang Z",
+    "Wilson CM",
+    "Mendelev N",
+    "Ge Y",
+    "Galfalvy H",
+    "Elder G",
+    "Ahlers S",
+    "Yarnell AM",
+    "LoPresti ML",
+    "Kamimori GH",
+    "Carr W",
+    "Haghighi F"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (stability[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR lysosome[Title/Abstract] OR autophagy[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/31621494/",
+    "publisher": "https://doi.org/10.1089/neu.2019.6742"
+  }
+}

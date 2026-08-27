@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-37356785",
+  "pmid": "37356785",
+  "doi": "10.1016/j.actbio.2023.06.027",
+  "title": "Therapeutic effect of a hydrogel-based neural stem cell delivery sheet for mild traumatic brain injury.",
+  "abstract": "OBJECTIVE: There are no effective clinically applicable treatments for neuronal dysfunction after mild traumatic brain injury (TBI). Here, we evaluated the therapeutic effect of a new delivery method of mouse neural stem cell (mNSC) spheroids using a hydrogel, in terms of improvement in damaged cortical lesions and cognitive impairment after mild TBI.\n\nMETHODS: mNSCs were isolated from the subventricular zone and subgranular zone by a hydrogel-based culture system. GFP-transduced mNSCs were generated into spheroids and wrapped into a sheet for transplantation. Male C57BL/6J mice were randomly divided into four groups: sham operation, TBI, TBI with mNSC spheroids, and TBI with mNSC spheroid sheet transplantation covering the damaged cortex. Histopathological and immunohistochemical features and cognitive function were evaluated 7, 14, and 28 days after transplantation following TBI.\n\nRESULTS: Hydrogel-based culture systems and mNSC isolation were successfully established from the adult mice. Essential transcription factors for NSCs, such as SOX2, PAX6, Olig2, nestin, and doublecortin (DCX), were highly expressed in the mNSCs. A transplanted hydrogel-based mNSC spheroid sheet showed good engraftment and survival ability, differentiated into TUJ1-positive neurons, promoted angiogenesis, and reduced neuronal degeneration. Also, TBI mice treated with mNSC spheroid sheet transplantation exhibited a significantly increased preference for a new object, suggesting improved cognitive function compared to the mNSC spheroids or no treatment groups.\n\nCONCLUSION: Transplantation with a hydrogel-based mNSC spheroid sheet showed engraftment, migration, and stability of delivered cells in a hostile microenvironment after TBI, resulting in improved cognitive function via reconstruction of the damaged cortex.\n\nSTATEMENT OF SIGNIFICANCE: This study presents the therapeutic effect of a new delivery method of mouse neural stem cells spheroids using a hydrogel, in terms of improvement in damaged cortical lesions and cognitive impairment after traumatic brain injury. Collagen/fibrin hydrogel allowed long-term survival and migratory ability of NSCs spheroids. Furthermore, transplanted hydrogel-based mNSCs spheroids sheet showed good engraftment, migration, and stability of delivered cells in a hostile microenvironment, resulting in reconstruction of the damaged cortex and improved cognitive function after TBI. Therefore, we suggest that a hydrogel-based mNSCs spheroids sheet could help to improve cognitive impairment after TBI.",
+  "year": "2023",
+  "journal": "Acta biomaterialia",
+  "authors": [
+    "Kim JT",
+    "Cho SM",
+    "Youn DH",
+    "Hong EP",
+    "Park CH",
+    "Lee Y",
+    "Jung H",
+    "Jeon JP"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/37356785/",
+    "publisher": "https://doi.org/10.1016/j.actbio.2023.06.027"
+  }
+}

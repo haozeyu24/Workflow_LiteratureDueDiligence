@@ -1,0 +1,23 @@
+{
+  "paper_id": "pmid-17274001",
+  "pmid": "17274001",
+  "doi": "10.1002/eji.200636453",
+  "title": "CD38 cross-linking enhances TLR-induced B cell proliferation but decreases IgM plasma cell differentiation.",
+  "abstract": "It is becoming increasingly clear that the regulation of proliferation and differentiation of B cells to plasma cells involves the integration of a variety of intracellular signals provided by receptors of both the adaptive and innate immune system. The cross-linking of the surface molecule CD38 induces calcium mobilization, protein phosphorylation and NF-kappaB translocation into the nucleus, ultimately leading to proliferation and isotype switching toward IgG1. Here we describe (a) the effect on B cell activation of stimulating through both CD38 and Toll-like receptors 4, 7 and 9; and (b) that CD38 cross-linking increases the number of proliferating cells and the rate of proliferation in LPS-stimulated B cells by a Bruton's tyrosine kinase- and protein kinase C-dependent mechanism. In contrast, CD38 cross-linking reduces the number of cells committed to IgM plasma cell differentiation as measured by the number of CD138+ cells, antibody secretion, and the expression of PAX5, Bcl6 and Blimp-1. Since a putative ligand for CD38 is expressed by germinal center follicular dendritic cells, and CD38 expression is down-regulated in germinal center B cells, we speculate that CD38 might participate in the outcome of post-germinal center antibody responses.",
+  "year": "2007",
+  "journal": "European journal of immunology",
+  "authors": [
+    "Manjarrez-Ordu\u00f1o N",
+    "Moreno-Garc\u00eda ME",
+    "Fink K",
+    "Santos-Argumedo L"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/17274001/",
+    "publisher": "https://doi.org/10.1002/eji.200636453"
+  }
+}

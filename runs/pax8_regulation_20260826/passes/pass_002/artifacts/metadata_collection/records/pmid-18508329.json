@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-18508329",
+  "pmid": "18508329",
+  "doi": "10.1002/mus.21006",
+  "title": "PAX3/7 expression coincides with MyoD during chronic skeletal muscle overload.",
+  "abstract": "Paired box (Pax) proteins 3 and 7 are key determinants for embryonic skeletal muscle development by initiating myogenic regulatory factor (MRF) gene expression. We show that Pax3 and 7 participate in adult skeletal muscle plasticity during the initial responses to chronic overload (< or =7 days) and appear to coordinate MyoD expression, a member of the MRF family of genes. Pax3 and 7 mRNA were higher than control within 12 h after initiation of overload, preceded the increase in MyoD mRNA on day 1, and peaked on day 2. On days 3 and 7, Pax7 mRNA remained higher than control, suggesting that satellite cell self-renewal was occurring. Pax3 and 7 and MyoD protein levels were higher than control on days 2 and 3. These data indicate that Pax3 and 7 coordinate the recapitulation of developmental-like regulatory mechanisms in response to growth-inducing stimuli in adult skeletal muscle, presumably through activation of satellite cells.",
+  "year": "2008",
+  "journal": "Muscle & nerve",
+  "authors": [
+    "Hyatt JP",
+    "McCall GE",
+    "Kander EM",
+    "Zhong H",
+    "Roy RR",
+    "Huey KA"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/18508329/",
+    "publisher": "https://doi.org/10.1002/mus.21006"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-30155990",
+  "pmid": "30155990",
+  "doi": "10.1002/biot.201800323",
+  "title": "Long-Term Retinal Differentiation of Human Induced Pluripotent Stem Cells in a Continuously Perfused Microfluidic Culture Device.",
+  "abstract": "Understanding how microenvironmental cues influence cellular behavior will enable development of efficient and robust pluripotent stem cell differentiation protocols. Unlike traditional cell culture dishes, microfluidic bioreactors can provide stable microenvironmental conditions by continuous medium perfusion at a controlled rate. The aim of this study is to investigate whether a microfluidic culture device could be used as a perfused platform for long-term cell culture processes such as the retinal differentiation of human induced pluripotent stem cells. The perfusion flow rate is established based on the degradation and consumption of growth factors (DKK-1, Noggin, IGF-1, and bFGF) and utilizing the P\u00e9clet number. The device's performance analyzed by qRT-PCR show improvements compared to the well-plate control as characterized by significantly higher expression of the markers Pax6, Chx10, and Crx on Day 5, Nrl on day 10, Crx, and Rhodopsin on day 21. Optimization of perfusion rate is an important operating variable in development of robust processes for differentiation cultures. Result demonstrates convective delivery of nutrients via perfusion has a significant impact upon the expression of key retinal markers. This study is the first continuously perfused long-term (21 days) retinal differentiation of hiPSCs in a microfluidic device.",
+  "year": "2019",
+  "journal": "Biotechnology journal",
+  "authors": [
+    "Abdolvand N",
+    "Tostoes R",
+    "Raimes W",
+    "Kumar V",
+    "Szita N",
+    "Veraitch F"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/30155990/",
+    "publisher": "https://doi.org/10.1002/biot.201800323"
+  }
+}

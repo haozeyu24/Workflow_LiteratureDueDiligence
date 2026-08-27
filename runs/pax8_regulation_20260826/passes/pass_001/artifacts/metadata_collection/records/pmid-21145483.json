@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-21145483",
+  "pmid": "21145483",
+  "doi": "10.1016/j.molcel.2010.09.029",
+  "title": "Taf1 regulates Pax3 protein by monoubiquitination in skeletal muscle progenitors.",
+  "abstract": "Pax3 plays critical roles during developmental and postnatal myogenesis. We have previously shown that levels of Pax3 protein are regulated by monoubiquitination and proteasomal degradation during postnatal myogenesis, but none of the key regulators of the monoubiquitination process were known. Here we show that Pax3 monoubiquitination is mediated by the ubiquitin-activating/conjugating activity of Taf1, a component of the core transcriptional machinery that was recently reported to be downregulated during myogenic differentiation. We show that Taf1 binds directly to Pax3 and overexpression of Taf1 increases the level of monoubiquitinated Pax3 and its degradation by the proteasome. A decrease of Taf1 results in a decrease in Pax3 monoubiquitination, an increase in the levels of Pax3 protein, and a concomitant increase in Pax3-mediated inhibition of myogenic differentiation and myoblast migration. These results suggest that Taf1 regulates Pax3 protein levels through its ability to mediate monoubiquitination, revealing a critical interaction between two proteins that are involved in distinct aspects of myogenic differentiation. Finally, these results suggest that the components of the core transcriptional are integrally involved in the process of myogenic differentiation, acting as nodal regulators of the differentiation program.",
+  "year": "2010",
+  "journal": "Molecular cell",
+  "authors": [
+    "Boutet SC",
+    "Biressi S",
+    "Iori K",
+    "Natu V",
+    "Rando TA"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/21145483/",
+    "publisher": "https://doi.org/10.1016/j.molcel.2010.09.029"
+  }
+}

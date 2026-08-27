@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-20508808",
+  "pmid": "20508808",
+  "doi": "",
+  "title": "A novel human CRYGD mutation in a juvenile autosomal dominant cataract.",
+  "abstract": "PURPOSE: Identification of causal mutation in the crystallin, connexin, and paired box gene 6 (PAX6) genes associated with childhood cataract in patients from India.\n\nMETHODS: In this study, forty eight members from seventeen families and 148 sporadic cases of childhood cataract were evaluated. Clinical and ophthalmologic examinations were performed on available affected and unaffected family members. Samples of genomic DNA were PCR amplified to screen for mutations in the candidate genes viz., alpha-A crystallin (CRYAA), beta- B2 crystallin (CRYBB2), gamma-A crystallin (CRYGA), gamma-B crystallin (CRYGB), gamma-C crystallin (CRYGC), gamma-D crystallin (CRYGD), gap junction alpha-3 (GJA3), gap junction alpha-8 (GJA8), and PAX6 based on polymerase chain reaction and single strand conformation polymorphism (PCR-SSCP) analysis. Samples showing any band mobility shift were subjected to bidirectional sequencing to confirm the variation. Co-segregation of the observed change with the disease phenotype was further tested by restriction fragment length polymorphism (RFLP) for the appropriate restriction site.\n\nRESULTS: DNA sequencing analysis of CRYAA, CRYBB2, CRYGA-D, GJA3, GJA8, and PAX6 of the affected members of a family (C-35) showed a novel heterozygous missense mutation C>A at position 229 in CRYGD in three affected members of family C-35 with anterior polar coronary cataract. This variation C229A substitution created a novel restriction site for AluI and resulted in a substitution of highly conserved arginine at position 77 by serine (R77S). AluI restriction site analysis confirmed the transversion mutation. Analysis of the available unaffected members of the family (C-35) and 100 unrelated control subjects (200 chromosomes) of the same ethnic background did not show R77S variation. Data generated using ProtScale and PyMOL programs revealed that the mutation altered the stability and solvent-accessibility of the CRYGD protein.\n\nCONCLUSIONS: We describe here a family having anterior polar coronary cataract that co-segregates with the novel allele R77S of CRYGD in all the affected members. The same was found to be absent in the ethnically matched controls (n=100) studied. Interestingly the residue Arg has been frequently implicated in four missense (R15C, R15S, R37S, and R59H) and in one truncation mutation (R140X) of CRYGD. In two of the reported mutations Arg residues have been replaced with Serine. This finding further expands the mutation spectrum of CRYGD in association with childhood cataract and demonstrates a possible mechanism of cataractogenesis. Screening of other familial (n=48) and sporadic (n=148) cases of childhood cataract, did not reveal any previously reported or novel mutation in the candidate genes screened.",
+  "year": "2010",
+  "journal": "Molecular vision",
+  "authors": [
+    "Roshan M",
+    "Vijaya PH",
+    "Lavanya GR",
+    "Shama PK",
+    "Santhiya ST",
+    "Graw J",
+    "Gopinath PM",
+    "Satyamoorthy K"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/20508808/",
+    "publisher": ""
+  }
+}

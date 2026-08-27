@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-29928489",
+  "pmid": "29928489",
+  "doi": "10.18632/oncotarget.25516",
+  "title": "SMAD proteins directly suppress PAX2 transcription downstream of transforming growth factor-beta 1 (TGF-\u03b21) signalling in renal cell carcinoma.",
+  "abstract": "Canonical TGF-\u03b21 signalling promotes tumor progression by facilitating invasion and metastasis, whereby release of TGF-\u03b21, by (for example) infiltrating immune cells, induces epithelial to mesenchymal transition (EMT). PAX2, a member of the Paired box family of transcriptional regulators, is normally expressed during embryonic development, including in the kidney, where it promotes mesenchymal to epithelial transition (MET). PAX2 expression is silenced in many normal adult tissues. However, in contrast, PAX2 is expressed in several cancer types, including kidney, prostate, breast, and ovarian cancer. While multiple studies have implicated TGF-\u03b2 superfamily members in modulating expression of Pax genes during embryonic development, few have investigated direct regulation of Pax gene expression by TGF-\u03b21. Here we have investigated direct regulation of PAX2 expression by TGF-\u03b21 in clear cell renal cell carcinoma (CC-RCC) cell lines. Treatment of PAX2-expressing 786-O and A498 CC-RCC cell lines with TGF-\u03b21 resulted in inhibition of endogenous PAX2 mRNA and protein expression, as well as expression from transiently transfected PAX2 promoter constructs; this inhibition was abolished in the presence of expression of the inhibitory SMAD, SMAD7. Using ChIP-PCR we showed TGF-\u03b21 treatment induced SMAD3 protein phosphorylation in 786-O cells, and direct SMAD3 binding to the human PAX2 promoter, which was inhibited by SMAD7 over-expression. Overall, these data suggest that canonical TGF-\u03b2 signalling suppresses PAX2 transcription in CC-RCC cells due to the direct binding of SMAD proteins to the PAX2 promoter. These studies improve our understanding of tumor progression and epithelial to mesenchyme transition (EMT) in CC-RCC and in other PAX2-expressing cancer types.",
+  "year": "2018",
+  "journal": "Oncotarget",
+  "authors": [
+    "Kaur G",
+    "Li CG",
+    "Chantry A",
+    "Stayner C",
+    "Horsfield J",
+    "Eccles MR"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/29928489/",
+    "publisher": "https://doi.org/10.18632/oncotarget.25516"
+  }
+}

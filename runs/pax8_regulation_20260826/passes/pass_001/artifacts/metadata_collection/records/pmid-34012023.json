@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-34012023",
+  "pmid": "34012023",
+  "doi": "10.1038/s12276-021-00621-y",
+  "title": "PAX8-AS1 knockdown facilitates cell growth and inactivates autophagy in osteoblasts via the miR-1252-5p/GNB1 axis in osteoporosis.",
+  "abstract": "Osteoporosis (OP) is the most common systematic bone disorder among elderly individuals worldwide. Long noncoding RNAs (lncRNAs) are involved in biological processes in various human diseases. It has been previously revealed that PAX8 antisense RNA 1 (PAX8-AS1) is upregulated in OP. However, its molecular mechanism in OP remains unclear. Therefore, we specifically designed this study to determine the specific role of PAX8-AS1 in OP. We first established a rat model of OP and then detected PAX8-AS1 expression in the rats with RT-qPCR. Next, to explore the biological function of PAX8-AS1 in osteoblasts, in vitro experiments, such as Cell Counting Kit-8 (CCK-8) assays, flow cytometry, western blotting and immunofluorescence (IF) staining, were conducted. Subsequently, we performed bioinformatic analysis and luciferase reporter assays to predict and identify the relationships between microRNA 1252-5p (miR-1252-5p) and both PAX8-AS1 and G protein subunit beta 1 (GNB1). Additionally, rescue assays in osteoblasts clarified the regulatory network of the PAX8-AS1/miR-1252-5p/GNB1 axis. Finally, in vivo loss-of-function studies verified the role of PAX8-AS1 in OP progression. The results illustrated that PAX8-AS1 was upregulated in the proximal tibia of OP rats. PAX8-AS1 silencing promoted the viability and inhibited the apoptosis and autophagy of osteoblasts. PAX8-AS1 interacted with miR-1252-5p. GNB1 was negatively regulated by miR-1252-5p. In addition, the impacts of PAX8-AS1 knockdown on osteoblasts were counteracted by GNB1 overexpression. PAX8-AS1 depletion suppressed OP progression by inhibiting apoptosis and autophagy in osteoblasts. In summary, PAX8-AS1 suppressed the viability and activated the autophagy of osteoblasts via the miR-1252-5p/GNB1 axis in OP.",
+  "year": "2021",
+  "journal": "Experimental & molecular medicine",
+  "authors": [
+    "Huang C",
+    "Li R",
+    "Yang C",
+    "Ding R",
+    "Li Q",
+    "Xie D",
+    "Zhang R",
+    "Qiu Y"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (stability[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR lysosome[Title/Abstract] OR autophagy[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/34012023/",
+    "publisher": "https://doi.org/10.1038/s12276-021-00621-y"
+  }
+}

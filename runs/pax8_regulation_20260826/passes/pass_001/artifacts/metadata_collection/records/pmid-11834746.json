@@ -1,0 +1,27 @@
+{
+  "paper_id": "pmid-11834746",
+  "pmid": "11834746",
+  "doi": "10.1074/jbc.M200582200",
+  "title": "Redox effector factor-1 regulates the activity of thyroid transcription factor 1 by controlling the redox state of the N transcriptional activation domain.",
+  "abstract": "Thyroid transcription factor 1 (TTF-1) is a homeodomain-containing transcriptional regulator responsible for the activation of thyroid- and lung-specific genes. It has been demonstrated that its DNA binding activity is redox-regulated in vitro through the formation of dimers and oligomeric species. In this paper, we demonstrate that the redox regulation mainly involves a Cys residue (Cys(87)), which resides out of the DNA binding domain, belonging to the N-transactivation domain. In fact, the oxidized form of a truncated TTF-1 (containing the N-transactivation domain and the DNA-binding domain, here called TTF-1N-HD) looses specific DNA binding activity. Since most of the oxidized TTF-1N-HD is in a monomeric form, these data indicate that the redox state of Cys(87) may control the DNA-binding function of the homeodomain, suggesting that Cys(87) could play an important role in determining the correct folding of the homeodomain. By using gel retardation and transient transfection assays, we demonstrate that the redox effector factor-1 (Ref-1) mediates the redox effects on TTF-1N-HD binding and that it is able to modulate the TTF-1 transcriptional activity. Glutathione S-transferase pull-down experiments demonstrate the occurrence of interaction between Ref-1 and TTF-1N-HD. Having previously demonstrated that Ref-1 is able to modulate the transcriptional activity of another thyroid-specific transcription factor (Pax-8), our data suggest that Ref-1 plays a central role in the regulation of thyroid cells.",
+  "year": "2002",
+  "journal": "The Journal of biological chemistry",
+  "authors": [
+    "Tell G",
+    "Pines A",
+    "Paron I",
+    "D'Elia A",
+    "Bisca A",
+    "Kelley MR",
+    "Manzini G",
+    "Damante G"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (stability[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR lysosome[Title/Abstract] OR autophagy[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/11834746/",
+    "publisher": "https://doi.org/10.1074/jbc.M200582200"
+  }
+}

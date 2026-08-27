@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-34218227",
+  "pmid": "34218227",
+  "doi": "10.1159/000516497",
+  "title": "A Review of Effusion Cytomorphology of Small Round Cell Tumors.",
+  "abstract": "BACKGROUND: Small round cell tumors (SRCTs) are a broad category of diverse malignant tumors composed of monotonous undifferentiated cells. Involvement of serous fluids by SRCT is rare; however, the identification of exfoliated malignant cells is a crucial component of management and has significant implications for treatment and prognosis. The most common effusion tumors with SRCT morphology include Ewing sarcoma, synovial sarcoma, rhabdomyosarcoma (RMS), small-cell neuroendocrine carcinoma (SCNC), and desmoplastic SRCT, and the cytomorphologic distinction between these tumors is challenging. The purpose of this article is to describe the morphologic features of the most common SRCT in fluids and propose helpful ancillary testing.\n\nSUMMARY: Effusion SRCTs display similar primitive and undifferentiated morphologic features although each has subtle variations. Ewing sarcoma is a mesenchymal neoplasm and harbors characteristic translocations t(11;22) (EWSR1-FLI1) or t(21;22) (EWSR1-ERG). In fluids, Ewing sarcoma shows poorly differentiated cells of variable size with round to oval nuclei, prominent nucleoli, and scant cytoplasm. In contrast, synovial sarcoma typically involves extremities and expresses a fusion transcript in t(X;18) (SS18-SSX). This soft tissue neoplasm demonstrates uniform cells with irregular nuclear contours, characteristic nuclear folding, and scant cytoplasm. RMS is a neoplasm arising from skeletal muscle, and the alveolar subtype demonstrates a translocation in t(2;13) (PAX3-FOXO1). The malignant cells show a spectrum of small round cells and pleomorphic large cells with rhabdoid morphology. RMS cells characteristically express myogenin and MyoD1, markers of skeletal muscle differentiation. Although SCNC is not a classic SRCT, the morphology is similar. SCNC demonstrates tight clusters of malignant cells with nuclear molding and salt-and-pepper chromatin. This tumor classically has neuroendocrine differentiation and is positive for synaptophysin and chromogranin on immunohistochemistry. And last, desmoplastic SRCT typically presents as an intra-abdominal mass in young men and characteristically harbors the translocation t(11;22) (p13;q12) (EWSR1-WT1). Cytomorphologically, the tumor shows small monomorphic cells occasionally arranged as rosette-like structures.\n\nKEY MESSAGE: The diagnosis of SRCT can be made in effusion samples and is best achieved with a combination of morphologic features, clinical history, and ancillary testing.",
+  "year": "2022",
+  "journal": "Acta cytologica",
+  "authors": [
+    "Han LM",
+    "VandenBussche CJ",
+    "Abildtrup M",
+    "Chandra A",
+    "Vohra P"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/34218227/",
+    "publisher": "https://doi.org/10.1159/000516497"
+  }
+}

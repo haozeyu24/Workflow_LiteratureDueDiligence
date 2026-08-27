@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-39790871",
+  "pmid": "39790871",
+  "doi": "10.1016/j.heliyon.2024.e41021",
+  "title": "Hypertensive disorders of pregnancy affected thyroid hormone synthesis via endoplasmic reticulum stress in preterm infant rats.",
+  "abstract": "BACKGROUND: Maternal hypertensive disorders of pregnancy (HDP) was associated with increased risk of congenital hypothyroidism in preterm infants, but its underlying mechanisms remain unclear.\n\nOBJECTIVE: To investigate the possible mechanisms by which intrauterine exposure to HDP affects thyroid hormone synthesis in preterm infant rats.\n\nMETHODS: preterm infant rats were obtained by Caesarean section delivery from the L-NAME group and Control groups which was induced by L-NAME and saline, respectively. Thyroid hormone levels of preterm infant rats were detected by ELISA, and morphology structure were observed by H&E staining and electron microscopy, and the expression of key factors of thyroid hormone synthesis and endoplasmic reticulum stress indicators were analyzed by RT-qPCR and Western blotting.\n\nRESULTS: Compared with the Control group, significantly higher serum TSH concentration was observed in the L-NAME group (p\u00a0<\u00a00.05), while T3 and T4 levels showed no noticeable change. The L-NAME group revealed a reduction in the size and number of thyroid follicles, with the emergence of thyroid follicular epithelial hyperplasia. While electron microscopy revealed that the endoplasmic reticulum of thyroid follicular epithelial cells was marked swollen within L-NAME group. Additionally, the mRNA expression of Ttf1, Pax8 and Tshr was down-regulated in thyroid tissues of L-NAME group. Furthermore, the protein levels of Tg, NIS and TSHR were reduced, while the protein level of p-IRE1\u03b1, ATF6\u03b1, XBP1s and Bip were increased in the L-NAME group.\n\nCONCLUSION: The results indicated that HDP may reduce the expression of key molecules involved in thyroid synthesis through endoplasmic reticulum stress which could ultimately result in the development of congenital hypothyroidism.",
+  "year": "2025",
+  "journal": "Heliyon",
+  "authors": [
+    "Sun M",
+    "Wu C",
+    "Jiang J",
+    "He Y",
+    "Zhu S",
+    "Yu Y"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (\"protein stability\"[Title/Abstract] OR \"protein levels\"[Title/Abstract] OR stabilization[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract]) NOT \"PAX8-AS1\"[Title/Abstract]"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/39790871/",
+    "publisher": "https://doi.org/10.1016/j.heliyon.2024.e41021"
+  }
+}

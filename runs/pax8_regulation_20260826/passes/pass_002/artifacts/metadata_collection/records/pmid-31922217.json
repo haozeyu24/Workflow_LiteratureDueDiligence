@@ -1,0 +1,28 @@
+{
+  "paper_id": "pmid-31922217",
+  "pmid": "31922217",
+  "doi": "10.3892/ijo.2020.4958",
+  "title": "PAX2 promotes epithelial ovarian cancer progression involving fatty acid metabolic reprogramming.",
+  "abstract": "Ovarian cancer is the fifth most common type of cancer afflicting women and frequently presents at a late stage with a poor prognosis. While paired box\u00a02 (PAX2) expression is frequently lost in high\u2011grade serous ovarian cancer, it is expressed in a subset of ovarian tumors and may play a role in tumorigenesis. This study investigated the expression of PAX2 in ovarian cancer. The expression of PAX2 in a murine allograft model of ovarian cancer, the RM model, led to a more rapidly growing cell line both in\u00a0vitro and in\u00a0vivo. This finding was in accordance with the shorter progression\u2011free survival observed in patients with a higher PAX2 expression, as determined in this study cohort by immunohistochemistry. iTRAQ\u2011based proteomic profiling revealed that proteins involved in fatty acid metabolism and oxidative phosphorylation were found to be upregulated in RM tumors expressing PAX2. The expression of two key fatty acid metabolic genes was also found to be upregulated in PAX2\u2011expressing human ovarian cancer samples. The analysis of existing datasets also indicated that a high expression of key enzymes in fatty acid metabolism was associated with a shorter progression\u2011free survival time in patients with serous ovarian cancer. Thus, on the whole, the findings of this study indicate that PAX2 may promote ovarian cancer progression, involving fatty acid metabolic reprograming.",
+  "year": "2020",
+  "journal": "International journal of oncology",
+  "authors": [
+    "Feng Y",
+    "Tang Y",
+    "Mao Y",
+    "Liu Y",
+    "Yao D",
+    "Yang L",
+    "Garson K",
+    "Vanderhyden BC",
+    "Wang Q"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/31922217/",
+    "publisher": "https://doi.org/10.3892/ijo.2020.4958"
+  }
+}

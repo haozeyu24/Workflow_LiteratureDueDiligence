@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-9288908",
+  "pmid": "9288908",
+  "doi": "10.1111/j.1432-1033.1997.00860.x",
+  "title": "Determination of functional domains of the human transcription factor PAX8 responsible for its nuclear localization and transactivating potential.",
+  "abstract": "The conserved structure of the transcription factors of the Pax gene family may reflect functional conservation. We have demonstrated that the human Pax8 transcription factor is organized in several functional domains and contains two regions responsible for its nuclear localization, in addition to an activating region at the carboxy terminus of the protein and an inhibitory region encoded by the exon 9 present only in a splice variant PAX8a. Regions of PAX8 determining the nuclear localization of the PAX8A/lacZ fusions contain short amino acid sequences similar to several described nuclear localization sites (NLS). These NLS were identified in the paired domain and between the octapeptide and the residual homeodomain, respectively. The activating domain is encoded by the exons 10 and 11 and its function is modulated by the adjacent domains encoded by the exons 9 and 12. The domain encoded by exon 9 significantly inhibits the function of the activating domain. Pax8 is expressed in thyroid cells and its product binds promoters of the thyroglobulin and thyroperoxidase genes through its paired domain. Thyroid cell growth and differentiation depend on thyrotropin which, by stimulating cAMP synthesis, activates the cAMP-dependent protein kinase A (PKA). We have investigated a link between thyrotropin stimulation and gene activation by Pax8. Stimulation of cAMP synthesis augments Pax8-specific transcription in thyroid cells, indicating that PKA is involved in Pax8 activation. Cotransfection of GAL4/PAX8 fusions and the catalytic subunit of PKA in A126, a PKA-deficient derivative of the PC12 pheochromocytoma cell line, synergistically activates the GAL4-specific reporter, suggesting the activating domain of PAX8 is dependent upon the catalytic subunit of the PKA. We propose that this dependence is due to a hypothetical adaptor which forms a target for PKA and interacts with the activating domain of PAX8. We show that PAX8 isolated from the thyroid cell line FTRL5 is a phosphoprotein in which phosphorylation is not dependant on cAMP pathway activation. Our results suggest that Pax8 is part of the cAMP signaling pathway and mediates thyrotropin-dependent gene activation in thyroid cells. Investigation of the PAX8 expression in a panel of Wilms' tumors shows a striking correlation between the expression of PAX8 and another transcription factor, WT1, indicating that these two genes may interact in vivo.",
+  "year": "1997",
+  "journal": "European journal of biochemistry",
+  "authors": [
+    "Poleev A",
+    "Okladnova O",
+    "Musti AM",
+    "Schneider S",
+    "Royer-Pokora B",
+    "Plachov D"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (\"nuclear localization\"[Title/Abstract] OR \"nuclear localisation\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR \"subcellular localization\"[Title/Abstract] OR \"subcellular localisation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract] OR \"nuclear import\"[Title/Abstract] OR \"nuclear export\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/9288908/",
+    "publisher": "https://doi.org/10.1111/j.1432-1033.1997.00860.x"
+  }
+}

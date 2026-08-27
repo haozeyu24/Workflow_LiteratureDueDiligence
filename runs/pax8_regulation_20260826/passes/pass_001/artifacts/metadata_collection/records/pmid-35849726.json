@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-35849726",
+  "pmid": "35849726",
+  "doi": "10.1021/acsami.2c10620",
+  "title": "Bioengineered Lab-Grown Meat-like Constructs through 3D Bioprinting of Antioxidative Protein Hydrolysates.",
+  "abstract": "Lab-grown bovine meat analogues are emerging alternatives to animal sacrifices for cultured meat production. The most challenging aspect of the production process is the rapid proliferation of cells and establishment of the desired 3D structure for mass production. In this study, we developed a direct ink writing-based 3D-bioprinted meat culture platform composed of 6% (w/v) alginate and 4% (w/v) gelatin (Alg/Gel)-based hydrogel scaffolds supplemented with naturally derived protein hydrolysates (PHs; 10%) from highly nutritive plants (soybean, pigeon pea, and wheat), and some selected edible insects (beetles, crickets, and mealworms) on in vitro proliferation of bovine myosatellite cells (bMSCs) extracted from fresh meat samples. The developed bioink exhibited excellent shear-thinning behavior (n < 1) and mechanical stability during 3D bioprinting. Commercial proteases (Alcalase, Neutrase, and Flavourzyme) were used for protein hydrolysis. The resulting hydrolysates exhibited lower-molecular-weight bands (12-50 kDa) than those of crude isolates (55-160 kDa), as determined by sodium dodecyl sulfate-polyacrylamide gel electrophoresis. The degree of hydrolysis was higher in the presence of Alcalase for both plant (34%) and insect (62%) PHs than other enzymes. The 3D-printed hydrogel scaffolds displayed excellent bioactivity and stability after 7 days of incubation. The developed prototype structure (pepperoni meat, 20 \u00d7 20 \u00d7 5 mm) provided a highly stable, nutritious, and mechanically strong structure that supported the rapid proliferation of myoblasts in a low-serum environment during the entire culture period. The 2,2-diphenyl-1-picrylhydrazyl radical scavenging assay enhanced the free radical reduction of Alcalase- and Neutrase-treated PHs. Furthermore, the bioprinted bMSCs displayed early myogenesis (desmin and Pax7) in the presence of PHs, suggesting its role in bMSC differentiation. In conclusion, we developed a 3D bioprinted and bioactive meat culture platform using Alg/Gel/PHs as a printable and edible component for the mass production of cultured meat.",
+  "year": "2022",
+  "journal": "ACS applied materials & interfaces",
+  "authors": [
+    "Dutta SD",
+    "Ganguly K",
+    "Jeong MS",
+    "Patel DK",
+    "Patil TV",
+    "Cho SJ",
+    "Lim KT"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/35849726/",
+    "publisher": "https://doi.org/10.1021/acsami.2c10620"
+  }
+}

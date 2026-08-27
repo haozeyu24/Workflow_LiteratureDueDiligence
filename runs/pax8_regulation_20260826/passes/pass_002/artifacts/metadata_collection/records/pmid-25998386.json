@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-25998386",
+  "pmid": "25998386",
+  "doi": "10.1016/j.bbrc.2015.05.032",
+  "title": "mTOR is necessary for proper satellite cell activity and skeletal muscle regeneration.",
+  "abstract": "The serine/threonine kinase mammalian target of rapamycin (mTOR) is a key regulator of protein synthesis, cell proliferation and energy metabolism. As constitutive deletion of Mtor gene results in embryonic lethality, the function of mTOR in muscle stem cells (satellite cells) and skeletal muscle regeneration remains to be determined. In this study, we established a satellite cell specific Mtor conditional knockout (cKO) mouse model by crossing Pax7(CreER) and Mtor(flox/flox) mice. Skeletal muscle regeneration after injury was severely compromised in the absence of Mtor, indicated by increased number of necrotic myofibers infiltrated by Evans blue dye, and reduced number and size of regenerated myofibers in the Mtor cKO mice compared to wild type (WT) littermates. To dissect the cellular mechanism, we analyzed satellite cell-derived primary myoblasts grown on single myofibers or adhered to culture plates. The Mtor cKO myoblasts exhibited defective proliferation and differentiation kinetics when compared to myoblasts derived from WT littermates. At the mRNA and protein levels, the Mtor cKO myoblasts expressed lower levels of key myogenic determinant genes Pax7, Myf5, Myod, Myog than did the WT myoblasts. These results suggest that mTOR is essential for satellite cell function and skeletal muscle regeneration through controlling the expression of myogenic genes.",
+  "year": "2015",
+  "journal": "Biochemical and biophysical research communications",
+  "authors": [
+    "Zhang P",
+    "Liang X",
+    "Shan T",
+    "Jiang Q",
+    "Deng C",
+    "Zheng R",
+    "Kuang S"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/25998386/",
+    "publisher": "https://doi.org/10.1016/j.bbrc.2015.05.032"
+  }
+}

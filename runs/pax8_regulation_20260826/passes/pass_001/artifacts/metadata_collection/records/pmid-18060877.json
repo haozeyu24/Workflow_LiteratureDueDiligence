@@ -1,0 +1,21 @@
+{
+  "paper_id": "pmid-18060877",
+  "pmid": "18060877",
+  "doi": "10.1016/j.cca.2007.11.002",
+  "title": "Thyroglobulin and human thyroid cancer.",
+  "abstract": "Thyroglobulin (Tg) is a large molecule containing 2750 amino acids with a molecular weight of 330 kD and twenty putative N-linked glycosylation sites. Tg gene expression is regulated by thyroid transcription factor 1 (TTF-1) and human paired box 8 (Pax-8). Iodinated Tg is stored in the lumen of the thyroid follicles and is released in response to specific hormonal stimulation by thyroid stimulating hormone (TSH). Following Tg reabsorption by thyrocytes and subsequent degradation, thyroid hormones triiodothryronine (T(3)) and thyroxine (T(4)) are secreted in the bloodstream. Mutations within the Tg gene cause defective thyroid hormone synthesis, resulting in congenital hypothyroidism. Thyroid carcinoma may develop from dyshormonogenic goiters due to Tg mutation. Post-thyroidectomy Tg levels are apparently associated with prognosis of papillary and follicular thyroid carcinomas and may predict tumor recurrence and metastastic potential. The detection of Tg by biochemical and molecular means has important diagnostic significance due to its pleiotropic roles in identification of tissue of thyroid origin, differentiation, and post-operative follow-up.",
+  "year": "2008",
+  "journal": "Clinica chimica acta; international journal of clinical chemistry",
+  "authors": [
+    "Lin JD"
+  ],
+  "source_queries": [
+    "(\"PAX8\"[Title/Abstract] OR \"PAX-8\"[Title/Abstract] OR \"paired box 8\"[Title/Abstract] OR \"paired-box gene 8\"[Title/Abstract]) AND (stability[Title/Abstract] OR destabilization[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR lysosome[Title/Abstract] OR autophagy[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract])",
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/18060877/",
+    "publisher": "https://doi.org/10.1016/j.cca.2007.11.002"
+  }
+}

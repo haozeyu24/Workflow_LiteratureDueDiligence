@@ -1,0 +1,21 @@
+{
+  "paper_id": "pmid-17323927",
+  "pmid": "17323927",
+  "doi": "10.1021/bi062107q",
+  "title": "Cooperative interactions between the two DNA binding domains of Pax3: helix 2 of the paired domain is in the proximity of the amino terminus of the homeodomain.",
+  "abstract": "Pax3 is a transcription factor that plays an important role during neurogenesis and myogenesis, and Pax3 mutant animals display neural tube defects and lack limb muscles. Pax3 harbors two DNA binding domains, the paired domain (PD) and a paired-type homeodomain (HD). Genetic and biochemical data have (i) identified strong cooperative interactions between the PD and HD domains for DNA binding in the intact Pax3 protein and (ii) suggested an important role for the amino-terminal portions of both domains in such cooperativity. We have studied proximity relationships between the PD and HD of Pax3. For this, we have used a cross-linking strategy with the bifunctional thiol reagent bismaleimidoethane (BMOE) in 21 mutants bearing pairs of cysteine residues (DCM) inserted in strategic locations of a functional Pax3 protein otherwise devoid of endogenous cysteine residues. All 21 DCMs were characterized for protein stability, for DNA binding by the PD and HD, and for the effect of BMOE on protein binding to PD, HD, or PD-HD combined DNA targets. BMOE-induced cross-links in DCMs were detected as slower migrating species on immunoblots. Mutants bearing double cysteine insertions (I59C/S222C, S73C/Q219C, and V78C/K218C) showed the most robust cross-linking upon BMOE exposure. These cross-linking studies suggest that portions of helix 1 (I59), helix 2 (S73), and the loop between helices 2 and 3 (V78) of the PD are in the proximity of the N-terminal segment of the HD (K218, Q219, and S222) in the tertiary structure of Pax3. These results are compatible with a model in which the PD and HD are organized in an everted arrangement, with the N-terminal portion of the PD being in the proximity of the N-terminus of the HD. This arrangement may be important for the noted PD-HD cooperativity in DNA binding.",
+  "year": "2007",
+  "journal": "Biochemistry",
+  "authors": [
+    "Apuzzo S",
+    "Gros P"
+  ],
+  "source_queries": [
+    "(\"PAX2\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX9\"[Title/Abstract] OR \"paired box\"[Title/Abstract] OR \"paired-box\"[Title/Abstract]) AND (stability[Title/Abstract] OR degradation[Title/Abstract] OR turnover[Title/Abstract] OR \"half-life\"[Title/Abstract] OR ubiquitin*[Title/Abstract] OR proteasome[Title/Abstract] OR proteasomal[Title/Abstract] OR chaperone[Title/Abstract] OR folding[Title/Abstract] OR \"nuclear localization\"[Title/Abstract] OR \"nuclear retention\"[Title/Abstract] OR \"nuclear accumulation\"[Title/Abstract] OR importin[Title/Abstract] OR exportin[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/17323927/",
+    "publisher": "https://doi.org/10.1021/bi062107q"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-26518055",
+  "pmid": "26518055",
+  "doi": "10.1093/toxsci/kfv233",
+  "title": "Monomethylarsonous acid (MMA+3) Inhibits IL-7 Signaling in Mouse Pre-B Cells.",
+  "abstract": "Our previously published data show that As(+3) in\u00a0vivo and in\u00a0vitro, at very low concentrations, inhibits lymphoid, but not myeloid stem cell development in mouse bone marrow. We also showed that the As(+3) metabolite, monomethylarsonous acid (MMA(+3)), was responsible for the observed pre-B cell toxicity caused by As(+3). Interleukin-7 (IL-7) is the primary growth factor responsible for pre-lymphoid development in mouse and human bone marrow, and Signal Transducer and Activator of Transcription 5 (STAT5) is a transcriptional factor in the IL-7 signaling pathway. We found that MMA(+3) inhibited STAT5 phosphorylation at a concentration as low as 50\u2009nM in mouse bone marrow pre-B cells. Inhibition of STAT5 phosphorylation by As(+3) occurred only at a concentration of 500\u2009nM. In the IL-7 dependent mouse pre-B 2E8 cell line, we also found selective inhibition of STAT5 phosphorylation by MMA(+3), and this inhibition was dependent on effects on JAK3 phosphorylation. IL-7 receptor expression on 2E8 cell surface was also suppressed by 50\u2009nM MMA(+3) at 18\u2009h. As further evidence for the inhibition of STAT5, we found that the induction of several genes required in B cell development, cyclin D1, E2A, EBF1, and PAX5, were selectively inhibited by MMA(+3). Since 2E8 cells lack the enzymes responsible for the conversion of As(+3) to MMA(+3) in\u00a0vitro, the results of these studies suggest that As(+3) induced inhibition of pre-B cell formation in\u00a0vivo is likely dependent on the formation of MMA(+3) which in turn inhibits IL-7 signaling at several steps in mouse pre-B cells.",
+  "year": "2016",
+  "journal": "Toxicological sciences : an official journal of the Society of Toxicology",
+  "authors": [
+    "Ezeh PC",
+    "Xu H",
+    "Lauer FT",
+    "Liu KJ",
+    "Hudson LG",
+    "Burchiel SW"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/26518055/",
+    "publisher": "https://doi.org/10.1093/toxsci/kfv233"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-26412593",
+  "pmid": "26412593",
+  "doi": "10.3892/ijo.2015.3184",
+  "title": "Human rhabdomyosarcoma cells express functional erythropoietin receptor: Potential therapeutic implications.",
+  "abstract": "The erythropoietin receptor (EpoR) is expressed by cells from the erythroid lineage; however, evidence has accumulated that it is also expressed by some solid tumors. This is an important observation, because recombinant erythropoietin (EPO) is employed in cancer patients to treat anemia related to chemo/radiotherapy. In our studies we employed eight rhabdomyosarcoma (RMS) cell lines (three alveolar-type RMS cell lines and five embrional-type RMS cell lines), and mRNA samples obtained from positive, PAX7-FOXO1-positive, and fusion-negative RMS patient samples. Expression of EpoR was evaluated by RT-PCR, gene array and FACS. The functionality of EpoR in RMS cell lines was evaluated by chemotaxis, adhesion, and direct cell proliferation assays. In some of the experiments, RMS cells were exposed to vincristine (VCR) in the presence or absence of EPO to test whether EPO may impair the therapeutic effect of VCR. We report for a first time that functional EpoR is expressed in human RMS cell lines as well as by primary tumors from RMS patients. Furthermore, EpoR is detectably expressed in both embryonal and alveolar RMS subtypes. At the functional level, several human RMS cell lines responded to EPO stimulation by enhanced proliferation, chemotaxis, cell adhesion, and phosphorylation of MAPKp42/44 and AKT. Moreover, RMS cells became more resistant to VCR treatment in the presence of EPO. Our findings have important potential clinical implications, indicating that EPO supplementation in RMS patients may have the unwanted side effect of tumor progression.",
+  "year": "2015",
+  "journal": "International journal of oncology",
+  "authors": [
+    "Poniewierska-Baran A",
+    "Suszynska M",
+    "Sun W",
+    "Abdelbaset-Ismail A",
+    "Schneider G",
+    "Barr FG",
+    "Ratajczak MZ"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/26412593/",
+    "publisher": "https://doi.org/10.3892/ijo.2015.3184"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "paper_id": "pmid-31565544",
+  "pmid": "31565544",
+  "doi": "10.7717/peerj.7195",
+  "title": "Risk assessment of FLT3 and PAX5 variants in B-acute lymphoblastic leukemia: a case-control study in a Pakistani cohort.",
+  "abstract": "AIMS: B-cell acute lymphoblastic leukemia (B-ALL) is amongst the most prevalent cancers of children in Pakistan. Genetic variations in FLT3 are associated with auto-phosphorylation of kinase domain that leads to increased proliferation of blast cells. Paired box family of transcription factor (PAX5) plays a critical role in commitment and differentiation of B-cells. Variations in PAX5 are associated with the risk of B-ALL. We aimed to analyze the association of FLT3 and PAX5 polymorphisms with B cell leukemia in Pakistani cohort.\n\nMETHODS: We collected 155 B-ALL subject and 155 control blood samples. For analysis, genotyping was done by tetra ARMS-PCR. SPSS was used to check the association of demographic factors of SNPs present in the population with the risk of B-ALL.\n\nRESULTS: Risk allele frequency A at locus 13q12.2 (rs35958982, FLT3) was conspicuous and showed positive association (OR = 2.30, CI [1.20-4.50], P\u00a0=\u00a00.005) but genotype frequency (OR = 3.67, CI [0.75-18.10], P\u00a0=\u00a00.088) failed to show any association with the disease. At locus 9p13.2 (rs3780135, PAX5), the risk allele frequency was significantly higher in B-ALL subjects than ancestral allele frequency (OR = 2.17, CI [1.37-3.43], P\u00a0=\u00a00.000). Genotype frequency analysis of rs3780135 polymorphism exhibited the protective effect (OR = 0.55, CI [0.72-1.83], P\u00a0=\u00a00.029). At locus 13q12.2 (rs12430881, FLT3), the minor allele frequency G (OR = 1.15, CI [1.37-3.43], P\u00a0=\u00a00.043) and genotype frequency (OR = 2.52, P\u00a0=\u00a00.006) reached significance as showed p\u00a0<\u00a00.05.\n\nCONCLUSION: In the present study, a strong risk of B-cell acute lymphoblastic leukemia was associated with rs35958982 and rs12430881 polymorphisms. However, rs3780135 polymorphism showed the protective effect. Additionally, other demographic factors like family history, smoking and consanguinity were also found to be important in risk assessment. We anticipate that the information from genetic variations in this study can aid in therapeutic approach in the future.",
+  "year": "2019",
+  "journal": "PeerJ",
+  "authors": [
+    "Khalid A",
+    "Aslam S",
+    "Ahmed M",
+    "Hasnain S",
+    "Aslam A"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/31565544/",
+    "publisher": "https://doi.org/10.7717/peerj.7195"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "paper_id": "pmid-17049897",
+  "pmid": "17049897",
+  "doi": "10.1016/j.cbpb.2006.08.013",
+  "title": "Characterisation and expression of the paired box protein 7 (Pax7) gene in polymorphic Arctic charr (Salvelinus alpinus).",
+  "abstract": "Arctic charr (Salvelinus alpinus L.) from Lake Thingvallavatn, Iceland occur as four distinct morphs: large benthivorous (LB), dwarf benthivorous (DB), piscivorous (PI) and planktonivorous (PL). The morphs differ with respect to body size, head morphology, growth rate, and life history. The aim of this study was to investigate the paired box protein 7 (Pax7) gene as a candidate for such polymorphisms due to its importance in cranio-facial, skeletal muscle, and central nervous system development. No variation in coding and intronic sequences was found between morphs. We identified 10 alternate Pax7 isoforms with insertions/deletions: a four-residue (GNRT) deletion, a GEASS insertion truncated by the first serine residue (GEAS), and a thirteen-residue insertion (GQYA/TGPEYVYCGT). The latter insertion with a threonine (T) contains a putative casein kinase II (CK-2) phosphorylation site. Pax7 spatial expression patterns were identical in embryos of DB-, LB-, and PL-morphs, and were similar to those described for zebrafish Pax7c, but a difference in temporal expression for segmentation was observed between DB and LB morphs. At the end of segmentation, novel expression was observed in the mandibular region as two bilateral domains. The potential role of multiple alternative splicing of the Pax7 gene for the generation of different Arctic charr morphs is briefly discussed.",
+  "year": "2006",
+  "journal": "Comparative biochemistry and physiology. Part B, Biochemistry & molecular biology",
+  "authors": [
+    "Sibthorpe D",
+    "Sturlaugsd\u00f3ttir R",
+    "Kristjansson BK",
+    "Thorarensen H",
+    "Sk\u00falason S",
+    "Johnston IA"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/17049897/",
+    "publisher": "https://doi.org/10.1016/j.cbpb.2006.08.013"
+  }
+}

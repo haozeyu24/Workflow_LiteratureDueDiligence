@@ -1,0 +1,26 @@
+{
+  "paper_id": "pmid-24188744",
+  "pmid": "24188744",
+  "doi": "10.1016/j.exer.2013.10.018",
+  "title": "Lens specific RLIP76 transgenic mice show a phenotype similar to microphthalmia.",
+  "abstract": "RALBP1/RLIP76 is a ubiquitously expressed protein, involved in promotion and regulation of functions initiated by Ral and R-Ras small GTPases. Presence of multiple domains in its structure enables RLIP76 to be involved in a number of physiological processes such as endocytosis, exocytosis, mitochondrial fission, actin cytoskeleton remodeling, and transport of exogenous and endogenous toxicants. Previously, we have established that RLIP76 provides protection to ocular tissues against oxidative stress by transporting the glutathione-conjugates of the toxic, electrophilic products of lipid peroxidation generated during oxidative stress. Therefore, we developed lens specific RLIP76 transgenic mice (lensRLIP76\u00a0Tg) to elucidate the role of RLIP76 in protection against oxidative stress, but these transgenic mice showed impaired lens development and a phenotype with small eyes similar to that observed in microphthalmia. These findings prompted us to investigate the mechanisms via which RLIP76 affects lens and eye development. In the present study, we report engineering of lensRLIP76\u00a0Tg mice, characterization of the associated phenotype, and the possible molecular mechanisms that lead to the impaired development of eye and lens in these mice. The results of microarray array analysis indicate that the genes involved in pathways for G-Protein signaling, actin cytoskeleton reorganization, endocytosis, and apoptosis are affected in these transgenic mice. The expression of transcription factors, Pax6, Hsf1, and Hsf4b known to be involved in lens development is down regulated in the lens of these Tg mice. However, the expression of heat shock proteins (Hsps), the downstream targets of Hsfs, is differentially affected in the lens showing down regulation of Hsp27, Hsp40, up regulation of Hsp60, and no effect on Hsp70 and Hsp90 expression. The disruption in the organization of actin cytoskeleton of these Tg mice was associated with the inhibition of the activation of Cdc42 and down regulation of cofilin phosphorylation. These mice may provide useful animal model for elucidating the mechanisms of lens development, and etiology of microphthalmia.",
+  "year": "2014",
+  "journal": "Experimental eye research",
+  "authors": [
+    "Sahu M",
+    "Sharma R",
+    "Yadav S",
+    "Wakamiya M",
+    "Chaudhary P",
+    "Awasthi S",
+    "Awasthi YC"
+  ],
+  "source_queries": [
+    "(\"PAX3::FOXO1\"[Title/Abstract] OR \"PAX3-FOXO1\"[Title/Abstract] OR \"PAX7-FOXO1\"[Title/Abstract] OR \"PAX3\"[Title/Abstract] OR \"PAX7\"[Title/Abstract] OR \"PAX5\"[Title/Abstract] OR \"PAX6\"[Title/Abstract] OR \"PAX2\"[Title/Abstract]) AND (\"protein levels\"[Title/Abstract] OR \"protein stability\"[Title/Abstract] OR degradation[Title/Abstract] OR ubiquitin*[Title/Abstract] OR monoubiquitination[Title/Abstract] OR proteasom*[Title/Abstract] OR sumoylation[Title/Abstract] OR SUMOylation[Title/Abstract] OR deSUMOylation[Title/Abstract] OR phosphorylation[Title/Abstract] OR acetylation[Title/Abstract] OR hydroxylation[Title/Abstract] OR \"Hsp90\"[Title/Abstract] OR chaperone[Title/Abstract] OR PROTAC[Title/Abstract] OR degrader[Title/Abstract] OR \"nuclear localization\"[Title/Abstract])"
+  ],
+  "retrieval_batch": "20260826",
+  "links": {
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/24188744/",
+    "publisher": "https://doi.org/10.1016/j.exer.2013.10.018"
+  }
+}
