@@ -1,0 +1,2 @@
+loop_id,source_stage,trigger,triggered,action,target_stage,rationale,required_changes,stop_condition
+loop_1,workflow_control,no_loop_trigger,no,continue,reporter,No artifact-level loop trigger fired.,No workflow revision required.,Continue to final reporting.

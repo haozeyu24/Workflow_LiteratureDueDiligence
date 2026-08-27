@@ -10,6 +10,7 @@ query rerun.
 - preserve `original_user_prompt.md` unchanged
 - read the current pass `inputs/instruction.md`, `inputs/topic.md`, and optional `inputs/constraints.md`
 - read `artifacts/fulltext_review/pmc_mechanism_feedback.csv`
+- verify that the configured PMC full-text review coverage gate passed before using PMC feedback to revise the next pass
 - read prior `query_diagnostics.csv`, review/import outcomes, and pass snapshots when useful
 - write revised guidance under the next pass, such as `passes/pass_002/inputs/instruction.md` and `passes/pass_002/inputs/topic.md`, so downstream reviewers and the query scout share the same learned criteria
 - ensure the learned pass has its own `passes/pass_###/artifacts/` and `passes/pass_###/reports/` directories before rerun artifacts are written
@@ -60,3 +61,4 @@ original user request authorized that broader primary scope.
 - add PubMed collection caps
 - hide learned review criteria only in `search_strategy.md`
 - run PubMed collection for a learned rerun before recording the guidance revision
+- revise guidance from PMC feedback based on less than the configured PMC full-text review coverage gate

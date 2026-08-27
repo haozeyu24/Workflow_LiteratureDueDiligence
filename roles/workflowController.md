@@ -13,6 +13,9 @@ Decide whether a run should continue, pause, or loop back after evidence-bearing
 - give concrete revision instructions to the target role when a loop is triggered
 - avoid loops that are only motivated by discomfort with cohort size
 - enforce at least two big query-to-PMC-feedback passes before final PDF access
+- manage the run-root `WORKFLOW_NOT_COMPLETE` sentinel through `assess_workflow_loops.py`
+- never mark `workflow_state.status = complete` unless all completion-gate conditions are satisfied
+- fail closed on missing or incomplete required handoff artifacts before evaluating higher-level loop logic
 
 ## Inputs
 
@@ -29,6 +32,8 @@ Decide whether a run should continue, pause, or loop back after evidence-bearing
 ## Outputs
 
 - `artifacts/workflow_control/workflow_loop_decision.csv`
+- `artifacts/workflow_control/workflow_state.json`
+- run-root `WORKFLOW_NOT_COMPLETE` present for incomplete runs and absent only for complete runs
 
 ## Decision Actions
 
@@ -95,3 +100,18 @@ After PMC-learning feedback exists, the controller must require another query/re
 That loop must target `runGuidanceReviser` first so the revised run guidance and learned search strategy are synchronized.
 The controller must also require another query/review loop while fewer than `min_big_workflow_loops` PMC-feedback passes exist, regardless of whether the latest feedback says `final_pdf_pass`.
 Require `pdf_download_shortlist.csv` only when the latest PMC feedback says `final_pdf_pass`; the shortlist is the completion signal for the final loop before optional PDF ingestion.
+
+## Completion Rule
+
+The controller owns workflow completion.
+
+It may write `workflow_state.status = complete` only when:
+
+- at least `min_big_workflow_loops` PMC-feedback passes exist
+- the latest feedback says `final_pdf_pass`
+- no loop trigger remains active
+- stage handoff artifacts are complete enough for `validate_run.py` to pass
+- the final PDF queue condition is resolved by either no queue or a learned `pdf_download_shortlist.csv`
+
+After writing any non-complete state, `WORKFLOW_NOT_COMPLETE` must exist in the
+run root. After writing `complete`, the sentinel must be removed.

@@ -56,7 +56,7 @@ First extract structured evidence, then decide keep/drop from that evidence.
 
 - `evidence_tier`
 - `evidence_type`
-  Use `protein_folding_chaperone` for folding, conformational stability, proteostasis, heat-shock protein, or chaperone evidence.
+  Use a run-defined evidence class from the current topic or constraints; keep the label short and reusable when no vocabulary is provided.
 - `directness`
 - `target_centrality`
 - `evidence_summary`

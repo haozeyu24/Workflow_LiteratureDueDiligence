@@ -11,6 +11,28 @@ The workflow is designed to be:
 
 The main variable is the user-provided instruction and topic.
 
+## Upstream Prompt Contract
+
+This workflow can be used as a component inside a larger agentic system.
+The upstream user or parent agent should provide a scoped scientific prompt,
+not just a topic label.
+
+Recommended upstream handoff:
+
+- scientific objective: the question the literature workflow should answer
+- primary entities: genes, proteins, drugs, pathways, diseases, methods, or systems
+- evidence goal: mechanism, biomarker, response, perturbation, interaction, dependency, comparison, or another explicit evidence type
+- context: disease area, organism, model system, assay type, clinical setting, or population when relevant
+- allowed comparator scope: related entities or systems that may be queried directly
+- secondary context: useful background that may inform synthesis but should not drive PubMed queries
+- exclusions: paper types, contexts, or adjacent biology that should be deprioritized
+- final deliverable expectation: reading list, mechanism map, evidence table, gap analysis, PDF shortlist, or another concrete output
+
+See `templates/upstream_prompt_protocol_template.md` for a reusable parent-agent
+prompt shape. If these fields cannot be inferred, the run setup agent should
+mark the request as underspecified and ask for clarification or run only a
+diagnostic scouting step.
+
 ## Reuse boundary
 
 This specification must be read with one hard rule:
@@ -31,8 +53,8 @@ Only the run inputs should change.
 When creating instructions, prompts, or scripts for this workflow:
 
 - do not hardcode a specific biological topic into the reusable workflow files
-- do not hardcode a specific lab, pathogen set, or dataset into reusable scripts
-- do not assume Krogan, AP-MS, or any other example unless reading a specific run folder
+- do not hardcode a specific lab, organism set, assay family, or dataset into reusable scripts
+- do not assume any example domain unless reading a specific run folder
 
 Reusable files must operate on run inputs such as:
 
@@ -55,6 +77,52 @@ This is a real workflow, not just a prompt.
 - Markdown files define the workflow contract and review policy.
 - Code handles repeatable operations such as search retrieval, metadata collection, import, parsing, normalization, and report generation.
 - Agents perform the judgment-heavy review steps while writing back to structured artifacts.
+
+## Completion gate
+
+Do not treat useful intermediate artifacts as workflow completion.
+
+For every run, the root-level `WORKFLOW_NOT_COMPLETE` sentinel means the run is
+still incomplete. Agents and harnesses may report completed stages, but they must
+not call the workflow `done`, `complete`, `final`, or `finished` while this file
+exists.
+
+The required final check is:
+
+```bash
+python3 scripts/completion_gate.py <run_id>
+```
+
+This gate reruns the controller, regenerates reports, validates the run, checks
+that `workflow_state.json` has `status = complete`, and verifies that the
+incomplete sentinel has been removed.
+
+Before accepting a complete state, the gate deletes bulky PMC XML and
+PMC-normalized JSON payloads from earlier passes. The active final pass keeps its
+current full-text payloads; prior passes retain their CSV decisions, feedback,
+reports, and metadata provenance.
+
+For read-only review contexts, use:
+
+```bash
+python3 scripts/completion_gate.py --check-only <run_id>
+```
+
+Check-only mode validates the current state without rerunning the controller or
+updating sentinel/report files.
+
+If the gate fails, final responses must say the workflow is incomplete and list
+the next required stage or controller action.
+
+## Artifact boundary
+
+Default runs use `artifact_policy = workflow_only`.
+
+Agents may write only declared workflow artifacts under the active
+`runs/<run_id>/passes/pass_###/` tree. Extra rankings, summaries, dashboards,
+helper scripts, spreadsheets, or exports are forbidden unless the active
+workflow stage declares them or the user explicitly requests them in the current
+turn. `validate_run.py` enforces this boundary for active-pass files.
 
 ## Context management
 
@@ -141,5 +209,6 @@ Current wrapper behavior:
 - successful TEI output is normalized to the same JSON contract used for full-text review
 - if no reachable parser endpoint is available, staged PDFs remain explicitly `parser_pending`
 - PMC-normalized papers can still continue into full-text review
-- during `access_phase = pmc_learning`, manual PDF ingest is deferred; PMC-normalized papers should be read first for mechanism and query-feedback signals
+- during `access_phase = pmc_learning`, manual PDF ingest is deferred; normalized open full text should be read first for mechanism and query-feedback signals
+- when the latest feedback marks `final_pdf_pass` after the minimum learned loops, the controller records effective `access_phase = final_access`
 - during `access_phase = final_access`, manual PDF ingest should continue directly into full-text keep/drop review for any newly readable papers before the ingest cycle is considered complete

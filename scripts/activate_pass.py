@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import csv
 import shutil
 import sys
 from pathlib import Path
@@ -75,6 +76,135 @@ def seed_artifact_templates(pass_dir: Path) -> None:
             shutil.copy2(source, target)
 
 
+def load_csv(path: Path) -> list[dict[str, str]]:
+    if not path.exists():
+        return []
+    with path.open(encoding="utf-8") as handle:
+        return list(csv.DictReader(handle))
+
+
+def blank_count(rows: list[dict[str, str]], field: str) -> int:
+    return sum(1 for row in rows if not row.get(field, "").strip())
+
+
+def parse_config(path: Path) -> dict[str, str]:
+    if not path.exists():
+        return {}
+    config: dict[str, str] = {}
+    for raw_line in path.read_text(encoding="utf-8").splitlines():
+        line = raw_line.strip()
+        if not line.startswith("- `") or "`:" not in line:
+            continue
+        try:
+            key = line.split("`", 2)[1]
+            value = line.split("`:", 1)[1].split("`", 2)[1]
+        except IndexError:
+            continue
+        config[key] = value
+    return config
+
+
+def require_pmc_fulltext_review_gate(previous_pass: Path) -> list[str]:
+    config = parse_config(previous_pass / "inputs" / "run_config.md")
+    gate_mode = config.get("pmc_fulltext_review_gate_mode", "all_available").strip() or "all_available"
+    if gate_mode != "all_available":
+        return []
+
+    import_rows = load_csv(previous_pass / "artifacts" / "fulltext_import" / "import_status.csv")
+    fulltext_rows = load_csv(previous_pass / "artifacts" / "fulltext_review" / "fulltext_review.csv")
+    evidence_rows = load_csv(previous_pass / "artifacts" / "fulltext_review" / "evidence_extraction.csv")
+
+    pmc_available_ids = {
+        row.get("paper_id", "").strip()
+        for row in import_rows
+        if row.get("pmc_access_status", "").strip() == "available"
+    }
+    unattempted_ids = {
+        row.get("paper_id", "").strip()
+        for row in import_rows
+        if row.get("pmc_access_status", "").strip() == "available"
+        and row.get("pmc_parse_status", "").strip() == "not_attempted"
+    }
+    usable_ids = {
+        row.get("paper_id", "").strip()
+        for row in import_rows
+        if row.get("pmc_access_status", "").strip() == "available"
+        and row.get("pmc_parse_status", "").strip() == "usable"
+        and row.get("normalized_path", "").strip()
+    }
+    unusable_not_queued_ids = {
+        row.get("paper_id", "").strip()
+        for row in import_rows
+        if row.get("pmc_access_status", "").strip() == "available"
+        and row.get("pmc_parse_status", "").strip() == "unusable"
+        and row.get("pdf_needed", "").strip() != "yes"
+    }
+    reviewed_ids = {
+        row.get("paper_id", "").strip()
+        for row in fulltext_rows
+        if row.get("fulltext_decision", "").strip()
+    }
+    evidence_ids = {
+        row.get("paper_id", "").strip()
+        for row in evidence_rows
+        if row.get("evidence_tier", "").strip()
+    }
+
+    missing_review = sorted(usable_ids - reviewed_ids)
+    missing_evidence = sorted(usable_ids - evidence_ids)
+    if not (unattempted_ids or unusable_not_queued_ids or missing_review or missing_evidence):
+        return []
+
+    return [
+        "previous pass fails pmc_fulltext_review_gate_mode=all_available "
+        f"(PMC-available={len(pmc_available_ids)}, PMC-unattempted={len(unattempted_ids)}, "
+        f"PMC-usable={len(usable_ids)}, fulltext_reviewed={len(reviewed_ids & usable_ids)}, "
+        f"evidence_extracted={len(evidence_ids & usable_ids)}, "
+        f"unusable_not_queued={len(unusable_not_queued_ids)}; "
+        f"unattempted examples={sorted(unattempted_ids)[:5]}, "
+        f"unusable-not-queued examples={sorted(unusable_not_queued_ids)[:5]}, "
+        f"missing review examples={missing_review[:5]}, "
+        f"missing evidence examples={missing_evidence[:5]})"
+    ]
+
+
+def require_previous_pass_ready_for_learned_rerun(run_dir: Path, pass_number: int) -> list[str]:
+    if pass_number <= 1:
+        return []
+
+    previous_pass = archive_path_for_pass(run_dir, pass_number - 1)
+    if not previous_pass.exists():
+        return [f"Previous pass does not exist: {previous_pass}"]
+
+    manifest_rows = load_csv(previous_pass / "artifacts" / "metadata_collection" / "paper_manifest.csv")
+    abstract_rows = load_csv(previous_pass / "artifacts" / "abstract_review" / "abstract_review.csv")
+    abstract2_rows = load_csv(previous_pass / "artifacts" / "abstract_review" / "abstract_review2.csv")
+    feedback_rows = load_csv(previous_pass / "artifacts" / "fulltext_review" / "pmc_mechanism_feedback.csv")
+
+    errors: list[str] = []
+    if not manifest_rows:
+        errors.append("previous pass has no collected paper_manifest rows")
+    if len(abstract_rows) != len(manifest_rows) or blank_count(abstract_rows, "review_decision"):
+        errors.append("previous pass abstract_review.csv is incomplete")
+    if (
+        len(abstract2_rows) != len(manifest_rows)
+        or blank_count(abstract2_rows, "abstract_reviewer2_decision")
+        or blank_count(abstract2_rows, "promotion_decision")
+    ):
+        errors.append("previous pass abstract_review2.csv is incomplete")
+    errors.extend(require_pmc_fulltext_review_gate(previous_pass))
+    if not feedback_rows:
+        errors.append("previous pass has no pmc_mechanism_feedback.csv rows")
+    else:
+        latest_pdf_decision = feedback_rows[-1].get("pdf_deferral_decision", "").strip()
+        if latest_pdf_decision != "defer_pdfs":
+            errors.append(
+                "previous pass latest PMC feedback does not request a learned rerun "
+                f"(pdf_deferral_decision={latest_pdf_decision or 'blank'})"
+            )
+    return errors
+
+
 def main() -> int:
     if len(sys.argv) != 3:
         print("Usage: python3 scripts/activate_pass.py <run_id> <pass_number>")
@@ -90,6 +220,17 @@ def main() -> int:
     run_dir = RUNS_DIR / run_id
     if not run_dir.exists():
         print(f"Run does not exist: {run_dir}")
+        return 1
+
+    readiness_errors = require_previous_pass_ready_for_learned_rerun(run_dir, pass_number)
+    if readiness_errors:
+        print(f"Refusing to activate pass_{pass_number:03d}: previous pass is not ready for a learned rerun.")
+        for error in readiness_errors:
+            print(f"- {error}")
+        print(
+            "Continue the active pass through abstract review, second abstract review, "
+            "PMC/full-text import, full-text review, and pmc_mechanism_feedback.csv before activating the next pass."
+        )
         return 1
 
     pass_dir = ensure_pass_layout(run_dir, pass_number)

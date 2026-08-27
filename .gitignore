@@ -7,22 +7,51 @@ runs/*/artifacts/
 runs/*/reports/
 runs/*/downloads/
 runs/*/logs/
+runs/*/passes/pass_*/artifacts/
+runs/*/passes/pass_*/reports/
+runs/*/passes/pass_*/downloads/
+runs/*/passes/pass_*/logs/
 runs/*/passes/pass_*/artifacts/fulltext_import/PMC_XML/
+runs/*/passes/pass_*/artifacts/fulltext_import/PMC_XML/normalized/
 runs/*/passes/pass_*/artifacts/fulltext_import/PDF/
 runs/*/passes/pass_*/artifacts/fulltext_import/PDFs/
 runs/*/passes/pass_*/artifacts/fulltext_import/pdfs/
 runs/*/passes/pass_*/artifacts/fulltext_import/downloads/
 runs/*/passes/pass_*/artifacts/fulltext_import/**/*.pdf
+runs/*/passes/pass_*/artifacts/metadata_collection/records/
 
 # Keep run definitions versioned so completed runs remain reproducible.
 !runs/README.md
 !runs/*/
+!runs/*/passes/
+!runs/*/passes/pass_*/
 !runs/*/request.md
 !runs/*/run_config.md
 !runs/*/instruction.md
 !runs/*/topic.md
 !runs/*/constraints.md
 !runs/*/notes.md
+!runs/*/passes/active_pass.json
+!runs/*/passes/pass_*/inputs/
+!runs/*/passes/pass_*/inputs/**
+!runs/*/passes/pass_*/reports/final_reading_list.csv
+!runs/*/passes/pass_*/reports/pdf_request_shortlist.csv
+!runs/*/passes/pass_*/reports/progress_report.md
+!runs/*/passes/pass_*/snapshot_manifest.json
+!runs/*/passes/pass_*/artifacts/abstract_review/
+!runs/*/passes/pass_*/artifacts/abstract_review/*.csv
+!runs/*/passes/pass_*/artifacts/fulltext_import/
+!runs/*/passes/pass_*/artifacts/fulltext_import/import_status.csv
+!runs/*/passes/pass_*/artifacts/fulltext_import/manual_pdf_queue.csv
+!runs/*/passes/pass_*/artifacts/fulltext_import/pdf_download_shortlist.csv
+!runs/*/passes/pass_*/artifacts/fulltext_review/
+!runs/*/passes/pass_*/artifacts/fulltext_review/*.csv
+!runs/*/passes/pass_*/artifacts/metadata_collection/
+!runs/*/passes/pass_*/artifacts/metadata_collection/paper_manifest.csv
+!runs/*/passes/pass_*/artifacts/search_strategy/
+!runs/*/passes/pass_*/artifacts/search_strategy/**
+!runs/*/passes/pass_*/artifacts/workflow_control/
+!runs/*/passes/pass_*/artifacts/workflow_control/**
 
 # Track intentionally small fixture artifacts under runs/fixture-* when added.
 !runs/fixture-*/artifacts/

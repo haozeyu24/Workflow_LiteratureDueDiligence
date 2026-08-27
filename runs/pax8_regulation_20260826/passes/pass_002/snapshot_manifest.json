@@ -1,7 +1,7 @@
 {
   "pass_number": 2,
   "snapshot_reason": "after_workflow_controller_assessment",
-  "snapshot_created_at": "2026-08-27T03:03:11Z",
+  "snapshot_created_at": "2026-08-27T16:17:09Z",
   "completed_big_loop_count_at_snapshot": 1,
   "latest_feedback_loop_id": "pmc_learning_2",
   "latest_pdf_deferral_decision": "final_pdf_pass",

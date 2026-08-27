@@ -14,6 +14,7 @@ from pass_archive import active_artifacts_dir, load_all_pass_csv, run_input_path
 
 WORKFLOW_ROOT = Path(__file__).resolve().parents[1]
 RUNS_DIR = WORKFLOW_ROOT / "runs"
+INCOMPLETE_SENTINEL = "WORKFLOW_NOT_COMPLETE"
 
 FIELDS = [
     "loop_id",
@@ -62,6 +63,10 @@ def config_int(config: dict[str, str], key: str, default: int) -> int:
     return int(value)
 
 
+def pmc_fulltext_review_gate_mode(config: dict[str, str]) -> str:
+    return config.get("pmc_fulltext_review_gate_mode", "all_available").strip() or "all_available"
+
+
 def ratio(numerator: int, denominator: int) -> float:
     if denominator == 0:
         return 0.0
@@ -94,6 +99,298 @@ def add_decision(
     )
 
 
+def blank_count(rows: list[dict[str, str]], field: str) -> int:
+    return sum(1 for row in rows if not row.get(field, "").strip())
+
+
+def id_set(rows: list[dict[str, str]]) -> set[str]:
+    return {row.get("paper_id", "").strip() for row in rows if row.get("paper_id", "").strip()}
+
+
+def add_stage_gate_decision(
+    decisions: list[dict[str, str]],
+    manifest_rows: list[dict[str, str]],
+    abstract_rows: list[dict[str, str]],
+    abstract2_rows: list[dict[str, str]],
+    import_rows: list[dict[str, str]],
+    fulltext_rows: list[dict[str, str]],
+    evidence_rows: list[dict[str, str]],
+    pmc_feedback_rows: list[dict[str, str]],
+) -> bool:
+    """Fail closed on incomplete stage handoffs before higher-level loop logic."""
+    if not manifest_rows:
+        add_decision(
+            decisions,
+            "metadata_collection",
+            "collection_pending",
+            True,
+            "loop_to_query_scout",
+            "pubmedCollector",
+            "No collected paper manifest exists for the active pass.",
+            "Run PubMed collection from the accepted search strategy before abstract review or reporting.",
+            "Proceed when paper_manifest.csv contains the full accepted PubMed result set.",
+        )
+        return True
+
+    manifest_ids = id_set(manifest_rows)
+    abstract_ids = id_set(abstract_rows)
+    abstract2_ids = id_set(abstract2_rows)
+
+    review1_blank_decisions = blank_count(abstract_rows, "review_decision")
+    review1_blank_confidence = blank_count(abstract_rows, "review_confidence")
+    review1_blank_reviewer = blank_count(abstract_rows, "reviewer_type")
+    if (
+        len(abstract_rows) != len(manifest_rows)
+        or abstract_ids != manifest_ids
+        or review1_blank_decisions
+        or review1_blank_confidence
+        or review1_blank_reviewer
+    ):
+        add_decision(
+            decisions,
+            "abstract_review",
+            "abstract_review_1_pending",
+            True,
+            "loop_to_abstract_review",
+            "abstractReviewer",
+            (
+                "Abstract review 1 is incomplete: "
+                f"{len(abstract_rows)} rows for {len(manifest_rows)} manifest records; "
+                f"blank decisions={review1_blank_decisions}, "
+                f"blank confidence={review1_blank_confidence}, "
+                f"blank reviewer_type={review1_blank_reviewer}."
+            ),
+            "Fill review_decision, review_confidence, reviewer_type, and rationale for every paper_manifest row before reviewer 2, import, PDF, or final reporting.",
+            "Proceed when abstract_review.csv has one complete valid decision row per paper_manifest row.",
+        )
+        return True
+
+    review2_blank_decisions = blank_count(abstract2_rows, "abstract_reviewer2_decision")
+    review2_blank_confidence = blank_count(abstract2_rows, "abstract_reviewer2_confidence")
+    promotion_blank = blank_count(abstract2_rows, "promotion_decision")
+    if (
+        len(abstract2_rows) != len(manifest_rows)
+        or abstract2_ids != manifest_ids
+        or review2_blank_decisions
+        or review2_blank_confidence
+        or promotion_blank
+    ):
+        add_decision(
+            decisions,
+            "abstract_review",
+            "abstract_review_2_pending",
+            True,
+            "loop_to_abstract_review",
+            "abstractReviewer2",
+            (
+                "Abstract review 2 is incomplete: "
+                f"{len(abstract2_rows)} rows for {len(manifest_rows)} manifest records; "
+                f"blank reviewer2 decisions={review2_blank_decisions}, "
+                f"blank confidence={review2_blank_confidence}, "
+                f"blank promotion decisions={promotion_blank}."
+            ),
+            "Fill abstractReviewer2 decisions, confidence, rationale, and promotion_decision for every paper before import, PDF, or final reporting.",
+            "Proceed when abstract_review2.csv has one complete valid promotion row per paper_manifest row.",
+        )
+        return True
+
+    advanced_ids = {
+        row.get("paper_id", "").strip()
+        for row in abstract2_rows
+        if row.get("promotion_decision", "").strip() == "advance_to_import"
+    }
+    import_ids = id_set(import_rows)
+    if advanced_ids != import_ids:
+        add_decision(
+            decisions,
+            "fulltext_import",
+            "pmc_import_pending",
+            True,
+            "continue",
+            "fullTextImporter",
+            (
+                "Full-text import handoff is incomplete: "
+                f"{len(advanced_ids)} papers advanced to import, "
+                f"{len(import_ids)} import_status rows exist."
+            ),
+            "Run prepare_import_status.py and PMC import for the abstractReviewer2 advance_to_import set before PDF or final reporting.",
+            "Proceed when import_status.csv exactly covers the advance_to_import paper set.",
+        )
+        return True
+
+    normalized_ids = {
+        row.get("paper_id", "").strip()
+        for row in import_rows
+        if row.get("normalized_path", "").strip()
+    }
+    fulltext_ids = id_set(fulltext_rows)
+    if normalized_ids != fulltext_ids:
+        add_decision(
+            decisions,
+            "fulltext_review",
+            "fulltext_review_pending",
+            True,
+            "loop_to_fulltext_review",
+            "fullTextReviewer",
+            (
+                "Full-text review handoff is incomplete: "
+                f"{len(normalized_ids)} normalized readable imports, "
+                f"{len(fulltext_ids)} fulltext_review rows."
+            ),
+            "Run prepare_fulltext_review.py and review every normalized readable full text before PMC feedback or final reporting.",
+            "Proceed when fulltext_review.csv exactly covers normalized readable imports.",
+        )
+        return True
+
+    if fulltext_rows and not evidence_rows:
+        add_decision(
+            decisions,
+            "fulltext_review",
+            "missing_evidence_extraction",
+            True,
+            "loop_to_fulltext_review",
+            "fullTextReviewer",
+            "Full-text review rows exist but evidence_extraction.csv is empty.",
+            "Extract structured evidence for every readable full text before PMC mechanism feedback or final reporting.",
+            "Proceed when evidence_extraction.csv supports every full-text keep/drop decision.",
+        )
+        return True
+
+    if fulltext_rows and evidence_rows:
+        reviewed_ids = {
+            row.get("paper_id", "").strip()
+            for row in fulltext_rows
+            if row.get("fulltext_decision", "").strip()
+        }
+        evidence_ids = {
+            row.get("paper_id", "").strip()
+            for row in evidence_rows
+            if row.get("paper_id", "").strip()
+        }
+        if reviewed_ids != evidence_ids:
+            add_decision(
+                decisions,
+                "fulltext_review",
+                "evidence_extraction_incomplete",
+                True,
+                "loop_to_fulltext_review",
+                "fullTextReviewer",
+                (
+                    "Evidence extraction coverage is incomplete: "
+                    f"{len(reviewed_ids)} reviewed full-text papers and {len(evidence_ids)} evidence rows."
+                ),
+                (
+                    "Write exactly one evidence_extraction.csv row for every fulltext_review.csv row "
+                    "with a keep/drop decision before PMC feedback, final reporting, or completion."
+                ),
+                "Proceed when evidence_extraction.csv exactly covers all reviewed readable full texts.",
+            )
+            return True
+
+    if fulltext_rows and evidence_rows and not pmc_feedback_rows:
+        add_decision(
+            decisions,
+            "fulltext_review",
+            "pmc_feedback_pending",
+            True,
+            "loop_to_fulltext_review",
+            "fullTextReviewer",
+            "Readable full text has been reviewed, but no PMC mechanism feedback row exists for query learning.",
+            "Write pmc_mechanism_feedback.csv before PDF access or learned rerun decisions.",
+            "Proceed when PMC feedback summarizes mechanisms, noise families, missing terms, query changes, and PDF deferral decision.",
+        )
+        return True
+
+    return False
+
+
+def add_pmc_fulltext_review_gate_decision(
+    decisions: list[dict[str, str]],
+    config: dict[str, str],
+    import_rows: list[dict[str, str]],
+    fulltext_rows: list[dict[str, str]],
+    evidence_rows: list[dict[str, str]],
+    pmc_feedback_rows: list[dict[str, str]],
+) -> None:
+    if pmc_fulltext_review_gate_mode(config) != "all_available":
+        return
+
+    pmc_available_ids = {
+        row.get("paper_id", "").strip()
+        for row in import_rows
+        if row.get("pmc_access_status", "").strip() == "available"
+    }
+    unattempted_ids = {
+        row.get("paper_id", "").strip()
+        for row in import_rows
+        if row.get("pmc_access_status", "").strip() == "available"
+        and row.get("pmc_parse_status", "").strip() == "not_attempted"
+    }
+    usable_ids = {
+        row.get("paper_id", "").strip()
+        for row in import_rows
+        if row.get("pmc_access_status", "").strip() == "available"
+        and row.get("pmc_parse_status", "").strip() == "usable"
+        and row.get("normalized_path", "").strip()
+    }
+    unusable_not_queued_ids = {
+        row.get("paper_id", "").strip()
+        for row in import_rows
+        if row.get("pmc_access_status", "").strip() == "available"
+        and row.get("pmc_parse_status", "").strip() == "unusable"
+        and row.get("pdf_needed", "").strip() != "yes"
+    }
+    reviewed_ids = {
+        row.get("paper_id", "").strip()
+        for row in fulltext_rows
+        if row.get("fulltext_decision", "").strip()
+    }
+    evidence_ids = {
+        row.get("paper_id", "").strip()
+        for row in evidence_rows
+        if row.get("evidence_tier", "").strip()
+    }
+
+    missing_review = usable_ids - reviewed_ids
+    missing_evidence = usable_ids - evidence_ids
+    if not (unattempted_ids or unusable_not_queued_ids or missing_review or missing_evidence):
+        return
+
+    if unattempted_ids or unusable_not_queued_ids:
+        action = "continue"
+        target_stage = "fullTextImporter"
+        required_changes = (
+            "Continue PMC import until every pmc_access_status=available paper has pmc_parse_status usable or unusable; "
+            "usable PMC full text must have normalized_path and unusable PMC records must be queued for PDF access."
+        )
+    else:
+        action = "loop_to_fulltext_review"
+        target_stage = "fullTextReviewer"
+        required_changes = (
+            "Review every PMC-available normalized full text and write a matching evidence_extraction.csv row "
+            "before using PMC feedback for learned query revision."
+        )
+
+    add_decision(
+        decisions,
+        "fulltext_review",
+        "pmc_fulltext_review_gate_incomplete",
+        True,
+        action,
+        target_stage,
+        (
+            "Strict PMC full-text review gate is incomplete: "
+            f"PMC-available={len(pmc_available_ids)}, PMC-unattempted={len(unattempted_ids)}, "
+            f"PMC-usable={len(usable_ids)}, fulltext_reviewed={len(reviewed_ids & usable_ids)}, "
+            f"evidence_extracted={len(evidence_ids & usable_ids)}, "
+            f"unusable_not_queued={len(unusable_not_queued_ids)}."
+        ),
+        required_changes,
+        "Proceed to run-guidance revision only when 100% of usable PMC full texts are normalized, reviewed, and evidence-extracted, and every unusable PMC record is queued for PDF access.",
+    )
+    decisions.insert(0, decisions.pop())
+
+
 def build_state(
     run_id: str,
     access_phase: str,
@@ -111,6 +408,11 @@ def build_state(
         if pmc_feedback_rows
         else ""
     )
+    final_learning_satisfied = (
+        len(pmc_feedback_rows) >= min_big_workflow_loops
+        and latest_pdf_decision == "final_pdf_pass"
+    )
+    effective_access_phase = "final_access" if final_learning_satisfied else access_phase
     pdf_request_count = sum(
         row.get("shortlist_decision", "") == "request_pdf"
         for row in pdf_shortlist_rows
@@ -119,7 +421,7 @@ def build_state(
     state = {
         "run_id": run_id,
         "status": "running",
-        "access_phase": access_phase,
+        "access_phase": effective_access_phase,
         "completion_signal": "",
         "next_action": "continue_workflow",
         "active_loop_count": active_loop_count,
@@ -162,7 +464,7 @@ def build_state(
             {
                 "status": "awaiting_pdf_shortlist",
                 "next_action": "build_pdf_download_shortlist",
-                "reason": "PMC feedback marks final PDF pass, but the final PDF queue has not been scored.",
+                "reason": "PMC learning is satisfied and the final PDF queue has not been scored.",
             }
         )
     elif fulltext_rows and pmc_feedback_rows and latest_pdf_decision == "final_pdf_pass":
@@ -172,7 +474,7 @@ def build_state(
                     "status": "complete",
                     "completion_signal": "pdf_download_shortlist_ready",
                     "next_action": "report_final_loop",
-                    "reason": "Final PMC feedback is satisfied and the PDF queue has a download shortlist.",
+                    "reason": "Final-access criteria are satisfied and the PDF queue has a download shortlist.",
                 }
             )
         else:
@@ -181,7 +483,7 @@ def build_state(
                     "status": "complete",
                     "completion_signal": "no_pdf_queue",
                     "next_action": "report_final_loop",
-                    "reason": "Final PMC feedback is satisfied and no manual PDF queue remains.",
+                    "reason": "Final-access criteria are satisfied and no manual PDF queue remains.",
                 }
             )
     elif latest_pdf_decision == "defer_pdfs":
@@ -196,6 +498,23 @@ def build_state(
     if state["status"] not in STATE_STATUSES:
         state["status"] = "running"
     return state
+
+
+def update_incomplete_sentinel(run_dir: Path, state: dict[str, object]) -> None:
+    sentinel_path = run_dir / INCOMPLETE_SENTINEL
+    if state.get("status") == "complete":
+        if sentinel_path.exists():
+            sentinel_path.unlink()
+        return
+
+    sentinel_path.write_text(
+        "This run is not workflow-complete.\n"
+        "Do not report the workflow as done until scripts/completion_gate.py passes.\n"
+        f"Current controller status: {state.get('status', 'unknown')}\n"
+        f"Next action: {state.get('next_action', 'unknown')}\n"
+        f"Reason: {state.get('reason', '')}\n",
+        encoding="utf-8",
+    )
 
 
 def main() -> int:
@@ -235,28 +554,24 @@ def main() -> int:
         max_workflow_loops = min_big_workflow_loops
 
     decisions: list[dict[str, str]] = []
-
-    abstract_include_rate = ratio(
-        sum(row.get("review_decision", "") == "include" for row in abstract_rows),
-        len(manifest_rows),
+    add_stage_gate_decision(
+        decisions,
+        manifest_rows,
+        abstract_rows,
+        abstract2_rows,
+        import_rows,
+        fulltext_rows,
+        evidence_rows,
+        pmc_feedback_rows,
     )
-    advance_rate = ratio(
-        sum(row.get("promotion_decision", "") == "advance_to_import" for row in abstract2_rows),
-        len(manifest_rows),
+    add_pmc_fulltext_review_gate_decision(
+        decisions,
+        config,
+        import_rows,
+        fulltext_rows,
+        evidence_rows,
+        pmc_feedback_rows,
     )
-    advanced_count = sum(row.get("promotion_decision", "") == "advance_to_import" for row in abstract2_rows)
-    if abstract_include_rate > 0.75 and advance_rate > 0.45 and advanced_count > 300:
-        add_decision(
-            decisions,
-            "abstract_review",
-            "broad_abstract_promotion",
-            True,
-            "loop_to_abstract_review",
-            "abstractReviewer",
-            f"Abstract review included {abstract_include_rate:.0%} of retrieved papers and reviewer 2 advanced {advance_rate:.0%}.",
-            "Tighten abstract reason-code definitions and require each include to name a direct, indirect, comparator, or access-unresolved evidence class.",
-            "Proceed when reviewer rationales are reproducible and broad expression/marker-only records are no longer included.",
-        )
 
     feedback_query_change = any(
         row.get("pdf_deferral_decision", "") == "defer_pdfs"
@@ -267,7 +582,12 @@ def main() -> int:
         )
         for row in pmc_feedback_rows
     )
-    if feedback_query_change and access_phase != "final_access":
+    pmc_gate_incomplete = any(
+        row.get("trigger", "") == "pmc_fulltext_review_gate_incomplete"
+        and row.get("triggered", "") == "yes"
+        for row in decisions
+    )
+    if feedback_query_change and access_phase != "final_access" and not pmc_gate_incomplete:
         latest_feedback = pmc_feedback_rows[-1]
         add_decision(
             decisions,
@@ -284,7 +604,7 @@ def main() -> int:
 
     latest_pdf_decision = all_pmc_feedback_rows[-1].get("pdf_deferral_decision", "") if all_pmc_feedback_rows else ""
 
-    if fulltext_rows and all_pmc_feedback_rows and len(all_pmc_feedback_rows) < min_big_workflow_loops:
+    if fulltext_rows and all_pmc_feedback_rows and len(all_pmc_feedback_rows) < min_big_workflow_loops and not pmc_gate_incomplete:
         latest_feedback = all_pmc_feedback_rows[-1]
         add_decision(
             decisions,
@@ -374,23 +694,6 @@ def main() -> int:
                 "Use pdf_download_shortlist.csv as the access action list. Do not loop back solely because the raw PDF queue remains large.",
                 "Proceed according to the PDF shortlist and run_config PDF policy.",
             )
-    elif minimum_big_loop_satisfied and import_rows and pdf_queue_rate > 0.50:
-        add_decision(
-            decisions,
-            "fulltext_import",
-            "large_pdf_queue_final_access",
-            True,
-            "pause_for_user",
-            "fullTextImporter",
-            f"Final access pass has a manual PDF queue containing {len(queue_rows)} of {len(import_rows)} advanced papers ({pdf_queue_rate:.0%}).",
-            "Ask the human or parent agent whether to provide PDFs, continue PMC-only, or require full-text completion.",
-            "Proceed according to the explicit PDF intervention decision.",
-        )
-
-    keep_rate = ratio(
-        sum(row.get("fulltext_decision", "") == "keep" for row in fulltext_rows),
-        len(fulltext_rows),
-    )
     if fulltext_rows and not evidence_rows:
         add_decision(
             decisions,
@@ -412,12 +715,10 @@ def main() -> int:
             and fulltext_decisions.get(row.get("paper_id", "")) == "keep"
         )
         weak_kept_rate = ratio(weak_kept_count, len(evidence_rows))
-        if weak_kept_rate > 0.05 or keep_rate > 0.70:
+        if weak_kept_rate > 0.05:
             rationale_parts = []
             if weak_kept_rate > 0.05:
                 rationale_parts.append(f"{weak_kept_rate:.0%} of evidence rows are weak/background papers still kept")
-            if keep_rate > 0.70:
-                rationale_parts.append(f"full-text keep rate is {keep_rate:.0%}, which is high enough to require calibration")
             add_decision(
                 decisions,
                 "fulltext_review",
@@ -426,8 +727,8 @@ def main() -> int:
                 "loop_to_fulltext_review",
                 "fullTextReviewer",
                 "Evidence extraction calibration trigger: " + "; ".join(rationale_parts) + ".",
-                "Audit final keeps against extracted evidence tiers. Drop background/exclude evidence by default; if the keep rate remains high, sample kept papers for false-positive patterns and require each keep to name the decisive direct or strong indirect evidence.",
-                "Proceed when final keeps are mostly direct, strong indirect, or authorized comparator evidence.",
+                "Audit final keeps against extracted evidence tiers. Drop background/exclude evidence by default and require each keep to name the decisive direct or strong indirect evidence.",
+                "Proceed when final keeps are direct, strong indirect, or authorized comparator evidence.",
             )
 
     if not decisions:
@@ -463,6 +764,7 @@ def main() -> int:
     )
     state_path = control_dir / "workflow_state.json"
     state_path.write_text(json.dumps(state, indent=2) + "\n", encoding="utf-8")
+    update_incomplete_sentinel(run_dir, state)
     snapshot_dir = snapshot_current_pass(run_dir, "after_workflow_controller_assessment")
     if snapshot_dir:
         print(f"Archived current pass snapshot at {snapshot_dir}")

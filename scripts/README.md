@@ -11,7 +11,7 @@ Scripts here must:
 - accept run-specific inputs from a run folder
 - write outputs using the shared workflow schemas
 - avoid hardcoded topic logic
-- avoid hardcoded references to Krogan, AP-MS, or any other specific example
+- avoid hardcoded references to any specific example domain
 
 ## Allowed assumptions
 
@@ -26,7 +26,7 @@ Scripts may assume:
 
 Scripts must not assume:
 
-- a fixed virus list
+- a fixed entity list
 - a fixed laboratory
 - a fixed assay type
 - a fixed biological question
@@ -42,13 +42,25 @@ If a script needs topic-specific behavior, it should:
 ## Current entrypoints
 
 - `init_run.py <run_id>`
-  Initialize a run folder with `passes/pass_001/{inputs,artifacts,reports}` and record pass 1 as active.
+  Initialize a run folder with `passes/pass_001/{inputs,artifacts,reports}`, record pass 1 as active, and create the run-root `WORKFLOW_NOT_COMPLETE` sentinel.
 - `activate_pass.py <run_id> <pass_number>`
-  Create or activate a pass directory such as `passes/pass_002/`, seed its inputs from the previous pass when available, and record it in `passes/active_pass.json`. Use this before a learned rerun writes pass-specific artifacts.
+  Create or activate a pass directory such as `passes/pass_002/`, seed its inputs from the previous pass when available, and record it in `passes/active_pass.json`. Use this only before a learned rerun writes pass-specific artifacts. For pass 2 or later, this entrypoint refuses activation until the previous pass has completed abstract review, second abstract review, and PMC feedback with `pdf_deferral_decision = defer_pdfs`.
 - `validate_run.py <run_id>`
   Check that a run has the expected inputs and outputs, valid schema values,
   complete review decisions, consistent stage handoffs, and readable normalized
-  file pointers.
+  file pointers. When `artifact_policy = workflow_only`, also reject undeclared
+  active-pass artifacts such as ad hoc rankings, exports, helper scripts, or
+  side summaries.
+- `completion_gate.py <run_id>`
+  The only approved workflow-completion check. It reruns the controller,
+  regenerates reports, runs validation, requires `workflow_state.status =
+  complete`, and requires the run-root `WORKFLOW_NOT_COMPLETE` sentinel to be
+  absent. Before final validation it deletes prior-pass PMC XML and
+  PMC-normalized JSON payload files, while preserving structured pass artifacts.
+  Use `completion_gate.py --check-only <run_id>` for read-only review of the
+  current state without controller/report/sentinel/cleanup mutation. Agents and
+  harnesses must not report the whole workflow as complete unless the mutating
+  gate exits `0`.
 - `collect_pubmed.py <run_id>`
   Read the active pass search strategy, page through the full PubMed result set for every accepted query, and collect title/abstract metadata into the active pass artifact folder. For learned reruns where the latest PMC feedback says `defer_pdfs`, this entrypoint refuses to run until `artifacts/workflow_control/run_guidance_revision_log.csv` records that the latest feedback was incorporated into pass-scoped guidance under `passes/pass_###/inputs/` and the learned `search_strategy.md`. PubMed collection caps are forbidden; the script refuses `max_results_per_query`, `max_total_results`, `retmax`, or equivalent cap constraints. Also writes query hit counts and non-truncation status to `query_diagnostics.csv`.
 

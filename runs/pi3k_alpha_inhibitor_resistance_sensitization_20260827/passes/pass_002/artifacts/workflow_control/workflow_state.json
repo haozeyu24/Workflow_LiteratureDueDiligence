@@ -1,0 +1,16 @@
+{
+  "run_id": "pi3k_alpha_inhibitor_resistance_sensitization_20260827",
+  "status": "complete",
+  "access_phase": "final_access",
+  "completion_signal": "pdf_download_shortlist_ready",
+  "next_action": "report_final_loop",
+  "active_loop_count": 0,
+  "completed_big_loop_count": 2,
+  "min_big_workflow_loops": 2,
+  "max_workflow_loops": 5,
+  "latest_pdf_deferral_decision": "final_pdf_pass",
+  "manual_pdf_queue_count": 161,
+  "pdf_download_shortlist_count": 161,
+  "pdf_request_count": 12,
+  "reason": "Final-access criteria are satisfied and the PDF queue has a download shortlist."
+}

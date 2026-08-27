@@ -18,6 +18,7 @@ Convert a free-form user request into run-specific workflow inputs.
 
 - `request.md`
 - `original_user_prompt.md`
+- optional upstream handoff following `templates/upstream_prompt_protocol_template.md`
 
 ## Outputs
 
@@ -42,6 +43,9 @@ The run setup agent must make two operational settings explicit:
   - `adaptive`
   - `minimal`
   - `exploratory`
+- `artifact_policy`
+  - `workflow_only`
+  - `allow_user_requested_exports`
 - `max_query_optimization_rounds`
   This limits keyword-optimization rounds, not PubMed collection size.
 - `min_big_workflow_loops`
@@ -52,11 +56,31 @@ The run setup agent must make two operational settings explicit:
 Default:
 
 - `agent_facing` + `continue_pmc_only`
+- `artifact_policy = workflow_only`
 
 Use `human_facing` + `pause_for_user` only when the user explicitly wants a human checkpoint for PDF download timing.
 
 When `interaction_mode` is `human_facing`, the workflow should treat "user provides PDFs" as a single continuation path.
 It should not create separate workflow branches for "all PDFs" versus "some PDFs".
+
+## Prompt Scope Assessment
+
+Before writing run inputs, judge whether the prompt gives enough structure for
+the workflow to search without silently inventing scope.
+
+Classify the prompt internally as:
+
+- `clear`: primary entities, evidence goal, and context are explicit enough to proceed
+- `broad_but_workable`: proceed, but make the query-scope contract especially explicit
+- `exploratory`: run only diagnostic scouting unless the parent agent authorizes a broader literature map
+- `too_vague`: ask for clarification before PubMed collection
+
+Do not use this assessment to narrow the run silently.
+Use it to preserve the original objective, ask for missing scope, or write a
+transparent query-scope contract.
+
+If an upstream agent is preparing the request, ask it to use
+`templates/upstream_prompt_protocol_template.md`.
 
 ## Decision rule
 

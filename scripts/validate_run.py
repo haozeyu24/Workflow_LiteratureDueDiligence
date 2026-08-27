@@ -3,16 +3,18 @@
 from __future__ import annotations
 
 import csv
+import fnmatch
 import json
 import re
 import sys
 from pathlib import Path
 
-from pass_archive import active_artifacts_dir, active_path, active_reports_dir, load_all_pass_csv, run_input_path
+from pass_archive import active_artifacts_dir, active_path, active_reports_dir, archive_path_for_pass, load_all_pass_csv, pass_numbers, run_input_path
 
 
 WORKFLOW_ROOT = Path(__file__).resolve().parents[1]
 RUNS_DIR = WORKFLOW_ROOT / "runs"
+INCOMPLETE_SENTINEL = "WORKFLOW_NOT_COMPLETE"
 
 FORBIDDEN_CAP_KEYS = {
     "max_results_per_query",
@@ -22,6 +24,54 @@ FORBIDDEN_CAP_KEYS = {
     "retrieval_cap",
     "collection_cap",
 }
+
+ALLOWED_ARTIFACT_POLICIES = {
+    "workflow_only",
+    "allow_user_requested_exports",
+}
+
+WORKFLOW_ONLY_ALLOWED_PASS_FILES = {
+    "snapshot_manifest.json",
+    "inputs/original_user_prompt.md",
+    "inputs/request.md",
+    "inputs/run_config.md",
+    "inputs/instruction.md",
+    "inputs/topic.md",
+    "inputs/constraints.md",
+    "inputs/notes.md",
+    "artifacts/search_strategy/search_strategy.md",
+    "artifacts/search_strategy/query_refinement_report.md",
+    "artifacts/search_strategy/query_diagnostics.csv",
+    "artifacts/metadata_collection/paper_manifest.csv",
+    "artifacts/abstract_review/abstract_review.csv",
+    "artifacts/abstract_review/abstract_review2.csv",
+    "artifacts/fulltext_import/import_status.csv",
+    "artifacts/fulltext_import/manual_pdf_queue.csv",
+    "artifacts/fulltext_import/pdf_download_shortlist.csv",
+    "artifacts/fulltext_import/pdf_intervention_status.json",
+    "artifacts/fulltext_import/manual_pdf_import_report.csv",
+    "artifacts/fulltext_import/pdf_parse_report.csv",
+    "artifacts/fulltext_review/fulltext_review.csv",
+    "artifacts/fulltext_review/evidence_extraction.csv",
+    "artifacts/fulltext_review/pmc_mechanism_feedback.csv",
+    "artifacts/workflow_control/workflow_state.json",
+    "artifacts/workflow_control/workflow_loop_decision.csv",
+    "artifacts/workflow_control/run_guidance_revision_log.csv",
+    "reports/final_reading_list.csv",
+    "reports/progress_report.md",
+    "reports/pdf_request_shortlist.csv",
+    "reports/intervention_prompt.md",
+}
+
+WORKFLOW_ONLY_ALLOWED_PASS_PATTERNS = [
+    "artifacts/metadata_collection/records/*.json",
+    "artifacts/fulltext_import/PMC_XML/*.xml",
+    "artifacts/fulltext_import/PMC_XML/normalized/*.json",
+    "artifacts/fulltext_import/PDF/*.pdf",
+    "artifacts/fulltext_import/PDF/*.source.txt",
+    "artifacts/fulltext_import/PDF/parser_cache/grobid/*.tei.xml",
+    "artifacts/fulltext_import/PDF/normalized/*.json",
+]
 
 ROOT_REQUIRED_INPUTS = [
     "original_user_prompt.md",
@@ -295,18 +345,6 @@ ALLOWED_VALUES = {
     },
     "evidence_extraction": {
         "evidence_tier": {"direct", "indirect", "comparator", "background", "exclude"},
-        "evidence_type": {
-            "protein_folding_chaperone",
-            "stability_turnover",
-            "ptm_degradation",
-            "localization_retention",
-            "chromatin_binding",
-            "lineage_dependency",
-            "interaction_cofactor",
-            "expression_marker",
-            "methods_only",
-            "other",
-        },
         "directness": {"direct_target", "same_family_comparator", "pathway_or_context", "incidental"},
         "target_centrality": {"central", "supporting", "incidental"},
         "query_feedback_signal": {
@@ -366,6 +404,10 @@ def config_int(config: dict[str, str], key: str, default: int) -> int:
     return int(value)
 
 
+def pmc_fulltext_review_gate_mode(config: dict[str, str]) -> str:
+    return config.get("pmc_fulltext_review_gate_mode", "all_available").strip() or "all_available"
+
+
 def validate_no_pubmed_caps(run_dir: Path, query_diagnostics_rows: list[dict[str, str]]) -> list[str]:
     errors: list[str] = []
     constraints_path = run_input_path(run_dir, "constraints.md")
@@ -413,6 +455,12 @@ def validate_required_inputs(run_dir: Path) -> list[str]:
 
 def validate_config_loop_bounds(config: dict[str, str]) -> list[str]:
     errors: list[str] = []
+    artifact_policy = config.get("artifact_policy", "workflow_only").strip() or "workflow_only"
+    if artifact_policy not in ALLOWED_ARTIFACT_POLICIES:
+        errors.append(
+            "run_config.md artifact_policy is invalid "
+            f"({artifact_policy}; allowed: {', '.join(sorted(ALLOWED_ARTIFACT_POLICIES))})."
+        )
     min_value = config_int(config, "min_big_workflow_loops", 2)
     max_value = config_int(config, "max_workflow_loops", 5)
     if min_value < 2:
@@ -421,6 +469,143 @@ def validate_config_loop_bounds(config: dict[str, str]) -> list[str]:
         errors.append("run_config.md max_workflow_loops must be at most 5.")
     if max_value < min_value:
         errors.append("run_config.md max_workflow_loops must be greater than or equal to min_big_workflow_loops.")
+    gate_mode = pmc_fulltext_review_gate_mode(config)
+    if gate_mode not in {"all_available", "scaled"}:
+        errors.append(
+            "run_config.md pmc_fulltext_review_gate_mode is invalid "
+            f"({gate_mode}; allowed: all_available, scaled)."
+        )
+    return errors
+
+
+def validate_pmc_fulltext_review_gate(
+    config: dict[str, str],
+    import_rows: list[dict[str, str]],
+    fulltext_rows: list[dict[str, str]],
+    evidence_rows: list[dict[str, str]],
+    feedback_rows: list[dict[str, str]],
+) -> list[str]:
+    gate_mode = pmc_fulltext_review_gate_mode(config)
+    if gate_mode != "all_available":
+        return []
+
+    pmc_available_ids = {
+        row.get("paper_id", "").strip()
+        for row in import_rows
+        if row.get("pmc_access_status", "").strip() == "available"
+    }
+    unattempted_ids = {
+        row.get("paper_id", "").strip()
+        for row in import_rows
+        if row.get("pmc_access_status", "").strip() == "available"
+        and row.get("pmc_parse_status", "").strip() == "not_attempted"
+    }
+    usable_ids = {
+        row.get("paper_id", "").strip()
+        for row in import_rows
+        if row.get("pmc_access_status", "").strip() == "available"
+        and row.get("pmc_parse_status", "").strip() == "usable"
+        and row.get("normalized_path", "").strip()
+    }
+    unusable_not_queued_ids = {
+        row.get("paper_id", "").strip()
+        for row in import_rows
+        if row.get("pmc_access_status", "").strip() == "available"
+        and row.get("pmc_parse_status", "").strip() == "unusable"
+        and row.get("pdf_needed", "").strip() != "yes"
+    }
+    reviewed_ids = {
+        row.get("paper_id", "").strip()
+        for row in fulltext_rows
+        if row.get("fulltext_decision", "").strip()
+    }
+    evidence_ids = unique_ids(evidence_rows, "paper_id")
+
+    missing_review = sorted(usable_ids - reviewed_ids)
+    missing_evidence = sorted(usable_ids - evidence_ids)
+    if not (unattempted_ids or unusable_not_queued_ids or missing_review or missing_evidence):
+        return []
+
+    return [
+        "pmc_fulltext_review_gate_mode=all_available blocks PMC feedback from driving a learned rerun: "
+        f"PMC-available={len(pmc_available_ids)}, PMC-unattempted={len(unattempted_ids)}, "
+        f"PMC-usable={len(usable_ids)}, fulltext_reviewed={len(reviewed_ids & usable_ids)}, "
+        f"evidence_extracted={len(evidence_ids & usable_ids)}, "
+        f"unusable_not_queued={len(unusable_not_queued_ids)}. "
+        f"Unattempted examples={sorted(unattempted_ids)[:10]}, "
+        f"unusable-not-queued examples={sorted(unusable_not_queued_ids)[:10]}, "
+        f"missing review examples={missing_review[:10]}, "
+        f"missing evidence examples={missing_evidence[:10]}."
+    ]
+
+
+def is_allowed_workflow_only_file(relative_path: str) -> bool:
+    if not relative_path or relative_path.endswith("/.DS_Store") or relative_path == ".DS_Store":
+        return True
+    if relative_path in WORKFLOW_ONLY_ALLOWED_PASS_FILES:
+        return True
+    return any(fnmatch.fnmatch(relative_path, pattern) for pattern in WORKFLOW_ONLY_ALLOWED_PASS_PATTERNS)
+
+
+def validate_artifact_policy(run_dir: Path, config: dict[str, str]) -> list[str]:
+    artifact_policy = config.get("artifact_policy", "workflow_only").strip() or "workflow_only"
+    if artifact_policy != "workflow_only":
+        return []
+
+    active_pass_dir = active_artifacts_dir(run_dir).parent
+    if not active_pass_dir.exists():
+        return []
+
+    unexpected: list[str] = []
+    for path in active_pass_dir.rglob("*"):
+        if not path.is_file():
+            continue
+        relative = path.relative_to(active_pass_dir).as_posix()
+        if not is_allowed_workflow_only_file(relative):
+            unexpected.append(relative)
+
+    if not unexpected:
+        return []
+    return [
+        "artifact_policy=workflow_only forbids undeclared active-pass files "
+        f"(examples: {', '.join(sorted(unexpected)[:10])}). "
+        "Remove the side deliverable or add an explicit workflow/user-requested artifact policy before continuing."
+    ]
+
+
+def validate_pass_sequence(run_dir: Path) -> list[str]:
+    errors: list[str] = []
+    numbers = pass_numbers(run_dir)
+    for number in numbers:
+        if number <= 1:
+            continue
+        previous = archive_path_for_pass(run_dir, number - 1)
+        manifest_rows = load_csv_rows(previous / "artifacts" / "metadata_collection" / "paper_manifest.csv")[1] if (previous / "artifacts" / "metadata_collection" / "paper_manifest.csv").exists() else []
+        abstract_rows = load_csv_rows(previous / "artifacts" / "abstract_review" / "abstract_review.csv")[1] if (previous / "artifacts" / "abstract_review" / "abstract_review.csv").exists() else []
+        abstract2_rows = load_csv_rows(previous / "artifacts" / "abstract_review" / "abstract_review2.csv")[1] if (previous / "artifacts" / "abstract_review" / "abstract_review2.csv").exists() else []
+        feedback_rows = load_csv_rows(previous / "artifacts" / "fulltext_review" / "pmc_mechanism_feedback.csv")[1] if (previous / "artifacts" / "fulltext_review" / "pmc_mechanism_feedback.csv").exists() else []
+
+        reasons: list[str] = []
+        if not manifest_rows:
+            reasons.append("previous pass has no collected paper_manifest rows")
+        if len(abstract_rows) != len(manifest_rows) or any(not row.get("review_decision", "").strip() for row in abstract_rows):
+            reasons.append("previous pass abstract_review.csv is incomplete")
+        if (
+            len(abstract2_rows) != len(manifest_rows)
+            or any(not row.get("abstract_reviewer2_decision", "").strip() for row in abstract2_rows)
+            or any(not row.get("promotion_decision", "").strip() for row in abstract2_rows)
+        ):
+            reasons.append("previous pass abstract_review2.csv is incomplete")
+        if not feedback_rows:
+            reasons.append("previous pass has no pmc_mechanism_feedback.csv rows")
+        elif feedback_rows[-1].get("pdf_deferral_decision", "").strip() != "defer_pdfs":
+            reasons.append("previous pass latest PMC feedback does not request a learned rerun")
+
+        if reasons:
+            errors.append(
+                f"pass_{number:03d} exists before pass_{number - 1:03d} is ready for a learned rerun "
+                f"({'; '.join(reasons)})."
+            )
     return errors
 
 
@@ -574,6 +759,24 @@ def validate_fulltext_handoff(
     return errors
 
 
+def validate_evidence_handoff(
+    fulltext_rows: list[dict[str, str]],
+    evidence_rows: list[dict[str, str]],
+) -> list[str]:
+    reviewed_ids = {
+        row.get("paper_id", "").strip()
+        for row in fulltext_rows
+        if row.get("fulltext_decision", "").strip()
+    }
+    evidence_ids = unique_ids(evidence_rows, "paper_id")
+    if reviewed_ids == evidence_ids:
+        return []
+    return [
+        "evidence_extraction.csv coverage does not match reviewed readable full texts "
+        f"(missing={sorted(reviewed_ids - evidence_ids)[:10]}, extra={sorted(evidence_ids - reviewed_ids)[:10]})."
+    ]
+
+
 def validate_final_list(
     import_rows: list[dict[str, str]],
     fulltext_rows: list[dict[str, str]],
@@ -669,20 +872,11 @@ def validate_pdf_shortlist(
             "pdf_download_shortlist.csv has no request_pdf rows despite a non-empty PDF queue after PMC feedback."
         )
 
-    high_requested = [
-        row
-        for row in requested
-        if row.get("priority", "").strip() == "high"
-    ]
-    if not high_requested:
-        errors.append(
-            "pdf_download_shortlist.csv has request_pdf rows but no high-priority learned-criteria PDF requests."
-        )
-
     return errors
 
 
 def validate_workflow_state(
+    run_dir: Path,
     state_path: Path,
     queue_rows: list[dict[str, str]],
     feedback_rows: list[dict[str, str]],
@@ -759,6 +953,10 @@ def validate_workflow_state(
         )
 
     if status == "complete":
+        if state.get("access_phase") != "final_access":
+            errors.append("workflow_state is complete but access_phase is not final_access.")
+        if (run_dir / INCOMPLETE_SENTINEL).exists():
+            errors.append("workflow_state is complete but WORKFLOW_NOT_COMPLETE still exists.")
         if active_loop_count:
             errors.append("workflow_state is complete while controller loops are still active.")
         if len(feedback_rows) < min_big_workflow_loops:
@@ -775,8 +973,50 @@ def validate_workflow_state(
             errors.append("workflow_state is complete with a non-empty PDF queue but no PDF download shortlist.")
         if queue_count and state.get("completion_signal") != "pdf_download_shortlist_ready":
             errors.append("workflow_state complete signal must be pdf_download_shortlist_ready when the PDF queue is non-empty.")
+    elif not (run_dir / INCOMPLETE_SENTINEL).exists():
+        errors.append(
+            "WORKFLOW_NOT_COMPLETE sentinel is missing while workflow_state.status is not complete."
+        )
 
     return errors
+
+
+def validate_prior_pass_pmc_cleanup(run_dir: Path, status: str) -> list[str]:
+    if status != "complete":
+        return []
+    active_number = max(pass_numbers(run_dir) or [1])
+    active_state_path = run_dir / "passes" / "active_pass.json"
+    if active_state_path.exists():
+        try:
+            active_payload = json.loads(active_state_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            active_payload = {}
+        value = active_payload.get("pass_number")
+        if isinstance(value, int) and value > 0:
+            active_number = value
+
+    stale_files: list[str] = []
+    for number in pass_numbers(run_dir):
+        if number >= active_number:
+            continue
+        pmc_dir = archive_path_for_pass(run_dir, number) / "artifacts" / "fulltext_import" / "PMC_XML"
+        if not pmc_dir.exists():
+            continue
+        for path in pmc_dir.rglob("*"):
+            if path.is_file():
+                stale_files.append(path.relative_to(run_dir).as_posix())
+                if len(stale_files) >= 10:
+                    break
+        if len(stale_files) >= 10:
+            break
+
+    if not stale_files:
+        return []
+    return [
+        "workflow_state is complete but prior-pass PMC payload files remain "
+        f"(examples: {', '.join(stale_files)}). "
+        "Run the mutating completion gate to delete earlier-pass PMC XML and PMC-normalized JSON before completion."
+    ]
 
 
 def validate_guidance_revisions(
@@ -833,11 +1073,21 @@ def main() -> int:
     errors: list[str] = []
     config = parse_config(run_input_path(run_dir, "run_config.md"))
     access_phase = config.get("access_phase", "pmc_learning")
+    state_probe_path = active_path(run_dir, "artifacts/workflow_control/workflow_state.json")
+    if state_probe_path.exists():
+        try:
+            state_probe = json.loads(state_probe_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            state_probe = {}
+        if state_probe.get("access_phase") == "final_access":
+            access_phase = "final_access"
     min_big_workflow_loops = max(2, config_int(config, "min_big_workflow_loops", 2))
     max_workflow_loops = min(5, config_int(config, "max_workflow_loops", 5))
     if max_workflow_loops < min_big_workflow_loops:
         max_workflow_loops = min_big_workflow_loops
     errors.extend(validate_config_loop_bounds(config))
+    errors.extend(validate_artifact_policy(run_dir, config))
+    errors.extend(validate_pass_sequence(run_dir))
     missing_outputs = [path for path in REQUIRED_OUTPUTS if not active_path(run_dir, path).exists()]
     errors.extend(validate_required_inputs(run_dir))
     errors.extend(f"Missing workflow artifact: {path}" for path in missing_outputs)
@@ -890,6 +1140,9 @@ def main() -> int:
     if all(paths[name].exists() for name in ("import_status", "fulltext_review")):
         errors.extend(validate_fulltext_handoff(run_dir, tables["import_status"], tables["fulltext_review"]))
 
+    if all(paths[name].exists() for name in ("fulltext_review", "evidence_extraction")):
+        errors.extend(validate_evidence_handoff(tables["fulltext_review"], tables["evidence_extraction"]))
+
     if all(paths[name].exists() for name in ("import_status", "fulltext_review", "final_reading_list")):
         errors.extend(
             validate_final_list(
@@ -904,6 +1157,15 @@ def main() -> int:
         queue_path = artifacts_dir / "fulltext_import" / "manual_pdf_queue.csv"
         queue_rows = load_csv_rows(queue_path)[1] if queue_path.exists() else []
         feedback_rows = load_all_pass_csv(run_dir, "artifacts/fulltext_review/pmc_mechanism_feedback.csv")
+        errors.extend(
+            validate_pmc_fulltext_review_gate(
+                config,
+                tables.get("import_status", []),
+                tables.get("fulltext_review", []),
+                tables.get("evidence_extraction", []),
+                feedback_rows,
+            )
+        )
         latest_pdf_decision = feedback_rows[-1].get("pdf_deferral_decision", "").strip() if feedback_rows else ""
         shortlist_exists = paths["pdf_download_shortlist"].exists()
         if queue_rows and latest_pdf_decision == "final_pdf_pass" and not shortlist_exists:
@@ -925,6 +1187,7 @@ def main() -> int:
         queue_rows = load_csv_rows(queue_path)[1] if queue_path.exists() else []
         errors.extend(
             validate_workflow_state(
+                run_dir,
                 paths["workflow_state"],
                 queue_rows,
                 load_all_pass_csv(run_dir, "artifacts/fulltext_review/pmc_mechanism_feedback.csv"),
@@ -932,6 +1195,16 @@ def main() -> int:
                 tables["workflow_loop_decision"],
                 min_big_workflow_loops,
                 max_workflow_loops,
+            )
+        )
+        try:
+            workflow_state_payload = json.loads(paths["workflow_state"].read_text(encoding="utf-8"))
+        except Exception:
+            workflow_state_payload = {}
+        errors.extend(
+            validate_prior_pass_pmc_cleanup(
+                run_dir,
+                str(workflow_state_payload.get("status", "")),
             )
         )
 

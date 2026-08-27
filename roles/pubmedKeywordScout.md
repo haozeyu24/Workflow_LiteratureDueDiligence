@@ -141,9 +141,10 @@ Recommended first-pass inspection:
 
 Recommended sampling mix:
 
-- prioritize the first `20-30` most recent or top-ranked records
-- add a spread sample from later parts of the result set when total retrieval is large
+- include a small recent/top-ranked slice only as one diagnostic view
+- include a spread sample from later parts of the result set when total retrieval is large
 - use enough spread to detect drift, not just top-hit quality
+- never use the sampled slice as a hidden pre-review filter or final cohort selector
 
 Required diagnostics per query:
 

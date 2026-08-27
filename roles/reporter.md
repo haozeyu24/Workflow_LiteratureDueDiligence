@@ -19,8 +19,25 @@ Convert workflow state into user-facing progress and final outputs.
 - distinguish final recommendations from access-unresolved queues
 - avoid presenting broad access-unresolved sets as equivalent to high-confidence final recommendations
 - do not describe a run as complete while controller loop actions remain triggered
+- do not describe a run as complete while `WORKFLOW_NOT_COMPLETE` exists
+- before any final completion claim, require `python3 scripts/completion_gate.py <run_id>` to pass
+- every generated progress report must display completion-gate status, validation result, sentinel status, and remaining required stages
+- under `workflow_only`, report only declared workflow artifacts unless the user explicitly asks for an additional export
 - in the final PMC-satisfied loop, treat `pdf_download_shortlist.csv` in the report folder as the completion signal before optional PDF ingestion
 - follow workflow-required reporting fields and statuses
+
+## Required status block
+
+Every user-facing final response must include:
+
+- workflow status
+- current stage or next action
+- validation result
+- controller decision
+- remaining required stages when status is not `complete`
+
+If the completion gate has not passed, describe outputs as preliminary or
+stage-level artifacts, not final workflow outputs.
 
 ## Outputs
 
@@ -28,3 +45,7 @@ Convert workflow state into user-facing progress and final outputs.
 - `intervention_prompt.md` when PDF fallback requires a decision
 - `pdf_download_shortlist.csv` summary when a PDF queue remains after PMC learning
 - `final_reading_list.csv`
+
+## Must Not Do
+
+- create ranked literature lists, ad hoc summaries, spreadsheets, or other side exports unless the workflow declares them or the user explicitly requests them

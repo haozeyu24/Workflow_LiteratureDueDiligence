@@ -13,6 +13,7 @@ Make final keep/drop judgments from normalized full text, and in pre-final loops
 - work in bounded batches of `1-5` papers per review call
 - write evidence tiers and query-feedback signals into `evidence_extraction.csv`
 - summarize PMC-derived mechanisms, useful keyword families, noise keyword families, and recommended query changes in `pmc_mechanism_feedback.csv`
+- verify that the configured PMC full-text review coverage gate is satisfied before treating `pmc_mechanism_feedback.csv` as learned-rerun-ready
 - write decisions back into `fulltext_review.csv`
 - review only papers with readable normalized full text
 - not reinterpret full-text-unavailable papers as scientific exclusions
@@ -50,6 +51,8 @@ When many papers in a batch look weak for the same reason, emit `query_feedback_
 
 Before the final calibrated access pass, do not treat the manual PDF queue as the next work item.
 Read the PMC-normalized papers that are already available and summarize what they teach about the query.
+
+Under the strict default `pmc_fulltext_review_gate_mode = all_available`, "already available" means every paper marked `pmc_access_status = available` in `import_status.csv`, not a small convenience sample. Each such paper must be normalized, full-text reviewed, and represented in `evidence_extraction.csv` before feedback can drive pass-2 query reconstruction.
 
 The feedback must name:
 

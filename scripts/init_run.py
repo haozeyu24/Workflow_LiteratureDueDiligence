@@ -12,6 +12,7 @@ from pass_archive import activate_pass, ensure_pass_layout
 WORKFLOW_ROOT = Path(__file__).resolve().parents[1]
 RUNS_DIR = WORKFLOW_ROOT / "runs"
 TEMPLATES_DIR = WORKFLOW_ROOT / "templates"
+INCOMPLETE_SENTINEL = "WORKFLOW_NOT_COMPLETE"
 
 
 def write_if_missing(path: Path, content: str) -> None:
@@ -37,6 +38,11 @@ def main() -> int:
 
     run_dir = RUNS_DIR / run_id
     run_dir.mkdir(parents=True, exist_ok=True)
+    write_if_missing(
+        run_dir / INCOMPLETE_SENTINEL,
+        "This run is not workflow-complete.\n"
+        "Do not report the workflow as done until scripts/completion_gate.py passes.\n",
+    )
     pass1_dir = ensure_pass_layout(run_dir, 1)
     activate_pass(run_dir, 1)
     pass1_inputs_dir = pass1_dir / "inputs"

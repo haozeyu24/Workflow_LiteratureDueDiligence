@@ -29,6 +29,82 @@ Do not create silent one-off exceptions during a run.
 7. Treat access failure as distinct from scientific exclusion.
 8. Prefer explicit state labels over ambiguous reviewer prose.
 9. Use accessible full text as a learning signal before spending human effort on PDFs.
+10. Treat workflow completion as a machine-checked controller state, not an agent conclusion.
+11. Do not let partial PMC full-text samples drive learned query reruns when the run requires full PMC coverage.
+
+## Completion status policy
+
+The only authorized workflow-complete state is a passing completion gate:
+
+```bash
+python3 scripts/completion_gate.py <run_id>
+```
+
+This command must pass before any agent, role, or harness reports the whole run
+as `done`, `complete`, `final`, or `finished`.
+
+Allowed incomplete status labels are:
+
+- `collection_complete`
+- `abstract_review_1_pending`
+- `abstract_review_2_pending`
+- `pmc_import_pending`
+- `fulltext_review_pending`
+- `pmc_feedback_pending`
+- `learned_rerun_required`
+- `final_pdf_pass_pending`
+- `validation_failed`
+- `controller_loop_required`
+- `workflow_blocked`
+
+If `WORKFLOW_NOT_COMPLETE` exists in the run root, the run must be reported as
+incomplete regardless of any intermediate files. Only the workflow controller may
+remove this sentinel, and only when it writes `workflow_state.status = complete`.
+
+PMC full-text feedback is eligible to drive a learned rerun only after the run's
+configured PMC full-text review gate passes. The strict default is
+`pmc_fulltext_review_gate_mode = all_available`: every paper marked
+`pmc_access_status = available` in `import_status.csv` must have normalized full
+text, a full-text review decision, and a matching `evidence_extraction.csv` row.
+A partial PMC sample may be reported as a checkpoint, but must not be treated as
+enough evidence for pass activation or query reconstruction.
+
+Intermediate deliverables may be described as useful, preliminary, stage-level,
+or ready for the next role. They must not be described as final workflow output
+until the completion gate passes.
+
+Before the mutating completion gate reports success, it must delete bulky
+earlier-pass PMC source XML and PMC-normalized JSON payloads. This cleanup does
+not delete current-pass full-text payloads, CSV decisions, metadata records,
+reports, or pass-control artifacts.
+
+Reporter artifacts must surface completion-gate status even for progress
+reports. A generated `progress_report.md` is not a completion signal; it must
+show the current controller state, validation result, sentinel status, and
+remaining required stages whenever the gate has not passed. The completion gate
+regenerates reports after controller assessment so user-facing status does not
+lag behind workflow-control artifacts.
+
+## Side Deliverable And Artifact Policy
+
+Default runs use `artifact_policy = workflow_only`.
+
+Under `workflow_only`, agents must execute only the current workflow stage and
+write only artifacts declared for that stage. They must not create extra
+rankings, summaries, dashboards, scripts, spreadsheets, reports, exports, or
+other side deliverables unless:
+
+- the workflow stage explicitly declares that artifact, or
+- the user explicitly asks for that side artifact in the current turn.
+
+If an agent believes an extra artifact would be useful, it must stop and ask
+before creating it. A side deliverable must never substitute for the workflow's
+required artifacts, required reviewer decisions, PDF access gates, or completion
+gate.
+
+Declared workflow artifacts belong under `runs/<run_id>/passes/pass_###/`.
+Writing user-facing files outside the active run tree is allowed only when the
+user explicitly asks for an export outside the workflow.
 
 ## Run-input policy
 
@@ -250,6 +326,9 @@ The workflow must execute at least two big passes before final PDF access or com
 A big pass is complete when readable PMC full text has been reviewed and a row has been written to `pmc_mechanism_feedback.csv`.
 The first big pass is always a learning pass; it must feed PMC-derived retained mechanisms, noise families, missing keyword families, and abstract-rule changes back to `pubmedKeywordScout`.
 The second big pass must rerun query design, PubMed collection, both abstract reviews, PMC import, and full-text review using that learning.
+Agents must not activate a later pass merely to correct a query or create an
+alternate retrieval before the current pass has completed its required
+abstract-review, import, full-text-review, and PMC-feedback stages.
 Automatic big loops are capped at `max_workflow_loops`, default and maximum `5`.
 
 Before the final access pass, loops should use PMC-readable full text to improve the search strategy.

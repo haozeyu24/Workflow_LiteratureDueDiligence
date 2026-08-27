@@ -9,6 +9,17 @@
 -
 - access phase:
 
+## Completion Gate
+
+- workflow status:
+- validation result:
+- controller decision:
+- remaining required stages:
+- `WORKFLOW_NOT_COMPLETE` present:
+
+Do not describe this run as `done`, `complete`, `final`, or `finished` unless
+`python3 scripts/completion_gate.py <run_id>` exits with code `0`.
+
 ## Counts
 
 - papers retrieved:

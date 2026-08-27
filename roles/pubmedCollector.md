@@ -55,4 +55,4 @@ Execute the approved PubMed query set and produce the review-ready paper intake 
 - rewrite titles or abstracts into summaries
 - discard records only because some metadata fields are missing
 - introduce PubMed hit-count caps, whether hidden or explicit
-- honor `max_results_per_query`, `max_total_results`, `retmax`, or equivalent collection-cap constraints
+- apply `max_results_per_query`, `max_total_results`, `retmax`, or equivalent collection-cap constraints; reject them instead

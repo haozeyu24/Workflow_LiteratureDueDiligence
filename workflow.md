@@ -11,7 +11,7 @@ Given an instruction and topic:
 5. run a second abstract review over the same paper plus the first review opinion
 6. acquire and normalize PMC full text first
 7. use PMC full text to summarize mechanisms, noise, and query-feedback signals
-8. revise run guidance from PMC full-text learning, then reconstruct the query and rerun collection, abstract review, PMC import, and full-text review at least once using PMC-derived learning
+8. require the configured PMC full-text review coverage gate to pass, then revise run guidance from PMC full-text learning, reconstruct the query, and rerun collection, abstract review, PMC import, and full-text review at least once using PMC-derived learning
 9. decide whether additional learned loops are needed before spending effort on PDFs
 10. reserve manual PDF intervention for the final calibrated access pass unless the run explicitly requires full-text completion from the beginning
 11. extract final full-text evidence and review normalized full text
@@ -36,7 +36,7 @@ The following are run-specific:
 - the run configuration
 - the generated instruction
 - the generated topic
-- optional seed entities, pathogens, pathways, labs, or exclusions
+- optional seed entities, systems, mechanisms, comparators, labs, or exclusions
 
 Each run should live in its own folder under `runs/`.
 
@@ -51,7 +51,7 @@ That means:
 - scripts are generic
 - run folders carry topic-specific content
 
-If a reusable component mentions a specific lab, virus list, assay, or biological question, it should be treated as a design mistake unless that component is clearly inside a run-specific folder.
+If a reusable component mentions a specific lab, entity list, assay family, or scientific question, it should be treated as a design mistake unless that component is clearly inside a run-specific folder.
 
 ## Instruction hierarchy
 
@@ -68,6 +68,55 @@ Interpretation:
 - `policy.md` defines workflow-wide decision principles and guardrails
 - role files define local responsibilities for one stage and must not override workflow-wide rules
 - if a role file conflicts with `workflow.md` or `policy.md`, update the role file rather than inventing a special case
+
+## Completion gate and anti-premature termination
+
+Workflow completion is not an agent judgment.
+
+A run is workflow-complete only when all of these conditions are true:
+
+- `python3 scripts/completion_gate.py <run_id>` exits with code `0`
+- `python3 scripts/validate_run.py <run_id>` passes
+- the active pass `artifacts/workflow_control/workflow_state.json` has `status = complete`
+- the run root does not contain `WORKFLOW_NOT_COMPLETE`
+- at least `min_big_workflow_loops` PMC-feedback passes exist
+- every PMC-feedback pass used for a learned rerun satisfies the configured PMC full-text review coverage gate
+- the latest PMC feedback marks `pdf_deferral_decision = final_pdf_pass`
+- no controller loop action remains triggered
+- earlier-pass PMC XML and PMC-normalized JSON payloads have been deleted
+
+Agents and harnesses must not say `done`, `complete`, `final`, or `finished`
+for the whole workflow unless the completion gate passes. They may only say that
+a specific stage is complete, such as `PubMed collection complete`, `abstract
+review 1 complete`, or `PMC import complete`.
+
+Every user-facing final response from an agent or harness must report:
+
+- workflow status: `running`, `loop_required`, `awaiting_pdf_shortlist`, `blocked`, or `complete`
+- current stage or next action
+- validation result or reason validation was not yet eligible to pass
+- controller decision
+- remaining required stages when status is not `complete`
+
+Producing a useful intermediate deliverable, ranked pool, summary, shortlist, or
+report does not complete this workflow unless the completion gate passes.
+
+The workflow controller must fail closed on incomplete stage handoffs. If an
+upstream required artifact exists but has blank required decision fields, row
+count mismatches, or incomplete paper-id coverage, the controller must emit an
+active loop decision for that exact pending stage before considering higher-level
+scientific loop logic or reporting.
+
+## Artifact Contract
+
+The workflow is closed by default. With `artifact_policy = workflow_only`,
+agents may write only declared run inputs, pass artifacts, reports, snapshots,
+and workflow-control files. They must not create rankings, ad hoc summaries,
+analysis scripts, spreadsheets, dashboards, or exports unless a workflow stage
+declares them or the user explicitly asks for them in the current turn.
+
+Unexpected active-pass files are validation failures. Side deliverables outside
+the run tree are process violations unless explicitly user-requested.
 
 ## Roles
 
@@ -552,6 +601,13 @@ The run root must stay clean: pass outputs belong only under `passes/pass_###/ar
 
 Before a learned rerun starts, create or activate the next pass directory and write its revised inputs there. After the Workflow Controller evaluates a pass, write `snapshot_manifest.json` inside that pass directory.
 
+Later passes are not scratch spaces for query correction. Pass `N+1` may be
+activated only after pass `N` has completed collection, both abstract reviews,
+PMC/full-text import, full-text review of readable papers, and a
+`pmc_mechanism_feedback.csv` row whose `pdf_deferral_decision = defer_pdfs`.
+If pass `N` has not reached that point, agents must continue pass `N` rather
+than activating pass `N+1`.
+
 ## Portability rule
 
 Any model or harness may perform a role if it can:
@@ -594,11 +650,14 @@ After query optimization, abstract review, full-text import, and full-text revie
 The workflow has a mandatory minimum of two big passes and a default maximum of five.
 A big pass means an end-to-end run through query design or revision, PubMed collection, abstract review, second abstract review, PMC import, full-text review of readable normalized papers, and `pmc_mechanism_feedback.csv`.
 
+PMC feedback must pass the configured full-text review gate before it can unlock a learned rerun. The strict default is `pmc_fulltext_review_gate_mode = all_available`, which requires every paper marked `pmc_access_status = available` in `import_status.csv` to have a normalized full text, a full-text review decision, and a matching evidence-extraction row. A partial PMC sample is allowed only as a progress checkpoint; it must not drive pass activation, run-guidance revision, or learned query reconstruction.
+
 Mandatory pass structure:
 
 - Pass 1: conservative PMC-learning pass. The query scout searches the user-declared entities and mechanism classes, plus only explicitly authorized comparator queries. The full-text reviewer writes `pmc_mechanism_feedback.csv` with `pdf_deferral_decision = defer_pdfs` unless `require_fulltext_completion` is set.
 - Pass 2: learned in-scope rerun. The Run Guidance Reviser first applies Pass 1 retained in-scope mechanisms, noise families, missing terms, and reviewer-calibration changes to `instruction.md` and `topic.md`; then the query scout generates a learned search strategy from the revised guidance plus PMC feedback while staying inside the query-scope contract; then the workflow reruns collection, both abstract reviews, PMC import, and full-text review.
 - Pass 2 or later may emit `final_pdf_pass` only after evidence shows the query/review criteria have absorbed the PMC learning.
+- Once `final_pdf_pass` is accepted after the minimum learned loops, the controller records the effective access phase as `final_access`.
 - Passes 3-5 are triggered by persistent evidence-grounded failures such as missing concepts, recurrent query noise, reviewer drift, weak final keeps, or a large low-value PDF queue.
 - After Pass 5, the controller must stop blocked or ask for human/parent-agent intervention rather than loop automatically.
 
@@ -634,7 +693,10 @@ Default loop targets:
 The controller must also write `workflow_state.json`.
 This state file is the portable completion contract for agent harnesses.
 It should say `status = complete` only when no loop is active and the final-loop PDF download shortlist exists for any remaining manual PDF queue.
+It should record `access_phase = final_access` before any complete state.
 It must not say `status = complete` until at least `min_big_workflow_loops` PMC-feedback passes exist.
+Before the completion gate accepts that state, it must delete prior-pass PMC XML
+and PMC-normalized JSON payloads while preserving structured pass artifacts.
 
 ## Batching rule
 

@@ -10,7 +10,7 @@ One row per readable full-text paper before final keep/drop reporting.
 - `evidence_tier`
   Allowed: `direct`, `indirect`, `comparator`, `background`, `exclude`
 - `evidence_type`
-  Allowed values include: `protein_folding_chaperone`, `stability_turnover`, `ptm_degradation`, `localization_retention`, `chromatin_binding`, `lineage_dependency`, `interaction_cofactor`, `expression_marker`, `methods_only`, `other`
+  Run-defined evidence class from the current `topic.md` or `constraints.md`; use a short generic label when the run does not define a vocabulary.
 - `directness`
   Allowed: `direct_target`, `same_family_comparator`, `pathway_or_context`, `incidental`
 - `target_centrality`
