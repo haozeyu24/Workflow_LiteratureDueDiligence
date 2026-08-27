@@ -120,11 +120,7 @@ the run tree are process violations unless explicitly user-requested.
 
 ## Roles
 
-### 1. Project Manager
-
-Owns the run state, artifact naming, stage order, loop decisions, and handoff validation.
-
-### 2. Run Setup Agent
+### 1. Run Setup Agent
 
 Transforms a user request into run-specific workflow inputs.
 
@@ -151,7 +147,7 @@ adjacent pathways, phenotypes, disease settings, comparators, or downstream
 interpretive biology, but secondary context must not become first-pass PubMed
 query scope unless the user explicitly requested it.
 
-### 3. PubMed Keyword Scout
+### 2. PubMed Keyword Scout
 
 Builds the PubMed search strategy from the current instruction and topic, then refines it after inspecting retrieval noise or coverage gaps when needed. In learned reruns, the scout must use the revised guidance plus PMC mechanism feedback, not the original guidance alone.
 
@@ -178,7 +174,7 @@ Working rule:
 - use query optimization, not hidden retrieval caps, to produce a reasonably accurate candidate cohort
 - use batching for model context management, not for shrinking the search or abstract-review cohort
 
-### 4. Run Guidance Reviser
+### 3. Run Guidance Reviser
 
 Revises `instruction.md`, `topic.md`, optional `constraints.md`, and reviewer-facing rules after PMC full-text learning and before a learned PubMed rerun.
 
@@ -209,7 +205,7 @@ Working rule:
 - PMC-derived changes may add in-scope synonyms, assays, entities, exclusions, or reviewer rules by default
 - PMC-derived adjacent mechanism classes must remain secondary context unless the revision explicitly updates the query-scope contract and explains why the original user request authorizes the broader primary scope
 
-### 5. PubMed Collector
+### 4. PubMed Collector
 
 Executes the search and downloads title, abstract, and metadata.
 
@@ -218,7 +214,7 @@ Output:
 - paper manifest
 - source metadata records
 
-### 6. Abstract Reviewer
+### 5. Abstract Reviewer
 
 Reads title and abstract to judge topic relevance.
 
@@ -226,7 +222,7 @@ Output:
 
 - abstract review table
 
-### 7. Abstract Reviewer 2
+### 6. Abstract Reviewer 2
 
 Reads the original abstract again together with the first abstract reviewer's decision and rationale, then makes a second-pass decision.
 
@@ -234,7 +230,7 @@ Output:
 
 - second-pass abstract review table
 
-### 8. Full-Text Importer
+### 7. Full-Text Importer
 
 Acquires full text, preferring PMC.
 Before the final calibrated access pass, PDF fallback is recorded as deferred access work rather than acted on.
@@ -256,7 +252,7 @@ Completion rule:
 - a non-empty manual PDF queue after PMC-learning must remain deferred while controller feedback says another query loop is needed
 - generate `pdf_download_shortlist.csv` only when the controller is satisfied with PMC learning and the latest PMC feedback says `final_pdf_pass`
 
-### 9. Full-Text Reviewer
+### 8. Full-Text Reviewer
 
 Reads normalized full text, extracts structured evidence, summarizes PMC mechanism/query feedback, and makes the final keep/drop judgment when the run reaches the final review pass.
 
@@ -645,7 +641,7 @@ At final output stage, retained papers may end in one of two states:
 ## Agentic loop rule
 
 This workflow is not strictly linear.
-After query optimization, abstract review, full-text import, and full-text review, the Project Manager or Workflow Controller must decide whether to continue, pause, or loop.
+After query optimization, abstract review, full-text import, and full-text review, the Workflow Controller must decide whether to continue, pause, or loop.
 
 The workflow has a mandatory minimum of two big passes and a default maximum of five.
 A big pass means an end-to-end run through query design or revision, PubMed collection, abstract review, second abstract review, PMC import, full-text review of readable normalized papers, and `pmc_mechanism_feedback.csv`.

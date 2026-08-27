@@ -191,14 +191,6 @@ They should not:
 - `scripts/`
   Workflow-specific code wrappers and utilities.
 
-## Relationship to the atlas repo
-
-This workflow is standalone, but it is expected to reuse full-text import, PMC handling, and GROBID normalization logic from:
-
-- `niaid-systems-biology-consortium-atlas/`
-
-That repo is treated as the current implementation substrate, not the workflow definition itself.
-
 ## PDF parser runtime
 
 PDF parsing is modeled as a reusable workflow step, but the parser runtime is environment-supplied.
