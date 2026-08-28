@@ -1,0 +1,23 @@
+# Instruction
+
+Run a literature screening and full-text review on PDF parsing and document-understanding methods for complex, table-heavy documents. Clinical trial papers are the primary motivating document type because trial reports often contain dense tables, multi-column layouts, footnotes, subgroup analyses, statistical formatting, and CONSORT-style reporting structures. The review may also include other table-rich document categories, especially earnings reports, financial filings, technical reports, and scientific articles outside clinical trials, when they contribute benchmark datasets, evaluation rubrics, or tool-comparison evidence relevant to PDF parsing.
+
+Prioritize papers and reports that compare or benchmark PDF parsing, table extraction, layout analysis, information extraction, document AI, multimodal document understanding, visual language models, OCR-based pipelines, rule-based parsers, classical machine-learning systems, transformer-based non-visual language models, and hybrid systems. Include method papers when they report evaluation metrics or benchmark against alternatives. Include benchmark dataset papers when they define tasks or rubrics useful for comparing extraction quality.
+
+Deprioritize papers that only use PDFs as a source format without evaluating PDF parsing or document extraction quality. Exclude unrelated clinical trial NLP papers if they focus only on downstream evidence synthesis from already-clean text, unless they explicitly discuss PDF/table extraction as a bottleneck. Exclude generic LLM clinical trial extraction papers that do not address PDF layout, tables, OCR, parsing, or document conversion.
+
+A useful final reading set should support a 2-3 month focused paper by identifying: major method families, representative tools, benchmark datasets, document types, extraction targets, visual versus non-visual model distinctions, evaluation metrics, scoring rubrics, error taxonomies, and gaps that could justify a focused benchmark or tool-comparison manuscript.
+
+## Pass 2 Learned Guidance From PMC Feedback
+
+Pass 1 PMC full-text review found a small direct set of relevant document/table/PDF parsing papers and substantial drift from broad terms such as `multimodal`, `evaluation`, `validation`, `table`, and `extraction`. In pass 2, retrieval and review should require the document artifact itself to be the extraction or evaluation target. Generic clinical AI, clinical validation, systematic-review data-extraction tables, EHR tabular data, imaging multimodality, and clinical trial registration/compliance papers should be excluded unless they explicitly evaluate PDF parsing, table extraction, layout analysis, OCR/document conversion, document-image understanding, or tool benchmarking for document extraction.
+
+Prioritize named benchmark or task language learned from pass 1: table information extraction, table structure recognition, table detection, layout-aware PDF text extraction, document image analysis, reading order, page segmentation, cell/row/column structure, ground-truth annotation, PubTables-1M, FinTabNet, SciTSR, DocLayNet, ICDAR table competitions, born-digital PDFs, scanned PDFs, and clinical-trial tables or CONSORT tables when tied to parsing/extraction evaluation.
+
+## Query Scope Contract
+
+- primary entities: PDF parsing; PDF table extraction; document layout analysis; document understanding; scientific PDF extraction; clinical trial report parsing; biomedical PDF parsing; visual language models for document understanding; non-visual language model or OCR/NLP pipelines for PDF extraction.
+- declared method classes for retrieval: visual-language-model-based document extraction; OCR plus NLP pipelines; rule-based PDF parsers; table detection; table information extraction; table-structure recognition; layout-aware transformers; document image analysis; page segmentation and reading-order recovery; non-visual LLM or NLP extraction from converted text; hybrid PDF extraction systems; benchmark and tool-comparison studies.
+- authorized comparator document systems: clinical trial papers and reports; biomedical/scientific articles; earnings reports; annual reports; financial filings; technical documents with complex tables.
+- secondary context for synthesis only: feasibility of writing a focused benchmark paper in 2-3 months; practical tool selection; manuscript positioning; downstream evidence synthesis and systematic-review automation.
+- adjacent topics deferred from first-pass retrieval: general clinical trial NLP without PDF parsing; general evidence synthesis from structured databases; document summarization without extraction-quality evaluation; financial NLP that does not evaluate PDF/table parsing.

@@ -1,0 +1,3 @@
+# Request
+
+Identify and assess literature on PDF parsing methods for complex table-heavy documents, with clinical trial papers as the motivating biomedical use case and earnings reports or other table-rich documents as permitted comparator contexts. The run should find PDF parsing methods, benchmarking papers, and tool-comparison studies that evaluate visual-language-model-based and non-visual-language-model-based approaches. The final reading set should help determine whether a tightly focused paper on this topic is feasible within 2-3 months, especially by extracting the benchmarking rubrics, evaluation metrics, datasets, document types, and task definitions used to judge which methods are best suited for table- and formatting-heavy PDF extraction.

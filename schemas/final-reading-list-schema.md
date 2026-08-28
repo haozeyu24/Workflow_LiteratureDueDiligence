@@ -8,6 +8,8 @@
 - `doi`
 - `title`
 - `year`
+- `publication_types`
+  Semicolon-separated values from PubMed `PublicationTypeList`, preserved so clinical trial papers can be identified from final outputs.
 - `final_decision`
   Allowed: `selected_for_reading`, `abstract_relevant_fulltext_unavailable`
 - `final_rationale`

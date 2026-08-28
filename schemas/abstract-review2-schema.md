@@ -7,6 +7,8 @@
 - `doi`
 - `title`
 - `abstract`
+- `publication_types`
+  Semicolon-separated values from PubMed `PublicationTypeList`; reviewer 2 should preserve official clinical-trial metadata when adjudicating trial papers.
 - `year`
 - `source_query`
 - `abstract_reviewer_decision`

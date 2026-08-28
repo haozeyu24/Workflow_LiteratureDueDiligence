@@ -1,0 +1,25 @@
+# Instruction
+
+Support a literature review on resistance mechanisms to PI3K-alpha inhibition in cancer therapy. Prioritize papers that directly address intrinsic resistance, acquired resistance, adaptive bypass signaling, molecular or cellular mechanisms of nonresponse or progression, clinical correlates of resistance, and combination strategies designed to overcome or delay resistance to PI3K-alpha-targeted treatment.
+
+Prioritize mechanistic laboratory studies, translational studies using patient tumors or liquid biopsies, biomarker analyses from clinical trials, and clinical trial publications for PI3K-alpha-selective or mutant-selective inhibitors. Clinical-trial papers should be retained even if they do not deeply analyze resistance, because trial outcomes, phase, regimen, success or failure, toxicity, and combination design may explain how resistance is being addressed clinically.
+
+Deprioritize papers focused only on general PI3K/AKT/mTOR biology without a PI3K-alpha inhibitor or PIK3CA-directed therapeutic context, papers about non-cancer biology, and studies where PI3K inhibition is only an incidental pathway readout. Pan-PI3K, AKT, or mTOR inhibitor studies may be kept only when they provide direct comparator evidence for PI3K-alpha inhibitor resistance, cross-resistance, or rational combinations.
+
+A useful final reading set should include: (1) clinical trial publications and biomarker analyses for approved and investigational PI3K-alpha inhibitors; (2) laboratory or translational mechanism papers explaining resistance to these agents or this therapeutic class; (3) evidence for combination strategies intended to overcome resistance; and (4) clear provenance about drug, cancer type, model or patient setting, resistance mechanism, evidence type, and trial phase when applicable.
+
+## Query Scope Contract
+
+- primary entities: PI3K-alpha/PI3K alpha/p110-alpha/PIK3CA and PI3K-alpha-selective or mutant-selective inhibitors in cancer, including alpelisib/BYL719, inavolisib/GDC-0077, STX478, RLY-2608/RLy2608, taselisib/GDC-0032 when PI3K-alpha-relevant, serabelisib/TAK-117 when PI3K-alpha-relevant, and other investigational or approved PI3K-alpha-directed agents discovered during in-scope retrieval.
+- declared mechanism classes for PubMed retrieval: drug resistance, acquired resistance, intrinsic resistance, adaptive resistance, nonresponse, progression, relapse, bypass pathway activation, feedback signaling, pathway reactivation, PTEN loss or alteration, PIK3CA secondary or compound mutation, ESR1 or ER-pathway interaction in hormone receptor-positive breast cancer, RTK activation or amplification, MAPK/MEK/ERK activation, HER2/HER3/EGFR/IGF1R signaling, AKT/mTOR pathway rewiring, metabolic adaptation, lineage or phenotypic plasticity, tumor microenvironment-mediated resistance, biomarker-defined response or resistance, clinical trial outcome or biomarker analysis, and combination treatment intended to overcome resistance.
+- authorized comparator entities or systems: pan-PI3K, AKT, mTOR, CDK4/6, endocrine therapy, HER2-targeted therapy, MAPK/MEK/ERK pathway therapy, RTK inhibitors, chemotherapy, immunotherapy, and other agents only when tied to PI3K-alpha inhibitor resistance, rational combination therapy, cross-resistance, or clinical trial design.
+- secondary context for synthesis only: general PI3K pathway biology, oncogenic PIK3CA biology, PI3K-alpha dependency, toxicity-driven discontinuation, hyperglycemia management, and cancer subtype background may inform synthesis but should not drive first-pass retrieval unless linked to resistance or clinical trial evidence.
+- adjacent biology deferred from first-pass retrieval: broad PI3K-beta/delta/gamma biology, non-alpha-selective PI3K inhibitor resistance without PI3K-alpha relevance, general endocrine resistance without PI3K-alpha treatment, general metastatic progression, and generic cancer-drug-resistance literature.
+
+## Learned Guidance From PMC Feedback
+
+Pass 2 incorporates `pmc_learning_1` from pass 1. Retain the primary PI3K-alpha inhibitor and resistance scope, and prioritize papers that connect named PI3K-alpha-directed inhibitors with resistance, progression, biomarker-defined outcome, or combination mechanisms.
+
+Add in-scope translational terms when paired with PI3K-alpha inhibitor entities: ctDNA, circulating tumor DNA, liquid biopsy, post-progression biopsy, acquired genomic alteration, genomic alteration, exceptional response, rechallenge, endocrine-resistant disease, and CDK4/6 inhibitor progression.
+
+Reviewer calibration for pass 2: stop cost-effectiveness, pharmacoeconomic, guideline-only, synthetic chemistry/SAR, and broad pathway-review papers unless the abstract or full text explicitly contains PI3K-alpha drug plus trial outcome, biomarker, resistance, or combination mechanism evidence.

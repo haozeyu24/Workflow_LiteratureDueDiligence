@@ -12,6 +12,8 @@ It converts the broad fallback queue into a ranked action list for either a huma
 - `doi`
 - `title`
 - `year`
+- `publication_types`
+  Semicolon-separated values from PubMed `PublicationTypeList`, preserved to identify trial papers in the final access queue.
 - `priority`
   Allowed: `high`, `medium`, `low`, `exclude`
 - `shortlist_decision`

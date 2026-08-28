@@ -7,6 +7,8 @@
 - `doi`
 - `title`
 - `abstract`
+- `publication_types`
+  Semicolon-separated values from PubMed `PublicationTypeList`, such as `Journal Article`, `Clinical Trial, Phase I`, or `Randomized Controlled Trial`.
 - `year`
 - `journal`
 - `authors`

@@ -315,17 +315,25 @@ def flatten_abstract_text(abstract_node: ET.Element | None) -> str:
     return "\n\n".join(parts).strip()
 
 
-def fetch_abstracts(pmids: list[str]) -> dict[str, str]:
+def fetch_article_details(pmids: list[str]) -> dict[str, dict[str, object]]:
     params = {"db": "pubmed", "id": ",".join(pmids), "retmode": "xml"}
     url = f"{PUBMED_FETCH_URL}?{urllib.parse.urlencode(params)}"
     root = ET.fromstring(fetch_url(url))
-    abstracts: dict[str, str] = {}
+    details: dict[str, dict[str, object]] = {}
     for article in root.findall(".//PubmedArticle"):
         pmid = article.findtext(".//MedlineCitation/PMID", default="").strip()
         abstract = flatten_abstract_text(article.find(".//Article/Abstract"))
+        publication_types = [
+            text_or_none(publication_type.text)
+            for publication_type in article.findall(".//PublicationTypeList/PublicationType")
+            if text_or_none(publication_type.text)
+        ]
         if pmid:
-            abstracts[pmid] = abstract
-    return abstracts
+            details[pmid] = {
+                "abstract": abstract,
+                "publication_types": publication_types,
+            }
+    return details
 
 
 def year_from_pubdate(pubdate: str) -> str:
@@ -432,7 +440,7 @@ def main() -> int:
     for batch in batched(all_pmids, 200):
         summaries = fetch_summaries(batch)
         time.sleep(NCBI_RATE_LIMIT_SECONDS)
-        abstracts = fetch_abstracts(batch)
+        article_details = fetch_article_details(batch)
         time.sleep(NCBI_RATE_LIMIT_SECONDS)
         for summary in summaries:
             pmid = str(summary["pmid"])
@@ -447,13 +455,18 @@ def main() -> int:
             authors = summary.get("authors", [])
             if not isinstance(authors, list):
                 authors = []
-            abstract = abstracts.get(pmid, "")
+            details = article_details.get(pmid, {})
+            abstract = str(details.get("abstract", ""))
+            publication_types = details.get("publication_types", [])
+            if not isinstance(publication_types, list):
+                publication_types = []
             record = {
                 "paper_id": paper_id,
                 "pmid": pmid,
                 "doi": doi,
                 "title": title,
                 "abstract": abstract,
+                "publication_types": publication_types,
                 "year": year,
                 "journal": str(summary.get("full_journal_name", "")).strip(),
                 "authors": authors,
@@ -473,6 +486,11 @@ def main() -> int:
                     "doi": doi,
                     "title": title,
                     "abstract": abstract,
+                    "publication_types": ";".join(
+                        str(publication_type).strip()
+                        for publication_type in publication_types
+                        if str(publication_type).strip()
+                    ),
                     "year": year,
                     "journal": str(summary.get("full_journal_name", "")).strip(),
                     "authors": ";".join(str(author).strip() for author in authors if str(author).strip()),
@@ -492,6 +510,7 @@ def main() -> int:
                 "doi",
                 "title",
                 "abstract",
+                "publication_types",
                 "year",
                 "journal",
                 "authors",

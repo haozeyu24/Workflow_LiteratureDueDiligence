@@ -24,6 +24,7 @@ FINAL_FIELDS = [
     "doi",
     "title",
     "year",
+    "publication_types",
     "final_decision",
     "final_rationale",
     "selection_basis",
@@ -39,6 +40,7 @@ PDF_REQUEST_FIELDS = [
     "doi",
     "title",
     "year",
+    "publication_types",
     "priority",
     "evidence_category",
     "learned_criteria_matched",
@@ -218,6 +220,7 @@ def main() -> int:
     reports_dir.mkdir(parents=True, exist_ok=True)
 
     years_by_paper_id = infer_years(paper_manifest_rows)
+    manifest_by_paper_id = {row.get("paper_id", ""): row for row in paper_manifest_rows}
     abstract2_by_paper_id = {row.get("paper_id", ""): row for row in abstract2_rows}
     import_by_paper_id = {row.get("paper_id", ""): row for row in import_rows}
     final_rows: list[dict[str, str]] = []
@@ -226,6 +229,7 @@ def main() -> int:
         if row.get("fulltext_decision", "") != "keep":
             continue
         paper_id = row.get("paper_id", "")
+        manifest_row = manifest_by_paper_id.get(paper_id, {})
         retained_paper_ids.add(paper_id)
         final_rows.append(
             {
@@ -235,6 +239,7 @@ def main() -> int:
                 "doi": row.get("doi", ""),
                 "title": row.get("title", ""),
                 "year": years_by_paper_id.get(paper_id, ""),
+                "publication_types": manifest_row.get("publication_types", ""),
                 "final_decision": "selected_for_reading",
                 "final_rationale": row.get("fulltext_rationale", ""),
                 "selection_basis": "fulltext_review",
@@ -268,6 +273,7 @@ def main() -> int:
                     "doi": import_row.get("doi", ""),
                     "title": import_row.get("title", ""),
                     "year": years_by_paper_id.get(paper_id, ""),
+                    "publication_types": manifest_by_paper_id.get(paper_id, {}).get("publication_types", ""),
                     "final_decision": "abstract_relevant_fulltext_unavailable",
                     "final_rationale": rationale,
                     "selection_basis": "abstract_review_only",

@@ -7,6 +7,8 @@
 - `doi`
 - `title`
 - `abstract`
+- `publication_types`
+  Semicolon-separated values from PubMed `PublicationTypeList`; use this to preserve clinical-trial publication-type evidence during abstract triage.
 - `year`
 - `source_query`
 - `review_decision`

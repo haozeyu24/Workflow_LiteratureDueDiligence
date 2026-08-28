@@ -1,0 +1,14 @@
+{
+  "pass_number": 1,
+  "snapshot_reason": "after_workflow_controller_assessment",
+  "snapshot_created_at": "2026-08-28T04:54:22Z",
+  "completed_big_loop_count_at_snapshot": 1,
+  "latest_feedback_loop_id": "pmc_learning_1",
+  "latest_pdf_deferral_decision": "defer_pdfs",
+  "paper_manifest_rows": 2706,
+  "abstractReviewer2_advance_to_import": 721,
+  "import_status_rows": 721,
+  "fulltext_review_rows": 343,
+  "fulltext_keep_count": 13,
+  "manual_pdf_queue_rows": 378
+}
