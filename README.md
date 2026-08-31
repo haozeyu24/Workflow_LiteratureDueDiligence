@@ -1,4 +1,4 @@
-# agenticWorkflow_LiteratureScreeningAndFullTextReview
+# Agentic Workflow for Biomedical Literature Due Diligence
 
 This folder defines a portable, artifact-driven literature workflow with a
 proposed two-part structure.
