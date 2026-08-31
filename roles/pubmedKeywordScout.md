@@ -9,6 +9,7 @@ Design and refine a PubMed search strategy from the run instruction and topic.
 - identify key biological concepts
 - propose PubMed query strings
 - start from the run-specific scientific objective rather than from arbitrary keywords
+- preserve high prompt fidelity before expanding recall
 - inspect retrieval noise or coverage gaps after an initial search pass
 - read sampled titles and abstracts to judge query quality
 - refine PubMed keywords and query structure when retrieval quality is poor
@@ -20,6 +21,7 @@ Design and refine a PubMed search strategy from the run instruction and topic.
 
 - `instruction.md`
 - `topic.md`
+- optional `review_frame.md`
 - optional `constraints.md`
 - optional retrieval feedback from a prior collection pass
 - optional PMC mechanism feedback from `artifacts/fulltext_review/pmc_mechanism_feedback.csv`
@@ -38,6 +40,7 @@ Start from:
 
 - the scientific objective in `instruction.md`
 - the scope and entities in `topic.md`
+- explicit recall-preservation terms in `review_frame.md` when present
 - any explicit scope exclusions in `constraints.md`
 - in learned reruns, the latest PMC-derived mechanisms, missing terms, noise classes, and reviewer-rule changes recorded in `run_guidance_revision_log.csv`
 
@@ -56,7 +59,7 @@ Recommended first-pass construction:
 ## Query Scope Contract
 
 Before writing query strings, derive a short query-scope contract from
-`instruction.md`, `topic.md`, and `constraints.md`.
+`instruction.md`, `topic.md`, optional `review_frame.md`, and `constraints.md`.
 
 The contract must name:
 
@@ -64,6 +67,7 @@ The contract must name:
 - declared mechanism classes
 - allowed comparator entities or model systems
 - secondary context that may help interpretation but must not drive first-pass retrieval
+- review-frame context that may justify targeted rescue queries but must not dominate first-pass retrieval
 - excluded or deferred adjacent biology
 
 First-pass queries must be conservative:
@@ -73,6 +77,7 @@ First-pass queries must be conservative:
 - create comparator queries only when the run explicitly authorizes comparator evidence
 - keep comparator queries mechanism-matched to the same declared mechanism classes
 - keep secondary context out of the first-pass query set unless the user explicitly requested it as a primary mechanism class
+- use `review_frame.md` only for low-weight recall safeguards such as parent-field aliases, older terminology, or landmark comparator terms explicitly needed to preserve foundational context
 
 Do not expand first-pass queries into adjacent biological programs merely because
 they are plausible downstream explanations. Examples of adjacent classes include
@@ -91,6 +96,18 @@ Recommended query families:
 The exact number of queries may vary by run.
 Small conservative query sets are preferred in pass 1. Three queries are common,
 but the role should not assume that three is mandatory.
+
+## Due-Diligence Recall Stance
+
+Recall-friendly does not mean exhaustive across adjacent fields. It means broad
+enough within the user's declared scope that major decision-relevant evidence is
+unlikely to be missed. The scout should rescue aliases, older terms, assay
+language, and known direct papers, while resisting new query drivers that only
+increase ambiguity or reading burden.
+
+When facing a choice between a narrower prompt-faithful query and a broader
+adjacent-biology query, prefer the prompt-faithful query and record the adjacent
+biology as secondary context unless the user prompt authorizes it.
 
 ## Query quality inspection logic
 
@@ -114,6 +131,19 @@ keyword families that retrieved repeated noise, and add rescue terms for
 missing mechanisms only when those terms are synonyms, assays, or entities
 inside the declared mechanism classes.
 
+The default learned-rerun operation is substitution or tightening, not additive
+expansion. When pass 1 identifies a high-yield term, the scout should usually
+use it to replace a vague term, require it as an additional anchor, split a noisy
+query into a narrower direct query plus a small rescue query, or demote broad
+terms that only served as context. Avoid building pass 2 by simply OR-adding all
+newly observed terms to pass 1 queries.
+
+Pass 2 should be designed so the collected and abstract-promoted lists naturally
+shrink in most runs. A similar-sized or larger learned rerun is possible only
+when pass 1 reveals substantial missed in-scope language. In that case, the
+strategy must explicitly explain which direct-evidence gap is being rescued and
+which broad terms were removed or demoted to offset the expansion.
+
 PMC full text may reveal adjacent mechanisms or broader explanatory biology.
 Those signals should be recorded as `secondary_context` or downstream synthesis
 notes unless they map back to the declared mechanism classes. They must not be
@@ -128,6 +158,14 @@ Before generating the learned rerun query, verify that `runGuidanceReviser` has 
 Do not rebuild the query merely to reduce count.
 Rebuild it to preserve the user objective, stay inside declared mechanism scope,
 reduce predictable noise, and lower downstream PDF burden.
+
+Do not accept a learned search strategy that only adds terms without also
+documenting narrowing actions. Every learned rerun should name at least one of:
+
+- a broad query term replaced by a more specific learned term
+- a context/modifier term demoted so it no longer drives retrieval alone
+- a repeated noise class excluded or made dependent on stronger anchors
+- a reviewer rule that will reduce abstract promotion of weak contextual matches
 
 ## Retrieval inspection heuristics
 
@@ -257,6 +295,21 @@ The query set is ready when:
 - the queries appear to cover the intended mechanism space
 - further tightening would likely lose relevant papers faster than it improves precision
 - known or strongly expected direct mechanism papers are either retrieved by the broad direct query or protected by an explicit rescue query
+
+For learned reruns, the query set is ready only when the strategy visibly uses
+prior full-text learning to focus the run:
+
+- retained terms are tied to primary entities and declared mechanism/evidence
+  requirements
+- rescue terms recover in-scope missing papers rather than broadening into
+  adjacent topics
+- repeated noise terms or paper classes are demoted, excluded, or made dependent
+  on stronger anchors
+- context/modifier terms do not act as standalone query drivers unless the run
+  contract marks them primary
+- expected collection and abstract-promotion burden is likely to be lower than
+  the prior pass, or the strategy explains why similar size is justified by
+  newly learned in-scope vocabulary
 
 The final collected paper count should be determined by:
 

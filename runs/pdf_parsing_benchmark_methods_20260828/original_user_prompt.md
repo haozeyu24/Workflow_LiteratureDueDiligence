@@ -1,3 +1,0 @@
-# Original User Prompt
-
-what are the PDF parsing methods for clinical trial papers, and are there any benchmarking papers, or tool comparison paper, using methods that are visual language model based or non visual language model based. You do not need to focus only on clinical trial papers, but clinical trial paper represents a big problem because of the tables, formatings, etc. some other type of documents, like earning reports, also have tons of tables. I also would like to know what rubric they use to do the benchmarking of which method is better suited for this job. the reason is that I am thinking weather I can work on a paper focusing on this topic in a very focused 2-3 months

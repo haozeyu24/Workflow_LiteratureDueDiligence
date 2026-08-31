@@ -1,0 +1,16 @@
+{
+  "run_id": "pax8_protein_level_regulation_20260830",
+  "status": "loop_required",
+  "access_phase": "pmc_learning",
+  "completion_signal": "",
+  "next_action": "loop_to_run_guidance_reviser",
+  "active_loop_count": 3,
+  "completed_big_loop_count": 1,
+  "min_big_workflow_loops": 2,
+  "max_workflow_loops": 5,
+  "latest_pdf_deferral_decision": "defer_pdfs",
+  "manual_pdf_queue_count": 83,
+  "pdf_download_shortlist_count": 0,
+  "pdf_request_count": 0,
+  "reason": "One or more workflow controller triggers are active."
+}

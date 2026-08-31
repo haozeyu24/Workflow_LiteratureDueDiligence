@@ -23,8 +23,13 @@ One row per readable full-text paper before final keep/drop reporting.
   Allowed: `none`, `tighten_query`, `expand_query`, `add_rescue_query`, `change_scope`, `reviewer_calibration`
 - `review_confidence`
   Allowed: `high`, `medium`, `low`
+- `retention_role`
+  Optional. Suggested: `direct_mechanistic`, `clinical_translational`,
+  `foundational_background`, `field_synthesis`, `perspective_gap`, `exclude`
 
 ## Notes
 
 This table is the bridge between reading full text and changing workflow behavior.
 It prevents a final list from depending only on a binary keep/drop decision.
+When a paper is kept partly for review architecture rather than direct
+mechanistic evidence, `retention_role` should make that choice auditable.

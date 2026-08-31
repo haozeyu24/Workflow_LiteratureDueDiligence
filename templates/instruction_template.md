@@ -9,8 +9,13 @@ For each run, write a concrete instruction here that states:
 3. what kinds of papers should be deprioritized or excluded
 4. what counts as a useful final reading set
 5. what mechanism classes are allowed to drive PubMed retrieval
+6. what outcome, relationship, or evidence-claim terms must be present for abstract inclusion
+7. what evidence is insufficient by itself, even if topically adjacent
 
 This file should be generated or drafted by the `runSetupAgent` role from the user request.
+Review-style framing that should mainly affect retention or synthesis belongs in
+`review_frame.md`, not here, unless it defines explicit retrieval terms that
+must be preserved.
 
 ## Reuse rule
 
@@ -27,6 +32,8 @@ Reusable scripts and role definitions must read this file as input rather than e
 
 - primary entities:
 - declared mechanism classes for PubMed retrieval:
+- declared outcomes or required evidence claims:
 - authorized comparator entities or systems:
+- evidence insufficient by itself:
 - secondary context for synthesis only:
 - adjacent biology deferred from first-pass retrieval:

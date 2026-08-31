@@ -12,10 +12,14 @@ Decide whether a run should continue, pause, or loop back after evidence-bearing
 - write `workflow_loop_decision.csv`
 - give concrete revision instructions to the target role when a loop is triggered
 - avoid loops that are only motivated by discomfort with cohort size
+- distinguish healthy scoped recall from uncontrolled ambiguity or prompt drift
 - enforce at least two big query-to-PMC-feedback passes before final PDF access
-- manage the run-root `WORKFLOW_NOT_COMPLETE` sentinel through `assess_workflow_loops.py`
+- manage the Phase-1 `WORKFLOW_NOT_COMPLETE` sentinel under `Phase1_PubmedCollection/` through `assess_workflow_loops.py`
 - never mark `workflow_state.status = complete` unless all completion-gate conditions are satisfied
 - fail closed on missing or incomplete required handoff artifacts before evaluating higher-level loop logic
+- when Part 1 is complete, require an explicit post-Part-1 user decision before any review-writing phase starts
+- if the user chooses to wait for PDFs, block review-writing until a later clear ready-to-write signal is received
+- preserve the expectation that user-visible Part-1 messages are appended to `passes/phase1_transcript.md`
 
 ## Inputs
 
@@ -33,7 +37,7 @@ Decide whether a run should continue, pause, or loop back after evidence-bearing
 
 - `artifacts/workflow_control/workflow_loop_decision.csv`
 - `artifacts/workflow_control/workflow_state.json`
-- run-root `WORKFLOW_NOT_COMPLETE` present for incomplete runs and absent only for complete runs
+- `Phase1_PubmedCollection/WORKFLOW_NOT_COMPLETE` present for incomplete runs and absent only for complete runs
 
 ## Decision Actions
 
@@ -41,6 +45,9 @@ Decide whether a run should continue, pause, or loop back after evidence-bearing
   Proceed to the next planned stage.
 - `pause_for_user`
   Stop for a human decision, usually for PDF fallback or scope clarification.
+- `pause_for_review_write_decision`
+  Stop after Part 1 completion and ask whether to write from PMC-only full text
+  now or wait for user-provided downloaded PDFs.
 - `build_pdf_shortlist`
   Score the manual PDF queue using PMC-learned criteria before any user or parent-agent download request.
 - `loop_to_query_scout`
@@ -60,6 +67,10 @@ Trigger a loop only when at least one artifact shows a concrete failure mode:
 
 - `query_noise`
   A query family repeatedly retrieves marker-only, expression-only, clinical-only, or unrelated papers.
+- `prompt_drift`
+  Retrieval or review criteria broaden beyond the user's primary entities,
+  declared mechanism classes, authorized comparators, or explicit review-frame
+  needs.
 - `missing_concept`
   Included or cited papers reveal a concept family missing from the query.
 - `reviewer_drift`
@@ -113,5 +124,10 @@ It may write `workflow_state.status = complete` only when:
 - stage handoff artifacts are complete enough for `validate_run.py` to pass
 - the final PDF queue condition is resolved by either no queue or a learned `pdf_download_shortlist.csv`
 
-After writing any non-complete state, `WORKFLOW_NOT_COMPLETE` must exist in the
-run root. After writing `complete`, the sentinel must be removed.
+After writing any non-complete state, `WORKFLOW_NOT_COMPLETE` must exist under
+`Phase1_PubmedCollection/`. After writing `complete`, the sentinel must be
+removed.
+
+In the proposed two-part structure, this completion rule applies only to Part 1.
+Completion of Part 1 must be followed by the explicit review-writing checkpoint
+rather than automatic transition into a manuscript phase.

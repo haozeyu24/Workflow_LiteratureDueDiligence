@@ -9,12 +9,11 @@ import re
 import sys
 from pathlib import Path
 
-from pass_archive import active_artifacts_dir, active_path, active_reports_dir, archive_path_for_pass, load_all_pass_csv, pass_numbers, run_input_path
+from pass_archive import active_artifacts_dir, active_path, active_reports_dir, archive_path_for_pass, incomplete_sentinel_path, load_all_pass_csv, pass_numbers, passes_dir, phase1_transcript_path, run_input_path
 
 
 WORKFLOW_ROOT = Path(__file__).resolve().parents[1]
 RUNS_DIR = WORKFLOW_ROOT / "runs"
-INCOMPLETE_SENTINEL = "WORKFLOW_NOT_COMPLETE"
 
 FORBIDDEN_CAP_KEYS = {
     "max_results_per_query",
@@ -37,6 +36,7 @@ WORKFLOW_ONLY_ALLOWED_PASS_FILES = {
     "inputs/run_config.md",
     "inputs/instruction.md",
     "inputs/topic.md",
+    "inputs/review_frame.md",
     "inputs/constraints.md",
     "inputs/notes.md",
     "artifacts/search_strategy/search_strategy.md",
@@ -144,6 +144,10 @@ REQUIRED_COLUMNS = {
         "review_confidence",
         "topic_match_type",
         "reviewer_type",
+        "review_frame_role",
+        "prescreen_hint",
+        "prescreen_rationale",
+        "prescreen_overlap_terms",
     ],
     "abstract_review2": [
         "paper_id",
@@ -160,6 +164,7 @@ REQUIRED_COLUMNS = {
         "abstract_reviewer2_rationale",
         "abstract_reviewer2_confidence",
         "promotion_decision",
+        "review_frame_role",
     ],
     "import_status": [
         "paper_id",
@@ -167,6 +172,9 @@ REQUIRED_COLUMNS = {
         "pmcid",
         "doi",
         "title",
+        "fulltext_access_route",
+        "fulltext_xml_url",
+        "fulltext_pdf_url",
         "pmc_access_status",
         "pmc_parse_status",
         "pdf_needed",
@@ -217,6 +225,7 @@ REQUIRED_COLUMNS = {
         "supporting_text_locator",
         "query_feedback_signal",
         "review_confidence",
+        "retention_role",
     ],
     "pmc_mechanism_feedback": [
         "loop_id",
@@ -254,7 +263,11 @@ REQUIRED_COLUMNS = {
         "retained_mechanisms_added",
         "noise_or_exclusions_added",
         "missing_terms_added",
+        "terms_replaced_or_tightened",
+        "terms_demoted_to_context",
+        "exclusion_enforcement_points",
         "reviewer_rule_changes",
+        "expected_burden_effect",
         "revision_rationale",
         "revised_by",
         "created_at",
@@ -282,6 +295,7 @@ ALLOWED_VALUES = {
         "review_decision": {"include", "exclude"},
         "review_confidence": {"high", "medium", "low"},
         "reviewer_type": {"agent", "human", "hybrid"},
+        "review_frame_role": {"none", "foundational_background", "field_synthesis", "perspective_gap"},
     },
     "abstract_review2": {
         "abstract_reviewer_decision": {"include", "exclude"},
@@ -293,8 +307,10 @@ ALLOWED_VALUES = {
         },
         "abstract_reviewer2_confidence": {"high", "medium", "low"},
         "promotion_decision": {"advance_to_import", "stop"},
+        "review_frame_role": {"none", "foundational_background", "field_synthesis", "perspective_gap"},
     },
     "import_status": {
+        "fulltext_access_route": {"ncbi_pmc_xml", "europe_pmc_xml", "oa_pdf", "none"},
         "pmc_access_status": {"available", "missing", "not_applicable"},
         "pmc_parse_status": {"usable", "unusable", "not_attempted"},
         "pdf_needed": {"yes", "no"},
@@ -361,12 +377,21 @@ ALLOWED_VALUES = {
             "reviewer_calibration",
         },
         "review_confidence": {"high", "medium", "low"},
+        "retention_role": {
+            "direct_mechanistic",
+            "clinical_translational",
+            "foundational_background",
+            "field_synthesis",
+            "perspective_gap",
+            "exclude",
+        },
     },
     "workflow_loop_decision": {
         "triggered": {"yes", "no"},
         "action": {
             "continue",
             "pause_for_user",
+            "pause_for_review_write_decision",
             "build_pdf_shortlist",
             "loop_to_run_guidance_reviser",
             "loop_to_query_scout",
@@ -451,10 +476,17 @@ def validate_required_inputs(run_dir: Path) -> list[str]:
         if not (run_dir / path).exists():
             errors.append(f"Missing root input: {path}")
 
-    pass1_inputs_dir = run_dir / "passes" / "pass_001" / "inputs"
+    transcript_path = phase1_transcript_path(run_dir)
+    if not transcript_path.exists():
+        errors.append(
+            "Missing Phase 1 transcript: "
+            "Phase1_PubmedCollection/passes/phase1_transcript.md"
+        )
+
+    pass1_inputs_dir = archive_path_for_pass(run_dir, 1) / "inputs"
     for path in PASS_INPUTS:
         if not (pass1_inputs_dir / path).exists():
-            errors.append(f"Missing pass_001 input: passes/pass_001/inputs/{path}")
+            errors.append(f"Missing pass_001 input: Phase1_PubmedCollection/passes/pass_001/inputs/{path}")
     return errors
 
 
@@ -479,6 +511,12 @@ def validate_config_loop_bounds(config: dict[str, str]) -> list[str]:
         errors.append(
             "run_config.md pmc_fulltext_review_gate_mode is invalid "
             f"({gate_mode}; allowed: all_available, scaled)."
+        )
+    fulltext_lookup_mode = config.get("fulltext_lookup_mode", "pmc_then_oa_final").strip() or "pmc_then_oa_final"
+    if fulltext_lookup_mode not in {"pmc_then_oa_final", "pmc_only", "exhaustive_oa"}:
+        errors.append(
+            "run_config.md fulltext_lookup_mode is invalid "
+            f"({fulltext_lookup_mode}; allowed: exhaustive_oa, pmc_only, pmc_then_oa_final)."
         )
     return errors
 
@@ -960,7 +998,7 @@ def validate_workflow_state(
     if status == "complete":
         if state.get("access_phase") != "final_access":
             errors.append("workflow_state is complete but access_phase is not final_access.")
-        if (run_dir / INCOMPLETE_SENTINEL).exists():
+        if incomplete_sentinel_path(run_dir).exists():
             errors.append("workflow_state is complete but WORKFLOW_NOT_COMPLETE still exists.")
         if active_loop_count:
             errors.append("workflow_state is complete while controller loops are still active.")
@@ -978,7 +1016,7 @@ def validate_workflow_state(
             errors.append("workflow_state is complete with a non-empty PDF queue but no PDF download shortlist.")
         if queue_count and state.get("completion_signal") != "pdf_download_shortlist_ready":
             errors.append("workflow_state complete signal must be pdf_download_shortlist_ready when the PDF queue is non-empty.")
-    elif not (run_dir / INCOMPLETE_SENTINEL).exists():
+    elif not incomplete_sentinel_path(run_dir).exists():
         errors.append(
             "WORKFLOW_NOT_COMPLETE sentinel is missing while workflow_state.status is not complete."
         )
@@ -990,7 +1028,7 @@ def validate_prior_pass_pmc_cleanup(run_dir: Path, status: str) -> list[str]:
     if status != "complete":
         return []
     active_number = max(pass_numbers(run_dir) or [1])
-    active_state_path = run_dir / "passes" / "active_pass.json"
+    active_state_path = passes_dir(run_dir) / "active_pass.json"
     if active_state_path.exists():
         try:
             active_payload = json.loads(active_state_path.read_text(encoding="utf-8"))
@@ -1061,6 +1099,19 @@ def validate_guidance_revisions(
                 errors.append(
                     f"run_guidance_revision_log.csv row for {loop_id} points to missing {field}: {value}."
                 )
+        for field in (
+            "retained_mechanisms_added",
+            "noise_or_exclusions_added",
+            "missing_terms_added",
+            "terms_replaced_or_tightened",
+            "terms_demoted_to_context",
+            "exclusion_enforcement_points",
+            "reviewer_rule_changes",
+            "expected_burden_effect",
+            "revision_rationale",
+        ):
+            if not revision.get(field, "").strip():
+                errors.append(f"run_guidance_revision_log.csv row for {loop_id} is missing {field}.")
     return errors
 
 

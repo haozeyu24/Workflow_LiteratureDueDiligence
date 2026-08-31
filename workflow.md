@@ -2,7 +2,13 @@
 
 ## Objective
 
-Given an instruction and topic:
+Given an instruction and topic, the proposed workflow has two parts.
+
+Part 1 is the current literature due-diligence workflow.
+Part 2 is a later review-paper construction workflow that must not begin until
+the user explicitly authorizes writing.
+
+Part 1:
 
 1. generate a PubMed search strategy
 2. optimize the query set with hit counts, sampled precision, noise classes, and missing-concept diagnostics
@@ -16,6 +22,19 @@ Given an instruction and topic:
 10. reserve manual PDF intervention for the final calibrated access pass unless the run explicitly requires full-text completion from the beginning
 11. extract final full-text evidence and review normalized full text
 12. produce a final reading list with metadata and file pointers
+13. when Part 1 is complete, ask the user whether to:
+   - write the review using PMC-readable full text only
+   - wait for the user to provide downloaded PDFs before review writing
+14. do not begin review writing, PDF parsing for writing, or any Phase-2 work until the user gives a clear ready-to-write signal
+15. if the user chooses to provide PDFs for writing, parse and normalize them only after that ready-to-write signal, rerun retention on newly readable papers, and report how many PDFs were retained into the writing corpus
+
+Part 2:
+
+1. construct the review paper from the Part-1 retained corpus
+
+Part 2 is intentionally left as a placeholder in this file for now.
+Its detailed structure should be added later, after the Phase-1/Phase-2 boundary
+and PDF decision checkpoint are working well.
 
 ## Fixed workflow vs run-specific inputs
 
@@ -36,6 +55,7 @@ The following are run-specific:
 - the run configuration
 - the generated instruction
 - the generated topic
+- the Phase-1 transcript log
 - optional seed entities, systems, mechanisms, comparators, labs, or exclusions
 
 Each run should live in its own folder under `runs/`.
@@ -50,8 +70,36 @@ That means:
 - artifact schemas are generic
 - scripts are generic
 - run folders carry topic-specific content
+- the cross-pass transcript lives under `passes/phase1_transcript.md`
 
 If a reusable component mentions a specific lab, entity list, assay family, or scientific question, it should be treated as a design mistake unless that component is clearly inside a run-specific folder.
+
+## Due-Diligence Philosophy
+
+This workflow optimizes for decision-grade coverage for biotech researchers,
+academic researchers, investors, and consulting-style scientific diligence. A
+good review is not a maximal literature sweep. It is a scoped, auditable account
+of the major mechanisms, evidence strength, gaps, risks, and unresolved access
+cases needed for decision-making.
+
+The workflow's default priority is:
+
+1. high user-prompt fidelity
+2. recall-friendly retrieval inside the declared scope
+3. early ambiguity reduction
+4. progressively stricter full-text evidence gates
+
+Operational interpretation:
+
+- prompt fidelity defines what may drive retrieval
+- recall-friendly behavior is concentrated in query design and abstract triage
+- abstract review preserves plausible decision-relevant papers, not anything
+  that could ever be related
+- full-text review narrows to papers with direct, indirect, or authorized
+  comparator evidence, plus only explicitly justified review-frame background
+- Phase 2 may synthesize more papers than a human must personally read, but
+  every synthesized paper must have typed evidence, a retention role, and
+  provenance
 
 ## Instruction hierarchy
 
@@ -71,14 +119,17 @@ Interpretation:
 
 ## Completion gate and anti-premature termination
 
-Workflow completion is not an agent judgment.
+Part-1 completion is not an agent judgment.
 
-A run is workflow-complete only when all of these conditions are true:
+This file currently defines a strict completion gate only for Part 1.
+The later review-writing phase remains intentionally deferred.
+
+A run is Part-1-complete only when all of these conditions are true:
 
 - `python3 scripts/completion_gate.py <run_id>` exits with code `0`
 - `python3 scripts/validate_run.py <run_id>` passes
 - the active pass `artifacts/workflow_control/workflow_state.json` has `status = complete`
-- the run root does not contain `WORKFLOW_NOT_COMPLETE`
+- `Phase1_PubmedCollection/WORKFLOW_NOT_COMPLETE` does not exist
 - at least `min_big_workflow_loops` PMC-feedback passes exist
 - every PMC-feedback pass used for a learned rerun satisfies the configured PMC full-text review coverage gate
 - the latest PMC feedback marks `pdf_deferral_decision = final_pdf_pass`
@@ -86,9 +137,10 @@ A run is workflow-complete only when all of these conditions are true:
 - earlier-pass PMC XML and PMC-normalized JSON payloads have been deleted
 
 Agents and harnesses must not say `done`, `complete`, `final`, or `finished`
-for the whole workflow unless the completion gate passes. They may only say that
-a specific stage is complete, such as `PubMed collection complete`, `abstract
-review 1 complete`, or `PMC import complete`.
+for the whole two-part workflow unless both parts are later defined and pass
+their own gates. In the current structure they may only say that Part 1 is
+complete, or that a specific stage is complete, such as `PubMed collection
+complete`, `abstract review 1 complete`, or `PMC import complete`.
 
 Every user-facing final response from an agent or harness must report:
 
@@ -97,6 +149,22 @@ Every user-facing final response from an agent or harness must report:
 - validation result or reason validation was not yet eligible to pass
 - controller decision
 - remaining required stages when status is not `complete`
+
+Part 1 should also preserve a user-visible transcript:
+
+- path: `runs/<run_id>/Phase1_PubmedCollection/passes/phase1_transcript.md`
+- scope: all user and agent words shown during Part 1 across all passes
+- purpose: audit trail and troubleshooting when a decision path feels wrong
+- rule: append chronological entries; do not replace the transcript with a polished retrospective summary
+
+When Part 1 completes, the next required stage must be reported as the user
+decision checkpoint:
+
+- `write_from_pmc_now`
+- `wait_for_downloaded_pdfs`
+
+After the user chooses to wait for PDFs, the workflow must remain paused for
+review writing until the user later gives a clear ready-to-write signal.
 
 Producing a useful intermediate deliverable, ranked pool, summary, shortlist, or
 report does not complete this workflow unless the completion gate passes.
@@ -133,6 +201,7 @@ Output:
 - `run_config.md`
 - `instruction.md`
 - `topic.md`
+- optional `review_frame.md`
 - optional run constraints
 - a query-scope contract, either inside `instruction.md`, `topic.md`, or `constraints.md`
 
@@ -146,6 +215,13 @@ mechanism classes the user actually asked to learn. Secondary context may includ
 adjacent pathways, phenotypes, disease settings, comparators, or downstream
 interpretive biology, but secondary context must not become first-pass PubMed
 query scope unless the user explicitly requested it.
+
+When the downstream deliverable is review-like, the setup output should also
+separate review-article framing from retrieval scope by writing
+`review_frame.md`. That file should capture introduction obligations,
+foundational field context, field-progress framing, and perspective questions.
+It may justify targeted recall safeguards and a minority of retained background
+papers, but it must not silently broaden first-pass PubMed retrieval.
 
 ### 2. PubMed Keyword Scout
 
@@ -163,12 +239,18 @@ Working rule:
 
 - derive and obey the run's query-scope contract before writing query strings
 - first-pass query generation should be conservative and limited to the declared entities plus declared mechanism classes
+- first-pass query generation should require claim-shaped retrieval logic:
+  declared entity or system plus declared mechanism/evidence class plus required
+  outcome, relationship, perturbation, response, or other evidence-claim term
+- first-pass query generation should require claim-shaped retrieval logic:
+  declared entity or system plus declared mechanism/evidence class plus required
+  outcome, relationship, perturbation, response, or other evidence-claim term
 - add synonyms, assays, and rescue terms only within declared mechanism classes
 - do not expand into adjacent biology merely because it is plausibly related or compensatory
 - refine based on sampled precision and coverage, not hit count alone
-- retrieve broadly enough to capture anything potentially related to the run objective
+- retrieve broadly enough to capture direct and plausible decision-relevant papers inside the declared query scope
 - do not narrow the collected cohort into a smaller pre-review working set
-- if a paper is potentially related at the scouting stage, it belongs in the collected cohort for abstract review
+- if a paper is plausibly decision-relevant inside the declared scope at the scouting stage, it belongs in the collected cohort for abstract review
 - PubMed collection is recall-first and must have no record cap
 - agents and harnesses must not introduce per-query, total, date-sorted, top-N, or equivalent PubMed collection caps
 - use query optimization, not hidden retrieval caps, to produce a reasonably accurate candidate cohort
@@ -176,12 +258,13 @@ Working rule:
 
 ### 3. Run Guidance Reviser
 
-Revises `instruction.md`, `topic.md`, optional `constraints.md`, and reviewer-facing rules after PMC full-text learning and before a learned PubMed rerun.
+Revises `instruction.md`, `topic.md`, optional `review_frame.md`, optional `constraints.md`, and reviewer-facing rules after PMC full-text learning and before a learned PubMed rerun.
 
 Input:
 
 - current `instruction.md`
 - current `topic.md`
+- optional `review_frame.md`
 - optional `constraints.md`
 - `pmc_mechanism_feedback.csv`
 - `query_diagnostics.csv`
@@ -192,13 +275,14 @@ Output:
 
 - revised `instruction.md`
 - revised `topic.md`
+- optional revised `review_frame.md`
 - optional revised `constraints.md`
 - `artifacts/workflow_control/run_guidance_revision_log.csv`
 
 Working rule:
 
 - `original_user_prompt.md` is immutable
-- `passes/pass_001/inputs/instruction.md` and `passes/pass_001/inputs/topic.md` are immutable base/pass-1 guidance after run setup
+- `passes/pass_001/inputs/instruction.md`, `passes/pass_001/inputs/topic.md`, and optional `passes/pass_001/inputs/review_frame.md` are immutable base/pass-1 guidance after run setup
 - learned guidance for later passes must be written under `passes/pass_###/inputs/`
 - every guidance revision must cite the PMC feedback loop that triggered it
 - learned `search_strategy.md` must be generated after this revision from the revised guidance plus PMC feedback
@@ -221,6 +305,9 @@ Reads title and abstract to judge topic relevance.
 Output:
 
 - abstract review table
+- review-paper retention should preserve directly overlapping or bigger-field
+  review papers when they can help Phase 2 position the new review against
+  prior reviews
 
 ### 6. Abstract Reviewer 2
 
@@ -229,6 +316,7 @@ Reads the original abstract again together with the first abstract reviewer's de
 Output:
 
 - second-pass abstract review table
+- review-paper preservation check for Phase-2 introduction positioning
 
 ### 7. Full-Text Importer
 
@@ -271,6 +359,8 @@ Constraint:
 - before the final access pass, the most important full-text output is query-learning feedback, not resolution of the PDF queue
 - when PMC-learning feedback says `defer_pdfs`, use it to refine the next query/review loop rather than scoring PDFs for download
 - when PMC-learning feedback says `final_pdf_pass`, score the remaining PDF queue into request/defer/do-not-request classes
+- if user-provided PDFs are later normalized for review writing, apply the same keep/drop retention logic before counting them as part of the writing corpus
+- the PDF shortlist should be recall-friendly because downloaded PDFs still face parsing, normalization, and full-text retention review later; papers that survived `abstractReviewer2` should usually remain `request_pdf` unless they are explicit learned-noise cases
 
 ### 10. Workflow Controller
 
@@ -288,6 +378,8 @@ Working rule:
 - final PDF access is blocked until at least `min_big_workflow_loops` PMC-feedback passes exist
 - query loops should reduce predictable noise before additional PMC/PDF work when recall can be preserved
 - pre-final loops should mine PMC full text for mechanism terms and noise patterns before any manual PDF effort
+- after Part 1 completion, stop and request an explicit user decision about PMC-only writing versus waiting for downloaded PDFs
+- after a `wait_for_downloaded_pdfs` decision, do not advance toward review writing until the user later provides a clear ready-to-write signal
 
 ### 11. Reporter
 
@@ -297,6 +389,31 @@ Output:
 
 - progress report
 - final reading list
+- explicit post-Part-1 user checkpoint asking whether to write from PMC only or wait for downloaded PDFs
+- after user-provided PDFs are parsed later, a retained-PDF count before any Phase-2 writing begins
+
+## Proposed Part Boundary
+
+Part 1 ends after the final reading list and PDF shortlist are ready.
+
+At that point the workflow must pause and ask the user:
+
+1. use only PMC full text to write the review now
+2. wait for the user to provide downloaded PDFs first
+
+If the user chooses option 2, the workflow must not:
+
+- begin review writing
+- treat the raw downloaded PDFs as automatically accepted
+- parse and normalize those PDFs early just because a queue exists
+
+Instead, the workflow must wait.
+Only after the user later says they are ready to write should the workflow:
+
+1. parse and normalize the user-provided PDFs
+2. apply the usual full-text retention logic to those newly readable papers
+3. report how many PDFs were retained into the writing corpus
+4. begin the later Part-2 review-writing workflow
 
 ## Stage handoffs
 
@@ -309,14 +426,17 @@ Required input:
 Required outputs:
 
 - `runs/<run_id>/original_user_prompt.md`
-- `runs/<run_id>/passes/pass_001/inputs/run_config.md`
-- `runs/<run_id>/passes/pass_001/inputs/instruction.md`
-- `runs/<run_id>/passes/pass_001/inputs/topic.md`
-- optional `runs/<run_id>/passes/pass_001/inputs/constraints.md`
+- `runs/<run_id>/Phase1_PubmedCollection/passes/pass_001/inputs/run_config.md`
+- `runs/<run_id>/Phase1_PubmedCollection/passes/pass_001/inputs/instruction.md`
+- `runs/<run_id>/Phase1_PubmedCollection/passes/pass_001/inputs/topic.md`
+- optional `runs/<run_id>/Phase1_PubmedCollection/passes/pass_001/inputs/review_frame.md`
+- optional `runs/<run_id>/Phase1_PubmedCollection/passes/pass_001/inputs/constraints.md`
+- `runs/<run_id>/Phase1_PubmedCollection/passes/phase1_transcript.md`
 
 Promotion rule:
 
 - `original_user_prompt.md` must preserve the exact starting prompt without rewriting
+- the opening user request and the agent's visible setup guidance should be appended to `Phase1_PubmedCollection/passes/phase1_transcript.md`
 - downstream stages must consume run files as inputs rather than rewriting reusable workflow files
 
 ### Run Setup Agent -> PubMed Keyword Scout
@@ -326,12 +446,14 @@ Required inputs:
 - current pass `inputs/run_config.md`
 - current pass `inputs/instruction.md`
 - current pass `inputs/topic.md`
+- optional current pass `inputs/review_frame.md`
 - optional current pass `inputs/constraints.md`
 
 Required outputs:
 
 - a scoped search objective and query-design context captured in `search_strategy.md`
 - a query-scope contract or equivalent section in `search_strategy.md` that states primary entities, declared mechanism classes, comparator scope, secondary context, and deferred adjacent biology
+- if `review_frame.md` exists, only its explicit foundational recall terms or authorized comparator context may appear in first-pass query design
 
 ### Full-Text Reviewer / Workflow Controller -> Run Guidance Reviser
 
@@ -339,6 +461,7 @@ Required inputs:
 
 - current pass `inputs/instruction.md`
 - current pass `inputs/topic.md`
+- optional current pass `inputs/review_frame.md`
 - optional current pass `inputs/constraints.md`
 - `artifacts/fulltext_review/pmc_mechanism_feedback.csv`
 - `artifacts/search_strategy/query_diagnostics.csv`
@@ -349,6 +472,7 @@ Required outputs:
 
 - revised `passes/pass_###/inputs/instruction.md`
 - revised `passes/pass_###/inputs/topic.md`
+- optional revised `passes/pass_###/inputs/review_frame.md`
 - optional revised `passes/pass_###/inputs/constraints.md`
 - `artifacts/workflow_control/run_guidance_revision_log.csv`
 
@@ -356,8 +480,8 @@ Promotion rule:
 
 - this handoff is required before every learned rerun triggered by `pdf_deferral_decision = defer_pdfs`
 - `original_user_prompt.md` must remain unchanged
-- the revision log must name the feedback loop ID and the concrete retained mechanisms, missing terms, noise exclusions, and reviewer rules added to guidance
-- the next learned `search_strategy.md` must be generated from the revised `instruction.md`, revised `topic.md`, optional constraints, and PMC feedback
+- the revision log must name the feedback loop ID and the concrete retained mechanisms, missing terms, noise exclusions, review-frame changes, and reviewer rules added to guidance
+- the next learned `search_strategy.md` must be generated from the revised `instruction.md`, revised `topic.md`, optional `review_frame.md`, optional constraints, and PMC feedback
 
 ### PubMed Keyword Scout -> PubMed Collector
 
@@ -365,6 +489,7 @@ Required inputs:
 
 - current pass `inputs/instruction.md`
 - current pass `inputs/topic.md`
+- optional current pass `inputs/review_frame.md`
 - optional current pass `inputs/constraints.md`
 - optional retrieval feedback from a previous pass
 - for learned reruns, `run_guidance_revision_log.csv` row covering the latest `defer_pdfs` PMC feedback loop
@@ -471,7 +596,11 @@ Required outputs:
 Promotion rule:
 
 - papers without readable full text are not converted into reviewer drops
-- final `keep` should be supported by a non-background evidence tier
+- final `keep` should be supported by a non-background evidence tier, or by an explicit authorized review-frame role recorded for a minority of foundational/perspective papers
+- final `keep` requires sentence-level or local section-level evidence that
+  ties the mechanism/evidence claim to the target entity/system and required
+  outcome/relationship. Whole-document co-occurrence may justify query feedback
+  or background context, but not direct retention.
 - before the final calibrated access pass, `pmc_mechanism_feedback.csv` must be reviewed by the Workflow Controller before any PDF intervention is requested
 
 ### Workflow Controller -> Earlier Stage Or Reporter
@@ -528,7 +657,7 @@ All stage outputs are pass-scoped. For pass `N`, the durable locations are:
 6. `passes/pass_NNN/artifacts/workflow_control/`
 7. `passes/pass_NNN/reports/`
 
-Scripts must resolve the active pass from `passes/active_pass.json` and read or write inside that pass directory. The run root must not contain pass-neutral `artifacts/` or `reports/` folders or symlink pointers.
+Scripts must resolve the active pass from `Phase1_PubmedCollection/passes/active_pass.json` and read or write inside that pass directory. The run root must not contain pass-neutral `artifacts/` or `reports/` folders or symlink pointers.
 
 Expected canonical artifacts for each pass:
 
@@ -565,6 +694,7 @@ Minimum expected files:
 - `passes/pass_001/inputs/run_config.md`
 - `passes/pass_001/inputs/instruction.md`
 - `passes/pass_001/inputs/topic.md`
+- optional `passes/pass_001/inputs/review_frame.md`
 - `passes/pass_001/inputs/constraints.md` optional
 
 Pass 1 must also contain:
@@ -580,7 +710,7 @@ Later passes must have the same three-part structure:
 
 Each run must preserve durable pass snapshots under:
 
-`runs/<run_id>/passes/pass_###/`
+`runs/<run_id>/Phase1_PubmedCollection/passes/pass_###/`
 
 Each pass directory should contain:
 
@@ -593,7 +723,7 @@ Each pass directory should contain:
 - `snapshot_manifest.json`
   Pass counts, snapshot reason, latest PMC feedback state, and key stage row counts.
 
-The run root must stay clean: pass outputs belong only under `passes/pass_###/artifacts/` and `passes/pass_###/reports/`.
+The run root must stay clean: Part-1 outputs belong only under `Phase1_PubmedCollection/passes/pass_###/artifacts/` and `Phase1_PubmedCollection/passes/pass_###/reports/`.
 
 Before a learned rerun starts, create or activate the next pass directory and write its revised inputs there. After the Workflow Controller evaluates a pass, write `snapshot_manifest.json` inside that pass directory.
 
@@ -633,6 +763,11 @@ At abstract stage, each paper must end in one of two actionable states:
 - `advance_to_import`
 - `stop`
 
+Abstract promotion requires the run's claim shape. Entity-only, mechanism-only,
+outcome-only, or context-only matches must stop unless the run contract
+explicitly grants a review-frame retention role and the paper is needed as a
+minority field-synthesis/background item.
+
 At final output stage, retained papers may end in one of two states:
 
 - `selected_for_reading`
@@ -651,7 +786,14 @@ PMC feedback must pass the configured full-text review gate before it can unlock
 Mandatory pass structure:
 
 - Pass 1: conservative PMC-learning pass. The query scout searches the user-declared entities and mechanism classes, plus only explicitly authorized comparator queries. The full-text reviewer writes `pmc_mechanism_feedback.csv` with `pdf_deferral_decision = defer_pdfs` unless `require_fulltext_completion` is set.
-- Pass 2: learned in-scope rerun. The Run Guidance Reviser first applies Pass 1 retained in-scope mechanisms, noise families, missing terms, and reviewer-calibration changes to `instruction.md` and `topic.md`; then the query scout generates a learned search strategy from the revised guidance plus PMC feedback while staying inside the query-scope contract; then the workflow reruns collection, both abstract reviews, PMC import, and full-text review.
+- Pass 2: learned in-scope rerun. The Run Guidance Reviser first applies Pass 1 retained in-scope mechanisms, noise families, missing terms, review-frame calibration, and reviewer-calibration changes to `instruction.md`, `topic.md`, and optional `review_frame.md`; then the query scout generates a learned search strategy from the revised guidance plus PMC feedback while staying inside the query-scope contract; then the workflow reruns collection, both abstract reviews, PMC import, and full-text review. This learned rerun should naturally reduce burden by applying full-text learning to focus the run on the user's prompt, but numeric shrinkage is a confirmation signal rather than a hard definition of success.
+- If a learned rerun expands the collection or fails to substantially shorten abstract-review promotion, the controller records a confirmation signal. The run may proceed only if the revision log explains why the larger or similar-sized set is caused by newly learned in-scope vocabulary rather than secondary context, comparator, assay, population, intervention, or outcome terms becoming standalone drivers.
+- The workflow philosophy is that pass 1 spends breadth to buy learning, and
+  pass 2 spends that learning to buy focus. Pass 2 should therefore be written
+  as a more discriminating strategy before it is measured. Count comparisons are
+  sanity checks; the primary obligation is that learned terms, exclusions, and
+  reviewer rules make weak contextual matches less likely to enter the next
+  full-text burden.
 - Pass 2 or later may emit `final_pdf_pass` only after evidence shows the query/review criteria have absorbed the PMC learning.
 - Once `final_pdf_pass` is accepted after the minimum learned loops, the controller records the effective access phase as `final_access`.
 - Passes 3-5 are triggered by persistent evidence-grounded failures such as missing concepts, recurrent query noise, reviewer drift, weak final keeps, or a large low-value PDF queue.
@@ -661,11 +803,12 @@ Loops are allowed when an artifact shows a specific failure mode:
 
 - query diagnostics show dominant noise classes that can be removed without obvious recall loss
 - abstract review advances a very large fraction of the cohort with weak or generic rationales
+- learned rerun collection or `advance_to_import` counts do not materially decrease relative to the previous pass and the revision log does not justify this with newly learned in-scope vocabulary
 - reviewer 2 frequently overturns reviewer 1 for the same reason
 - PMC full-text reading identifies in-scope mechanism terms that should replace vague query terms
 - import creates a large PDF queue after PMC learning and the queued papers are traceable to a predictable query-noise pattern
 - PMC-learning is marked `final_pdf_pass` and there is a non-empty PDF queue but no PDF download shortlist
-- full-text evidence extraction shows many kept papers are indirect, background, expression-only, or marker-only
+- full-text evidence extraction shows many kept papers are indirect, background, expression-only, or marker-only without an authorized review-frame role
 - full-text evidence extraction reveals a missing in-scope term family that should become a rescue query
 - fewer than `min_big_workflow_loops` big passes have completed
 

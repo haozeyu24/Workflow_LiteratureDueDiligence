@@ -26,10 +26,15 @@ ABSTRACT_REVIEW_FIELDS = [
     "review_confidence",
     "topic_match_type",
     "reviewer_type",
+    "review_frame_role",
     "prescreen_hint",
     "prescreen_rationale",
     "prescreen_overlap_terms",
 ]
+
+
+def sanitize(value: str) -> str:
+    return " ".join((value or "").split())
 
 
 def main() -> int:
@@ -52,19 +57,20 @@ def main() -> int:
     for row in manifest_rows:
         review_rows.append(
             {
-                "paper_id": row.get("paper_id", ""),
-                "pmid": row.get("pmid", ""),
-                "doi": row.get("doi", ""),
-                "title": row.get("title", ""),
-                "abstract": row.get("abstract", ""),
-                "publication_types": row.get("publication_types", ""),
-                "year": row.get("year", ""),
-                "source_query": row.get("source_query", ""),
+                "paper_id": sanitize(row.get("paper_id", "")),
+                "pmid": sanitize(row.get("pmid", "")),
+                "doi": sanitize(row.get("doi", "")),
+                "title": sanitize(row.get("title", "")),
+                "abstract": sanitize(row.get("abstract", "")),
+                "publication_types": sanitize(row.get("publication_types", "")),
+                "year": sanitize(row.get("year", "")),
+                "source_query": sanitize(row.get("source_query", "")),
                 "review_decision": "",
                 "review_rationale": "",
                 "review_confidence": "",
                 "topic_match_type": "",
                 "reviewer_type": "",
+                "review_frame_role": "",
                 "prescreen_hint": "",
                 "prescreen_rationale": "",
                 "prescreen_overlap_terms": "",

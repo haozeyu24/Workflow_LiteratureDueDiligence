@@ -234,24 +234,24 @@ def classify(
             "shortlist_decision": "request_pdf",
             "evidence_category": "possible_learned_match",
             "learned_criteria_matched": "; ".join(learned_matches[:10]),
-            "shortlist_rationale": "Request PDF if capacity allows: title/abstract matches PMC-learned criteria but with limited specificity.",
+            "shortlist_rationale": "Request PDF: title/abstract matches PMC-learned criteria but with limited specificity; final retention will be decided after full-text reading.",
         }
 
     if run_matches and not noise_matches:
         return {
             "priority": "low",
-            "shortlist_decision": "defer_pdf",
+            "shortlist_decision": "request_pdf",
             "evidence_category": "access_uncertain",
             "learned_criteria_matched": "; ".join(run_matches[:8]),
-            "shortlist_rationale": "Defer PDF: paper matches run terms but lacks explicit PMC-learned mechanism criteria in title/abstract.",
+            "shortlist_rationale": "Request PDF: paper remains in-scope from abstract review and matches run terms even without explicit PMC-learned mechanism language in title/abstract. Keep access recall broad and let downstream full-text review decide retention.",
         }
 
     return {
-        "priority": "exclude",
-        "shortlist_decision": "do_not_request",
-        "evidence_category": "noise",
-        "learned_criteria_matched": "no learned criterion matched",
-        "shortlist_rationale": "Do not request PDF: title/abstract does not match the final PMC-learned criteria strongly enough.",
+        "priority": "low",
+        "shortlist_decision": "defer_pdf",
+        "evidence_category": "access_uncertain",
+        "learned_criteria_matched": "no explicit learned or run-term match",
+        "shortlist_rationale": "Defer PDF: paper advanced through abstract review but does not show clear learned or run-term support at shortlist time. Keep it available as a lower-priority access fallback rather than treating it as a scientific exclusion.",
     }
 
 

@@ -7,10 +7,11 @@ import subprocess
 import sys
 from pathlib import Path
 
+from pass_archive import incomplete_sentinel_path, passes_dir
+
 
 WORKFLOW_ROOT = Path(__file__).resolve().parents[1]
 RUNS_DIR = WORKFLOW_ROOT / "runs"
-INCOMPLETE_SENTINEL = "WORKFLOW_NOT_COMPLETE"
 
 
 def run_script(script_name: str, run_id: str) -> subprocess.CompletedProcess[str]:
@@ -30,16 +31,16 @@ def print_result(result: subprocess.CompletedProcess[str]) -> None:
 
 
 def active_pass_dir(run_dir: Path) -> Path:
-    active_path = run_dir / "passes" / "active_pass.json"
+    active_path = passes_dir(run_dir) / "active_pass.json"
     if active_path.exists():
         payload = json.loads(active_path.read_text(encoding="utf-8"))
         active_pass = str(payload.get("active_pass", "pass_001"))
-        return run_dir / "passes" / active_pass
-    return run_dir / "passes" / "pass_001"
+        return passes_dir(run_dir) / active_pass
+    return passes_dir(run_dir) / "pass_001"
 
 
 def active_pass_number(run_dir: Path) -> int:
-    active_path = run_dir / "passes" / "active_pass.json"
+    active_path = passes_dir(run_dir) / "active_pass.json"
     if not active_path.exists():
         return 1
     payload = json.loads(active_path.read_text(encoding="utf-8"))
@@ -54,7 +55,7 @@ def active_pass_number(run_dir: Path) -> int:
 
 
 def pass_dirs(run_dir: Path) -> list[Path]:
-    root = run_dir / "passes"
+    root = passes_dir(run_dir)
     if not root.exists():
         return []
     return sorted(path for path in root.glob("pass_[0-9][0-9][0-9]") if path.is_dir())
@@ -91,7 +92,7 @@ def cleanup_prior_pass_pmc_payloads(run_dir: Path) -> int:
 
 
 def write_incomplete_sentinel(run_dir: Path, reason: str) -> None:
-    (run_dir / INCOMPLETE_SENTINEL).write_text(
+    incomplete_sentinel_path(run_dir).write_text(
         "This run is not workflow-complete.\n"
         "Do not report the workflow as done until scripts/completion_gate.py passes.\n"
         f"Reason: {reason}\n",
@@ -104,7 +105,7 @@ def try_write_incomplete_sentinel(run_dir: Path, reason: str) -> bool:
         write_incomplete_sentinel(run_dir, reason)
     except OSError as exc:
         print(
-            f"Could not update {INCOMPLETE_SENTINEL}: {exc}. "
+            f"Could not update {incomplete_sentinel_path(run_dir).name}: {exc}. "
             "This is an execution-environment write failure, not a scientific completion signal.",
             file=sys.stderr,
         )
@@ -179,7 +180,7 @@ def main() -> int:
         print(f"WORKFLOW INCOMPLETE: could not read workflow_state.json: {exc}")
         return 1
 
-    sentinel_path = run_dir / INCOMPLETE_SENTINEL
+    sentinel_path = incomplete_sentinel_path(run_dir)
     status = state.get("status")
     if status != "complete":
         if not check_only:

@@ -7,6 +7,10 @@
 - `pmcid`
 - `doi`
 - `title`
+- `fulltext_access_route`
+  Allowed: `ncbi_pmc_xml`, `europe_pmc_xml`, `oa_pdf`, `none`
+- `fulltext_xml_url`
+- `fulltext_pdf_url`
 - `pmc_access_status`
   Allowed: `available`, `missing`, `not_applicable`
 - `pmc_parse_status`

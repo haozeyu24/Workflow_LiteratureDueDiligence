@@ -12,7 +12,15 @@ import urllib.parse
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
-from pass_archive import active_artifacts_dir, learned_revision_path, load_all_pass_csv, run_input_path, snapshot_current_pass
+from pass_archive import (
+    active_artifacts_dir,
+    archive_path_for_pass,
+    current_pass_number,
+    learned_revision_path,
+    load_all_pass_csv,
+    run_input_path,
+    snapshot_current_pass,
+)
 
 
 WORKFLOW_ROOT = Path(__file__).resolve().parents[1]
@@ -23,26 +31,37 @@ PUBMED_SUMMARY_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcg
 PUBMED_FETCH_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi"
 NCBI_RATE_LIMIT_SECONDS = 0.34
 USER_AGENT = "agenticWorkflow_LiteratureScreeningAndFullTextReview/0.1 (generic pubmed collector)"
+LEARNED_RERUN_COLLECTION_REVIEW_RATIO = 0.80
+PUBMED_RECORD_BATCH_SIZE = 100
+TRANSIENT_CURL_EXIT_CODES = {18, 22, 28, 35, 52, 55, 56, 92}
 
 
 def fetch_url(url: str) -> bytes:
-    result = subprocess.run(
-        [
-            "curl",
-            "--silent",
-            "--show-error",
-            "--fail",
-            "--location",
-            "--max-time",
-            "60",
-            "--user-agent",
-            USER_AGENT,
-            url,
-        ],
-        check=True,
-        capture_output=True,
-    )
-    return result.stdout
+    command = [
+        "curl",
+        "--http1.1",
+        "--silent",
+        "--show-error",
+        "--fail",
+        "--location",
+        "--max-time",
+        "60",
+        "--user-agent",
+        USER_AGENT,
+        url,
+    ]
+    last_error: subprocess.CalledProcessError | None = None
+    for attempt in range(1, 4):
+        try:
+            result = subprocess.run(command, check=True, capture_output=True)
+            return result.stdout
+        except subprocess.CalledProcessError as error:
+            last_error = error
+            if error.returncode not in TRANSIENT_CURL_EXIT_CODES or attempt == 3:
+                raise
+            time.sleep(attempt * 2)
+    assert last_error is not None
+    raise last_error
 
 
 def text_or_none(value: str | None) -> str:
@@ -186,6 +205,35 @@ def load_csv(path: Path) -> list[dict[str, str]]:
         return list(csv.DictReader(handle))
 
 
+def prior_pass_manifest_count(run_dir: Path, pass_number: int) -> int:
+    if pass_number <= 1:
+        return 0
+    path = archive_path_for_pass(run_dir, pass_number - 1) / "artifacts" / "metadata_collection" / "paper_manifest.csv"
+    return len(load_csv(path))
+
+
+def learned_rerun_collection_warnings(run_dir: Path, collected_count: int) -> list[str]:
+    pass_number = current_pass_number(run_dir)
+    if pass_number <= 1:
+        return []
+    prior_count = prior_pass_manifest_count(run_dir, pass_number)
+    if prior_count <= 0:
+        return []
+    review_threshold = int(prior_count * LEARNED_RERUN_COLLECTION_REVIEW_RATIO)
+    if collected_count <= review_threshold:
+        return []
+    return [
+        (
+            f"Learned rerun collection requires reviewer confirmation: pass_{pass_number:03d} collected "
+            f"{collected_count} unique records versus {prior_count} in pass_{pass_number - 1:03d}. "
+            f"This exceeds the {LEARNED_RERUN_COLLECTION_REVIEW_RATIO:.0%} confirmation threshold. "
+            "This is not automatically invalid, but the run should verify that pass 1 learning was "
+            "actually applied to sharpen scope and that any larger set is justified by the user's prompt, "
+            "not by broad context/modifier terms becoming standalone drivers."
+        )
+    ]
+
+
 def require_guidance_revision_for_learned_rerun(run_dir: Path) -> list[str]:
     feedback_rows = load_all_pass_csv(run_dir, "artifacts/fulltext_review/pmc_mechanism_feedback.csv")
     if not feedback_rows:
@@ -226,6 +274,28 @@ def require_guidance_revision_for_learned_rerun(run_dir: Path) -> list[str]:
         return [
             "Learned guidance revision log row is incomplete for "
             f"{latest_loop_id}; missing or non-existent paths: {', '.join(missing_paths)}."
+        ]
+    missing_learning_fields = []
+    for field in (
+        "retained_mechanisms_added",
+        "noise_or_exclusions_added",
+        "missing_terms_added",
+        "terms_replaced_or_tightened",
+        "terms_demoted_to_context",
+        "exclusion_enforcement_points",
+        "reviewer_rule_changes",
+        "expected_burden_effect",
+        "revision_rationale",
+    ):
+        if not latest_revision.get(field, "").strip():
+            missing_learning_fields.append(field)
+    if missing_learning_fields:
+        return [
+            "Learned guidance revision log row does not document enough pass-1 learning for "
+            f"{latest_loop_id}; missing fields: {', '.join(missing_learning_fields)}. "
+            "A learned rerun must record retained in-scope mechanisms, noise/exclusion changes, "
+            "missing in-scope terms, reviewer-rule changes, and a rationale for how the revised "
+            "strategy focuses the run on the user's prompt."
         ]
     return []
 
@@ -434,10 +504,14 @@ def main() -> int:
         print("No PubMed records found for supplied queries.")
         return 1
 
+    collection_warnings = learned_rerun_collection_warnings(run_dir, len(pmid_to_queries))
+    for warning in collection_warnings:
+        print(f"Warning: {warning}")
+
     rows: list[dict[str, str]] = []
     retrieval_batch = time.strftime("%Y%m%d")
     all_pmids = list(pmid_to_queries.keys())
-    for batch in batched(all_pmids, 200):
+    for batch in batched(all_pmids, PUBMED_RECORD_BATCH_SIZE):
         summaries = fetch_summaries(batch)
         time.sleep(NCBI_RATE_LIMIT_SECONDS)
         article_details = fetch_article_details(batch)

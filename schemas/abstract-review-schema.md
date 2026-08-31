@@ -20,6 +20,8 @@
   Suggested: `direct`, `indirect`, `background_only`
 - `reviewer_type`
   Suggested: `agent`, `human`, `hybrid`
+- `review_frame_role`
+  Optional. Suggested: `none`, `foundational_background`, `field_synthesis`, `perspective_gap`
 - `prescreen_hint`
   Optional. Suggested: `possible_include`
 - `prescreen_rationale`

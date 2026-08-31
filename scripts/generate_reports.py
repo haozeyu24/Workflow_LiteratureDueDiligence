@@ -10,12 +10,11 @@ import sys
 from pathlib import Path
 from collections import Counter
 
-from pass_archive import active_artifacts_dir, active_pass_number, active_reports_dir, run_input_path
+from pass_archive import active_artifacts_dir, active_pass_number, active_reports_dir, incomplete_sentinel_path, phase1_transcript_path, run_input_path
 
 
 WORKFLOW_ROOT = Path(__file__).resolve().parents[1]
 RUNS_DIR = WORKFLOW_ROOT / "runs"
-INCOMPLETE_SENTINEL = "WORKFLOW_NOT_COMPLETE"
 
 FINAL_FIELDS = [
     "paper_id",
@@ -46,7 +45,6 @@ PDF_REQUEST_FIELDS = [
     "learned_criteria_matched",
     "shortlist_rationale",
 ]
-
 
 def load_csv(path: Path) -> list[dict[str, str]]:
     if not path.exists():
@@ -207,7 +205,7 @@ def main() -> int:
     loop_rows = load_csv(control_dir / "workflow_loop_decision.csv")
     workflow_state = load_workflow_state(control_dir / "workflow_state.json")
     access_phase = str(workflow_state.get("access_phase") or config.get("access_phase", "pmc_learning"))
-    sentinel_exists = (run_dir / INCOMPLETE_SENTINEL).exists()
+    sentinel_exists = incomplete_sentinel_path(run_dir).exists()
     latest_pdf_decision = (
         pmc_feedback_rows[-1].get("pdf_deferral_decision", "").strip()
         if pmc_feedback_rows
@@ -218,9 +216,11 @@ def main() -> int:
         pdf_shortlist_rows = []
 
     reports_dir.mkdir(parents=True, exist_ok=True)
+    transcript_path = phase1_transcript_path(run_dir)
 
     years_by_paper_id = infer_years(paper_manifest_rows)
     manifest_by_paper_id = {row.get("paper_id", ""): row for row in paper_manifest_rows}
+    abstract_by_paper_id = {row.get("paper_id", ""): row for row in abstract_rows}
     abstract2_by_paper_id = {row.get("paper_id", ""): row for row in abstract2_rows}
     import_by_paper_id = {row.get("paper_id", ""): row for row in import_rows}
     final_rows: list[dict[str, str]] = []
@@ -299,13 +299,13 @@ def main() -> int:
         pdf_request_path.unlink()
 
     validation_passed, validation_output = run_validation(run_id)
-    sentinel_exists = (run_dir / INCOMPLETE_SENTINEL).exists()
+    sentinel_exists = incomplete_sentinel_path(run_dir).exists()
 
     papers_retrieved = len(paper_manifest_rows)
     abstract_includes = sum(1 for row in abstract_rows if row.get("review_decision", "") == "include")
     pmc_usable = sum(1 for row in import_rows if row.get("pmc_parse_status", "") == "usable")
     pmc_unusable = sum(1 for row in import_rows if row.get("pmc_parse_status", "") == "unusable")
-    no_pmc_access = sum(1 for row in import_rows if row.get("pmc_access_status", "") == "missing")
+    no_automated_access = sum(1 for row in import_rows if row.get("pmc_access_status", "") == "missing")
     pdf_needed = sum(1 for row in import_rows if row.get("pdf_needed", "") == "yes")
     pdf_normalized = sum(1 for row in import_rows if row.get("pdf_import_status", "") == "normalized")
     advance_to_import = sum(1 for row in abstract2_rows if row.get("promotion_decision", "") == "advance_to_import")
@@ -370,13 +370,13 @@ def main() -> int:
         f"`abstractReviewer2` advanced `{advance_to_import}` papers to import and stopped `{stop_after_abstract2}` papers."
         if abstract2_rows
         else "Second abstract review has not produced promotion decisions yet.",
-        f"`fullTextImporter` currently has `{pmc_usable}` usable PMC papers, `{pdf_normalized}` normalized PDF papers, and `{len(queue_rows)}` papers still in the manual PDF queue."
+        f"`fullTextImporter` currently has `{pmc_usable}` usable automated full-text papers, `{pdf_normalized}` normalized PDF papers, and `{len(queue_rows)}` papers still in the manual PDF queue."
         if import_rows
         else "`fullTextImporter` artifacts are not available yet.",
         f"Final-loop `pdf_download_shortlist.csv` requests `{pdf_request_count}` PDFs, including `{pdf_high_count}` high-priority PDFs."
         if final_pdf_shortlist_active and pdf_shortlist_rows
         else "PDF download shortlist has not been generated because PMC learning has not yet reached `final_pdf_pass`.",
-        f"`{len(fulltext_rows)}` normalized full texts are currently available in `runs/{run_id}/passes/{pass_label}/artifacts/fulltext_review/fulltext_review.csv`, and `{abstract_relevant_unreadable}` unreadable papers are carried in the final list."
+        f"`{len(fulltext_rows)}` normalized full texts are currently available in `runs/{run_id}/Phase1_PubmedCollection/passes/{pass_label}/artifacts/fulltext_review/fulltext_review.csv`, and `{abstract_relevant_unreadable}` unreadable papers are carried in the final list."
         if fulltext_rows
         else "Full-text review table has not been generated yet.",
     ]
@@ -450,9 +450,9 @@ def main() -> int:
             "",
             f"- papers retrieved: `{papers_retrieved}`",
             f"- abstract includes: `{abstract_includes}`",
-            f"- PMC usable: `{pmc_usable}`",
-            f"- PMC unusable: `{pmc_unusable}`",
-            f"- no PMC access: `{no_pmc_access}`",
+            f"- automated full-text usable: `{pmc_usable}`",
+            f"- automated full-text unusable: `{pmc_unusable}`",
+            f"- no automated full-text access: `{no_automated_access}`",
             f"- PDF needed: `{pdf_needed}`",
             f"- PDF-needed papers deferred by PMC-learning phase: `{pmc_learning_deferred_unreadable}`",
             f"- PDF shortlist request count: `{pdf_request_count}`",
@@ -463,11 +463,14 @@ def main() -> int:
             "",
             "## Queues",
             "",
-            f"- manual PDF queue: `runs/{run_id}/passes/{pass_label}/artifacts/fulltext_import/manual_pdf_queue.csv`",
-            f"- PDF download shortlist: `runs/{run_id}/passes/{pass_label}/artifacts/fulltext_import/pdf_download_shortlist.csv`"
+            f"- phase 1 transcript: `runs/{run_id}/Phase1_PubmedCollection/passes/phase1_transcript.md`"
+            if transcript_path.exists()
+            else "- phase 1 transcript: missing",
+            f"- manual PDF queue: `runs/{run_id}/Phase1_PubmedCollection/passes/{pass_label}/artifacts/fulltext_import/manual_pdf_queue.csv`",
+            f"- PDF download shortlist: `runs/{run_id}/Phase1_PubmedCollection/passes/{pass_label}/artifacts/fulltext_import/pdf_download_shortlist.csv`"
             if final_pdf_shortlist_active
             else "- PDF download shortlist: not generated before final PMC-satisfied loop",
-            f"- PDF request shortlist: `runs/{run_id}/passes/{pass_label}/reports/pdf_request_shortlist.csv`"
+            f"- PDF request shortlist: `runs/{run_id}/Phase1_PubmedCollection/passes/{pass_label}/reports/pdf_request_shortlist.csv`"
             if final_pdf_shortlist_active
             else "- PDF request shortlist: not generated before final PMC-satisfied loop",
             "",

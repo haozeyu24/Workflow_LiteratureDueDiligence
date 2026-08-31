@@ -32,6 +32,7 @@ Define what kinds of evidence count as useful.
 - primary evidence types:
 - secondary evidence types:
 - evidence that should not be treated as sufficient:
+- evidence gates for full-text keep:
 
 ## Scope Boundaries
 
@@ -51,6 +52,7 @@ Describe search preferences without adding retrieval caps.
 - known seed papers or canonical examples:
 - important older/foundational literature to preserve:
 - known noisy terms or contexts:
+- adjacent concepts that should not become query drivers:
 - PubMed collection cap: forbidden; collect the full accepted query result set
 
 ## Access And Deliverable Expectations
@@ -61,6 +63,20 @@ Define how downstream agents should treat access gaps and outputs.
 - final deliverable:
 - acceptable unresolved access state:
 - special reporting requirements:
+
+## Review Frame
+
+Describe how the final review should be situated in the larger field without
+automatically broadening first-pass retrieval.
+
+- parent field:
+- introduction background scope:
+- bigger-field progress to summarize:
+- foundational concepts or older terminology to preserve:
+- review-architecture paper types worth retaining:
+- perspective questions:
+- controversies or unresolved gaps:
+- translational or practical outlook:
 
 ## Prompt Scope Self-Check
 

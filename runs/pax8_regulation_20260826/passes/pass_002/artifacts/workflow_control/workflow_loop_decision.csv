@@ -1,2 +1,0 @@
-loop_id,source_stage,trigger,triggered,action,target_stage,rationale,required_changes,stop_condition
-loop_1,fulltext_import,final_pdf_shortlist_ready,no,continue,fullTextImporter,PMC feedback marks this as final PDF pass and the shortlist requests 45 of 45 queued PDFs.,Use pdf_download_shortlist.csv as the access action list. Do not loop back solely because the raw PDF queue remains large.,Proceed according to the PDF shortlist and run_config PDF policy.

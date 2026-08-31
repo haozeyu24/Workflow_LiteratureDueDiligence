@@ -1,1 +1,1 @@
-paper_id,pmid,pmcid,doi,title,pmc_access_status,pmc_parse_status,pdf_needed,pdf_import_status,normalized_path,notes
+paper_id,pmid,pmcid,doi,title,fulltext_access_route,fulltext_xml_url,fulltext_pdf_url,pmc_access_status,pmc_parse_status,pdf_needed,pdf_import_status,normalized_path,notes

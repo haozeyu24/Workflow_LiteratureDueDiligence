@@ -19,6 +19,18 @@ runs/*/passes/pass_*/artifacts/fulltext_import/pdfs/
 runs/*/passes/pass_*/artifacts/fulltext_import/downloads/
 runs/*/passes/pass_*/artifacts/fulltext_import/**/*.pdf
 runs/*/passes/pass_*/artifacts/metadata_collection/records/
+runs/*/Phase1_PubmedCollection/passes/pass_*/artifacts/
+runs/*/Phase1_PubmedCollection/passes/pass_*/reports/
+runs/*/Phase1_PubmedCollection/passes/pass_*/downloads/
+runs/*/Phase1_PubmedCollection/passes/pass_*/logs/
+runs/*/Phase1_PubmedCollection/passes/pass_*/artifacts/fulltext_import/PMC_XML/
+runs/*/Phase1_PubmedCollection/passes/pass_*/artifacts/fulltext_import/PMC_XML/normalized/
+runs/*/Phase1_PubmedCollection/passes/pass_*/artifacts/fulltext_import/PDF/
+runs/*/Phase1_PubmedCollection/passes/pass_*/artifacts/fulltext_import/PDFs/
+runs/*/Phase1_PubmedCollection/passes/pass_*/artifacts/fulltext_import/pdfs/
+runs/*/Phase1_PubmedCollection/passes/pass_*/artifacts/fulltext_import/downloads/
+runs/*/Phase1_PubmedCollection/passes/pass_*/artifacts/fulltext_import/**/*.pdf
+runs/*/Phase1_PubmedCollection/passes/pass_*/artifacts/metadata_collection/records/
 
 # Keep run definitions versioned so completed runs remain reproducible.
 !runs/README.md
@@ -52,6 +64,29 @@ runs/*/passes/pass_*/artifacts/metadata_collection/records/
 !runs/*/passes/pass_*/artifacts/search_strategy/**
 !runs/*/passes/pass_*/artifacts/workflow_control/
 !runs/*/passes/pass_*/artifacts/workflow_control/**
+!runs/*/Phase1_PubmedCollection/
+!runs/*/Phase1_PubmedCollection/passes/
+!runs/*/Phase1_PubmedCollection/passes/pass_*/
+!runs/*/Phase1_PubmedCollection/passes/pass_*/inputs/
+!runs/*/Phase1_PubmedCollection/passes/pass_*/inputs/**
+!runs/*/Phase1_PubmedCollection/passes/pass_*/reports/final_reading_list.csv
+!runs/*/Phase1_PubmedCollection/passes/pass_*/reports/pdf_request_shortlist.csv
+!runs/*/Phase1_PubmedCollection/passes/pass_*/reports/progress_report.md
+!runs/*/Phase1_PubmedCollection/passes/pass_*/snapshot_manifest.json
+!runs/*/Phase1_PubmedCollection/passes/pass_*/artifacts/abstract_review/
+!runs/*/Phase1_PubmedCollection/passes/pass_*/artifacts/abstract_review/*.csv
+!runs/*/Phase1_PubmedCollection/passes/pass_*/artifacts/fulltext_import/
+!runs/*/Phase1_PubmedCollection/passes/pass_*/artifacts/fulltext_import/import_status.csv
+!runs/*/Phase1_PubmedCollection/passes/pass_*/artifacts/fulltext_import/manual_pdf_queue.csv
+!runs/*/Phase1_PubmedCollection/passes/pass_*/artifacts/fulltext_import/pdf_download_shortlist.csv
+!runs/*/Phase1_PubmedCollection/passes/pass_*/artifacts/fulltext_review/
+!runs/*/Phase1_PubmedCollection/passes/pass_*/artifacts/fulltext_review/*.csv
+!runs/*/Phase1_PubmedCollection/passes/pass_*/artifacts/metadata_collection/
+!runs/*/Phase1_PubmedCollection/passes/pass_*/artifacts/metadata_collection/paper_manifest.csv
+!runs/*/Phase1_PubmedCollection/passes/pass_*/artifacts/search_strategy/
+!runs/*/Phase1_PubmedCollection/passes/pass_*/artifacts/search_strategy/**
+!runs/*/Phase1_PubmedCollection/passes/pass_*/artifacts/workflow_control/
+!runs/*/Phase1_PubmedCollection/passes/pass_*/artifacts/workflow_control/**
 
 # Track intentionally small fixture artifacts under runs/fixture-* when added.
 !runs/fixture-*/artifacts/

@@ -11,11 +11,14 @@ When the run is still in an early loop, use PMC-readable full text to generate q
 
 Your job is to make the final scientific triage call using normalized full text, not title-or-abstract plausibility alone.
 First extract structured evidence, then decide keep/drop from that evidence.
+This is the main narrowing gate from scoped recall to a decision-grade synthesis
+corpus.
 
 ## Inputs To Provide In This Prompt
 
 - the contents of `instruction.md`
 - the contents of `topic.md`
+- the contents of `review_frame.md` if present
 - optional `constraints.md`
 - current workflow pass, such as `pmc_learning` or `final_access`
 - a batch of `1-5` paper rows from `fulltext_review.csv`
@@ -36,6 +39,11 @@ First extract structured evidence, then decide keep/drop from that evidence.
 - Prioritize mechanistic and objective-level usefulness over broad topical mention.
 - Favor papers that illuminate the run-specific mechanism, process, dependency, comparison, or evidence need.
 - Avoid retaining papers that are mainly methods-only, generic background, or peripheral context.
+- Allow a minority of non-direct papers to survive only when `review_frame.md` clearly justifies them as foundational background, field synthesis, or perspective-gap anchors.
+- Do not keep background-only papers merely to make the review feel more
+  comprehensive.
+- A kept paper may be synthesized collectively in Phase 2; keeping it does not
+  mean it deserves equal narrative weight or human must-read status.
 - Do not invent evidence that is not present in the normalized text.
 - Assign `direct`, `indirect`, `comparator`, `background`, or `exclude` evidence before deciding.
 - Use `query_feedback_signal` when the paper exposes a repeated query problem or a missing concept.
@@ -62,6 +70,8 @@ First extract structured evidence, then decide keep/drop from that evidence.
 - `evidence_summary`
 - `supporting_text_locator`
 - `query_feedback_signal`
+- `retention_role`
+  Use one of: `direct_mechanistic`, `clinical_translational`, `foundational_background`, `field_synthesis`, `perspective_gap`, `exclude`.
 
 ## Required PMC Feedback Fields Per Learning Pass
 

@@ -27,7 +27,12 @@ ABSTRACT_REVIEW2_FIELDS = [
     "abstract_reviewer2_rationale",
     "abstract_reviewer2_confidence",
     "promotion_decision",
+    "review_frame_role",
 ]
+
+
+def sanitize(value: str) -> str:
+    return " ".join((value or "").split())
 
 
 def main() -> int:
@@ -59,25 +64,31 @@ def main() -> int:
         existing_row = existing_rows.get(row.get("paper_id", ""), {})
         abstract_review2_rows.append(
             {
-                "paper_id": row.get("paper_id", ""),
-                "pmid": row.get("pmid", ""),
-                "doi": row.get("doi", ""),
-                "title": row.get("title", ""),
-                "abstract": row.get("abstract", ""),
-                "publication_types": row.get("publication_types", ""),
-                "year": row.get("year", ""),
-                "source_query": row.get("source_query", ""),
-                "abstract_reviewer_decision": row.get("review_decision", ""),
-                "abstract_reviewer_rationale": row.get("review_rationale", ""),
-                "abstract_reviewer2_decision": existing_row.get("abstract_reviewer2_decision", ""),
-                "abstract_reviewer2_rationale": existing_row.get("abstract_reviewer2_rationale", ""),
-                "abstract_reviewer2_confidence": existing_row.get("abstract_reviewer2_confidence", ""),
-                "promotion_decision": existing_row.get("promotion_decision", ""),
+                "paper_id": sanitize(row.get("paper_id", "")),
+                "pmid": sanitize(row.get("pmid", "")),
+                "doi": sanitize(row.get("doi", "")),
+                "title": sanitize(row.get("title", "")),
+                "abstract": sanitize(row.get("abstract", "")),
+                "publication_types": sanitize(row.get("publication_types", "")),
+                "year": sanitize(row.get("year", "")),
+                "source_query": sanitize(row.get("source_query", "")),
+                "abstract_reviewer_decision": sanitize(row.get("review_decision", "")),
+                "abstract_reviewer_rationale": sanitize(row.get("review_rationale", "")),
+                "abstract_reviewer2_decision": sanitize(existing_row.get("abstract_reviewer2_decision", "")),
+                "abstract_reviewer2_rationale": sanitize(existing_row.get("abstract_reviewer2_rationale", "")),
+                "abstract_reviewer2_confidence": sanitize(existing_row.get("abstract_reviewer2_confidence", "")),
+                "promotion_decision": sanitize(existing_row.get("promotion_decision", "")),
+                "review_frame_role": sanitize(existing_row.get("review_frame_role", row.get("review_frame_role", ""))),
             }
         )
 
     with abstract_review2_path.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=ABSTRACT_REVIEW2_FIELDS)
+        writer = csv.DictWriter(
+            handle,
+            fieldnames=ABSTRACT_REVIEW2_FIELDS,
+            quoting=csv.QUOTE_ALL,
+            lineterminator="\n",
+        )
         writer.writeheader()
         writer.writerows(abstract_review2_rows)
 

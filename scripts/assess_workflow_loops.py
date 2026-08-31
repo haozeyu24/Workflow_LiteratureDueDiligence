@@ -9,12 +9,19 @@ import sys
 from collections import Counter
 from pathlib import Path
 
-from pass_archive import active_artifacts_dir, load_all_pass_csv, run_input_path, snapshot_current_pass
+from pass_archive import (
+    active_artifacts_dir,
+    archive_path_for_pass,
+    current_pass_number,
+    incomplete_sentinel_path,
+    load_all_pass_csv,
+    run_input_path,
+    snapshot_current_pass,
+)
 
 
 WORKFLOW_ROOT = Path(__file__).resolve().parents[1]
 RUNS_DIR = WORKFLOW_ROOT / "runs"
-INCOMPLETE_SENTINEL = "WORKFLOW_NOT_COMPLETE"
 
 FIELDS = [
     "loop_id",
@@ -36,6 +43,9 @@ STATE_STATUSES = {
     "complete",
     "blocked",
 }
+
+LEARNED_RERUN_COLLECTION_REVIEW_RATIO = 0.80
+LEARNED_RERUN_ADVANCE_REVIEW_RATIO = 0.70
 
 
 def load_csv(path: Path) -> list[dict[str, str]]:
@@ -105,6 +115,79 @@ def blank_count(rows: list[dict[str, str]], field: str) -> int:
 
 def id_set(rows: list[dict[str, str]]) -> set[str]:
     return {row.get("paper_id", "").strip() for row in rows if row.get("paper_id", "").strip()}
+
+
+def advance_count(rows: list[dict[str, str]]) -> int:
+    return sum(1 for row in rows if row.get("promotion_decision", "").strip() == "advance_to_import")
+
+
+def add_learned_rerun_burden_confirmation(
+    decisions: list[dict[str, str]],
+    run_dir: Path,
+    manifest_rows: list[dict[str, str]],
+    abstract2_rows: list[dict[str, str]],
+) -> None:
+    pass_number = current_pass_number(run_dir)
+    if pass_number <= 1 or not manifest_rows or not abstract2_rows:
+        return
+
+    previous_pass = archive_path_for_pass(run_dir, pass_number - 1)
+    previous_manifest_rows = load_csv(previous_pass / "artifacts" / "metadata_collection" / "paper_manifest.csv")
+    previous_abstract2_rows = load_csv(previous_pass / "artifacts" / "abstract_review" / "abstract_review2.csv")
+    if not previous_manifest_rows or not previous_abstract2_rows:
+        return
+
+    current_collection = len(manifest_rows)
+    previous_collection = len(previous_manifest_rows)
+    current_advance = advance_count(abstract2_rows)
+    previous_advance = advance_count(previous_abstract2_rows)
+    collection_ratio = ratio(current_collection, previous_collection)
+    advance_ratio = ratio(current_advance, previous_advance)
+
+    collection_needs_review = collection_ratio > LEARNED_RERUN_COLLECTION_REVIEW_RATIO
+    advance_needs_review = previous_advance > 0 and advance_ratio > LEARNED_RERUN_ADVANCE_REVIEW_RATIO
+    if not (collection_needs_review or advance_needs_review):
+        return
+
+    if collection_needs_review:
+        action = "continue"
+        target_stage = "pubmedKeywordScout"
+        rationale = (
+            f"Learned rerun collection crossed the confirmation threshold: pass_{pass_number:03d} has "
+            f"{current_collection} collected records versus {previous_collection} in pass_{pass_number - 1:03d} "
+            f"({collection_ratio:.1%})."
+        )
+        required_changes = (
+            "Confirm that the learned search strategy used pass-1 full-text learning to focus the run on the "
+            "user prompt. If the larger set comes from context/modifier terms becoming standalone drivers, "
+            "revise the query; if it comes from newly learned in-scope mechanism vocabulary, document that rationale."
+        )
+    else:
+        action = "continue"
+        target_stage = "abstractReviewer2"
+        rationale = (
+            f"Learned rerun abstract promotion crossed the confirmation threshold: pass_{pass_number:03d} advanced "
+            f"{current_advance} papers versus {previous_advance} in pass_{pass_number - 1:03d} ({advance_ratio:.1%})."
+        )
+        required_changes = (
+            "Confirm that reviewer calibration from pass 1 was applied. If promotion is high because papers only "
+            "match context, comparator, assay, population, intervention, or outcome terms, tighten abstract triage."
+        )
+
+    add_decision(
+        decisions,
+        "workflow_control",
+        "learned_rerun_burden_confirmation",
+        False,
+        action,
+        target_stage,
+        rationale,
+        required_changes,
+        (
+            "This is a confirmation signal, not a hard gate. Proceed only if the learned rerun is justified by "
+            "documented pass-1 learning and remains focused on the user's prompt."
+        ),
+    )
 
 
 def add_stage_gate_decision(
@@ -501,7 +584,7 @@ def build_state(
 
 
 def update_incomplete_sentinel(run_dir: Path, state: dict[str, object]) -> None:
-    sentinel_path = run_dir / INCOMPLETE_SENTINEL
+    sentinel_path = incomplete_sentinel_path(run_dir)
     if state.get("status") == "complete":
         if sentinel_path.exists():
             sentinel_path.unlink()
@@ -563,6 +646,12 @@ def main() -> int:
         fulltext_rows,
         evidence_rows,
         pmc_feedback_rows,
+    )
+    add_learned_rerun_burden_confirmation(
+        decisions,
+        run_dir,
+        manifest_rows,
+        abstract2_rows,
     )
     add_pmc_fulltext_review_gate_decision(
         decisions,

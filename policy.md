@@ -23,7 +23,7 @@ Do not create silent one-off exceptions during a run.
 1. Separate retrieval failure from review failure.
 2. Separate abstract-level plausibility from full-text inclusion.
 3. Preserve provenance at every stage.
-4. Prefer inclusive abstract triage over premature exclusion.
+4. Preserve prompt fidelity before broad recall.
 5. Keep the workflow reusable across topics and runtimes.
 6. Treat batching as context management, not hidden filtering.
 7. Treat access failure as distinct from scientific exclusion.
@@ -31,6 +31,43 @@ Do not create silent one-off exceptions during a run.
 9. Use accessible full text as a learning signal before spending human effort on PDFs.
 10. Treat workflow completion as a machine-checked controller state, not an agent conclusion.
 11. Do not let partial PMC full-text samples drive learned query reruns when the run requires full PMC coverage.
+12. Concentrate recall-friendly behavior in scoped retrieval and early triage,
+    then narrow progressively through explicit evidence gates.
+
+## Decision-Grade Coverage Policy
+
+This workflow serves scientific due diligence for biotech, academic, venture,
+and consulting-style decisions. It should produce enough coverage to support
+trusted reasoning about mechanisms, evidence strength, gaps, and risks without
+turning every plausible adjacency into required reading.
+
+The governing philosophy is:
+
+- high prompt fidelity first
+- recall-friendly retrieval second
+- evidence-gated narrowing third
+
+Prompt fidelity means the run inputs define what counts as primary: entities,
+mechanism or evidence classes, context, comparators, and exclusions. Adjacent
+biology is not primary merely because it is plausible.
+
+Scoped recall means PubMed search should be broad within the declared query
+scope. It should rescue synonyms, aliases, older terminology, assay language,
+and known direct papers. It should not expand into every related pathway,
+phenotype, disease context, or background biology unless the user prompt or a
+recorded guidance revision explicitly authorizes that expansion.
+
+Evidence-gated narrowing means that abstract review can preserve plausible
+decision-relevant candidates, while full-text review must become stricter.
+Final keep decisions should normally require direct, indirect, or authorized
+comparator evidence. Background-only retention is exceptional and must be tied
+to an explicit `review_frame.md` role.
+
+Phase 2 synthesis may use a broader corpus than a human must-read list, but it
+must not flatten all retained papers into equal importance. Every paper used for
+review writing should have typed evidence, a retention role, and provenance so
+the generated review can summarize weak or redundant evidence collectively while
+highlighting the decision-grade core.
 
 ## Completion status policy
 
@@ -57,9 +94,10 @@ Allowed incomplete status labels are:
 - `controller_loop_required`
 - `workflow_blocked`
 
-If `WORKFLOW_NOT_COMPLETE` exists in the run root, the run must be reported as
-incomplete regardless of any intermediate files. Only the workflow controller may
-remove this sentinel, and only when it writes `workflow_state.status = complete`.
+If `Phase1_PubmedCollection/WORKFLOW_NOT_COMPLETE` exists, the run must be
+reported as incomplete regardless of any intermediate files. Only the workflow
+controller may remove this sentinel, and only when it writes
+`workflow_state.status = complete`.
 
 PMC full-text feedback is eligible to drive a learned rerun only after the run's
 configured PMC full-text review gate passes. The strict default is
@@ -102,7 +140,8 @@ before creating it. A side deliverable must never substitute for the workflow's
 required artifacts, required reviewer decisions, PDF access gates, or completion
 gate.
 
-Declared workflow artifacts belong under `runs/<run_id>/passes/pass_###/`.
+Declared workflow artifacts belong under
+`runs/<run_id>/Phase1_PubmedCollection/passes/pass_###/`.
 Writing user-facing files outside the active run tree is allowed only when the
 user explicitly asks for an export outside the workflow.
 
@@ -113,21 +152,27 @@ Run-specific files may define:
 - the scientific objective
 - topic scope
 - declared mechanism classes for PubMed retrieval
+- optional review-frame obligations for introduction, field progress, and perspective
 - secondary context that may support synthesis but should not drive first-pass retrieval
 - desired evidence types
 - explicit exclusions
 
 `original_user_prompt.md` is immutable provenance.
-Pass-1 `instruction.md`, `topic.md`, and optional `constraints.md` belong in
+Pass-1 `instruction.md`, `topic.md`, optional `review_frame.md`, and optional `constraints.md` belong in
 `passes/pass_001/inputs/` and must remain immutable once the run starts.
 Learned guidance belongs in pass-scoped files such as
-`passes/pass_002/inputs/instruction.md`, `passes/pass_002/inputs/topic.md`, and
+`passes/pass_002/inputs/instruction.md`, `passes/pass_002/inputs/topic.md`,
+optional `passes/pass_002/inputs/review_frame.md`, and
 `passes/pass_002/inputs/constraints.md`.
 Every learned guidance revision must be recorded in
 `artifacts/workflow_control/run_guidance_revision_log.csv` and must cite the
 `pmc_mechanism_feedback.csv` loop that triggered it.
 The learned search strategy must be generated after this guidance revision, from
 the pass-scoped revised guidance plus PMC feedback.
+
+Review-frame fields should primarily shape retention and later synthesis.
+They may affect PubMed query design only as explicit recall safeguards for
+foundational terms, parent-field aliases, or authorized comparator context.
 
 Reusable files must not silently introduce narrower biological scope than the run inputs specify.
 Reusable files also must not silently introduce broader biological scope than the run inputs specify.
@@ -149,13 +194,28 @@ It is not allowed to claim final mechanistic importance.
 
 Decision interpretation:
 
-- `include` means the paper is plausible enough to preserve
-- `exclude` means the paper is clearly not worth carrying forward under the run objective
+- `include` means the paper plausibly answers the run's decision question well
+  enough to preserve for later adjudication
+- `exclude` means the paper is clearly not worth carrying forward under the run
+  objective or only has generic adjacency
 
 Default stance:
 
-- borderline but plausible papers should usually remain in scope for later stages
+- borderline papers should remain in scope only when the abstract satisfies the
+  run's primary entity requirement and at least one declared mechanism,
+  evidence, or review-frame retention requirement
 - abstract review should be more inclusive than full-text review
+- abstract review should reduce ambiguity early; it should not use "could this
+  ever be related?" as the inclusion test
+- context, comparator, assay, population, intervention, and outcome terms may
+  support inclusion, but they are not sufficient by themselves unless the run
+  contract explicitly marks them as primary retrieval/evidence requirements
+- `review_frame.md` may preserve a minority of papers for foundational background,
+  field-synthesis, or perspective-gap value when the abstract clearly supports
+  that role
+- `publication_types` should be used as reviewer context when a paper is itself
+  a review, without creating a separate side artifact unless the workflow later
+  declares one
 
 ## PubMed search refinement policy
 
@@ -169,7 +229,29 @@ Query expansion is scope-limited:
 - synonyms, assay names, and rescue terms may be added only within those declared classes
 - comparator queries are allowed only when comparator evidence is explicit in the run inputs, and they must use the same declared mechanism classes
 - adjacent biology discovered during sampling or PMC learning should be recorded as secondary context unless the run guidance explicitly promotes it to primary scope
-- a learned rerun may narrow noise and add in-scope synonyms, but it must not broaden into new mechanism classes merely because they are plausible compensatory explanations
+- a learned rerun is a learning-application step: it should use pass-1 full-text
+  evidence to sharpen the operational scope around the user's prompt by
+  retaining high-yield in-scope mechanism/evidence language, demoting or
+  excluding repeated noise patterns, and clarifying reviewer rules
+- numeric shrinkage is a confirmation signal, not the definition of learning:
+  if pass 1 was already very specific, pass 2 may not shrink dramatically, but
+  the run must still show what was learned and how that learning affected query
+  design or review criteria
+- a learned rerun that expands the collected set or fails to substantially
+  reduce the `advance_to_import` set requires explicit confirmation in the
+  workflow decision log; it is acceptable only when the larger set is explained
+  by newly learned in-scope vocabulary rather than by secondary context or
+  modifier terms becoming standalone query drivers
+
+Pass-1 learning must be recorded in a way that can change pass 2 behavior.
+At minimum, `run_guidance_revision_log.csv` for a learned rerun should document:
+
+- retained in-scope mechanism or evidence terms learned from full text
+- repeated noise terms, contexts, or paper classes to demote or exclude
+- missing in-scope terms or aliases that should be rescued
+- reviewer-rule changes that make abstract promotion more faithful to the user prompt
+- a rationale explaining how the revised strategy focuses, rather than broadens,
+  the run
 
 Every optimization round should record structured diagnostics:
 
@@ -314,6 +396,9 @@ Evidence tiers:
 
 Final `keep` should usually require `direct`, `indirect`, or run-authorized `comparator` evidence.
 `background` and `exclude` evidence should usually map to `drop`.
+An exception is allowed when `review_frame.md` explicitly authorizes a minority
+of papers to be retained as `foundational_background`, `field_synthesis`, or
+`perspective_gap`, and that role is recorded explicitly in evidence extraction.
 
 If many final keeps are based on `background`, expression-only, marker-only, or weak indirect evidence, the workflow should trigger a reviewer-calibration loop before reporting the final list.
 
@@ -359,7 +444,7 @@ Trigger a reviewer-calibration loop when:
 
 - abstract reviewer 1 or reviewer 2 decisions conflict with the evidence-tier definitions
 - reviewer rationales are generic enough that another agent could not reproduce the decision
-- full-text review keeps many papers whose evidence tier is `background` or `exclude`
+- full-text review keeps many papers whose evidence tier is `background` or `exclude` without an explicit authorized review-frame role
 
 Do not trigger a loop merely because a result count is large.
 Large counts are acceptable when precision and recall diagnostics justify them.
@@ -428,3 +513,50 @@ The final reading list must include:
 - normalized file location
 
 The final output should also preserve unresolved but still relevant access cases as a distinct status such as `abstract_relevant_fulltext_unavailable`.
+
+## Part-1 to Part-2 checkpoint policy
+
+This workflow should be treated as a proposed two-part structure.
+
+Part 1 is the literature workflow.
+Part 2 is later review-paper construction and is not yet fully specified here.
+
+When Part 1 is complete, the workflow must pause and ask the user whether to:
+
+- write the review from PMC-readable full text only
+- wait for user-provided downloaded PDFs before review writing
+
+The workflow must not begin review writing merely because Part 1 is complete.
+It must receive a clear user signal that they are ready to write the review.
+
+If the user chooses to wait for downloaded PDFs:
+
+- do not start Part 2 yet
+- do not treat downloaded PDFs as automatically in-scope for the writing corpus
+- wait until the user later confirms they are ready to write
+
+Only after that ready-to-write confirmation may the workflow:
+
+- parse and normalize the provided PDFs
+- apply the same full-text retention rules used elsewhere in the workflow
+- report how many PDFs were retained into the writing corpus
+- transition into the later review-writing phase
+
+## PDF shortlist policy
+
+The PDF shortlist is an access-prioritization step, not a scientific exclusion
+step.
+
+Because downloaded PDFs will later be parsed, normalized, and reviewed again in
+full text, the shortlist should be recall-friendly:
+
+- papers that survived `abstractReviewer2` and entered `manual_pdf_queue.csv`
+  should usually remain `request_pdf`
+- `defer_pdf` is appropriate for lower-confidence access work that should remain
+  available but not urgent
+- `do_not_request` should be reserved for explicit learned-noise cases or
+  papers that were not actually advanced to full-text import
+
+Lack of strong PMC-learned term matches in a title or abstract is not, by
+itself, a strong reason to suppress PDF request if the paper already survived
+the two abstract-review passes.

@@ -9,14 +9,17 @@ import time
 from pathlib import Path
 
 
+PHASE1_DIR_NAME = "Phase1_PubmedCollection"
 ARCHIVE_DIR_NAME = "passes"
 ACTIVE_PASS_FILE = "active_pass.json"
+INCOMPLETE_SENTINEL = "WORKFLOW_NOT_COMPLETE"
 
 INPUT_PATHS = [
     "request.md",
     "run_config.md",
     "instruction.md",
     "topic.md",
+    "review_frame.md",
     "constraints.md",
     "notes.md",
 ]
@@ -32,8 +35,24 @@ PASS_ARTIFACT_SUBDIRS = [
 ]
 
 
+def phase1_dir(run_dir: Path) -> Path:
+    return run_dir / PHASE1_DIR_NAME
+
+
+def passes_dir(run_dir: Path) -> Path:
+    return phase1_dir(run_dir) / ARCHIVE_DIR_NAME
+
+
+def incomplete_sentinel_path(run_dir: Path) -> Path:
+    return phase1_dir(run_dir) / INCOMPLETE_SENTINEL
+
+
+def phase1_transcript_path(run_dir: Path) -> Path:
+    return passes_dir(run_dir) / "phase1_transcript.md"
+
+
 def archive_path_for_pass(run_dir: Path, pass_number: int) -> Path:
-    return run_dir / ARCHIVE_DIR_NAME / f"pass_{pass_number:03d}"
+    return passes_dir(run_dir) / f"pass_{pass_number:03d}"
 
 
 def ensure_pass_layout(run_dir: Path, pass_number: int) -> Path:
@@ -46,7 +65,8 @@ def ensure_pass_layout(run_dir: Path, pass_number: int) -> Path:
 
 def activate_pass(run_dir: Path, pass_number: int) -> Path:
     pass_dir = ensure_pass_layout(run_dir, pass_number)
-    (run_dir / ARCHIVE_DIR_NAME / ACTIVE_PASS_FILE).write_text(
+    passes_dir(run_dir).mkdir(parents=True, exist_ok=True)
+    (passes_dir(run_dir) / ACTIVE_PASS_FILE).write_text(
         json.dumps(
             {
                 "active_pass": f"pass_{pass_number:03d}",
@@ -62,7 +82,7 @@ def activate_pass(run_dir: Path, pass_number: int) -> Path:
 
 
 def active_pass_number(run_dir: Path) -> int | None:
-    state_path = run_dir / ARCHIVE_DIR_NAME / ACTIVE_PASS_FILE
+    state_path = passes_dir(run_dir) / ACTIVE_PASS_FILE
     if state_path.exists():
         try:
             payload = json.loads(state_path.read_text(encoding="utf-8"))
@@ -93,7 +113,7 @@ def active_path(run_dir: Path, relative_path: str) -> Path:
 
 
 def pass_numbers(run_dir: Path) -> list[int]:
-    archive_root = run_dir / ARCHIVE_DIR_NAME
+    archive_root = passes_dir(run_dir)
     existing: list[int] = []
     if archive_root.exists():
         for path in archive_root.glob("pass_[0-9][0-9][0-9]"):

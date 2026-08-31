@@ -62,6 +62,26 @@ def manual_pdf_allowed(run_dir: Path) -> bool:
     return latest_decision == "final_pdf_pass"
 
 
+def can_parse_pdf_status(pdf_status: str, allow_manual_pdfs: bool) -> bool:
+    if pdf_status == "staged_from_user_download":
+        return allow_manual_pdfs
+    return pdf_status in {"imported", "parser_pending", "parse_failed"}
+
+
+def reconcile_oa_pdf_status(row: dict[str, str]) -> None:
+    if row.get("fulltext_access_route", "").strip() != "oa_pdf":
+        return
+    pdf_status = row.get("pdf_import_status", "").strip()
+    if pdf_status == "normalized" and row.get("normalized_path", "").strip():
+        row["pmc_access_status"] = "available"
+        row["pmc_parse_status"] = "usable"
+        row["pdf_needed"] = "no"
+    elif pdf_status == "parse_failed":
+        row["pmc_access_status"] = "available"
+        row["pmc_parse_status"] = "unusable"
+        row["pdf_needed"] = "yes"
+
+
 def write_csv(path: Path, fieldnames: list[str], rows: list[dict[str, str]]) -> None:
     with path.open("w", newline="", encoding="utf-8") as handle:
         writer = csv.DictWriter(handle, fieldnames=fieldnames)
@@ -312,13 +332,7 @@ def main() -> int:
     tei_dir = pdf_dir / "parser_cache" / "grobid"
     normalized_dir = pdf_dir / "normalized"
 
-    if not manual_pdf_allowed(run_dir):
-        print(
-            "Manual PDF parsing is deferred during access_phase=pmc_learning. "
-            "Use PMC-normalized full text for mechanism feedback first, "
-            "then build pdf_download_shortlist.csv after final_pdf_pass before parsing PDFs."
-        )
-        return 1
+    allow_manual_pdfs = manual_pdf_allowed(run_dir)
 
     if not import_status_path.exists():
         print(f"Import status not found: {import_status_path}")
@@ -328,6 +342,9 @@ def main() -> int:
     tei_dir.mkdir(parents=True, exist_ok=True)
     normalized_dir.mkdir(parents=True, exist_ok=True)
 
+    for row in rows:
+        reconcile_oa_pdf_status(row)
+
     report_rows: list[dict[str, str]] = []
     normalized_count = 0
     pending_count = 0
@@ -336,7 +353,7 @@ def main() -> int:
     for row in rows:
         pdf_status = row.get("pdf_import_status", "")
         paper_id = row.get("paper_id", "")
-        if pdf_status not in {"staged_from_user_download", "imported", "parser_pending", "parse_failed"}:
+        if not can_parse_pdf_status(pdf_status, allow_manual_pdfs):
             continue
 
         pdf_path = resolve_pdf_path(row, pdf_dir)
@@ -379,6 +396,8 @@ def main() -> int:
             if ok:
                 row["pdf_import_status"] = "normalized"
                 row["pdf_needed"] = "no"
+                if row.get("fulltext_access_route", "").strip() == "oa_pdf":
+                    row["pmc_parse_status"] = "usable"
                 row["normalized_path"] = str(normalized_path)
                 row["notes"] = append_note(
                     row.get("notes", ""),
@@ -389,6 +408,8 @@ def main() -> int:
                 normalized_count += 1
             else:
                 row["pdf_import_status"] = "parse_failed"
+                if row.get("fulltext_access_route", "").strip() == "oa_pdf":
+                    row["pmc_parse_status"] = "unusable"
                 row["notes"] = append_note(row.get("notes", ""), message)
                 parse_status = "parse_failed"
                 notes = message
@@ -411,6 +432,13 @@ def main() -> int:
     fieldnames = list(rows[0].keys()) if rows else []
     write_csv(import_status_path, fieldnames, rows)
     write_csv(report_path, REPORT_FIELDS, report_rows)
+
+    if not allow_manual_pdfs and not report_rows:
+        print(
+            "Manual PDF parsing is deferred during access_phase=pmc_learning, "
+            "and no auto-imported open-access PDFs are currently staged for parsing."
+        )
+        return 0
 
     print(f"Normalized {normalized_count} staged PDFs")
     print(f"Parser pending for {pending_count} PDFs")

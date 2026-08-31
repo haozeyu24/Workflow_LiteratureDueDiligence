@@ -15,11 +15,14 @@ Perform a second-pass review of each paper after reading:
 Your job is to catch both over-inclusion and over-exclusion while still preserving papers that are likely relevant to the run objective.
 You are not expected to be stricter than reviewer 1 by default.
 Judge whether reviewer 1's opinion is supported by the title and abstract.
+Use this pass to reduce ambiguity from generic contextual overlap before papers
+create full-text import burden.
 
 ## Inputs To Provide In This Prompt
 
 - the contents of `instruction.md`
 - the contents of `topic.md`
+- the contents of `review_frame.md` if present
 - a batch of `10-20` paper rows from `abstract_review2.csv`
 - for each row, include the original abstract plus the first review decision and rationale
 
@@ -42,7 +45,12 @@ Judge whether reviewer 1's opinion is supported by the title and abstract.
 - Judge each paper independently.
 - Preserve papers that remain likely relevant after second-pass inspection.
 - Stop papers that are clearly off-topic or weakly connected to the instruction.
+- Stop papers whose only support is broad adjacency rather than primary entity
+  plus declared evidence/mechanism, authorized comparator logic, or explicit
+  review-frame value.
 - Do not stop papers to reduce cost, PDF work, import burden, or cohort size.
+- Use `review_frame.md` only as a secondary retain signal for papers that clearly anchor introduction, field-progress, or perspective needs.
+- When `publication_types` indicates a review, preserve reviews that clearly cover the same angle or parent field so Phase 2 can position the new review against prior reviews.
 
 ## Required Output Fields Per Paper
 
@@ -50,6 +58,8 @@ Judge whether reviewer 1's opinion is supported by the title and abstract.
 - `abstract_reviewer2_rationale`
 - `abstract_reviewer2_confidence`
 - `promotion_decision`
+- `review_frame_role`
+  Use `none` unless the paper clearly serves `foundational_background`, `field_synthesis`, or `perspective_gap`.
 
 ## Output Style
 

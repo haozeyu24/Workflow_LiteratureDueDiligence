@@ -35,5 +35,13 @@ It is generated only after full-text learning has satisfied the controller, usin
 The evidence categories must remain generic. Topic-specific examples belong in
 `learned_criteria_matched` and `shortlist_rationale`, not in the reusable schema.
 
+The shortlist should be recall-friendly at the access stage.
+If a paper survived `abstractReviewer2` and entered `manual_pdf_queue.csv`, the
+default should usually be `request_pdf` unless the final PMC learning indicates
+that the paper is explicit noise or clearly outside the learned mechanistic
+scope. Uncertain papers should prefer `request_pdf` or at worst `defer_pdf`,
+not `do_not_request`, because the real scientific retention decision happens
+later from parsed full text.
+
 `manual_pdf_queue.csv` records access state.
 `pdf_download_shortlist.csv` records the next access action.

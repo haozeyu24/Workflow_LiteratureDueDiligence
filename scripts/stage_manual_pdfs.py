@@ -133,12 +133,15 @@ def title_overlap_score(title: str, filename: str) -> float:
 
 
 def read_pdf_metadata_title(path: Path) -> str:
+    if os.environ.get("OPENCLAW_SKIP_PDF_MDLS", "").strip() == "1":
+        return ""
     try:
         result = subprocess.run(
             ["mdls", "-raw", "-name", "kMDItemTitle", str(path)],
             capture_output=True,
             check=False,
             text=True,
+            timeout=3,
         )
     except Exception:
         return ""
@@ -151,12 +154,15 @@ def read_pdf_metadata_title(path: Path) -> str:
 
 
 def read_pdf_metadata_wherefroms(path: Path) -> str:
+    if os.environ.get("OPENCLAW_SKIP_PDF_MDLS", "").strip() == "1":
+        return ""
     try:
         result = subprocess.run(
             ["mdls", "-raw", "-name", "kMDItemWhereFroms", str(path)],
             capture_output=True,
             check=False,
             text=True,
+            timeout=3,
         )
     except Exception:
         return ""

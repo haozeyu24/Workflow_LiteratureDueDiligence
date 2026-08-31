@@ -20,6 +20,8 @@
   Allowed: `high`, `medium`, `low`
 - `promotion_decision`
   Allowed: `advance_to_import`, `stop`
+- `review_frame_role`
+  Optional. Suggested: `none`, `foundational_background`, `field_synthesis`, `perspective_gap`
 
 ## Notes
 

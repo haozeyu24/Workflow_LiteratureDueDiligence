@@ -1,1 +1,0 @@
-let's use the workflow to for another prompt to test the topic: there are different PI3K-alpha inhibitors, approved ones like Alpelisib and inavolisib, those are orthosteric inhibitors, and there are allosteric ones in development like RLY2608 . I want to know the potential resistant mechanism and ways to sensitizing those inhibitors.

@@ -43,3 +43,9 @@ that were not part of the declared mechanism classes should remain in
 `supporting_mechanisms` or reviewer notes, not `missing_keyword_families` or
 `recommended_query_changes`, unless a run-guidance revision explicitly promotes
 them to primary retrieval scope.
+
+Feedback terms must remain claim-shaped. Do not promote isolated single words
+mined from prose into `direct_mechanisms`, `retained_keyword_families`, or
+`missing_keyword_families` unless the run contract declared that exact word as
+an atomic scope anchor. Prefer multi-word mechanism/evidence phrases and
+sentence- or section-local entity-mechanism-outcome evidence.

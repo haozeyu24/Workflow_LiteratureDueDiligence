@@ -29,8 +29,21 @@ that downstream roles consume.
   PMC-derived noise classes or exclusion rules added to run guidance.
 - `missing_terms_added`
   Missing mechanism, assay, entity, or synonym families added to run guidance.
+- `terms_replaced_or_tightened`
+  Broad pass-1 terms that learned evidence replaced, narrowed, paired with
+  stronger anchors, or split into more focused query logic.
+- `terms_demoted_to_context`
+  Context, comparator, assay, population, intervention, outcome, or synthesis
+  terms that may support interpretation but must not drive learned queries alone.
+- `exclusion_enforcement_points`
+  Where repeated noise classes are enforced: query construction, abstract
+  review, second abstract review, full-text evidence tiers, or reporting.
 - `reviewer_rule_changes`
   Reviewer calibration rules added or changed.
+- `expected_burden_effect`
+  Expected direction of pass-2 collection and abstract-promotion burden. If the
+  burden may remain similar or increase, explain the in-scope evidence gap that
+  justifies it.
 - `revision_rationale`
   Brief evidence-grounded reason for the revision.
 - `revised_by`

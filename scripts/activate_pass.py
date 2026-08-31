@@ -19,6 +19,7 @@ INPUT_NAMES = [
     "run_config.md",
     "instruction.md",
     "topic.md",
+    "review_frame.md",
     "constraints.md",
     "notes.md",
 ]

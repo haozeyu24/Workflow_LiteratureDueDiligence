@@ -6,13 +6,12 @@ import shutil
 import sys
 from pathlib import Path
 
-from pass_archive import activate_pass, ensure_pass_layout
+from pass_archive import activate_pass, ensure_pass_layout, incomplete_sentinel_path, phase1_dir, phase1_transcript_path
 
 
 WORKFLOW_ROOT = Path(__file__).resolve().parents[1]
 RUNS_DIR = WORKFLOW_ROOT / "runs"
 TEMPLATES_DIR = WORKFLOW_ROOT / "templates"
-INCOMPLETE_SENTINEL = "WORKFLOW_NOT_COMPLETE"
 
 
 def write_if_missing(path: Path, content: str) -> None:
@@ -38,8 +37,9 @@ def main() -> int:
 
     run_dir = RUNS_DIR / run_id
     run_dir.mkdir(parents=True, exist_ok=True)
+    phase1_dir(run_dir).mkdir(parents=True, exist_ok=True)
     write_if_missing(
-        run_dir / INCOMPLETE_SENTINEL,
+        incomplete_sentinel_path(run_dir),
         "This run is not workflow-complete.\n"
         "Do not report the workflow as done until scripts/completion_gate.py passes.\n",
     )
@@ -48,10 +48,12 @@ def main() -> int:
     pass1_inputs_dir = pass1_dir / "inputs"
 
     copy_template("original_user_prompt_template.md", run_dir / "original_user_prompt.md")
+    copy_template("phase1_transcript_template.md", phase1_transcript_path(run_dir))
     write_if_missing(pass1_inputs_dir / "request.md", "# Request\n\n")
     copy_template("run_config_template.md", pass1_inputs_dir / "run_config.md")
     copy_template("instruction_template.md", pass1_inputs_dir / "instruction.md")
     copy_template("topic_template.md", pass1_inputs_dir / "topic.md")
+    copy_template("review_frame_template.md", pass1_inputs_dir / "review_frame.md")
     write_if_missing(
         pass1_inputs_dir / "constraints.md",
         "# Constraints\n\n"
