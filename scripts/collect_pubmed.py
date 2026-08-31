@@ -25,6 +25,7 @@ from pass_archive import (
 
 WORKFLOW_ROOT = Path(__file__).resolve().parents[1]
 RUNS_DIR = WORKFLOW_ROOT / "runs"
+BLOCKLIST_PATH = WORKFLOW_ROOT / "resources" / "journal_blocklist.csv"
 
 PUBMED_SEARCH_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
 PUBMED_SUMMARY_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi"
@@ -34,6 +35,74 @@ USER_AGENT = "agenticWorkflow_LiteratureScreeningAndFullTextReview/0.1 (generic 
 LEARNED_RERUN_COLLECTION_REVIEW_RATIO = 0.80
 PUBMED_RECORD_BATCH_SIZE = 100
 TRANSIENT_CURL_EXIT_CODES = {18, 22, 28, 35, 52, 55, 56, 92}
+
+
+def normalize_journal_name(value: str) -> str:
+    return " ".join(
+        re.sub(r"[^a-z0-9]+", " ", (value or "").lower()).split()
+    )
+
+
+def load_journal_blocklist(path: Path) -> list[dict[str, str]]:
+    if not path.exists():
+        return []
+    with path.open(encoding="utf-8", newline="") as handle:
+        rows = []
+        for row in csv.DictReader(handle):
+            match_type = (row.get("match_type") or "").strip()
+            match_value = (row.get("match_value") or "").strip()
+            rationale = (row.get("rationale") or "").strip()
+            if not match_type or not match_value:
+                continue
+            rows.append(
+                {
+                    "match_type": match_type,
+                    "match_value": match_value,
+                    "normalized_value": normalize_journal_name(match_value),
+                    "rationale": rationale,
+                }
+            )
+        return rows
+
+
+def blocked_journal_rule(
+    journal: str, blocklist: list[dict[str, str]]
+) -> dict[str, str] | None:
+    normalized_journal = normalize_journal_name(journal)
+    if not normalized_journal:
+        return None
+    for rule in blocklist:
+        match_type = rule.get("match_type", "")
+        normalized_value = rule.get("normalized_value", "")
+        if match_type == "journal_exact" and normalized_journal == normalized_value:
+            return rule
+        if match_type == "journal_prefix" and normalized_journal.startswith(
+            normalized_value
+        ):
+            return rule
+    return None
+
+
+def write_blocked_venue_records(
+    path: Path, rows: list[dict[str, str]]
+) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    fieldnames = [
+        "paper_id",
+        "pmid",
+        "doi",
+        "title",
+        "journal",
+        "year",
+        "source_query",
+        "match_type",
+        "match_value",
+        "block_rationale",
+    ]
+    with path.open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(rows)
 
 
 def fetch_url(url: str) -> bytes:
@@ -326,7 +395,9 @@ def learned_search_strategy_path(run_dir: Path, default_path: Path) -> Path:
     return candidate
 
 
-def reset_metadata_collection(records_dir: Path, manifest_path: Path) -> None:
+def reset_metadata_collection(
+    records_dir: Path, manifest_path: Path, blocked_path: Path
+) -> None:
     if records_dir.exists():
         for path in records_dir.glob("*.json"):
             path.unlink()
@@ -334,6 +405,8 @@ def reset_metadata_collection(records_dir: Path, manifest_path: Path) -> None:
         records_dir.mkdir(parents=True, exist_ok=True)
     if manifest_path.exists():
         manifest_path.unlink()
+    if blocked_path.exists():
+        blocked_path.unlink()
 
 
 def fetch_summaries(pmids: list[str]) -> list[dict]:
@@ -440,6 +513,8 @@ def main() -> int:
     query_diagnostics_path = artifacts_dir / "search_strategy" / "query_diagnostics.csv"
     manifest_path = artifacts_dir / "metadata_collection" / "paper_manifest.csv"
     records_dir = artifacts_dir / "metadata_collection" / "records"
+    blocked_venues_path = artifacts_dir / "metadata_collection" / "blocked_venue_records.csv"
+    journal_blocklist = load_journal_blocklist(BLOCKLIST_PATH)
 
     guidance_errors = require_guidance_revision_for_learned_rerun(run_dir)
     if guidance_errors:
@@ -466,7 +541,7 @@ def main() -> int:
     if snapshot_dir:
         print(f"Archived current pass before collection overwrite at {snapshot_dir}")
 
-    reset_metadata_collection(records_dir, manifest_path)
+    reset_metadata_collection(records_dir, manifest_path, blocked_venues_path)
 
     pmid_to_queries: dict[str, list[str]] = {}
     diagnostics_rows = read_existing_query_diagnostics(query_diagnostics_path)
@@ -509,6 +584,7 @@ def main() -> int:
         print(f"Warning: {warning}")
 
     rows: list[dict[str, str]] = []
+    blocked_rows: list[dict[str, str]] = []
     retrieval_batch = time.strftime("%Y%m%d")
     all_pmids = list(pmid_to_queries.keys())
     for batch in batched(all_pmids, PUBMED_RECORD_BATCH_SIZE):
@@ -534,6 +610,24 @@ def main() -> int:
             publication_types = details.get("publication_types", [])
             if not isinstance(publication_types, list):
                 publication_types = []
+            journal_name = str(summary.get("full_journal_name", "")).strip()
+            blocked_rule = blocked_journal_rule(journal_name, journal_blocklist)
+            if blocked_rule is not None:
+                blocked_rows.append(
+                    {
+                        "paper_id": paper_id,
+                        "pmid": pmid,
+                        "doi": doi,
+                        "title": title,
+                        "journal": journal_name,
+                        "year": year,
+                        "source_query": "; ".join(pmid_to_queries.get(pmid, [])),
+                        "match_type": blocked_rule.get("match_type", ""),
+                        "match_value": blocked_rule.get("match_value", ""),
+                        "block_rationale": blocked_rule.get("rationale", ""),
+                    }
+                )
+                continue
             record = {
                 "paper_id": paper_id,
                 "pmid": pmid,
@@ -542,7 +636,7 @@ def main() -> int:
                 "abstract": abstract,
                 "publication_types": publication_types,
                 "year": year,
-                "journal": str(summary.get("full_journal_name", "")).strip(),
+                "journal": journal_name,
                 "authors": authors,
                 "source_queries": pmid_to_queries.get(pmid, []),
                 "retrieval_batch": retrieval_batch,
@@ -566,7 +660,7 @@ def main() -> int:
                         if str(publication_type).strip()
                     ),
                     "year": year,
-                    "journal": str(summary.get("full_journal_name", "")).strip(),
+                    "journal": journal_name,
                     "authors": ";".join(str(author).strip() for author in authors if str(author).strip()),
                     "source_query": "; ".join(pmid_to_queries.get(pmid, [])),
                     "retrieval_batch": retrieval_batch,
@@ -596,12 +690,21 @@ def main() -> int:
         writer.writeheader()
         writer.writerows(rows)
 
+    if blocked_rows:
+        blocked_rows.sort(key=lambda row: (row["journal"].lower(), row["pmid"]))
+        write_blocked_venue_records(blocked_venues_path, blocked_rows)
+
     diagnostics_rows.extend(collection_diagnostics_rows)
     write_query_diagnostics(query_diagnostics_path, diagnostics_rows)
     print(
         f"Wrote {len(rows)} PubMed records to {manifest_path} "
         "(no PubMed collection caps allowed)"
     )
+    if blocked_rows:
+        print(
+            f"Blocked {len(blocked_rows)} papers by venue policy at "
+            f"{blocked_venues_path}"
+        )
     print(f"Wrote query hit-count diagnostics to {query_diagnostics_path}")
     print(f"Wrote per-paper metadata records to {records_dir}")
     return 0

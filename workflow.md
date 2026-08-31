@@ -515,11 +515,17 @@ Promotion rule:
 Required outputs:
 
 - `artifacts/metadata_collection/paper_manifest.csv`
+- `artifacts/metadata_collection/blocked_venue_records.csv` when any collected
+  paper matches the reusable venue blocklist
 - one stable paper row per PMID
 - title, abstract, PMID, DOI when present, year when present, and source-query provenance
 
 Promotion rule:
 
+- the reusable venue blocklist must be applied during collection, before papers
+  enter `paper_manifest.csv`
+- blocked venues must be recorded in `blocked_venue_records.csv`, not silently
+  dropped
 - the collected cohort is the abstract-review cohort
 - do not create a hidden shortlist between collection and abstract review
 
@@ -663,6 +669,8 @@ Expected canonical artifacts for each pass:
 
 - `artifacts/search_strategy/search_strategy.md`
 - `artifacts/metadata_collection/paper_manifest.csv`
+- `artifacts/metadata_collection/blocked_venue_records.csv` when venue policy
+  blocks any papers during collection
 - `artifacts/abstract_review/abstract_review.csv`
 - `artifacts/abstract_review/abstract_review2.csv`
 - `artifacts/fulltext_import/import_status.csv`

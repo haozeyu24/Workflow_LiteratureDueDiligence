@@ -25,7 +25,7 @@ The workflow is designed to be:
 
 The main variable is the run-specific input set.
 
-## Upstream Prompt Contract
+## Recommeded User/Agent Input Format
 
 This workflow can be used as a component inside a larger agentic system.
 The upstream user or parent agent should provide a scoped scientific prompt,
@@ -54,6 +54,40 @@ See `templates/upstream_prompt_protocol_template.md` for a reusable parent-agent
 prompt shape. If these fields cannot be inferred, the run setup agent should
 mark the request as underspecified and ask for clarification or run only a
 diagnostic scouting step.
+
+## Venue blocklist
+
+This workflow applies a reusable venue blacklist during PubMed collection,
+before papers enter `paper_manifest.csv` or any abstract-review stage.
+
+The canonical list lives at `resources/journal_blocklist.csv`.
+
+Blocked papers are written to the active-pass audit artifact
+`artifacts/metadata_collection/blocked_venue_records.csv`.
+
+The current blocklist reflects a deliberately aggressive high-trust preference
+and includes:
+
+- `Frontiers in*` journals
+- `Oncotarget`
+- `OncoTargets and Therapy`
+- `American Journal of Cancer Research`
+- `Oncology Letters`
+- `Translational Cancer Research`
+- `Discover Oncology`
+- `Journal of Cancer`
+- `Cureus`
+- `Cells`
+- `Cancers`
+- `Biomedicines`
+- `Diagnostics*`
+- `Journal of Clinical Medicine`
+- `Pathogens*`
+- `Microorganisms`
+- `Pharmaceuticals`
+- `Biology`
+- `Heliyon`
+- `Diseases`
 
 ## Reuse boundary
 
