@@ -31,31 +31,52 @@ REVIEW_TERMS = {
     "perspective",
 }
 
-PROTEIN_LEVEL_CLAIM_TERMS = {
-    "abundance",
-    "accumulation",
-    "acetylation",
-    "chaperone",
-    "degradation",
-    "folding",
-    "half-life",
-    "import",
-    "localization",
-    "modification",
-    "nuclear",
-    "phosphorylation",
-    "post-translational",
-    "proteasome",
-    "protein level",
-    "protein stability",
-    "retention",
-    "steady-state protein",
-    "subcellular",
-    "sumo",
-    "sumoylation",
-    "turnover",
-    "ubiquitin",
-    "ubiquitination",
+EVIDENCE_CLAIM_TERMS = {
+    "affect",
+    "affects",
+    "alter",
+    "altered",
+    "alters",
+    "association",
+    "associated",
+    "biomarker",
+    "change",
+    "changed",
+    "changes",
+    "correlate",
+    "correlated",
+    "decrease",
+    "decreased",
+    "demonstrate",
+    "demonstrated",
+    "dependency",
+    "dependent",
+    "effect",
+    "evidence",
+    "identified",
+    "increase",
+    "increased",
+    "influence",
+    "influences",
+    "linked",
+    "mediate",
+    "mediated",
+    "modulate",
+    "modulated",
+    "outcome",
+    "phenotype",
+    "predict",
+    "predicted",
+    "promote",
+    "promoted",
+    "relationship",
+    "response",
+    "result",
+    "role",
+    "show",
+    "shown",
+    "suggest",
+    "suggested",
 }
 
 STOPWORDS = {
@@ -334,8 +355,8 @@ def has_claim_shaped_positive_signal(
         primary_matches = matched_terms(window, profile.primary_terms)
         mechanism_matches = matched_terms(window, profile.mechanism_terms)
         outcome_matches = matched_terms(window, profile.outcome_terms)
-        protein_claim_matches = matched_terms(window, PROTEIN_LEVEL_CLAIM_TERMS)
-        if primary_matches and mechanism_matches and (outcome_matches or protein_claim_matches):
+        evidence_claim_matches = matched_terms(window, EVIDENCE_CLAIM_TERMS)
+        if primary_matches and mechanism_matches and (outcome_matches or evidence_claim_matches):
             return True
     return False
 
@@ -377,7 +398,7 @@ def classify_row(
     if has_direct_claim or has_claim_shaped_signal:
         return {
             "first_pass_decision": "include",
-            "first_pass_rationale": "Title/abstract contains a claim-shaped positive signal linking primary run entities to declared mechanism/evidence terms and protein-level outcome language; generic exclusion terms are treated as background rather than a veto.",
+            "first_pass_rationale": "Title/abstract contains a claim-shaped positive signal linking primary run entities to declared mechanism/evidence terms and declared outcome or generic evidence-claim language; generic exclusion terms are treated as background rather than a veto.",
             "first_pass_confidence": "high",
             "topic_match_type": "direct",
             "synthesis_role": "none",

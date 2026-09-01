@@ -17,10 +17,10 @@ from pathlib import Path
 
 from heuristic_abstract_triage_first_pass import (
     build_review_profile,
+    EVIDENCE_CLAIM_TERMS,
     has_claim_shaped_positive_signal,
     is_review_paper,
     matched_terms,
-    PROTEIN_LEVEL_CLAIM_TERMS,
 )
 from pass_archive import active_artifacts_dir, active_pass_number
 from workflow_db import prior_fulltext_drop_paper_ids, record_abstract_triage_decisions
@@ -82,7 +82,7 @@ def has_rescue_signal(row: dict[str, str], profile) -> tuple[bool, str, str, str
         return (
             True,
             "medium",
-            "Rescued for import: excluded abstract has a claim-shaped positive signal linking primary run terms to declared mechanism/evidence terms and protein-level outcome language.",
+            "Rescued for import: excluded abstract has a claim-shaped positive signal linking primary run terms to declared mechanism/evidence terms and declared outcome or generic evidence-claim language.",
             "none",
         )
 
@@ -121,20 +121,10 @@ def sentence_windows(title: str, abstract: str) -> list[str]:
 
 def final_signal_terms(candidates: set[str], *blocked_sets: set[str]) -> set[str]:
     blocked = set().union(*blocked_sets) if blocked_sets else set()
-    weak_singletons = {
-        "generic",
-        "pi3k",
-        "pi3k-alpha",
-        "pik3ca",
-        "signaling",
-        "sensitivity",
-        "progression-free",
-    }
     return {
         term
         for term in candidates
         if term not in blocked
-        and term not in weak_singletons
         and len(term.strip()) >= 4
     }
 
@@ -171,7 +161,7 @@ def has_final_pass_signal(row: dict[str, str], profile) -> tuple[bool, str, str,
             continue
         mechanism_matches = matched_terms(window, mechanism_terms)
         outcome_matches = matched_terms(window, outcome_terms)
-        protein_claim_matches = matched_terms(window, PROTEIN_LEVEL_CLAIM_TERMS)
+        evidence_claim_matches = matched_terms(window, EVIDENCE_CLAIM_TERMS)
         comparator_matches = matched_terms(window, comparator_terms)
         clinical_signal = bool(
             re.search(
@@ -179,7 +169,7 @@ def has_final_pass_signal(row: dict[str, str], profile) -> tuple[bool, str, str,
                 window,
             )
         )
-        if mechanism_matches and (outcome_matches or protein_claim_matches):
+        if mechanism_matches and (outcome_matches or evidence_claim_matches):
             direct_windows.append(window)
         elif clinical_signal and (mechanism_matches or outcome_matches):
             clinical_windows.append(window)
@@ -207,7 +197,7 @@ def has_final_pass_signal(row: dict[str, str], profile) -> tuple[bool, str, str,
         return (
             True,
             "high",
-            "Advanced in learned final pass: abstract ties primary run terms to declared mechanism/evidence and protein-level outcome language.",
+            "Advanced in learned final pass: abstract ties primary run terms to declared mechanism/evidence and declared outcome or generic evidence-claim language.",
             "none",
         )
 
