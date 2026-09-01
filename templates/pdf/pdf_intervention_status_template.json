@@ -1,0 +1,10 @@
+{
+  "status": "",
+  "pdf_policy": "continue_pmc_only",
+  "access_phase": "pmc_learning",
+  "pmc_ready_count": 0,
+  "pdf_queue_count": 0,
+  "recommended_action": "",
+  "allowed_actions": [],
+  "notes": ""
+}

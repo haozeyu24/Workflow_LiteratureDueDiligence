@@ -2,6 +2,13 @@
 
 This folder defines reusable role specifications for the workflow.
 
+The workflow uses four consolidated operational roles:
+
+- `runManager.md`
+- `pubmedSearchAgent.md`
+- `Abstract Triage Agent.md`
+- `fullTextEvidenceAgent.md`
+
 Each role specification should describe:
 
 - purpose
@@ -10,5 +17,4 @@ Each role specification should describe:
 - allowed decisions
 - failure modes
 
-These files are reusable workflow components.
-They must stay generic and must not embed topic-specific biology.
+These files are reusable workflow components. They must stay generic and must not embed topic-specific biology.

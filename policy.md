@@ -33,6 +33,9 @@ Do not create silent one-off exceptions during a run.
 11. Do not let partial PMC full-text samples drive learned query reruns when the run requires full PMC coverage.
 12. Concentrate recall-friendly behavior in scoped retrieval and early triage,
     then narrow progressively through explicit evidence gates.
+13. Do not use numeric caps as a substitute for final-pass scientific
+    calibration. The final pass should be controller-gated by prompt-fit
+    density in the retained full-text evidence, not by an arbitrary paper count.
 
 ## Decision-Grade Coverage Policy
 
@@ -63,6 +66,18 @@ Final keep decisions should normally require direct, indirect, or authorized
 comparator evidence. Background-only retention is exceptional and must be tied
 to an explicit `review_frame.md` role.
 
+Final-pass narrowing is an agentic controller process. After learned PMC
+feedback has been applied, the Run Manager must decide whether the final pass is
+scientifically calibrated enough to proceed. The controller should inspect the
+final-pass full-text review and evidence extraction for qualitative prompt fit:
+kept papers should be dominated by direct, strong indirect, or run-authorized
+comparator evidence for the user's question. If kept papers are mainly
+background, context-only, incidental, low-relevance, or missing decisive
+evidence, the controller must loop to query reconstruction, abstract-review rule
+tightening, or full-text review recalibration. The controller should choose the
+loop target from the recorded evidence and query-feedback signals, not from a
+fixed paper-count cap.
+
 Phase 2 synthesis may use a broader corpus than a human must-read list, but it
 must not flatten all retained papers into equal importance. Every paper used for
 review writing should have typed evidence, a retention role, and provenance so
@@ -74,7 +89,7 @@ highlighting the decision-grade core.
 The only authorized workflow-complete state is a passing completion gate:
 
 ```bash
-python3 scripts/completion_gate.py <run_id>
+python3 tools/run/completion_gate.py <run_id>
 ```
 
 This command must pass before any agent, role, or harness reports the whole run
@@ -83,8 +98,8 @@ as `done`, `complete`, `final`, or `finished`.
 Allowed incomplete status labels are:
 
 - `collection_complete`
-- `abstract_review_1_pending`
-- `abstract_review_2_pending`
+- `abstract_triage_first_pass_pending`
+- `abstract_triage_second_pass_pending`
 - `pmc_import_pending`
 - `fulltext_review_pending`
 - `pmc_feedback_pending`
@@ -106,6 +121,14 @@ configured PMC full-text review gate passes. The strict default is
 text, a full-text review decision, and a matching `evidence_extraction.csv` row.
 A partial PMC sample may be reported as a checkpoint, but must not be treated as
 enough evidence for pass activation or query reconstruction.
+
+Prior-pass full-text read state is controller memory. The workflow stores
+readable PMC metadata, normalized artifact location/hash, full-text decision,
+evidence tier, directness, retention role, and query-feedback signal in the
+run-level SQLite database. Later passes may reuse the normalized text, but a
+prior full-text drop is a negative learning signal: pass 2 must not reacquire or
+promote it unless the active query/abstract review records a stronger
+claim-shaped rescue rationale.
 
 Intermediate deliverables may be described as useful, preliminary, stage-level,
 or ready for the next role. They must not be described as final workflow output
@@ -237,11 +260,11 @@ Query expansion is scope-limited:
   if pass 1 was already very specific, pass 2 may not shrink dramatically, but
   the run must still show what was learned and how that learning affected query
   design or review criteria
-- a learned rerun that expands the collected set or fails to substantially
-  reduce the `advance_to_import` set requires explicit confirmation in the
-  workflow decision log; it is acceptable only when the larger set is explained
-  by newly learned in-scope vocabulary rather than by secondary context or
-  modifier terms becoming standalone query drivers
+- a learned final pass that still yields weak prompt fit must not proceed merely
+  because it has completed the required stages. If full-text keeps are driven by
+  secondary context, modifier terms, generic background, or incidental evidence,
+  the workflow controller must document whether query reconstruction or
+  abstract-review rule tightening is the appropriate next loop.
 
 Pass-1 learning must be recorded in a way that can change pass 2 behavior.
 At minimum, `run_guidance_revision_log.csv` for a learned rerun should document:
@@ -338,7 +361,7 @@ Do not respond to large cohorts by:
 - replacing per-paper review with global summary judgments
 - dropping older records only because they fall outside a preferred top-ranked slice
 
-## Abstract Reviewer 2 policy
+## Abstract Second pass policy
 
 `abstractReviewer2` must inspect:
 
@@ -354,7 +377,7 @@ Do not respond to large cohorts by:
 `abstractReviewer2` must not behave as a rubber stamp.
 Its role is adjudication, not formatting.
 It is also not a stricter or cost-saving filter.
-Reviewer 2 should not stop papers merely because too many papers passed reviewer 1; the decision must follow the title, abstract, reviewer-1 opinion, and the run objective.
+Second pass should not stop papers merely because too many papers passed first pass; the decision must follow the title, abstract, first-pass opinion, and the run objective.
 
 ## Full-text review policy
 
@@ -407,14 +430,14 @@ If many final keeps are based on `background`, expression-only, marker-only, or 
 The workflow must treat later-stage evidence as feedback to earlier stages.
 Loop decisions should be recorded in `workflow_loop_decision.csv`.
 
-The workflow must execute at least two big passes before final PDF access or completion.
+The workflow must execute exactly two big passes before final PDF access or completion.
 A big pass is complete when readable PMC full text has been reviewed and a row has been written to `pmc_mechanism_feedback.csv`.
 The first big pass is always a learning pass; it must feed PMC-derived retained mechanisms, noise families, missing keyword families, and abstract-rule changes back to `pubmedKeywordScout`.
-The second big pass must rerun query design, PubMed collection, both abstract reviews, PMC import, and full-text review using that learning.
+The second big pass is the final learned pass. It must rerun query design, PubMed collection, both abstract-triage passes, PMC import, and full-text review using pass 1 learning, with stringent query construction and review rules.
 Agents must not activate a later pass merely to correct a query or create an
 alternate retrieval before the current pass has completed its required
 abstract-review, import, full-text-review, and PMC-feedback stages.
-Automatic big loops are capped at `max_workflow_loops`, default and maximum `5`.
+Automatic big loops are fixed at two passes. The controller must not activate pass 3 automatically.
 
 Before the final access pass, loops should use PMC-readable full text to improve the search strategy.
 The point of early full-text reading is to learn:
@@ -433,7 +456,7 @@ PDF effort is reserved for the final calibrated cohort, unless the user explicit
 
 Trigger a query loop when:
 
-- fewer than `min_big_workflow_loops` big passes have completed
+- fewer than the required two big passes have completed
 - query diagnostics or reviewed papers reveal a repeated noise class that can be excluded safely
 - full-text evidence shows that an accepted query family mostly retrieves background or marker-only papers
 - PMC-readable full text reveals in-scope query terms that distinguish true mechanisms from incidental mentions
@@ -442,7 +465,7 @@ Trigger a query loop when:
 
 Trigger a reviewer-calibration loop when:
 
-- abstract reviewer 1 or reviewer 2 decisions conflict with the evidence-tier definitions
+- abstract first pass or second pass decisions conflict with the evidence-tier definitions
 - reviewer rationales are generic enough that another agent could not reproduce the decision
 - full-text review keeps many papers whose evidence tier is `background` or `exclude` without an explicit authorized review-frame role
 
@@ -455,14 +478,19 @@ Every loop must have:
 - a target stage
 - concrete changes to apply
 - a stop condition
-- a maximum number of expensive end-to-end attempts from `run_config.md` or a default of `5`
+- exactly two expensive end-to-end attempts: pass 1 learning and pass 2 final learned calibration
 
 The controller must not accept `final_pdf_pass`, build a PDF shortlist, or report completion after only one PMC-feedback pass.
-After five big passes, the controller must stop blocked or ask for human/parent-agent intervention rather than continuing automatically.
+After pass 2, the controller must stop blocked or ask for human/parent-agent intervention rather than activating pass 3 automatically.
 
 ## Acquisition policy
 
 Use PMC first.
+
+Later passes should reuse already normalized PMC full text when the same paper
+reappears. Reuse applies to the normalized source artifact, not to the active
+pass review decision: the final learned pass must still apply its current
+run guidance, evidence tiers, and prompt-fit-density gate.
 
 If PMC is missing or unusable:
 

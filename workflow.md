@@ -14,11 +14,13 @@ Part 1:
 2. optimize the query set with hit counts, sampled precision, noise classes, and missing-concept diagnostics
 3. collect title, abstract, and metadata for the accepted query set
 4. review abstract-level relevance
-5. run a second abstract review over the same paper plus the first review opinion
+5. run a rescue abstract-triage pass over first-pass excludes while carrying first-pass includes forward without relitigating them
 6. acquire and normalize PMC full text first
-7. use PMC full text to summarize mechanisms, noise, and query-feedback signals
-8. require the configured PMC full-text review coverage gate to pass, then revise run guidance from PMC full-text learning, reconstruct the query, and rerun collection, abstract review, PMC import, and full-text review at least once using PMC-derived learning
+7. use PMC full text to summarize mechanisms, noise, scientific notes, and query-feedback signals
+8. require the configured PMC full-text review coverage gate to pass, then revise run guidance from PMC full-text learning, reconstruct the query, and rerun collection, abstract triage, PMC import, and full-text review at least once using PMC-derived learning
 9. decide whether additional learned loops are needed before spending effort on PDFs
+   by checking final-pass prompt-fit density in the retained full-text evidence,
+   not by imposing a numeric paper-count cap
 10. reserve manual PDF intervention for the final calibrated access pass unless the run explicitly requires full-text completion from the beginning
 11. extract final full-text evidence and review normalized full text
 12. produce a final reading list with metadata and file pointers
@@ -35,6 +37,12 @@ Part 2:
 Part 2 is intentionally left as a placeholder in this file for now.
 Its detailed structure should be added later, after the Phase-1/Phase-2 boundary
 and PDF decision checkpoint are working well.
+
+## Workflow Immutability
+
+This workflow is immutable during a run. Agents must not modify reusable workflow files to solve a run-specific scientific request. The reusable files are `workflow.md`, `policy.md`, `roles/`, `schemas/`, `templates/`, and `tools/`.
+
+Run-specific adaptation belongs only under `runs/<run_id>/`: the immutable `original_user_prompt.md`, pass-scoped `inputs/run_brief.md`, pass-scoped `inputs/run_config.md`, artifacts, reports, snapshots, and workflow-control files. Learned reruns create revised `run_brief.md` files in later pass folders rather than editing completed pass inputs.
 
 ## Fixed workflow vs run-specific inputs
 
@@ -93,8 +101,13 @@ Operational interpretation:
 
 - prompt fidelity defines what may drive retrieval
 - recall-friendly behavior is concentrated in query design and abstract triage
-- abstract review preserves plausible decision-relevant papers, not anything
+- abstract triage preserves plausible decision-relevant papers, not anything
   that could ever be related
+- the first PMC-learning pass may be slightly more permissive than later passes
+  so full-text review can read enough papers to learn useful positive and
+  negative scientific signals
+- the second abstract-triage pass is a rescue review for first-pass excludes,
+  not an independent duplicate reviewer confirming the same decision function
 - full-text review narrows to papers with direct, indirect, or authorized
   comparator evidence, plus only explicitly justified review-frame background
 - Phase 2 may synthesize more papers than a human must personally read, but
@@ -126,28 +139,32 @@ The later review-writing phase remains intentionally deferred.
 
 A run is Part-1-complete only when all of these conditions are true:
 
-- `python3 scripts/completion_gate.py <run_id>` exits with code `0`
-- `python3 scripts/validate_run.py <run_id>` passes
+- `python3 tools/run/completion_gate.py <run_id>` exits with code `0`
+- `python3 tools/run/validate_run.py <run_id>` passes
 - the active pass `artifacts/workflow_control/workflow_state.json` has `status = complete`
 - `Phase1_PubmedCollection/WORKFLOW_NOT_COMPLETE` does not exist
 - at least `min_big_workflow_loops` PMC-feedback passes exist
 - every PMC-feedback pass used for a learned rerun satisfies the configured PMC full-text review coverage gate
 - the latest PMC feedback marks `pdf_deferral_decision = final_pdf_pass`
-- no controller loop action remains triggered
+- no Run Manager loop action remains triggered
+- the learned final pass has passed controller prompt-fit-density assessment:
+  retained full-text papers are dominated by direct, strong indirect, or
+  run-authorized comparator evidence for the user prompt rather than
+  background, context-only, incidental, low-relevance, or missing-evidence keeps
 - earlier-pass PMC XML and PMC-normalized JSON payloads have been deleted
 
 Agents and harnesses must not say `done`, `complete`, `final`, or `finished`
 for the whole two-part workflow unless both parts are later defined and pass
 their own gates. In the current structure they may only say that Part 1 is
 complete, or that a specific stage is complete, such as `PubMed collection
-complete`, `abstract review 1 complete`, or `PMC import complete`.
+complete`, `abstract triage first pass complete`, or `PMC import complete`.
 
 Every user-facing final response from an agent or harness must report:
 
 - workflow status: `running`, `loop_required`, `awaiting_pdf_shortlist`, `blocked`, or `complete`
 - current stage or next action
 - validation result or reason validation was not yet eligible to pass
-- controller decision
+- Run Manager decision
 - remaining required stages when status is not `complete`
 
 Part 1 should also preserve a user-visible transcript:
@@ -156,6 +173,12 @@ Part 1 should also preserve a user-visible transcript:
 - scope: all user and agent words shown during Part 1 across all passes
 - purpose: audit trail and troubleshooting when a decision path feels wrong
 - rule: append chronological entries; do not replace the transcript with a polished retrospective summary
+
+Full-text review must create pass-to-pass learning, not merely binary
+retention. `evidence_extraction.csv` should include per-paper scientific notes
+for kept and dropped papers. `pmc_mechanism_feedback.csv` should summarize
+topic learning, query-construction learning, abstract-review calibration, and
+rescue-review guidance for the Run Manager before the next PubMed pass.
 
 When Part 1 completes, the next required stage must be reported as the user
 decision checkpoint:
@@ -171,7 +194,7 @@ report does not complete this workflow unless the completion gate passes.
 
 The workflow controller must fail closed on incomplete stage handoffs. If an
 upstream required artifact exists but has blank required decision fields, row
-count mismatches, or incomplete paper-id coverage, the controller must emit an
+count mismatches, or incomplete paper-id coverage, the Run Manager must emit an
 active loop decision for that exact pending stage before considering higher-level
 scientific loop logic or reporting.
 
@@ -188,209 +211,119 @@ the run tree are process violations unless explicitly user-requested.
 
 ## Roles
 
-### 1. Run Setup Agent
+The workflow uses four consolidated operational roles. The roles are fewer than
+the artifact stages on purpose: one role may own multiple adjacent stages while
+the stage artifacts remain separate for auditability and clean workflow contracts.
 
-Transforms a user request into run-specific workflow inputs.
+### 1. Run Manager
 
-Input:
+Owns setup, orchestration, learned guidance revision, loop decisions, completion
+state, and user-facing reporting.
 
-- free-form user request
+Outputs include:
 
-Output:
+- pass-scoped run inputs: `run_config.md`, `run_brief.md`
+- `artifacts/workflow_control/workflow_loop_decision.csv`
+- `artifacts/workflow_control/workflow_state.json`
+- `artifacts/workflow_control/run_guidance_revision_log.csv` when guidance changes
+- `reports/progress_report.md`
+- `reports/final_reading_list.csv`
+- `reports/intervention_prompt.md` when PDF fallback requires a decision
+- `Phase1_PubmedCollection/passes/phase1_transcript.md`
 
-- `run_config.md`
-- `instruction.md`
-- `topic.md`
-- optional `review_frame.md`
-- optional run constraints
-- a query-scope contract, either inside `instruction.md`, `topic.md`, or `constraints.md`
+Working rules:
 
-The `runSetupAgent` role is required because the workflow is reusable but the scientific question changes from run to run.
+- preserve `original_user_prompt.md` unchanged
+- convert user requests into generic workflow inputs without changing reusable workflow definitions
+- distinguish primary retrieval scope from secondary synthesis context
+- revise later-pass guidance only after PMC full-text learning satisfies the configured coverage gate
+- write learned guidance into the next pass, not into completed pass inputs
+- decide whether to continue, pause, loop, build a PDF shortlist, or stop blocked
+- in the learned final pass, decide whether poor prompt-fit density requires
+  another loop to query reconstruction, abstract-review rule tightening, or
+  full-text review recalibration
+- never mark Part 1 complete until validation, controller, sentinel, and completion-gate rules pass
+- after Part 1 completion, stop for the explicit review-writing checkpoint
 
-The `runSetupAgent` must convert a user request into generic workflow inputs without changing the workflow definition itself.
+### 2. PubMed Search Agent
 
-The setup output must distinguish primary retrieval scope from secondary
-synthesis context. Primary retrieval scope includes the named entities and the
-mechanism classes the user actually asked to learn. Secondary context may include
-adjacent pathways, phenotypes, disease settings, comparators, or downstream
-interpretive biology, but secondary context must not become first-pass PubMed
-query scope unless the user explicitly requested it.
+Owns PubMed query design, query-quality diagnostics, query refinement, exact
+collection, deduplication, provenance, and venue-blocklist auditing.
 
-When the downstream deliverable is review-like, the setup output should also
-separate review-article framing from retrieval scope by writing
-`review_frame.md`. That file should capture introduction obligations,
-foundational field context, field-progress framing, and perspective questions.
-It may justify targeted recall safeguards and a minority of retained background
-papers, but it must not silently broaden first-pass PubMed retrieval.
+Outputs include:
 
-### 2. PubMed Keyword Scout
+- `artifacts/search_strategy/search_strategy.md`
+- `artifacts/search_strategy/query_diagnostics.csv`
+- `artifacts/search_strategy/query_refinement_report.md` when revised
+- `artifacts/metadata_collection/paper_manifest.csv`
+- `artifacts/metadata_collection/blocked_venue_records.csv` when applicable
+- raw metadata records when available
 
-Builds the PubMed search strategy from the current instruction and topic, then refines it after inspecting retrieval noise or coverage gaps when needed. In learned reruns, the scout must use the revised guidance plus PMC mechanism feedback, not the original guidance alone.
+Working rules:
 
-Output:
+- pass-1 query strategy should be recall-friendly enough to create a useful
+  PMC-learning set, while still requiring run-scope anchors
+- learned reruns should use full-text scientific notes and PMC feedback to
+  retain positive claim-shaped term combinations, rescue missed in-scope
+  concepts, and demote terms that produced repeated weak-overlap papers
 
-- search plan
-- PubMed query strings
-- search rationale
-- query diagnostics
-- query refinement report when revised
-
-Working rule:
+Working rules:
 
 - derive and obey the run's query-scope contract before writing query strings
-- first-pass query generation should be conservative and limited to the declared entities plus declared mechanism classes
-- first-pass query generation should require claim-shaped retrieval logic:
-  declared entity or system plus declared mechanism/evidence class plus required
-  outcome, relationship, perturbation, response, or other evidence-claim term
-- first-pass query generation should require claim-shaped retrieval logic:
-  declared entity or system plus declared mechanism/evidence class plus required
-  outcome, relationship, perturbation, response, or other evidence-claim term
-- add synonyms, assays, and rescue terms only within declared mechanism classes
-- do not expand into adjacent biology merely because it is plausibly related or compensatory
-- refine based on sampled precision and coverage, not hit count alone
-- retrieve broadly enough to capture direct and plausible decision-relevant papers inside the declared query scope
-- do not narrow the collected cohort into a smaller pre-review working set
-- if a paper is plausibly decision-relevant inside the declared scope at the scouting stage, it belongs in the collected cohort for abstract review
-- PubMed collection is recall-first and must have no record cap
-- agents and harnesses must not introduce per-query, total, date-sorted, top-N, or equivalent PubMed collection caps
-- use query optimization, not hidden retrieval caps, to produce a reasonably accurate candidate cohort
-- use batching for model context management, not for shrinking the search or abstract-review cohort
+- keep first-pass queries recall-friendly but anchored to declared entities plus mechanism/evidence classes
+- use sampling to detect precision, drift, missing concepts, and tail risk
+- in learned reruns, use revised guidance plus PMC mechanism feedback
+- collect every record from each accepted query without hidden caps
+- do not filter scientific relevance between retrieval and abstract triage, except for cross-pass exclusion of papers already rejected and recorded in the run-level SQLite state
 
-### 3. Run Guidance Reviser
+### 3. Abstract Triage Agent
 
-Revises `instruction.md`, `topic.md`, optional `review_frame.md`, optional `constraints.md`, and reviewer-facing rules after PMC full-text learning and before a learned PubMed rerun.
+Owns both abstract-triage passes: first-pass relevance triage and targeted
+rescue review. The role is consolidated, but `first_pass.csv`
+and `second_pass.csv` remain separate artifacts.
 
-Input:
+Outputs include:
 
-- current `instruction.md`
-- current `topic.md`
-- optional `review_frame.md`
-- optional `constraints.md`
-- `pmc_mechanism_feedback.csv`
-- `query_diagnostics.csv`
-- review/import outcomes
-- pass snapshots
+- `artifacts/abstract_triage/first_pass.csv`
+- `artifacts/abstract_triage/second_pass.csv`
 
-Output:
+Working rules:
 
-- revised `instruction.md`
-- revised `topic.md`
-- optional revised `review_frame.md`
-- optional revised `constraints.md`
-- `artifacts/workflow_control/run_guidance_revision_log.csv`
+- every collected paper must receive first-pass and second-pass abstract decisions
+- first pass assigns `include` or `exclude` from title, abstract, publication type, and run guidance
+- second pass carries first-pass includes forward and rereads first-pass excludes for rescue signals
+- second pass may confirm or overturn, then writes `promotion_decision` as `advance_to_import` or `stop`
+- the rescue-review output is recorded into the run-level SQLite database so rejected papers do not re-enter later passes by default
+- review-frame retention can preserve a minority of field-synthesis, foundational, or perspective papers
+- PDF availability, import burden, and desired cohort size are not abstract-stage exclusion reasons
 
-Working rule:
+### 4. Full-Text Evidence Agent
 
-- `original_user_prompt.md` is immutable
-- `passes/pass_001/inputs/instruction.md`, `passes/pass_001/inputs/topic.md`, and optional `passes/pass_001/inputs/review_frame.md` are immutable base/pass-1 guidance after run setup
-- learned guidance for later passes must be written under `passes/pass_###/inputs/`
-- every guidance revision must cite the PMC feedback loop that triggered it
-- learned `search_strategy.md` must be generated after this revision from the revised guidance plus PMC feedback
-- PMC-derived changes may add in-scope synonyms, assays, entities, exclusions, or reviewer rules by default
-- PMC-derived adjacent mechanism classes must remain secondary context unless the revision explicitly updates the query-scope contract and explains why the original user request authorizes the broader primary scope
+Owns PMC/PDF acquisition, parsing, normalization, access accounting, evidence
+extraction, PMC mechanism feedback, PDF shortlisting, and full-text keep/drop
+review.
 
-### 4. PubMed Collector
+Outputs include:
 
-Executes the search and downloads title, abstract, and metadata.
+- `artifacts/fulltext_import/import_status.csv`
+- `artifacts/fulltext_import/manual_pdf_queue.csv`
+- `artifacts/fulltext_import/pdf_download_shortlist.csv`
+- `artifacts/fulltext_import/manual_pdf_import_report.csv` when applicable
+- `artifacts/fulltext_import/pdf_parse_report.csv` when applicable
+- PMC XML and normalized JSON when usable
+- `artifacts/fulltext_review/evidence_extraction.csv`
+- `artifacts/fulltext_review/pmc_mechanism_feedback.csv`
+- `artifacts/fulltext_review/fulltext_review.csv`
 
-Output:
+Working rules:
 
-- paper manifest
-- source metadata records
-
-### 5. Abstract Reviewer
-
-Reads title and abstract to judge topic relevance.
-
-Output:
-
-- abstract review table
-- review-paper retention should preserve directly overlapping or bigger-field
-  review papers when they can help Phase 2 position the new review against
-  prior reviews
-
-### 6. Abstract Reviewer 2
-
-Reads the original abstract again together with the first abstract reviewer's decision and rationale, then makes a second-pass decision.
-
-Output:
-
-- second-pass abstract review table
-- review-paper preservation check for Phase-2 introduction positioning
-
-### 7. Full-Text Importer
-
-Acquires full text, preferring PMC.
-Before the final calibrated access pass, PDF fallback is recorded as deferred access work rather than acted on.
-
-Output:
-
-- PMC acquisition report
-- manual PDF queue
-- PDF download shortlist only in the final PMC-satisfied loop
-- PDF import report
-- PDF intervention status when user or parent-agent policy requires a decision
-
-Completion rule:
-
-- manual PDF ingest is not considered complete just because files were staged or parsed
-- any newly readable normalized full text must be handed immediately to full-text review in the same agent-driven pass when possible
-- the only acceptable post-ingest unresolved state is access-related, not "normalized but not yet judged"
-- early PMC-learning loops must not ask the user to download PDFs unless `run_config.md` explicitly requires complete full-text access from the beginning
-- a non-empty manual PDF queue after PMC-learning must remain deferred while controller feedback says another query loop is needed
-- generate `pdf_download_shortlist.csv` only when the controller is satisfied with PMC learning and the latest PMC feedback says `final_pdf_pass`
-
-### 8. Full-Text Reviewer
-
-Reads normalized full text, extracts structured evidence, summarizes PMC mechanism/query feedback, and makes the final keep/drop judgment when the run reaches the final review pass.
-
-Output:
-
-- evidence extraction table
-- PMC mechanism feedback table
-- full-text review table
-- final included set
-
-Constraint:
-
-- only papers with readable normalized full text are eligible for full-text review
-- papers advanced from abstract review but lacking readable full text remain unresolved for access, not scientifically excluded
-- when new readable full text appears after PMC import or manual PDF ingest, the workflow should continue directly into keep/drop review before reporting the ingest cycle as complete
-- before the final access pass, the most important full-text output is query-learning feedback, not resolution of the PDF queue
-- when PMC-learning feedback says `defer_pdfs`, use it to refine the next query/review loop rather than scoring PDFs for download
-- when PMC-learning feedback says `final_pdf_pass`, score the remaining PDF queue into request/defer/do-not-request classes
-- if user-provided PDFs are later normalized for review writing, apply the same keep/drop retention logic before counting them as part of the writing corpus
-- the PDF shortlist should be recall-friendly because downloaded PDFs still face parsing, normalization, and full-text retention review later; papers that survived `abstractReviewer2` should usually remain `request_pdf` unless they are explicit learned-noise cases
-
-### 10. Workflow Controller
-
-Reads structured evidence and stage metrics, then decides whether the workflow should continue, pause, or loop back to an earlier stage.
-
-Output:
-
-- workflow loop decision table
-- concrete revision instructions when a loop is triggered
-
-Working rule:
-
-- loops must be triggered by evidence-grounded failure modes, not by a generic desire for fewer papers
-- the first PMC-learning pass must trigger a learned rerun of the whole query-to-full-text path
-- final PDF access is blocked until at least `min_big_workflow_loops` PMC-feedback passes exist
-- query loops should reduce predictable noise before additional PMC/PDF work when recall can be preserved
-- pre-final loops should mine PMC full text for mechanism terms and noise patterns before any manual PDF effort
-- after Part 1 completion, stop and request an explicit user decision about PMC-only writing versus waiting for downloaded PDFs
-- after a `wait_for_downloaded_pdfs` decision, do not advance toward review writing until the user later provides a clear ready-to-write signal
-
-### 11. Reporter
-
-Produces user-facing summaries and status counts.
-
-Output:
-
-- progress report
-- final reading list
-- explicit post-Part-1 user checkpoint asking whether to write from PMC only or wait for downloaded PDFs
-- after user-provided PDFs are parsed later, a retained-PDF count before any Phase-2 writing begins
+- use PMC first and record unusable PMC separately from missing PMC access
+- queue manual PDFs when needed, but keep them deferred during PMC-learning unless policy requires full-text completion
+- review every readable normalized full text before treating import as complete
+- never treat unavailable full text as a scientific `drop`
+- require sentence-level or local section-level evidence for final `keep` decisions
+- before final access, use PMC-readable papers to learn mechanisms, noise families, missing terms, and query changes
+- build `pdf_download_shortlist.csv` only when PMC learning reaches `final_pdf_pass`
 
 ## Proposed Part Boundary
 
@@ -417,7 +350,7 @@ Only after the user later says they are ready to write should the workflow:
 
 ## Stage handoffs
 
-### User -> Run Setup Agent
+### User -> Run Manager
 
 Required input:
 
@@ -427,10 +360,7 @@ Required outputs:
 
 - `runs/<run_id>/original_user_prompt.md`
 - `runs/<run_id>/Phase1_PubmedCollection/passes/pass_001/inputs/run_config.md`
-- `runs/<run_id>/Phase1_PubmedCollection/passes/pass_001/inputs/instruction.md`
-- `runs/<run_id>/Phase1_PubmedCollection/passes/pass_001/inputs/topic.md`
-- optional `runs/<run_id>/Phase1_PubmedCollection/passes/pass_001/inputs/review_frame.md`
-- optional `runs/<run_id>/Phase1_PubmedCollection/passes/pass_001/inputs/constraints.md`
+- `runs/<run_id>/Phase1_PubmedCollection/passes/pass_001/inputs/run_brief.md`
 - `runs/<run_id>/Phase1_PubmedCollection/passes/phase1_transcript.md`
 
 Promotion rule:
@@ -439,30 +369,24 @@ Promotion rule:
 - the opening user request and the agent's visible setup guidance should be appended to `Phase1_PubmedCollection/passes/phase1_transcript.md`
 - downstream stages must consume run files as inputs rather than rewriting reusable workflow files
 
-### Run Setup Agent -> PubMed Keyword Scout
+### Run Manager -> PubMed Search Agent
 
 Required inputs:
 
 - current pass `inputs/run_config.md`
-- current pass `inputs/instruction.md`
-- current pass `inputs/topic.md`
-- optional current pass `inputs/review_frame.md`
-- optional current pass `inputs/constraints.md`
+- current pass `inputs/run_brief.md`
 
 Required outputs:
 
 - a scoped search objective and query-design context captured in `search_strategy.md`
 - a query-scope contract or equivalent section in `search_strategy.md` that states primary entities, declared mechanism classes, comparator scope, secondary context, and deferred adjacent biology
-- if `review_frame.md` exists, only its explicit foundational recall terms or authorized comparator context may appear in first-pass query design
+- if `run_brief.md` review/synthesis framing section exists, only its explicit foundational recall terms or authorized comparator context may appear in first-pass query design
 
-### Full-Text Reviewer / Workflow Controller -> Run Guidance Reviser
+### Full-Text Evidence Agent + Run Manager -> Learned Guidance Revision
 
 Required inputs:
 
-- current pass `inputs/instruction.md`
-- current pass `inputs/topic.md`
-- optional current pass `inputs/review_frame.md`
-- optional current pass `inputs/constraints.md`
+- current pass `inputs/run_brief.md`
 - `artifacts/fulltext_review/pmc_mechanism_feedback.csv`
 - `artifacts/search_strategy/query_diagnostics.csv`
 - review/import artifacts from the completed pass
@@ -470,27 +394,24 @@ Required inputs:
 
 Required outputs:
 
-- revised `passes/pass_###/inputs/instruction.md`
-- revised `passes/pass_###/inputs/topic.md`
-- optional revised `passes/pass_###/inputs/review_frame.md`
-- optional revised `passes/pass_###/inputs/constraints.md`
+- revised `passes/pass_###/inputs/run_brief.md`
 - `artifacts/workflow_control/run_guidance_revision_log.csv`
 
 Promotion rule:
 
 - this handoff is required before every learned rerun triggered by `pdf_deferral_decision = defer_pdfs`
 - `original_user_prompt.md` must remain unchanged
-- the revision log must name the feedback loop ID and the concrete retained mechanisms, missing terms, noise exclusions, review-frame changes, and reviewer rules added to guidance
-- the next learned `search_strategy.md` must be generated from the revised `instruction.md`, revised `topic.md`, optional `review_frame.md`, optional constraints, and PMC feedback
+- the revision log must name the feedback loop ID and the concrete retained mechanisms, missing terms, noise exclusions, review/synthesis framing changes, and reviewer rules added to guidance
+- the next learned `search_strategy.md` must be generated from the revised `run_brief.md` and PMC feedback
 
-### PubMed Keyword Scout -> PubMed Collector
+### PubMed Search Agent: Query Design -> Collection
 
 Required inputs:
 
-- current pass `inputs/instruction.md`
-- current pass `inputs/topic.md`
-- optional current pass `inputs/review_frame.md`
-- optional current pass `inputs/constraints.md`
+- current pass `inputs/run_brief.md`
+- current pass `inputs/run_brief.md`
+- current pass `inputs/run_brief.md` review/synthesis framing section
+- current pass `inputs/run_brief.md` constraints section
 - optional retrieval feedback from a previous pass
 - for learned reruns, `run_guidance_revision_log.csv` row covering the latest `defer_pdfs` PMC feedback loop
 
@@ -510,7 +431,7 @@ Promotion rule:
 - clear topics should usually stop query optimization after a small number of productive rounds
 - vague topics may need exploratory rounds, but optimization should stop when diagnostics plateau or further tightening would threaten recall
 
-### PubMed Collector -> Abstract Reviewer
+### PubMed Search Agent -> Abstract Triage Agent
 
 Required outputs:
 
@@ -526,26 +447,26 @@ Promotion rule:
   enter `paper_manifest.csv`
 - blocked venues must be recorded in `blocked_venue_records.csv`, not silently
   dropped
-- the collected cohort is the abstract-review cohort
-- do not create a hidden shortlist between collection and abstract review
+- the collected cohort is the abstract-triage cohort
+- do not create a hidden shortlist between collection and abstract triage
 
-### Abstract Reviewer -> Abstract Reviewer 2
+### Abstract Triage Agent: First Pass -> Second Pass
 
 Required outputs:
 
-- `artifacts/abstract_review/abstract_review.csv`
-- per-paper `review_decision`
+- `artifacts/abstract_triage/first_pass.csv`
+- per-paper `first_pass_decision`
 - per-paper rationale and confidence
 
 Promotion rule:
 
 - every collected paper must receive an abstract-stage decision before second-pass review begins
 
-### Abstract Reviewer 2 -> Full-Text Importer
+### Abstract Triage Agent -> Full-Text Evidence Agent
 
 Required outputs:
 
-- `artifacts/abstract_review/abstract_review2.csv`
+- `artifacts/abstract_triage/second_pass.csv`
 - adjudicated second-pass decision
 - per-paper `promotion_decision` resolved to either `advance_to_import` or `stop`
 - original title and abstract retained in the second-pass table or equivalent
@@ -554,10 +475,10 @@ Required outputs:
 Promotion rule:
 
 - only `advance_to_import` papers move to the import stage
-- `abstractReviewer2` is an adjudicator, not a stricter cost-control filter
-- reviewer 2 must use the title, abstract, first decision, and first rationale together
+- `Abstract Triage Agent` is an adjudicator, not a stricter cost-control filter
+- the second internal abstract-triage pass must use the title, abstract, first decision, and first rationale together
 
-### Full-Text Importer -> Full-Text Reviewer
+### Full-Text Evidence Agent: Import -> Review
 
 Required outputs:
 
@@ -577,6 +498,12 @@ Additional required outputs when applicable:
 
 Promotion rule:
 
+- when a later pass advances a paper whose PMC-normalized full text was already
+  read in an earlier pass, reuse the prior normalized full-text artifact rather
+  than downloading and normalizing PMC XML again
+- reused normalized full text must still be reviewed under the active pass's
+  current run guidance and final-pass evidence rules; prior review decisions
+  are learning context, not automatic final-pass decisions
 - only papers with readable normalized full text advance to full-text review
 - papers lacking readable full text remain unresolved for access, not scientifically excluded
 - after manual PDF ingest, newly normalized full text should be reviewed before the ingest cycle is treated as complete
@@ -585,7 +512,7 @@ Promotion rule:
 - in the final PMC-satisfied loop, create the PDF download shortlist regardless of whether the eventual downloader is a human or another agent
 - the final-loop shortlist is required to explain which queued PDFs should be requested now, deferred, or not requested
 
-### Full-Text Reviewer -> Reporter
+### Full-Text Evidence Agent -> Run Manager
 
 Required outputs:
 
@@ -607,15 +534,15 @@ Promotion rule:
   ties the mechanism/evidence claim to the target entity/system and required
   outcome/relationship. Whole-document co-occurrence may justify query feedback
   or background context, but not direct retention.
-- before the final calibrated access pass, `pmc_mechanism_feedback.csv` must be reviewed by the Workflow Controller before any PDF intervention is requested
+- before the final calibrated access pass, `pmc_mechanism_feedback.csv` must be reviewed by the Run Manager before any PDF intervention is requested
 
-### Workflow Controller -> Earlier Stage Or Reporter
+### Run Manager -> Earlier Stage Or Reporting
 
 Required inputs:
 
 - `query_diagnostics.csv`
-- `abstract_review.csv`
-- `abstract_review2.csv`
+- `first_pass.csv`
+- `second_pass.csv`
 - `import_status.csv`
 - `evidence_extraction.csv`
 - `pmc_mechanism_feedback.csv`
@@ -628,14 +555,14 @@ Required outputs:
 
 Promotion rule:
 
-- if no loop trigger fires, continue to Reporter
-- if fewer than `min_big_workflow_loops` big passes have completed, loop to `pubmedKeywordScout` even when PMC feedback says `final_pdf_pass`
-- if a query loop fires, send concrete query-revision instructions to `pubmedKeywordScout`
+- if no loop trigger fires, continue to Run Manager
+- if fewer than `min_big_workflow_loops` big passes have completed, loop to `pubmedSearchAgent` even when PMC feedback says `final_pdf_pass`
+- if a query loop fires, send concrete query-revision instructions to `pubmedSearchAgent`
 - if a reviewer-calibration loop fires, rerun the affected review stage with revised evidence definitions
 - if a human PDF checkpoint fires, pause according to `run_config.md`, but only after PMC-learning loops are complete unless full-text completion was explicitly required from the start
 - every loop must record a stop condition before it starts
 
-### Reporter -> User
+### Run Manager -> User
 
 Required outputs:
 
@@ -657,7 +584,7 @@ All stage outputs are pass-scoped. For pass `N`, the durable locations are:
 
 1. `passes/pass_NNN/artifacts/search_strategy/`
 2. `passes/pass_NNN/artifacts/metadata_collection/`
-3. `passes/pass_NNN/artifacts/abstract_review/`
+3. `passes/pass_NNN/artifacts/abstract_triage/`
 4. `passes/pass_NNN/artifacts/fulltext_import/`
 5. `passes/pass_NNN/artifacts/fulltext_review/`
 6. `passes/pass_NNN/artifacts/workflow_control/`
@@ -671,8 +598,8 @@ Expected canonical artifacts for each pass:
 - `artifacts/metadata_collection/paper_manifest.csv`
 - `artifacts/metadata_collection/blocked_venue_records.csv` when venue policy
   blocks any papers during collection
-- `artifacts/abstract_review/abstract_review.csv`
-- `artifacts/abstract_review/abstract_review2.csv`
+- `artifacts/abstract_triage/first_pass.csv`
+- `artifacts/abstract_triage/second_pass.csv`
 - `artifacts/fulltext_import/import_status.csv`
 - `artifacts/fulltext_import/manual_pdf_queue.csv`
 - `artifacts/fulltext_import/pdf_parse_report.csv`
@@ -689,6 +616,18 @@ Optional but important control artifacts:
 - `artifacts/fulltext_import/manual_pdf_import_report.csv`
 - `reports/intervention_prompt.md`
 
+Run-level state:
+
+- `Phase1_PubmedCollection/workflow_state.sqlite`
+
+The SQLite database is a run-level control store, not a pass-specific
+scientific artifact. It records stable paper identity, per-pass abstract-triage
+decisions, and the latest cross-pass status for each paper. Learned PubMed
+collections must consult this database before writing the active
+`paper_manifest.csv` so papers rejected in earlier passes do not re-enter later
+passes by default. Reopening a rejected paper requires an explicit future
+workflow rule or user/Run Manager intervention; silent re-entry is not allowed.
+
 ## Run layout
 
 Each run should have its own folder:
@@ -698,12 +637,12 @@ Each run should have its own folder:
 Minimum expected files:
 
 - `original_user_prompt.md`
-- `passes/pass_001/inputs/request.md`
+- `original_user_prompt.md` at the run root
 - `passes/pass_001/inputs/run_config.md`
-- `passes/pass_001/inputs/instruction.md`
-- `passes/pass_001/inputs/topic.md`
-- optional `passes/pass_001/inputs/review_frame.md`
-- `passes/pass_001/inputs/constraints.md` optional
+- `passes/pass_001/inputs/run_brief.md`
+- `passes/pass_001/inputs/run_brief.md`
+- optional `passes/pass_001/inputs/run_brief.md` review/synthesis framing section
+- `passes/pass_001/inputs/run_brief.md` optional
 
 Pass 1 must also contain:
 
@@ -733,10 +672,10 @@ Each pass directory should contain:
 
 The run root must stay clean: Part-1 outputs belong only under `Phase1_PubmedCollection/passes/pass_###/artifacts/` and `Phase1_PubmedCollection/passes/pass_###/reports/`.
 
-Before a learned rerun starts, create or activate the next pass directory and write its revised inputs there. After the Workflow Controller evaluates a pass, write `snapshot_manifest.json` inside that pass directory.
+Before a learned rerun starts, create or activate the next pass directory and write its revised inputs there. After the Run Manager evaluates a pass, write `snapshot_manifest.json` inside that pass directory.
 
 Later passes are not scratch spaces for query correction. Pass `N+1` may be
-activated only after pass `N` has completed collection, both abstract reviews,
+activated only after pass `N` has completed collection, both abstract-triage passes,
 PMC/full-text import, full-text review of readable papers, and a
 `pmc_mechanism_feedback.csv` row whose `pdf_deferral_decision = defer_pdfs`.
 If pass `N` has not reached that point, agents must continue pass `N` rather
@@ -754,17 +693,17 @@ The workflow contract is primary. The model runtime is replaceable.
 
 ## Resolution rule
 
-The `abstractReviewer` and `abstractReviewer2` roles are expected to resolve every paper at their stage.
+The two internal passes of `Abstract Triage Agent` are expected to resolve every paper at their stage.
 
 This is a brute-force review rule, not a shortlist rule.
 
-If `pubmedKeywordScout` and `pubmedCollector` produce a cohort of potentially related papers, every paper in that cohort must pass through:
+If `pubmedSearchAgent` produces a cohort of potentially related papers, every paper in that cohort must pass through both abstract-triage passes:
 
-- `abstractReviewer`
-- `abstractReviewer2`
+- first-pass abstract triage
+- second-pass abstract adjudication
 
 Batching is allowed only for context management.
-Batching must not be used to silently reduce the review cohort before abstract review.
+Batching must not be used to silently reduce the review cohort before abstract triage.
 
 At abstract stage, each paper must end in one of two actionable states:
 
@@ -773,7 +712,7 @@ At abstract stage, each paper must end in one of two actionable states:
 
 Abstract promotion requires the run's claim shape. Entity-only, mechanism-only,
 outcome-only, or context-only matches must stop unless the run contract
-explicitly grants a review-frame retention role and the paper is needed as a
+explicitly grants a review/synthesis retention role and the paper is needed as a
 minority field-synthesis/background item.
 
 At final output stage, retained papers may end in one of two states:
@@ -784,43 +723,55 @@ At final output stage, retained papers may end in one of two states:
 ## Agentic loop rule
 
 This workflow is not strictly linear.
-After query optimization, abstract review, full-text import, and full-text review, the Workflow Controller must decide whether to continue, pause, or loop.
+After query optimization, abstract triage, full-text import, and full-text review, the Run Manager must decide whether to continue, pause, or loop.
 
-The workflow has a mandatory minimum of two big passes and a default maximum of five.
-A big pass means an end-to-end run through query design or revision, PubMed collection, abstract review, second abstract review, PMC import, full-text review of readable normalized papers, and `pmc_mechanism_feedback.csv`.
+The workflow has exactly two big passes.
+A big pass means an end-to-end run through query design or revision, PubMed collection, abstract triage, rescue abstract-triage pass, PMC import, full-text review of readable normalized papers, and `pmc_mechanism_feedback.csv`.
 
 PMC feedback must pass the configured full-text review gate before it can unlock a learned rerun. The strict default is `pmc_fulltext_review_gate_mode = all_available`, which requires every paper marked `pmc_access_status = available` in `import_status.csv` to have a normalized full text, a full-text review decision, and a matching evidence-extraction row. A partial PMC sample is allowed only as a progress checkpoint; it must not drive pass activation, run-guidance revision, or learned query reconstruction.
 
 Mandatory pass structure:
 
-- Pass 1: conservative PMC-learning pass. The query scout searches the user-declared entities and mechanism classes, plus only explicitly authorized comparator queries. The full-text reviewer writes `pmc_mechanism_feedback.csv` with `pdf_deferral_decision = defer_pdfs` unless `require_fulltext_completion` is set.
-- Pass 2: learned in-scope rerun. The Run Guidance Reviser first applies Pass 1 retained in-scope mechanisms, noise families, missing terms, review-frame calibration, and reviewer-calibration changes to `instruction.md`, `topic.md`, and optional `review_frame.md`; then the query scout generates a learned search strategy from the revised guidance plus PMC feedback while staying inside the query-scope contract; then the workflow reruns collection, both abstract reviews, PMC import, and full-text review. This learned rerun should naturally reduce burden by applying full-text learning to focus the run on the user's prompt, but numeric shrinkage is a confirmation signal rather than a hard definition of success.
-- If a learned rerun expands the collection or fails to substantially shorten abstract-review promotion, the controller records a confirmation signal. The run may proceed only if the revision log explains why the larger or similar-sized set is caused by newly learned in-scope vocabulary rather than secondary context, comparator, assay, population, intervention, or outcome terms becoming standalone drivers.
+- Pass 1: slightly permissive PMC-learning pass. The PubMed Search Agent searches the user-declared entities and mechanism classes, plus only explicitly authorized comparator queries. Abstract triage may admit a bounded learning-probe set when abstracts contain a primary run anchor plus either declared mechanism/evidence terms or required outcome terms. The full-text reviewer writes per-paper scientific notes, `evidence_extraction.csv`, and `pmc_mechanism_feedback.csv` with `pdf_deferral_decision = defer_pdfs` unless `require_fulltext_completion` is set.
+- Pass 2: final learned in-scope pass. The Run Manager first applies Pass 1 retained in-scope mechanisms, noise families, missing terms, review/synthesis framing calibration, scientific notes, rescue-review guidance, and reviewer-calibration changes to `run_brief.md`; then the PubMed Search Agent generates a stringent learned search strategy from the revised `run_brief.md` plus PMC feedback while staying inside the query-scope contract; then the workflow reruns collection, abstract triage, rescue review, PMC import, and full-text review. Pass 2 is the only learned rerun and must be written as the final calibrated pass.
+- Pass 2 import should first check pass 1 usable PMC-normalized full text for
+  papers that reappear. Reuse those normalized artifacts and then rerun
+  full-text review under pass 2's stricter learned guidance.
+- Pass 2 abstract triage is a learned final-pass adjudication, not a duplicate
+  recall pass. It must re-evaluate first-pass includes against local,
+  claim-shaped prompt-fit evidence and must treat prior-pass full-text drops as
+  negative controller memory unless the active pass documents a stronger rescue
+  signal.
+- If pass 2 expands the collection or fails to substantially shorten abstract-triage promotion, the Run Manager records a confirmation signal. The run may proceed only if the revision log explains why the larger or similar-sized set is caused by newly learned in-scope vocabulary rather than secondary context, comparator, assay, population, intervention, or outcome terms becoming standalone drivers.
 - The workflow philosophy is that pass 1 spends breadth to buy learning, and
   pass 2 spends that learning to buy focus. Pass 2 should therefore be written
   as a more discriminating strategy before it is measured. Count comparisons are
   sanity checks; the primary obligation is that learned terms, exclusions, and
   reviewer rules make weak contextual matches less likely to enter the next
   full-text burden.
-- Pass 2 or later may emit `final_pdf_pass` only after evidence shows the query/review criteria have absorbed the PMC learning.
-- Once `final_pdf_pass` is accepted after the minimum learned loops, the controller records the effective access phase as `final_access`.
-- Passes 3-5 are triggered by persistent evidence-grounded failures such as missing concepts, recurrent query noise, reviewer drift, weak final keeps, or a large low-value PDF queue.
-- After Pass 5, the controller must stop blocked or ask for human/parent-agent intervention rather than loop automatically.
+- Pass 2 may emit `final_pdf_pass` only after evidence shows the query/review criteria have absorbed the PMC learning.
+- Once `final_pdf_pass` is accepted after the minimum learned loops, the Run Manager records the effective access phase as `final_access`.
+- If pass 2 still has persistent evidence-grounded failures such as missing concepts, recurrent query noise, reviewer drift, weak final keeps, or a large low-value PDF queue, the Run Manager must stop blocked or ask for human/parent-agent intervention. It must not activate pass 3 automatically.
 
 Loops are allowed when an artifact shows a specific failure mode:
 
 - query diagnostics show dominant noise classes that can be removed without obvious recall loss
-- abstract review advances a very large fraction of the cohort with weak or generic rationales
+- abstract triage advances a very large fraction of the cohort with weak or generic rationales
+- pass 2 tries to reacquire papers that a prior pass already read as low-yield
+  full text without documenting a stronger active-pass rescue signal
 - learned rerun collection or `advance_to_import` counts do not materially decrease relative to the previous pass and the revision log does not justify this with newly learned in-scope vocabulary
-- reviewer 2 frequently overturns reviewer 1 for the same reason
+- the second internal abstract-triage pass frequently overturns the first pass for the same reason
 - PMC full-text reading identifies in-scope mechanism terms that should replace vague query terms
 - import creates a large PDF queue after PMC learning and the queued papers are traceable to a predictable query-noise pattern
 - PMC-learning is marked `final_pdf_pass` and there is a non-empty PDF queue but no PDF download shortlist
 - full-text evidence extraction shows many kept papers are indirect, background, expression-only, or marker-only without an authorized review-frame role
 - full-text evidence extraction reveals a missing in-scope term family that should become a rescue query
-- fewer than `min_big_workflow_loops` big passes have completed
+- fewer than the required two big passes have completed
 
-Loops are not allowed for vague discomfort with cohort size.
+Loops are not allowed for vague discomfort with cohort size. Discomfort becomes
+actionable only when the controller can trace it to weak prompt-fit density,
+generic promotion rationales, repeated prior full-text drops, or another named
+artifact-level failure mode.
 Every loop decision must name:
 
 - the triggering artifact
@@ -831,17 +782,17 @@ Every loop decision must name:
 
 Default loop targets:
 
-- query noise or missing concepts: loop to `pubmedKeywordScout`
-- inconsistent abstract criteria: loop to `abstractReviewer` or `abstractReviewer2`
-- overbroad full-text keeps: loop to `fullTextReviewer` with stricter evidence-tier rules
-- large low-value PDF queue before final access: keep PDFs deferred, read PMC evidence, and loop to `pubmedKeywordScout`
+- query noise or missing concepts: loop to `pubmedSearchAgent`
+- inconsistent abstract criteria: loop to the appropriate internal pass of `Abstract Triage Agent`
+- overbroad full-text keeps: loop to `fullTextEvidenceAgent` with stricter evidence-tier rules
+- large low-value PDF queue before final access: keep PDFs deferred, read PMC evidence, and loop to `pubmedSearchAgent`
 - missing PDF download shortlist after final PMC-satisfied learning: build `pdf_download_shortlist.csv` before reporting completion
 
-The controller must also write `workflow_state.json`.
+The Run Manager must also write `workflow_state.json`.
 This state file is the portable completion contract for agent harnesses.
 It should say `status = complete` only when no loop is active and the final-loop PDF download shortlist exists for any remaining manual PDF queue.
 It should record `access_phase = final_access` before any complete state.
-It must not say `status = complete` until at least `min_big_workflow_loops` PMC-feedback passes exist.
+It must not say `status = complete` until exactly two PMC-feedback passes exist and pass 2 feedback marks `final_pdf_pass`.
 Before the completion gate accepts that state, it must delete prior-pass PMC XML
 and PMC-normalized JSON payloads while preserving structured pass artifacts.
 
@@ -853,24 +804,24 @@ Batch size should be chosen for stable judgment quality, not merely to fill the 
 Batching applies after collection and never authorizes capped PubMed retrieval.
 
 These batches are execution batches only.
-They are not permission to replace full abstract review with a smaller shortlist when the collected cohort is large.
+They are not permission to replace full abstract triage with a smaller shortlist when the collected cohort is large.
 
 Recommended defaults by model tier:
 
 - frontier model
   - PubMed search inspection: `10-15` records per call
-  - abstract review: `10-20` abstracts per call
-  - second abstract review: `8-15` abstracts per call
+  - abstract triage: `10-20` abstracts per call
+  - second abstract-triage pass: `8-15` abstracts per call
   - full-text review: `2-5` papers per call
 - solid mid-tier model
   - PubMed search inspection: `8-12` records per call
-  - abstract review: `8-12` abstracts per call
-  - second abstract review: `6-10` abstracts per call
+  - abstract triage: `8-12` abstracts per call
+  - second abstract-triage pass: `6-10` abstracts per call
   - full-text review: `1-3` papers per call
 - smaller or weaker model
   - PubMed search inspection: `5-10` records per call
-  - abstract review: `5-8` abstracts per call
-  - second abstract review: `4-6` abstracts per call
+  - abstract triage: `5-8` abstracts per call
+  - second abstract-triage pass: `4-6` abstracts per call
   - full-text review: `1-2` papers per call
 
 Working sets may span hundreds or thousands of papers when the accepted query set justifies that breadth.
@@ -889,14 +840,14 @@ When the PDF queue is non-empty, behavior should follow `run_config.md`.
 
 PDF intervention is a final-access behavior by default.
 In earlier loops, preserve the queue as an access artifact while the workflow reads PMC-normalized papers, summarizes mechanisms and noise, and reconstructs the query.
-After PMC mechanism feedback exists, build a ranked `pdf_download_shortlist.csv` only when the latest feedback says `final_pdf_pass`.
-`final_pdf_pass` is ignored for PDF access until at least two big passes have completed.
+After PMC mechanism feedback exists, build a ranked `pdf_download_shortlist.csv` only when pass 2 feedback says `final_pdf_pass`.
+`final_pdf_pass` is ignored for PDF access in pass 1.
 This final-loop shortlist is generated regardless of whether the eventual downloader is a human user or another agent.
 It should be much smaller than the raw queue because previous PMC-learning loops have already removed predictable noise.
 
-- `human_facing` + `pause_for_user`
+- `pause_for_user`
   pause and prompt the user with explicit choices only after PMC-learning loops have ended or been deliberately skipped and the final-loop PDF download shortlist exists
-- `agent_facing` + `continue_pmc_only`
+- `continue_pmc_only`
   continue with PMC-normalized papers, use them to improve the query, build the PDF shortlist only in the final PMC-satisfied loop, and preserve non-shortlisted PDF queue items as deferred work
   report that non-PMC full text may remain unresolved because of paywalls, bot walls, or unavailable manual PDF input
 - `require_fulltext_completion`

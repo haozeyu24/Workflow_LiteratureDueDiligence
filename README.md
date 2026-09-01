@@ -6,7 +6,7 @@ proposed two-part structure.
 Part 1 is the current literature due-diligence pipeline:
 
 - literature search
-- abstract review
+- abstract triage
 - PMC-first full-text review
 - final PMCID suggestion list
 - PDF download shortlist
@@ -42,7 +42,7 @@ Recommended upstream handoff:
 - exclusions: paper types, contexts, or adjacent biology that should be deprioritized
 - final deliverable expectation: reading list, mechanism map, evidence table,
   gap analysis, PDF shortlist, review-paper draft, or another concrete output
-- optional review frame: parent field, introduction background, bigger-field
+- review/synthesis framing: parent field, introduction background, bigger-field
   progress, foundational terms, and perspective obligations that should shape
   retention more than first-pass retrieval
 - review-paper positioning needs should be captured in run guidance and
@@ -50,15 +50,15 @@ Recommended upstream handoff:
   what new coverage the current review adds without creating undeclared side
   artifacts
 
-See `templates/upstream_prompt_protocol_template.md` for a reusable parent-agent
-prompt shape. If these fields cannot be inferred, the run setup agent should
+See `templates/run/upstream_prompt_protocol_template.md` for a reusable parent-agent
+prompt shape. If these fields cannot be inferred, the Run Manager should
 mark the request as underspecified and ask for clarification or run only a
 diagnostic scouting step.
 
 ## Venue blocklist
 
 This workflow applies a reusable venue blacklist during PubMed collection,
-before papers enter `paper_manifest.csv` or any abstract-review stage.
+before papers enter `paper_manifest.csv` or any abstract-triage stage.
 
 The canonical list lives at `resources/journal_blocklist.csv`.
 
@@ -89,6 +89,12 @@ and includes:
 - `Heliyon`
 - `Diseases`
 
+## Workflow Immutability
+
+The reusable workflow is immutable during a run. Agents may create or revise run-specific inputs and pass-scoped artifacts, but they must not rewrite `workflow.md`, `policy.md`, `roles/`, `schemas/`, `templates/`, or `tools/` to fit a particular scientific topic.
+
+Allowed changes during a run are limited to files under `runs/<run_id>/`, especially `original_user_prompt.md`, `passes/pass_###/inputs/run_brief.md`, `passes/pass_###/inputs/run_config.md`, pass artifacts, reports, snapshots, and workflow-control files.
+
 ## Reuse boundary
 
 This specification must be read with one hard rule:
@@ -99,7 +105,7 @@ This specification must be read with one hard rule:
 In other words:
 
 - roles, schemas, handoffs, artifact types, and pipeline stages are part of the fixed workflow
-- `instruction`, `topic`, optional `review_frame`, and any seed constraints belong to a specific run
+- `run_brief.md` and `run_config.md` belong to a specific run
 
 The workflow must not be rewritten for each scientific question.
 Only the run inputs should change.
@@ -115,12 +121,12 @@ When creating instructions, prompts, or scripts for this workflow:
 Reusable files must operate on run inputs such as:
 
 - `original_user_prompt.md`
-- `passes/pass_001/inputs/request.md`
+- `original_user_prompt.md` at the run root
 - `passes/pass_001/inputs/run_config.md`
-- `passes/pass_001/inputs/instruction.md`
-- `passes/pass_001/inputs/topic.md`
-- optional `passes/pass_001/inputs/review_frame.md`
-- optional `passes/pass_001/inputs/constraints.md`
+- `passes/pass_001/inputs/run_brief.md`
+- `passes/pass_001/inputs/run_brief.md`
+- optional `passes/pass_001/inputs/run_brief.md` review/synthesis framing section
+- optional `passes/pass_001/inputs/run_brief.md`
 - learned `passes/pass_###/inputs/` guidance for later passes
 - pass-scoped `passes/pass_###/artifacts/`
 - pass-scoped `passes/pass_###/reports/`
@@ -163,15 +169,15 @@ synonyms, older terminology, assay names, aliases, and known direct papers for
 the user's objective, but it should not query every adjacent pathway, phenotype,
 or background domain unless the run explicitly authorizes that expansion.
 
-Triage should reduce ambiguity early. Abstract review asks whether a paper
+Triage should reduce ambiguity early. Abstract triage asks whether a paper
 plausibly answers the decision question, not whether it could ever be related.
 Borderline papers should survive only when they match the primary entity plus a
 declared evidence/mechanism class, authorized comparator logic, or an explicit
 review-frame retention need.
 
-Full-text review is stricter than abstract review. Final keep decisions should
+Full-text review is stricter than abstract triage. Final keep decisions should
 usually require direct, indirect, or authorized comparator evidence. Background
-papers are retained only when `review_frame.md` explicitly justifies a limited
+papers are retained only when `run_brief.md` explicitly justifies a limited
 foundational, field-synthesis, or perspective role.
 
 The Phase-2 synthesis corpus may be larger than a human must-read list, but
@@ -211,10 +217,10 @@ exists.
 The required final check is:
 
 ```bash
-python3 scripts/completion_gate.py <run_id>
+python3 tools/run/completion_gate.py <run_id>
 ```
 
-This gate reruns the controller, regenerates reports, validates the run, checks
+This gate reruns the Run Manager controller step, regenerates reports, validates the run, checks
 that `workflow_state.json` has `status = complete`, and verifies that the
 incomplete sentinel has been removed.
 
@@ -226,14 +232,14 @@ reports, and metadata provenance.
 For read-only review contexts, use:
 
 ```bash
-python3 scripts/completion_gate.py --check-only <run_id>
+python3 tools/run/completion_gate.py --check-only <run_id>
 ```
 
-Check-only mode validates the current state without rerunning the controller or
+Check-only mode validates the current state without rerunning the Run Manager controller step or
 updating sentinel/report files.
 
 If the gate fails, final responses must say the workflow is incomplete and list
-the next required stage or controller action.
+the next required stage or Run Manager action.
 
 ## Phase 1 transcript
 
@@ -262,18 +268,18 @@ Recommended defaults:
 
 - frontier model
   - PubMed search inspection: sample `20-75` records total, usually in chunks of `10-15`
-  - abstract review: `10-20` abstracts per LLM call
-  - second abstract review: `8-15` abstracts per LLM call
+  - abstract triage: `10-20` abstracts per LLM call
+  - second abstract-triage pass: `8-15` abstracts per LLM call
   - full-text review: usually `2-5` papers per LLM call
 - solid mid-tier model
   - PubMed search inspection: usually in chunks of `8-12`
-  - abstract review: `8-12` abstracts per LLM call
-  - second abstract review: `6-10` abstracts per LLM call
+  - abstract triage: `8-12` abstracts per LLM call
+  - second abstract-triage pass: `6-10` abstracts per LLM call
   - full-text review: usually `1-3` papers per LLM call
 - smaller or weaker model
   - PubMed search inspection: usually in chunks of `5-10`
-  - abstract review: `5-8` abstracts per LLM call
-  - second abstract review: `4-6` abstracts per LLM call
+  - abstract triage: `5-8` abstracts per LLM call
+  - second abstract-triage pass: `4-6` abstracts per LLM call
   - full-text review: usually `1-2` papers per LLM call
 
 The cohort-level working set may be much larger, but the per-call context should stay small enough to preserve judgment quality and reduce cross-paper confusion.
@@ -281,8 +287,8 @@ Treat these as safe defaults, not maximums. Bigger context windows do not automa
 
 Important interpretation:
 
-- broad retrieval and exhaustive abstract review are different from per-call context size
-- if the scout and collector produce `1,000+` potentially related papers, those papers should still all go through `abstractReviewer` and `abstractReviewer2`
+- broad retrieval and exhaustive abstract triage are different from per-call context size
+- if `pubmedSearchAgent` produces `1,000+` potentially related papers, those papers should still all go through both internal passes of `Abstract Triage Agent`
 - batching exists only so the model reads the cohort in manageable pieces
 - PubMed collection caps are forbidden; recall comes first, and large cohorts must be handled by query refinement plus review batching
 
@@ -319,7 +325,7 @@ They should not:
   Includes reusable prompt templates for reviewer-style roles.
 - `runs/`
   Per-run inputs and outputs. Each run gets its own folder with its own instruction, topic, artifacts, and reports.
-- `scripts/`
+- `tools/`
   Workflow-specific code wrappers and utilities.
 
 ## PDF parser runtime
@@ -328,7 +334,7 @@ PDF parsing is modeled as a reusable workflow step, but the parser runtime is en
 
 Current wrapper behavior:
 
-- `scripts/parse_pdf_fulltext.py` accepts `GROBID_URL` or `GROBID_BASE_URL`, normalizes common misconfigurations such as values ending in `/api` or `/api/processFulltextDocument`, and otherwise probes common local endpoints such as `http://localhost:8070`
+- `tools/pdf/parse_pdf_fulltext.py` accepts `GROBID_URL` or `GROBID_BASE_URL`, normalizes common misconfigurations such as values ending in `/api` or `/api/processFulltextDocument`, and otherwise probes common local endpoints such as `http://localhost:8070`
 - successful TEI output is normalized to the same JSON contract used for full-text review
 - if no reachable parser endpoint is available, staged PDFs remain explicitly `parser_pending`
 - PMC-normalized papers can still continue into full-text review
@@ -336,5 +342,5 @@ Current wrapper behavior:
 - during `access_phase = pmc_learning`, alternate open-access PDF discovery is
   deferred by default; the early loop should prioritize fast NCBI PMCID/PMC XML
   learning rather than exhaustive access discovery
-- when the latest feedback marks `final_pdf_pass` after the minimum learned loops, the controller records effective `access_phase = final_access`
+- when the latest feedback marks `final_pdf_pass` after the minimum learned loops, the Run Manager records effective `access_phase = final_access`
 - during `access_phase = final_access`, manual PDF ingest should continue directly into full-text keep/drop review for any newly readable papers before the ingest cycle is considered complete
