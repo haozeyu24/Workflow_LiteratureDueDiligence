@@ -47,12 +47,6 @@ def has_rescue_signal(row: dict[str, str], profile) -> tuple[bool, str, str, str
     exclusion_matches = matched_terms(text, profile.exclusion_terms)
     review_frame_matches = matched_terms(text, profile.review_frame_terms)
 
-    clinical_signal = bool(
-        re.search(
-            r"\b(clinical|trial|phase\s+[ivx0-9]+|patient|patients|cohort|progression|response|biomarker|combination)\b",
-            text,
-        )
-    )
     mechanism_signal = bool(mechanism_matches and outcome_matches)
     claim_shaped_signal = has_claim_shaped_positive_signal(title, abstract, profile)
     comparator_signal = bool(comparator_matches and (mechanism_matches or outcome_matches))
@@ -67,14 +61,6 @@ def has_rescue_signal(row: dict[str, str], profile) -> tuple[bool, str, str, str
             False,
             "high",
             "Confirmed exclude: exclusion/deferred-context terms dominate and no primary mechanistic rescue signal is present.",
-            "none",
-        )
-
-    if primary_matches and clinical_signal and (mechanism_matches or outcome_matches):
-        return (
-            True,
-            "medium",
-            "Rescued for import: excluded abstract has primary run terms plus clinical/trial/biomarker or response language and at least one declared mechanism/outcome signal.",
             "none",
         )
 
@@ -105,7 +91,7 @@ def has_rescue_signal(row: dict[str, str], profile) -> tuple[bool, str, str, str
     return (
         False,
         "medium",
-        "Confirmed exclude: rescue review did not find a high-value missed clinical, mechanistic, comparator, or review-frame signal.",
+        "Confirmed exclude: rescue review did not find a high-value missed claim-shaped, comparator, or review-frame signal.",
         "none",
     )
 
@@ -129,15 +115,6 @@ def final_signal_terms(candidates: set[str], *blocked_sets: set[str]) -> set[str
     }
 
 
-def has_treatment_or_exposure_context(text: str, primary_matches: list[str]) -> bool:
-    if re.search(
-        r"\b(inhibitor|inhibition|treated|treatment|therapy|therapeutic|drug|agent|combination|trial|phase|dose|response|resistance|refractory|relapse|progression)\b",
-        text,
-    ):
-        return True
-    return any(re.search(r"\d|-[0-9]|ib$", term) for term in primary_matches)
-
-
 def has_final_pass_signal(row: dict[str, str], profile) -> tuple[bool, str, str, str]:
     title = row.get("title", "") or ""
     abstract = row.get("abstract", "") or ""
@@ -153,7 +130,7 @@ def has_final_pass_signal(row: dict[str, str], profile) -> tuple[bool, str, str,
     windows = sentence_windows(title, abstract)
 
     direct_windows: list[str] = []
-    clinical_windows: list[str] = []
+    contextual_windows: list[str] = []
     comparator_windows: list[str] = []
     for window in windows:
         primary_matches = matched_terms(window, profile.primary_terms)
@@ -163,21 +140,15 @@ def has_final_pass_signal(row: dict[str, str], profile) -> tuple[bool, str, str,
         outcome_matches = matched_terms(window, outcome_terms)
         evidence_claim_matches = matched_terms(window, EVIDENCE_CLAIM_TERMS)
         comparator_matches = matched_terms(window, comparator_terms)
-        clinical_signal = bool(
-            re.search(
-                r"\b(clinical|trial|phase\s+[ivx0-9]+|patient|patients|cohort|progression|response|resistance|refractory|relapse|non[- ]?response|biomarker|combination|survival)\b",
-                window,
-            )
-        )
         if mechanism_matches and (outcome_matches or evidence_claim_matches):
             direct_windows.append(window)
-        elif clinical_signal and (mechanism_matches or outcome_matches):
-            clinical_windows.append(window)
-        if comparator_matches and (mechanism_matches or outcome_matches) and clinical_signal:
+        elif evidence_claim_matches and (mechanism_matches or outcome_matches):
+            contextual_windows.append(window)
+        if comparator_matches and (mechanism_matches or outcome_matches or evidence_claim_matches):
             comparator_windows.append(window)
 
     named_claim_signal = bool(direct_windows)
-    clinical_claim_signal = bool(clinical_windows)
+    contextual_claim_signal = bool(contextual_windows)
     comparator_claim_signal = bool(comparator_windows)
     review_signal = (
         is_review_paper(publication_types, text)
@@ -201,11 +172,11 @@ def has_final_pass_signal(row: dict[str, str], profile) -> tuple[bool, str, str,
             "none",
         )
 
-    if clinical_claim_signal:
+    if contextual_claim_signal:
         return (
             True,
             "medium",
-            "Advanced in learned final pass: abstract ties primary run terms to clinical/trial/biomarker or response language plus a declared evidence dimension.",
+            "Advanced in learned final pass: abstract ties primary run terms to generic evidence-claim language plus a declared evidence dimension.",
             "none",
         )
 

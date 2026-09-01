@@ -130,17 +130,18 @@ and promotion behavior before any title/abstract decisions are written.
 
 - Include when the title or abstract contains a primary entity or named
   intervention from the active run brief plus a declared mechanism, evidence
-  class, outcome, perturbation, relationship, trial, biomarker, response, or
-  synthesis-frame signal.
+  class, outcome, perturbation, relationship, context, or synthesis-frame
+  signal.
 - For pass 1, remain recall-friendly but require a claim-shaped match. Do not
   include papers on the basis of a primary entity plus one weak mechanism or
   context term alone.
 - Include direct mechanistic papers when the abstract links an active primary
   entity to a declared mechanism class and interpretable response, phenotype,
   dependency, or outcome.
-- Include clinical, translational, or cohort papers when the abstract connects
-  an active primary entity or intervention to a declared outcome, biomarker,
-  response, resistance, progression, or trial-design question.
+- Include applied, translational, cohort, model-system, or context-specific
+  papers when the abstract connects an active primary entity or intervention to
+  a declared outcome, response variable, evidence claim, or decision-relevant
+  question.
 - Include a limited number of review or field-synthesis papers only when they
   clearly support the active review/synthesis framing.
 
@@ -170,8 +171,8 @@ and promotion behavior before any title/abstract decisions are written.
 - Carry first-pass includes forward unless the include clearly violated the
   active rules.
 - Rescue first-pass excludes when they contain a high-value missed direct,
-  clinical, translational, comparator, mechanism, biomarker, or review-frame
-  signal under the active run brief.
+  applied, translational, comparator, mechanism/evidence, declared-context, or
+  review-frame signal under the active run brief.
 - Apply any full-text-derived rescue terms or demotion rules listed below for
   pass 2 or later.
 - Stop papers that remain entity-only, mechanism-only, pathway-only,
