@@ -175,7 +175,17 @@ Part 1 should also preserve a user-visible transcript:
 - rule: append chronological entries; do not replace the transcript with a polished retrospective summary
 
 Full-text review must create pass-to-pass learning, not merely binary
-retention. `evidence_extraction.csv` should include per-paper scientific notes
+retention. Before keep/drop decisions are written, the active pass must create
+`artifacts/fulltext_review/fulltext_review_rules.md` from the active run brief,
+abstract-review rules, and any prior PMC feedback. It must then run a full-text
+rescue pass over first-pass drops and write
+`artifacts/fulltext_review/fulltext_rescue.csv` before treating full-text review
+as ready for feedback. Both the first full-text review and the rescue review use
+the same promotion-first logic in pass 1 and pass 2: direct, indirect,
+authorized comparator, or explicitly authorized review-frame positive signals
+override negative, noise, or demotion signals. Evidence-insufficient categories
+are demotion signals, not automatic hard exclusions; drop only when sufficient
+positive full-text evidence is absent. `evidence_extraction.csv` should include per-paper scientific notes
 for kept and dropped papers. `pmc_mechanism_feedback.csv` should summarize
 topic learning, query-construction learning, abstract-review calibration, and
 rescue-review guidance for the Run Manager before the next PubMed pass.
@@ -311,9 +321,11 @@ Outputs include:
 - `artifacts/fulltext_import/manual_pdf_import_report.csv` when applicable
 - `artifacts/fulltext_import/pdf_parse_report.csv` when applicable
 - PMC XML and normalized JSON when usable
+- `artifacts/fulltext_review/fulltext_review.csv`
+- `artifacts/fulltext_review/fulltext_review_rules.md`
+- `artifacts/fulltext_review/fulltext_rescue.csv`
 - `artifacts/fulltext_review/evidence_extraction.csv`
 - `artifacts/fulltext_review/pmc_mechanism_feedback.csv`
-- `artifacts/fulltext_review/fulltext_review.csv`
 
 Working rules:
 
@@ -388,6 +400,8 @@ Required inputs:
 
 - current pass `inputs/run_brief.md`
 - `artifacts/fulltext_review/pmc_mechanism_feedback.csv`
+- `artifacts/fulltext_review/fulltext_review_rules.md`
+- `artifacts/fulltext_review/fulltext_rescue.csv`
 - `artifacts/search_strategy/query_diagnostics.csv`
 - review/import artifacts from the completed pass
 - `passes/`
@@ -516,9 +530,11 @@ Promotion rule:
 
 Required outputs:
 
+- `artifacts/fulltext_review/fulltext_review.csv`
+- `artifacts/fulltext_review/fulltext_review_rules.md`
+- `artifacts/fulltext_review/fulltext_rescue.csv`
 - `artifacts/fulltext_review/evidence_extraction.csv`
 - `artifacts/fulltext_review/pmc_mechanism_feedback.csv`
-- `artifacts/fulltext_review/fulltext_review.csv`
 - per-paper evidence tier, evidence type, directness, centrality, and query-feedback signal
 - summarized mechanisms, retained keyword families, noise keyword families, and recommended query changes
 - per-paper final `keep` or `drop` decision
@@ -603,9 +619,11 @@ Expected canonical artifacts for each pass:
 - `artifacts/fulltext_import/import_status.csv`
 - `artifacts/fulltext_import/manual_pdf_queue.csv`
 - `artifacts/fulltext_import/pdf_parse_report.csv`
+- `artifacts/fulltext_review/fulltext_review.csv`
+- `artifacts/fulltext_review/fulltext_review_rules.md`
+- `artifacts/fulltext_review/fulltext_rescue.csv`
 - `artifacts/fulltext_review/evidence_extraction.csv`
 - `artifacts/fulltext_review/pmc_mechanism_feedback.csv`
-- `artifacts/fulltext_review/fulltext_review.csv`
 - `artifacts/workflow_control/workflow_loop_decision.csv`
 - `reports/final_reading_list.csv`
 - `reports/progress_report.md`

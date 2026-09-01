@@ -17,7 +17,7 @@ import sys
 from collections import Counter
 from pathlib import Path
 
-from heuristic_abstract_triage_first_pass import build_review_profile, matched_terms
+from heuristic_abstract_triage_first_pass import build_review_profile, EVIDENCE_CLAIM_TERMS, matched_terms
 from pass_archive import active_artifacts_dir, active_pass_number
 from workflow_db import record_fulltext_read_state
 
@@ -129,12 +129,62 @@ def local_claim_windows(title: str, text: str, profile) -> tuple[list[tuple[str,
         primary_hits = matched_terms(window, profile.primary_terms)
         mechanism_hits = matched_terms(window, profile.mechanism_terms)
         outcome_hits = matched_terms(window, profile.outcome_terms)
+        evidence_claim_hits = matched_terms(window, EVIDENCE_CLAIM_TERMS)
         comparator_hits = matched_terms(window, profile.comparator_terms)
-        if primary_hits and mechanism_hits and outcome_hits:
-            direct.append((locator, window, (primary_hits + mechanism_hits + outcome_hits)[:8]))
-        elif primary_hits and comparator_hits and mechanism_hits and outcome_hits:
-            comparator.append((locator, window, (primary_hits + comparator_hits + mechanism_hits + outcome_hits)[:8]))
+        positive_outcome_hits = outcome_hits or evidence_claim_hits
+        if primary_hits and mechanism_hits and positive_outcome_hits:
+            direct.append((locator, window, (primary_hits + mechanism_hits + outcome_hits + evidence_claim_hits)[:8]))
+        elif primary_hits and comparator_hits and mechanism_hits and positive_outcome_hits:
+            comparator.append((locator, window, (primary_hits + comparator_hits + mechanism_hits + outcome_hits + evidence_claim_hits)[:8]))
     return direct, comparator
+
+
+def hard_negative_terms(profile) -> set[str]:
+    """Terms that can demote only when no positive full-text signal exists."""
+    return profile.exclusion_terms - (
+        profile.primary_terms
+        | profile.mechanism_terms
+        | profile.outcome_terms
+        | profile.comparator_terms
+        | profile.review_frame_terms
+    )
+
+
+def has_document_level_positive_signal(
+    title: str,
+    text: str,
+    profile,
+    primary_hits: list[str],
+    mechanism_hits: list[str],
+    outcome_hits: list[str],
+    comparator_hits: list[str],
+) -> bool:
+    evidence_claim_hits = matched_terms(f"{title.lower()}\n{text}", EVIDENCE_CLAIM_TERMS)
+    positive_outcome_present = bool(outcome_hits or evidence_claim_hits)
+    if not (primary_hits and mechanism_hits and positive_outcome_present):
+        return False
+
+    title_text = title.lower()
+    title_primary = matched_terms(title_text, profile.primary_terms)
+    title_mechanism = matched_terms(title_text, profile.mechanism_terms)
+    title_outcome = matched_terms(title_text, profile.outcome_terms) or matched_terms(title_text, EVIDENCE_CLAIM_TERMS)
+    if title_primary and (title_mechanism or title_outcome):
+        return True
+
+    supporting_windows = 0
+    for _locator, window in evidence_windows(title, text):
+        if not matched_terms(window, profile.primary_terms):
+            continue
+        has_mechanism = bool(matched_terms(window, profile.mechanism_terms))
+        has_outcome = bool(matched_terms(window, profile.outcome_terms) or matched_terms(window, EVIDENCE_CLAIM_TERMS))
+        if has_mechanism or has_outcome:
+            supporting_windows += 1
+        if supporting_windows >= 2:
+            return True
+
+    if title_primary and comparator_hits and (mechanism_hits or outcome_hits):
+        return True
+    return False
 
 
 def joined_terms(terms: list[str], limit: int = 8) -> str:
@@ -191,28 +241,9 @@ def classify_paper(title: str, text: str, profile) -> dict[str, str]:
     mechanism_hits = matched_terms(combined, profile.mechanism_terms)
     outcome_hits = matched_terms(combined, profile.outcome_terms)
     comparator_hits = matched_terms(combined, profile.comparator_terms)
-    exclusion_hits = matched_terms(combined, profile.exclusion_terms)
+    exclusion_hits = matched_terms(combined, hard_negative_terms(profile))
     review_frame_hits = matched_terms(combined, profile.review_frame_terms)
     direct_windows, comparator_windows = local_claim_windows(title, text, profile)
-
-    if exclusion_hits and not direct_windows:
-        return {
-            "fulltext_decision": "drop",
-            "fulltext_rationale": "Readable full text is dominated by run-specific exclusion or deferred-context signals.",
-            "mechanistic_relevance": "low",
-            "objective_relevance": "low",
-            "topic_centrality": "incidental",
-            "review_confidence": "medium",
-            "evidence_tier": "exclude",
-            "evidence_type": "off_scope_or_deferred_context",
-            "directness": "incidental",
-            "target_centrality": "incidental",
-            "evidence_summary": "Full text does not provide enough primary objective evidence after applying run-specific exclusions.",
-            "supporting_text_locator": "matched exclusion/deferred terms: " + ";".join(exclusion_hits[:6]),
-            "query_feedback_signal": "tighten_query",
-            "retention_role": "exclude",
-            "kept": "no",
-        }
 
     if direct_windows:
         locator, _window, local_hits = direct_windows[0]
@@ -254,6 +285,25 @@ def classify_paper(title: str, text: str, profile) -> dict[str, str]:
             "kept": "yes",
         }
 
+    if has_document_level_positive_signal(title, text, profile, primary_hits, mechanism_hits, outcome_hits, comparator_hits):
+        return {
+            "fulltext_decision": "keep",
+            "fulltext_rationale": "Readable full text has coherent document-level evidence connecting primary or authorized comparator terms with declared mechanism/evidence and outcome terms; positive promotion signals override demotion signals.",
+            "mechanistic_relevance": "medium",
+            "objective_relevance": "medium",
+            "topic_centrality": "supporting",
+            "review_confidence": "medium",
+            "evidence_tier": "indirect",
+            "evidence_type": "distributed_fulltext_signal",
+            "directness": "pathway_or_context",
+            "target_centrality": "supporting",
+            "evidence_summary": "Paper contains distributed full-text evidence relevant to the run objective, even though the decisive terms are not all localized to one sentence.",
+            "supporting_text_locator": "document-level positive matches: " + ";".join((primary_hits + mechanism_hits + outcome_hits + comparator_hits)[:10]),
+            "query_feedback_signal": "none",
+            "retention_role": "direct_mechanistic",
+            "kept": "yes",
+        }
+
     if primary_hits and mechanism_hits and outcome_hits and review_frame_hits:
         return {
             "fulltext_decision": "keep",
@@ -273,10 +323,29 @@ def classify_paper(title: str, text: str, profile) -> dict[str, str]:
             "kept": "yes",
         }
 
+    if exclusion_hits:
+        return {
+            "fulltext_decision": "drop",
+            "fulltext_rationale": "Readable full text lacks sufficient positive promotion evidence after direct, comparator, document-level, and review-frame signals were checked; remaining evidence is dominated by run-specific demotion or exclusion signals.",
+            "mechanistic_relevance": "low",
+            "objective_relevance": "low",
+            "topic_centrality": "incidental",
+            "review_confidence": "medium",
+            "evidence_tier": "exclude",
+            "evidence_type": "off_scope_or_deferred_context",
+            "directness": "incidental",
+            "target_centrality": "incidental",
+            "evidence_summary": "Full text does not provide enough positive objective evidence after applying the full-text promotion-first rule.",
+            "supporting_text_locator": "matched demotion/exclusion terms after positive check: " + ";".join(exclusion_hits[:6]),
+            "query_feedback_signal": "tighten_query",
+            "retention_role": "exclude",
+            "kept": "no",
+        }
+
     if primary_hits or (mechanism_hits and comparator_hits):
         return {
             "fulltext_decision": "drop",
-            "fulltext_rationale": "Readable full text has document-level overlap but no sentence- or local section-level evidence tying the mechanism/evidence claim to the primary entity and required outcome.",
+            "fulltext_rationale": "Readable full text has partial document-level overlap, but the positive promotion threshold was not met.",
             "mechanistic_relevance": "low",
             "objective_relevance": "medium",
             "topic_centrality": "supporting",
@@ -324,8 +393,8 @@ def feedback_row(profile, pass_number: int, source_count: int, direct_terms: Cou
     )
     abstract_learning = (
         "Keep first-pass learning review recall-friendly but claim-shaped: require primary objective overlap plus enough declared evidence dimensions "
-        "to support a plausible decision-relevant claim. Use rescue review only for excluded records with direct, clinical, translational, "
-        "mechanistic, comparator, or review-frame value."
+        "to support a plausible decision-relevant claim. Use rescue review only for excluded records with direct, applied, translational, "
+        "declared-evidence, comparator, or review-frame value."
     )
     return {
         "loop_id": f"loop_{pass_number:03d}",
@@ -441,9 +510,16 @@ def main() -> int:
     fulltext_path = artifacts_dir / "fulltext_review" / "fulltext_review.csv"
     evidence_path = artifacts_dir / "fulltext_review" / "evidence_extraction.csv"
     feedback_path = artifacts_dir / "fulltext_review" / "pmc_mechanism_feedback.csv"
+    rules_path = artifacts_dir / "fulltext_review" / "fulltext_review_rules.md"
 
     if not fulltext_path.exists():
         print(f"Full-text review table not found: {fulltext_path}")
+        return 1
+    if not rules_path.exists():
+        print(
+            "Full-text review rules not found. Run "
+            f"`python3 tools/fulltext/generate_fulltext_review_rules.py {run_id}` before full-text review."
+        )
         return 1
 
     with fulltext_path.open(encoding="utf-8") as handle:

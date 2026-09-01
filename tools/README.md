@@ -108,6 +108,20 @@ If a tool needs topic-specific behavior, it should:
   Download PMC XML for PMCID-backed papers, normalize usable XML to JSON, and emit a manual PDF queue for fallback.
 - `fulltext/prepare_fulltext_review.py <run_id>`
   Convert usable normalized full-text imports into the `fulltext_review.csv` working table.
+- `fulltext/generate_fulltext_review_rules.py <run_id>`
+  Generate the active pass full-text-review rule artifact before keep/drop
+  decisions are written. Full-text review must evaluate positive promotion
+  signals before demotion or exclusion signals. Clear direct, indirect,
+  comparator, or authorized review-frame promotion signals override negative
+  terms; papers should be dropped only when they lack sufficient positive
+  full-text evidence under the active run brief.
+- `fulltext/heuristic_fulltext_rescue_pass.py <run_id>`
+  Re-review first-pass full-text drops using the same active full-text review
+  rules and promotion-first logic. Write
+  `artifacts/fulltext_review/fulltext_rescue.csv`, preserve the original drop
+  rationale, record confirmed drops or overturned keeps, and update
+  `fulltext_review.csv` plus `evidence_extraction.csv` so downstream reports use
+  the rescued final decisions.
 - `pdf/build_pdf_intervention.py <run_id>`
   Build the PDF intervention state and user-facing prompt from `run_config.md`, `import_status.csv`, and the manual PDF queue. In `access_phase = pmc_learning`, this defers PDF action so the run can learn from PMC-normalized full text first.
 - `pdf/stage_manual_pdfs.py <run_id> [downloads_dir]`
@@ -133,7 +147,15 @@ PubMed query refinement is intentionally part of the `pubmedSearchAgent` agent r
 The scout should record hit counts, sampled precision, noise classes, missing in-scope concepts, adjacent concepts kept as secondary context, and stop-rule reasoning in `artifacts/search_strategy/query_diagnostics.csv`.
 The PubMed Search Agent then fills collection counts and truncation status for the accepted query set.
 
-Full-text review should write `artifacts/fulltext_review/evidence_extraction.csv` before final reporting.
+Full-text review should first write
+`artifacts/fulltext_review/fulltext_review_rules.md`, then write
+`artifacts/fulltext_review/evidence_extraction.csv`, then run a rescue pass over
+first-pass drops before final reporting.
+The full-text reviewer must apply promotion-first logic: clear positive
+evidence for direct, indirect, comparator, or authorized review-frame retention
+overrides negative or demotion signals. Evidence-insufficient categories are
+demotion rules, not hard exclusions, unless the paper lacks sufficient positive
+evidence.
 Before final PDF access, it should also write `artifacts/fulltext_review/pmc_mechanism_feedback.csv` so the next query pass can retain useful in-scope mechanism terms and remove predictable noise. Broader adjacent mechanisms should be preserved as secondary synthesis context unless the run guidance explicitly promotes them to primary retrieval scope.
 The full-text review entrypoint should also print a concise scientific-learning
 summary to the screen so retained mechanisms, supporting mechanisms, noise,

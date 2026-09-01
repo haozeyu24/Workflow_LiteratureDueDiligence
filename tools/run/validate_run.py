@@ -55,7 +55,9 @@ WORKFLOW_ONLY_ALLOWED_PASS_FILES = {
     "artifacts/fulltext_import/pdf_intervention_status.json",
     "artifacts/fulltext_import/manual_pdf_import_report.csv",
     "artifacts/fulltext_import/pdf_parse_report.csv",
+    "artifacts/fulltext_review/fulltext_review_rules.md",
     "artifacts/fulltext_review/fulltext_review.csv",
+    "artifacts/fulltext_review/fulltext_rescue.csv",
     "artifacts/fulltext_review/evidence_extraction.csv",
     "artifacts/fulltext_review/pmc_mechanism_feedback.csv",
     "artifacts/workflow_control/workflow_state.json",
@@ -225,6 +227,24 @@ REQUIRED_COLUMNS = {
         "topic_centrality",
         "review_confidence",
     ],
+    "fulltext_rescue": [
+        "paper_id",
+        "pmid",
+        "pmcid",
+        "doi",
+        "title",
+        "normalized_source_type",
+        "normalized_path",
+        "original_fulltext_decision",
+        "original_fulltext_rationale",
+        "rescue_decision",
+        "final_fulltext_decision",
+        "rescue_rationale",
+        "positive_signal_found",
+        "negative_signal_overridden",
+        "supporting_text_locator",
+        "review_confidence",
+    ],
     "evidence_extraction": [
         "paper_id",
         "pmid",
@@ -360,6 +380,15 @@ ALLOWED_VALUES = {
         "mechanistic_relevance": {"high", "medium", "low"},
         "objective_relevance": {"high", "medium", "low"},
         "topic_centrality": {"central", "supporting", "incidental"},
+        "review_confidence": {"high", "medium", "low"},
+    },
+    "fulltext_rescue": {
+        "normalized_source_type": {"pmc_xml", "pdf_grobid", "missing"},
+        "original_fulltext_decision": {"drop"},
+        "rescue_decision": {"confirm_drop", "overturn_to_keep"},
+        "final_fulltext_decision": {"keep", "drop"},
+        "positive_signal_found": {"yes", "no"},
+        "negative_signal_overridden": {"yes", "no"},
         "review_confidence": {"high", "medium", "low"},
     },
     "final_reading_list": {
@@ -872,6 +901,37 @@ def validate_evidence_handoff(
     ]
 
 
+def validate_fulltext_rescue_handoff(
+    fulltext_rows: list[dict[str, str]],
+    rescue_rows: list[dict[str, str]],
+) -> list[str]:
+    errors: list[str] = []
+    fulltext_by_id = {
+        row.get("paper_id", "").strip(): row
+        for row in fulltext_rows
+        if row.get("paper_id", "").strip()
+    }
+    rescue_ids = unique_ids(rescue_rows, "paper_id")
+    missing = sorted(rescue_ids - set(fulltext_by_id))
+    if missing:
+        errors.append(
+            "fulltext_rescue.csv contains paper_id values absent from fulltext_review.csv "
+            f"(examples={missing[:10]})."
+        )
+    for row in rescue_rows:
+        paper_id = row.get("paper_id", "").strip()
+        if not paper_id or paper_id not in fulltext_by_id:
+            continue
+        rescue_final = row.get("final_fulltext_decision", "").strip()
+        review_final = fulltext_by_id[paper_id].get("fulltext_decision", "").strip()
+        if rescue_final != review_final:
+            errors.append(
+                "fulltext_rescue.csv final_fulltext_decision does not match "
+                f"fulltext_review.csv for {paper_id} ({rescue_final} vs {review_final})."
+            )
+    return errors
+
+
 def evidence_by_paper_id(evidence_rows: list[dict[str, str]]) -> dict[str, list[dict[str, str]]]:
     by_id: dict[str, list[dict[str, str]]] = {}
     for row in evidence_rows:
@@ -1271,6 +1331,7 @@ def main() -> int:
         "evidence_extraction": artifacts_dir / "fulltext_review" / "evidence_extraction.csv",
         "pmc_mechanism_feedback": artifacts_dir / "fulltext_review" / "pmc_mechanism_feedback.csv",
         "fulltext_review": artifacts_dir / "fulltext_review" / "fulltext_review.csv",
+        "fulltext_rescue": artifacts_dir / "fulltext_review" / "fulltext_rescue.csv",
         "workflow_loop_decision": artifacts_dir / "workflow_control" / "workflow_loop_decision.csv",
         "run_guidance_revision_log": artifacts_dir / "workflow_control" / "run_guidance_revision_log.csv",
         "workflow_state": artifacts_dir / "workflow_control" / "workflow_state.json",
@@ -1310,6 +1371,9 @@ def main() -> int:
     if all(paths[name].exists() for name in ("fulltext_review", "evidence_extraction")):
         errors.extend(validate_evidence_handoff(tables["fulltext_review"], tables["evidence_extraction"]))
 
+    if all(paths[name].exists() for name in ("fulltext_review", "fulltext_rescue")):
+        errors.extend(validate_fulltext_rescue_handoff(tables["fulltext_review"], tables["fulltext_rescue"]))
+
     if all(paths[name].exists() for name in ("import_status", "fulltext_review", "final_reading_list")):
         errors.extend(
             validate_final_list(
@@ -1321,6 +1385,16 @@ def main() -> int:
         )
 
     if paths["pmc_mechanism_feedback"].exists():
+        if not (artifacts_dir / "fulltext_review" / "fulltext_review_rules.md").exists():
+            errors.append(
+                "pmc_mechanism_feedback.csv exists before fulltext_review_rules.md; "
+                "generate explicit full-text review rules before feedback."
+            )
+        if not paths["fulltext_rescue"].exists():
+            errors.append(
+                "pmc_mechanism_feedback.csv exists before fulltext_rescue.csv; "
+                "run the full-text rescue pass over first-pass drops before feedback."
+            )
         queue_path = artifacts_dir / "fulltext_import" / "manual_pdf_queue.csv"
         queue_rows = load_csv_rows(queue_path)[1] if queue_path.exists() else []
         feedback_rows = load_all_pass_csv(run_dir, "artifacts/fulltext_review/pmc_mechanism_feedback.csv")

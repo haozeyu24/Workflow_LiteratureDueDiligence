@@ -21,6 +21,7 @@ RUNS_DIR = WORKFLOW_ROOT / "runs"
 
 TOOL_PATHS = {
     "assess_workflow_loops.py": WORKFLOW_ROOT / "tools" / "run" / "assess_workflow_loops.py",
+    "generate_reports.py": WORKFLOW_ROOT / "tools" / "reports" / "generate_reports.py",
     "validate_run.py": WORKFLOW_ROOT / "tools" / "run" / "validate_run.py",
 }
 

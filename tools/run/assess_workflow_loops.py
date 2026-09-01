@@ -243,6 +243,7 @@ def add_stage_gate_decision(
     import_rows: list[dict[str, str]],
     fulltext_rows: list[dict[str, str]],
     evidence_rows: list[dict[str, str]],
+    rescue_rows: list[dict[str, str]],
     pmc_feedback_rows: list[dict[str, str]],
 ) -> bool:
     """Fail closed on incomplete stage handoffs before higher-level loop logic."""
@@ -412,6 +413,48 @@ def add_stage_gate_decision(
                     "with a keep/drop decision before PMC feedback, final reporting, or completion."
                 ),
                 "Proceed when evidence_extraction.csv exactly covers all reviewed readable full texts.",
+            )
+            return True
+
+    if fulltext_rows and evidence_rows:
+        dropped_ids = {
+            row.get("paper_id", "").strip()
+            for row in fulltext_rows
+            if row.get("fulltext_decision", "").strip() == "drop"
+        }
+        rescue_ids = {
+            row.get("paper_id", "").strip()
+            for row in rescue_rows
+            if row.get("paper_id", "").strip()
+        }
+        if dropped_ids and not rescue_rows:
+            add_decision(
+                decisions,
+                "fulltext_review",
+                "fulltext_rescue_pending",
+                True,
+                "loop_to_fulltext_review",
+                "fullTextEvidenceAgent",
+                f"Full-text review has {len(dropped_ids)} first-pass drops, but fulltext_rescue.csv is missing or empty.",
+                "Run the full-text rescue pass over first-pass drops before PMC feedback, final reporting, or completion.",
+                "Proceed when fulltext_rescue.csv records confirmed drops and any overturned keeps.",
+            )
+            return True
+        missing_rescue = sorted(dropped_ids - rescue_ids)
+        if missing_rescue:
+            add_decision(
+                decisions,
+                "fulltext_review",
+                "fulltext_rescue_incomplete",
+                True,
+                "loop_to_fulltext_review",
+                "fullTextEvidenceAgent",
+                (
+                    "Full-text rescue coverage is incomplete: "
+                    f"{len(dropped_ids)} current drops and {len(rescue_ids)} rescue rows."
+                ),
+                "Write one fulltext_rescue.csv row for every current full-text drop before PMC feedback.",
+                f"Proceed when rescue review covers all current drops. Missing examples={missing_rescue[:5]}.",
             )
             return True
 
@@ -672,6 +715,7 @@ def main() -> int:
     pdf_shortlist_rows = load_csv(import_dir / "pdf_download_shortlist.csv")
     fulltext_rows = load_csv(fulltext_dir / "fulltext_review.csv")
     evidence_rows = load_csv(fulltext_dir / "evidence_extraction.csv")
+    rescue_rows = load_csv(fulltext_dir / "fulltext_rescue.csv")
     pmc_feedback_rows = load_csv(fulltext_dir / "pmc_mechanism_feedback.csv")
     all_pmc_feedback_rows = load_all_pass_csv(run_dir, "artifacts/fulltext_review/pmc_mechanism_feedback.csv")
     config = parse_config(run_input_path(run_dir, "run_config.md"))
@@ -688,6 +732,7 @@ def main() -> int:
         import_rows,
         fulltext_rows,
         evidence_rows,
+        rescue_rows,
         pmc_feedback_rows,
     )
     add_pmc_fulltext_review_gate_decision(
