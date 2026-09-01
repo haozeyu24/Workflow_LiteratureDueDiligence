@@ -31,6 +31,33 @@ REVIEW_TERMS = {
     "perspective",
 }
 
+PROTEIN_LEVEL_CLAIM_TERMS = {
+    "abundance",
+    "accumulation",
+    "acetylation",
+    "chaperone",
+    "degradation",
+    "folding",
+    "half-life",
+    "import",
+    "localization",
+    "modification",
+    "nuclear",
+    "phosphorylation",
+    "post-translational",
+    "proteasome",
+    "protein level",
+    "protein stability",
+    "retention",
+    "steady-state protein",
+    "subcellular",
+    "sumo",
+    "sumoylation",
+    "turnover",
+    "ubiquitin",
+    "ubiquitination",
+}
+
 STOPWORDS = {
     "about",
     "after",
@@ -289,6 +316,30 @@ def is_review_paper(publication_types: str, text: str) -> bool:
     return "review" in normalized_types or any(term in normalized_text for term in REVIEW_TERMS)
 
 
+def sentence_windows(title: str, abstract: str) -> list[str]:
+    windows = [title.lower()] if title else []
+    for part in re.split(r"(?<=[.!?])\s+", abstract):
+        cleaned = " ".join(part.lower().split())
+        if cleaned:
+            windows.append(cleaned)
+    return windows
+
+
+def has_claim_shaped_positive_signal(
+    title: str,
+    abstract: str,
+    profile: ReviewProfile,
+) -> bool:
+    for window in sentence_windows(title, abstract):
+        primary_matches = matched_terms(window, profile.primary_terms)
+        mechanism_matches = matched_terms(window, profile.mechanism_terms)
+        outcome_matches = matched_terms(window, profile.outcome_terms)
+        protein_claim_matches = matched_terms(window, PROTEIN_LEVEL_CLAIM_TERMS)
+        if primary_matches and mechanism_matches and (outcome_matches or protein_claim_matches):
+            return True
+    return False
+
+
 def detect_run_mode(run_dir: Path) -> str:
     """Compatibility hook for older callers; all reusable logic is generic."""
     _ = build_review_profile(run_dir)
@@ -321,20 +372,12 @@ def classify_row(
     has_direct_claim = bool(primary_matches and mechanism_matches and outcome_matches)
     has_authorized_comparator_claim = bool(primary_matches and comparator_matches and mechanism_matches and outcome_matches)
     has_review_frame_claim = bool(primary_matches and mechanism_matches and review_frame_matches and outcome_matches)
+    has_claim_shaped_signal = has_claim_shaped_positive_signal(title, abstract, profile)
 
-    if exclusion_matches and not has_direct_claim:
-        return {
-            "first_pass_decision": "exclude",
-            "first_pass_rationale": "Matches run-specific exclusion or deferred-context terms without enough primary objective evidence.",
-            "first_pass_confidence": "medium",
-            "topic_match_type": "background_only",
-            "synthesis_role": "none",
-        }
-
-    if has_direct_claim:
+    if has_direct_claim or has_claim_shaped_signal:
         return {
             "first_pass_decision": "include",
-            "first_pass_rationale": "Title/abstract matches primary run entities, declared mechanism/evidence terms, and required outcome or evidence-claim terms.",
+            "first_pass_rationale": "Title/abstract contains a claim-shaped positive signal linking primary run entities to declared mechanism/evidence terms and protein-level outcome language; generic exclusion terms are treated as background rather than a veto.",
             "first_pass_confidence": "high",
             "topic_match_type": "direct",
             "synthesis_role": "none",
@@ -382,6 +425,15 @@ def classify_row(
             "first_pass_rationale": "Initial PMC-learning pass is recall-friendly but claim-shaped: title/abstract matches primary run entities, required outcome terms, and at least one additional declared mechanism, comparator, or review-frame signal.",
             "first_pass_confidence": "low",
             "topic_match_type": "indirect",
+            "synthesis_role": "none",
+        }
+
+    if exclusion_matches:
+        return {
+            "first_pass_decision": "exclude",
+            "first_pass_rationale": "Matches run-specific exclusion or deferred-context terms without enough primary objective evidence.",
+            "first_pass_confidence": "medium",
+            "topic_match_type": "background_only",
             "synthesis_role": "none",
         }
 
